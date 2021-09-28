@@ -11,4 +11,3 @@ const Template: Story = (args) => <div {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};
-
