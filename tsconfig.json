@@ -18,7 +18,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsxImportSource": "@emotion/react",
+    // "jsxImportSource": "@emotion/react",
     "jsx": "react-jsx"
   },
   "include": [
