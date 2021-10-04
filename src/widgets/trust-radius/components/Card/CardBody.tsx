@@ -7,9 +7,13 @@ import parse from 'html-react-parser';
 import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardBodyProps {
+  /** Shown as the main text on the card. */
   text: string;
+  /** Rating from 0 to 10. */
   rating: number;
+  /** Date this review was written at. */
   date?: string;
+  /** Maximum number of lines before collapsing. */
   maxLines: number;
 }
 

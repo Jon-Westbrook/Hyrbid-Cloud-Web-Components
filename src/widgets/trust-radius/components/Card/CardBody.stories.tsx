@@ -20,10 +20,17 @@ Default.args = {
 
 export const Truncated = Template.bind({});
 Truncated.args = {
+  ...Default.args,
   text:
     'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers. Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers. Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
   rating: 0,
   maxLines: 1,
 };
+
+export const EmptyDate = Template.bind({});
+EmptyDate.args = { ...Default.args, date: undefined };
+
+export const InvalidDate = Template.bind({});
+InvalidDate.args = { ...Default.args, date: 'I am an invalid date string' };
 
 export default stories;
