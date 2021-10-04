@@ -6,6 +6,7 @@ import moment from 'moment';
 import { css } from '@emotion/core';
 import PropTypes from 'prop-types';
 import Truncate from 'react-truncate';
+import parse from 'html-react-parser';
 
 function Card({ width, data, stars, theme }) {
   const customSlider = useRef();
@@ -22,12 +23,13 @@ function Card({ width, data, stars, theme }) {
 
   const numRows = Math.ceil(data.data.length / slidesToShowAndScroll);
   let starsDisplay;
+  const product = data.config.products[0];
   if (stars === 'true') {
     starsDisplay = (
       <Googlestars
-        product={data.config.products[0].name}
-        count={String(data.config.products[0].rating.count)}
-        score={String(data.config.products[0].rating.trScore)}
+        product={product.name}
+        count={String(product.rating.count)}
+        score={String(product.rating.trScore)}
       />
     );
   }
@@ -92,7 +94,7 @@ function Card({ width, data, stars, theme }) {
     },
   };
 
-  var reviewLink = `https://www.trustradius.com/products/${data.config.products[0].slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
+  var reviewLink = `https://www.trustradius.com/products/${product.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
 
   return (
     <div
@@ -105,9 +107,7 @@ function Card({ width, data, stars, theme }) {
           css={styles.headlink}
           className="ibm-pt-2 ibm-pb-1 ibm-textcolor-gray-90 headlink"
         >
-          <span>
-            What {data.config.products[0].name} customers are saying on
-          </span>
+          <span>What {product.name} customers are saying on</span>
           <img
             css={styles.headimage}
             src="https://d30ia583fbtg8i.cloudfront.net/images/trustradius-wordmark-blue-240-40.png"
@@ -130,12 +130,12 @@ function Card({ width, data, stars, theme }) {
               {data.data.map(function (review, i) {
                 var cardlink = 'https://www.trustradius.com/reviews/';
                 var trun = '';
-                var parse = require('html-react-parser');
+                const quote = review.quotes[0];
                 return (
                   <a
                     key={i}
                     css={styles.cardlinks}
-                    href={cardlink + review.quotes[0].review.slug}
+                    href={cardlink + quote.review.slug}
                     target="_new"
                   >
                     <div className="ibm-card" css={styles.cardheight}>
@@ -145,12 +145,12 @@ function Card({ width, data, stars, theme }) {
                       >
                         <p className="heading ibm-type-e" css={styles.heading}>
                           <Truncate lines={3} ellipsis={<span>... </span>}>
-                            {review.quotes[0].review.heading}
+                            {quote.review.heading}
                           </Truncate>
                         </p>
                         <div>
                           <StarRatings
-                            rating={review.quotes[0].rating / 2}
+                            rating={quote.rating / 2}
                             starRatedColor="#1f71ff"
                             numberOfStars={5}
                             starDimension="12px"
@@ -159,7 +159,7 @@ function Card({ width, data, stars, theme }) {
 
                           <span className="caption-01" css={styles.dateline}>
                             {' '}
-                            {moment(review.quotes[0].review.modified).format(
+                            {moment(quote.review.modified).format(
                               'MMM Do YYYY',
                             )}
                           </span>
@@ -168,7 +168,7 @@ function Card({ width, data, stars, theme }) {
                           <hr css={styles.cardhr}></hr>
                         </div>
 
-                        {review.quotes.map(function (text) {
+                        {review.quotes.forEach(function (text) {
                           trun += `${text.text}<br/><br/>`;
                           trun += ' ';
                         })}

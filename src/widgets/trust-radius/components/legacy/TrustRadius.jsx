@@ -10,21 +10,6 @@ function TrustRadius({ element }) {
     return window.innerWidth;
   }
 
-  async function fetchData() {
-    let response;
-
-    try {
-      response = await window.fetch(
-        `https://www.trustradius.com/api/v2/tqw/${trid}`,
-      );
-
-      return await response.json();
-    } catch (e) {
-      console.error(e);
-      setStatus('error');
-    }
-  }
-
   const [width, setWidth] = useState(getWidth);
   const [palette] = useState(element.getAttribute('data-trust-radius-pallete'));
   const [googlestars] = useState(
@@ -44,11 +29,22 @@ function TrustRadius({ element }) {
   }, []);
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await window.fetch(
+          `https://www.trustradius.com/api/v2/tqw/${trid}`,
+        );
+        return response.json();
+      } catch (e) {
+        console.error(e);
+        setStatus('error');
+      }
+    };
     fetchData().then((data) => {
       setData(data);
       setStatus('ready');
     });
-  }, []);
+  }, [trid]);
 
   return (
     <div
