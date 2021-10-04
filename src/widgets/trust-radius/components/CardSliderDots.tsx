@@ -1,5 +1,6 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
-import { css, SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardSliderDotsProps {
   numRows: number;

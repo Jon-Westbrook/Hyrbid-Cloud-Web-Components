@@ -1,6 +1,7 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import Truncate from 'react-truncate';
-import { css, SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardHeadingProps {
   text: string | undefined;

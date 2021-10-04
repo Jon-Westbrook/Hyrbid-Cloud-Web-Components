@@ -1,5 +1,6 @@
 import React from 'react';
-import { css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css, SerializedStyles } from '@emotion/react';
 
 export interface SliderHeadingProps {
   reviewUrl: string;
@@ -25,7 +26,7 @@ const SliderHeading: React.FC<SliderHeadingProps> = ({
   </a>
 );
 
-const styles = {
+const styles: Record<string, SerializedStyles> = {
   headlink: css`
     color: #171717;
     font-family: 'IBM Plex Sans';

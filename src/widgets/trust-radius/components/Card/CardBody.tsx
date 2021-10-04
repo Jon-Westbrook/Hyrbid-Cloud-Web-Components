@@ -1,9 +1,10 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import StarRatings from 'react-star-ratings';
 import moment from 'moment';
 import Truncate from 'react-truncate';
 import parse from 'html-react-parser';
-import { css, SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardBodyProps {
   text: string;

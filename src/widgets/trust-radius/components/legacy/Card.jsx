@@ -3,7 +3,8 @@ import Googlestars from './Googlestars';
 import StarRatings from 'react-star-ratings';
 import Slider from 'react-slick';
 import moment from 'moment';
-import { css } from '@emotion/core';
+/** @jsxImportSource @emotion/react */
+import { css, SerializedStyles } from '@emotion/react';
 import PropTypes from 'prop-types';
 import Truncate from 'react-truncate';
 import parse from 'html-react-parser';

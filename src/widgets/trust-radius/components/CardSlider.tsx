@@ -1,6 +1,7 @@
+/** @jsxImportSource @emotion/react */
 import React, { useRef } from 'react';
 import Slider, { Settings as SliderSettings } from 'react-slick';
-import { css, SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/react';
 import Card, {
   TrustRadiusPersonalReview,
   TrustRadiusReview,

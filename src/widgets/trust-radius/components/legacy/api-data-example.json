@@ -116,9 +116,7 @@
     "displayType": "widget-fancy",
     "navigationMode": "slide",
     "linkContext": "_blank",
-    "requiredTags": [
-      "5e25eb79ac7d51001c795bf1"
-    ],
+    "requiredTags": ["5e25eb79ac7d51001c795bf1"],
     "modified": "2020-06-16T14:03:57.412Z"
   },
   "data": [
@@ -148,20 +146,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -192,9 +177,7 @@
           "isSummary": true,
           "text": "Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers when demand is reduced.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -225,20 +208,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -269,9 +239,7 @@
           "isSummary": false,
           "text": "Easy set up and provisioning and scaling from dashboard itself.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -302,20 +270,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -346,9 +301,7 @@
           "isSummary": false,
           "text": "ROI is very high as our needs are met with out any addition of resources.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -403,20 +356,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -447,9 +387,7 @@
           "isSummary": true,
           "text": "IBM Cloud Virtual Servers help to scale the production servers on the go [with] ess downtime and high reliability. Also, the console is easy to use & user-friendly.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfe9",
             "56c5086bd97352701782dfe3",
@@ -481,20 +419,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -525,9 +450,7 @@
           "isSummary": false,
           "text": "Higher Availability",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfe9",
             "56c5086bd97352701782dfe3",
@@ -557,20 +480,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -601,9 +511,7 @@
           "isSummary": false,
           "text": "Easy UI",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfe9",
             "56c5086bd97352701782dfe3",
@@ -658,20 +566,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -702,9 +597,7 @@
           "isSummary": false,
           "text": "Easy to integrate, no use of any third party tool.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfed",
             "56c5086bd97352701782dfe3",
@@ -753,20 +646,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -797,9 +677,7 @@
           "isSummary": true,
           "text": "We currently us IBM Virtual Servers to host a number of various sites, from Wordpress to Custom made programs to fulfill a specific job. We have been migrating all assets over to one company and IBM virtual Servers is a big part of this. We love the flexibility of the configuarations",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e073",
             "56c5086bd97352701782dfeb",
@@ -835,20 +713,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -879,9 +744,7 @@
           "isSummary": false,
           "text": "We cut or cost by 75% by moving to Virtual Servers",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e073",
             "56c5086bd97352701782dfeb",
@@ -940,20 +803,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -982,9 +832,7 @@
           "isSummary": true,
           "text": "Customer support is always perfect.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfe9",
@@ -1039,20 +887,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1081,9 +916,7 @@
           "isSummary": true,
           "text": "Thanks to all the price configurations they offer, we don't have to worry about the cost, since we can order the lowest configuration for simple tests or a better one for production. And being able to choose an hourly or monthly charge is very good!",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e066",
             "56c5086bd97352701782dfe9",
@@ -1113,20 +946,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1155,9 +975,7 @@
           "isSummary": false,
           "text": "It offers a variety of configurations and operating systems for all needs.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e066",
             "56c5086bd97352701782dfe9",
@@ -1186,20 +1004,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1228,9 +1033,7 @@
           "isSummary": false,
           "text": "In the long run, IBM is much cheaper than AWS. Also, the support offered by IBM is quite superior since they help you by chat. With AWS, you must pay for support.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e066",
             "56c5086bd97352701782dfe9",
@@ -1286,20 +1089,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1328,9 +1118,7 @@
           "isSummary": true,
           "text": "We use transient pricing when we have unexpected loads. So we don't have to pay for the whole month but only need more capacity infrastructure only during peak times. Especially at these times transient pricing helps by providing infrastructure at a very low price.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e038",
             "56c5086bd97352701782dfe9",
@@ -1364,20 +1152,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1406,9 +1181,7 @@
           "isSummary": false,
           "text": "The overall costs are less than other services",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e038",
             "56c5086bd97352701782dfe9",
@@ -1442,20 +1215,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1484,9 +1244,7 @@
           "isSummary": false,
           "text": "Cheaper prices than competition",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e038",
             "56c5086bd97352701782dfe9",
@@ -1544,20 +1302,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1586,9 +1331,7 @@
           "isSummary": true,
           "text": "The fixed cost helps me to be able to charge my customers.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfe9",
@@ -1620,20 +1363,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1662,9 +1392,7 @@
           "isSummary": false,
           "text": "The main advantage of IBM Cloud Virtual Servers is the fixed price for a chosen configuration.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfe9",
@@ -1720,20 +1448,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1762,9 +1477,7 @@
           "isSummary": true,
           "text": "We tested transient servers though to run some tests but later on, we moved to shared and dedicated servers due to the nature of our business requirements. We also recommend using shared and dedicated to our peers because the pricing and availability are straight forward.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03e",
             "56c5086bd97352701782dfe9",
@@ -1798,20 +1511,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1840,9 +1540,7 @@
           "isSummary": false,
           "text": "IBM Cloud Virtual Servers saved us roughly $50K in 2 years which we used to expand our marketing and get more business",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03e",
             "56c5086bd97352701782dfe9",
@@ -1900,20 +1598,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1942,9 +1627,7 @@
           "isSummary": true,
           "text": "Neither of those servers allows for creating an email server that can send out on port 25. IBM is easier to set-up than Amazon. And perhaps a little easier than Google.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfe9",
@@ -1982,20 +1665,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2024,9 +1694,7 @@
           "isSummary": false,
           "text": "It's well suited as an email server to subscribed users. I can't think of a scenario that I wouldn't recommend an IBM virtual server. It's quick to create, reasonably priced and offers good support.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfe9",
@@ -2087,20 +1755,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2129,9 +1784,7 @@
           "isSummary": true,
           "text": "I am using IBM Cloud Virtual Servers directly to test the design decisions that have been taken for client solutions. Cloud Virtual servers are an easy and cost effective way of building test/POC environments to test out architecture designs and to provide quick and easy proof of concept facilities.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfee",
@@ -2160,20 +1813,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2202,9 +1842,7 @@
           "isSummary": false,
           "text": "Provide a quick time to value.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfee",
@@ -2256,20 +1894,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2302,9 +1927,7 @@
             "5881518ef85242000f599f19",
             "5877f3eaf66f24000f71d2ee"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfee",
@@ -2340,20 +1963,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2386,9 +1996,7 @@
             "5881518ef85242000f599f19",
             "5877f3eaf66f24000f71d2ee"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e03b",
             "56c5086bd97352701782dfee",
@@ -2448,20 +2056,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2490,9 +2085,7 @@
           "isSummary": true,
           "text": "They have better pricing on Asian servers which provides me a good calculation on my monthly spend estimation. They have optional services which can be useful and help me to do more for our organization's needs. So far, we don't have any issues with billing and they answer immediately on live chat when we need clarification on a query.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e076",
             "56c5086bd97352701782dfe9",
@@ -2535,20 +2128,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2577,9 +2157,7 @@
           "isSummary": false,
           "text": "Less Cost",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e076",
             "56c5086bd97352701782dfe9",
@@ -2643,20 +2221,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2685,9 +2250,7 @@
           "isSummary": true,
           "text": "If your budget is limited, or you need to host a small application this is good. Also for testing purposes, hourly VSi is very good.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfe9",
@@ -2755,20 +2318,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2797,9 +2347,7 @@
           "isSummary": true,
           "text": "Websites that require high availability, when you need 99.99% of service.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e0a8",
             "56c5086bd97352701782dfea",
@@ -2861,20 +2409,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -2905,9 +2440,7 @@
           "isSummary": false,
           "text": "Transient pricing means we can offer our customers the option to just try the virtual servers. They are free to up- or downscale their virtual servers, however they want. It gives them a big level of trust and the threshold is way lower right now than it was back in the day.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfec",
             "56c5086bd97352701782dfe5",
@@ -2959,20 +2492,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3001,9 +2521,7 @@
           "isSummary": true,
           "text": "We have compared many services in multiple companies, and IBM services were the best, most efficient, and most flexible in price.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfeb",
@@ -3038,20 +2556,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3080,9 +2585,7 @@
           "isSummary": false,
           "text": "Ease and efficiency of technical support.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfeb",
@@ -3115,20 +2618,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3157,9 +2647,7 @@
           "isSummary": false,
           "text": "Absolutely superb availability.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfeb",
@@ -3216,20 +2704,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3258,9 +2733,7 @@
           "isSummary": false,
           "text": "We have been able to calculate that the cost of using Virtual Servers at IBM is much cheaper than other services.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfea",
@@ -3302,20 +2775,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3344,9 +2804,7 @@
           "isSummary": false,
           "text": "Security, firewall and incredible capabilities to link to other IBM services and microservices",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfea",
@@ -3389,20 +2847,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3431,9 +2876,7 @@
           "isSummary": false,
           "text": "Easy customization and configuration of a virtual server.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfea",
@@ -3500,20 +2943,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3542,9 +2972,7 @@
           "isSummary": true,
           "text": "Transient pricing allows us to use the capacity we need when we need it, without commitment in the future.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -3584,20 +3012,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3626,9 +3041,7 @@
           "isSummary": false,
           "text": "Decreased cost of cloud infrastructure compared to other providers.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -3666,20 +3079,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3708,9 +3108,7 @@
           "isSummary": false,
           "text": "IBM provides a better choice of locations, easy to use interface and APIs for management, and better pricing compared to similar providers.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -3775,20 +3173,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3824,9 +3209,7 @@
             "5877f3ea3c030e0015b95ee9",
             "59d3b32f68d5d800100762e1"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e0a8",
             "56c5086bd97352701782dfee",
@@ -3875,20 +3258,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -3924,9 +3294,7 @@
             "5877f3ea3c030e0015b95ee9",
             "59d3b32f68d5d800100762e1"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e0a8",
             "56c5086bd97352701782dfee",
@@ -3971,20 +3339,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4020,9 +3375,7 @@
             "5877f3ea3c030e0015b95ee9",
             "59d3b32f68d5d800100762e1"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e0a8",
             "56c5086bd97352701782dfee",
@@ -4091,20 +3444,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4138,9 +3478,7 @@
             "588b7819546ea10015620faa",
             "5ae0bb2c0fcf6500127223f4"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e04d",
             "56c5086bd97352701782dfe9",
@@ -4181,20 +3519,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4228,9 +3553,7 @@
             "588b7819546ea10015620faa",
             "5ae0bb2c0fcf6500127223f4"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e04d",
             "56c5086bd97352701782dfe9",
@@ -4292,20 +3615,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4333,12 +3643,8 @@
           "_id": "5c7d888c2ed3230038c90d26",
           "isSummary": true,
           "text": "The return on investment on the IBM Cloud Virtual Servers is remarkable since the client only pays for resources they are utilizing through the capacity on demand",
-          "rTags": [
-            "588151b4f85242000f599f1f"
-          ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "rTags": ["588151b4f85242000f599f1f"],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfea",
@@ -4395,20 +3701,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4438,9 +3731,7 @@
           "isSummary": true,
           "text": "allows your architecture to grow as your business/traffic grows.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfe9",
@@ -4480,20 +3771,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4523,9 +3801,7 @@
           "isSummary": false,
           "text": "has a very redundant network with customization via VLAN and allows for customization of server specs and architecture design.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfe9",
@@ -4564,20 +3840,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -4607,9 +3870,7 @@
           "isSummary": false,
           "text": "allows more customization with Disk/Network/etc., and allows for out of the box (OOB) access to their servers.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfe9",

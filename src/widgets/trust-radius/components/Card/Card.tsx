@@ -1,5 +1,6 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
-import { css, SerializedStyles } from '@emotion/core';
+import { css, SerializedStyles } from '@emotion/react';
 import CardHeading from './CardHeading';
 import CardFooter from './CardFooter';
 import CardBody from './CardBody';
