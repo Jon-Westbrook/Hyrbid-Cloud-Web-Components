@@ -4,45 +4,18 @@ import { css, SerializedStyles } from '@emotion/react';
 import CardHeading from './CardHeading';
 import CardFooter from './CardFooter';
 import CardBody from './CardBody';
-
-export interface TrustRadiusPersonalReview {
-  heading: string;
-  modified: string;
-  slug: string;
-  name: string;
-  count: number;
-  score: number;
-}
-
-export interface TrustRadiusQuote {
-  review: TrustRadiusPersonalReview;
-  rating: number;
-  text: string;
-}
-
-export interface TrustRadiusReview {
-  quotes: TrustRadiusQuote[];
-  name: { first: string; last: string };
-  position?: { title: string };
-  company?: {
-    name: string;
-    size?: string;
-    industry?: { name: string };
-  };
-}
+import { TrustRadiusReview } from '../TrustRadius';
 
 export interface CardProps {
   review: TrustRadiusReview;
-  key: string;
 }
 
-const Card: React.FC<CardProps> = ({ review, key }) => {
+const Card: React.FC<CardProps> = ({ review }) => {
   const cardUrl = 'https://www.trustradius.com/reviews/';
   const mainQuote = review.quotes[0];
   return (
     <>
       <a
-        key={key}
         css={cardStyles.cardlinks}
         href={cardUrl + mainQuote.review.slug}
         target="_new"

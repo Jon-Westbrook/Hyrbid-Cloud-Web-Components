@@ -36,7 +36,6 @@ Default.args = {
     },
     position: { title: 'Manager - IT' },
   },
-  key: Math.random().toString(),
 };
 
 export default stories;

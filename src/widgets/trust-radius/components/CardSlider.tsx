@@ -2,19 +2,22 @@
 import React, { useRef } from 'react';
 import Slider, { Settings as SliderSettings } from 'react-slick';
 import { css, SerializedStyles } from '@emotion/react';
-import Card, {
-  TrustRadiusPersonalReview,
-  TrustRadiusReview,
-} from './Card/Card';
+import Card from './Card/Card';
 import EmptyCard from './Card/EmptyCard';
 import Googlestars from './Card/Googlestars';
 import SliderHeading from './SliderHeading';
+import {
+  IBMPalettes,
+  TrustRadiusPersonalReview,
+  TrustRadiusReview,
+} from './TrustRadius';
 
 export interface CardSliderProps {
   reviews: TrustRadiusReview[];
   product: TrustRadiusPersonalReview;
-  stars?: string;
-  theme: 'light' | 'gray' | 'dark';
+  /** True if the component should include the Google Stars metadata. */
+  stars: boolean;
+  theme: IBMPalettes;
   sliderSettings: SliderSettings;
 }
 
@@ -27,20 +30,21 @@ const CardSlider: React.FC<CardSliderProps> = ({
 }) => {
   const customSlider = useRef<Slider>();
   const reviewUrl = `https://www.trustradius.com/products/${product.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
+  const starsComponent = stars ? (
+    <Googlestars
+      product={product.name}
+      count={product.count}
+      score={product.score}
+    />
+  ) : (
+    <></>
+  );
   return (
     <div
       css={[styles.widget, styles[theme]]}
       className="Widget ibm-grid-seamless ibm-background-gray-20"
     >
-      {stars === 'true' ? (
-        <Googlestars
-          product={product.name}
-          count={product.count}
-          score={product.score}
-        />
-      ) : (
-        <></>
-      )}
+      {starsComponent}
       <SliderHeading reviewUrl={reviewUrl}>
         <span>What {product.name} customers are saying on</span>
       </SliderHeading>
@@ -81,6 +85,15 @@ const CardSlider: React.FC<CardSliderProps> = ({
 };
 
 const styles: Record<string, SerializedStyles> = {
+  light: css`
+    background-color: #f2f4f8;
+  `,
+  dark: css`
+    background-color: #161616;
+  `,
+  gray: css`
+    background-color: #fff;
+  `,
   readlink: css`
     margin-left: 55px;
     position: relative;

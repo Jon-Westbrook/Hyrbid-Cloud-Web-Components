@@ -2,7 +2,7 @@ import 'whatwg-fetch';
 import React, { useEffect, useState } from 'react';
 import Card from './Card';
 /** @jsxImportSource @emotion/react */
-import { css, SerializedStyles } from '@emotion/react';
+import { css } from '@emotion/react';
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 

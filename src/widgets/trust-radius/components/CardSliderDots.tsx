@@ -4,11 +4,15 @@ import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardSliderDotsProps {
   numRows: number;
+  onPrevious: () => void;
+  onNext: () => void;
 }
 
 const CardSliderDots: React.FC<CardSliderDotsProps> = ({
   children,
   numRows,
+  onPrevious,
+  onNext,
 }) => {
   return (
     <div
@@ -21,7 +25,11 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
       }}
     >
       <div css={styles.navdiv} className="navdiv">
-        <button className="button ibm-btn-small" css={styles.previous} />
+        <button
+          className="button ibm-btn-small"
+          css={styles.previous}
+          onClick={() => onPrevious()}
+        />
         <ul css={styles.numlist} className="body-short-01">
           {' '}
           {children}{' '}
@@ -33,7 +41,11 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
         <ul css={styles.numlist} className="body-short-01">
           &nbsp; {numRows} &nbsp;
         </ul>
-        <button className="button ibm-btn-small" css={styles.next} />
+        <button
+          className="button ibm-btn-small"
+          css={styles.next}
+          onClick={() => onNext()}
+        />
       </div>
     </div>
   );

@@ -1,8 +1,10 @@
 import React from 'react';
 import CardSlider, { CardSliderProps } from './CardSlider';
 import { Story } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
+import buildSliderSettings from '../util/buildSliderSettings';
 
 const stories = {
   component: CardSlider,
@@ -29,17 +31,19 @@ const review = {
   name: { first: 'John', last: 'Doe' },
   position: { title: 'IT Manager' },
 };
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  appendDots: (dots: string) => (
-    <CardSliderDots numRows={2}>{dots}</CardSliderDots>
-  ),
-  customPaging: (i: number) => <CardSliderPager pageNumber={i} />,
+const sliderSettings = buildSliderSettings(1500);
+sliderSettings.appendDots = (dots) => {
+  return (
+    <CardSliderDots
+      numRows={8}
+      onPrevious={action('previous')}
+      onNext={action('next')}
+    >
+      {dots}
+    </CardSliderDots>
+  );
 };
+sliderSettings.customPaging = (i) => <CardSliderPager pageNumber={i} />;
 Default.args = {
   reviews: [review, review, review, review, review],
   product: {
@@ -50,16 +54,17 @@ Default.args = {
     score: 0.23,
     slug: 'this-is-a-slug',
   },
-  stars: 'true',
+  stars: true,
   theme: 'light',
   sliderSettings,
 };
 
-export const FourCols = Template.bind({});
-FourCols.args = Object.assign({}, Default.args);
-FourCols.args.sliderSettings = {
+export const TwoCols = Template.bind({});
+TwoCols.args = Object.assign({}, Default.args);
+TwoCols.args.stars = false;
+TwoCols.args.sliderSettings = {
   ...sliderSettings,
-  slidesToShow: 4,
+  slidesToShow: 2,
   slidesToScroll: 2,
 };
 

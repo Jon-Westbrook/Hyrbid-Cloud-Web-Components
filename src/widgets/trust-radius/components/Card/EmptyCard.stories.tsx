@@ -1,6 +1,6 @@
 import React from 'react';
 
-import EmptyCard, { EmptyCardProps } from './EmptyCard';
+import EmptyCard from './EmptyCard';
 import { Story } from '@storybook/react';
 
 const stories = {
@@ -8,11 +8,8 @@ const stories = {
   title: 'Trust Radius/Slider/Card/EmptyCard',
 };
 
-const Template: Story<EmptyCardProps> = (args) => (
-  <EmptyCard css={{ maxWidth: '80px' }} {...args} />
-);
+const Template: Story<any> = (args) => <EmptyCard {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { key: Math.random().toString() };
 
 export default stories;
