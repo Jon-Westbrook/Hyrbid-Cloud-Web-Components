@@ -3,7 +3,7 @@ import React from 'react';
 import CardHeading from './CardHeading';
 import { cardStyles } from './Card';
 
-const EmptyCard: React.FC<void> = () => (
+const EmptyCard: React.FC = () => (
   <div className="ibm-card" css={cardStyles.cardheight}>
     <div className="ibm-card__content">
       <CardHeading text="" />

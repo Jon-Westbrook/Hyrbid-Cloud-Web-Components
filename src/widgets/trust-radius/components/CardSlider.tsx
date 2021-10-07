@@ -63,7 +63,7 @@ const CardSlider: React.FC<CardSliderProps> = ({
                 return review.quotes.length ? (
                   <Card review={review} key={`card-${i}`} />
                 ) : (
-                  <EmptyCard key={`card-${i}`} />
+                  <EmptyCard />
                 );
               })}
             </Slider>
