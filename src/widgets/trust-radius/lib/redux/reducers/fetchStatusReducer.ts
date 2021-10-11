@@ -9,11 +9,9 @@ export interface TrustRadiusStateFetchStatus {
 const fetchStatusReducer: Reducer<
   TrustRadiusStateFetchStatus,
   TrustRadiusActionFetchStatus
-> = (state, action) => {
-  return {
-    ...(state || {}),
-    fetchStatus: action.status,
-  };
-};
+> = (state, action) => ({
+  ...(state || {}),
+  fetchStatus: action.status,
+});
 
-export default combineReducers({ fetchStatusReducer });
+export default fetchStatusReducer;

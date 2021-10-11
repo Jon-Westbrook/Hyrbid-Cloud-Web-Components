@@ -1,6 +1,5 @@
 import { Reducer } from 'redux';
-import { TrustRadiusState } from '../index';
-import { TrustRadiusActionResize } from '../actions/windowResizeAction';
+import { TrustRadiusActionWindowResize } from '../actions/windowResizeAction';
 
 type NumCols = 1 | 2 | 4;
 
@@ -14,7 +13,7 @@ const _doCalcCols = (width: number): NumCols => {
 
 const windowResizeReducer: Reducer<
   TrustRadiusStateWindowResize,
-  TrustRadiusActionResize
+  TrustRadiusActionWindowResize
 > = (state, action) => ({
   ...state,
   numCols: _doCalcCols(action.width),
