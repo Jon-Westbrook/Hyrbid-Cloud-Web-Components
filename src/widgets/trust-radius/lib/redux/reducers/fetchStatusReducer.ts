@@ -1,6 +1,6 @@
-import { combineReducers, Reducer } from 'redux';
+import { Reducer } from 'redux';
 import { TrustRadiusActionFetchStatus } from '../actions/fetchStatusAction';
-import { FetchStatusEnum } from 'hc-widgets';
+import { FetchStatusEnum } from '../store';
 
 export interface TrustRadiusStateFetchStatus {
   fetchStatus: FetchStatusEnum;
@@ -9,9 +9,13 @@ export interface TrustRadiusStateFetchStatus {
 const fetchStatusReducer: Reducer<
   TrustRadiusStateFetchStatus,
   TrustRadiusActionFetchStatus
-> = (state, action) => ({
-  ...(state || {}),
-  fetchStatus: action.status,
-});
+> = (state, action) => {
+  switch (action.type) {
+    case 'FETCH_STATUS_ACTION':
+      return { ...(state || {}), fetchStatus: action.status };
+    default:
+      return state || { fetchStatus: FetchStatusEnum.INIT };
+  }
+};
 
 export default fetchStatusReducer;

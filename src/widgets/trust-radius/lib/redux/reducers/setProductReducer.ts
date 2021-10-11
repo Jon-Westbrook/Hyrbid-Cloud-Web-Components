@@ -10,10 +10,23 @@ export interface TrustRadiusStateProduct {
   reviews: TrustRadiusReview[];
 }
 
-type ProductsState = Record<string, TrustRadiusStateProduct>;
 export type TrustRadiusStateProducts = {
-  products: ProductsState;
+  products: Record<string, TrustRadiusStateProduct>;
 };
+type ProductsState = TrustRadiusStateProducts[keyof TrustRadiusStateProducts];
+
+export function normalizeProductData(product: any): TrustRadiusStateProduct {
+  const productInfo = product?.config?.products[0];
+  return {
+    product: {
+      ...productInfo,
+      modified: product?.config?.modified || new Date().toISOString(),
+      count: productInfo.rating?.count || 1,
+      score: productInfo.rating?.trScore || 10,
+    },
+    reviews: product?.data || [],
+  };
+}
 
 function _mutateProduct(products: ProductsState, product: any): ProductsState {
   // Parses the API response format and keeps the information we care about.
@@ -23,10 +36,7 @@ function _mutateProduct(products: ProductsState, product: any): ProductsState {
   }
   return {
     ...products,
-    [productInfo.slug]: {
-      product: productInfo,
-      reviews: product?.data?.reviews || [],
-    },
+    [product.config._id]: normalizeProductData(product),
   };
 }
 

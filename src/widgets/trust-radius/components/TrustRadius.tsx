@@ -1,16 +1,38 @@
-/** @jsxImportSource @emotion/react */
-import React, { ReactElement, useEffect, useRef, useState } from 'react';
+import React, { ReactElement, useEffect, useRef } from 'react';
+import { connect } from 'react-redux';
+import { ThunkDispatch } from 'redux-thunk';
+import { TrustRadiusReducersMapper } from '../lib/redux/store';
+import { TrustRadiusStateProduct } from '../lib/redux/reducers/setProductReducer';
+import windowResizeAction from '../lib/redux/actions/windowResizeAction';
 import debounce from 'lodash.debounce';
+import fetchProductDataAction from '../lib/redux/actions/fetchProductDataAction';
 import { css, SerializedStyles } from '@emotion/react';
-import CardSlider from './CardSlider';
-import { DataStatus, HOF } from 'hc-widgets';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
+import CardSlider from './CardSlider';
 import Slider from 'react-slick';
-import fetchReviews from '../lib/fetchReviews';
 
 export type IBMPalettes = 'light' | 'gray' | 'dark';
+export type HOF<T> = (input: T) => T;
+
+export interface TrustRadiusOwnProps {
+  palette: IBMPalettes;
+  useGoogleStars: boolean;
+  trustRadiusId: string;
+}
+
+interface StateProps {
+  isLoading: boolean;
+  isError: boolean;
+  product: TrustRadiusStateProduct;
+  numCols: 1 | 2 | 4;
+}
+
+interface DispatchProps {
+  onInit: () => void;
+  onWindowResize: () => void;
+}
 
 export interface TrustRadiusPersonalReview {
   heading: string;
@@ -38,58 +60,26 @@ export interface TrustRadiusReview {
   };
 }
 
-export interface TrustRadiusProps {
-  /** Color palette to render the component. */
-  palette: IBMPalettes;
-  /** Weather or not to add the Google Stars JS to the page. */
-  googleStars: boolean;
-  /** Trust Radius ID. Mainly used to construct the URL for the data. */
-  trustRadiusId: string;
-  /** Error handler for the API response. Omit to use default. */
-  onError?: (error: any) => void;
-  /** Function to fetch the API data. Omit to use default. */
-  fetcher?: (
-    trustRadiusId: string,
-  ) => Promise<[TrustRadiusReview[], TrustRadiusPersonalReview]>;
-}
-
-const TrustRadius: React.FC<TrustRadiusProps> = ({
+export type TrustRadiusProps = TrustRadiusOwnProps & StateProps & DispatchProps;
+export const TrustRadius: React.FC<TrustRadiusProps> = ({
   palette,
-  googleStars,
-  trustRadiusId,
-  onError = console.error,
-  fetcher = fetchReviews,
+  useGoogleStars,
+  isLoading,
+  isError,
+  product,
+  numCols,
+  onInit,
+  onWindowResize,
 }) => {
-  function getWidth(): number {
-    return window.innerWidth;
-  }
-
-  function refreshWidth(): void {
-    setWidth(getWidth());
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', debounce(refreshWidth, 500));
-    return () => window.removeEventListener('resize', refreshWidth);
-  });
-
   const customSlider = useRef<Slider>();
-  const [width, setWidth] = useState<number>(getWidth);
-  const [status, setStatus] = useState<DataStatus>('loading');
-  const [reviews, setReviews] = useState<TrustRadiusReview[]>([]);
-  const [product, setProduct] = useState<TrustRadiusPersonalReview>();
   useEffect(() => {
-    fetcher(trustRadiusId)
-      .then(([reviews, product]) => {
-        setReviews(reviews);
-        setProduct(product);
-        setStatus('ready');
-      })
-      .catch((reason) => {
-        onError(reason);
-        setStatus('error');
-      });
-  }, [trustRadiusId]);
+    product || onInit();
+  }, [onInit, product]);
+  useEffect(() => {
+    onWindowResize();
+    window.addEventListener('resize', onWindowResize);
+    return () => window.removeEventListener('resize', onWindowResize);
+  }, [onWindowResize]);
   const wrapComponent: HOF<ReactElement> = (component) => (
     <div
       css={[styles.widget, styles[palette]]}
@@ -98,14 +88,14 @@ const TrustRadius: React.FC<TrustRadiusProps> = ({
       <div css={styles.widgetWrapper}>{component}</div>
     </div>
   );
-  if (status === 'loading') {
+  if (isLoading || !product) {
     return wrapComponent(
       <div css={styles.message}>
         <p className="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center" />
       </div>,
     );
   }
-  if (status === 'error' || !product) {
+  if (isError) {
     return wrapComponent(
       <div css={styles.message}>
         <p>
@@ -115,12 +105,14 @@ const TrustRadius: React.FC<TrustRadiusProps> = ({
       </div>,
     );
   }
-  const sliderSettings = buildSliderSettings(width);
+  const sliderSettings = buildSliderSettings(numCols);
   sliderSettings.appendDots = (dots) => {
     const noop = () => undefined;
     return (
       <CardSliderDots
-        numRows={Math.ceil(reviews.length / (sliderSettings.slidesToShow || 1))}
+        numRows={Math.ceil(
+          product.reviews.length / (sliderSettings.slidesToShow || 1),
+        )}
         onPrevious={customSlider.current?.slickPrev || noop}
         onNext={customSlider.current?.slickNext || noop}
       >
@@ -131,14 +123,40 @@ const TrustRadius: React.FC<TrustRadiusProps> = ({
   sliderSettings.customPaging = (i) => <CardSliderPager pageNumber={i} />;
   return wrapComponent(
     <CardSlider
-      product={product}
-      reviews={reviews}
-      stars={googleStars}
+      product={product.product}
+      reviews={product.reviews}
+      stars={useGoogleStars}
       theme={palette}
       sliderSettings={sliderSettings}
     />,
   );
 };
+
+const mapStateToProps = (
+  states: TrustRadiusReducersMapper,
+  ownProps: TrustRadiusOwnProps,
+): StateProps => {
+  return {
+    isLoading:
+      states.status.fetchStatus !== 'READY' &&
+      states.status.fetchStatus !== 'FAILURE',
+    isError: states.status.fetchStatus === 'FAILURE',
+    product: states.prods.products[ownProps.trustRadiusId],
+    numCols: states?.cols?.numCols,
+  };
+};
+
+const mapDispatchToProps = (
+  dispatch: ThunkDispatch<Record<string, any>, Record<string, any>, any>,
+  ownProps: TrustRadiusOwnProps,
+): DispatchProps => ({
+  onInit: async () => {
+    await dispatch(fetchProductDataAction(ownProps.trustRadiusId));
+    console.debug('Data has been fetched!');
+  },
+  onWindowResize: () =>
+    debounce(() => dispatch(windowResizeAction(window.innerWidth)), 500),
+});
 
 const styles: Record<string, SerializedStyles> = {
   widget: css`
@@ -173,4 +191,12 @@ const styles: Record<string, SerializedStyles> = {
   `,
 };
 
-export default TrustRadius;
+export default connect<
+  StateProps,
+  DispatchProps,
+  TrustRadiusOwnProps,
+  TrustRadiusReducersMapper
+>(
+  mapStateToProps,
+  mapDispatchToProps,
+)(TrustRadius);

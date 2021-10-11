@@ -31,7 +31,7 @@ const review = {
   name: { first: 'John', last: 'Doe' },
   position: { title: 'IT Manager' },
 };
-const sliderSettings = buildSliderSettings(1500);
+const sliderSettings = buildSliderSettings(4);
 sliderSettings.appendDots = (dots) => {
   return (
     <CardSliderDots
@@ -47,7 +47,6 @@ sliderSettings.customPaging = (i) => <CardSliderPager pageNumber={i} />;
 Default.args = {
   reviews: [review, review, review, review, review],
   product: {
-    heading: 'Product Heading',
     modified: '2021-09-30T14:49:38.066Z',
     name: 'Product name at IBM',
     count: 8,

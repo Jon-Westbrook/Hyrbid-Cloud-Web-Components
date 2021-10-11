@@ -1,63 +1,97 @@
 import React from 'react';
 import TrustRadius, {
-  TrustRadiusPersonalReview,
+  TrustRadiusOwnProps,
   TrustRadiusProps,
-  TrustRadiusReview,
 } from './TrustRadius';
 import { Story } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { FetchStatusEnum } from '../lib/redux/store';
 
+import apiResponse from './api-data-example.json';
+import { normalizeProductData } from '../lib/redux/reducers/setProductReducer';
+
+const products = {
+  'fake-trid': normalizeProductData(apiResponse),
+};
+const defaultState = {
+  status: { fetchStatus: FetchStatusEnum.READY },
+  cols: { numCols: 4 },
+  prods: { products },
+};
+
+const createFakeStore = (state: any) => {
+  const fakeStore = createStore(() => state);
+  fakeStore.dispatch = (act) => {
+    action('dispatch');
+    return act;
+  };
+  return fakeStore;
+};
+
+const defaultFakeStore = createFakeStore.bind({})(defaultState);
 const stories = {
   component: TrustRadius,
   title: 'Trust Radius',
+  decorators: [
+    (story: any) => <Provider store={defaultFakeStore}>{story()}</Provider>,
+  ],
 };
 
-const Template: Story<TrustRadiusProps> = (args) => <TrustRadius {...args} />;
+const Template: Story<TrustRadiusOwnProps> = (args) => (
+  <TrustRadius {...args} />
+);
 
 export const Default = Template.bind({});
-const fetcher = async (
-  trustRadiusId: string,
-): Promise<[TrustRadiusReview[], TrustRadiusPersonalReview]> => {
-  const response = await import('./api-data-example.json');
-  const parsed = response.default;
-  const {
-    data: reviews,
-    config: {
-      products: [product],
-    },
-  } = parsed;
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  return [reviews, product];
-};
 Default.args = {
   palette: 'light',
-  googleStars: false,
+  useGoogleStars: false,
   trustRadiusId: 'fake-trid',
-  onError: action('error'),
-  fetcher,
 };
-
-export const SlowResponse = Template.bind({});
-SlowResponse.args = Object.assign({}, Default.args);
-SlowResponse.args.fetcher = (trustRadiusId) =>
-  new Promise((resolve) => {
-    setTimeout(() => resolve(fetcher(trustRadiusId)), Infinity);
-  });
 
 export const DarkPalette = Template.bind({});
 DarkPalette.args = Object.assign({}, Default.args);
 DarkPalette.args.palette = 'dark';
 
-export const GrayPalette = Template.bind({});
-GrayPalette.args = Object.assign({}, Default.args);
-GrayPalette.args.palette = 'dark';
+export const TwoCols = Template.bind({});
+TwoCols.args = Object.assign({}, Default.args);
+const twoColsFakeStore = createFakeStore.bind({})({
+  ...defaultState,
+  cols: { numCols: 2 },
+});
+TwoCols.decorators = [
+  (story) => <Provider store={twoColsFakeStore}>{story()}</Provider>,
+];
+
+export const OneCol = Template.bind({});
+OneCol.args = Object.assign({}, Default.args);
+const oneColFakeStore = createFakeStore.bind({})({
+  ...defaultState,
+  cols: { numCols: 1 },
+});
+OneCol.decorators = [
+  (story) => <Provider store={oneColFakeStore}>{story()}</Provider>,
+];
+
+export const Loading = Template.bind({});
+Loading.args = Object.assign({}, Default.args);
+const loadingFakeStore = createFakeStore.bind({})({
+  ...defaultState,
+  status: { fetchStatus: FetchStatusEnum.IN_PROGRESS },
+});
+Loading.decorators = [
+  (story) => <Provider store={loadingFakeStore}>{story()}</Provider>,
+];
 
 export const FailedRequest = Template.bind({});
+const failedFakeStore = createFakeStore.bind({})({
+  ...defaultState,
+  status: { fetchStatus: FetchStatusEnum.FAILURE },
+});
+FailedRequest.decorators = [
+  (story) => <Provider store={failedFakeStore}>{story()}</Provider>,
+];
 FailedRequest.args = Object.assign({}, Default.args);
-FailedRequest.args.fetcher = (trustRadiusId) =>
-  new Promise((resolve, reject) => {
-    reject('Error: manual error triggered for story');
-  });
 
 export default stories;

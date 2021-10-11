@@ -1,5 +1,6 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux';
-import thunk from 'redux-thunk';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk, { ThunkMiddleware } from 'redux-thunk';
 import fetchStatusReducer, {
   TrustRadiusStateFetchStatus,
 } from './reducers/fetchStatusReducer';
@@ -9,27 +10,33 @@ import windowResizeReducer, {
 import setProductReducer, {
   TrustRadiusStateProducts,
 } from './reducers/setProductReducer';
-import { FetchStatusEnum } from 'hc-widgets';
+
+export enum FetchStatusEnum {
+  INIT = 'INIT',
+  IN_PROGRESS = 'IN_PROGRESS',
+  READY = 'READY',
+  FAILURE = 'FAILURE',
+}
 
 export type TrustRadiusRootState = TrustRadiusStateWindowResize &
   TrustRadiusStateFetchStatus &
   TrustRadiusStateProducts;
 
-type ReducersMapper = {
+export type TrustRadiusReducersMapper = {
   status: TrustRadiusStateFetchStatus;
   cols: TrustRadiusStateWindowResize;
   prods: TrustRadiusStateProducts;
 };
+
 export default createStore(
-  combineReducers<ReducersMapper>({
+  combineReducers<TrustRadiusReducersMapper>({
     status: fetchStatusReducer,
     cols: windowResizeReducer,
     prods: setProductReducer,
   }),
   {
     status: { fetchStatus: FetchStatusEnum.INIT },
-    cols: { numCols: 1 },
     prods: { products: {} },
   },
-  applyMiddleware(thunk),
+  composeWithDevTools(applyMiddleware<ThunkMiddleware>(thunk)),
 );

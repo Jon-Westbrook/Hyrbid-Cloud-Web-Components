@@ -7,3 +7,7 @@ export const parameters = {
     },
   },
 };
+
+export const decorators = [
+  (story) => <div style={{ padding: '50px 100px' }}>{story()}</div>,
+];
