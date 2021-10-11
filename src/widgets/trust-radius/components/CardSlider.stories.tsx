@@ -4,7 +4,7 @@ import { Story } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
-import buildSliderSettings from '../util/buildSliderSettings';
+import buildSliderSettings from '../lib/buildSliderSettings';
 
 const stories = {
   component: CardSlider,

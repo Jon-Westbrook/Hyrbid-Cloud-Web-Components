@@ -4,11 +4,11 @@ import debounce from 'lodash.debounce';
 import { css, SerializedStyles } from '@emotion/react';
 import CardSlider from './CardSlider';
 import { DataStatus, HOF } from 'hc-widgets';
-import buildSliderSettings from '../util/buildSliderSettings';
+import buildSliderSettings from '../lib/buildSliderSettings';
 import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
 import Slider from 'react-slick';
-import fetchReviews from '../util/fetchReviews';
+import fetchReviews from '../lib/fetchReviews';
 
 export type IBMPalettes = 'light' | 'gray' | 'dark';
 
