@@ -1,13 +1,13 @@
 import { Action } from 'redux';
 import { FetchStatusEnum } from 'hc-widgets';
 
-export interface TrustRadiusFetchStatusAction extends Action {
+export interface TrustRadiusActionFetchStatus extends Action {
   status: FetchStatusEnum;
 }
 
 const fetchStatusAction = (
   status: FetchStatusEnum,
-): TrustRadiusFetchStatusAction => ({
+): TrustRadiusActionFetchStatus => ({
   type: 'FETCH_STATUS_ACTION',
   status,
 });

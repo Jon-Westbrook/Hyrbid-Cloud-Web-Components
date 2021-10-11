@@ -5,6 +5,7 @@ import {
   TrustRadiusReview,
 } from '../../components/TrustRadius';
 import fetchStatusReducer from './reducers/fetchStatusReducer';
+import windowResizeReducer from './reducers/windowResizeReducer';
 
 interface TrustRadiusProductState {
   product: TrustRadiusPersonalReview;
@@ -12,11 +13,10 @@ interface TrustRadiusProductState {
 }
 
 export interface TrustRadiusState {
-  windowSize: { width: number; height: number };
   products: Record<string, TrustRadiusProductState>;
 }
 
 export default createStore(
-  combineReducers({ fetchStatusReducer }),
+  combineReducers({ fetchStatusReducer, windowResizeReducer }),
   applyMiddleware(thunk),
 );
