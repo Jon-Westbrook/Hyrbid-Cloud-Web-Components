@@ -155,7 +155,7 @@ const mapDispatchToProps = (
     console.debug('Data has been fetched!');
   },
   onWindowResize: () =>
-    debounce(() => dispatch(windowResizeAction(window.innerWidth)), 500),
+    debounce(() => dispatch(windowResizeAction(window.innerWidth)), 1000),
 });
 
 const styles: Record<string, SerializedStyles> = {
