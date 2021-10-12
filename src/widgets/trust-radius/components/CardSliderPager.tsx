@@ -2,6 +2,7 @@
 import React from 'react';
 
 export interface CardSliderPagerProps {
+  /** The current page number. */
   pageNumber: number;
 }
 

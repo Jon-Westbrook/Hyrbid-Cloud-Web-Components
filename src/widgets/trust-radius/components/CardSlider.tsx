@@ -17,7 +17,9 @@ export interface CardSliderProps {
   product: TrustRadiusPersonalReview;
   /** True if the component should include the Google Stars metadata. */
   stars: boolean;
+  /** Different color styles according to the IBM design guidelines. */
   theme: IBMPalettes;
+  /** Settings for the React Slick Slider project. */
   sliderSettings: SliderSettings;
   customSlider: MutableRefObject<Slider | undefined>;
 }

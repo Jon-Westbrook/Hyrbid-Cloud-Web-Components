@@ -7,6 +7,7 @@ import CardBody from './CardBody';
 import { TrustRadiusReview } from '../TrustRadius';
 
 export interface CardProps {
+  /** Data for the review */
   review: TrustRadiusReview;
 }
 

@@ -3,8 +3,11 @@ import React from 'react';
 import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardSliderDotsProps {
+  /** Number of rows for the nav section. */
   numRows: number;
+  /** Action to perform when the previous button is triggered. */
   onPrevious: () => void;
+  /** Action to perform when the next button is triggered. */
   onNext: () => void;
 }
 

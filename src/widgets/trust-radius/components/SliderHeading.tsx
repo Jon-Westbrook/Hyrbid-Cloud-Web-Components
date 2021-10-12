@@ -1,8 +1,9 @@
-import React from 'react';
 /** @jsxImportSource @emotion/react */
+import React from 'react';
 import { css, SerializedStyles } from '@emotion/react';
 
 export interface SliderHeadingProps {
+  /** The URL used to link to the review. */
   reviewUrl: string;
 }
 

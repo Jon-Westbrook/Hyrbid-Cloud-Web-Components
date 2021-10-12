@@ -4,6 +4,7 @@ import Truncate from 'react-truncate';
 import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardHeadingProps {
+  /** Heading text to display. */
   text: string | undefined;
 }
 
