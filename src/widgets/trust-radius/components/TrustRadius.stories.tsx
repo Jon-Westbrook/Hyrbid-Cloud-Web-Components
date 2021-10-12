@@ -3,6 +3,7 @@ import TrustRadius, { TrustRadiusOwnProps } from './TrustRadius';
 import { Story } from '@storybook/react';
 import { action as storybookAction } from '@storybook/addon-actions';
 import { Provider } from 'react-redux';
+import { AnyAction } from 'redux';
 import store, { FetchStatusEnum } from '../lib/redux/store';
 
 import apiResponse from './api-data-example.json';
@@ -19,6 +20,10 @@ const defaultState = {
 
 const fakeStore = Object.assign({}, store, {
   getState: () => defaultState,
+  dispatch: (action: AnyAction): AnyAction => {
+    storybookAction('dispatch');
+    return action;
+  },
 });
 
 const stories = {
@@ -27,6 +32,19 @@ const stories = {
   decorators: [
     (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
   ],
+  argTypes: {
+    palette: {
+      type: { name: 'string', required: true },
+      description:
+        'Different color styles according to the IBM design guidelines.',
+      defaultValue: 'light',
+      control: { type: 'select', options: ['light', 'gray', 'dark'] },
+    },
+    trustRadiusId: {
+      type: { name: 'string', required: true },
+      description: 'The ID of the product in the Trust Radius platform',
+    },
+  },
 };
 
 const Template: Story<TrustRadiusOwnProps> = (args) => (
