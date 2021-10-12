@@ -6,6 +6,7 @@
     "@emotion/react": "^11.4.1",
     "@storybook/addon-actions": "^6.3.9",
     "@storybook/addon-essentials": "^6.3.9",
+    "@storybook/addon-jest": "^6.3.10",
     "@storybook/addon-links": "^6.3.9",
     "@storybook/addons": "^6.3.9",
     "@storybook/node-logger": "^6.3.9",
@@ -49,11 +50,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test:ci": "yarn test --watchAll=false --coverage",
+    "test:generate-output": "yarn test --watchAll=false --coverage --json --outputFile=src/.jest-test-results.json || true",
     "lint": "eslint .",
     "lint:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|md)\" && yarn lint --fix",
     "lint:ci": "yarn lint -o reports/eslint/issues.json -f json",
     "lint-staged": "lint-staged",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "yarn test:generate-output; start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "prebuild:storybook": "yarn test:generate-output"
   }
 }

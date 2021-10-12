@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { MutableRefObject, useRef } from 'react';
+import React, { MutableRefObject } from 'react';
 import Slider, { Settings as SliderSettings } from 'react-slick';
 import { css, SerializedStyles } from '@emotion/react';
 import Card from './Card/Card';
