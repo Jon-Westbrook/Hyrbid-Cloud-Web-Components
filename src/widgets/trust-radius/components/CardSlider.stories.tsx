@@ -57,7 +57,7 @@ Default.args = {
   stars: true,
   theme: 'light',
   sliderSettings,
-  customSlider: { current: undefined },
+  setCustomSlider: (slider) => undefined,
 };
 
 export const TwoCols = Template.bind({});

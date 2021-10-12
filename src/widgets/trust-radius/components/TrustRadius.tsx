@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { ReactElement, useEffect, useRef } from 'react';
+import React, { ReactElement, useEffect, useRef, useState } from 'react';
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { TrustRadiusReducersMapper } from '../lib/redux/store';
@@ -63,8 +63,8 @@ export interface TrustRadiusReview {
 
 export type TrustRadiusProps = TrustRadiusOwnProps & StateProps & DispatchProps;
 export const TrustRadius: React.FC<TrustRadiusProps> = ({
-  palette,
-  useGoogleStars,
+  palette = 'light',
+  useGoogleStars = false,
   isLoading,
   isError,
   product,
@@ -72,7 +72,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
   onInit,
   onWindowResize,
 }) => {
-  const customSlider = useRef<Slider>();
+  const [customSlider, setCustomSlider] = useState<Slider>();
   useEffect(() => {
     product || onInit();
   }, [onInit, product]);
@@ -114,8 +114,8 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
         numRows={Math.ceil(
           product.reviews.length / (sliderSettings.slidesToShow || 1),
         )}
-        onPrevious={customSlider.current?.slickPrev || noop}
-        onNext={customSlider.current?.slickNext || noop}
+        onPrevious={customSlider?.slickPrev || noop}
+        onNext={customSlider?.slickNext || noop}
       >
         {dots}
       </CardSliderDots>
@@ -129,7 +129,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
       stars={useGoogleStars}
       theme={palette}
       sliderSettings={sliderSettings}
-      customSlider={customSlider}
+      setCustomSlider={setCustomSlider}
     />,
   );
 };

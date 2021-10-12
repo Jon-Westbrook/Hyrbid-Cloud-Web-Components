@@ -29,15 +29,11 @@ const fakeStore = Object.assign({}, store, {
 const stories = {
   component: TrustRadius,
   title: 'Trust Radius',
-  decorators: [
-    (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
-  ],
   argTypes: {
     palette: {
       type: { name: 'string', required: true },
       description:
         'Different color styles according to the IBM design guidelines.',
-      defaultValue: 'light',
       control: { type: 'select', options: ['light', 'gray', 'dark'] },
     },
     trustRadiusId: {
@@ -57,10 +53,16 @@ Default.args = {
   useGoogleStars: false,
   trustRadiusId: 'fake-trid',
 };
+Default.decorators = [
+  (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
+];
 
 export const DarkPalette = Template.bind({});
 DarkPalette.args = Object.assign({}, Default.args);
 DarkPalette.args.palette = 'dark';
+DarkPalette.decorators = [
+  (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
+];
 
 export const TwoCols = Template.bind({});
 TwoCols.args = Object.assign({}, Default.args);

@@ -21,7 +21,7 @@ export interface CardSliderProps {
   theme: IBMPalettes;
   /** Settings for the React Slick Slider project. */
   sliderSettings: SliderSettings;
-  customSlider: MutableRefObject<Slider | undefined>;
+  setCustomSlider: React.Dispatch<Slider>;
 }
 
 const CardSlider: React.FC<CardSliderProps> = ({
@@ -30,7 +30,7 @@ const CardSlider: React.FC<CardSliderProps> = ({
   stars,
   theme,
   sliderSettings,
-  customSlider,
+  setCustomSlider,
 }) => {
   const reviewUrl = `https://www.trustradius.com/products/${product.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
   const starsComponent = stars ? (
@@ -59,7 +59,10 @@ const CardSlider: React.FC<CardSliderProps> = ({
         <div className="ibm-grid-col-sm-4-4">
           <div className="cardContainer" css={styles.quidproquo}>
             <Slider
-              ref={(slider) => (customSlider.current = slider || undefined)}
+              ref={(slider) => {
+                slider && setCustomSlider(slider);
+                return slider;
+              }}
               {...sliderSettings}
             >
               {reviews.map(function (review, i) {
