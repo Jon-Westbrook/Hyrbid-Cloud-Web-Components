@@ -149,10 +149,7 @@ const mapDispatchToProps = (
   dispatch: ThunkDispatch<Record<string, any>, Record<string, any>, any>,
   ownProps: TrustRadiusOwnProps,
 ): DispatchProps => ({
-  onInit: async () => {
-    await dispatch(fetchProductDataAction(ownProps.trustRadiusId));
-    console.debug('Data has been fetched!');
-  },
+  onInit: async () => dispatch(fetchProductDataAction(ownProps.trustRadiusId)),
   onWindowResize: debounce(
     () => dispatch(windowResizeAction(window.innerWidth)),
     1000,
