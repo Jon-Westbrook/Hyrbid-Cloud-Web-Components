@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import React, { ReactElement, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
@@ -76,6 +77,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     product || onInit();
   }, [onInit, product]);
   useEffect(() => {
+    onWindowResize();
     window.addEventListener('resize', onWindowResize);
     return () => window.removeEventListener('resize', onWindowResize);
   }, [onWindowResize]);
@@ -127,6 +129,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
       stars={useGoogleStars}
       theme={palette}
       sliderSettings={sliderSettings}
+      customSlider={customSlider}
     />,
   );
 };

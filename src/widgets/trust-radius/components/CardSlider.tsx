@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { useRef } from 'react';
+import React, { MutableRefObject, useRef } from 'react';
 import Slider, { Settings as SliderSettings } from 'react-slick';
 import { css, SerializedStyles } from '@emotion/react';
 import Card from './Card/Card';
@@ -19,6 +19,7 @@ export interface CardSliderProps {
   stars: boolean;
   theme: IBMPalettes;
   sliderSettings: SliderSettings;
+  customSlider: MutableRefObject<Slider | undefined>;
 }
 
 const CardSlider: React.FC<CardSliderProps> = ({
@@ -27,8 +28,8 @@ const CardSlider: React.FC<CardSliderProps> = ({
   stars,
   theme,
   sliderSettings,
+  customSlider,
 }) => {
-  const customSlider = useRef<Slider>();
   const reviewUrl = `https://www.trustradius.com/products/${product.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
   const starsComponent = stars ? (
     <Googlestars
