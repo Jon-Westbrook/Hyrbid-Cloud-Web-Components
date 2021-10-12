@@ -1,13 +1,9 @@
 import React from 'react';
-import TrustRadius, {
-  TrustRadiusOwnProps,
-  TrustRadiusProps,
-} from './TrustRadius';
+import TrustRadius, { TrustRadiusOwnProps } from './TrustRadius';
 import { Story } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import { action as storybookAction } from '@storybook/addon-actions';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { FetchStatusEnum } from '../lib/redux/store';
+import store, { FetchStatusEnum } from '../lib/redux/store';
 
 import apiResponse from './api-data-example.json';
 import { normalizeProductData } from '../lib/redux/reducers/setProductReducer';
@@ -21,21 +17,15 @@ const defaultState = {
   prods: { products },
 };
 
-const createFakeStore = (state: any) => {
-  const fakeStore = createStore(() => state);
-  fakeStore.dispatch = (act) => {
-    action('dispatch');
-    return act;
-  };
-  return fakeStore;
-};
+const fakeStore = Object.assign({}, store, {
+  getState: () => defaultState,
+});
 
-const defaultFakeStore = createFakeStore.bind({})(defaultState);
 const stories = {
   component: TrustRadius,
   title: 'Trust Radius',
   decorators: [
-    (story: any) => <Provider store={defaultFakeStore}>{story()}</Provider>,
+    (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
   ],
 };
 
@@ -56,9 +46,11 @@ DarkPalette.args.palette = 'dark';
 
 export const TwoCols = Template.bind({});
 TwoCols.args = Object.assign({}, Default.args);
-const twoColsFakeStore = createFakeStore.bind({})({
-  ...defaultState,
-  cols: { numCols: 2 },
+const twoColsFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({
+    ...defaultState,
+    cols: { numCols: 2 },
+  }),
 });
 TwoCols.decorators = [
   (story) => <Provider store={twoColsFakeStore}>{story()}</Provider>,
@@ -66,9 +58,11 @@ TwoCols.decorators = [
 
 export const OneCol = Template.bind({});
 OneCol.args = Object.assign({}, Default.args);
-const oneColFakeStore = createFakeStore.bind({})({
-  ...defaultState,
-  cols: { numCols: 1 },
+const oneColFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({
+    ...defaultState,
+    cols: { numCols: 1 },
+  }),
 });
 OneCol.decorators = [
   (story) => <Provider store={oneColFakeStore}>{story()}</Provider>,
@@ -76,18 +70,22 @@ OneCol.decorators = [
 
 export const Loading = Template.bind({});
 Loading.args = Object.assign({}, Default.args);
-const loadingFakeStore = createFakeStore.bind({})({
-  ...defaultState,
-  status: { fetchStatus: FetchStatusEnum.IN_PROGRESS },
+const loadingFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({
+    ...defaultState,
+    status: { fetchStatus: FetchStatusEnum.IN_PROGRESS },
+  }),
 });
 Loading.decorators = [
   (story) => <Provider store={loadingFakeStore}>{story()}</Provider>,
 ];
 
 export const FailedRequest = Template.bind({});
-const failedFakeStore = createFakeStore.bind({})({
-  ...defaultState,
-  status: { fetchStatus: FetchStatusEnum.FAILURE },
+const failedFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({
+    ...defaultState,
+    status: { fetchStatus: FetchStatusEnum.FAILURE },
+  }),
 });
 FailedRequest.decorators = [
   (story) => <Provider store={failedFakeStore}>{story()}</Provider>,

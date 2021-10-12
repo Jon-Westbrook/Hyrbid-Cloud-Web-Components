@@ -76,7 +76,6 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     product || onInit();
   }, [onInit, product]);
   useEffect(() => {
-    onWindowResize();
     window.addEventListener('resize', onWindowResize);
     return () => window.removeEventListener('resize', onWindowResize);
   }, [onWindowResize]);
@@ -154,8 +153,10 @@ const mapDispatchToProps = (
     await dispatch(fetchProductDataAction(ownProps.trustRadiusId));
     console.debug('Data has been fetched!');
   },
-  onWindowResize: () =>
-    debounce(() => dispatch(windowResizeAction(window.innerWidth)), 1000),
+  onWindowResize: debounce(
+    () => dispatch(windowResizeAction(window.innerWidth)),
+    1000,
+  ),
 });
 
 const styles: Record<string, SerializedStyles> = {
