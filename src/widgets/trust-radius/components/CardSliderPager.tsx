@@ -1,22 +1,20 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardSliderPagerProps {
   pageNumber: number;
 }
 
 const CardSliderPager: React.FC<CardSliderPagerProps> = ({ pageNumber }) => (
-  <div className="page" css={styles.pager}>
+  <div
+    className="page"
+    style={{
+      width: '30px',
+      border: '0px blue solid',
+    }}
+  >
     {pageNumber + 1}
   </div>
 );
-
-const styles: Record<string, SerializedStyles> = {
-  pager: css`
-    width: '30px';
-    border: '0px blue solid';
-  `,
-};
 
 export default CardSliderPager;

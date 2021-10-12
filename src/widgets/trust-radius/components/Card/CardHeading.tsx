@@ -19,9 +19,7 @@ const styles: Record<string, SerializedStyles> = {
     height: 75px;
     color: #282828;
     font-family: 'IBM Plex Sans';
-    font-size: 20px;
     letter-spacing: 0;
-    line-height: 26px;
   `,
 };
 export default CardHeading;

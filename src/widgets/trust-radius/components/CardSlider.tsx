@@ -105,7 +105,7 @@ const styles: Record<string, SerializedStyles> = {
     font-family: 'IBM Plex Sans';
     &:after {
       font-family: icons-ibm-v12;
-      content: '\f1ac';
+      content: '';
       font-size: 15px;
       top: 1px;
       position: relative;

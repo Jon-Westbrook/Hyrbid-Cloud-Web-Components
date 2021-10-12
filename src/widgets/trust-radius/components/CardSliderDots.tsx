@@ -16,6 +16,7 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
 }) => {
   return (
     <div
+      className="slick-dots"
       style={{
         color: '#000',
         backgroundColor: '#f3f4f8',
@@ -31,15 +32,17 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
           onClick={() => onPrevious()}
         />
         <ul css={styles.numlist} className="body-short-01">
-          {' '}
-          {children}{' '}
+          {children}
         </ul>
         <ul className="body-short-01" css={styles.numlist}>
-          {' '}
-          /{' '}
-        </ul>{' '}
+          <div className="page" style={{ width: '6px' }}>
+            /
+          </div>
+        </ul>
         <ul css={styles.numlist} className="body-short-01">
-          &nbsp; {numRows} &nbsp;
+          <div className="page" style={{ width: '30px' }}>
+            {numRows}
+          </div>
         </ul>
         <button
           className="button ibm-btn-small"
@@ -72,7 +75,7 @@ const styles: Record<string, SerializedStyles> = {
     border: 0px;
     &:after {
       font-family: icons-ibm-v12;
-      content: '\f1c3';
+      content: '';
     }
     & :hover {
       background-color: #0f62fe;
@@ -99,7 +102,7 @@ const styles: Record<string, SerializedStyles> = {
     left: 10px;
     &:after {
       font-family: icons-ibm-v12;
-      content: '\f1ce';
+      content: '';
     }
     &:hover {
       color: #fff;

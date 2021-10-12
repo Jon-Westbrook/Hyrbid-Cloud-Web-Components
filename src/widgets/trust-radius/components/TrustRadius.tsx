@@ -177,12 +177,63 @@ const styles: Record<string, SerializedStyles> = {
   `,
   light: css`
     background-color: #f2f4f8;
+    .ibm-card {
+      border: 1px solid #f4f4f4;
+    }
+    .page {
+      color: #000;
+    }
   `,
   dark: css`
     background-color: #161616;
+    & .slick-dots {
+      background-color: #161616 !important;
+    }
+    .ibm-card {
+      color: #f3f3f3;
+      border: 1px solid #161616;
+      background: #252525;
+      &:hover {
+        background-color: #353535;
+      }
+    }
+    .ibm-ind-link,
+    .navdiv,
+    .cardContainer {
+      background-color: #161616;
+    }
+    .headlink,
+    .heading,
+    .content,
+    .ibm-card__content,
+    .body-short-01,
+    .page {
+      color: #f3f3f3;
+    }
+    .caption-01,
+    .footer {
+      color: #c6c6c6;
+    }
+    .ibm-rule,
+    .ibm-rule hr {
+      border-top: 1px solid #565656;
+    }
   `,
   gray: css`
     background-color: #fff;
+    & .slick-dots {
+      background-color: #161616 !important;
+    }
+    .ibm-card {
+      border: 1px solid #fff;
+      background: #f2f4f8;
+    }
+    .cardContainer {
+      background-color: #f2f4f8;
+    }
+    .page {
+      color: #000;
+    }
   `,
   message: css`
     height: 100px;
