@@ -74,7 +74,6 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
   onWindowResize,
 }) => {
   const [customSlider, setCustomSlider] = useState<Slider>();
-  console.debug(palette);
   useEffect(() => {
     product || onInit();
   }, [onInit, product]);
