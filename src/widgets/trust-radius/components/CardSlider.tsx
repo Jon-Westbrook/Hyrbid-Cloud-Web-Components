@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { MutableRefObject } from 'react';
+import React from 'react';
 import Slider, { Settings as SliderSettings } from 'react-slick';
 import { css, SerializedStyles } from '@emotion/react';
 import Card from './Card/Card';
@@ -93,12 +93,66 @@ const CardSlider: React.FC<CardSliderProps> = ({
 const styles: Record<string, SerializedStyles> = {
   light: css`
     background-color: #f2f4f8;
+    .ibm-card {
+      border: 1px solid #f4f4f4;
+    }
+    .slick-dots {
+      .navdiv {
+        background-color: #f2f4f8;
+      }
+    }
+    .page {
+      color: #000;
+    }
   `,
   dark: css`
     background-color: #161616;
+    .ibm-card {
+      color: #f3f3f3;
+      border: 1px solid #161616;
+      background: #252525;
+      &:hover {
+        background-color: #353535;
+      }
+    }
+    .slick-dots {
+      background-color: #161616 !important;
+      .navdiv {
+        background-color: #161616;
+      }
+    }
+    .page {
+      color: #f3f3f3;
+    }
+    .heading,
+    .content,
+    .caption-01,
+    .footer,
+    .headlink {
+      color: #c6c6c6;
+    }
+    .ibm-ind-link {
+      background-color: #161616;
+    }
   `,
   gray: css`
     background-color: #fff;
+    .ibm-card {
+      border: 1px solid #fff;
+      background: #f2f4f8;
+    }
+    .slick-dots {
+      background-color: #161616 !important;
+      .navdiv {
+        background-color: #f2f4f8;
+      }
+    }
+    .page {
+      color: #000;
+    }
+    .cardContainer {
+      background-color: #f2f4f8;
+    }
   `,
   readlink: css`
     margin-left: 55px;

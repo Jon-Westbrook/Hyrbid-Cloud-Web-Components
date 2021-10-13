@@ -18,16 +18,7 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
   onNext,
 }) => {
   return (
-    <div
-      className="slick-dots"
-      style={{
-        color: '#000',
-        backgroundColor: '#f3f4f8',
-        borderRadius: '0px',
-        padding: '10px',
-        border: '0px',
-      }}
-    >
+    <div className="slick-dots" css={styles.dots}>
       <div css={styles.navdiv} className="navdiv">
         <button
           className="button ibm-btn-small"
@@ -58,12 +49,17 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
 };
 
 const styles: Record<string, SerializedStyles> = {
+  dots: css`
+    color: #000;
+    border-radius: 0px;
+    padding: 10px;
+    border: 0px;
+  `,
   navdiv: css`
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #f2f4f8;
   `,
   next: css`
     width: 40px;
