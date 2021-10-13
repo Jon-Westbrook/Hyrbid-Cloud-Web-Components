@@ -82,27 +82,27 @@ Dark.decorators = [
   (story: any) => <Provider store={darkFakeStore}>{story()}</Provider>,
 ];
 
-export const TwoCols = Template.bind({});
-TwoCols.args = Object.assign({}, Default.args);
+export const TwoColumns = Template.bind({});
+TwoColumns.args = Object.assign({}, Default.args);
 const twoColsFakeStore = Object.assign({}, fakeStore, {
   getState: () => ({
     ...defaultState,
     cols: { numCols: 2 },
   }),
 });
-TwoCols.decorators = [
+TwoColumns.decorators = [
   (story) => <Provider store={twoColsFakeStore}>{story()}</Provider>,
 ];
 
-export const OneCol = Template.bind({});
-OneCol.args = Object.assign({}, Default.args);
+export const OneColumn = Template.bind({});
+OneColumn.args = Object.assign({}, Default.args);
 const oneColFakeStore = Object.assign({}, fakeStore, {
   getState: () => ({
     ...defaultState,
     cols: { numCols: 1 },
   }),
 });
-OneCol.decorators = [
+OneColumn.decorators = [
   (story) => <Provider store={oneColFakeStore}>{story()}</Provider>,
 ];
 

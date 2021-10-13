@@ -92,21 +92,21 @@ Dark.decorators = [
   (story) => <Provider store={darkFakeStore}>{story()}</Provider>,
 ];
 
-export const TwoCols = Template.bind({});
-TwoCols.args = Object.assign({}, Default.args);
-TwoCols.decorators = Array.from(Default.decorators);
-TwoCols.args.stars = false;
-TwoCols.args.sliderSettings = {
+export const TwoColumns = Template.bind({});
+TwoColumns.args = Object.assign({}, Default.args);
+TwoColumns.decorators = Array.from(Default.decorators);
+TwoColumns.args.stars = false;
+TwoColumns.args.sliderSettings = {
   ...sliderSettings,
   slidesToShow: 2,
   slidesToScroll: 2,
 };
 
-export const OneCols = Template.bind({});
-OneCols.args = Object.assign({}, Default.args);
-OneCols.decorators = Array.from(Default.decorators);
-OneCols.args.stars = false;
-OneCols.args.sliderSettings = {
+export const OneColumn = Template.bind({});
+OneColumn.args = Object.assign({}, Default.args);
+OneColumn.decorators = Array.from(Default.decorators);
+OneColumn.args.stars = false;
+OneColumn.args.sliderSettings = {
   ...sliderSettings,
   slidesToShow: 1,
   slidesToScroll: 1,
