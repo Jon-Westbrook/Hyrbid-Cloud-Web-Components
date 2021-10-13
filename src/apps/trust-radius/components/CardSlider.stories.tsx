@@ -1,5 +1,5 @@
 import React from 'react';
-import { PureCardSlider as CardSlider, CardSliderProps } from './CardSlider';
+import CardSlider, { CardSliderProps } from './CardSlider';
 import { Story } from '@storybook/react';
 import { action, action as storybookAction } from '@storybook/addon-actions';
 import CardSliderDots from './CardSliderDots';

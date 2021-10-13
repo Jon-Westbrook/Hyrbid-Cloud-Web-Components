@@ -31,18 +31,6 @@ const fakeStore = Object.assign({}, store, {
 const stories = {
   component: TrustRadius,
   title: 'Trust Radius',
-  argTypes: {
-    palette: {
-      type: { name: 'string', required: true },
-      description:
-        'Different color styles according to the IBM design guidelines.',
-      control: { type: 'select', options: ['light', 'gray', 'dark'] },
-    },
-    trustRadiusId: {
-      type: { name: 'string', required: true },
-      description: 'The ID of the product in the Trust Radius platform',
-    },
-  },
 };
 
 const Template: Story<TrustRadiusOwnProps> = (args) => (

@@ -12,7 +12,7 @@ import { connect } from 'react-redux';
 
 interface StateProps {
   /** Different color styles according to the IBM design guidelines. */
-  theme?: CarbonThemes;
+  theme: CarbonThemes;
 }
 
 interface CardSliderOwnProps {
@@ -30,7 +30,7 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
   reviews,
   product,
   stars,
-  theme = CarbonThemes.WHITE,
+  theme,
   sliderSettings,
   setCustomSlider,
 }) => {
