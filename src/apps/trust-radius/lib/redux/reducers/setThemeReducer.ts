@@ -1,6 +1,6 @@
 import { Reducer } from 'redux';
 import { TrustRadiusActionSetTheme } from '../actions/setThemeAction';
-import { CarbonThemes } from '../../../../common';
+import { CarbonThemes } from '../../../../../types/carbon';
 
 export interface TrustRadiusStateTheme {
   theme: CarbonThemes;

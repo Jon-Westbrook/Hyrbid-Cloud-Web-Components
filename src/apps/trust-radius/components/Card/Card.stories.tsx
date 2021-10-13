@@ -2,6 +2,19 @@ import React from 'react';
 
 import Card, { CardProps } from './Card';
 import { Story } from '@storybook/react';
+import { CarbonThemes } from '../../../../types/carbon';
+import store from '../../lib/redux/store';
+import { AnyAction } from 'redux';
+import { action as storybookAction } from '@storybook/addon-actions';
+import { Provider } from 'react-redux';
+
+const fakeStore = Object.assign({}, store, {
+  getState: () => ({ palette: { theme: CarbonThemes.WHITE } }),
+  dispatch: (action: AnyAction): AnyAction => {
+    storybookAction('dispatch');
+    return action;
+  },
+});
 
 const stories = {
   component: Card,
@@ -36,13 +49,27 @@ Default.args = {
     },
     position: { title: 'Manager - IT' },
   },
-  theme: 'light',
 };
+Default.decorators = [
+  (story) => <Provider store={fakeStore}>{story()}</Provider>,
+];
 
 export const Gray = Template.bind({});
-Gray.args = { ...Default.args, theme: 'gray' };
+Gray.args = Object.assign({}, Default.args);
+const grayFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({ palette: { theme: CarbonThemes.GRAY_10 } }),
+});
+Gray.decorators = [
+  (story) => <Provider store={grayFakeStore}>{story()}</Provider>,
+];
 
 export const Dark = Template.bind({});
-Dark.args = { ...Default.args, theme: 'dark' };
+Dark.args = Object.assign({}, Default.args);
+const darkFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({ palette: { theme: CarbonThemes.GRAY_100 } }),
+});
+Dark.decorators = [
+  (story) => <Provider store={darkFakeStore}>{story()}</Provider>,
+];
 
 export default stories;

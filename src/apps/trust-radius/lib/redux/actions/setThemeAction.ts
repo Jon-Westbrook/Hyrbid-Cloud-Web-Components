@@ -1,4 +1,4 @@
-import { CarbonThemes } from '../../../../common';
+import { CarbonThemes } from '../../../../../types/carbon';
 import { Action } from 'redux';
 
 export interface TrustRadiusActionSetTheme extends Action<'SET_THEME'> {

@@ -6,29 +6,31 @@ import Card from './Card/Card';
 import EmptyCard from './Card/EmptyCard';
 import Googlestars from './Card/Googlestars';
 import SliderHeading from './SliderHeading';
-import {
-  IBMPalettes,
-  TrustRadiusPersonalReview,
-  TrustRadiusReview,
-} from './TrustRadius';
+import { TrustRadiusPersonalReview, TrustRadiusReview } from './TrustRadius';
+import { CarbonThemes } from '../../../types/carbon';
+import { connect } from 'react-redux';
 
-export interface CardSliderProps {
+interface StateProps {
+  /** Different color styles according to the IBM design guidelines. */
+  theme?: CarbonThemes;
+}
+
+interface CardSliderOwnProps {
   reviews: TrustRadiusReview[];
   product: TrustRadiusPersonalReview;
   /** True if the component should include the Google Stars metadata. */
   stars: boolean;
-  /** Different color styles according to the IBM design guidelines. */
-  theme: IBMPalettes;
   /** Settings for the React Slick Slider project. */
   sliderSettings: SliderSettings;
   setCustomSlider: React.Dispatch<Slider>;
 }
 
-const CardSlider: React.FC<CardSliderProps> = ({
+export type CardSliderProps = CardSliderOwnProps & StateProps;
+export const PureCardSlider: React.FC<CardSliderProps> = ({
   reviews,
   product,
   stars,
-  theme,
+  theme = CarbonThemes.WHITE,
   sliderSettings,
   setCustomSlider,
 }) => {
@@ -45,7 +47,7 @@ const CardSlider: React.FC<CardSliderProps> = ({
   return (
     <div
       css={[styles.widget, styles[theme]]}
-      className="Widget ibm-grid-seamless ibm-background-gray-20"
+      className="Widget ibm-grid-seamless"
     >
       {starsComponent}
       <SliderHeading reviewUrl={reviewUrl}>
@@ -67,7 +69,7 @@ const CardSlider: React.FC<CardSliderProps> = ({
             >
               {reviews.map(function (review, i) {
                 return review.quotes.length ? (
-                  <Card review={review} theme={theme} key={`card-${i}`} />
+                  <Card review={review} key={`card-${i}`} />
                 ) : (
                   <EmptyCard />
                 );
@@ -91,7 +93,7 @@ const CardSlider: React.FC<CardSliderProps> = ({
 };
 
 const styles: Record<string, SerializedStyles> = {
-  light: css`
+  WHITE: css`
     background-color: #f2f4f8;
     .slick-dots {
       .navdiv {
@@ -102,7 +104,7 @@ const styles: Record<string, SerializedStyles> = {
       color: #000;
     }
   `,
-  gray: css`
+  GRAY_10: css`
     background-color: #fff;
     .slick-dots {
       background-color: #161616 !important;
@@ -117,7 +119,7 @@ const styles: Record<string, SerializedStyles> = {
       background-color: #f2f4f8;
     }
   `,
-  dark: css`
+  GRAY_100: css`
     background-color: #161616;
     .slick-dots {
       background-color: #161616 !important;
@@ -182,4 +184,12 @@ const styles: Record<string, SerializedStyles> = {
   `,
 };
 
-export default CardSlider;
+export default connect<
+  StateProps,
+  Record<string, never>,
+  CardSliderOwnProps,
+  { palette: { theme: CarbonThemes } }
+>(
+  (states) => ({ theme: states?.palette?.theme }),
+  () => ({}),
+)(PureCardSlider);

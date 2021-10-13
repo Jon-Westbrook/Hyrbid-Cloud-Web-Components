@@ -8,6 +8,7 @@ import store, { FetchStatusEnum } from '../lib/redux/store';
 
 import apiResponse from './api-data-example.json';
 import { normalizeProductData } from '../lib/redux/reducers/setProductReducer';
+import { CarbonThemes } from '../../../types/carbon';
 
 const products = {
   'fake-trid': normalizeProductData(apiResponse),
@@ -16,6 +17,7 @@ const defaultState = {
   status: { fetchStatus: FetchStatusEnum.READY },
   cols: { numCols: 4 },
   prods: { products },
+  palette: { theme: CarbonThemes.WHITE },
 };
 
 const fakeStore = Object.assign({}, store, {
@@ -49,7 +51,6 @@ const Template: Story<TrustRadiusOwnProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  palette: 'light',
   useGoogleStars: false,
   trustRadiusId: 'fake-trid',
 };
@@ -59,16 +60,26 @@ Default.decorators = [
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
-Gray.args.palette = 'dark';
+const grayFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({
+    ...defaultState,
+    palette: { theme: CarbonThemes.GRAY_10 },
+  }),
+});
 Gray.decorators = [
-  (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
+  (story: any) => <Provider store={grayFakeStore}>{story()}</Provider>,
 ];
 
 export const Dark = Template.bind({});
 Dark.args = Object.assign({}, Default.args);
-Dark.args.palette = 'dark';
+const darkFakeStore = Object.assign({}, fakeStore, {
+  getState: () => ({
+    ...defaultState,
+    palette: { theme: CarbonThemes.GRAY_100 },
+  }),
+});
 Dark.decorators = [
-  (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
+  (story: any) => <Provider store={darkFakeStore}>{story()}</Provider>,
 ];
 
 export const TwoCols = Template.bind({});

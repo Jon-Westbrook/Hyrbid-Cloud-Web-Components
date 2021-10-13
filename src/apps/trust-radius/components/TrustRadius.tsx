@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { ReactElement, useEffect, useRef, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { TrustRadiusReducersMapper } from '../lib/redux/store';
@@ -13,12 +13,12 @@ import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
 import CardSlider from './CardSlider';
 import Slider from 'react-slick';
+import { CarbonThemes } from '../../../types/carbon';
 
 export type IBMPalettes = 'light' | 'gray' | 'dark';
 export type HOF<T> = (input: T) => T;
 
 export interface TrustRadiusOwnProps {
-  palette: IBMPalettes;
   useGoogleStars: boolean;
   trustRadiusId: string;
 }
@@ -28,6 +28,7 @@ interface StateProps {
   isError: boolean;
   product: TrustRadiusStateProduct;
   numCols: 1 | 2 | 4;
+  palette: CarbonThemes;
 }
 
 interface DispatchProps {
@@ -62,8 +63,8 @@ export interface TrustRadiusReview {
 }
 
 export type TrustRadiusProps = TrustRadiusOwnProps & StateProps & DispatchProps;
-export const TrustRadius: React.FC<TrustRadiusProps> = ({
-  palette = 'light',
+export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
+  palette = CarbonThemes.WHITE,
   useGoogleStars = false,
   isLoading,
   isError,
@@ -73,6 +74,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
   onWindowResize,
 }) => {
   const [customSlider, setCustomSlider] = useState<Slider>();
+  console.debug(palette);
   useEffect(() => {
     product || onInit();
   }, [onInit, product]);
@@ -127,7 +129,6 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
       product={product.product}
       reviews={product.reviews}
       stars={useGoogleStars}
-      theme={palette}
       sliderSettings={sliderSettings}
       setCustomSlider={setCustomSlider}
     />,
@@ -145,6 +146,7 @@ const mapStateToProps = (
     isError: states.status.fetchStatus === 'FAILURE',
     product: states.prods.products[ownProps.trustRadiusId],
     numCols: states?.cols?.numCols,
+    palette: states?.palette.theme,
   };
 };
 
@@ -175,13 +177,13 @@ const styles: Record<string, SerializedStyles> = {
     max-width: 1584px;
     margin: 0 auto;
   `,
-  light: css`
+  WHITE: css`
     background-color: #f2f4f8;
   `,
-  gray: css`
+  GRAY_10: css`
     background-color: #fff;
   `,
-  dark: css`
+  GRAY_100: css`
     background-color: #161616;
     .cardContainer {
       background-color: #161616;
@@ -203,4 +205,4 @@ export default connect<
 >(
   mapStateToProps,
   mapDispatchToProps,
-)(TrustRadius);
+)(PureTrustRadius);

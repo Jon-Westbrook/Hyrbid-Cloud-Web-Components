@@ -1,13 +1,13 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { IBMPalettes } from './TrustRadius';
 import { css, SerializedStyles } from '@emotion/react';
+import { CarbonThemes } from '../../../types/carbon';
 
 export interface CardSliderPagerProps {
   /** The current page number. */
   pageNumber: number;
   /** Different color styles according to the IBM design guidelines. */
-  theme?: IBMPalettes;
+  theme?: CarbonThemes;
 }
 
 const CardSliderPager: React.FC<CardSliderPagerProps> = ({ pageNumber }) => (

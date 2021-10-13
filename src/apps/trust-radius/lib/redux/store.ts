@@ -10,7 +10,7 @@ import windowResizeReducer, {
 import setProductReducer, {
   TrustRadiusStateProducts,
 } from './reducers/setProductReducer';
-import { CarbonThemes } from '../../../common';
+import { CarbonThemes } from '../../../../types/carbon';
 import setThemeReducer, {
   TrustRadiusStateTheme,
 } from './reducers/setThemeReducer';

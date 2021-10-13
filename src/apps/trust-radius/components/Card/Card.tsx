@@ -4,16 +4,20 @@ import { css, SerializedStyles } from '@emotion/react';
 import CardHeading from './CardHeading';
 import CardFooter from './CardFooter';
 import CardBody from './CardBody';
-import { IBMPalettes, TrustRadiusReview } from '../TrustRadius';
+import { TrustRadiusReview } from '../TrustRadius';
+import { CarbonThemes } from '../../../../types/carbon';
+import { useSelector } from 'react-redux';
+import { TrustRadiusReducersMapper } from '../../lib/redux/store';
 
 export interface CardProps {
   /** Data for the review */
   review: TrustRadiusReview;
-  /** Different color styles according to the IBM design guidelines. */
-  theme: IBMPalettes;
 }
 
-const Card: React.FC<CardProps> = ({ review, theme = 'light' }) => {
+const Card: React.FC<CardProps> = ({ review }) => {
+  const theme = useSelector<TrustRadiusReducersMapper, CarbonThemes>(
+    (state) => state?.palette?.theme,
+  );
   const cardUrl = 'https://www.trustradius.com/reviews/';
   const mainQuote = review.quotes[0];
   return (
@@ -54,14 +58,14 @@ const Card: React.FC<CardProps> = ({ review, theme = 'light' }) => {
 };
 
 export const cardStyles: Record<string, SerializedStyles> = {
-  light: css`
+  WHITE: css`
     border: 1px solid #f4f4f4;
   `,
-  gray: css`
+  GRAY_10: css`
     border: 1px solid #fff;
     background: #f2f4f8;
   `,
-  dark: css`
+  GRAY_100: css`
     color: #f3f3f3;
     border: 1px solid #161616;
     background: #252525;
