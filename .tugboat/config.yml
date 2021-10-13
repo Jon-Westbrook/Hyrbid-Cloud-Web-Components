@@ -5,6 +5,7 @@ services:
       init:
         - curl -sL https://deb.nodesource.com/setup_16.x | sh
         - apt-get install -y nodejs
+        - npm install --global yarn
         - mkdir "${TUGBOAT_ROOT}/docroot"
         - ln -snf "${TUGBOAT_ROOT}/docroot/www" "${DOCROOT}"
         - ln -snf "${TUGBOAT_ROOT}/www" "${TUGBOAT_ROOT}/docroot/www"
