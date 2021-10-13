@@ -9,7 +9,7 @@ import { CarbonThemes } from '../../../../types/carbon';
 import { connect } from 'react-redux';
 
 interface StateProps {
-  theme: CarbonThemes;
+  theme?: CarbonThemes;
 }
 
 interface CardOwnProps {
@@ -18,7 +18,10 @@ interface CardOwnProps {
 }
 
 export type CardProps = CardOwnProps & StateProps;
-export const PureCard: React.FC<CardProps> = ({ review, theme }) => {
+export const PureCard: React.FC<CardProps> = ({
+  review,
+  theme = CarbonThemes.WHITE,
+}) => {
   const cardUrl = 'https://www.trustradius.com/reviews/';
   const mainQuote = review.quotes[0];
   return (
