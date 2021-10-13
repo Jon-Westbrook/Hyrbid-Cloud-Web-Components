@@ -55,8 +55,7 @@
     "lint:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|md)\" && yarn lint --fix",
     "lint:ci": "yarn lint -o reports/eslint/issues.json -f json",
     "lint-staged": "lint-staged",
-    "storybook": "yarn test:generate-output; start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "prebuild:storybook": "yarn test:generate-output"
+    "storybook": "yarn test:generate-output || true; start-storybook -p 6006 -s public",
+    "storybook:build": "yarn test:generate-output || true; build-storybook -s public"
   }
 }
