@@ -60,13 +60,13 @@ Default.args = {
   setCustomSlider: (slider) => undefined,
 };
 
-export const Dark = Template.bind({});
-Dark.args = Object.assign({}, Default.args);
-Dark.args.theme = 'dark';
-
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
 Gray.args.theme = 'gray';
+
+export const Dark = Template.bind({});
+Dark.args = Object.assign({}, Default.args);
+Dark.args.theme = 'dark';
 
 export const TwoCols = Template.bind({});
 TwoCols.args = Object.assign({}, Default.args);

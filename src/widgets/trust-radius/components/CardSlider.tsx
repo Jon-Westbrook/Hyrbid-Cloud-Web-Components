@@ -67,7 +67,7 @@ const CardSlider: React.FC<CardSliderProps> = ({
             >
               {reviews.map(function (review, i) {
                 return review.quotes.length ? (
-                  <Card review={review} key={`card-${i}`} />
+                  <Card review={review} theme={theme} key={`card-${i}`} />
                 ) : (
                   <EmptyCard />
                 );
@@ -93,9 +93,6 @@ const CardSlider: React.FC<CardSliderProps> = ({
 const styles: Record<string, SerializedStyles> = {
   light: css`
     background-color: #f2f4f8;
-    .ibm-card {
-      border: 1px solid #f4f4f4;
-    }
     .slick-dots {
       .navdiv {
         background-color: #f2f4f8;
@@ -105,42 +102,8 @@ const styles: Record<string, SerializedStyles> = {
       color: #000;
     }
   `,
-  dark: css`
-    background-color: #161616;
-    .ibm-card {
-      color: #f3f3f3;
-      border: 1px solid #161616;
-      background: #252525;
-      &:hover {
-        background-color: #353535;
-      }
-    }
-    .slick-dots {
-      background-color: #161616 !important;
-      .navdiv {
-        background-color: #161616;
-      }
-    }
-    .page {
-      color: #f3f3f3;
-    }
-    .heading,
-    .content,
-    .caption-01,
-    .footer,
-    .headlink {
-      color: #c6c6c6;
-    }
-    .ibm-ind-link {
-      background-color: #161616;
-    }
-  `,
   gray: css`
     background-color: #fff;
-    .ibm-card {
-      border: 1px solid #fff;
-      background: #f2f4f8;
-    }
     .slick-dots {
       background-color: #161616 !important;
       .navdiv {
@@ -152,6 +115,26 @@ const styles: Record<string, SerializedStyles> = {
     }
     .cardContainer {
       background-color: #f2f4f8;
+    }
+  `,
+  dark: css`
+    background-color: #161616;
+    .slick-dots {
+      background-color: #161616 !important;
+      .navdiv {
+        background-color: #161616;
+      }
+    }
+    .page {
+      color: #f3f3f3;
+    }
+    .heading,
+    .footer,
+    .headlink {
+      color: #c6c6c6;
+    }
+    .ibm-ind-link {
+      background-color: #161616;
     }
   `,
   readlink: css`

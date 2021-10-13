@@ -57,10 +57,17 @@ Default.decorators = [
   (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
 ];
 
-export const DarkPalette = Template.bind({});
-DarkPalette.args = Object.assign({}, Default.args);
-DarkPalette.args.palette = 'dark';
-DarkPalette.decorators = [
+export const Gray = Template.bind({});
+Gray.args = Object.assign({}, Default.args);
+Gray.args.palette = 'dark';
+Gray.decorators = [
+  (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
+];
+
+export const Dark = Template.bind({});
+Dark.args = Object.assign({}, Default.args);
+Dark.args.palette = 'dark';
+Dark.decorators = [
   (story: any) => <Provider store={fakeStore}>{story()}</Provider>,
 ];
 

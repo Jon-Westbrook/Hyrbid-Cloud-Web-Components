@@ -178,22 +178,14 @@ const styles: Record<string, SerializedStyles> = {
   light: css`
     background-color: #f2f4f8;
   `,
+  gray: css`
+    background-color: #fff;
+  `,
   dark: css`
     background-color: #161616;
     .cardContainer {
       background-color: #161616;
     }
-    .ibm-card__content,
-    .body-short-01 {
-      color: #c6c6c6;
-    }
-    .ibm-rule,
-    .ibm-rule hr {
-      border-top: 1px solid #565656;
-    }
-  `,
-  gray: css`
-    background-color: #fff;
   `,
   message: css`
     height: 100px;

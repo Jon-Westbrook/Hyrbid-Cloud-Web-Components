@@ -36,6 +36,13 @@ Default.args = {
     },
     position: { title: 'Manager - IT' },
   },
+  theme: 'light',
 };
+
+export const Gray = Template.bind({});
+Gray.args = { ...Default.args, theme: 'gray' };
+
+export const Dark = Template.bind({});
+Dark.args = { ...Default.args, theme: 'dark' };
 
 export default stories;

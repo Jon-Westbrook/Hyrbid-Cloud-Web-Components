@@ -4,14 +4,16 @@ import { css, SerializedStyles } from '@emotion/react';
 import CardHeading from './CardHeading';
 import CardFooter from './CardFooter';
 import CardBody from './CardBody';
-import { TrustRadiusReview } from '../TrustRadius';
+import { IBMPalettes, TrustRadiusReview } from '../TrustRadius';
 
 export interface CardProps {
   /** Data for the review */
   review: TrustRadiusReview;
+  /** Different color styles according to the IBM design guidelines. */
+  theme: IBMPalettes;
 }
 
-const Card: React.FC<CardProps> = ({ review }) => {
+const Card: React.FC<CardProps> = ({ review, theme = 'light' }) => {
   const cardUrl = 'https://www.trustradius.com/reviews/';
   const mainQuote = review.quotes[0];
   return (
@@ -21,7 +23,10 @@ const Card: React.FC<CardProps> = ({ review }) => {
         href={cardUrl + mainQuote.review.slug}
         target="_new"
       >
-        <div className="ibm-card" css={cardStyles.cardheight}>
+        <div
+          className="ibm-card"
+          css={[cardStyles.cardheight, cardStyles[theme]]}
+        >
           <div className="ibm-card__content" css={cardStyles.cardcontent}>
             <CardHeading text={mainQuote.review.heading} />
             <CardBody
@@ -49,6 +54,38 @@ const Card: React.FC<CardProps> = ({ review }) => {
 };
 
 export const cardStyles: Record<string, SerializedStyles> = {
+  light: css`
+    border: 1px solid #f4f4f4;
+  `,
+  gray: css`
+    border: 1px solid #fff;
+    background: #f2f4f8;
+  `,
+  dark: css`
+    color: #f3f3f3;
+    border: 1px solid #161616;
+    background: #252525;
+    &:hover {
+      background-color: #353535;
+    }
+    .ibm-card__content,
+    .body-short-01 {
+      color: #c6c6c6;
+    }
+    .ibm-rule,
+    .ibm-rule hr {
+      border-top: 1px solid #565656;
+    }
+    .heading,
+    .content,
+    .caption-01,
+    .footer {
+      color: #c6c6c6;
+    }
+    .ibm-ind-link {
+      background-color: #161616;
+    }
+  `,
   cardlinks: css`
     text-decoration: none !important;
   `,
