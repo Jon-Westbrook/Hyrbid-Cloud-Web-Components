@@ -27,4 +27,31 @@ services:
       waitUntil:
         - networkidle0
 
-    urls: { }
+    urls:
+      trust-radius:
+        - /?path=/story/trust-radius--default
+        - /?path=/story/trust-radius--gray
+        - /?path=/story/trust-radius--dark
+        - /?path=/story/trust-radius--two-columns
+        - /?path=/story/trust-radius--one-column
+        - /?path=/story/trust-radius--failed-request
+        - /?path=/story/trust-radius-slider--default
+        - /?path=/story/trust-radius-slider--gray
+        - /?path=/story/trust-radius-slider--dark
+        - /?path=/story/trust-radius-slider--two-columns
+        - /?path=/story/trust-radius-slider--one-column
+        - /?path=/story/trust-radius-slider-slider-heading--default
+        - /?path=/story/trust-radius-slider-card--default
+        - /?path=/story/trust-radius-slider-card--gray
+        - /?path=/story/trust-radius-slider-card--dark
+        - /?path=/story/trust-radius-slider-card-body--default
+        - /?path=/story/trust-radius-slider-card-body--truncated
+        - /?path=/story/trust-radius-slider-card-body--empty-date
+        - /?path=/story/trust-radius-slider-card-body--invalid-date
+        - /?path=/story/trust-radius-slider-card-footer--default
+        - /?path=/story/trust-radius-slider-card-footer--minimal-data
+        - /?path=/story/trust-radius-slider-card-footer--incomplete-data
+        - /?path=/story/trust-radius-slider-card-heading--default
+        - /?path=/story/trust-radius-slider-card-heading--empty
+        - /?path=/story/trust-radius-slider-card-heading--long-text
+        - /?path=/story/trust-radius-slider-card-emptycard--default
