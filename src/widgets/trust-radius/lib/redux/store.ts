@@ -10,6 +10,10 @@ import windowResizeReducer, {
 import setProductReducer, {
   TrustRadiusStateProducts,
 } from './reducers/setProductReducer';
+import { CarbonThemes } from '../../../common';
+import setThemeReducer, {
+  TrustRadiusStateTheme,
+} from './reducers/setThemeReducer';
 
 export enum FetchStatusEnum {
   INIT = 'INIT',
@@ -20,12 +24,14 @@ export enum FetchStatusEnum {
 
 export type TrustRadiusRootState = TrustRadiusStateWindowResize &
   TrustRadiusStateFetchStatus &
-  TrustRadiusStateProducts;
+  TrustRadiusStateProducts &
+  TrustRadiusStateTheme;
 
 export type TrustRadiusReducersMapper = {
   status: TrustRadiusStateFetchStatus;
   cols: TrustRadiusStateWindowResize;
   prods: TrustRadiusStateProducts;
+  palette: TrustRadiusStateTheme;
 };
 
 export default createStore(
@@ -33,10 +39,12 @@ export default createStore(
     status: fetchStatusReducer,
     cols: windowResizeReducer,
     prods: setProductReducer,
+    palette: setThemeReducer,
   }),
   {
     status: { fetchStatus: FetchStatusEnum.INIT },
     prods: { products: {} },
+    palette: { theme: CarbonThemes.WHITE },
   },
   composeWithDevTools(applyMiddleware<ThunkMiddleware>(thunk)),
 );
