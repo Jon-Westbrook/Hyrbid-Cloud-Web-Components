@@ -12,6 +12,7 @@ services:
       update:
         - yarn install
       build:
+        - yarn test:generate-output
         - yarn build-storybook
         - rm -rf "${TUGBOAT_ROOT}/docroot/storybook-static"
         - cp -r storybook-static "${TUGBOAT_ROOT}/docroot"
