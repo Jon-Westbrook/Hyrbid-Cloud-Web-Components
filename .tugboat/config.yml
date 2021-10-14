@@ -6,15 +6,12 @@ services:
         - curl -sL https://deb.nodesource.com/setup_16.x | sh
         - apt-get install -y nodejs
         - npm install --global yarn
-        - mkdir "${TUGBOAT_ROOT}/docroot"
-        - ln -snf "${TUGBOAT_ROOT}/docroot/www" "${DOCROOT}"
-        - ln -snf "${TUGBOAT_ROOT}/www" "${TUGBOAT_ROOT}/docroot/www"
+        - ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist" "${DOCROOT}"
       update:
         - yarn install
       build:
+        - rm --recursive --force ./dist
         - yarn storybook:build
-        - rm -rf "${TUGBOAT_ROOT}/docroot/storybook-static"
-        - cp -r storybook-static "${TUGBOAT_ROOT}/docroot"
 
     lighthouse:
       enabled: false

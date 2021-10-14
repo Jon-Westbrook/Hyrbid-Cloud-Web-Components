@@ -59,6 +59,6 @@
     "lint:ci": "yarn lint -o reports/eslint/issues.json -f json",
     "lint-staged": "lint-staged",
     "storybook": "yarn test:generate-output || true; start-storybook -p 6006 -s public",
-    "storybook:build": "yarn test:generate-output || true; build-storybook -s public"
+    "storybook:build": "yarn test:generate-output || true; build-storybook -s public --output-dir dist"
   }
 }
