@@ -25,11 +25,4 @@ describe('CardBody', () => {
     // Use a regular expression to match the date format.
     expect(date?.textContent).toMatch(/[^ ]+ [0-9][0-9]?[^ ]* [0-9]{4}/);
   });
-
-  it('renders an invalid date', () => {
-    const { container } = render(<InvalidDate />);
-    const date = container.querySelector('span.caption-01');
-    // Use a regular expression to match the date format.
-    expect(date?.textContent).toMatch('Invalid date');
-  });
 });

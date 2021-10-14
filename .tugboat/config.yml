@@ -21,34 +21,35 @@ services:
         - networkidle0
 
     visualdiff:
+      enabled: true
+      fullPage: true
       waitUntil:
         - networkidle0
 
     urls:
-      trust-radius:
-        - /iframe.html?id=trust-radius--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius--gray&args=&viewMode=story
-        - /iframe.html?id=trust-radius--dark&args=&viewMode=story
-        - /iframe.html?id=trust-radius--two-columns&args=&viewMode=story
-        - /iframe.html?id=trust-radius--one-column&args=&viewMode=story
-        - /iframe.html?id=trust-radius--failed-request&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider--gray&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider--dark&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider--two-columns&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider--one-column&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-slider-heading--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card--gray&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card--dark&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--truncated&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--empty-date&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--invalid-date&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-footer--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-footer--minimal-data&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-footer--incomplete-data&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-heading--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-heading--empty&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-heading--long-text&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-emptycard--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius--gray&args=&viewMode=story
+      - /iframe.html?id=trust-radius--dark&args=&viewMode=story
+      - /iframe.html?id=trust-radius--two-columns&args=&viewMode=story
+      - /iframe.html?id=trust-radius--one-column&args=&viewMode=story
+      - /iframe.html?id=trust-radius--failed-request&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider--gray&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider--dark&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider--two-columns&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider--one-column&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-slider-heading--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card--gray&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card--dark&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-body--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-body--truncated&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-body--empty-date&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-body--invalid-date&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-footer--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-footer--minimal-data&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-footer--incomplete-data&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-heading--default&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-heading--empty&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-heading--long-text&args=&viewMode=story
+      - /iframe.html?id=trust-radius-slider-card-emptycard--default&args=&viewMode=story
