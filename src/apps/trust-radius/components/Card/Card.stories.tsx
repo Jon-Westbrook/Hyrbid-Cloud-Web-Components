@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import Card, { CardProps } from './Card';
 import { Story } from '@storybook/react';
@@ -7,6 +7,7 @@ import store from '../../lib/redux/store';
 import { AnyAction } from 'redux';
 import { action as storybookAction } from '@storybook/addon-actions';
 import { Provider } from 'react-redux';
+import { ArgsStoryFn } from '@storybook/addons';
 
 const fakeStore = Object.assign({}, store, {
   getState: () => ({ palette: { theme: CarbonThemes.WHITE } }),
@@ -51,7 +52,9 @@ Default.args = {
   },
 };
 Default.decorators = [
-  (story) => <Provider store={fakeStore}>{story()}</Provider>,
+  (story: ArgsStoryFn<ReactNode>) => (
+    <Provider store={fakeStore}>{story()}</Provider>
+  ),
 ];
 
 export const Gray = Template.bind({});
@@ -60,7 +63,9 @@ const grayFakeStore = Object.assign({}, fakeStore, {
   getState: () => ({ palette: { theme: CarbonThemes.GRAY_10 } }),
 });
 Gray.decorators = [
-  (story) => <Provider store={grayFakeStore}>{story()}</Provider>,
+  (story: ArgsStoryFn<ReactNode>) => (
+    <Provider store={grayFakeStore}>{story()}</Provider>
+  ),
 ];
 
 export const Dark = Template.bind({});
@@ -69,7 +74,9 @@ const darkFakeStore = Object.assign({}, fakeStore, {
   getState: () => ({ palette: { theme: CarbonThemes.GRAY_100 } }),
 });
 Dark.decorators = [
-  (story) => <Provider store={darkFakeStore}>{story()}</Provider>,
+  (story: ArgsStoryFn<ReactNode>) => (
+    <Provider store={darkFakeStore}>{story()}</Provider>
+  ),
 ];
 
 export default stories;

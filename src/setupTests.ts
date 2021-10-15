@@ -12,8 +12,8 @@ window.matchMedia =
   function () {
     return {
       matches: false,
-      addListener: function () {},
-      removeListener: function () {},
+      addListener: () => undefined,
+      removeListener: () => undefined,
     };
   };
 

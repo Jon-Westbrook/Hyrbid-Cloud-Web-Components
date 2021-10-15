@@ -8,7 +8,7 @@ const stories = {
   title: 'Trust Radius/Slider/Card/EmptyCard',
 };
 
-const Template: Story<any> = (args) => <EmptyCard {...args} />;
+const Template: Story = (args) => <EmptyCard {...args} />;
 
 export const Default = Template.bind({});
 

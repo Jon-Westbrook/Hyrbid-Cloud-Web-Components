@@ -1,0 +1,61 @@
+language: node_js
+node_js: lts/*
+dist: focal
+cache: yarn
+
+notifications:
+  email: false
+
+install:
+  - yarn install
+
+stages:
+  - name: test
+#  - name: deploy
+#    if: branch IN (develop, main) AND type IN (push) AND fork = false
+  - name: publish
+    if: branch IN (main) AND type IN (push) AND fork = false
+
+env:
+  global:
+    - HUSKY_SKIP_INSTALL=1
+jobs:
+  include:
+    - stage: test
+      script:
+        - yarn lint:ci
+        - yarn test:ci
+
+#    - stage: deploy
+#      before_install:
+#        - for i in {1..5}; do curl -fsSL https://clis.cloud.ibm.com/install/linux | sh && break || sleep 2; done
+#        - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
+#      install:
+#        - npm ci
+#      before_script:
+#        - . "${TRAVIS_BUILD_DIR}/scripts/ci/travis/set-node-environment.sh"
+#      script:
+#        - travis_wait 45 npm run compile-widgets
+#        # Make the new registry available to the static site generator.
+#        - cp ${TRAVIS_BUILD_DIR}/dist/registry.json ${TRAVIS_BUILD_DIR}/src/data/registry.json
+#      deploy:
+#        provider: script
+#        script: npm run deploy-registry ${TRAVIS_BRANCH} ${TRAVIS_BUILD_DIR}
+#        skip_cleanup: true
+#        on:
+#          all_branches: true
+
+    - stage: publish
+      script:
+        - yarn storybook:build
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        github_url: github.ibm.com
+        keep_history: true
+        allow_empty_commit: true
+        local_dir: dist
+        verbose: true
+        on:
+          all_branches: true

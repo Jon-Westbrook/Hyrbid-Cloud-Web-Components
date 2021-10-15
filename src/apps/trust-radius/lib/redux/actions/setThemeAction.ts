@@ -9,3 +9,5 @@ const setThemeAction = (theme: CarbonThemes): TrustRadiusActionSetTheme => ({
   type: 'SET_THEME',
   theme,
 });
+
+export default setThemeAction;

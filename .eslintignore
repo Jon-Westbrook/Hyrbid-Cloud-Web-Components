@@ -6,3 +6,5 @@
 /.yarn
 /tsconfig.json
 /CHANGELOG.md
+/reports
+/storybook-static
