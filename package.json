@@ -1,6 +1,7 @@
 {
   "name": "hybrid-cloud-widgets",
   "version": "0.1.0",
+  "homepage": "https://pages.github.ibm.com/MSC-Cloud/hc-widgets",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.1",

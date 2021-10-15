@@ -2,7 +2,7 @@
 
 > Widget Registry and Widget Repository combined in one.
 
-Check out the [widget catalog ⏩](https://main-q32lxqyrg6qs1l9vfwy7gruhiznuaxbl.w3-origin-007522.intranet.ibm.com)!
+Check out the [widget catalog ⏩](https://pages.github.ibm.com/MSC-Cloud/hc-widgets)!
 
 This project represents a single widget registry. This project, also, contains the code for all the widgets in the
 registry. Widgets are created from components using the [JS Widgets Webpack CLI](https://github.com/js-widgets/webpack-cli#readme).
