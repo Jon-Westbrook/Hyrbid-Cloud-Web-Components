@@ -22,5 +22,5 @@ export default create({
 
   brandTitle: 'Hybrid Cloud React Widgets',
   brandUrl: 'https://github.ibm.com/MSC-Cloud/hc-widgets',
-  brandImage: '/logo.png',
+  brandImage: 'logo.png',
 });
