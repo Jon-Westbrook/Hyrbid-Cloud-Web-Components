@@ -8,6 +8,8 @@ notifications:
 
 install:
   - yarn install
+  # Make sure the file exists, and it's valid JSON.
+  - stat ./src/.jest-test-results.json >/dev/null 2>&1 || echo '{}' > ./src/.jest-test-results.json
 
 stages:
   - name: test
