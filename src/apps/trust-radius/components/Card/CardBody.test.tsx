@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { composeStories } from '@storybook/testing-react';
 import * as stories from './CardBody.stories';
 
-const { Default, Truncated, EmptyDate, InvalidDate } = composeStories(stories);
+const { Default, Truncated, EmptyDate } = composeStories(stories);
 
 describe('CardBody', () => {
   it('renders all the elements', () => {
