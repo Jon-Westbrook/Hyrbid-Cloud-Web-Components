@@ -12,7 +12,7 @@ export interface CardBodyProps {
   /** Rating from 0 to 10. */
   rating: number;
   /** Date this review was written at. */
-  date?: string;
+  createdDate?: string;
   /** Maximum number of lines before collapsing. */
   maxLines: number;
 }
@@ -20,7 +20,7 @@ export interface CardBodyProps {
 const CardBody: React.FC<CardBodyProps> = ({
   text,
   rating,
-  date,
+  createdDate,
   maxLines,
 }) => {
   return (
@@ -36,7 +36,7 @@ const CardBody: React.FC<CardBodyProps> = ({
 
         <span className="caption-01" css={styles.dateline}>
           {' '}
-          {moment(date).format('MMM Do YYYY')}
+          {moment(createdDate).format('MMM Do YYYY')}
         </span>
       </div>
       <div className="ibm-rule" css={styles.cardhr}>

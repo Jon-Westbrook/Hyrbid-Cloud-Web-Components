@@ -15,7 +15,6 @@ import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { CarbonThemes } from '../../../types/carbon';
 
-export type IBMPalettes = 'light' | 'gray' | 'dark';
 export type HOF<T> = (input: T) => T;
 
 export interface TrustRadiusOwnProps {
@@ -43,6 +42,7 @@ export interface TrustRadiusPersonalReview {
   name: string;
   count: number;
   score: number;
+  id: string;
 }
 
 export interface TrustRadiusQuote {
@@ -68,6 +68,7 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
   useGoogleStars = false,
   isLoading,
   isError,
+  trustRadiusId,
   product,
   numCols,
   onInit,
@@ -125,8 +126,7 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
   sliderSettings.customPaging = (i) => <CardSliderPager pageNumber={i} />;
   return wrapComponent(
     <CardSlider
-      product={product.product}
-      reviews={product.reviews}
+      trustRadiusId={trustRadiusId}
       stars={useGoogleStars}
       sliderSettings={sliderSettings}
       setCustomSlider={setCustomSlider}

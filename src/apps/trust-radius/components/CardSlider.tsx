@@ -3,21 +3,22 @@ import React from 'react';
 import Slider, { Settings as SliderSettings } from 'react-slick';
 import { css, SerializedStyles } from '@emotion/react';
 import Card from './Card/Card';
-import EmptyCard from './Card/EmptyCard';
 import Googlestars from './Card/Googlestars';
 import SliderHeading from './SliderHeading';
 import { TrustRadiusPersonalReview, TrustRadiusReview } from './TrustRadius';
 import { CarbonThemes } from '../../../types/carbon';
 import { connect } from 'react-redux';
+import { TrustRadiusReducersMapper } from '../lib/redux/store';
 
 interface StateProps {
   /** Different color styles according to the IBM design guidelines. */
   theme?: CarbonThemes;
+  reviews?: TrustRadiusReview[];
+  product?: TrustRadiusPersonalReview;
 }
 
 interface CardSliderOwnProps {
-  reviews: TrustRadiusReview[];
-  product: TrustRadiusPersonalReview;
+  trustRadiusId: string;
   /** True if the component should include the Google Stars metadata. */
   stars: boolean;
   /** Settings for the React Slick Slider project. */
@@ -34,6 +35,9 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
   sliderSettings,
   setCustomSlider,
 }) => {
+  if (!product || !reviews?.length) {
+    return <></>;
+  }
   const reviewUrl = `https://www.trustradius.com/products/${product.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
   const starsComponent = stars ? (
     <Googlestars
@@ -67,13 +71,13 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
               }}
               {...sliderSettings}
             >
-              {reviews.map(function (review, i) {
-                return review.quotes.length ? (
-                  <Card review={review} key={`card-${i}`} />
-                ) : (
-                  <EmptyCard />
-                );
-              })}
+              {reviews.map((review, i) => (
+                <Card
+                  reviewIndex={i}
+                  trustRadiusId={product.id}
+                  key={`card-${i}`}
+                />
+              ))}
             </Slider>
           </div>
         </div>
@@ -188,8 +192,12 @@ export default connect<
   StateProps,
   Record<string, never>,
   CardSliderOwnProps,
-  { palette: { theme: CarbonThemes } }
+  TrustRadiusReducersMapper
 >(
-  (states) => ({ theme: states?.palette?.theme }),
+  (states, props) => ({
+    theme: states?.palette?.theme,
+    product: states?.prods?.products[props.trustRadiusId]?.product,
+    reviews: states?.prods?.products[props.trustRadiusId]?.reviews || [],
+  }),
   () => ({}),
 )(PureCardSlider);

@@ -13,8 +13,6 @@ export const parameters = {
 };
 
 export const decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
-    <div style={{ padding: '50px 100px' }}>{story()}</div>
-  ),
+  (story) => <div style={{ padding: '50px 100px' }}>{story()}</div>,
   withTests({ results }),
 ];

@@ -14,7 +14,7 @@ Default.args = {
   text:
     'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
   rating: 9,
-  date: '2021-04-16T02:06:58.757Z',
+  createdDate: '2021-04-16T02:06:58.757Z',
   maxLines: 7,
 };
 
@@ -28,9 +28,12 @@ Truncated.args = {
 };
 
 export const EmptyDate = Template.bind({});
-EmptyDate.args = { ...Default.args, date: undefined };
+EmptyDate.args = { ...Default.args, createdDate: undefined };
 
 export const InvalidDate = Template.bind({});
-InvalidDate.args = { ...Default.args, date: 'I am an invalid date string' };
+InvalidDate.args = {
+  ...Default.args,
+  createdDate: 'I am an invalid createdDate string',
+};
 
 export default stories;

@@ -23,6 +23,7 @@ export function normalizeProductData(product: any): TrustRadiusStateProduct {
       modified: product?.config?.modified || new Date().toISOString(),
       count: productInfo.rating?.count || 1,
       score: productInfo.rating?.trScore || 10,
+      id: product?.config?._id || '',
     },
     reviews: product?.data || [],
   };

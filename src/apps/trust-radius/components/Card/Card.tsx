@@ -7,14 +7,18 @@ import CardBody from './CardBody';
 import { TrustRadiusReview } from '../TrustRadius';
 import { CarbonThemes } from '../../../../types/carbon';
 import { connect } from 'react-redux';
+import { TrustRadiusReducersMapper } from '../../lib/redux/store';
+import EmptyCard from './EmptyCard';
 
 interface StateProps {
   theme?: CarbonThemes;
+  review?: TrustRadiusReview;
 }
 
 interface CardOwnProps {
   /** Data for the review */
-  review: TrustRadiusReview;
+  reviewIndex: number;
+  trustRadiusId: string;
 }
 
 export type CardProps = CardOwnProps & StateProps;
@@ -22,8 +26,11 @@ export const PureCard: React.FC<CardProps> = ({
   review,
   theme = CarbonThemes.WHITE,
 }) => {
+  const mainQuote = (review?.quotes || [])[0];
+  if (!review || !mainQuote) {
+    return <EmptyCard />;
+  }
   const cardUrl = 'https://www.trustradius.com/reviews/';
-  const mainQuote = review.quotes[0];
   return (
     <>
       <a
@@ -43,7 +50,7 @@ export const PureCard: React.FC<CardProps> = ({
                 '',
               )}
               rating={mainQuote.rating}
-              date={mainQuote.review.modified}
+              createdDate={mainQuote.review.modified}
               maxLines={7}
             />
             <CardFooter
@@ -122,8 +129,12 @@ export default connect<
   StateProps,
   Record<string, never>,
   CardOwnProps,
-  { palette: { theme: CarbonThemes } }
+  TrustRadiusReducersMapper
 >(
-  (states) => ({ theme: states?.palette?.theme }),
+  (states, props) => ({
+    theme: states?.palette?.theme,
+    review:
+      states?.prods?.products[props.trustRadiusId]?.reviews[props.reviewIndex],
+  }),
   () => ({}),
 )(PureCard);

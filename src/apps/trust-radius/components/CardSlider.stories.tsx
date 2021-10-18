@@ -1,23 +1,14 @@
 import React, { ReactNode } from 'react';
 import CardSlider, { CardSliderProps } from './CardSlider';
 import { Story } from '@storybook/react';
-import { action, action as storybookAction } from '@storybook/addon-actions';
+import { action } from '@storybook/addon-actions';
 import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import { CarbonThemes } from '../../../types/carbon';
-import store from '../lib/redux/store';
-import { AnyAction } from 'redux';
 import { Provider } from 'react-redux';
 import { ArgsStoryFn } from '@storybook/addons';
-
-const fakeStore = Object.assign({}, store, {
-  getState: () => ({ palette: { theme: CarbonThemes.WHITE } }),
-  dispatch: (action: AnyAction): AnyAction => {
-    storybookAction('dispatch');
-    return action;
-  },
-});
+import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
 
 const stories = {
   component: CardSlider,
@@ -27,23 +18,6 @@ const stories = {
 const Template: Story<CardSliderProps> = (args) => <CardSlider {...args} />;
 
 export const Default = Template.bind({});
-const quote = {
-  review: {
-    heading: 'Review Heading',
-    modified: '2021-09-30T14:49:38.066Z',
-    slug: '',
-    name: 'Product name at IBM',
-    count: 234,
-    score: 9,
-  },
-  rating: 9,
-  text: 'Lorem ipsum dolor',
-};
-const review = {
-  quotes: [quote, quote],
-  name: { first: 'John', last: 'Doe' },
-  position: { title: 'IT Manager' },
-};
 const sliderSettings = buildSliderSettings(4);
 sliderSettings.appendDots = (dots) => {
   return (
@@ -58,44 +32,38 @@ sliderSettings.appendDots = (dots) => {
 };
 sliderSettings.customPaging = (i) => <CardSliderPager pageNumber={i} />;
 Default.args = {
-  reviews: [review, review, review, review, review],
-  product: {
-    heading: 'Product Heading',
-    modified: '2021-09-30T14:49:38.066Z',
-    name: 'Product name at IBM',
-    count: 8,
-    score: 0.23,
-    slug: 'this-is-a-slug',
-  },
+  trustRadiusId: 'fake-trid',
   stars: true,
   sliderSettings,
   setCustomSlider: () => undefined,
 };
 Default.decorators = [
   (story: ArgsStoryFn<ReactNode>) => (
-    <Provider store={fakeStore}>{story()}</Provider>
+    <Provider store={fakeStore()}>{story()}</Provider>
   ),
 ];
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
-const grayFakeStore = Object.assign({}, fakeStore, {
-  getState: () => ({ palette: { theme: CarbonThemes.GRAY_10 } }),
-});
 Gray.decorators = [
   (story: ArgsStoryFn<ReactNode>) => (
-    <Provider store={grayFakeStore}>{story()}</Provider>
+    <Provider
+      store={overrideFakeStore({ themeOverride: CarbonThemes.GRAY_10 })}
+    >
+      {story()}
+    </Provider>
   ),
 ];
 
 export const Dark = Template.bind({});
 Dark.args = Object.assign({}, Default.args);
-const darkFakeStore = Object.assign({}, fakeStore, {
-  getState: () => ({ palette: { theme: CarbonThemes.GRAY_100 } }),
-});
 Dark.decorators = [
   (story: ArgsStoryFn<ReactNode>) => (
-    <Provider store={darkFakeStore}>{story()}</Provider>
+    <Provider
+      store={overrideFakeStore({ themeOverride: CarbonThemes.GRAY_100 })}
+    >
+      {story()}
+    </Provider>
   ),
 ];
 
@@ -118,5 +86,10 @@ OneColumn.args.sliderSettings = {
   slidesToShow: 1,
   slidesToScroll: 1,
 };
+
+export const MissingProduct = Template.bind({});
+MissingProduct.args = Object.assign({}, Default.args);
+MissingProduct.decorators = Array.from(Default.decorators);
+MissingProduct.args.trustRadiusId = 'missing-fake-trid';
 
 export default stories;
