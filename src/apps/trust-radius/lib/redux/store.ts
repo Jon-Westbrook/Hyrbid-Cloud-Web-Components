@@ -10,7 +10,6 @@ import windowResizeReducer, {
 import setProductReducer, {
   TrustRadiusStateProducts,
 } from './reducers/setProductReducer';
-import { CarbonThemes } from '../../../../types/carbon';
 import setThemeReducer, {
   TrustRadiusStateTheme,
 } from './reducers/setThemeReducer';
@@ -21,11 +20,6 @@ export enum FetchStatusEnum {
   READY = 'READY',
   FAILURE = 'FAILURE',
 }
-
-export type TrustRadiusRootState = TrustRadiusStateWindowResize &
-  TrustRadiusStateFetchStatus &
-  TrustRadiusStateProducts &
-  TrustRadiusStateTheme;
 
 export type TrustRadiusReducersMapper = {
   status: TrustRadiusStateFetchStatus;
@@ -41,10 +35,5 @@ export default createStore(
     prods: setProductReducer,
     palette: setThemeReducer,
   }),
-  {
-    status: { fetchStatus: FetchStatusEnum.INIT },
-    prods: { products: {} },
-    palette: { theme: CarbonThemes.WHITE },
-  },
   composeWithDevTools(applyMiddleware<ThunkMiddleware>(thunk)),
 );

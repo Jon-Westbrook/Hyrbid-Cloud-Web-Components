@@ -14,12 +14,14 @@ import CardSliderPager from './CardSliderPager';
 import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { CarbonThemes } from '../../../types/carbon';
+import setThemeAction from '../lib/redux/actions/setThemeAction';
 
 export type HOF<T> = (input: T) => T;
 
 export interface TrustRadiusOwnProps {
   useGoogleStars: boolean;
   trustRadiusId: string;
+  theme: string;
 }
 
 interface StateProps {
@@ -153,10 +155,13 @@ const mapDispatchToProps = (
   dispatch: ThunkDispatch<Record<string, any>, Record<string, any>, any>,
   ownProps: TrustRadiusOwnProps,
 ): DispatchProps => ({
-  onInit: async () => dispatch(fetchProductDataAction(ownProps.trustRadiusId)),
+  onInit: async () => {
+    dispatch(setThemeAction(ownProps.theme));
+    dispatch(fetchProductDataAction(ownProps.trustRadiusId));
+  },
   onWindowResize: debounce(
     () => dispatch(windowResizeAction(window.innerWidth)),
-    1000,
+    250,
   ),
 });
 

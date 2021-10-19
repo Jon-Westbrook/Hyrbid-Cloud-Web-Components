@@ -14,7 +14,9 @@ const fetchStatusReducer: Reducer<
     case 'FETCH_STATUS_ACTION':
       return { ...(state || {}), fetchStatus: action.status };
     default:
-      return state || { fetchStatus: FetchStatusEnum.INIT };
+      return state?.fetchStatus
+        ? state
+        : { ...(state || {}), fetchStatus: FetchStatusEnum.INIT };
   }
 };
 

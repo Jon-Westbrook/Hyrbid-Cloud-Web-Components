@@ -9,9 +9,16 @@ export interface TrustRadiusStateTheme {
 const setThemeReducer: Reducer<
   TrustRadiusStateTheme,
   TrustRadiusActionSetTheme
-> = (state, action) => ({
-  ...(state || {}),
-  theme: action.theme,
-});
+> = (state, action) => {
+  switch (action.type) {
+    case 'SET_THEME':
+      return {
+        ...(state || {}),
+        theme: action.theme,
+      };
+    default:
+      return state || { theme: CarbonThemes.WHITE };
+  }
+};
 
 export default setThemeReducer;

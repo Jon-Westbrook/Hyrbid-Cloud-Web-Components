@@ -14,9 +14,16 @@ const _doCalcCols = (width: number): NumCols => {
 const windowResizeReducer: Reducer<
   TrustRadiusStateWindowResize,
   TrustRadiusActionWindowResize
-> = (state, action) => ({
-  ...state,
-  numCols: _doCalcCols(action.width),
-});
+> = (state, action) => {
+  switch (action.type) {
+    case 'WINDOW_RESIZE':
+      return {
+        ...state,
+        numCols: _doCalcCols(action.width),
+      };
+    default:
+      return state || { numCols: 1 };
+  }
+};
 
 export default windowResizeReducer;

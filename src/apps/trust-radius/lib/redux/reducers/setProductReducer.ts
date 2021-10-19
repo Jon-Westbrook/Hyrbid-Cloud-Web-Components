@@ -44,9 +44,16 @@ function _mutateProduct(products: ProductsState, product: any): ProductsState {
 const setProductReducer: Reducer<
   TrustRadiusStateProducts,
   TrustRadiusActionSetProduct
-> = (state, action) => ({
-  ...(state || {}),
-  products: _mutateProduct(state?.products || {}, action.product),
-});
+> = (state, action) => {
+  switch (action.type) {
+    case 'SET_PRODUCT':
+      return {
+        ...(state || {}),
+        products: _mutateProduct(state?.products || {}, action.product),
+      };
+    default:
+      return state || { products: {} };
+  }
+};
 
 export default setProductReducer;
