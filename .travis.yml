@@ -34,6 +34,7 @@ jobs:
         - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
       before_script:
         - . "${TRAVIS_BUILD_DIR}/scripts/ci/travis/set-node-environment.sh" ${TRAVIS_BRANCH}
+        - mkdir -p ${TRAVIS_BUILD_DIR}/widget-registry
       script:
         - npx @js-widgets/webpack-cli --existing-registry=https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json --output-dir=${TRAVIS_BUILD_DIR}/widget-registry ${TRAVIS_BUILD_DIR};
       deploy:
