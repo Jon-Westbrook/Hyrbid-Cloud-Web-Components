@@ -6,14 +6,18 @@ import { Provider } from 'react-redux';
 import store from './apps/trust-radius/lib/redux/store';
 import TrustRadius from './apps/trust-radius/components/TrustRadius';
 
+const element = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <TrustRadius
-        useGoogleStars={true}
-        trustRadiusId="5d9df1232f82250032904eb1"
+        trustRadiusId={element?.getAttribute('data-trust-radius-id') || ''}
+        useGoogleStars={
+          element?.getAttribute('data-use-google-stars') === 'true' || false
+        }
+        theme={element?.getAttribute('data-theme') || ''}
       />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root'),
+  element,
 );
