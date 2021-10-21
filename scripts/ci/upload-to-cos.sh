@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
+set -e
 
+echo "Name of the script: $0"
+echo "Total number of arguments: $#"
+echo "Values of all the arguments: $@"
 # Set root dir.
-if [ -n "$1" ]
+if [ -d "$1" ]
 then
   ROOT_DIR=$1;
 else
-  echo "Please provide the root directory.";
+  echo "Invalid directory to upload. Provided: $1";
   exit 1;
 fi
 
