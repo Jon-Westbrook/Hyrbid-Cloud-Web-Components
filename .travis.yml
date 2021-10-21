@@ -33,19 +33,13 @@ jobs:
         - for i in {1..5}; do curl -fsSL https://clis.cloud.ibm.com/install/linux | sh && break || sleep 2; done
         - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
       before_script:
-        - . "${TRAVIS_BUILD_DIR}/scripts/ci/travis/set-node-environment.sh" ${TRAVIS_BRANCH}
+        - "${TRAVIS_BUILD_DIR}/scripts/ci/travis/set-node-environment.sh" ${TRAVIS_BRANCH}
       script:
         - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/widget-registry"
-        - |
-          npx @js-widgets/webpack-cli \
-            --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" \
-            --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" \
-            "${TRAVIS_BUILD_DIR}";
+        - npx @js-widgets/webpack-cli --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
       deploy:
         provider: script
-        script: |
-          . "${TRAVIS_BUILD_DIR}/scripts/ci/upload-to-cos.sh" \
-            "${TRAVIS_BUILD_DIR}/widget-registry"
+        script: "${TRAVIS_BUILD_DIR}/scripts/ci/upload-to-cos.sh" "${TRAVIS_BUILD_DIR}/widget-registry"
         skip_cleanup: true
         on:
           all_branches: true
@@ -60,7 +54,7 @@ jobs:
         github_url: github.ibm.com
         keep_history: true
         allow_empty_commit: true
-        local_dir: widget-registry
+        local_dir: dist
         verbose: true
         on:
           all_branches: true
