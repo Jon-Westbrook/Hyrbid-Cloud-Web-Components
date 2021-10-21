@@ -23,6 +23,20 @@ stages:
 env:
   global:
     - HUSKY_SKIP_INSTALL=1
+
+custom:
+  before_install: &cos_before_install
+    - for i in {1..5}; do curl -fsSL https://clis.cloud.ibm.com/install/linux | sh && break || sleep 2; done
+    - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
+  script: &cos_script
+    - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/widget-registry"
+    - npx @js-widgets/webpack-cli --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
+  deploy: &cos_deploy
+    provider: script
+    script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
+    skip_cleanup: true
+    on:
+      all_branches: true
 jobs:
   include:
     - stage: test
@@ -34,22 +48,16 @@ jobs:
       env:
         - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-production
         - NODE_ENV=production
-      before_install:
-        - for i in {1..5}; do curl -fsSL https://clis.cloud.ibm.com/install/linux | sh && break || sleep 2; done
-        - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
-      script:
-        - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/widget-registry"
-        - npx @js-widgets/webpack-cli --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
-      deploy:
-        provider: script
-        script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
-        skip_cleanup: true
-        on:
-          all_branches: true
+      before_install: *cos_before_install
+      script: *cos_script
+      deploy: *cos_deploy
     - stage: deploy-development
       env:
         - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-development
         - NODE_ENV=production
+      before_install: *cos_before_install
+      script: *cos_script
+      deploy: *cos_deploy
 
     - stage: publish
       script:

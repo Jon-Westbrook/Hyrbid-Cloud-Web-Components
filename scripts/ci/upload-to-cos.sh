@@ -21,15 +21,9 @@ ibmcloud cos config region --region us-geo;
 # Upload the main registry.json and the helper script files.
 ibmcloud cos upload --bucket ${IBMCLOUD_COS_BUCKET} --key registry.json --file ${ROOT_DIR}/registry.json;
 
-# Upload widget directories to the bucket.
-for widget in `find ${ROOT_DIR} -maxdepth 2 -mindepth 2 -type d | awk -F '/' '{print $(NF-1) "/" $NF }'`
+# Upload to the bucket.
+echo "Widgets to upload: $(find ${ROOT_DIR}/widgets -maxdepth 1 -mindepth 1 -type d | awk -F '/' '{print $(NF-1) "/" $NF }')"
+for file in `find ${ROOT_DIR}/${widget} -type f -printf "%P\n"`
 do
-  echo "----------------------------------------------------------------------"
-  echo "        Starting to upload ${widget} widget..."
-  echo "----------------------------------------------------------------------"
-  for file in `find ${ROOT_DIR}/${widget} -type f -printf "%P\n"`
-  do
-    ibmcloud cos upload --bucket ${IBMCLOUD_COS_BUCKET} --key ${widget}/${file} --file ${ROOT_DIR}/${widget}/${file};
-  done
-  echo "Widget ${widget} uploaded."
+  ibmcloud cos upload --bucket ${IBMCLOUD_COS_BUCKET} --key ${widget}/${file} --file ${ROOT_DIR}/${widget}/${file};
 done
