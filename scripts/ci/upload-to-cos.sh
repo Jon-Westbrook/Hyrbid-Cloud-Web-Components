@@ -25,5 +25,5 @@ ibmcloud cos upload --bucket ${IBMCLOUD_COS_BUCKET} --key registry.json --file $
 echo "Widgets to upload: $(find ${ROOT_DIR}/widgets -maxdepth 1 -mindepth 1 -type d | awk -F '/' '{print $(NF-1) "/" $NF }')"
 for file in `find ${ROOT_DIR} -type f -printf "%P\n"`
 do
-  ibmcloud cos upload --bucket ${IBMCLOUD_COS_BUCKET} --key ${widget} --file ${ROOT_DIR}/${file};
+  ibmcloud cos upload --bucket ${IBMCLOUD_COS_BUCKET} --key ${file} --file ${ROOT_DIR}/${file};
 done
