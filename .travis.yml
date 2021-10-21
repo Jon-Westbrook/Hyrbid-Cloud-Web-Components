@@ -13,8 +13,10 @@ install:
 
 stages:
   - name: test
-  - name: deploy
-    if: branch IN (development, main) AND type IN (push) AND fork = false
+  - name: deploy-main
+    if: branch IN (main) AND type IN (push) AND fork = false
+  - name: deploy-development
+    if: branch IN (development) AND type IN (push) AND fork = false
   - name: publish
     if: branch IN (main) AND type IN (push) AND fork = false
 
@@ -28,20 +30,26 @@ jobs:
         - yarn lint:ci
         - yarn test:ci
 
-    - stage: deploy
+    - stage: deploy-main
+      env:
+        - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-production
+        - NODE_ENV=production
       before_install:
         - for i in {1..5}; do curl -fsSL https://clis.cloud.ibm.com/install/linux | sh && break || sleep 2; done
         - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
       script:
         - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/widget-registry"
-        - ./scripts/ci/travis/set-node-environment.sh ${TRAVIS_BRANCH}
         - npx @js-widgets/webpack-cli --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
       deploy:
         provider: script
-        script: ./scripts/ci/travis/set-node-environment.sh ${TRAVIS_BRANCH} && ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
+        script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
         skip_cleanup: true
         on:
           all_branches: true
+    - stage: deploy-development
+      env:
+        - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-development
+        - NODE_ENV=production
 
     - stage: publish
       script:
