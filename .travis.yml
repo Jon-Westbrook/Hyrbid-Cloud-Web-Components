@@ -39,7 +39,7 @@ jobs:
         - npx @js-widgets/webpack-cli --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
       deploy:
         provider: script
-        script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
+        script: ./scripts/ci/travis/set-node-environment.sh ${TRAVIS_BRANCH} && ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
         skip_cleanup: true
         on:
           all_branches: true

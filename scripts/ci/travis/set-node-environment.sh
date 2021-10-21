@@ -1,4 +1,9 @@
 #!/bin/sh
+set -e
+
+echo "Name of the script: $0"
+echo "Total number of arguments: $#"
+echo "Values of all the arguments: $@"
 
 # Ensure we always use the production bundle for JS.
 export NODE_ENV=production;
