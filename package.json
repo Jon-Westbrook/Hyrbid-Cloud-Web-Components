@@ -4,9 +4,12 @@
   "homepage": "https://pages.github.ibm.com/MSC-Cloud/hc-widgets",
   "private": true,
   "dependencies": {
+    "@carbon/styles": "^0.7.0",
+    "@carbon/themes": "^10.45.0",
     "@emotion/react": "^11.4.1",
     "@storybook/addon-a11y": "^6.3.11",
     "@storybook/addon-actions": "^6.3.9",
+    "@storybook/addon-docs": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.9",
     "@storybook/addon-jest": "^6.3.10",
     "@storybook/addon-links": "^6.3.9",

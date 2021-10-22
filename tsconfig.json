@@ -25,7 +25,8 @@
     "isolatedModules": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    ".storybook/Introduction/**/*"
   ],
   "exclude": [
     "src/**/*.test.ts",

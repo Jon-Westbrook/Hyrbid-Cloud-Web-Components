@@ -1,24 +1,47 @@
 import { create } from '@storybook/theming';
-import '!style-loader!css-loader!resolve-url-loader!sass-loader!../src/ibm-plex/scss/ibm-plex.scss';
+import { g10 } from '@carbon/themes';
+
+const {
+  field01,
+  interactive01,
+  selectedUI,
+  text01,
+  inverse01,
+  ui01,
+  ui03,
+  uiBackground,
+} = g10;
 
 export default create({
   base: 'light',
 
-  colorPrimary: '#f4f4f4',
-  colorSecondary: '#0062ff',
+  colorPrimary: interactive01,
+  colorSecondary: selectedUI,
 
   // UI
-  appBorderColor: '#f4f4f4',
+  appBg: uiBackground,
+  appContentBg: ui01,
+  appBorderColor: ui03,
   appBorderRadius: 0,
 
   // Typography
-  fontBase: "'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif",
-  fontCode:
-    "'IBM Plex Mono', Menlo, 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace",
+  fontBase: '"IBM Plex Sans", sans-serif',
+  fontCode: '"IBM Plex Mono", monospace',
 
   // Text colors
-  textColor: '#161616',
-  textInverseColor: 'white',
+  textColor: text01,
+  textInverseColor: inverse01,
+
+  // Toolbar default and active colors
+  barTextColor: text01,
+  barSelectedColor: interactive01,
+  barBg: uiBackground,
+
+  // Form colors
+  inputBg: field01,
+  inputBorder: ui03,
+  inputTextColor: text01,
+  inputBorderRadius: 0,
 
   brandTitle: 'Hybrid Cloud React Widgets',
   brandUrl: 'https://github.ibm.com/MSC-Cloud/hc-widgets',

@@ -4,6 +4,7 @@ const results = require('../src/.jest-test-results.json');
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  showRoots: true,
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -13,6 +14,21 @@ export const parameters = {
 };
 
 export const decorators = [
-  (story) => <div style={{ padding: '50px 100px' }}>{story()}</div>,
+  (story) => (
+    <div
+      role="main"
+      style={{
+        padding: '3em',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <div style={{ position: 'relative', width: '100%', zIndex: 0 }}>
+        {story()}
+      </div>
+    </div>
+  ),
+
   withTests({ results }),
 ];
