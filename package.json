@@ -4,6 +4,8 @@
   "homepage": "https://pages.github.ibm.com/MSC-Cloud/hc-widgets",
   "private": true,
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/runtime": "^7.16.3",
     "@carbon/styles": "^0.7.0",
     "@carbon/themes": "^10.45.0",
     "@emotion/react": "^11.4.1",
@@ -69,8 +71,5 @@
     "storybook": "yarn test:generate-output || true; start-storybook -p 6006 -s public",
     "storybook:build": "yarn test:generate-output || true; build-storybook -s public --output-dir dist"
   },
-  "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.16.4",
-    "@babel/runtime": "^7.16.3"
-  }
+  "devDependencies": {}
 }
