@@ -7,10 +7,12 @@ import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
 
 import { CarbonThemes } from '../../../types/carbon';
 import { ArgsStoryFn } from '@storybook/addons';
+import storyWithTranslation from '../lib/storyWithTranslation';
 
 const stories = {
   component: TrustRadius,
   title: 'Trust Radius',
+  decorators: [storyWithTranslation()],
 };
 
 const Template: Story<TrustRadiusOwnProps> = (args) => (

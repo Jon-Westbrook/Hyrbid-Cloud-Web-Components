@@ -9,7 +9,10 @@ services:
         - ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist" "${DOCROOT}"
       update:
         - yarn install
+        - ./scripts/compile-all.sh
       build:
+        - yarn install
+        - ./scripts/compile-all.sh
         - rm --recursive --force ./dist
         - yarn storybook:build
 

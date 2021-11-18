@@ -15,6 +15,7 @@ import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { CarbonThemes } from '../../../types/carbon';
 import setThemeAction from '../lib/redux/actions/setThemeAction';
+import { FormattedMessage } from 'react-intl';
 
 export type HOF<T> = (input: T) => T;
 
@@ -103,10 +104,10 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
   if (isError) {
     return wrapComponent(
       <div css={styles.message}>
-        <p>
-          The was a problem loading Trust Radius reviews. Please try again
-          later.
-        </p>
+        <FormattedMessage
+          id="trust-radius.error-message"
+          defaultMessage="The was a problem loading Trust Radius reviews. Please try again later."
+        />
       </div>,
     );
   }

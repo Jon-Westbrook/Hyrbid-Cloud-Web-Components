@@ -6,10 +6,12 @@ import { CarbonThemes } from '../../../../types/carbon';
 import { Provider } from 'react-redux';
 import { ArgsStoryFn } from '@storybook/addons';
 import fakeStore, { overrideFakeStore } from '../../lib/redux/fakeStore';
+import storyWithTranslation from '../../lib/storyWithTranslation';
 
 const stories = {
   component: Card,
   title: 'Trust Radius/Slider/Card',
+  decorators: [storyWithTranslation()],
 };
 
 const Template: Story<CardProps> = (args) => <Card {...args} />;

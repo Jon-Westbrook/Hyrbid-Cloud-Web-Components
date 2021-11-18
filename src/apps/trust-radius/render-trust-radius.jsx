@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import TrustRadius from './components/TrustRadius';
 import store from './lib/redux/store';
 import 'regenerator-runtime/runtime';
+import { IntlProvider } from 'react-intl';
+import normalizeWidgetInput from '../../common/normalizeWidgetInput';
 
 /**
  * Renders the widget.
@@ -18,40 +20,28 @@ import 'regenerator-runtime/runtime';
  * @param {Function} cb
  *   A callback that executes after the widget has been rendered.
  */
-function render(instanceId, langCode, origin, cb) {
-  const element = document.getElementById(instanceId);
+async function render(instanceId, langCode, origin, cb) {
+  const { element, locale, messages, palette } = await normalizeWidgetInput(
+    instanceId,
+    langCode,
+  );
   if (!element) {
     return;
   }
   const useGoogleStars =
     element.getAttribute('data-use-google-stars') !== 'false' ||
     element.getAttribute('data-use-google-stars') !== '0';
-  const mapPaletteToTheme = (serializedPalette) => {
-    try {
-      const { id } = JSON.parse(serializedPalette);
-      switch (id) {
-        case 'palette-grey-light':
-          return 'GRAY_10';
-        case 'palette-black':
-          return 'GRAY_100';
-        default:
-          return 'WHITE';
-      }
-    } catch (e) {
-      return 'WHITE';
-    }
-  };
-  const palette =
-    mapPaletteToTheme(element.getAttribute('data-palette')) || 'WHITE';
   ReactDOM.render(
     <React.StrictMode>
-      <Provider store={store}>
-        <TrustRadius
-          trustRadiusId={element.getAttribute('data-trust-radius-id') || ''}
-          theme={palette}
-          useGoogleStars={useGoogleStars}
-        />
-      </Provider>
+      <IntlProvider locale={locale} messages={messages}>
+        <Provider store={store}>
+          <TrustRadius
+            trustRadiusId={element.getAttribute('data-trust-radius-id') || ''}
+            theme={palette}
+            useGoogleStars={useGoogleStars}
+          />
+        </Provider>
+      </IntlProvider>
     </React.StrictMode>,
     element,
     () => cb(element),

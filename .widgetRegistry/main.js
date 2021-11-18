@@ -16,6 +16,8 @@ module.exports = {
     );
 
     config.devtool = 'inline-source-map';
+    config.resolve.alias['@formatjs/icu-messageformat-parser'] =
+      '@formatjs/icu-messageformat-parser/no-parser';
     return config;
   },
 };

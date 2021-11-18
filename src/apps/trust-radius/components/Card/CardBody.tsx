@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 import StarRatings from 'react-star-ratings';
-import moment from 'moment';
 import Truncate from 'react-truncate';
 import parse from 'html-react-parser';
 import { css, SerializedStyles } from '@emotion/react';
+import { useIntl } from 'react-intl';
 
 export interface CardBodyProps {
   /** Shown as the main text on the card. */
@@ -23,6 +23,7 @@ const CardBody: React.FC<CardBodyProps> = ({
   createdDate,
   maxLines,
 }) => {
+  const { formatDate } = useIntl();
   return (
     <>
       <div>
@@ -36,7 +37,11 @@ const CardBody: React.FC<CardBodyProps> = ({
 
         <span className="caption-01" css={styles.dateline}>
           {' '}
-          {moment(createdDate).format('MMM Do YYYY')}
+          {formatDate(createdDate ? new Date(createdDate) : new Date(), {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+          })}
         </span>
       </div>
       <div className="ibm-rule" css={styles.cardhr}>

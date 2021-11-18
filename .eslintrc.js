@@ -13,4 +13,8 @@ module.exports = {
       rules: { 'import/no-anonymous-default-export': 'off' },
     },
   ],
+  plugins: ['formatjs'],
+  rules: {
+    'formatjs/no-offset': 'error',
+  },
 };

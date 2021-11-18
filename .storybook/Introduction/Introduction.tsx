@@ -1,12 +1,8 @@
-import React, { PropsWithChildren } from 'react';
+import React from 'react';
 import './introduction.scss';
 import LinkTo from '@storybook/addon-links/react';
 // @ts-ignore
 import headerImg from './img/carbon.png';
-
-const Link: React.FC<PropsWithChildren<any>> = ({ children, ...args }) => (
-  <a {...args}>{children}</a>
-);
 
 const Introduction: React.FC = () => (
   <div className="usage__container">

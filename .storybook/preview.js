@@ -11,6 +11,13 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  locale: 'en',
+  locales: {
+    ar: { title: 'Arabic' },
+    en: { title: 'English' },
+    es: { title: 'Spanish' },
+    ja: { title: 'Japanese' },
+  },
 };
 
 export const decorators = [

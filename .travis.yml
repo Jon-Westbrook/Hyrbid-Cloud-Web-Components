@@ -8,6 +8,7 @@ notifications:
 
 install:
   - yarn install
+  - ./scripts/compile-all.sh
   # Make sure the file exists, and it's valid JSON.
   - stat ./src/.jest-test-results.json >/dev/null 2>&1 || echo '{}' > ./src/.jest-test-results.json
 
@@ -30,7 +31,7 @@ custom:
     - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
   script: &cos_script
     - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/widget-registry"
-    - npx @js-widgets/webpack-cli --existing-registry="https://${IBMCLOUD_COS_BUCKET}.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
+    - npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
   deploy: &cos_deploy
     provider: script
     script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
@@ -47,6 +48,8 @@ jobs:
     - stage: deploy-main
       env:
         - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-production
+        - IBMCLOUD_COS_REGION=us-geo
+        - PUBLIC_URL="https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud"
         - NODE_ENV=production
       before_install: *cos_before_install
       script: *cos_script
@@ -54,6 +57,8 @@ jobs:
     - stage: deploy-development
       env:
         - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-development
+        - IBMCLOUD_COS_REGION=us-geo
+        - PUBLIC_URL="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud"
         - NODE_ENV=production
       before_install: *cos_before_install
       script: *cos_script

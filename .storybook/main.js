@@ -7,6 +7,7 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    'storybook-i18n',
     '@storybook/preset-create-react-app',
     '@storybook/addon-a11y',
     '@storybook/addon-jest',

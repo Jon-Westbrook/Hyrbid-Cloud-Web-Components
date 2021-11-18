@@ -10,7 +10,7 @@ describe('CardBody', () => {
     const stars = container.querySelector('.star-ratings');
     expect(stars?.getAttribute('title')).toBe('4.5 Stars');
     const date = container.querySelector('span.caption-01');
-    expect(date?.textContent).toMatch('Apr 16th 2021');
+    expect(date?.textContent).toMatch('Apr 16, 2021');
     expect(screen.getByText(/Always suited for/)).not.toBeNull();
   });
 

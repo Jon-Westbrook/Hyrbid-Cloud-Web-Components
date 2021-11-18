@@ -28,3 +28,5 @@ yarn-error.log*
 .jest-test-results.json
 *.swp
 /widget-registry
+
+compiledStrings

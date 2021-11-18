@@ -9,6 +9,7 @@ import { TrustRadiusPersonalReview, TrustRadiusReview } from './TrustRadius';
 import { CarbonThemes } from '../../../types/carbon';
 import { connect } from 'react-redux';
 import { TrustRadiusReducersMapper } from '../lib/redux/store';
+import { FormattedMessage } from 'react-intl';
 
 interface StateProps {
   /** Different color styles according to the IBM design guidelines. */
@@ -55,7 +56,13 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
     >
       {starsComponent}
       <SliderHeading reviewUrl={reviewUrl}>
-        <span>What {product.name} customers are saying on</span>
+        <span>
+          <FormattedMessage
+            id="trust-radius.card-slider.heading"
+            defaultMessage="What {name} customers are saying on"
+            values={{ name: product.name }}
+          />
+        </span>
       </SliderHeading>
       <div
         className="ibm-grid-container"
@@ -89,7 +96,10 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
           href={reviewUrl}
           target="_new"
         >
-          Read all reviews{' '}
+          <FormattedMessage
+            id="trust-radius.card-slider.read-all"
+            defaultMessage="Read all reviews"
+          />{' '}
         </a>
       </div>
     </div>

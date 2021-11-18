@@ -9,10 +9,12 @@ import { CarbonThemes } from '../../../types/carbon';
 import { Provider } from 'react-redux';
 import { ArgsStoryFn } from '@storybook/addons';
 import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
+import storyWithTranslation from '../lib/storyWithTranslation';
 
 const stories = {
   component: CardSlider,
   title: 'Trust Radius/Slider',
+  decorators: [storyWithTranslation()],
 };
 
 const Template: Story<CardSliderProps> = (args) => <CardSlider {...args} />;

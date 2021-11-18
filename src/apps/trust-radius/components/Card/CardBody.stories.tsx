@@ -1,10 +1,12 @@
 import React from 'react';
 import CardBody, { CardBodyProps } from './CardBody';
 import { Story } from '@storybook/react';
+import storyWithTranslation from '../../lib/storyWithTranslation';
 
 const stories = {
   component: CardBody,
   title: 'Trust Radius/Slider/Card/Body',
+  decorators: [storyWithTranslation()],
 };
 
 const Template: Story<CardBodyProps> = (args) => <CardBody {...args} />;
