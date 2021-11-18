@@ -34,7 +34,7 @@ custom:
     - npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
   deploy: &cos_deploy
     provider: script
-    script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry
+    script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry && ./scripts/ci/upload-translations-to-cos.sh
     skip_cleanup: true
     on:
       all_branches: true
