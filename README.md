@@ -9,7 +9,7 @@ This project generates Storybook catalogs for _development_ and _production_ to 
 Below you will find the URL for the registry containing the JSON feed with the widget information.
 This is necessary when you are integrating the widgets with your CMS (like Drupal).
 
-[![](https://img.shields.io/badge/development-registry-success?style=flat-square&logo=json)](https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/index.html) [![](https://img.shields.io/badge/production-registry-success?style=flat-square&logo=json)](https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud/index.html)
+[![](https://img.shields.io/badge/development-registry-success?style=flat-square&logo=json)](https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/registry.json) [![](https://img.shields.io/badge/production-registry-success?style=flat-square&logo=json)](https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud/registry.json)
 
 This project represents a single widget registry. This project, also, contains the code for all the widgets in the
 registry. Widgets are created from components using the [JS Widgets Webpack CLI](https://github.com/js-widgets/webpack-cli#readme).
