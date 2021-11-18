@@ -11,6 +11,9 @@ module.exports = {
 
     // The default configuration adds the ts-loader, which we don't need now.
     config.module.rules[2].use.options.presets = presets;
+    const babelPlugins = config.module.rules[2].use.options.plugins || [];
+    babelPlugins.push('@babel/plugin-transform-runtime');
+    config.module.rules[2].use.options.plugins = babelPlugins;
     config.module.rules = config.module.rules.filter(
       (rule) => rule.loader !== 'ts-loader',
     );

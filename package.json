@@ -68,5 +68,9 @@
     "lint-staged": "lint-staged",
     "storybook": "yarn test:generate-output || true; start-storybook -p 6006 -s public",
     "storybook:build": "yarn test:generate-output || true; build-storybook -s public --output-dir dist"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/runtime": "^7.16.3"
   }
 }
