@@ -33,6 +33,6 @@ module.exports = {
   },
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
-    availableTranslations: ['en'],
+    availableTranslations: ['en', 'es', 'ja', 'ar'],
   },
 };
