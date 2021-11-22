@@ -5,7 +5,7 @@ import { Story } from '@storybook/react';
 
 const stories = {
   component: CardFooter,
-  title: 'Trust Radius/Slider/Card/Footer',
+  title: 'Trust Radius/Components/Slider/Card/Footer',
 };
 
 const Template: Story<CardFooterProps> = (args) => <CardFooter {...args} />;

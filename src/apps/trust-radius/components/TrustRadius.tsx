@@ -86,15 +86,16 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
     window.addEventListener('resize', onWindowResize);
     return () => window.removeEventListener('resize', onWindowResize);
   }, [onWindowResize]);
+  const needsSpinner = isLoading || !product;
   const wrapComponent: HOF<ReactElement> = (component) => (
     <div
-      css={[styles.widget, styles[palette]]}
+      css={[needsSpinner || isError ? {} : styles.widget, styles[palette]]}
       className="Widget ibm-grid-seamless"
     >
       <div css={styles.widgetWrapper}>{component}</div>
     </div>
   );
-  if (isLoading || !product) {
+  if (needsSpinner) {
     return wrapComponent(
       <div css={styles.message}>
         <p className="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center" />

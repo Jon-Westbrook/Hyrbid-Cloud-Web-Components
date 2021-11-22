@@ -5,7 +5,7 @@ import storyWithTranslation from '../../lib/storyWithTranslation';
 
 const stories = {
   component: CardBody,
-  title: 'Trust Radius/Slider/Card/Body',
+  title: 'Trust Radius/Components/Slider/Card/Body',
   decorators: [storyWithTranslation()],
 };
 

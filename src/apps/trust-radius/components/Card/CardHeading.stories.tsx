@@ -5,7 +5,7 @@ import { Story } from '@storybook/react';
 
 const stories = {
   component: CardHeading,
-  title: 'Trust Radius/Slider/Card/Heading',
+  title: 'Trust Radius/Components/Slider/Card/Heading',
 };
 
 const Template: Story<CardHeadingProps> = (args) => <CardHeading {...args} />;

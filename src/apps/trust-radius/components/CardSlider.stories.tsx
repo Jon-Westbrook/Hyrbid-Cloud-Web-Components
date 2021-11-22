@@ -13,7 +13,7 @@ import storyWithTranslation from '../lib/storyWithTranslation';
 
 const stories = {
   component: CardSlider,
-  title: 'Trust Radius/Slider',
+  title: 'Trust Radius/Components/Slider',
   decorators: [storyWithTranslation()],
 };
 

@@ -11,7 +11,7 @@ import storyWithTranslation from '../lib/storyWithTranslation';
 
 const stories = {
   component: TrustRadius,
-  title: 'Trust Radius',
+  title: 'Trust Radius/Components',
   decorators: [storyWithTranslation()],
 };
 

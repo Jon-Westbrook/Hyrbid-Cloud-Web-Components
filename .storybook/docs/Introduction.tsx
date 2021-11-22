@@ -13,8 +13,8 @@ const Introduction: React.FC = () => (
       <li style={{ listStyle: 'none' }}>
         <LinkTo
           className="link-item"
-          kind="trust-radius"
-          story="default"
+          kind="trust-radius-widget"
+          story="page"
           target="_blank"
         >
           <span>

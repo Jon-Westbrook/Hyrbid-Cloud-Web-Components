@@ -4,7 +4,7 @@ import { Story } from '@storybook/react';
 
 const stories = {
   component: SliderHeading,
-  title: 'Trust Radius/Slider/Slider Heading',
+  title: 'Trust Radius/Components/Slider/Slider Heading',
 };
 
 const Template: Story<PropsWithChildren<SliderHeadingProps>> = (args) => (
