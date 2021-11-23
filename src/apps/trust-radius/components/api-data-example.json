@@ -116,9 +116,7 @@
     "displayType": "widget-fancy",
     "navigationMode": "slide",
     "linkContext": "_blank",
-    "requiredTags": [
-      "5e25eb79ac7d51001c795bf1"
-    ],
+    "requiredTags": ["5e25eb79ac7d51001c795bf1"],
     "modified": "2020-06-16T14:03:57.412Z"
   },
   "data": [
@@ -148,20 +146,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -192,9 +177,7 @@
           "isSummary": true,
           "text": "Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers when demand is reduced.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -225,20 +208,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -269,9 +239,7 @@
           "isSummary": false,
           "text": "Easy set up and provisioning and scaling from dashboard itself.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e063",
             "56c5086bd97352701782dfea",
@@ -326,20 +294,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -370,9 +325,7 @@
           "isSummary": true,
           "text": "IBM Cloud Virtual Servers help to scale the production servers on the go [with] ess downtime and high reliability. Also, the console is easy to use & user-friendly.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfe9",
             "56c5086bd97352701782dfe3",
@@ -404,20 +357,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -448,9 +388,7 @@
           "isSummary": false,
           "text": "Easy UI",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfe9",
             "56c5086bd97352701782dfe3",
@@ -505,20 +443,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -549,9 +474,7 @@
           "isSummary": false,
           "text": "Easy to integrate, no use of any third party tool.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782dfed",
             "56c5086bd97352701782dfe3",
@@ -600,20 +523,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -644,9 +554,7 @@
           "isSummary": true,
           "text": "We currently us IBM Virtual Servers to host a number of various sites, from Wordpress to Custom made programs to fulfill a specific job. We have been migrating all assets over to one company and IBM virtual Servers is a big part of this. We love the flexibility of the configuarations",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e073",
             "56c5086bd97352701782dfeb",
@@ -706,20 +614,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -755,9 +650,7 @@
             "5877f3ea3c030e0015b95ee9",
             "59d3b32f68d5d800100762e1"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e0a8",
             "56c5086bd97352701782dfee",
@@ -830,20 +723,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -877,9 +757,7 @@
             "588b7819546ea10015620faa",
             "5ae0bb2c0fcf6500127223f4"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e04d",
             "56c5086bd97352701782dfe9",
@@ -920,20 +798,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -967,9 +832,7 @@
             "588b7819546ea10015620faa",
             "5ae0bb2c0fcf6500127223f4"
           ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e04d",
             "56c5086bd97352701782dfe9",
@@ -1031,20 +894,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1072,12 +922,8 @@
           "_id": "5c7d888c2ed3230038c90d26",
           "isSummary": true,
           "text": "The return on investment on the IBM Cloud Virtual Servers is remarkable since the client only pays for resources they are utilizing through the capacity on demand",
-          "rTags": [
-            "588151b4f85242000f599f1f"
-          ],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "rTags": ["588151b4f85242000f599f1f"],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfea",
@@ -1134,20 +980,7 @@
             "_bsontype": "ObjectID",
             "id": {
               "type": "Buffer",
-              "data": [
-                80,
-                97,
-                217,
-                46,
-                236,
-                59,
-                191,
-                2,
-                0,
-                0,
-                0,
-                205
-              ]
+              "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
           "product": "5bc9e83b42861a00167c409a",
@@ -1177,9 +1010,7 @@
           "isSummary": true,
           "text": "allows your architecture to grow as your business/traffic grows.",
           "rTags": [],
-          "qTags": [
-            "5e25eb79ac7d51001c795bf1"
-          ],
+          "qTags": ["5e25eb79ac7d51001c795bf1"],
           "trTags": [
             "56c5086bd97352701782e062",
             "56c5086bd97352701782dfe9",

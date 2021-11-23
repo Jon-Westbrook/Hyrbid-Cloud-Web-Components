@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/addon-docs';
+import workflow from './img/widget-workflow.jpeg';
+
+<Meta title="Widget Catalog" />
+
+# Widget Catalog
+The new registry compiler [`@js-widgets/webpack-cli`](https://www.github.com/js-widgets/webpack-cli) operates under very
+few assumptions on how your project is organized. With this we have the freedom to introduce a component library. We
+consider Storybook to be the best tool for this task, and it is consistent with other IBM teams.
+
+The widget catalog becomes a product for both the stakeholder team and the development team. This aims to encourage
+early feedback and progress tracking.
+
+## The Catalog for Stakeholders
+The widget catalog allows stakeholders to browse the available widgets and interact with them. Among other things, they
+can click on the widget, change the language, provide alternative inputs, see the different states of a widget, etc.
+
+One of the challenges for widget developers is to keep the catalog organized to avoid confusion. This is specially
+important since this product is also meant for non-technical actors. For this reason each widget in the widget catalog
+should contain a main story that for documentation purposes. This story is meant for stakeholders to validate, and
+evolve requirements on widgets. Each one of the requirements of the widget should be represented and exemplified with
+embedded interactive stories. These are contained in a `widget.stories.mdx` file at the root of each widget folder.
+
+Check the [`widget.stories.mdx` file for the Trust Radius widget](https://raw.github.ibm.com/MSC-Cloud/hc-widgets/development/src/apps/trust-radius/widget.stories.mdx)
+for an example on how to create one for your new widget.
+
+## A Widget Journey to the CMS
+The following diagram aims to explain the processes and tools required for a JS component in the catalog until it is
+shown to the end users in the CMS.
+
+<img src={workflow} alt="A diagram of the cycle of a widget into production" />

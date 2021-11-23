@@ -1,11 +1,11 @@
 {
-  "trust-radius.card-slider.heading" : {
-    "defaultMessage" : "お客様が何を言っているのか"
+  "trust-radius.card-slider.heading": {
+    "defaultMessage": "お客様が何を言っているのか"
   },
-  "trust-radius.card-slider.read-all" : {
-    "defaultMessage" : "レビューをすべて読む"
+  "trust-radius.card-slider.read-all": {
+    "defaultMessage": "レビューをすべて読む"
   },
-  "trust-radius.error-message" : {
-    "defaultMessage" : "Trust Radius のレビューのロード中に問題が発生しました。 後で再試行してください。"
+  "trust-radius.error-message": {
+    "defaultMessage": "Trust Radius のレビューのロード中に問題が発生しました。 後で再試行してください。"
   }
 }

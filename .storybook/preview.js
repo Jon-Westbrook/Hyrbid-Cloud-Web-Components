@@ -6,6 +6,7 @@ export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   showRoots: true,
   controls: {
+    expanded: true,
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
