@@ -9,6 +9,7 @@ mkdir --parents "${TEMP_DIR}/translations"
 
 # Find all the folders with the name "compiledStrings" and copy them to the temporary directory.
 while IFS= read -r -d $'\0' directory; do
+  # From /path/to/src/apps/my-widget/locales/compiledStrings/es.json to ${TEMP_DIR}/translations/my-widget/es.json
   destination=$(echo "${directory}" |sed -e 's:.*/apps/::g' -e 's:/locales/compiledStrings::g')
   cp --recursive "$directory" "$TEMP_DIR/translations/$destination"
 done < <(find "$PROJECT_ROOT" -type d -name compiledStrings -print0)

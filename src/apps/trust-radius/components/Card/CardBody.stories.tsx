@@ -13,8 +13,7 @@ const Template: Story<CardBodyProps> = (args) => <CardBody {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  text:
-    'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
+  text: 'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
   rating: 9,
   createdDate: '2021-04-16T02:06:58.757Z',
   maxLines: 7,
@@ -23,8 +22,7 @@ Default.args = {
 export const Truncated = Template.bind({});
 Truncated.args = {
   ...Default.args,
-  text:
-    'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers. Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers. Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
+  text: 'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers. Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers. Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
   rating: 0,
   maxLines: 1,
 };

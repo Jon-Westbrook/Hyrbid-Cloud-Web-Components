@@ -34,7 +34,7 @@ custom:
     - npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
   deploy: &cos_deploy
     provider: script
-    script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry && ./scripts/ci/upload-translations-to-cos.sh
+    script: ./scripts/ci/upload-to-cos.sh ${TRAVIS_BUILD_DIR}/widget-registry && ./scripts/ci/upload-public-dirs-to-cos.sh && ./scripts/ci/upload-translations-to-cos.sh
     skip_cleanup: true
     on:
       all_branches: true
@@ -50,6 +50,7 @@ jobs:
         - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-production
         - IBMCLOUD_COS_REGION=us-geo
         - PUBLIC_URL="https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud"
+        - PUBLIC_ASSETS_URL="https://hybrid-cloud-widgets-production.s3.us.cloud-object-storage.appdomain.cloud/static"
         - NODE_ENV=production
       before_install: *cos_before_install
       script: *cos_script
@@ -59,6 +60,7 @@ jobs:
         - IBMCLOUD_COS_BUCKET=hybrid-cloud-widgets-development
         - IBMCLOUD_COS_REGION=us-geo
         - PUBLIC_URL="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud"
+        - PUBLIC_ASSETS_URL="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/static"
         - NODE_ENV=production
       before_install: *cos_before_install
       script: *cos_script

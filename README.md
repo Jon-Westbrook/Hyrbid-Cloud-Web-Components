@@ -18,6 +18,14 @@ Check [the documentation](https://js-widgets.github.io/webpack-cli/) on how to c
 
 [![Webpack CLI](https://camo.githubusercontent.com/3693a0ff1fefe7ac31adf36125d2ad1e6be65e1eb0133841a9f0d63f7aa8c30f/68747470733a2f2f6a732d776964676574732e6769746875622e696f2f7765627061636b2d636c692f696d672f646f63756d656e746174696f6e2d736974652e706e67)](https://js-widgets.github.io/webpack-cli)
 
+## Set Up
+
+Create a `.env.local` file in your local environment with the following contents:
+
+```ini
+PUBLIC_ASSETS_URL=/static
+```
+
 ## Usage
 
 Use the _Trust Radius_ widget as a reference implementation for your widgets. Noteworthy features:

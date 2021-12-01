@@ -22,8 +22,7 @@ Empty.args = {
 
 export const LongText = Template.bind({});
 LongText.args = {
-  text:
-    'Dolore possimus et rerum excepturi odio. Saepe dolorum voluptatem accusamus consequatur. Eos deleniti voluptas quia quaerat quod architecto ducimus et. Possimus quae quidem non accusantium facere non enim. Voluptas qui corporis recusandae et et magnam fugit.',
+  text: 'Dolore possimus et rerum excepturi odio. Saepe dolorum voluptatem accusamus consequatur. Eos deleniti voluptas quia quaerat quod architecto ducimus et. Possimus quae quidem non accusantium facere non enim. Voluptas qui corporis recusandae et et magnam fugit.',
 };
 
 export default stories;

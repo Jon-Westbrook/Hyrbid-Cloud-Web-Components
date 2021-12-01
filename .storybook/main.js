@@ -1,3 +1,7 @@
+const findWidgetIdsFsSync = require('./findWidgetIdsFsSync');
+
+const widgetIds = findWidgetIdsFsSync();
+
 module.exports = {
   stories: [
     './docs/*.stories.@(js|jsx|ts|tsx|mdx)',
@@ -10,5 +14,13 @@ module.exports = {
     '@storybook/preset-create-react-app',
     '@storybook/addon-a11y',
     '@storybook/addon-jest',
+  ],
+  staticDirs: [
+    '../public',
+    // Adds support in Storybook for static assets in per-widget public folder.
+    ...widgetIds.map((id) => ({
+      from: `../src/apps/${id}/public`,
+      to: `/static/${id}`,
+    })),
   ],
 };

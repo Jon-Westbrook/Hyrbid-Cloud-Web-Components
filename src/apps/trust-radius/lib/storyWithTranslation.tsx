@@ -14,18 +14,20 @@ const messagesByLangcode: Record<string, any> = {
   ja: messages_ja,
 };
 
-const storyWithTranslation = (locale: string | void) => (
-  story: ArgsStoryFn<ReactNode>,
-  { globals: { locale } }: { globals: { locale: string } },
-) => {
-  return (
-    <IntlProvider
-      locale={locale || 'en'}
-      messages={messagesByLangcode[locale || 'en']}
-    >
-      {story()}
-    </IntlProvider>
-  );
-};
+const storyWithTranslation =
+  (locale: string | void) =>
+  (
+    story: ArgsStoryFn<ReactNode>,
+    { globals: { locale } }: { globals: { locale: string } },
+  ) => {
+    return (
+      <IntlProvider
+        locale={locale || 'en'}
+        messages={messagesByLangcode[locale || 'en']}
+      >
+        {story()}
+      </IntlProvider>
+    );
+  };
 
 export default storyWithTranslation;
