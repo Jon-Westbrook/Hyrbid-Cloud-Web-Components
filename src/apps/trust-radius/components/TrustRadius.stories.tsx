@@ -1,21 +1,20 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import TrustRadius, { TrustRadiusOwnProps } from './TrustRadius';
-import { Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { Provider } from 'react-redux';
 import { FetchStatusEnum } from '../lib/redux/store';
 import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
 
 import { CarbonThemes } from '../../../types/carbon';
-import { ArgsStoryFn } from '@storybook/addons';
 import storyWithTranslation from '../lib/storyWithTranslation';
 
-const stories = {
+const stories: Meta = {
   component: TrustRadius,
   title: 'Trust Radius/Components',
   decorators: [storyWithTranslation()],
 };
 
-const Template: Story<TrustRadiusOwnProps> = (args) => (
+const Template: StoryFn<TrustRadiusOwnProps> = (args) => (
   <TrustRadius {...args} />
 );
 
@@ -25,15 +24,13 @@ Default.args = {
   trustRadiusId: 'fake-trid',
 };
 Default.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
-    <Provider store={fakeStore()}>{story()}</Provider>
-  ),
+  (story) => <Provider store={fakeStore()}>{story()}</Provider>,
 ];
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
 Gray.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider
       store={overrideFakeStore({
         themeOverride: CarbonThemes.GRAY_10,
@@ -47,7 +44,7 @@ Gray.decorators = [
 export const Dark = Template.bind({});
 Dark.args = Object.assign({}, Default.args);
 Dark.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider
       store={overrideFakeStore({
         themeOverride: CarbonThemes.GRAY_100,
@@ -61,7 +58,7 @@ Dark.decorators = [
 export const TwoColumns = Template.bind({});
 TwoColumns.args = Object.assign({}, Default.args);
 TwoColumns.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider store={overrideFakeStore({ numColsOverrides: 2 })}>
       {story()}
     </Provider>
@@ -71,7 +68,7 @@ TwoColumns.decorators = [
 export const OneColumn = Template.bind({});
 OneColumn.args = Object.assign({}, Default.args);
 OneColumn.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider store={overrideFakeStore({ numColsOverrides: 1 })}>
       {story()}
     </Provider>
@@ -81,7 +78,7 @@ OneColumn.decorators = [
 export const Loading = Template.bind({});
 Loading.args = Object.assign({}, Default.args);
 Loading.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider
       store={overrideFakeStore({
         statusOverrides: FetchStatusEnum.IN_PROGRESS,
@@ -94,7 +91,7 @@ Loading.decorators = [
 
 export const FailedRequest = Template.bind({});
 FailedRequest.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider
       store={overrideFakeStore({
         statusOverrides: FetchStatusEnum.FAILURE,

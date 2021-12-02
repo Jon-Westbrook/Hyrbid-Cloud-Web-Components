@@ -1,9 +1,9 @@
 import React from 'react';
 
 import EmptyCard from './EmptyCard';
-import { Story } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
-const stories = {
+const stories: Meta = {
   component: EmptyCard,
   title: 'Trust Radius/Components/Slider/Card/EmptyCard',
 };

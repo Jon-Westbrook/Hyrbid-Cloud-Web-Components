@@ -1,9 +1,9 @@
 import React from 'react';
 import CardBody, { CardBodyProps } from './CardBody';
-import { Story } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import storyWithTranslation from '../../lib/storyWithTranslation';
 
-const stories = {
+const stories: Meta = {
   component: CardBody,
   title: 'Trust Radius/Components/Slider/Card/Body',
   decorators: [storyWithTranslation()],

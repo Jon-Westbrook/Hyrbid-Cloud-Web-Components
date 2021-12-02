@@ -1,9 +1,9 @@
 import React from 'react';
 
 import CardHeading, { CardHeadingProps } from './CardHeading';
-import { Story } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
-const stories = {
+const stories: Meta = {
   component: CardHeading,
   title: 'Trust Radius/Components/Slider/Card/Heading',
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
 import CardFooter, { CardFooterProps } from './CardFooter';
-import { Story } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
-const stories = {
+const stories: Meta = {
   component: CardFooter,
   title: 'Trust Radius/Components/Slider/Card/Footer',
 };

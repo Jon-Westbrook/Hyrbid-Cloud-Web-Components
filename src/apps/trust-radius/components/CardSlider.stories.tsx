@@ -1,17 +1,16 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import CardSlider, { CardSliderProps } from './CardSlider';
-import { Story } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import { CarbonThemes } from '../../../types/carbon';
 import { Provider } from 'react-redux';
-import { ArgsStoryFn } from '@storybook/addons';
 import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
 import storyWithTranslation from '../lib/storyWithTranslation';
 
-const stories = {
+const stories: Meta = {
   component: CardSlider,
   title: 'Trust Radius/Components/Slider',
   decorators: [storyWithTranslation()],
@@ -40,15 +39,13 @@ Default.args = {
   setCustomSlider: () => undefined,
 };
 Default.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
-    <Provider store={fakeStore()}>{story()}</Provider>
-  ),
+  (story) => <Provider store={fakeStore()}>{story()}</Provider>,
 ];
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
 Gray.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider
       store={overrideFakeStore({ themeOverride: CarbonThemes.GRAY_10 })}
     >
@@ -60,7 +57,7 @@ Gray.decorators = [
 export const Dark = Template.bind({});
 Dark.args = Object.assign({}, Default.args);
 Dark.decorators = [
-  (story: ArgsStoryFn<ReactNode>) => (
+  (story) => (
     <Provider
       store={overrideFakeStore({ themeOverride: CarbonThemes.GRAY_100 })}
     >
