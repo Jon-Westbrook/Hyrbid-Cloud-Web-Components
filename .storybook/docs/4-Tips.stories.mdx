@@ -1,0 +1,45 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Tips" />
+
+# Development Tips
+
+This page contains development tips and conventions in this project.title
+
+## 1. Translations
+This project uses react-intl to translate the interface strings. To make your widget multilingual you will need to:
+
+- When rendering text on English, wrap it with a `<FormattedMessage>` and give it an id (prefix it with the widget ID). For instance:
+
+```jsx
+import { FormattedMessage } from 'react-intl';
+// ...
+<FormattedMessage
+  id="trust-radius.error-message"
+  defaultMessage="The was a problem loading Trust Radius reviews. Please try again later."
+/>
+```
+
+- Once you have your app ready for translation, execute the script `./scripts/extract-all.sh`. This will scan for the messages in all the widgets and put them in each of the `./src/apps/your-widget/locales/extractedStrings` folder. You can use the `en.json` file to submit the string for translation. Once you get the translated JSON files (`es.json`, `ja.json`, ...) add them to the `extractedStrings` folder.
+jsx
+- Before publishing your widget remember to "compile" the translations using `./scripts/compile-all.sh`.
+
+After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget.
+
+## 2. Using media
+
+You can use images and other media assets normally within your application. Webpack will take care of inlining the assets if necessary. A possible way of doing this is:
+
+```jsx
+import imgData from '../assets/img/the-image.png';
+// ...
+<img src={imgData} alt="..." />
+```
+
+Another way to add media is by putting it in the per-widget `public` directory. Lets say you store an image under `./src/apps/your-widget/public/foo/bar/my-image.png`. You can then reference in you code using:
+
+```
+<img src={`${process.env.PUBLIC_ASSETS_URL}/your-widget/foo/bar/my-image.png`} alt="..." />
+```
+
+Travis will ensure that the image is uploaded to a public location, while Webpack will be in charge of replacing the string `'process.env.PUBLIC_ASSETS_URL'` with the actual URL when compiling the code (also in Travis). In coordination to that the `.env.local` file in you local environment should contain `PUBLIC_ASSETS_URL=/static`, so the media also works in Storybook.

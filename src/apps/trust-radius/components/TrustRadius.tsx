@@ -92,10 +92,6 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
       css={[needsSpinner || isError ? {} : styles.widget, styles[palette]]}
       className="Widget ibm-grid-seamless"
     >
-      <img
-        src={`${process.env.PUBLIC_ASSETS_URL}/trust-radius/test-image.png`}
-        alt="Test Image"
-      />
       <div css={styles.widgetWrapper}>{component}</div>
     </div>
   );
