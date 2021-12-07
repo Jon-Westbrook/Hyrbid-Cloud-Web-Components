@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
+# Calculate the absolute path to the project root.
+SCRIPT_RELATIVE_DIR=$(dirname "${BASH_SOURCE[0]}")
+PROJECT_ROOT=$(dirname "$(dirname "${SCRIPT_RELATIVE_DIR}")")
+
 echo "Name of the script: $0"
 echo "Total number of arguments: $#"
 echo "Values of all the arguments: $@"
@@ -13,10 +17,7 @@ else
   exit 1;
 fi
 
-# Login and configure connection to IBM Cloud COS.
-ibmcloud login --no-region;
-ibmcloud cos config crn --crn "${IBMCLOUD_STORAGE_CRN}";
-ibmcloud cos config region --region "${IBMCLOUD_COS_REGION:us-geo}";
+source "${PROJECT_ROOT}/scripts/ci/set-up-cos-environment.sh"
 
 # Upload to the bucket.
 while IFS= read -r file; do
