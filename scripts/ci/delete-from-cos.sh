@@ -19,9 +19,9 @@ keys=$(while read -r key; do
 done < <(ibmcloud cos objects --bucket "${IBMCLOUD_COS_BUCKET}" --output json |jq '.Contents[] .Key' |grep "${KEY_REGEXP}")) || ""
 if [ -n "${keys}" ];
 then
-  echo "Nothing to delete. 🧹"
-else
   structure="Objects=[$(echo $keys |sed -e 's:,$::g')],Quiet=false"
   echo "Sending to COS for deletion: ${structure}"
   ibmcloud cos objects-delete --bucket "${IBMCLOUD_COS_BUCKET}" --delete "${structure}" --output json
+else
+  echo "Nothing to delete. 🧹"
 fi;
