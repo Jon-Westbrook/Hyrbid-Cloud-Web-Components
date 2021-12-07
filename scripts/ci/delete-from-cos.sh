@@ -16,7 +16,7 @@ ibmcloud cos config region --region "${IBMCLOUD_COS_REGION:us-geo}";
 keys=$(while read -r key; do
   echo -n "{Key=$key},"
 done < <(ibmcloud cos objects --bucket "${IBMCLOUD_COS_BUCKET}" --output json |jq '.Contents[] .Key' |grep "${KEY_REGEXP}")) || ""
-if [ -v "${keys}" ];
+if [ -n "${keys}" ];
 then
   echo "Nothing to delete. 🧹"
 else
