@@ -1,3 +1,24 @@
+const CompressionPlugin = require('compression-webpack-plugin');
+const {
+  constants: { BROTLI_PARAM_QUALITY },
+} = require('zlib');
+
+const additionalPlugins = [
+  new CompressionPlugin({
+    deleteOriginalAssets: true,
+    algorithm: 'brotliCompress',
+    test: /\.(js|css|svg)$/,
+    compressionOptions: {
+      params: {
+        [BROTLI_PARAM_QUALITY]: 11,
+      },
+    },
+    threshold: 10240,
+    minRatio: 0.8,
+    filename: '[path][base].br',
+  }),
+];
+
 module.exports = {
   register: ['../src/apps/**/*.widget.js'],
   webpackFinal: (config) => {
@@ -19,8 +40,14 @@ module.exports = {
     );
 
     config.devtool = 'inline-source-map';
+    config.resolve = config.resolve || {};
+    config.resolve.alias = config.resolve.alias || {};
     config.resolve.alias['@formatjs/icu-messageformat-parser'] =
       '@formatjs/icu-messageformat-parser/no-parser';
+
+    config.plugins = config.plugins || [];
+    config.plugins = [...config.plugins, ...additionalPlugins];
+
     return config;
   },
 };

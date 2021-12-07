@@ -2,7 +2,6 @@
 const path = require('path');
 
 module.exports = {
-  entry: path.join(__dirname, 'render-trust-radius.jsx'),
   shortcode: 'trust-radius',
   title: 'Trust Radius Reviews',
   status: 'stable',

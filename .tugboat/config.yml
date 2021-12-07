@@ -6,7 +6,7 @@ services:
         - curl -sL https://deb.nodesource.com/setup_16.x | sh
         - apt-get install -y nodejs
         - npm install --global yarn
-        - ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist" "${DOCROOT}"
+        - ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist/storybook" "${DOCROOT}"
         - cp ${TUGBOAT_ROOT}/.tugboat/.env.local ${TUGBOAT_ROOT}/.env.local
       update:
         - yarn install

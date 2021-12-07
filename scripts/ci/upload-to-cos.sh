@@ -24,4 +24,12 @@ while IFS= read -r file; do
   ibmcloud cos upload --bucket "${IBMCLOUD_COS_BUCKET}" --key "${file}" --file "${ROOT_DIR}/${file}";
   echo -e "\033[2K"
   echo -e "Uploaded $file 🏁"
-done < <(find "${ROOT_DIR}" -type f -printf "%P\n")
+done < <(find "${ROOT_DIR}" -type f -printf "%P\n" |grep -v '\.br$')
+
+# Upload to the bucket.
+while IFS= read -r file; do
+  echo -en "Uploading $file 🔼"
+  ibmcloud cos upload --content-encoding brotli --bucket "${IBMCLOUD_COS_BUCKET}" --key "$(echo ${file} |sed -e 's:\.br$::g')" --file "${ROOT_DIR}/${file}";
+  echo -e "\033[2K"
+  echo -e "Uploaded $file 🏁"
+done < <(find "${ROOT_DIR}" -type f -name "*.br" -printf "%P\n")

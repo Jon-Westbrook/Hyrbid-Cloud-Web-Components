@@ -20,7 +20,7 @@ import normalizeWidgetInput from '../../common/normalizeWidgetInput';
  * @param {Function} cb
  *   A callback that executes after the widget has been rendered.
  */
-async function render(instanceId, langCode, origin, cb) {
+export default async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages, palette } = await normalizeWidgetInput(
     instanceId,
     langCode,
@@ -47,5 +47,3 @@ async function render(instanceId, langCode, origin, cb) {
     () => cb(element),
   );
 }
-
-window.renderTrustRadius = render;
