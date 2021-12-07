@@ -15,7 +15,7 @@ while IFS= read -r -d $'\0' directory; do
 done < <(find "$PROJECT_ROOT" -type d -name compiledStrings -print0)
 
 find "${TEMP_DIR}" -type f
-"./delete-from-cos.sh" '^"translations/' && \
-"./upload-to-cos.sh" "${TEMP_DIR}"
+source "${PROJECT_ROOT}/scripts/ci/delete-from-cos.sh" '^"translations/' && \
+source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${TEMP_DIR}"
 
 rm --recursive --force "${TEMP_DIR}"

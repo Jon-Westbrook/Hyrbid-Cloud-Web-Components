@@ -5,6 +5,6 @@ set -e
 SCRIPT_RELATIVE_DIR=$(dirname "${BASH_SOURCE[0]}")
 PROJECT_ROOT=$(dirname "$(dirname "${SCRIPT_RELATIVE_DIR}")")
 
-"./delete-from-cos.sh" '^"widgets/)' && \
-"./delete-from-cos.sh" '^"storybook/' && \
-"./upload-to-cos.sh" "${PROJECT_ROOT}/widget-registry"
+source "${PROJECT_ROOT}/scripts/ci/delete-from-cos.sh" '^"widgets/)' && \
+source "${PROJECT_ROOT}/scripts/ci/delete-from-cos.sh" '^"storybook/' && \
+source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${PROJECT_ROOT}/widget-registry"
