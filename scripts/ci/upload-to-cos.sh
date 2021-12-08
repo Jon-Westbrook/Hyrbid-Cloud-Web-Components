@@ -16,11 +16,9 @@ else
   echo "Invalid directory to upload. Provided: $1";
   exit 1;
 fi
-
+compressedExtensions=${2:-\.br$}
 source "${PROJECT_ROOT}/scripts/ci/set-up-cos-environment.sh"
 
-# The list of compressed extensions should match the one in .widgetRegistry/main.js
-compressedExtensions='\.\(js\|css\|svg\)$'
 # Upload uncompressed files to the bucket.
 while IFS= read -r file; do
   echo -en "Uploading $file 🔼"

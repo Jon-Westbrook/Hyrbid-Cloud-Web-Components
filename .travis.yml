@@ -30,7 +30,8 @@ custom:
     - for i in {1..5}; do curl -fsSL https://clis.cloud.ibm.com/install/linux | sh && break || sleep 2; done
     - for i in {1..5}; do ibmcloud plugin install cloud-object-storage && break || sleep 2; done
   script: &cos_script
-    - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/widget-registry/storybook"
+    - mkdir -p "${TRAVIS_BUILD_DIR}/catalog/storybook"
+    - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/catalog/storybook"
     - npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
   deploy: &cos_deploy
     provider: script
@@ -38,6 +39,7 @@ custom:
       ./scripts/ci/upload-widgets-to-cos.sh
       ./scripts/ci/upload-public-dirs-to-cos.sh
       ./scripts/ci/upload-translations-to-cos.sh
+      ./scripts/ci/upload-catalog-to-cos.sh
     skip_cleanup: true
     on:
       all_branches: true

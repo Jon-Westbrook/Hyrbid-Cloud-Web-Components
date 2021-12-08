@@ -39,7 +39,6 @@ module.exports = {
       (rule) => rule.loader !== 'ts-loader',
     );
 
-    config.devtool = 'inline-source-map';
     config.resolve = config.resolve || {};
     config.resolve.alias = config.resolve.alias || {};
     config.resolve.alias['@formatjs/icu-messageformat-parser'] =
@@ -47,6 +46,8 @@ module.exports = {
 
     config.plugins = config.plugins || [];
     config.plugins = [...config.plugins, ...additionalPlugins];
+
+    config.output.clean = true;
 
     return config;
   },
