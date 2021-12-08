@@ -7,7 +7,7 @@ const additionalPlugins = [
   new CompressionPlugin({
     deleteOriginalAssets: true,
     algorithm: 'brotliCompress',
-    test: /\.(js|css|svg)$/,
+    test: /\.(js|css|svg|js\.map)$/,
     compressionOptions: {
       params: {
         [BROTLI_PARAM_QUALITY]: 11,

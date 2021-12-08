@@ -10,4 +10,4 @@ PROJECT_ROOT=$(dirname "$(dirname "${SCRIPT_RELATIVE_DIR}")")
 # could cause an outage for widgets in production.
 
 # The list of compressed extensions should match the one in .widgetRegistry/main.js
-source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${PROJECT_ROOT}/widget-registry" '\.\(js\|css\|svg\)$'
+source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${PROJECT_ROOT}/widget-registry" '\.\(js\|css\|svg\|js\.map\)$'
