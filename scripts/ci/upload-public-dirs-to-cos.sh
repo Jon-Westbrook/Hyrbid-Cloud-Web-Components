@@ -15,7 +15,7 @@ while IFS= read -r -d $'\0' directory; do
 done < <(find "$PROJECT_ROOT/src/apps" -maxdepth 2 -mindepth 1 -type d -name public -print0)
 
 find "${TEMP_DIR}" -type f
-source "${PROJECT_ROOT}/scripts/ci/delete-from-cos.sh" '^"static/' && \
+source "${PROJECT_ROOT}/scripts/ci/delete-from-cos.sh" '^"static/'
 source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${TEMP_DIR}"
 
 rm --recursive --force "${TEMP_DIR}"
