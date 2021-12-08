@@ -19,8 +19,11 @@ import normalizeWidgetInput from '../../common/normalizeWidgetInput';
  *   Protocol and hostname where a JSONAPI endpoint is available.
  * @param {Function} cb
  *   A callback that executes after the widget has been rendered.
+ *
+ * @return {Promise<void>}
+ *   A promise that the app will be rendered.
  */
-export default async function (instanceId, langCode, origin, cb) {
+module.exports = async (instanceId, langCode, origin, cb) => {
   const { element, locale, messages, palette } = await normalizeWidgetInput(
     instanceId,
     langCode,
@@ -46,4 +49,4 @@ export default async function (instanceId, langCode, origin, cb) {
     element,
     () => cb(element),
   );
-}
+};

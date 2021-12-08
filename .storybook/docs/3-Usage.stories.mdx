@@ -102,7 +102,8 @@ All these are implemented in the Trust Radius widget and can be abstracted to be
 
 See the render file for the Trust Radius widget below.
 
-```typescript
+```javascript
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -123,8 +124,11 @@ import normalizeWidgetInput from '../../common/normalizeWidgetInput';
  *   Protocol and hostname where a JSONAPI endpoint is available.
  * @param {Function} cb
  *   A callback that executes after the widget has been rendered.
+ *
+ * @return {Promise<void>}
+ *   A promise that the app will be rendered.
  */
-async function render(instanceId, langCode, origin, cb) {
+module.exports = async (instanceId, langCode, origin, cb) => {
   const { element, locale, messages, palette } = await normalizeWidgetInput(
     instanceId,
     langCode,
@@ -150,9 +154,7 @@ async function render(instanceId, langCode, origin, cb) {
     element,
     () => cb(element),
   );
-}
-
-window.renderTrustRadius = render;
+};
 ```
 
 The `@js-widgets/webpack-cli` documentation contains more information on render files. Check it out for more insight.
