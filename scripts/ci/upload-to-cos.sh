@@ -19,18 +19,31 @@ fi
 
 source "${PROJECT_ROOT}/scripts/ci/set-up-cos-environment.sh"
 
-# Upload to the bucket.
+# The list of compressed extensions should match the one in .widgetRegistry/main.js
+compressedExtensions='\.\(js\|css\|svg\)$'
+# Upload uncompressed files to the bucket.
 while IFS= read -r file; do
   echo -en "Uploading $file 🔼"
   ibmcloud cos upload --bucket "${IBMCLOUD_COS_BUCKET}" --key "${file}" --file "${ROOT_DIR}/${file}";
   echo -e "\033[2K"
   echo -e "Uploaded $file 🏁"
-done < <(find "${ROOT_DIR}" -type f -printf "%P\n" |grep -v '\.br$')
+done < <(find "${ROOT_DIR}" -type f -printf "%P\n" |grep -v $compressedExtensions)
 
-# Upload to the bucket.
+# Upload compressed files to the bucket.
 while IFS= read -r file; do
-  echo -en "Uploading $file 🔼"
-  ibmcloud cos upload --content-encoding brotli --bucket "${IBMCLOUD_COS_BUCKET}" --key "$(echo ${file} |sed -e 's:\.br$::g')" --file "${ROOT_DIR}/${file}";
+  echo -en "Uploading compressed brotli $file 🥦"
+  case "${file//.*/}" in
+    "js")
+    contentType=application/javscript
+    ;;
+    "css")
+    contentType=text/css
+    ;;
+    "svg")
+    contentType=image/svg+xml;
+    ;;
+  esac
+  ibmcloud cos upload --content-encoding brotli --content-type $contentType --bucket "${IBMCLOUD_COS_BUCKET}" --key "${file}" --file "${ROOT_DIR}/${file}";
   echo -e "\033[2K"
   echo -e "Uploaded $file 🏁"
-done < <(find "${ROOT_DIR}" -type f -name "*.br" -printf "%P\n")
+done < <(find "${ROOT_DIR}" -type f -printf "%P\n" |grep $compressedExtensions)

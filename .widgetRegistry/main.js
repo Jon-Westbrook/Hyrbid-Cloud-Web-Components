@@ -15,7 +15,7 @@ const additionalPlugins = [
     },
     threshold: 10240,
     minRatio: 0.8,
-    filename: '[path][base].br',
+    filename: '[path][base]',
   }),
 ];
 
