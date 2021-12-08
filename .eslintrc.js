@@ -12,6 +12,10 @@ module.exports = {
       files: ['**/*.stories.*'],
       rules: { 'import/no-anonymous-default-export': 'off' },
     },
+    {
+      files: ['src/apps/**/*.js'],
+      rules: { '@typescript-eslint/no-var-requires': 'off' },
+    },
   ],
   plugins: ['formatjs'],
   rules: {
