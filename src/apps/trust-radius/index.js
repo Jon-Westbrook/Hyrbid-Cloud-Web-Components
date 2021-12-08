@@ -23,7 +23,7 @@ import normalizeWidgetInput from '../../common/normalizeWidgetInput';
  * @return {Promise<void>}
  *   A promise that the app will be rendered.
  */
-module.exports = async (instanceId, langCode, origin, cb) => {
+export default async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages, palette } = await normalizeWidgetInput(
     instanceId,
     langCode,
@@ -49,4 +49,4 @@ module.exports = async (instanceId, langCode, origin, cb) => {
     element,
     () => cb(element),
   );
-};
+}
