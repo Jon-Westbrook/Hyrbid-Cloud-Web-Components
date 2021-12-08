@@ -47,8 +47,6 @@ module.exports = {
     config.plugins = config.plugins || [];
     config.plugins = [...config.plugins, ...additionalPlugins];
 
-    config.output.clean = true;
-
     return config;
   },
 };
