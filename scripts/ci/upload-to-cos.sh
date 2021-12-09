@@ -21,7 +21,7 @@ source "${PROJECT_ROOT}/scripts/ci/set-up-cos-environment.sh"
 
 # Upload uncompressed files to the bucket.
 while IFS= read -r file; do
-  echo -en "Uploading $file 🔼"
+  echo -en "Uploading $file 🔼 "
   ibmcloud cos upload --bucket "${IBMCLOUD_COS_BUCKET}" --key "${file}" --file "${ROOT_DIR}/${file}";
   echo -e "\033[2K"
   echo -e "Uploaded $file 🏁"
@@ -29,7 +29,7 @@ done < <(find "${ROOT_DIR}" -type f -printf "%P\n" |grep -v $compressedExtension
 
 # Upload compressed files to the bucket.
 while IFS= read -r file; do
-  echo -en "Uploading compressed brotli $file 🥦"
+  echo -en "Uploading compressed brotli $file 🔼🥦 "
   ibmcloud cos upload --content-encoding br --bucket "${IBMCLOUD_COS_BUCKET}" --key "${file}" --file "${ROOT_DIR}/${file}";
   echo -e "\033[2K"
   echo -e "Uploaded $file 🏁"

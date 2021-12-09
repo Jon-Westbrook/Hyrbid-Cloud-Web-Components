@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
-const React = require('react');
-const ReactDOM = require('react-dom');
-const { Provider } = require('react-redux');
-const TrustRadius = require('./components/TrustRadius');
-const store = require('./lib/redux/store');
-require('regenerator-runtime/runtime');
-const { IntlProvider } = require('react-intl');
-const normalizeWidgetInput = require('../../common/normalizeWidgetInput');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import TrustRadius from './components/TrustRadius';
+import store from './lib/redux/store';
+import 'regenerator-runtime/runtime';
+import { IntlProvider } from 'react-intl';
+import normalizeWidgetInput from '../../common/normalizeWidgetInput';
 
 /**
  * Renders the widget.
@@ -23,7 +23,7 @@ const normalizeWidgetInput = require('../../common/normalizeWidgetInput');
  * @return {Promise<void>}
  *   A promise that the app will be rendered.
  */
-module.exports = async (instanceId, langCode, origin, cb) => {
+export default async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages, palette } = await normalizeWidgetInput(
     instanceId,
     langCode,
@@ -49,4 +49,4 @@ module.exports = async (instanceId, langCode, origin, cb) => {
     element,
     () => cb(element),
   );
-};
+}
