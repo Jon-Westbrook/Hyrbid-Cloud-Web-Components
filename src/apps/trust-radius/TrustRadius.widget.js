@@ -15,7 +15,7 @@ module.exports = {
             title: 'Trust Radius ID',
             description:
               'The ID found within the trust radius reviews URL that activates the product reviews',
-            examples: ['5e948b56fdfae40038b2b107'],
+            examples: ['5e20addcac72e40024d9a00a'],
           },
           'use-google-stars': {
             type: 'boolean',
