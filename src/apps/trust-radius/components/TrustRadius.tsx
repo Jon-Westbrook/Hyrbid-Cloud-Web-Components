@@ -106,8 +106,8 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
     return wrapComponent(
       <div css={styles.message}>
         <FormattedMessage
-          id="trust-radius.error-message"
-          defaultMessage="The was a problem loading Trust Radius reviews. Please try again later."
+          defaultMessage="There was a problem loading Trust Radius reviews. Please try again later."
+          id="/WpBBe"
         />
       </div>,
     );

@@ -58,8 +58,8 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
       <SliderHeading reviewUrl={reviewUrl}>
         <span>
           <FormattedMessage
-            id="trust-radius.card-slider.heading"
             defaultMessage="What {name} customers are saying on"
+            id="cJvElh"
             values={{ name: product.name }}
           />
         </span>
@@ -96,10 +96,7 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
           href={reviewUrl}
           target="_new"
         >
-          <FormattedMessage
-            id="trust-radius.card-slider.read-all"
-            defaultMessage="Read all reviews"
-          />{' '}
+          <FormattedMessage defaultMessage="Read all reviews" id="PU1OGb" />{' '}
         </a>
       </div>
     </div>

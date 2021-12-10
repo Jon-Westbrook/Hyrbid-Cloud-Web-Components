@@ -20,5 +20,11 @@ module.exports = {
   plugins: ['formatjs'],
   rules: {
     'formatjs/no-offset': 'error',
+    'formatjs/enforce-id': [
+      'error',
+      // Use interpolation pattern to force update translations after changes
+      // to the default message.
+      { idInterpolationPattern: '[sha512:contenthash:base64:6]' },
+    ],
   },
 };

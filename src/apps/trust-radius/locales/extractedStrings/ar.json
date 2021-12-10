@@ -1,11 +1,11 @@
 {
-  "trust-radius.card-slider.heading": {
-    "defaultMessage": "ما الذي يقوله { name } العملاء في "
+  "/WpBBe": {
+    "defaultMessage": "كانت مشكلة تحميل مراجعة Trust Radius.  برجاء اعادة المحاولة فيما بعد."
   },
-  "trust-radius.card-slider.read-all": {
+  "PU1OGb": {
     "defaultMessage": "قراءة كل عمليات المراجعة "
   },
-  "trust-radius.error-message": {
-    "defaultMessage": "كانت مشكلة تحميل مراجعة Trust Radius.  برجاء اعادة المحاولة فيما بعد."
+  "cJvElh": {
+    "defaultMessage": "ما الذي يقوله { name } العملاء في "
   }
 }

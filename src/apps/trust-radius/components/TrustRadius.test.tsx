@@ -14,7 +14,7 @@ describe('TrustRadius', () => {
   it('renders an error message on failure', () => {
     render(<FailedRequest />);
     const element = screen.getByText(
-      'The was a problem loading Trust Radius reviews. Please try again later.',
+      'There was a problem loading Trust Radius reviews. Please try again later.',
     );
     expect(element).not.toBeNull();
   });

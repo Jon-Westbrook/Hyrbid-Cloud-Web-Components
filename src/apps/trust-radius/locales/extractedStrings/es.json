@@ -1,11 +1,11 @@
 {
-  "trust-radius.card-slider.heading": {
-    "defaultMessage": "Qué están diciendo los clientes de {name} en"
+  "/WpBBe": {
+    "defaultMessage": "Hubo un problema al cargar las opiniones de Trust Radius.  Vuelva a intentarlo más tarde."
   },
-  "trust-radius.card-slider.read-all": {
+  "PU1OGb": {
     "defaultMessage": "Leer todas las revisiones "
   },
-  "trust-radius.error-message": {
-    "defaultMessage": "Hubo un problema al cargar las opiniones de Trust Radius.  Vuelva a intentarlo más tarde."
+  "cJvElh": {
+    "defaultMessage": "Qué están diciendo los clientes de {name} en"
   }
 }

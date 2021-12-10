@@ -9,14 +9,16 @@ This page contains development tips and conventions in this project.title
 ## 1. Translations
 This project uses react-intl to translate the interface strings. To make your widget multilingual you will need to:
 
-- When rendering text on English, wrap it with a `<FormattedMessage>` and give it an id (prefix it with the widget ID). For instance:
+- When rendering text on English, wrap it with a `<FormattedMessage>` and let the linter give it. Running
+`yarn lint:fix` will generate the ID for you. This ID is an alphanumeric code that changes when the default message
+changes to ensure translations are up to date. For instance:
 
 ```jsx
 import { FormattedMessage } from 'react-intl';
 // ...
 <FormattedMessage
-  id="trust-radius.error-message"
-  defaultMessage="The was a problem loading Trust Radius reviews. Please try again later."
+  defaultMessage="There was a problem loading Trust Radius reviews. Please try again later."
+  id="/WpBBe"
 />
 ```
 
