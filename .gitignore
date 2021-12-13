@@ -31,3 +31,10 @@ yarn-error.log*
 /widget-registry
 
 compiledStrings
+
+/src/index.tsx
+/src/index.ts
+/src/index.jsx
+/src/index.js
+/src/index.css
+/src/index.scss

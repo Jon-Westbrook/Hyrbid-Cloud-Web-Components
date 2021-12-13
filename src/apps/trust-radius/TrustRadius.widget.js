@@ -28,6 +28,12 @@ module.exports = {
       },
     },
   },
+  useExternalPeerDependencies: [
+    'react',
+    'react-dom',
+    'react-intl',
+    'react-slick',
+  ],
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
     availableTranslations: ['en', 'es', 'ja', 'ar'],

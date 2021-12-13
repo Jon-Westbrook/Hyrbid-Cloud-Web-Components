@@ -50,6 +50,7 @@
     "react-slick": "^0.28.1",
     "react-star-ratings": "^2.3.0",
     "react-truncate": "^2.4.0",
+    "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.9",
@@ -71,5 +72,6 @@
     "lint-staged": "lint-staged",
     "storybook": "yarn test:generate-output || true; start-storybook -p 6006",
     "storybook:build": "yarn test:generate-output || true; build-storybook --output-dir dist/storybook"
-  }
+  },
+  "devDependencies": {}
 }
