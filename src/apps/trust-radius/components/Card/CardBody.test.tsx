@@ -7,8 +7,18 @@ const { Default, Truncated, EmptyDate } = composeStories(stories);
 describe('CardBody', () => {
   it('renders all the elements', () => {
     const { container } = render(<Default />);
-    const stars = container.querySelector('.star-ratings');
-    expect(stars?.getAttribute('title')).toBe('4.5 Stars');
+    const firstStar = container.querySelector(
+      '.dv-star-rating .dv-star-rating-star:first-of-type',
+    );
+    const lastStar = container.querySelector(
+      '.dv-star-rating .dv-star-rating-star:last-of-type',
+    );
+    expect(firstStar?.getAttribute('class')).toContain(
+      'dv-star-rating-full-star',
+    );
+    expect(lastStar?.getAttribute('class')).toContain(
+      'dv-star-rating-empty-star',
+    );
     const date = container.querySelector('span.caption-01');
     expect(date?.textContent).toMatch('Apr 16, 2021');
     expect(screen.getByText(/Always suited for/)).not.toBeNull();
@@ -23,6 +33,6 @@ describe('CardBody', () => {
     const { container } = render(<EmptyDate />);
     const date = container.querySelector('span.caption-01');
     // Use a regular expression to match the date format.
-    expect(date?.textContent).toMatch(/[^ ]+ [0-9][0-9]?[^ ]* [0-9]{4}/);
+    expect(date?.textContent).toBe(' ');
   });
 });

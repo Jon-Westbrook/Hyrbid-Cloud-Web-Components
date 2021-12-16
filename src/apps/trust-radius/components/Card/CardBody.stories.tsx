@@ -14,7 +14,7 @@ const Template: Story<CardBodyProps> = (args) => <CardBody {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   text: 'Always suited for our Web Servers, where moving to Cloud to meet demands and get back to our standard in house servers.',
-  rating: 9,
+  rating: 5,
   createdDate: '2021-04-16T02:06:58.757Z',
   maxLines: 7,
 };

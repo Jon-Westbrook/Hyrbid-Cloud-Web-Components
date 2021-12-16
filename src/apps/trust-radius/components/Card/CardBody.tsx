@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import StarRatings from 'react-star-ratings';
+import React, { ReactNode } from 'react';
+import StarRating from '../StarRating/StarRating';
 import Truncate from 'react-truncate';
 import parse from 'html-react-parser';
 import { css, SerializedStyles } from '@emotion/react';
@@ -24,24 +24,26 @@ const CardBody: React.FC<CardBodyProps> = ({
   maxLines,
 }) => {
   const { formatDate } = useIntl();
+  let created: Date | null = new Date(createdDate ?? '');
+  if (created.toTimeString() === 'Invalid Date') {
+    created = null;
+  }
   return (
     <>
       <div>
-        <StarRatings
-          rating={rating / 2}
-          starRatedColor="#1f71ff"
-          numberOfStars={5}
-          starDimension="12px"
-          starSpacing="1px"
-        />
+        <StarRating starCount={5} value={rating / 2.0} />
 
         <span className="caption-01" css={styles.dateline}>
           {' '}
-          {formatDate(createdDate ? new Date(createdDate) : new Date(), {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-          })}
+          {created ? (
+            formatDate(created, {
+              year: 'numeric',
+              month: 'short',
+              day: 'numeric',
+            })
+          ) : (
+            <></>
+          )}
         </span>
       </div>
       <div className="ibm-rule" css={styles.cardhr}>

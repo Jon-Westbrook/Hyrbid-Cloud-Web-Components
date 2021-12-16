@@ -16,6 +16,7 @@
     "@storybook/addon-essentials": "^6.4.1",
     "@storybook/addon-jest": "^6.4.1",
     "@storybook/addon-links": "^6.4.1",
+    "@storybook/addon-storyshots": "^6.4.9",
     "@storybook/addons": "^6.4.1",
     "@storybook/node-logger": "^6.4.1",
     "@storybook/preset-create-react-app": "^3.2.0",
@@ -31,7 +32,6 @@
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.0",
     "@types/react-slick": "^0.23.5",
-    "@types/react-star-ratings": "^2.3.0",
     "@types/react-truncate": "^2.3.4",
     "canvas": "^2.8.0",
     "compression-webpack-plugin": "^9.0.1",
@@ -48,7 +48,6 @@
     "react-refresh": "^0.10.0",
     "react-scripts": "^4.0.3",
     "react-slick": "^0.28.1",
-    "react-star-ratings": "^2.3.0",
     "react-truncate": "^2.4.0",
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
@@ -62,16 +61,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "TZ=UTC react-scripts test",
     "eject": "react-scripts eject",
-    "test:ci": "yarn test --watchAll=false --coverage",
-    "test:generate-output": "yarn test --watchAll=false --coverage --json --outputFile=src/.jest-test-results.json || true",
+    "test:ci": "TZ=UTC yarn test --watchAll=false --coverage",
+    "test:generate-output": "TZ=UTC yarn test --watchAll=false --coverage --json --outputFile=src/.jest-test-results.json || true",
     "lint": "eslint .",
     "lint:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|md)\" && yarn lint --fix",
     "lint:ci": "yarn lint -o reports/eslint/issues.json -f json",
     "lint-staged": "lint-staged",
-    "storybook": "yarn test:generate-output || true; start-storybook -p 6006",
-    "storybook:build": "yarn test:generate-output || true; build-storybook --output-dir dist/storybook"
+    "storybook": "TZ=UTC yarn test:generate-output || true; start-storybook -p 6006",
+    "storybook:build": "TZ=UTC yarn test:generate-output || true; build-storybook --output-dir dist/storybook"
   },
   "devDependencies": {}
 }
