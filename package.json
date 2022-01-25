@@ -72,7 +72,12 @@
     "lint:ci": "yarn lint -o reports/eslint/issues.json -f json",
     "lint-staged": "lint-staged",
     "storybook": "TZ=UTC yarn test:generate-output || true; start-storybook -p 6006",
-    "storybook:build": "TZ=UTC yarn test:generate-output || true; build-storybook --output-dir dist/storybook"
+    "storybook:build": "TZ=UTC yarn test:generate-output || true; build-storybook --output-dir dist/storybook",
+    "compare-dependencies": "node ./scripts/packageMigrationCheck.mjs"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@yarnpkg/lockfile": "1.1.0",
+    "semver": "^5.0.0",
+    "chalk": "^5.0.0"
+  }
 }
