@@ -1,0 +1,11 @@
+{
+  "trust-radius.card-slider.heading": {
+    "defaultMessage": "What {name} customers are saying on"
+  },
+  "trust-radius.card-slider.read-all": {
+    "defaultMessage": "Read all reviews"
+  },
+  "trust-radius.error-message": {
+    "defaultMessage": "The was a problem loading Trust Radius reviews. Please try again later."
+  }
+}

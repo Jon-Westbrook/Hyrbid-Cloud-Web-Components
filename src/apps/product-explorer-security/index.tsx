@@ -2,12 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import TrustRadius from './components/TrustRadius';
-import store from './lib/redux/store';
+import { store } from '../lib/redux/store';
+import ProductExplorerSecurity from './components/ProductExplorerSecurity';
 import 'regenerator-runtime/runtime';
 import { IntlProvider } from 'react-intl';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
-import widgetConfig from './TrustRadius.widget';
+import widgetConfig from './ProductExplorerSecurity.widget';
 
 const widgetId = widgetConfig.shortcode;
 
@@ -35,20 +35,13 @@ export default async function (instanceId, langCode, origin, cb) {
   if (!element) {
     return;
   }
-  const useGoogleStars =
-    element.getAttribute('data-use-google-stars') !== 'false' ||
-    element.getAttribute('data-use-google-stars') !== '0';
   ReactDOM.render(
     <React.StrictMode>
-      <IntlProvider locale={locale} messages={messages}>
-        <Provider store={store}>
-          <TrustRadius
-            trustRadiusId={element.getAttribute('data-trust-radius-id') || ''}
-            theme={palette}
-            useGoogleStars={useGoogleStars}
-          />
-        </Provider>
-      </IntlProvider>
+      <Provider store={store}>
+        <IntlProvider locale={locale} messages={messages}>
+          <ProductExplorerSecurity />
+        </IntlProvider>
+      </Provider>
     </React.StrictMode>,
     element,
     () => cb(element),

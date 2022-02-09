@@ -15,9 +15,20 @@ export const parameters = {
   locale: 'en',
   locales: {
     ar: { title: 'Arabic' },
+    de: { title: 'German' },
     en: { title: 'English' },
-    es: { title: 'Spanish' },
+    es: { title: 'Spanish (Spain)' },
+    esla: { title: 'Spanish (Latin America)' },
+    fr: { title: 'French' },
+    it: { title: 'Italian' },
     ja: { title: 'Japanese' },
+    ko: { title: 'Korean' },
+    pl: { title: 'Polish' },
+    pt: { title: 'Portuguese' },
+    ru: { title: 'Russian' },
+    tr: { title: 'Turkish' },
+    'zh-cn': { title: 'Chinese (PRC)' },
+    'zh-tw': { title: 'Chinese (Taiwan)' },
   },
 };
 

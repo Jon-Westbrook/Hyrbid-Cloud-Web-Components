@@ -1,0 +1,128 @@
+{
+  "ycA0jQ": { "defaultMessage": "IBM Security™ çözümlerini keşfedin" },
+  "TdTXXf": { "defaultMessage": "Daha fazla bilgi" },
+  "h+9xeK": {
+    "defaultMessage": "En büyük şirket güvenlik sağlayıcısı ile güvenlik programınızı dönüştürün"
+  },
+  "6GGPoo": { "defaultMessage": "Güvenlik platformu" },
+  "PBV//F": {
+    "defaultMessage": "Açık ve bağlı bir güvenlik platformu ile güvenlik programınızı modernize ederek kuruluşunuzun dijital dönüşümünü güçlendirin"
+  },
+  "v+D0LH": { "defaultMessage": "IBM Cloud Pak® for Security" },
+  "NR+XT4": {
+    "defaultMessage": "Tehditler ve riskler hakkında bilgi edinin ve hibrit ortamlarda otomasyon ile daha hızlı yanıt verin."
+  },
+  "8bGXVI": { "defaultMessage": "Veri güvenliği" },
+  "VioH9m": {
+    "defaultMessage": "En hassas veri kaynaklarınızı hibrit bulut ortamlarında keşfedin ve izleyin. Uyumluluğu otomasyon ile basitleştirin."
+  },
+  "bBubXz": {
+    "defaultMessage": "IBM Security Guardium® Insights"
+  },
+  "nZyLOv": {
+    "defaultMessage": "Gizli tehditleri ortaya çıkarmak için görünürlüğü artırın, yanıt süresini kısaltın, temel risklerle ilgili içgörüler ortaya koyun ve bunu her yerde devreye alın."
+  },
+  "hiS5q7": {
+    "defaultMessage": "IBM Security Guardium® Data Protection"
+  },
+  "+fgsKi": {
+    "defaultMessage": "Görünürlük, otomasyon ve ölçeklenebilirlik sayesinde, nerede olursa olsun kritik verileri korumaya yönelik akıllı ve daha uyarlanabilir bir yaklaşım getirin."
+  },
+  "QqLN6a": {
+    "defaultMessage": "IBM Security Guardium® Data Encryption"
+  },
+  "AU2IKE": {
+    "defaultMessage": "Şifreleme, belirteçlere ayırma, veri maskeleme ve anahtar yönetimiyle veritabanlarını, dosyaları ve kapsayıcıları koruyun ve bunlara olan erişimi kontrol edin."
+  },
+  "BUk/iK": {
+    "defaultMessage": "IBM Data Security Services"
+  },
+  "q+w1nC": {
+    "defaultMessage": "En hassas veri kaynaklarınızı hibrit bulut ortamlarında keşfedin ve izleyin. Uyumluluğu otomasyon ile basitleştirin."
+  },
+  "xqkMNn": {
+    "defaultMessage": "IBM Application Security Services"
+  },
+  "QZSf2v": {
+    "defaultMessage": "Güvenlik açıklarının saptanması ve giderilmesinden uygulama geliştirmenizin iyileştirilmesine kadar uygulama güvenliği ile ilgili zorlukların üstesinden gelin."
+  },
+  "KG/2Tm": { "defaultMessage": "Kimlik ve erişim yönetimi" },
+  "3azWSU": {
+    "defaultMessage": "Ortamınızdaki her bir kullanıcı, varlık ve veri etkileşimi için sorunsuz ve güvenli bir deneyim sunun."
+  },
+  "4tjN1M": { "defaultMessage": "IBM Security Verify" },
+  "EMCIBp": {
+    "defaultMessage": "Risk korumasını otomatikleştirmek için derin içerik kullanın ve herhangi bir kullanıcının herhangi bir kaynağa erişimi için sürekli olarak sorunsuz bir şekilde kimlik doğrulaması yapın."
+  },
+  "XvCw9g": {
+    "defaultMessage": "IBM Security Verify Privileged"
+  },
+  "cEk4wb": {
+    "defaultMessage": "Ayrıcalıklı erişim yönetimi, uygulama denetimi ve ayrıcalıklı uç nokta güvenliği ile siber saldırı riskini azaltın ve dijital işleri güvence altına alın."
+  },
+  "bxjavQ": {
+    "defaultMessage": "IBM Identity and Access Management Services"
+  },
+  "96wKtu": {
+    "defaultMessage": "Planlamak, yolda karşılaşacağınız engelleri belirlemek, sonuç odaklı kimlik çözümleri tasarlamak, bu çözümleri devreye almak ve yönetmek için ekiplerinizi büyütün."
+  },
+  "sZFybj": { "defaultMessage": "Hizmetler" },
+  "9M5BjG": {
+    "defaultMessage": "Siber güvenlik danışmanlığı, bulut ve yönetilen güvenlik hizmetleri ile işteki dönüşümünüzü hızlandırın ve kuruluşunuz genelinde riski azaltın."
+  },
+  "SMqXAb": {
+    "defaultMessage": "Yönetilen Güvenlik Hizmetleri"
+  },
+  "dkYHO9": {
+    "defaultMessage": "Gelişmiş tehditlerin, risklerin ve uyumluluk gereksinimlerinin izlenmesini, yönetilmesini ve bunlara müdahale edilmesini sağlamak için güvenlik çözüm ortağınıza güvenin."
+  },
+  "6K9V+8": {
+    "defaultMessage": "Güvenlik Stratejisi, Risk ve Uyumluluk Hizmetleri"
+  },
+  "PgxidR": {
+    "defaultMessage": "İşiniz ile ilgili zorluklara, gereksinimlere ve hedeflere yönelik mevcut güvenlik risklerinizi, uyumluluğu ve yönetişimi değerlendirin."
+  },
+  "Nz6gGX": {
+    "defaultMessage": "Bulut Güvenliği Hizmetleri"
+  },
+  "9VORQE": {
+    "defaultMessage": "Bulut yolculuğunuzun her bir aşamasında güvenlik uygulamalarınızı programa dayalı bir yaklaşıma uyarlayın ve güvenlik tehditlerinin bir adım ilerisinde olun."
+  },
+  "q5hpZj": { "defaultMessage": "SIEM" },
+  "PUkawM": {
+    "defaultMessage": "Kuruluşunuz genelindeki en kritik siber güvenlik tehditlerini tespit etmek, araştırmak ve bu tehditlere müdahale etmek için merkezi bir görünürlük elde edin."
+  },
+  "NNd6KB": { "defaultMessage": "IBM Security QRadar®" },
+  "gzPdQE": {
+    "defaultMessage": "Güvenlik ile ilgili kritik sorunlarınızı çözmek için eyleme geçirilebilir içgörüleri uygulayın, en büyük tehditleri hızlı bir şekilde belirleyin ve toplam uyarı sayısını azaltın."
+  },
+  "cSJA5x": { "defaultMessage": "IBM Security QRadar® on Cloud" },
+  "ZqZamV": {
+    "defaultMessage": "Cloud SIEM ile siber güvenlik saldırılarının ve ağ ihlallerinin tespit edilmesine ağırlık vererek, kayda değer bir hasar oluşmadan önce gerekli adımları atın."
+  },
+  "egZxYd": {
+    "defaultMessage": "IBM Security Threat Management Services"
+  },
+  "8uif3C": {
+    "defaultMessage": "Tehdidin tam yaşam döngüsünü doğrulukla ve hızla yönetmek için işletmenizin operasyonlarını entegre güvenlik hizmetleriyle koruyun."
+  },
+  "13tTId": {
+    "defaultMessage": "IBM Security Managed Detection and Response Services"
+  },
+  "iDH6R3": {
+    "defaultMessage": "Gelişmiş tehditleri tespit etmek ve bu tehditleri gidermek için tehdit istihbaratı ve proaktif tehdit avcılığı ile tehditlerin önüne geçin ve müdahaleyi hızlandırın."
+  },
+  "rHCAm7": { "defaultMessage": "SOAR" },
+  "UhVOgL": {
+    "defaultMessage": "Otomasyon sayesinde olaya müdahaleyi hızlandırın."
+  },
+  "vGvVoE": {
+    "defaultMessage": "Devreye alınan teknolojilerin verimliliğini ve etkinliğini artırmak için otomasyonu ve üçüncü taraf entegrasyonlarını kullanın."
+  },
+  "zqhrwM": {
+    "defaultMessage": "IBM Security X-Force® Incident Response and Threat Intelligence Services"
+  },
+  "3R1YQH": {
+    "defaultMessage": "Güvenlik tehdidi istihbaratı, olaya müdahale ve tehdidin giderilmesi süreçlerini entegre ederek, güvenlik tehditlerini proaktif olarak yönetin ve bu tehditlere müdahale edin."
+  }
+}

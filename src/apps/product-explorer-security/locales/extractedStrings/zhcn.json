@@ -1,0 +1,120 @@
+{
+  "ycA0jQ": { "defaultMessage": "探索 IBM Security™ 解决方案" },
+  "TdTXXf": { "defaultMessage": "了解更多内容" },
+  "h+9xeK": {
+    "defaultMessage": "通过最大的企业安全性提供程序转换您的安全性程序"
+  },
+  "6GGPoo": { "defaultMessage": "安全平台" },
+  "PBV//F": {
+    "defaultMessage": "通过开放和已连接的安全平台使您的安全性程序现代化，为您的组织的数字转型提供动力。"
+  },
+  "v+D0LH": { "defaultMessage": "IBM Cloud Pak® for Security" },
+  "NR+XT4": {
+    "defaultMessage": "获得对威胁和风险的洞察力，并在混合环境中快速响应。"
+  },
+  "8bGXVI": { "defaultMessage": "数据安全性" },
+  "VioH9m": {
+    "defaultMessage": "在混合云环境中发现并监控您最敏感的数据源。 通过自动简化一致性。"
+  },
+  "bBubXz": {
+    "defaultMessage": "IBM Security Guardium® Insights"
+  },
+  "nZyLOv": {
+    "defaultMessage": "加强可视性、缩短响应时间、揭示关键风险洞察力以发现隐藏的威胁，并将其部署在任何地方。"
+  },
+  "hiS5q7": {
+    "defaultMessage": "IBM Security Guardium® Data Protection"
+  },
+  "+fgsKi": {
+    "defaultMessage": "以智能的、更有适应性方法来保护关键数据，无论它在哪里，具有可视性、自动和可伸缩性。"
+  },
+  "QqLN6a": {
+    "defaultMessage": "IBM Security Guardium® Data Encryption"
+  },
+  "AU2IKE": {
+    "defaultMessage": "用加密、标记化、数据屏蔽和密钥管理来保护和控制对数据库、文件和容器的访问。"
+  },
+  "BUk/iK": {
+    "defaultMessage": "IBM Data Security Services"
+  },
+  "q+w1nC": {
+    "defaultMessage": "在混合云环境中发现并监控您最敏感的数据源。 通过自动简化一致性。"
+  },
+  "xqkMNn": {
+    "defaultMessage": "IBM 应用安全服务"
+  },
+  "QZSf2v": {
+    "defaultMessage": "通过发现并补救漏洞来提高应用程序开发，解决应用程序安全性挑战。"
+  },
+  "KG/2Tm": { "defaultMessage": "身份和访问管理" },
+  "3azWSU": {
+    "defaultMessage": "为每个用户、资产和环境中的数据交互提供一个无障碍和安全的体验。"
+  },
+  "4tjN1M": { "defaultMessage": "IBM Security Verify" },
+  "EMCIBp": {
+    "defaultMessage": "使用深层环境来自动执行风险保护，并不断认证任何用户与任何资源的无缝连接。"
+  },
+  "XvCw9g": {
+    "defaultMessage": "IBM Security Verify Privileged"
+  },
+  "cEk4wb": {
+    "defaultMessage": "通过特权访问管理、应用程序控制和终端特权安全，降低网络攻击风险，保障数字业务的安全。"
+  },
+  "bxjavQ": { "defaultMessage": "IBM 身份和访问管理服务" },
+  "96wKtu": {
+    "defaultMessage": "将您的团队扩展到计划、标识障碍、架构设计师、部署和管理结果驱动的身份解决方案。"
+  },
+  "sZFybj": { "defaultMessage": "服务" },
+  "9M5BjG": {
+    "defaultMessage": "通过网络安全咨询、云和管理安全性服务，加速您的组织的业务转型并减少风险。"
+  },
+  "SMqXAb": { "defaultMessage": "安全管理服务" },
+  "dkYHO9": {
+    "defaultMessage": "相信您的安全性伙伴能够帮助监视、管理和响应高级威胁、风险和一致性需求。"
+  },
+  "6K9V+8": {
+    "defaultMessage": "安全策略、风险和合规性服务"
+  },
+  "PgxidR": {
+    "defaultMessage": "根据您的业务挑战、需求和目标，评估现有安全性风险、一致性和管制。"
+  },
+  "Nz6gGX": { "defaultMessage": "云安全服务" },
+  "9VORQE": {
+    "defaultMessage": "在您的云之旅的每个阶段，将您的安全实践调整为程序化的方法，并保持安全威胁的领先地位。"
+  },
+  "q5hpZj": { "defaultMessage": "SIEM" },
+  "PUkawM": {
+    "defaultMessage": "获得集中的可视性以检测、调查和响应您最关键的组织范围的网络安全威胁。"
+  },
+  "NNd6KB": { "defaultMessage": "IBM Security QRadar®" },
+  "gzPdQE": {
+    "defaultMessage": "实现可操作的洞察力、快速标识顶级威胁并减少总警报卷，以解决关键安全性挑战。"
+  },
+  "cSJA5x": { "defaultMessage": "IBM Security QRadar® on Cloud" },
+  "ZqZamV": {
+    "defaultMessage": "通过专注于使用云 SIEM 检测网络安全攻击和网络漏洞，在任何相当大的损坏发生之前就采取了行动。"
+  },
+  "egZxYd": {
+    "defaultMessage": "IBM 安全性威胁管理服务"
+  },
+  "8uif3C": {
+    "defaultMessage": "通过集成安全性服务来保护您的企业的运行，以管理完整威胁生命周期与精度和速度。"
+  },
+  "13tTId": {
+    "defaultMessage": "IBM 安全管理检测和响应服务"
+  },
+  "iDH6R3": {
+    "defaultMessage": "通过威胁情报和主动的威胁搜索来阻止威胁和快速响应，以识别和纠正高级威胁。"
+  },
+  "rHCAm7": { "defaultMessage": "SOAR" },
+  "UhVOgL": { "defaultMessage": "以自动的方式加速事件响应。" },
+  "vGvVoE": {
+    "defaultMessage": "使用自动和第三方集成来提高生产力和部署的技术的有效性。"
+  },
+  "zqhrwM": {
+    "defaultMessage": "IBM Security X-Force® 事件响应和威胁情报服务"
+  },
+  "3R1YQH": {
+    "defaultMessage": "通过集成安全性威胁情报、事件响应和补救，主动管理和响应安全性威胁。"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "ycA0jQ": { "defaultMessage": "探索 IBM Security™ 解決方案" },
+  "TdTXXf": { "defaultMessage": "進一步瞭解" },
+  "h+9xeK": {
+    "defaultMessage": "與最大的企業安全提供者一起轉變您的安全性程式"
+  },
+  "6GGPoo": { "defaultMessage": "安全平台" },
+  "PBV//F": {
+    "defaultMessage": "透過使用開放式已連接安全性平台讓您的安全性程式現代化，為您的組織提供數位式轉換能力"
+  },
+  "v+D0LH": { "defaultMessage": "IBM Cloud Pak® for Security" },
+  "NR+XT4": {
+    "defaultMessage": "利用混合式環境中的自動化，深入瞭解威脅及風險並更快速地回應。"
+  },
+  "8bGXVI": { "defaultMessage": "資料安全" },
+  "VioH9m": {
+    "defaultMessage": "在混合雲端環境中發現並監視您的最機密的資料來源 透過自動化簡化相符性。"
+  },
+  "bBubXz": {
+    "defaultMessage": "IBM Security Guardium® Insights"
+  },
+  "nZyLOv": {
+    "defaultMessage": "提高可見性，縮短回應時間，顯現關鍵風險見解以揭示隱藏的威脅 - 以及部署在任何位置。"
+  },
+  "hiS5q7": {
+    "defaultMessage": "IBM Security Guardium® Data Protection"
+  },
+  "+fgsKi": {
+    "defaultMessage": "採用更智慧且更適合的方法，以保護重要資料，而無論它是否具有可見性、自動化及可擴充性。"
+  },
+  "QqLN6a": {
+    "defaultMessage": "IBM Security Guardium® Data Encryption"
+  },
+  "AU2IKE": {
+    "defaultMessage": "使用加密、記號化、資料遮罩及金鑰管理，保護並控制資料庫、檔案及儲存器的存取。"
+  },
+  "BUk/iK": { "defaultMessage": "IBM 資料安全服務" },
+  "q+w1nC": {
+    "defaultMessage": "在混合雲端環境中發現並監視您的最機密的資料來源 透過自動化簡化相符性。"
+  },
+  "xqkMNn": {
+    "defaultMessage": "IBM Application Security Services"
+  },
+  "QZSf2v": {
+    "defaultMessage": "解決在探索及補救漏洞時面臨的應用程式安全挑戰，從而改良發現和應用程式開發。"
+  },
+  "KG/2Tm": { "defaultMessage": "身分與存取管理" },
+  "3azWSU": {
+    "defaultMessage": "為您環境中的每個使用者、資產及資料互動提供順暢且安全的體驗。"
+  },
+  "4tjN1M": { "defaultMessage": "IBM Security Verify" },
+  "EMCIBp": {
+    "defaultMessage": "使用深度的環境定義，以自動化風險保護，並且無縫隙地持續鑑別任何使用者至任何資源。"
+  },
+  "XvCw9g": {
+    "defaultMessage": "IBM Security Verify Privileged"
+  },
+  "cEk4wb": {
+    "defaultMessage": "降低網絡攻擊的風險，並使用特許存取權管理、應用程式控制及端點專用權安全性來確保數位式業務的安全。"
+  },
+  "bxjavQ": {
+    "defaultMessage": "IBM Identity and Access Management Services"
+  },
+  "96wKtu": {
+    "defaultMessage": "擴展您的團隊以計劃、識別障礙，架構、部署及管理結果驅動的身份解決方案。"
+  },
+  "sZFybj": { "defaultMessage": "服務" },
+  "9M5BjG": {
+    "defaultMessage": "透過網路安全諮詢、雲端及受管理的安全性服務，在組織內加速企業轉型並減少風險。"
+  },
+  "SMqXAb": { "defaultMessage": "受管理的安全服務" },
+  "dkYHO9": {
+    "defaultMessage": "信任您的安全性友機，協助監視、管理及回應進階威脅、風險及相符性需求。"
+  },
+  "6K9V+8": {
+    "defaultMessage": "安全策略、風險與法規遵循服務"
+  },
+  "PgxidR": {
+    "defaultMessage": "針對您的企業挑戰、需求和目標，評估您的現有安全性風險、相符性及控管。"
+  },
+  "Nz6gGX": { "defaultMessage": "雲端安全服務" },
+  "9VORQE": {
+    "defaultMessage": "在雲端使用過程的每一個階段，將您的安全實務調整為程序化方法，並提前瞭解安全性威脅。"
+  },
+  "q5hpZj": { "defaultMessage": "SIEM" },
+  "PUkawM": {
+    "defaultMessage": "取得集中的可見性，以偵測、調查及回應最重要的組織範圍內網路安全威脅。"
+  },
+  "NNd6KB": { "defaultMessage": "IBM Security QRadar®" },
+  "gzPdQE": {
+    "defaultMessage": "實現可採取動作的見解，快速識別頂端威脅，並減少警示磁區總計，從而解決關鍵安全性挑戰。"
+  },
+  "cSJA5x": { "defaultMessage": "IBM Security QRadar® on Cloud" },
+  "ZqZamV": {
+    "defaultMessage": "透過使用 Cloud SIEM 專注於偵測網路安全攻擊及網路漏洞，在發生任何嚴重損壞之前採取動作"
+  },
+  "egZxYd": {
+    "defaultMessage": "IBM Security Threat Management Services"
+  },
+  "8uif3C": {
+    "defaultMessage": "使用整合式安全性服務來保護您企業的運營，在確保精確度和速度的情況下管理完整威脅生命週期。"
+  },
+  "13tTId": {
+    "defaultMessage": "IBM Security Managed Detection and Response Services"
+  },
+  "iDH6R3": {
+    "defaultMessage": "使用威脅情況及主動式威脅狩獵，以識別並補救進階威脅，從而停止威脅並快速回應。"
+  },
+  "rHCAm7": { "defaultMessage": "SOAR" },
+  "UhVOgL": { "defaultMessage": "使用自動化加速事件回應。" },
+  "vGvVoE": {
+    "defaultMessage": "使用自動化及協力廠商整合，以提高所部署技術的生產力與有效性。"
+  },
+  "zqhrwM": {
+    "defaultMessage": "IBM Security X-Force® Incident Response and Threat Intelligence Services"
+  },
+  "3R1YQH": {
+    "defaultMessage": "透過整合安全性威脅情報、事件回應與補救，主動地管理及回應安全性威脅。"
+  }
+}

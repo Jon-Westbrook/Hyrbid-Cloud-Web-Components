@@ -1,4 +1,6 @@
 import { IntlProvider } from 'react-intl';
+import { Provider } from 'react-redux';
+import { store } from '../lib/redux/store';
 
 import messages_ar from '../locales/compiledStrings/ar.json';
 import messages_de from '../locales/compiledStrings/de.json';
@@ -44,12 +46,14 @@ const storyWithTranslation =
     // switch it to "es" but still load the JSON for "esla"
     const oneOff = locale === 'esla' ? 'es' : locale;
     return (
-      <IntlProvider
-        locale={localeOverride || oneOff || 'en'}
-        messages={messagesByLangcode[locale || 'en']}
-      >
-        {story()}
-      </IntlProvider>
+      <Provider store={store}>
+        <IntlProvider
+          locale={localeOverride || oneOff || 'en'}
+          messages={messagesByLangcode[locale || 'en']}
+        >
+          {story()}
+        </IntlProvider>
+      </Provider>
     );
   };
 

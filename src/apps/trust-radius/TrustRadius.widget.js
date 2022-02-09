@@ -1,3 +1,5 @@
+import allLanguageCodes from 'src/common/allLanguageCodes';
+
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 module.exports = {
   shortcode: 'trust-radius',
@@ -36,6 +38,6 @@ module.exports = {
   ],
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
-    availableTranslations: ['en', 'es', 'ja', 'ar'],
+    availableTranslations: allLanguageCodes,
   },
 };

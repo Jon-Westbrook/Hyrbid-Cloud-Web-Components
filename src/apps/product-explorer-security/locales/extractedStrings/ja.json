@@ -1,0 +1,126 @@
+{
+  "ycA0jQ": { "defaultMessage": "IBM Security™ソリューションの詳細" },
+  "TdTXXf": { "defaultMessage": "詳細はこちらから" },
+  "h+9xeK": {
+    "defaultMessage": "最大規模のエンタープライズ・セキュリティー・プロバイダーがセキュリティー・プログラムに変革をもたらします"
+  },
+  "6GGPoo": { "defaultMessage": "セキュリティー・プラットフォーム" },
+  "PBV//F": {
+    "defaultMessage": "接続されたオープンなセキュリティー・プラットフォームを用いてセキュリティー・プログラムを最新化し、組織のデジタル変革を推進しましょう"
+  },
+  "v+D0LH": { "defaultMessage": "IBM Cloud Pak® for Security" },
+  "NR+XT4": {
+    "defaultMessage": "ハイブリッド環境全体の自動化によって、脅威やリスクに対する洞察が得られ、迅速な対応が可能です。"
+  },
+  "8bGXVI": { "defaultMessage": "データの安全性" },
+  "VioH9m": {
+    "defaultMessage": "ハイブリッド・クラウド環境全体で最も機密性の高いデータ・ソースを検出し、監視します。 自動化を通じてコンプライアンスを簡素化します。"
+  },
+  "bBubXz": {
+    "defaultMessage": "IBM Security Guardium® Insights"
+  },
+  "nZyLOv": {
+    "defaultMessage": "可視性を向上させ、応答時間を短縮し、重要なリスクに対する洞察を得られることで、隠れた脅威を検出できます。さらに、どこにでもデプロイ可能です。"
+  },
+  "hiS5q7": {
+    "defaultMessage": "IBM Security Guardium® Data Protection"
+  },
+  "+fgsKi": {
+    "defaultMessage": "可視性、自動化、スケーラビリティーを備えた、よりスマートで適応性に優れた方法で、あらゆる場所にある重要なデータを保護します。"
+  },
+  "QqLN6a": {
+    "defaultMessage": "IBM Security Guardium® Data Encryption"
+  },
+  "AU2IKE": {
+    "defaultMessage": "暗号化、トークン化、データ・マスキング、鍵管理によって、データベース、ファイル、コンテナーを保護し、アクセスを制御します。"
+  },
+  "BUk/iK": {
+    "defaultMessage": "IBMデータ・セキュリティー・サービス"
+  },
+  "q+w1nC": {
+    "defaultMessage": "ハイブリッド・クラウド環境全体で最も機密性の高いデータ・ソースを検出し、監視します。 自動化を通じてコンプライアンスを簡素化します。"
+  },
+  "xqkMNn": {
+    "defaultMessage": "IBM Application Security Services"
+  },
+  "QZSf2v": {
+    "defaultMessage": "アプリケーション・セキュリティーへの対応の課題は、脆弱性の検出と修復からアプリケーション開発の改善まで、多岐にわたります。"
+  },
+  "KG/2Tm": { "defaultMessage": "ID管理とアクセス管理" },
+  "3azWSU": {
+    "defaultMessage": "すべてのユーザーや資産にとって、また環境全体でのデータのやり取りにおいて、スムーズで安全なエクスペリエンスを提供します。"
+  },
+  "4tjN1M": { "defaultMessage": "IBM Security Verify" },
+  "EMCIBp": {
+    "defaultMessage": "ディープ・コンテキストを活用することで、リスク回避を自動化し、すべてのユーザーのあらゆるリソースへの継続的な認証がシームレスに行えます。"
+  },
+  "XvCw9g": {
+    "defaultMessage": "IBM Security Verify Privileged"
+  },
+  "cEk4wb": {
+    "defaultMessage": "特権アクセス管理、アプリケーション制御、エンドポイントの権限セキュリティーによって、サイバー攻撃のリスクを軽減し、デジタル・ビジネスの安全を守ります。"
+  },
+  "bxjavQ": { "defaultMessage": "IDおよびアクセス管理サービス" },
+  "96wKtu": {
+    "defaultMessage": "成果主導型ソリューションの計画、障害の識別、設計、デプロイ、管理を行えるようにチームを拡張します。"
+  },
+  "sZFybj": { "defaultMessage": "サービス" },
+  "9M5BjG": {
+    "defaultMessage": "サイバー・セキュリティー・コンサルティング、クラウド、マネージド・セキュリティー・サービスを活用することで、ビジネス変革や組織全体のリスクの軽減を加速させます。"
+  },
+  "SMqXAb": {
+    "defaultMessage": "管理されたセキュリティー・サービス"
+  },
+  "dkYHO9": {
+    "defaultMessage": "信頼できるセキュリティー・パートナーが、最新の脅威やリスク、そしてコンプライアンス要件をモニターし、管理して対応します。"
+  },
+  "6K9V+8": {
+    "defaultMessage": "セキュリティー戦略、リスク、およびコンプライアンス・サービス"
+  },
+  "PgxidR": {
+    "defaultMessage": "ビジネス上の課題、要件、目的について、既存のセキュリティー・リスク、コンプライアンス、ガバナンスを評価します。"
+  },
+  "Nz6gGX": {
+    "defaultMessage": "クラウド・セキュリティー・サービス"
+  },
+  "9VORQE": {
+    "defaultMessage": "クラウド・ジャーニーの各段階でのプログラマチックなアプローチにセキュリティー手法を適応させ、セキュリティー上の脅威の一歩先を行きます。"
+  },
+  "q5hpZj": { "defaultMessage": "SIEM" },
+  "PUkawM": {
+    "defaultMessage": "組織全体を脅かす最も深刻なサイバー・セキュリティー脅威の検出、調査、対応について、一元的に把握することができます。"
+  },
+  "NNd6KB": { "defaultMessage": "IBM Security QRadar®" },
+  "gzPdQE": {
+    "defaultMessage": "実用的な洞察を実現し、最大の脅威を迅速に特定し、警報の合計件数減らして、重要なセキュリティー上の課題を解決します。"
+  },
+  "cSJA5x": { "defaultMessage": "IBM Security QRadar® on Cloud" },
+  "ZqZamV": {
+    "defaultMessage": "CloudSIEMによるサイバー・セキュリティー攻撃やネットワーク侵害の検出にフォーカスすることで、大きな損害が発生する前に対策を講じることができます。"
+  },
+  "egZxYd": {
+    "defaultMessage": "IBM Security Threat Management Services"
+  },
+  "8uif3C": {
+    "defaultMessage": "脅威のライフサイクル全体を正確かつ迅速に管理する統合セキュリティー・サービスで、企業のオペレーションを保護します。"
+  },
+  "13tTId": {
+    "defaultMessage": "IBM Security Managed Detection and Response Services"
+  },
+  "iDH6R3": {
+    "defaultMessage": "最新の脅威を識別して修復する脅威インテリジェンスとプロアクティブな脅威ハンティングで、脅威を阻止して対応を迅速化します。"
+  },
+  "rHCAm7": { "defaultMessage": "SOAR" },
+  "UhVOgL": {
+    "defaultMessage": "自動化によってインシデント対応を加速させます。"
+  },
+  "vGvVoE": {
+    "defaultMessage": "自動化とサード・パーティーの統合を利用して、実装済みのテクノロジーによる生産性と有効性を向上させます。"
+  },
+  "zqhrwM": {
+    "defaultMessage": "IBM Security X-Force® Incident Response and Threat Intelligence Services"
+  },
+  "3R1YQH": {
+    "defaultMessage": "セキュリティー脅威インテリジェンス、インシデント対応と修復を統合することで、セキュリティー脅威について積極的に管理して対応します。"
+  }
+}

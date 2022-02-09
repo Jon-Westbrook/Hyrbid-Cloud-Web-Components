@@ -1,4 +1,4 @@
-import mapLocale, { IBMLocale } from './mapLocale';
+import mapValidLocale, { IBMLocale } from './mapValidLocale';
 import mapPaletteToTheme from './mapPaletteToTheme';
 import fetchTranslationMessages from './fetchTranslationMessages';
 import { ResolvedIntlConfig } from 'react-intl';
@@ -14,14 +14,15 @@ export type NormalizedWidgetInput = Partial<{
 async function normalizeWidgetInput(
   instanceId: string,
   langCode: string,
+  widgetId: string,
 ): Promise<NormalizedWidgetInput> {
   const element = document.getElementById(instanceId);
   if (!element) {
     return {};
   }
-  const locale = mapLocale(langCode);
+  const locale = mapValidLocale(langCode);
   const palette = mapPaletteToTheme(element.getAttribute('data-palette') || '');
-  const messages = await fetchTranslationMessages('trust-radius', locale);
+  const messages = await fetchTranslationMessages(widgetId, langCode);
   return { element, locale, palette, messages };
 }
 

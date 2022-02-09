@@ -1,0 +1,128 @@
+{
+  "ycA0jQ": { "defaultMessage": "Entdecken Sie IBM Security™-Lösungen" },
+  "TdTXXf": { "defaultMessage": "Erfahren Sie mehr und" },
+  "h+9xeK": {
+    "defaultMessage": "Transformieren Sie Ihr Sicherheitsprogramm mit dem größten Anbieter für Unternehmenssicherheit"
+  },
+  "6GGPoo": { "defaultMessage": "Sicherheitsplattform" },
+  "PBV//F": {
+    "defaultMessage": "Treiben Sie die digitale Transformation Ihres Unternehmens voran, indem Sie Ihr Sicherheitsprogramm mit einer offenen und verbundenen Sicherheitsplattform modernisieren"
+  },
+  "v+D0LH": { "defaultMessage": "IBM Cloud Pak® for Security" },
+  "NR+XT4": {
+    "defaultMessage": "Gewinnen Sie Einblicke in Bedrohungen und Risiken und reagieren Sie schneller mit Automatisierung in hybriden Umgebungen."
+  },
+  "8bGXVI": { "defaultMessage": "Datensicherheit" },
+  "VioH9m": {
+    "defaultMessage": "Erkennen und überwachen Sie Ihre vertraulichen Datenquellen in Hybrid-Cloud-Umgebungen. Vereinfachen Sie die Konformität durch Automatisierung."
+  },
+  "bBubXz": {
+    "defaultMessage": "IBM Security Guardium® Insights"
+  },
+  "nZyLOv": {
+    "defaultMessage": "Verbessern Sie die Transparenz, verkürzen Sie die Reaktionszeit, gewinnen Sie wichtige Erkenntnisse über Risiken, um versteckte Bedrohungen aufzudecken - und setzen Sie es überall ein."
+  },
+  "hiS5q7": {
+    "defaultMessage": "IBM Security Guardium® Data Protection"
+  },
+  "+fgsKi": {
+    "defaultMessage": "Verfolgen Sie einen intelligenteren, anpassungsfähigeren Ansatz zum Schutz kritischer Daten, unabhängig davon, wo sie sich befinden, mit Transparenz, Automatisierung und Skalierbarkeit."
+  },
+  "QqLN6a": {
+    "defaultMessage": "IBM Security Guardium® Data Encryption"
+  },
+  "AU2IKE": {
+    "defaultMessage": "Schützen und kontrollieren Sie den Zugriff auf Datenbanken, Dateien und Container mit Verschlüsselung, Zerlegung in Token, Datenmaskierung und Schlüsselverwaltung."
+  },
+  "BUk/iK": {
+    "defaultMessage": "IBM Data Security Services"
+  },
+  "q+w1nC": {
+    "defaultMessage": "Erkennen und überwachen Sie Ihre vertraulichen Datenquellen in Hybrid-Cloud-Umgebungen. Vereinfachen Sie die Konformität durch Automatisierung."
+  },
+  "xqkMNn": {
+    "defaultMessage": "IBM Application Security Services"
+  },
+  "QZSf2v": {
+    "defaultMessage": "Bewältigen Sie die Herausforderungen der Anwendungssicherheit, von der Erkennung und Behebung von Schwachstellen bis hin zur Verbesserung Ihrer Anwendungsentwicklung."
+  },
+  "KG/2Tm": { "defaultMessage": "Identitäts- und Zugriffsmanagement" },
+  "3azWSU": {
+    "defaultMessage": "Bieten Sie ein reibungsloses und sicheres Erlebnis für jede Benutzer-, Asset- und Dateninteraktion in Ihrer Umgebung."
+  },
+  "4tjN1M": { "defaultMessage": "IBM Security Verify" },
+  "EMCIBp": {
+    "defaultMessage": "Nutzen Sie tiefgreifenden Kontext, um den Risikoschutz zu automatisieren und jeden Benutzer kontinuierlich und nahtlos für jede Ressource zu authentifizieren."
+  },
+  "XvCw9g": {
+    "defaultMessage": "IBM Security Verify Privileged"
+  },
+  "cEk4wb": {
+    "defaultMessage": "Reduzieren Sie das Risiko von Cyberattacken und sichern Sie Ihr digitales Geschäft mit Privileged Access Management, Anwendungssteuerung und Endpoint Privilege Security."
+  },
+  "bxjavQ": {
+    "defaultMessage": "IBM Identity and Access Management Services"
+  },
+  "96wKtu": {
+    "defaultMessage": "Erweitern Sie Ihre Teams, um zu planen, Hindernisse zu erkennen, Identitätslösungen zu entwickeln, bereitzustellen und zu verwalten."
+  },
+  "sZFybj": { "defaultMessage": "Services" },
+  "9M5BjG": {
+    "defaultMessage": "Beschleunigen Sie die grundlegende Umgestaltung der Geschäftsprozesse und reduzieren Sie die Risiken in Ihrem gesamten Unternehmen mit Cybersicherheitsberatung, Cloud- und Managed-Security-Services."
+  },
+  "SMqXAb": {
+    "defaultMessage": "Managed Security Services"
+  },
+  "dkYHO9": {
+    "defaultMessage": "Vertrauen Sie Ihrem Sicherheitspartner bei der Überwachung, Verwaltung und Reaktion auf fortschrittliche Bedrohungen, Risiken und Konformitätsanforderungen."
+  },
+  "6K9V+8": {
+    "defaultMessage": "Security Strategy, Risk and Compliance Services"
+  },
+  "PgxidR": {
+    "defaultMessage": "Bewerten Sie Ihre bestehenden Sicherheitsrisiken, die Einhaltung von Vorschriften und die Governance im Hinblick auf Ihre geschäftlichen Herausforderungen, Anforderungen und Ziele."
+  },
+  "Nz6gGX": {
+    "defaultMessage": "Services für die Cloud-Sicherheit"
+  },
+  "9VORQE": {
+    "defaultMessage": "Passen Sie Ihre Sicherheitspraktiken in jeder Phase der Umstellung auf die Cloud an einen programmatischen Ansatz an und bleiben Sie den Sicherheitsbedrohungen einen Schritt voraus."
+  },
+  "q5hpZj": { "defaultMessage": "SIEM" },
+  "PUkawM": {
+    "defaultMessage": "Verschaffen Sie sich einen zentralen Überblick, um Ihre wichtigsten unternehmensweiten Cybersicherheitsbedrohungen zu erkennen, zu untersuchen und darauf zu reagieren."
+  },
+  "NNd6KB": { "defaultMessage": "IBM Security QRadar®" },
+  "gzPdQE": {
+    "defaultMessage": "Gewinnen Sie verlässliche Erkenntnisse, identifizieren Sie schnell die wichtigsten Bedrohungen und reduzieren Sie das Gesamtvolumen der Warnmeldungen, um Ihre kritischen Sicherheitsprobleme zu lösen."
+  },
+  "cSJA5x": { "defaultMessage": "IBM Security QRadar® on Cloud" },
+  "ZqZamV": {
+    "defaultMessage": "Ergreifen Sie Maßnahmen, bevor ein erheblicher Schaden entsteht, indem Sie sich auf die Erkennung von Cybersicherheitsangriffen und Netzwerkverletzungen mit Cloud SIEM konzentrieren."
+  },
+  "egZxYd": {
+    "defaultMessage": "IBM Security Threat Management Services"
+  },
+  "8uif3C": {
+    "defaultMessage": "Schützen Sie die Abläufe in Ihrem Unternehmen mit integrierten Sicherheitsservices, die den gesamten Lebenszyklus von Bedrohungen präzise und schnell verwalten."
+  },
+  "13tTId": {
+    "defaultMessage": "IBM Security Managed Detection and Response Services"
+  },
+  "iDH6R3": {
+    "defaultMessage": "Stoppen Sie Bedrohungen und beschleunigen Sie die Reaktion mit Threat Intelligence und proaktiver Bedrohungssuche, um hochentwickelte Bedrohungen zu identifizieren und zu beseitigen."
+  },
+  "rHCAm7": { "defaultMessage": "SOAR" },
+  "UhVOgL": {
+    "defaultMessage": "Beschleunigen Sie die Reaktion auf Vorfälle durch Automation."
+  },
+  "vGvVoE": {
+    "defaultMessage": "Nutzen Sie die Automation und die Integration von Drittanbietern, um die Produktivität und die Effektivität der eingesetzten Technologien zu verbessern."
+  },
+  "zqhrwM": {
+    "defaultMessage": "IBM Security X-Force® Incident Response and Threat Intelligence Services"
+  },
+  "3R1YQH": {
+    "defaultMessage": "Proaktives Management und Reaktion auf Sicherheitsbedrohungen durch Integration von Bedrohungsdaten, Reaktion auf Vorfälle und Abhilfemaßnahmen."
+  }
+}

@@ -34,13 +34,16 @@ const availableLangcodes: IBMLocale[] = [
   IBMLocale.ZH_TW,
 ];
 
-const mapLocale = (langcode = ''): IBMLocale => {
+const mapValidLocale = (langcode = ''): IBMLocale => {
   // Specific overrides.
   if (langcode === 'zhcn') {
     return IBMLocale.ZH_CN;
   }
   if (langcode === 'zhtw') {
     return IBMLocale.ZH_TW;
+  }
+  if (langcode === 'esla') {
+    return IBMLocale.ES;
   }
   return (
     availableLangcodes.find((candidate) => candidate === langcode) ||
@@ -56,4 +59,4 @@ const mapLocale = (langcode = ''): IBMLocale => {
   );
 };
 
-export default mapLocale;
+export default mapValidLocale;
