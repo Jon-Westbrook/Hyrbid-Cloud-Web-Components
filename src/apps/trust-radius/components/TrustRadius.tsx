@@ -1,12 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React, { ReactElement, useEffect, useState } from 'react';
-import { connect } from 'react-redux';
-import { ThunkDispatch } from 'redux-thunk';
-import { TrustRadiusReducersMapper } from '../lib/redux/store';
-import { TrustRadiusStateProduct } from '../lib/redux/reducers/setProductReducer';
-import windowResizeAction from '../lib/redux/actions/windowResizeAction';
-import debounce from 'lodash.debounce';
-import fetchProductDataAction from '../lib/redux/actions/fetchProductDataAction';
+import React, { ReactElement, useState } from 'react';
+import { useWindowSize } from 'src/common/hooks/useWindowSize';
 import { css, SerializedStyles } from '@emotion/react';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import CardSliderDots from './CardSliderDots';
@@ -14,95 +8,65 @@ import CardSliderPager from './CardSliderPager';
 import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { CarbonThemes } from '../../../types/carbon';
-import setThemeAction from '../lib/redux/actions/setThemeAction';
 import { FormattedMessage } from 'react-intl';
+import {
+  useGetReviewsByIdQuery,
+  normalizeProductData,
+} from '../lib/redux/slices/fetchReviewsSlice';
 
 export type HOF<T> = (input: T) => T;
 
-export interface TrustRadiusOwnProps {
+export interface TrustRadiusProps {
   useGoogleStars: boolean;
   trustRadiusId: string;
   theme: string;
 }
 
-interface StateProps {
-  isLoading: boolean;
-  isError: boolean;
-  product: TrustRadiusStateProduct;
-  numCols: 1 | 2 | 4;
-  palette: CarbonThemes;
-}
-
-interface DispatchProps {
-  onInit: () => void;
-  onWindowResize: () => void;
-}
-
-export interface TrustRadiusPersonalReview {
-  heading: string;
-  modified: string;
-  slug: string;
-  name: string;
-  count: number;
-  score: number;
-  id: string;
-}
-
-export interface TrustRadiusQuote {
-  review: TrustRadiusPersonalReview;
-  rating: number;
-  text: string;
-}
-
 export interface TrustRadiusReview {
-  quotes: TrustRadiusQuote[];
-  name: { first: string; last: string };
-  position?: { title: string };
   company?: {
     name: string;
     size?: string;
     industry?: { name: string };
   };
+  date: string;
+  heading: string;
+  id: string;
+  name: { first: string; last: string };
+  position?: { title: string };
+  quotes: [{ text: string }];
+  rating: number;
+  totalCount: number;
+  trScore: number;
 }
 
-export type TrustRadiusProps = TrustRadiusOwnProps & StateProps & DispatchProps;
-export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
-  palette = CarbonThemes.WHITE,
+export const TrustRadius: React.FC<TrustRadiusProps> = ({
+  theme = CarbonThemes.WHITE,
   useGoogleStars = false,
-  isLoading,
-  isError,
   trustRadiusId,
-  product,
-  numCols,
-  onInit,
-  onWindowResize,
 }) => {
+  const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
+  const reviews = normalizeProductData(data);
   const [customSlider, setCustomSlider] = useState<Slider>();
-  useEffect(() => {
-    product || onInit();
-  }, [onInit, product]);
-  useEffect(() => {
-    onWindowResize();
-    window.addEventListener('resize', onWindowResize);
-    return () => window.removeEventListener('resize', onWindowResize);
-  }, [onWindowResize]);
-  const needsSpinner = isLoading || !product;
+  const size = useWindowSize();
+
   const wrapComponent: HOF<ReactElement> = (component) => (
     <div
-      css={[needsSpinner || isError ? {} : styles.widget, styles[palette]]}
+      css={[isLoading || error ? {} : styles.widget, styles[theme]]}
       className="Widget ibm-grid-seamless"
     >
       <div css={styles.widgetWrapper}>{component}</div>
     </div>
   );
-  if (needsSpinner) {
+
+  if (isLoading) {
     return wrapComponent(
       <div css={styles.message}>
         <p className="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center" />
       </div>,
     );
   }
-  if (isError) {
+
+  if (error) {
     return wrapComponent(
       <div css={styles.message}>
         <FormattedMessage
@@ -112,13 +76,14 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
       </div>,
     );
   }
-  const sliderSettings = buildSliderSettings(numCols);
+
+  const sliderSettings = buildSliderSettings(reviews.totalCount, size.width);
   sliderSettings.appendDots = (dots) => {
     const noop = () => undefined;
     return (
       <CardSliderDots
         numRows={Math.ceil(
-          product.reviews.length / (sliderSettings.slidesToShow || 1),
+          reviews.totalCount / (sliderSettings.slidesToShow || 1),
         )}
         onPrevious={customSlider?.slickPrev || noop}
         onNext={customSlider?.slickNext || noop}
@@ -137,35 +102,6 @@ export const PureTrustRadius: React.FC<TrustRadiusProps> = ({
     />,
   );
 };
-
-const mapStateToProps = (
-  states: TrustRadiusReducersMapper,
-  ownProps: TrustRadiusOwnProps,
-): StateProps => {
-  return {
-    isLoading:
-      states.status.fetchStatus !== 'READY' &&
-      states.status.fetchStatus !== 'FAILURE',
-    isError: states.status.fetchStatus === 'FAILURE',
-    product: states.prods.products[ownProps.trustRadiusId],
-    numCols: states?.cols?.numCols,
-    palette: states?.palette.theme,
-  };
-};
-
-const mapDispatchToProps = (
-  dispatch: ThunkDispatch<Record<string, any>, Record<string, any>, any>,
-  ownProps: TrustRadiusOwnProps,
-): DispatchProps => ({
-  onInit: async () => {
-    dispatch(setThemeAction(ownProps.theme));
-    dispatch(fetchProductDataAction(ownProps.trustRadiusId));
-  },
-  onWindowResize: debounce(
-    () => dispatch(windowResizeAction(window.innerWidth)),
-    250,
-  ),
-});
 
 const styles: Record<string, SerializedStyles> = {
   widget: css`
@@ -203,12 +139,4 @@ const styles: Record<string, SerializedStyles> = {
   `,
 };
 
-export default connect<
-  StateProps,
-  DispatchProps,
-  TrustRadiusOwnProps,
-  TrustRadiusReducersMapper
->(
-  mapStateToProps,
-  mapDispatchToProps,
-)(PureTrustRadius);
+export default TrustRadius;
