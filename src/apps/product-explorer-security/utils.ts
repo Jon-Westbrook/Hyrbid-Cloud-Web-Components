@@ -1,4 +1,4 @@
-import { CarbonBreakpoints } from 'src/types/carbon';
+import { CarbonBreakpoints } from '../../types/carbon';
 
 export function generateRowNumArray(
   categories: string[],

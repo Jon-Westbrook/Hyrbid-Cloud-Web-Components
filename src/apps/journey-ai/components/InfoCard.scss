@@ -1,0 +1,148 @@
+@import '../assets/styles/layout';
+@import '../../../../node_modules/@carbon/motion/scss/motion';
+@import '../../../../node_modules/@carbon/colors/scss/colors';
+
+.journey-ai-widget-container {
+  .infocard-container {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    width: 100%;
+
+    .title-text,
+    span,
+    a {
+      pointer-events: all;
+    }
+
+    .infocard {
+      background: transparent;
+      margin-top: $layout-05;
+      max-width: 480px;
+
+      &#scene {
+        .content {
+          width: 90%;
+        }
+        .links {
+          width: 100%;
+        }
+      }
+
+      .title {
+        margin-bottom: $spacing-07;
+      }
+
+      .content {
+        width: 78%;
+        margin-bottom: $spacing-06;
+      }
+
+      .links {
+        width: 80%;
+
+        a {
+          margin-bottom: $spacing-05;
+          display: inline-block;
+
+          &:hover {
+            color: $carbon--blue-50;
+          }
+
+          .link-text {
+            line-height: 18px;
+          }
+
+          svg {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  @include below-xlg {
+    .infocard-container {
+      .infocard {
+        .content {
+          width: 80%;
+        }
+        &#scene {
+          .content {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    .infocard-container,
+    .infocard-container.right {
+      display: block;
+
+      .infocard {
+        margin-top: $layout-05 !important;
+
+        .title,
+        .content {
+          margin-bottom: $spacing-05;
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .infocard-container,
+    .infocard-container.right {
+      .infocard {
+        margin-top: $spacing-06 !important;
+
+        .content,
+        .links {
+          width: 90% !important;
+        }
+      }
+    }
+  }
+
+  @include mobile-small {
+    .infocard-container,
+    .infocard-container.right {
+      .infocard {
+        .content,
+        .links {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  // transition
+  .infocard-display-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .infocard-display-enter-done {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .infocard-display-exit {
+    opacity: 1;
+  }
+  .infocard-display-exit-active {
+    opacity: 0;
+  }
+
+  // stagger delay
+  .infocard-container {
+    .infocard {
+      .content {
+        transition-delay: 150ms;
+      }
+      .links {
+        transition-delay: 300ms;
+      }
+    }
+  }
+}

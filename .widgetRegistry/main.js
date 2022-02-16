@@ -55,43 +55,45 @@ module.exports = {
         fileName: 'asset-manifest.json',
         useEntryKeys: true,
       }),
-      !disableESLintPlugin && new ESLintPlugin({
-        // Plugin options
-        extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
-        formatter: require.resolve('react-dev-utils/eslintFormatter'),
-        eslintPath: require.resolve('eslint'),
-        failOnError: !(isEnvDevelopment && emitErrorsAsWarnings),
-        context: path.resolve(__dirname, '../src'),
-        cache: true,
-        cacheLocation: path.resolve(
-          __dirname,
-          '../node_modules/.cache/.eslintcache'
-        ),
-        // ESLint class options
-        cwd: path.resolve(__dirname, '..'),
-        resolvePluginsRelativeTo: __dirname,
-        baseConfig: {
-          extends: [require.resolve('eslint-config-react-app/base')],
-          rules: {
-            ...(!hasJsxRuntime && {
-              'react/react-in-jsx-scope': 'error',
-            }),
+      !disableESLintPlugin &&
+        new ESLintPlugin({
+          // Plugin options
+          extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
+          formatter: require.resolve('react-dev-utils/eslintFormatter'),
+          eslintPath: require.resolve('eslint'),
+          failOnError: !(isEnvDevelopment && emitErrorsAsWarnings),
+          context: path.resolve(__dirname, '../src'),
+          cache: true,
+          cacheLocation: path.resolve(
+            __dirname,
+            '../node_modules/.cache/.eslintcache',
+          ),
+          // ESLint class options
+          cwd: path.resolve(__dirname, '..'),
+          resolvePluginsRelativeTo: __dirname,
+          baseConfig: {
+            extends: [require.resolve('eslint-config-react-app/base')],
+            rules: {
+              ...(!hasJsxRuntime && {
+                'react/react-in-jsx-scope': 'error',
+              }),
+            },
           },
-        },
-      }),
-      isEnvProduction && new CompressionPlugin({
-        deleteOriginalAssets: true,
-        algorithm: 'brotliCompress',
-        test: /\.(js|css|svg|js\.map)$/,
-        compressionOptions: {
-          params: {
-            [BROTLI_PARAM_QUALITY]: 11,
+        }),
+      isEnvProduction &&
+        new CompressionPlugin({
+          deleteOriginalAssets: true,
+          algorithm: 'brotliCompress',
+          test: /\.(js|css|svg|js\.map)$/,
+          compressionOptions: {
+            params: {
+              [BROTLI_PARAM_QUALITY]: 11,
+            },
           },
-        },
-        threshold: 10240,
-        minRatio: 0.8,
-        filename: '[path][base]',
-      }),
+          threshold: 10240,
+          minRatio: 0.8,
+          filename: '[path][base]',
+        }),
     ].filter(Boolean);
 
     return config;

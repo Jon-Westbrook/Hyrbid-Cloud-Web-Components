@@ -1,7 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 import messages from '../../../locales/messages';
+import { MessageDescriptor } from 'react-intl';
 
-const initialState = {};
+export const initialState: Record<string, MessageDescriptor> = messages;
 
 export const messagesSlice = createSlice({
   name: 'messages',

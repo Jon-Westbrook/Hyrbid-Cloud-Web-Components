@@ -1,17 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import React, { useEffect } from 'react';
-import { RootState } from '../lib/redux/store';
-import { useAppSelector, useAppDispatch } from '../lib/redux/hooks';
+import { useAppDispatch, useAppSelector } from '../lib/redux/hooks';
 import ProductsDisplay from './ProductsDisplay';
 import { css } from '@emotion/react';
-import { FormattedMessage, useIntl } from 'react-intl';
+import { FormattedMessage, MessageDescriptor, useIntl } from 'react-intl';
 import { Loading } from 'carbon-components-react';
 import { setLocaleCode } from '../lib/redux/slices/localeCodeSlice';
 import { setLoadingStatus } from '../lib/redux/slices/loadingSlice';
 
 const ProductExplorerSecurity: React.FC = () => {
-  const loading = useAppSelector((state: RootState) => state.loading);
-  const messages = useAppSelector((state: RootState) => state.messages);
+  const loading = useAppSelector<boolean>((state) => state.loading);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
   const intl = useIntl();
   const dispatch = useAppDispatch();
 

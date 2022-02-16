@@ -1,0 +1,96 @@
+@import '../assets/styles/layout';
+
+.journey-ai-widget-container {
+  height: 560px;
+  background: #161616;
+
+  // above xlg
+  .journey-ai-widget {
+    display: flex;
+    height: 100%;
+    position: relative;
+
+    .animation-ui-container {
+      position: absolute;
+      overflow: hidden;
+      right: calc(50% - (1280px) / 2 + 100px);
+      transition-delay: 150ms;
+
+      height: 100%;
+
+      &.home-right {
+        right: -130px;
+      }
+
+      #lottie-container {
+        height: 100%;
+        width: calc(1280px * 0.85);
+      }
+    }
+  }
+
+  @include below-xlg {
+    .journey-ai-widget {
+      .animation-ui-container {
+        right: calc(50% - (1280px) / 2 + 100px);
+
+        &.home-right {
+          right: -170px;
+        }
+      }
+    }
+  }
+
+  // tablet
+  @include tablet {
+    height: 90vh;
+
+    .journey-ai-widget {
+      flex-flow: column;
+
+      .animation-ui-container {
+        position: relative;
+        right: unset !important;
+        flex: 1 0;
+        transition-delay: unset;
+        margin-top: 240px;
+
+        #lottie-container {
+          width: 120%;
+          margin-left: -10%;
+        }
+      }
+    }
+  }
+
+  // mobile
+  @include mobile {
+    .journey-ai-widget {
+      .animation-ui-container {
+        margin-top: 220px;
+
+        #lottie-container {
+          width: 180%;
+          margin-left: -40%;
+        }
+      }
+    }
+  }
+
+  // mobile small
+  @include mobile-small {
+    // height: auto;
+    height: 100vh;
+
+    .journey-ai-widget {
+      .animation-ui-container {
+        margin-top: 240px;
+
+        #lottie-container {
+          width: 140%;
+          margin-left: -20%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/* 
+https://github.com/carbon-design-system/carbon/tree/master/packages/colors
+*/
+
+@import "@carbon/colors/scss/colors";
+
+.journey-ai-widget-container {
+    .white {
+        color: $carbon--white-0;
+    }
+
+    .blue-50 {
+        color: $carbon--blue-50;
+    }
+
+    .gray-50 {
+        color: $carbon--gray-50;
+    }
+}

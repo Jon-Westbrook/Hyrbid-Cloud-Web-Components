@@ -1,7 +1,5 @@
-import allLanguageCodes from 'src/common/allLanguageCodes';
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 module.exports = {
+  entry: './src/apps/trust-radius/index.tsx',
   shortcode: 'trust-radius',
   title: 'Trust Radius Reviews',
   status: 'stable',
@@ -38,6 +36,22 @@ module.exports = {
   ],
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
-    availableTranslations: allLanguageCodes,
+    availableTranslations: [
+      'ar',
+      'de',
+      'en',
+      'es',
+      'esla',
+      'fr',
+      'it',
+      'ja',
+      'ko',
+      'pl',
+      'pt',
+      'ru',
+      'tr',
+      'zh-cn',
+      'zh-tw',
+    ],
   },
 };

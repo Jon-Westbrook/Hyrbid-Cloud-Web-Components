@@ -1,0 +1,163 @@
+@import '../../assets/styles/layout';
+@import '../../../../../node_modules/@carbon/colors/scss/colors';
+
+$label: (
+  0: (
+    top: 130px,
+    left: 250px,
+    width: 245px,
+    text-max-width: 200px,
+  ),
+  1: (
+    top: 196px,
+    left: 200px,
+    width: 250px,
+    text-max-width: 200px,
+  ),
+  2: (
+    top: 262px,
+    left: 150px,
+    width: 255px,
+    text-max-width: 200px,
+  ),
+  3: (
+    top: 325px,
+    left: 100px,
+    width: 260px,
+    text-max-width: 200px,
+  ),
+  4: (
+    top: 415px,
+    left: 692px,
+    width: 210px,
+    text-max-width: 200px,
+  ),
+  5: (
+    top: 482px,
+    left: 0px,
+    width: 450px,
+    text-max-width: 400px,
+  ),
+);
+
+// function for setting label position recursively
+@mixin item($top, $left, $width, $text-max-width) {
+  top: $top;
+  left: $left;
+  width: $width;
+
+  .label-text {
+    max-width: $text-max-width;
+  }
+
+  // between lg and xlg
+  @include below-xlg {
+    top: $top;
+    left: $left + 40px;
+    width: $width - 40px;
+
+    .label-text {
+      max-width: $text-max-width - 40px;
+    }
+
+    &.vertical {
+      left: $left;
+
+      .label-text {
+        max-width: $text-max-width;
+      }
+    }
+  }
+}
+
+.journey-ai-widget-container {
+  .label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 2 * 28px; // catching for 2 line breaks
+
+    button {
+      display: flex;
+      align-items: center;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin-right: $spacing-05;
+      pointer-events: all;
+      padding: 0;
+
+      .label-text {
+        display: inline-block;
+        text-align: left;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: $carbon--white-0;
+
+        svg {
+          fill: $carbon--white-0;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .line {
+      height: 1px;
+      background-image: linear-gradient(
+          90deg,
+          transparent,
+          transparent 50%,
+          #161616 50%,
+          #161616 100%
+        ),
+        linear-gradient(90deg, #b9b9b9, #161616);
+      background-size: 3px 3px, 100% 3px;
+      border: none;
+      flex: 1 0;
+    }
+
+    &.vertical {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      height: auto;
+
+      .line {
+        position: absolute;
+        left: -32px;
+        top: -42px;
+        width: 80px !important;
+        background-image: linear-gradient(
+            90deg,
+            transparent,
+            transparent 50%,
+            #161616 50%,
+            #161616 100%
+          ),
+          linear-gradient(90deg, #b9b9b9, #161616);
+        background-size: 3px 3px, 100% 3px;
+        border: none;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  // loop through configs
+  @each $name, $value in $label {
+    #label-#{$name} {
+      @include item(
+        map-get($value, top),
+        map-get($value, left),
+        map-get($value, width),
+        map-get($value, text-max-width)
+      );
+    }
+  }
+}

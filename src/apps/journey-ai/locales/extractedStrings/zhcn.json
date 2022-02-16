@@ -1,0 +1,58 @@
+{
+  "ip/VoP": { "defaultMessage": "AI 阶梯" },
+  "msTSQG": { "defaultMessage": "了解我们帮助您快速踏上 AI 之旅的规范性方法" },
+  "AJeehk": { "defaultMessage": "阅读 Forrester 报告" },
+  "hyu7re": {
+    "defaultMessage": "https://www.ibm.com/account/reg/cn-zh/signup?formid=urx-44373"
+  },
+  "YfxBXY": { "defaultMessage": "阅读 O’Reilly 报告" },
+  "z+cLUB": {
+    "defaultMessage": "https://www.ibm.com/account/reg/cn-zh/signup?formid=urx-48385"
+  },
+  "3B0Q6u": { "defaultMessage": "融入" },
+  "eBdFtS": { "defaultMessage": "在整个企业中运营人工智能" },
+  "Toy1gi": { "defaultMessage": "阅读报告" },
+  "WD75lK": {
+    "defaultMessage": "https://www.ibm.com/account/reg/cn-zh/signup?formid=urx-46169"
+  },
+  "dsbXyL": { "defaultMessage": "详细了解“融入”" },
+  "rjG0sn": { "defaultMessage": "/analytics/put-ai-to-work" },
+  "HJv0iT": { "defaultMessage": "分析" },
+  "83auDt": { "defaultMessage": "以信任和透明的方式构建和扩展人工智能" },
+  "u1e2zt": { "defaultMessage": "接受评估" },
+  "pnmCN/": {
+    "defaultMessage": "/links?url=https%3A//mainstayadvisor.com/go/ibm/dss"
+  },
+  "MaSVKx": { "defaultMessage": "详细了解“分析”" },
+  "DVHGtH": { "defaultMessage": "/analytics/data-science-ai" },
+  "07n/Mt": { "defaultMessage": "组织" },
+  "XKKeWH": { "defaultMessage": "建立面向业务的分析基础" },
+  "AbqzRO": { "defaultMessage": "阅读白皮书" },
+  "D/nhOy": {
+    "defaultMessage": "https://www.ibm.com/account/reg/subscribe?formid=urx-47475"
+  },
+  "xzn6ap": { "defaultMessage": "详细了解“组织”" },
+  "Ld/NAl": { "defaultMessage": "/analytics/dataops" },
+  "kCPl0r": { "defaultMessage": "收集" },
+  "SQ/xYC": { "defaultMessage": "让数据简单易用" },
+  "C8FfA9": { "defaultMessage": "查看交互式指南" },
+  "B3xXRU": {
+    "defaultMessage": "https://www.ibm.com/account/reg/cn-zh/signup?formid=urx-50024"
+  },
+  "xnyCGD": { "defaultMessage": "详细了解“收集”" },
+  "L/KZP6": { "defaultMessage": "/analytics/data-management" },
+  "5kb1vP": { "defaultMessage": "现代化" },
+  "oM5cq9": { "defaultMessage": "让您的数据适用于人工智能和混合云世界" },
+  "+gCkh0": { "defaultMessage": "观看视频" },
+  "kqPRPF": {
+    "defaultMessage": "https://www.ibm.com/account/reg/cn-zh/signup?formid=urx-46050"
+  },
+  "czUTj8": { "defaultMessage": "数据现代化" },
+  "a5jxbi": { "defaultMessage": "/analytics/data-modernization" },
+  "GEGn2g": { "defaultMessage": "人力资源和专业知识" },
+  "dpwvja": {
+    "defaultMessage": "利用 IBM 专业知识构建成功应用企业 AI 所需技能"
+  },
+  "TdTXXf": { "defaultMessage": "详细了解" },
+  "c2NLJW": { "defaultMessage": "/analytics/expert-advice/" }
+}

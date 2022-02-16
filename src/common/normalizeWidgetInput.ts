@@ -22,7 +22,7 @@ async function normalizeWidgetInput(
   }
   const locale = mapValidLocale(langCode);
   const palette = mapPaletteToTheme(element.getAttribute('data-palette') || '');
-  const messages = await fetchTranslationMessages(widgetId, langCode);
+  const messages = await fetchTranslationMessages(widgetId, locale);
   return { element, locale, palette, messages };
 }
 

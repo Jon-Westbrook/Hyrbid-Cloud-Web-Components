@@ -8,31 +8,18 @@ import 'regenerator-runtime/runtime';
 import { IntlProvider } from 'react-intl';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
 import widgetConfig from './TrustRadius.widget';
+import { RenderFn } from '../../types/widgets';
+import { CarbonThemes } from '../../types/carbon';
 
 const widgetId = widgetConfig.shortcode;
 
-/**
- * Renders the widget.
- *
- * @param {string} instanceId
- *   The already present HTML element ID where the react app will be rendered.
- * @param {string} langCode
- *   The language code for internationalization purposes.
- * @param {string} origin
- *   Protocol and hostname where a JSONAPI endpoint is available.
- * @param {Function} cb
- *   A callback that executes after the widget has been rendered.
- *
- * @return {Promise<void>}
- *   A promise that the app will be rendered.
- */
-export default async function (instanceId, langCode, origin, cb) {
+const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages, palette } = await normalizeWidgetInput(
     instanceId,
     langCode,
     widgetId,
   );
-  if (!element) {
+  if (!element || !locale) {
     return;
   }
   const useGoogleStars =
@@ -44,7 +31,7 @@ export default async function (instanceId, langCode, origin, cb) {
         <Provider store={store}>
           <TrustRadius
             trustRadiusId={element.getAttribute('data-trust-radius-id') || ''}
-            theme={palette}
+            theme={palette || CarbonThemes.WHITE}
             useGoogleStars={useGoogleStars}
           />
         </Provider>
@@ -53,4 +40,6 @@ export default async function (instanceId, langCode, origin, cb) {
     element,
     () => cb(element),
   );
-}
+};
+
+export default render;

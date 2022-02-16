@@ -1,0 +1,43 @@
+@import "@carbon/motion/scss/motion";
+
+.journey-ai-widget-container {
+    // Micro-interactions such as button and toggle
+    .fast-01 {
+        transition: all 70ms carbon--motion(standard, expressive);
+    }
+
+    // Micro-interactions such as fade
+    .fast-02 {
+        transition: all 110ms carbon--motion(standard, expressive);
+    }
+
+    // scenenav fade
+    .fast-02-staggered {
+        transition: opacity 110ms carbon--motion(standard, expressive);
+    }
+
+    // Micro-interactions, small expansion, short distance movements
+    .moderate-01 {
+        transition: all 150ms carbon--motion(standard, expressive);
+    }
+
+    // Expansion, system communication, toast
+    .moderate-02 {
+        transition: all 240ms carbon--motion(standard, expressive);
+    }
+
+    // Large expansion, important system notifications
+    .slow-01 {
+        transition: all 400ms carbon--motion(standard, expressive);
+    }
+
+    // homenav fade
+    .slow-01-staggered {
+        transition: opacity 400ms carbon--motion(standard, expressive);
+    }
+
+    // Background dimming
+    .slow-02 {
+        transition: all 700ms carbon--motion(standard, expressive);
+    }
+}

@@ -18,7 +18,7 @@ import { FormattedMessage } from 'react-intl';
 // ...
 <FormattedMessage
   defaultMessage="There was a problem loading Trust Radius reviews. Please try again later."
-  id="/WpBBe"
+  id="problems"
 />
 ```
 
@@ -26,7 +26,7 @@ import { FormattedMessage } from 'react-intl';
 jsx
 - Before publishing your widget remember to "compile" the translations using `./scripts/compile-all.sh`.
 
-After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget.
+After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget. **TIP:** if you want to check your translations locally compile them, then copy the JSON files into `<root>/public/translations/<widget-id>/`.
 
 ## 2. Using media
 

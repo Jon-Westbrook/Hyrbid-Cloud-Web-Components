@@ -1,13 +1,14 @@
 import React from 'react';
 import TrustRadius, { TrustRadiusOwnProps } from './TrustRadius';
 import { Meta, StoryFn } from '@storybook/react';
-import { Provider } from 'react-redux';
-import { FetchStatusEnum } from '../lib/redux/store';
-import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
-
+import { FetchStatusEnum, TrustRadiusReducersMapper } from '../lib/redux/store';
 import { CarbonThemes } from '../../../types/carbon';
 import storyWithTranslation from '../lib/storyWithTranslation';
+import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
+import defaultFakeState from '../lib/redux/defaultFakeState';
 
+const storyWithRedux =
+  storyWithReduxDecorator<TrustRadiusReducersMapper>(defaultFakeState);
 const stories: Meta = {
   component: TrustRadius,
   title: 'Trust Radius/Components',
@@ -23,83 +24,37 @@ Default.args = {
   useGoogleStars: false,
   trustRadiusId: 'fake-trid',
 };
-Default.decorators = [
-  (story) => <Provider store={fakeStore()}>{story()}</Provider>,
-];
+Default.decorators = [storyWithRedux()];
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
 Gray.decorators = [
-  (story) => (
-    <Provider
-      store={overrideFakeStore({
-        themeOverride: CarbonThemes.GRAY_10,
-      })}
-    >
-      {story()}
-    </Provider>
-  ),
+  storyWithRedux({ palette: { theme: CarbonThemes.GRAY_10 } }),
 ];
 
 export const Dark = Template.bind({});
 Dark.args = Object.assign({}, Default.args);
 Dark.decorators = [
-  (story) => (
-    <Provider
-      store={overrideFakeStore({
-        themeOverride: CarbonThemes.GRAY_100,
-      })}
-    >
-      {story()}
-    </Provider>
-  ),
+  storyWithRedux({ palette: { theme: CarbonThemes.GRAY_100 } }),
 ];
 
 export const TwoColumns = Template.bind({});
 TwoColumns.args = Object.assign({}, Default.args);
-TwoColumns.decorators = [
-  (story) => (
-    <Provider store={overrideFakeStore({ numColsOverrides: 2 })}>
-      {story()}
-    </Provider>
-  ),
-];
+TwoColumns.decorators = [storyWithRedux({ cols: { numCols: 2 } })];
 
 export const OneColumn = Template.bind({});
 OneColumn.args = Object.assign({}, Default.args);
-OneColumn.decorators = [
-  (story) => (
-    <Provider store={overrideFakeStore({ numColsOverrides: 1 })}>
-      {story()}
-    </Provider>
-  ),
-];
+OneColumn.decorators = [storyWithRedux({ cols: { numCols: 1 } })];
 
 export const Loading = Template.bind({});
 Loading.args = Object.assign({}, Default.args);
 Loading.decorators = [
-  (story) => (
-    <Provider
-      store={overrideFakeStore({
-        statusOverrides: FetchStatusEnum.IN_PROGRESS,
-      })}
-    >
-      {story()}
-    </Provider>
-  ),
+  storyWithRedux({ status: { fetchStatus: FetchStatusEnum.IN_PROGRESS } }),
 ];
 
 export const FailedRequest = Template.bind({});
 FailedRequest.decorators = [
-  (story) => (
-    <Provider
-      store={overrideFakeStore({
-        statusOverrides: FetchStatusEnum.FAILURE,
-      })}
-    >
-      {story()}
-    </Provider>
-  ),
+  storyWithRedux({ status: { fetchStatus: FetchStatusEnum.FAILURE } }),
 ];
 FailedRequest.args = Object.assign({}, Default.args);
 

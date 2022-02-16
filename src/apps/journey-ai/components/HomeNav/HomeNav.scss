@@ -1,0 +1,40 @@
+@import '../../assets/styles/layout';
+@import '../../../../../node_modules/@carbon/motion/scss/motion';
+
+.journey-ai-widget-container {
+  @include tablet {
+    .homenav {
+      display: none;
+    }
+  }
+
+  .homenav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  // transition
+  .homenav-display-enter,
+  .homenav-display-enter .labels {
+    opacity: 0;
+  }
+  .homenav-display-enter-done,
+  .homenav-display-enter-done .labels {
+    opacity: 1;
+  }
+  .homenav-display-exit,
+  .homenav-display-exit .labels {
+    opacity: 1;
+  }
+  .homenav-display-exit-active.homenav {
+    opacity: 0;
+    transition: opacity 110ms carbon--motion(standard, expressive) 0ms !important; // force fase fade out
+  }
+  .homenav-display-exit-active .labels {
+    opacity: 0;
+  }
+}

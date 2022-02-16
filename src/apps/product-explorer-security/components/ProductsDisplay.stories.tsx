@@ -2,11 +2,12 @@ import ProductsDisplay from './ProductsDisplay';
 import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
+import storyWithRedux from '../lib/storyWithRedux';
 
 const stories: Meta = {
   component: ProductsDisplay,
   title: 'Product Explorer Security/Components/Products Display',
-  decorators: [storyWithTranslation()],
+  decorators: [storyWithTranslation(), storyWithRedux()],
 };
 
 const Template: StoryFn = (args) => <ProductsDisplay {...args} />;

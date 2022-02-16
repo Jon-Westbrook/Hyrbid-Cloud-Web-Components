@@ -6,10 +6,13 @@ import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import { CarbonThemes } from '../../../types/carbon';
-import { Provider } from 'react-redux';
-import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
 import storyWithTranslation from '../lib/storyWithTranslation';
+import { TrustRadiusReducersMapper } from '../lib/redux/store';
+import defaultFakeState from '../lib/redux/defaultFakeState';
+import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
 
+const storyWithRedux =
+  storyWithReduxDecorator<TrustRadiusReducersMapper>(defaultFakeState);
 const stories: Meta = {
   component: CardSlider,
   title: 'Trust Radius/Components/Slider',
@@ -38,32 +41,18 @@ Default.args = {
   sliderSettings,
   setCustomSlider: () => undefined,
 };
-Default.decorators = [
-  (story) => <Provider store={fakeStore()}>{story()}</Provider>,
-];
+Default.decorators = [storyWithRedux()];
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);
 Gray.decorators = [
-  (story) => (
-    <Provider
-      store={overrideFakeStore({ themeOverride: CarbonThemes.GRAY_10 })}
-    >
-      {story()}
-    </Provider>
-  ),
+  storyWithRedux({ palette: { theme: CarbonThemes.GRAY_10 } }),
 ];
 
 export const Dark = Template.bind({});
 Dark.args = Object.assign({}, Default.args);
 Dark.decorators = [
-  (story) => (
-    <Provider
-      store={overrideFakeStore({ themeOverride: CarbonThemes.GRAY_100 })}
-    >
-      {story()}
-    </Provider>
-  ),
+  storyWithRedux({ palette: { theme: CarbonThemes.GRAY_100 } }),
 ];
 
 export const TwoColumns = Template.bind({});

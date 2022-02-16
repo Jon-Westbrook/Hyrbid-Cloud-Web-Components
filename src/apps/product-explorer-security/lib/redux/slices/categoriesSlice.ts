@@ -2,8 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 import { Category } from '../../types';
 import { products } from '../../../assets/data/products';
 
-export function mapProductsToCategories(products: { categories: Category[] }) {
-  const productsMap = products.categories.map((category: Category) => {
+export function mapProductsToCategories(products: {
+  categories: Category[];
+}): Category[] {
+  return products.categories.map((category: Category) => {
     const categoryObject: Category = {
       name: category.name,
       translationId: category.translationId,
@@ -18,17 +20,15 @@ export function mapProductsToCategories(products: { categories: Category[] }) {
 
     return categoryObject;
   });
-
-  return productsMap;
 }
 
-const initialState: Category[] = [];
+export const initialState = mapProductsToCategories(products);
 
 export const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    loadCategories: () => mapProductsToCategories(products),
+    loadCategories: () => initialState,
   },
 });
 

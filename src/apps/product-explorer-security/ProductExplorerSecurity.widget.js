@@ -1,8 +1,5 @@
-import allLanguageCodes from 'src/common/allLanguageCodes';
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 module.exports = {
-  entry: 'index.tsx',
+  entry: './src/apps/product-explorer-security/index.tsx',
   shortcode: 'product-explorer-security',
   title: 'Product Explorer Security',
   status: 'stable',
@@ -10,6 +7,22 @@ module.exports = {
     'JavaScript widget that allows users to explore various IBM products on offer.',
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
-    availableTranslations: allLanguageCodes,
+    availableTranslations: [
+      'ar',
+      'de',
+      'en',
+      'es',
+      'esla',
+      'fr',
+      'it',
+      'ja',
+      'ko',
+      'pl',
+      'pt',
+      'ru',
+      'tr',
+      'zh-cn',
+      'zh-tw',
+    ],
   },
 };

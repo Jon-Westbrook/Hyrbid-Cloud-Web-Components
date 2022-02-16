@@ -1,8 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+export const initialState = '';
+
 export const localeCodeSlice = createSlice({
   name: 'localeCode',
-  initialState: '' as string,
+  initialState,
   reducers: {
     setLocaleCode: (state, action: PayloadAction<string>) =>
       (state = action.payload),

@@ -1,0 +1,98 @@
+@import '../assets/styles/layout';
+@import '../../../../node_modules/@carbon/colors/scss/colors';
+
+.journey-ai-widget-container {
+  .mobilenav-container {
+    display: none;
+    z-index: 10;
+    background: #000;
+    height: 80px;
+    width: 100%;
+
+    .bx--grid {
+      height: 100%;
+
+      .bx--row {
+        height: 100%;
+
+        .mobilenav {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          button {
+            display: flex;
+            align-items: center;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+
+            svg {
+              margin-right: 10px;
+            }
+
+            &.btn-on {
+              font-weight: 600;
+
+              svg {
+                fill: $carbon--blue-50;
+              }
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .home-btn {
+            padding: 0;
+            margin-right: $spacing-05;
+
+            svg {
+              margin: 0;
+            }
+          }
+
+          .scene-btn-group {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            height: 100%;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
+
+            button {
+              padding: 0 $spacing-06;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mobilenav-home-display-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  .mobilenav-home-display-enter-done {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .mobilenav-home-display-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .mobilenav-home-display-exit-active {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  @include tablet {
+    .mobilenav-container {
+      display: block;
+    }
+  }
+}

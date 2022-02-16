@@ -1,4 +1,7 @@
-import { IntlProvider } from 'react-intl';
+import storyWithTranslationFromMessages from '../../../common/storyWithTranslationFromMessages';
+
+import { ReactFramework } from '@storybook/react';
+import { DecoratorFunction } from '@storybook/csf';
 
 import messages_ar from '../locales/compiledStrings/ar.json';
 import messages_de from '../locales/compiledStrings/de.json';
@@ -15,9 +18,6 @@ import messages_ru from '../locales/compiledStrings/ru.json';
 import messages_tr from '../locales/compiledStrings/tr.json';
 import messages_zhcn from '../locales/compiledStrings/zhcn.json';
 import messages_zhtw from '../locales/compiledStrings/zhtw.json';
-import { ReactFramework } from '@storybook/react';
-import { ReactElement } from 'react';
-import { DecoratorFunction } from '@storybook/csf';
 
 const messagesByLangcode: Record<string, any> = {
   ar: messages_ar,
@@ -37,20 +37,9 @@ const messagesByLangcode: Record<string, any> = {
   'zh-tw': messages_zhtw,
 };
 
-const storyWithTranslation =
-  (localeOverride: string | void): DecoratorFunction<ReactFramework> =>
-  (story, { globals: { locale } }): ReactElement => {
-    // react-intl does not support langCode "esla", so we need to
-    // switch it to "es" but still load the JSON for "esla"
-    const oneOff = locale === 'esla' ? 'es' : locale;
-    return (
-      <IntlProvider
-        locale={localeOverride || oneOff || 'en'}
-        messages={messagesByLangcode[locale || 'en']}
-      >
-        {story()}
-      </IntlProvider>
-    );
-  };
+export const storyWithTranslation = (
+  localeOverride: string | void,
+): DecoratorFunction<ReactFramework> =>
+  storyWithTranslationFromMessages(localeOverride, messagesByLangcode);
 
 export default storyWithTranslation;

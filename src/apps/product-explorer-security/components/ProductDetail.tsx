@@ -1,13 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 import { Category, Product } from '../lib/types';
-import { RootState } from '../lib/redux/store';
 import { useAppSelector } from '../lib/redux/hooks';
-import { useWindowSize } from 'src/common/hooks/useWindowSize';
+import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow } from '../utils';
 import { css } from '@emotion/react';
-import { FormattedMessage } from 'react-intl';
-import prefixUrlWithLocale from 'src/common/prefixUrlWithLocale';
+import { FormattedMessage, MessageDescriptor } from 'react-intl';
+import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 
 export interface ProductDetailProps {
   category: Category;
@@ -17,9 +16,11 @@ export interface ProductDetailProps {
 }
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
-  const categories = useAppSelector((state: RootState) => state.categories);
-  const localeCode = useAppSelector((state: RootState) => state.localeCode);
-  const messages = useAppSelector((state: RootState) => state.messages);
+  const categories = useAppSelector((state) => state.categories);
+  const localeCode = useAppSelector((state) => state.localeCode);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
   const categoryStrings = categories.map((category) => category.name);
   const size = useWindowSize();
 

@@ -1,0 +1,29 @@
+@import "@carbon/layout/scss/layout";
+
+$feature-flags: (
+    grid-columns-16: true,
+);
+
+@mixin mobile-small {
+    @media screen and (max-width: 374px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @include carbon--breakpoint-down("md") {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @include carbon--breakpoint-down("lg") {
+        @content;
+    }
+}
+
+@mixin below-xlg {
+    @include carbon--breakpoint-down("xlg") {
+        @content;
+    }
+}

@@ -1,10 +1,15 @@
 /** @jsxImportSource @emotion/react */
-import React, { useState, SyntheticEvent, Fragment } from 'react';
+import React, {
+  EventHandler,
+  Fragment,
+  KeyboardEventHandler,
+  SyntheticEvent,
+  useState,
+} from 'react';
 import ProductDetail from './ProductDetail';
-import { RootState } from '../lib/redux/store';
 import { useAppSelector } from '../lib/redux/hooks';
 import { css } from '@emotion/react';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react';
 import { ReactComponent as DataSecurityIcon } from '../assets/images/icons/data-security.svg';
 import { ReactComponent as IamIcon } from '../assets/images/icons/iam.svg';
@@ -14,23 +19,27 @@ import { ReactComponent as SiemIcon } from '../assets/images/icons/siem.svg';
 import { ReactComponent as SoarIcon } from '../assets/images/icons/soar.svg';
 
 const ProductsDisplay: React.FC = () => {
-  const categories = useAppSelector((state: RootState) => state.categories);
-  const messages = useAppSelector((state: RootState) => state.messages);
+  const categories = useAppSelector((state) => state.categories);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
   const [selectedCategory, setSelectedCategory] = useState('');
 
-  function handleInteraction(e: SyntheticEvent<HTMLDivElement>) {
+  const handleInteraction: EventHandler<SyntheticEvent<HTMLDivElement>> = (
+    e,
+  ) => {
     if (selectedCategory === e.currentTarget.dataset.category) {
       setSelectedCategory('');
     } else {
       setSelectedCategory(e.currentTarget.dataset.category || '');
     }
-  }
+  };
 
-  function handleKeyPress(e) {
+  const handleKeyPress: KeyboardEventHandler<HTMLDivElement> = (e) => {
     if (e.key === 'Enter') {
       handleInteraction(e);
     }
-  }
+  };
 
   function generateIconMarkup(categoryIcon: string, categoryName: string) {
     if (categoryIcon.includes('data-security')) {

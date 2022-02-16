@@ -2,11 +2,12 @@ import ProductExplorerSecurity from './ProductExplorerSecurity';
 import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
+import storyWithRedux from '../lib/storyWithRedux';
 
 const stories: Meta = {
   component: ProductExplorerSecurity,
   title: 'Product Explorer Security/Components',
-  decorators: [storyWithTranslation()],
+  decorators: [storyWithTranslation(), storyWithRedux()],
 };
 
 const Template: StoryFn = (args) => <ProductExplorerSecurity {...args} />;
