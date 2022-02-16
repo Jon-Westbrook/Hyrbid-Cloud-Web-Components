@@ -11,6 +11,7 @@ import {
 } from '../lib/redux/slices/scenesSlice';
 import { selectTransitioning } from '../lib/redux/slices/presentationSlice';
 import messages, { getSceneNumbers } from '../locales/messages';
+import { selectBreakpoint } from '../lib/redux/slices/browserSlice';
 
 const SceneNav = (): ReactElement => {
   const currentScene = useSelector(selectCurrentSceneIndex);
@@ -40,6 +41,7 @@ const SceneNav = (): ReactElement => {
     }
   };
 
+  const breakpoint = useSelector(selectBreakpoint);
   return (
     <CSSTransition
       in={show}
@@ -62,9 +64,10 @@ const SceneNav = (): ReactElement => {
                   </span>
                   <FormattedMessage {...messages['home.title']}>
                     {(txt) => {
+                      const maxWords = breakpoint === 'lg' ? 18 : 24;
                       const fontSizePercentHome = dynamicFontSizePercent(
                         `${txt}`,
-                        { xlg: 24, lg: 18 },
+                        maxWords,
                       );
                       const labelStylesHome: CSSProperties = {
                         lineHeight: '1.3em',
@@ -97,9 +100,10 @@ const SceneNav = (): ReactElement => {
                     </span>
                     <FormattedMessage {...messages[`scene.${i}.title`]}>
                       {(txt) => {
+                        const maxWords = breakpoint == 'lg' ? 18 : 24;
                         const fontSizePercentScene = dynamicFontSizePercent(
                           `${txt}`,
-                          { xlg: 24, lg: 18 },
+                          maxWords,
                           4,
                         );
                         const labelStylesScene: CSSProperties = {

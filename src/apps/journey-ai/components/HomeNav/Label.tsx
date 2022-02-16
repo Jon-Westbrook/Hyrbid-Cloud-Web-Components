@@ -4,6 +4,8 @@ import './Label.scss';
 import { FormattedMessage } from 'react-intl';
 import dynamicFontSizePercent from '../../utils/dynamicTextSizePercent';
 import messages from '../../locales/messages';
+import { useSelector } from 'react-redux';
+import { selectBreakpoint } from '../../lib/redux/slices/browserSlice';
 
 export type LabelProps = {
   i: number;
@@ -15,6 +17,7 @@ const Label = ({
   reductionIndex,
   handleClickScene,
 }: LabelProps): ReactElement => {
+  const breakpoint = useSelector(selectBreakpoint);
   return (
     <div className={`label ${i === 4 ? 'vertical' : ''}`} id={`label-${i}`}>
       <button
@@ -24,12 +27,10 @@ const Label = ({
         <DotMark16 className="gray-50" />
         <FormattedMessage {...messages[`scene.${i}.title`]}>
           {(txt) => {
+            const maxWords = breakpoint === 'lg' ? 14 : 18;
             const fontSizePercent = dynamicFontSizePercent(
               `${txt}`,
-              {
-                xlg: 18,
-                lg: 14,
-              },
+              maxWords,
               reductionIndex,
             );
             const labelStyles: CSSProperties = {

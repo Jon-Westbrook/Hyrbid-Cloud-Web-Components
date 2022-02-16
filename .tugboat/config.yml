@@ -1,16 +1,29 @@
 services:
-  apache:
+  mysql:
+    image: tugboatqa/mariadb
+    commands:
+      ready:
+        - mysqladmin ping
+
+      init:
+        - mkdir -p /etc/service/mysql
+        - echo "#!/bin/sh" > /etc/service/mysql/run
+        - echo "mysql -e 'SET GLOBAL max_allowed_packet=134217728'" >> /etc/service/mysql/run
+        - chmod +x /etc/service/mysql/run
+
+      build:
+        - mysql -e 'SET GLOBAL max_allowed_packet=134217728'
+  storybook:
+    default: true
     image: tugboatqa/httpd
     commands:
-      init:
-        - curl -sL https://deb.nodesource.com/setup_16.x | sh
-        - apt-get install -y nodejs
-        - npm install --global yarn
-        - ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist/storybook" "${DOCROOT}"
-        - cp ${TUGBOAT_ROOT}/.tugboat/.env.local ${TUGBOAT_ROOT}/.env.local
-      update:
-        - yarn install
-        - ./scripts/compile-all.sh
+      init: |
+        set -eux
+        curl -sL https://deb.nodesource.com/setup_16.x | sh
+        apt-get install -y nodejs
+        npm install --global yarn
+        ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist/storybook" "${DOCROOT}"
+        cp ${TUGBOAT_ROOT}/.tugboat/.env.local ${TUGBOAT_ROOT}/.env.local
       build:
         - yarn install
         - ./scripts/compile-all.sh
@@ -18,7 +31,7 @@ services:
         - yarn storybook:build
 
     lighthouse:
-      enabled: false
+      enabled: true
 
     screenshot:
       enabled: true
@@ -41,18 +54,49 @@ services:
         - /iframe.html?id=trust-radius-slider--dark&args=&viewMode=story
         - /iframe.html?id=trust-radius-slider--two-columns&args=&viewMode=story
         - /iframe.html?id=trust-radius-slider--one-column&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-slider-heading--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card--gray&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card--dark&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--truncated&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--empty-date&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-body--invalid-date&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-footer--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-footer--minimal-data&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-footer--incomplete-data&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-heading--default&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-heading--empty&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-heading--long-text&args=&viewMode=story
-        - /iframe.html?id=trust-radius-slider-card-emptycard--default&args=&viewMode=story
+
+  drupal:
+    image: q0rban/tugboat-drupal:9.3
+    expose: 80
+    http: false
+    depends: mysql
+    checkout: true
+    commands:
+      init: |
+        set -eux
+        curl -sL https://deb.nodesource.com/setup_16.x | sh
+        apt-get install -y nodejs
+        npm install --global yarn
+        # This is an environment variable we added in the Dockerfile that
+        # provides the path to Drupal composer root (not the web root).
+        cd $DRUPAL_COMPOSER_ROOT
+        composer require drupal/widget_type drupal/widget_instance drupal/widget_ingestion
+        # Install Drupal on the site.
+        vendor/bin/drush \
+          --yes \
+          --db-url=mysql://tugboat:tugboat@mysql:3306/tugboat \
+          --site-name=Widgets \
+          --account-name=ibmadmin \
+          --account-pass=${ADMIN_PASSWORD} \
+          site:install standard
+        # Enable the modules.
+        vendor/bin/drush --yes pm:enable widget_type widget_instance widget_ingestion dblog
+        vendor/bin/drush --yes theme:enable claro olivero
+        # Set the Claro theme as default admin theme.
+        vendor/bin/drush --yes config-set system.theme admin claro
+        vendor/bin/drush --yes config-set system.theme default olivero
+        vendor/bin/drush --yes theme:uninstall seven bartik
+        # Set the widget registry to pull from Tugboat.
+        vendor/bin/drush --yes php:eval "\Drupal\widget_type\Entity\WidgetRegistrySource::create(['status' => TRUE, 'endpoint' => '${TUGBOAT_SERVICE_URL}sites/default/files/widget-registry/corrected-registry.json', 'id' => '${TUGBOAT_PREVIEW_ID}', 'label' => 'Ephemeral Registry ${TUGBOAT_PREVIEW_REF}'])->save();"
+        vendor/bin/drush --yes config-set system.site page.front /user/login?destination=/admin/content/interactive-components/widget-instance
+        # Rebuild cache.
+        vendor/bin/drush cache:rebuild
+      build: |
+        cd $TUGBOAT_ROOT
+        yarn install
+        ${TUGBOAT_ROOT}/scripts/compile-all.sh
+        mkdir --parents ${DRUPAL_DOCROOT}/sites/default/files/widget-registry
+        npx @js-widgets/webpack-cli --existing-registry="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${DRUPAL_DOCROOT}/sites/default/files/widget-registry" "${TUGBOAT_ROOT}"
+        perl -pe "s@https\://hybrid-cloud-widgets[^\.]*\.s3\.[^\.]*\.cloud-object-storage\.appdomain\.cloud@${TUGBOAT_SERVICE_URL}sites/default/files/widget\-registry@g" ${DRUPAL_DOCROOT}/sites/default/files/widget-registry/registry.json > ${DRUPAL_DOCROOT}/sites/default/files/widget-registry/corrected-registry.json
+      online:
+        - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT widget_ingestion:ingest --force-ingestion

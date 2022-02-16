@@ -1,17 +1,8 @@
-import { useSelector } from 'react-redux';
-import {
-  NamedBreakpoint,
-  selectBreakpoint,
-} from '../lib/redux/slices/browserSlice';
-
 const dynamicFontSizePercent = (
   text: string,
-  maxWordsPerBreakpoint: Partial<Record<NamedBreakpoint, number>>,
+  maxWords = 18,
   reductionIndex = 6,
 ): number => {
-  // Depending on the breakpoint the maxlength varies.
-  const breakpoint = useSelector(selectBreakpoint);
-  const maxWords = maxWordsPerBreakpoint[breakpoint] || 18;
   // Count all words.
   const cleanText = text.replace(/ +/g, ' ');
   const numWords = cleanText.split(' ').length;

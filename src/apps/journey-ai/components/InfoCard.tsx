@@ -10,6 +10,7 @@ import {
   selectCurrentSceneIndex,
   selectInfocardIn,
 } from '../lib/redux/slices/scenesSlice';
+import { selectBreakpoint } from '../lib/redux/slices/browserSlice';
 
 const InfoCard = (): ReactElement => {
   const [rootID, setRootID] = useState('home');
@@ -31,6 +32,7 @@ const InfoCard = (): ReactElement => {
     setRootID(`scene.${currentScene}`);
   }, [infocardIn]);
 
+  const breakpoint = useSelector(selectBreakpoint);
   return (
     <div className="infocard-container">
       <div className="bx--grid">
@@ -53,12 +55,16 @@ const InfoCard = (): ReactElement => {
                 <div className="title expressive-heading-06 white slow-01">
                   <FormattedMessage {...messages[`${rootID}.title`]}>
                     {(txt) => {
-                      const fontSizePercent = dynamicFontSizePercent(`${txt}`, {
+                      const maxWordsPerBreakpoint = {
                         xlg: 10,
                         lg: 10,
                         tablet: 24,
                         mobile: 18,
-                      });
+                      };
+                      const fontSizePercent = dynamicFontSizePercent(
+                        `${txt}`,
+                        maxWordsPerBreakpoint[breakpoint] || 10,
+                      );
                       const labelStyles: CSSProperties = {
                         lineHeight: '1.19em',
                         fontSize:
