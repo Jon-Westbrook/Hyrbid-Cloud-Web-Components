@@ -1,7 +1,15 @@
-import React from 'react';
-import TrustRadius, { TrustRadiusOwnProps } from './TrustRadius';
+import TrustRadius, { TrustRadiusProps } from './TrustRadius';
 import { Meta, StoryFn } from '@storybook/react';
-import { FetchStatusEnum, TrustRadiusReducersMapper } from '../lib/redux/store';
+import { Provider } from 'react-redux';
+import { store } from '../lib/redux/store';
+import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
+import { worker } from '../lib/mocks/browser';
+
+// start mock server worker to intercept API calls
+if (typeof global.process === 'undefined') {
+  worker.start();
+}
+
 import { CarbonThemes } from '../../../types/carbon';
 import storyWithTranslation from '../lib/storyWithTranslation';
 import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
@@ -15,9 +23,7 @@ const stories: Meta = {
   decorators: [storyWithTranslation()],
 };
 
-const Template: StoryFn<TrustRadiusOwnProps> = (args) => (
-  <TrustRadius {...args} />
-);
+const Template: StoryFn<TrustRadiusProps> = (args) => <TrustRadius {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
@@ -25,6 +31,7 @@ Default.args = {
   trustRadiusId: 'fake-trid',
 };
 Default.decorators = [storyWithRedux()];
+Default.decorators = [(story) => <Provider store={store}>{story()}</Provider>];
 
 export const Gray = Template.bind({});
 Gray.args = Object.assign({}, Default.args);

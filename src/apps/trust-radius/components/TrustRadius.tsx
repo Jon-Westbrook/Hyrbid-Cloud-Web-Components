@@ -34,7 +34,6 @@ export interface TrustRadiusReview {
   name: { first: string; last: string };
   position?: { title: string };
   quotes: [{ text: string }];
-  rating: number;
   totalCount: number;
   trScore: number;
 }

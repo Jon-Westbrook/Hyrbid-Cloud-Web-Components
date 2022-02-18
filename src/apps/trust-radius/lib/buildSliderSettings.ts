@@ -1,10 +1,5 @@
 import { Settings as SliderSettings } from 'react-slick';
-
-enum Breakpoint {
-  SM = 320,
-  MD = 672,
-  LG = 1312,
-}
+import { CarbonBreakpoints } from 'src/types/carbon';
 
 /**
  * Determine number of slides to display based on
@@ -18,20 +13,20 @@ function determineSlidesDisplay(numberOfCards: number, width: number) {
     case 1:
       return 1;
     case 2:
-      return width >= Breakpoint.MD ? 2 : 1;
+      return width >= CarbonBreakpoints.MD ? 2 : 1;
     case 3:
-      if (width >= Breakpoint.LG) {
+      if (width >= CarbonBreakpoints.LG) {
         return 3;
-      } else if (width >= Breakpoint.MD) {
+      } else if (width >= CarbonBreakpoints.MD) {
         return 2;
       } else {
         return 1;
       }
     case 4:
     default:
-      if (width >= Breakpoint.LG) {
+      if (width >= CarbonBreakpoints.LG) {
         return 4;
-      } else if (width >= Breakpoint.MD) {
+      } else if (width >= CarbonBreakpoints.MD) {
         return 2;
       } else {
         return 1;

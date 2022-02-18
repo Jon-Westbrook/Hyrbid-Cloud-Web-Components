@@ -1,12 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { reviewsApi } from './slices/fetchReviewsSlice';
+import setThemeSlice from './slices/setThemeSlice';
 
 export const store = configureStore({
   reducer: {
     [reviewsApi.reducerPath]: reviewsApi.reducer,
-    columns: () => {},
-    products: () => {},
-    palette: () => {},
+    theme: setThemeSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(reviewsApi.middleware),
