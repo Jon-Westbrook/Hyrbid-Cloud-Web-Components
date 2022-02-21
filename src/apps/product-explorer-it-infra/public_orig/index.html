@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IBM Product Explorer</title>
+    <link
+      href="//1.www.s81c.com/common/v18/css/www.css"
+      rel="preload"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="//1.www.s81c.com/common/v18/css/www.css"
+      media="all"
+    />
+    <link
+      href="//1.www.s81c.com/common/v18/css/grid-fluid.css"
+      rel="preload"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="//1.www.s81c.com/common/v18/css/grid-fluid.css"
+      media="all"
+    />
+    <link
+      href="//1.www.s81c.com/common/v18/css/tables.css"
+      rel="preload"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="//1.www.s81c.com/common/v18/css/tables.css"
+      media="all"
+    />
+    <link
+      rel="preload"
+      href="//1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="//1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regularitalic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="//1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="//1.www.s81c.com/common/fonts/icons-ibm-v12.woff"
+      as="font"
+      type="font/woff"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="//1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="//1.www.s81c.com/common/v19a/css/www.css"
+      media="all"
+    />
+    <script
+      src="//s3.us.cloud-object-storage.appdomain.cloud/widget-registry-sandbox/loader.js"
+      type="application/javascript"
+    ></script>
+    <script>
+      document.loadWidgets([
+        {
+          instanceId: 'ibm-product-explorer-1',
+          language: 'en-us',
+          onRenderFinish: domElement => {
+            console.debug('The widget has finished rendering: ', domElement);
+
+            const productExplorerWrapper = document.getElementById(
+              'ibm-product-explorer-1',
+            );
+            const localeSelect = document.getElementById('locale-select');
+            localeSelect.addEventListener('change', e => {
+              productExplorerWrapper.setAttribute(
+                'data-localecode',
+                e.target.value,
+              );
+
+              renderIbmProductExplorer(
+                'ibm-product-explorer-1',
+                e.target.value,
+                '',
+                e =>
+                  console.debug(
+                    `Selected locale: ${e.getAttribute('data-localecode')}`,
+                  ),
+              );
+            });
+          },
+          origin: 'http://local.ibm.com',
+          renderFunctionName: 'renderIbmProductExplorerItInfra',
+        },
+      ]);
+    </script>
+  </head>
+  <body id="ibm-com">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <div id="ibm-top" class="ibm-landing-page">
+        <div class="region region-masthead">
+          <div
+            id="ibm-masthead"
+            role="banner"
+            aria-label="IBM"
+            data-mhtype="minimal"
+            class="simple  ibm-mhtype-minimal"
+          >
+            <div id="ibm-universal-nav">
+              <nav role="navigation" aria-label="IBM">
+                <div id="ibm-home">
+                  <a href="https://www.ibm.com/us/en">IBM®</a>
+                </div>
+                <ul id="ibm-menu-links" role="toolbar" aria-label="Site map">
+                  <li>
+                    <a href="https://www.ibm.com/sitemap/us/en">Site map</a>
+                  </li>
+                </ul>
+              </nav>
+              <div
+                id="ibm-search-module"
+                role="search"
+                aria-labelledby="ibm-masthead"
+              >
+                <form
+                  id="ibm-search-form"
+                  action="https://www.ibm.com/Search/"
+                  method="get"
+                >
+                  <p>
+                    <label for="q">IBM</label>
+                    <input
+                      type="text"
+                      maxlength="100"
+                      value=""
+                      placeholder="Search"
+                      name="q"
+                      id="q"
+                      aria-label="Search"
+                    />
+                    <input type="hidden" value="18" name="v" />
+                    <input type="hidden" value="utf" name="en" />
+                    <input type="hidden" value="en" name="lang" />
+                    <input type="hidden" value="us" name="cc" />
+                    <input
+                      type="submit"
+                      id="ibm-search"
+                      class="ibm-btn-search"
+                      value="Submit"
+                    />
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ibm-content-wrapper">
+          <div role="contentinfo" aria-label="Promotional" content>
+            <div
+              class="e-spot"
+              data-product-id="WCM_d2a8d1bd-2f13-4227-8ce6-9527454160df"
+              data-type="leadspace"
+              data-product-locale="us-en"
+              data-color="yellow-30"
+            ></div>
+          </div>
+          <header role="banner" aria-labelledby="ibm-pagetitle-h1">
+            <div
+              class="views-element-container"
+              id="block-views-block-navigational-tabs-page-build-nav-tabs"
+            >
+              <div>
+                <div
+                  class="js-view-dom-id-1e2a30236363e8748a26dbd99c80774ec0a4c984e3fe2ce895195e87d5c7a4f8"
+                >
+                  <div class="views-row"></div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main role="main" aria-labelledby="ibm-pagetitle-h1" class="">
+            <div id="ibm-pcon" class="">
+              <div id="ibm-content" class="">
+                <div id="ibm-content-body" class="ibm-padding-top-0 ">
+                  <div id="ibm-content-main" class="">
+                    <div>
+                      <div>
+                        <select id="locale-select">
+                          <option value="en-us">en-us</option>
+                          <option value="fr-be">fr-be</option>
+                          <option value="es-ar">es-ar</option>
+                        </select>
+                        <!-- START: WIDGET -->
+                        <div
+                          id="ibm-product-explorer-1"
+                          data-prop="Click here"
+                          data-localecode="en-us"
+                        >
+                          <p
+                            class="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center"
+                          ></p>
+                        </div>
+                        <!-- END: WIDGET -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <footer role="contentinfo" aria-label="IBM">
+          <div class="region region-footer">
+            <div id="ibm-footer">
+              <div class="ibm-columns">
+                <div class="ibm-col-1-1">
+                  <div class="ibm-footer-corporate-links">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.ibm.com/contact/us/en/?lnk=flg-cont-usen"
+                          >Contact IBM</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.ibm.com/privacy/us/en/?lnk=flg-priv-usen"
+                          >Privacy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.ibm.com/legal/us/en/?lnk=flg-tous-usen"
+                          >Terms of use</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.ibm.com/accessibility/us/en/?lnk=flg-acce-usen"
+                          >Accessibility</a
+                        >
+                      </li>
+                      <li id="ibm-truste-cp">
+                        <a
+                          href="#"
+                          onclick="truste.eu.clickListener();return false;"
+                          >Cookie preferences</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

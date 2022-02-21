@@ -1,0 +1,477 @@
+{
+  "categories": [
+    {
+      "name": "Compute",
+      "translationId": "compute",
+      "description": "From bare metal servers to serverless compute, IBM offers resources for any workload.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-22/product-compute_0.svg",
+      "link": "https://www.ibm.com/cloud/compute",
+      "products": [
+        {
+          "name": "IBM Cloud Bare Metal Servers",
+          "productKey": "WCM_13770a0a-d45f-4951-af52-7b265bdd9fbd"
+        },
+        {
+          "name": "IBM Cloud Virtual Servers",
+          "productKey": "WCM_f34a0621-fae4-4e86-8a09-c534a31d1889"
+        },
+        {
+          "name": "IBM Cloud Kubernetes Service",
+          "productKey": "4d21880543ab2dde61ca8a0084124f1b"
+        },
+        {
+          "name": "Container registry",
+          "productKey": "f484a2b698ed45266ea67c6a22c44860"
+        },
+        {
+          "name": "Cloud foundry",
+          "productKey": "e87f46b7a591f23be56013683da2b2f7"
+        },
+        {
+          "name": "IBM Cloud Functions",
+          "productKey": "f484a2b698ed45266ea67c6a22bbf5fd"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "translationId": "network",
+      "description": "Manage high-performance and cost-effective public, private and management networks.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-network.svg",
+      "link": "https://www.ibm.com/cloud/network",
+      "products": [
+        {
+          "name": "Network appliances",
+          "productKey": "86399f9f9bab77967049edf44282fc71"
+        },
+        {
+          "name": "IBM Cloud Content Delivery Network",
+          "productKey": "f4fd6ccda7ce26a76c326ac325bbd05c"
+        },
+        {
+          "name": "IBM Cloud Direct Link",
+          "productKey": "f4fd6ccda7ce26a76c326ac325e04c12"
+        },
+        {
+          "name": "Domain name services",
+          "productKey": "4d21880543ab2dde61ca8a008457d61c"
+        },
+        {
+          "name": "Load balancer",
+          "productKey": "4d21880543ab2dde61ca8a00845f06ef"
+        },
+        {
+          "name": "Network security",
+          "productKey": "86399f9f9bab77967049edf4428531e3"
+        }
+      ]
+    },
+    {
+      "name": "Storage",
+      "translationId": "storage",
+      "description": "Choose from robust and durable object, block and file storage services.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-06-14/product-storage-new.svg",
+      "link": "https://www.ibm.com/cloud/storage",
+      "products": [
+        {
+          "name": "IBM Cloud Object Storage",
+          "productKey": "IBM_PWB_1063845471737"
+        },
+        {
+          "name": "IBM Cloud Block Storage",
+          "productKey": "f4fd6ccda7ce26a76c326ac3254c8578"
+        },
+        {
+          "name": "IBM Cloud File Storage",
+          "productKey": "f484a2b698ed45266ea67c6a22f75185"
+        }
+      ]
+    },
+    {
+      "name": "IBM Cloud Paks",
+      "translationId": "ibmCloudPaks",
+      "description": "Move core applications to any cloud faster with containerized, open source, enterprise-ready software solutions.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-08-14/cloud-pak-32x36.svg",
+      "link": "https://www.ibm.com/cloud/paks",
+      "products": [
+        {
+          "name": "IBM Cloud Pak™ for Multicloud Management",
+          "productKey": "ca8ac42a668045af136000ec94e9e2e2"
+        },
+        {
+          "name": "IBM Cloud Pak for Integration",
+          "productKey": "4870839776095c56d6169341755dbb16"
+        },
+        {
+          "name": "IBM Cloud Pak for Automation",
+          "productKey": "85c52bbe8c9223424a837c515516f698"
+        },
+        {
+          "name": "IBM Cloud Pak for Applications",
+          "productKey": "c01bb94b60bcba0a0faf68d7a6c305c2"
+        },
+        {
+          "name": "IBM Cloud Pak for Data",
+          "productKey": "9e2699a8ab33727e1119e89dd5af3319"
+        }
+      ]
+    },
+    {
+      "name": "Management",
+      "translationId": "management",
+      "description": "Improve the management of infrastructure, apps, processes and entire cloud environments.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-management.svg",
+      "link": "https://www.ibm.com/cloud/management",
+      "products": [
+        {
+          "name": "IBM Cloud Pak for Multicloud Management",
+          "productKey": "ca8ac42a668045af136000ec94e9e2e2"
+        },
+        {
+          "name": "IBM Netcool® Operations Insight",
+          "productKey": "WCM_3b4dd72f-1586-4fcf-87b5-5ec5bbb7d4b4"
+        },
+        {
+          "name": "IBM Cloud App Management",
+          "productKey": "789ef340dda85446a8335ff749231e85"
+        },
+        {
+          "name": "IBM Cloud Automation Manager",
+          "productKey": "IBM_PWB_17374210359"
+        },
+        {
+          "name": "IBM Cloud Event Management",
+          "productKey": "IBM_PWB_844278097978"
+        },
+        {
+          "name": "IBM Cloud Monitoring with Sysdig",
+          "productKey": "6d573379fb3b78d05f6cd4de8959ca43"
+        }
+      ]
+    },
+    {
+      "name": "Security",
+      "translationId": "security",
+      "description": "Build security into apps, services and infrastructure with authentication, network security and monitoring tools.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-security.svg",
+      "link": "https://www.ibm.com/cloud/security",
+      "products": [
+        {
+          "name": "App ID",
+          "productKey": "36f156ba95bd0a8354bb6b5334c0b147"
+        },
+        {
+          "name": "Network security",
+          "productKey": "86399f9f9bab77967049edf4428531e3"
+        },
+        {
+          "name": "SSL certificates",
+          "productKey": "86399f9f9bab77967049edf4428a15c5"
+        },
+        {
+          "name": "Hardware security module",
+          "productKey": "86399f9f9bab77967049edf44282e5f9"
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "translationId": "databases",
+      "description": "A rich portfolio of SQL and NoSQL databases are designed for transactional workloads, web and mobile apps, and blazing fast analytics.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-06-17/product-database-new.svg",
+      "link": "https://www.ibm.com/cloud/databases",
+      "products": [
+        {
+          "name": "IBM Cloudant®",
+          "productKey": "WCM_2f585472-4f1d-11e4-86f6-362310e85905"
+        },
+        {
+          "name": "IBM Db2® on Cloud",
+          "productKey": "IBM_PWB_234747023429"
+        },
+        {
+          "name": "IBM Db2 Hosted Flex",
+          "productKey": "WCM_7c8cf120-9a96-4f12-bd3a-f506b87d70bf"
+        },
+        {
+          "name": "IBM Informix® on Cloud",
+          "productKey": "IBM_PWB_1241262306561"
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "translationId": "analytics",
+      "description": "Find data science tools, data warehouses and the platforms to run analytics jobs on large data sets.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-analytics.svg",
+      "link": "https://www.ibm.com/cloud/analytics",
+      "products": [
+        {
+          "name": "IBM Analytics for Apache Spark for Cloud",
+          "productKey": "WCM_f10b6e6b-9db6-4e5c-b417-42eb98135c69"
+        },
+        {
+          "name": "IBM Db2 Warehouse on Cloud",
+          "productKey": "IBM_PWB_301503611851"
+        },
+        {
+          "name": "IBM Master Data Management on Cloud",
+          "productKey": "WCM_a5d8478e-7a0c-4835-af9d-0751eb874222"
+        },
+        {
+          "name": "IBM InfoSphere® Information Server on Cloud",
+          "productKey": "IBM_PWB_273614526585"
+        },
+        {
+          "name": "IBM Streaming Analytics",
+          "productKey": "13760f049b44dc52767816624917e712"
+        }
+      ]
+    },
+    {
+      "name": "AI",
+      "translationId": "ai",
+      "description": "Leverage IBM Watson® for natural-language processing, visual recognition and machine learning.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg",
+      "link": "https://www.ibm.com/cloud/ai",
+      "products": [
+        {
+          "name": "IBM Watson Studio",
+          "productKey": "61cb5923ea9e235440799344c3f02a56"
+        },
+        {
+          "name": "IBM Watson Knowledge Catalog",
+          "productKey": "72f81e94b2d4d8cf2ea20702f3b9c39d"
+        },
+        {
+          "name": "IBM Watson Assistant",
+          "productKey": "IBM_PWB_322997301820"
+        },
+        {
+          "name": "IBM Watson Discovery",
+          "productKey": "IBM_PWB_1289319412416"
+        },
+        {
+          "name": "IBM Watson IoT™ Platform",
+          "productKey": "WCM_2f5852ce-4f1d-11e4-86f6-362310e85905"
+        },
+        {
+          "name": "IBM Watson Speech to Text",
+          "productKey": "IBM_PWB_402519898428"
+        },
+        {
+          "name": "IBM Watson Text to Speech",
+          "productKey": "13760f049b44dc52767816624920fc50"
+        },
+        {
+          "name": "IBM Watson Language Translator",
+          "productKey": "IBM_PWB_531845522766"
+        },
+        {
+          "name": "IBM Watson Natural Language Classifier",
+          "productKey": "IBM_PWB_1444146965193"
+        },
+        {
+          "name": "IBM Watson Natural Language Understanding",
+          "productKey": "IBM_PWB_270497703407"
+        },
+        {
+          "name": "IBM Watson Visual Recognition",
+          "productKey": "IBM_PWB_1337287933757"
+        },
+        {
+          "name": "IBM Watson Tone Analyzer",
+          "productKey": "IBM_PWB_827885752685"
+        },
+        {
+          "name": "IBM Watson Personality Insights",
+          "productKey": "IBM_PWB_487568017727"
+        },
+        {
+          "name": "IBM Data Refinery",
+          "productKey": "f484a2b698ed45266ea67c6a22cbac74"
+        },
+        {
+          "name": "IBM Watson Machine Learning",
+          "productKey": "f484a2b698ed45266ea67c6a22fa4800"
+        },
+        {
+          "name": "IBM Watson Discovery for Salesforce",
+          "productKey": "IBM_PWB_1289319412416"
+        },
+        {
+          "name": "IBM Watson Knowledge Studio",
+          "productKey": "WCM_d33697ee-8743-4917-9101-fa9d2eb308f3"
+        }
+      ]
+    },
+    {
+      "name": "IoT",
+      "translationId": "iot",
+      "description": "Explore a platform to connect devices and data along with data sets and APIs from The Weather Company®, an IBM Company.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-IoT.svg",
+      "link": "https://www.ibm.com/cloud/internet-of-things",
+      "products": [
+        {
+          "name": "Watson IoT Platform",
+          "productKey": "WCM_2f5852ce-4f1d-11e4-86f6-362310e85905"
+        }
+      ]
+    },
+    {
+      "name": "Mobile",
+      "translationId": "mobile",
+      "description": "Use the platform and tools to build native mobile apps and robust mobile back ends.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-mobile.svg",
+      "link": "https://www.ibm.com/cloud/mobile",
+      "products": [
+        {
+          "name": "IBM Mobile Foundation",
+          "productKey": "WCM_57483ffe-4fad-4d6f-9f63-f9b02b4e6b97"
+        },
+        {
+          "name": "IBM Cloud App ID",
+          "productKey": "36f156ba95bd0a8354bb6b5334c0b147"
+        },
+        {
+          "name": "IBM Push Notifications",
+          "productKey": "f4fd6ccda7ce26a76c326ac325f2ce9a"
+        }
+      ]
+    },
+    {
+      "name": "Developer tools",
+      "translationId": "developerTools",
+      "description": "Discover the pipeline and CLI tools needed to deliver new updates, continuously and with higher quality.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-06-17/product-developer-tools.svg",
+      "link": "https://www.ibm.com/cloud/devops",
+      "products": [
+        {
+          "name": "IBM Cloud Continuous Delivery",
+          "productKey": "WCM_2f58547c-4f1d-11e4-86f6-362310e85905"
+        },
+        {
+          "name": "IBM Cloud CLI",
+          "productKey": "e87f46b7a591f23be56013683d9dfd01"
+        }
+      ]
+    },
+    {
+      "name": "Blockchain",
+      "translationId": "blockchain",
+      "description": "Build transactional trust with a blockchain immutable ledger.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-blockchain.svg",
+      "link": "",
+      "products": [
+        {
+          "name": "IBM Blockchain Platform",
+          "productKey": "IBM_PWB_782863684777"
+        }
+      ]
+    },
+    {
+      "name": "Integration",
+      "translationId": "integration",
+      "description": "Integrate apps and data through APIs, messaging and networking tools.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-integration.svg",
+      "link": "https://www.ibm.com/cloud/integration",
+      "products": [
+        {
+          "name": "IBM Cloud Pak for Integration",
+          "productKey": "4870839776095c56d6169341755dbb16"
+        },
+        {
+          "name": "IBM API Connect®",
+          "productKey": "WCM_2f5852c4-4f1d-11e4-86f6-362310e85905"
+        },
+        {
+          "name": "IBM App Connect",
+          "productKey": "IBM-Cloud-Integration"
+        },
+        {
+          "name": "IBM Aspera® on Cloud",
+          "productKey": "WCM_b267e2bb-2825-4e5a-bf9d-2d29f315d237"
+        },
+        {
+          "name": "IBM Event Streams",
+          "productKey": "f879e6d335b3694046fe29076f0bff18"
+        },
+        {
+          "name": "IBM MQ on Cloud",
+          "productKey": "WCM_9cae0684-aa00-4e05-b45a-38b53ed9c366"
+        },
+        {
+          "name": "IBM Cloud Direct Link",
+          "productKey": "f4fd6ccda7ce26a76c326ac325e04c12"
+        },
+        {
+          "name": "Secure Gateway",
+          "productKey": "f4fd6ccda7ce26a76c326ac325f34cb9"
+        }
+      ]
+    },
+    {
+      "name": "Migration",
+      "translationId": "migration",
+      "description": "Move heritage applications and data to the cloud, using a portfolio of migration tools and services.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-05-23/product-migration.svg",
+      "link": "",
+      "products": [
+        {
+          "name": "IBM Lift",
+          "productKey": "WCM_e3024322-7527-429d-b9b9-7308a007c162"
+        },
+        {
+          "name": "IBM Cloud Mass Data Migration",
+          "productKey": "IBM_PWB_805227980910"
+        },
+        {
+          "name": "IBM WebSphere® Application Server on Cloud",
+          "productKey": "IBM-Application-Server-on-Cloud"
+        },
+        {
+          "name": "SAP cloud solutions",
+          "productKey": "86399f9f9bab77967049edf442877917"
+        }
+      ]
+    },
+    {
+      "name": "Private cloud",
+      "translationId": "privateCloud",
+      "description": "Experience the power of the cloud with additional control, security and isolation.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-06-17/product-private-cloud.svg",
+      "link": "",
+      "products": [
+        {
+          "name": "IBM Cloud Private",
+          "productKey": "IBM_PWB_721427290043"
+        }
+      ]
+    },
+    {
+      "name": "VMware",
+      "translationId": "vmware",
+      "description": "Migrate existing VMware workloads to the cloud with the help of IBM and partner services.",
+      "icon": "https://1.cms.s81c.com/sites/default/files/2019-06-17/product-VMware.svg",
+      "link": "",
+      "products": [
+        {
+          "name": "IBM Cloud for VMware Solutions",
+          "productKey": "13760f049b44dc5276781662491e5c06"
+        },
+        {
+          "name": "IBM Cloud for Skytap Solutions",
+          "productKey": "IBM_PWB_444359687982"
+        },
+        {
+          "name": "Veeam on IBM Cloud",
+          "productKey": "6671c757964753c82a41cccfd5c4d8e0"
+        },
+        {
+          "name": "Zerto on IBM Cloud",
+          "productKey": "90ae4d2b5280c5201d4d62808172edff"
+        }
+      ]
+    }
+  ]
+}

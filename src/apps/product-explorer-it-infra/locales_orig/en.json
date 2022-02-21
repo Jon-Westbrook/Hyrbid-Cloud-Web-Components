@@ -1,0 +1,27 @@
+{
+  "app.headline": "Products",
+  "app.learn-more": "Learn more",
+  "compute.description": "Compute description.",
+  "compute.name": "Compute",
+
+  "containers.description": "containers description.",
+  "containers.name": "Containers",
+
+  "storage.description": "storage description",
+  "storage.name": "Storage",
+
+  "network.description": "Network description",
+  "network.name": "Network",
+  "ibmcdn.description": "Avoid network traffic jams and decrease latency by keeping data closer to users",
+  "ibmcdn.name": "IBM Content Delivery Network (CDN)",
+  "ibmdl.name": "IBM Cloud Direct Link",
+  "ibmdl.description": "Secure and accelerate data transfer between private infrastructure and IBM Cloud",
+  "ibmdns.name": "IBM Cloud DNS",
+  "ibmdns.description": "Full-service domain registration and administration",
+  "ibmcload.name": "IBM Cloud Load Balancers",
+  "ibmcload.description": "Load balance traffic among servers to improve uptime and performance",
+  "ibmcis.name": "IBM Cloud Internet Services",
+  "ibmcis.description": "A one-stop shop for security and performance capabilities designed to protect public-facing web content and applications before they reach the cloud",
+  "ibmdle.name": "IBM Cloud Direct Link Exchange",
+  "ibmdle.description": "Multi-tenant connections to your IBM Cloud infrastructure, through your local IBM Cloud datacenter, perfect for creating multi-cloud connectivity in a single environment"
+}
