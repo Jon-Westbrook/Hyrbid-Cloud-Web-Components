@@ -9,10 +9,7 @@ import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { CarbonThemes } from '../../../types/carbon';
 import { FormattedMessage } from 'react-intl';
-import {
-  useGetReviewsByIdQuery,
-  normalizeProductData,
-} from '../lib/redux/slices/fetchReviewsSlice';
+import { useGetReviewsByIdQuery } from '../lib/redux/slices/fetchReviewsSlice';
 
 export type HOF<T> = (input: T) => T;
 
@@ -33,7 +30,9 @@ export interface TrustRadiusReview {
   id: string;
   name: { first: string; last: string };
   position?: { title: string };
+  productName: string;
   quotes: [{ text: string }];
+  slug: string;
   totalCount: number;
   trScore: number;
 }
@@ -44,7 +43,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
   trustRadiusId,
 }) => {
   const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
-  const reviews = normalizeProductData(data);
+  console.log(data);
   const [customSlider, setCustomSlider] = useState<Slider>();
   const size = useWindowSize();
 
@@ -76,13 +75,13 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     );
   }
 
-  const sliderSettings = buildSliderSettings(reviews.totalCount, size.width);
+  const sliderSettings = buildSliderSettings(data.totalCount, size.width);
   sliderSettings.appendDots = (dots) => {
     const noop = () => undefined;
     return (
       <CardSliderDots
         numRows={Math.ceil(
-          reviews.totalCount / (sliderSettings.slidesToShow || 1),
+          data.totalCount / (sliderSettings.slidesToShow || 1),
         )}
         onPrevious={customSlider?.slickPrev || noop}
         onNext={customSlider?.slickNext || noop}
