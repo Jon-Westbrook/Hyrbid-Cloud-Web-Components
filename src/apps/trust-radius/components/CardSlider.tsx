@@ -25,18 +25,18 @@ export const CardSlider: React.FC<CardSliderProps> = ({
   setCustomSlider,
 }) => {
   const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
-  const reviews = data?.quotes;
+  const reviews = data?.reviews;
   const theme = useAppSelector((state) => state.theme);
 
   if (!data || !reviews?.length) {
     return <></>;
   }
-  const reviewUrl = `https://www.trustradius.com/products/${data.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
+  const reviewUrl = `https://www.trustradius.com/products/${data.metadata.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
   const starsComponent = stars ? (
     <Googlestars
-      product={data.productName}
-      count={data.totalCount}
-      score={data.trScore}
+      product={data.metadata.productName}
+      count={data.metadata.totalCount}
+      score={data.metadata.trScore}
     />
   ) : (
     <></>
@@ -52,7 +52,7 @@ export const CardSlider: React.FC<CardSliderProps> = ({
           <FormattedMessage
             defaultMessage="What {name} customers are saying on"
             id="cJvElh"
-            values={{ name: data.name }}
+            values={{ name: data.metadata.productName }}
           />
         </span>
       </SliderHeading>
@@ -73,7 +73,7 @@ export const CardSlider: React.FC<CardSliderProps> = ({
               {reviews.map((review, i) => (
                 <Card
                   reviewIndex={i}
-                  trustRadiusId={data.id}
+                  trustRadiusId={data.metadata.id}
                   key={`card-${i}`}
                 />
               ))}

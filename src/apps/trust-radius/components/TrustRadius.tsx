@@ -19,22 +19,27 @@ export interface TrustRadiusProps {
   theme: string;
 }
 
+export interface TrustRadiusMetadata {
+  id: string;
+  productName: string;
+  slug: string;
+  totalCount: number;
+  trScore: number;
+}
+
 export interface TrustRadiusReview {
   company?: {
     name: string;
     size?: string;
-    industry?: { name: string };
+    industry?: string;
   };
   date: string;
   heading: string;
-  id: string;
-  name: { first: string; last: string };
-  position?: { title: string };
-  productName: string;
-  quotes: [{ text: string }];
+  name: string;
+  title: string;
+  quotes: string[];
+  rating: number;
   slug: string;
-  totalCount: number;
-  trScore: number;
 }
 
 export const TrustRadius: React.FC<TrustRadiusProps> = ({
@@ -43,7 +48,6 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
   trustRadiusId,
 }) => {
   const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
-  console.log(data);
   const [customSlider, setCustomSlider] = useState<Slider>();
   const size = useWindowSize();
 
@@ -75,13 +79,17 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     );
   }
 
-  const sliderSettings = buildSliderSettings(data.totalCount, size.width);
+  const sliderSettings = buildSliderSettings(
+    data!.metadata.totalCount,
+    size.width,
+  );
+
   sliderSettings.appendDots = (dots) => {
     const noop = () => undefined;
     return (
       <CardSliderDots
         numRows={Math.ceil(
-          data.totalCount / (sliderSettings.slidesToShow || 1),
+          data!.metadata.totalCount / (sliderSettings.slidesToShow || 1),
         )}
         onPrevious={customSlider?.slickPrev || noop}
         onNext={customSlider?.slickNext || noop}

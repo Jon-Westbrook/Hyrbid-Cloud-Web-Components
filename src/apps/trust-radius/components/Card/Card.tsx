@@ -4,30 +4,22 @@ import { css, SerializedStyles } from '@emotion/react';
 import CardHeading from './CardHeading';
 import CardFooter from './CardFooter';
 import CardBody from './CardBody';
-import { TrustRadiusReview } from '../TrustRadius';
-import { CarbonThemes } from '../../../../types/carbon';
-import { connect } from 'react-redux';
-import { TrustRadiusReducersMapper } from '../../lib/redux/store';
 import EmptyCard from './EmptyCard';
+import { useGetReviewsByIdQuery } from '../../lib/redux/slices/fetchReviewsSlice';
+import { useAppSelector } from '../../lib/redux/hooks';
 
-interface StateProps {
-  theme?: CarbonThemes;
-  review?: TrustRadiusReview;
-}
-
-interface CardOwnProps {
+interface CardProps {
   /** Data for the review */
   reviewIndex: number;
   trustRadiusId: string;
 }
 
-export type CardProps = CardOwnProps & StateProps;
-export const PureCard: React.FC<CardProps> = ({
-  review,
-  theme = CarbonThemes.WHITE,
-}) => {
-  const mainQuote = (review?.quotes || [])[0];
-  if (!review || !mainQuote) {
+export const Card: React.FC<CardProps> = ({ reviewIndex, trustRadiusId }) => {
+  const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
+  const review = data?.reviews[reviewIndex];
+  const theme = useAppSelector((state) => state.theme);
+
+  if (!review) {
     return <EmptyCard />;
   }
   const cardUrl = 'https://www.trustradius.com/reviews/';
@@ -35,7 +27,7 @@ export const PureCard: React.FC<CardProps> = ({
     <>
       <a
         css={cardStyles.cardlinks}
-        href={cardUrl + mainQuote.review.slug}
+        href={`${cardUrl} ${review.slug}`}
         target="_new"
       >
         <div
@@ -43,23 +35,19 @@ export const PureCard: React.FC<CardProps> = ({
           css={[cardStyles.cardheight, cardStyles[theme]]}
         >
           <div className="ibm-card__content" css={cardStyles.cardcontent}>
-            <CardHeading text={mainQuote.review.heading} />
+            <CardHeading text={review.heading} />
             <CardBody
-              text={review.quotes.reduce(
-                (output, { text }) => output + `${text}<br/><br/> `,
-                '',
-              )}
-              rating={mainQuote.rating}
-              createdDate={mainQuote.review.modified}
+              text={review.quotes.map((quote) => `${quote}<br/><br/> `).join()}
+              rating={review.rating}
+              createdDate={review.date}
               maxLines={7}
             />
             <CardFooter
-              firstName={review.name.first}
-              lastName={review.name.last}
-              jobTitle={review.position?.title}
+              name={review.name}
+              jobTitle={review.title}
               companyName={review.company?.name}
               companySize={review.company?.size}
-              industry={review.company?.industry?.name}
+              industry={review.company?.industry}
             />
           </div>
         </div>
@@ -125,16 +113,18 @@ export const cardStyles: Record<string, SerializedStyles> = {
   `,
 };
 
-export default connect<
-  StateProps,
-  Record<string, never>,
-  CardOwnProps,
-  TrustRadiusReducersMapper
->(
-  (states, props) => ({
-    theme: states?.palette?.theme,
-    review:
-      states?.prods?.products[props.trustRadiusId]?.reviews[props.reviewIndex],
-  }),
-  () => ({}),
-)(PureCard);
+export default Card;
+
+// export default connect<
+//   StateProps,
+//   Record<string, never>,
+//   CardOwnProps,
+//   TrustRadiusReducersMapper
+// >(
+//   (states, props) => ({
+//     theme: states?.palette?.theme,
+//     review:
+//       states?.prods?.products[props.trustRadiusId]?.reviews[props.reviewIndex],
+//   }),
+//   () => ({}),
+// )(PureCard);
