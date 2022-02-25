@@ -56,7 +56,7 @@ services:
         - /iframe.html?id=trust-radius-components-slider--one-column&args=&globals=locale:en&viewMode=story
 
   drupal:
-    image: q0rban/tugboat-drupal:^9
+    image: q0rban/tugboat-drupal:9.3
     expose: 80
     http: false
     depends: mysql
