@@ -3,6 +3,7 @@ import React, {
   EventHandler,
   Fragment,
   KeyboardEventHandler,
+  ReactElement,
   SyntheticEvent,
   useState,
 } from 'react';
@@ -18,7 +19,7 @@ import { ReactComponent as ServicesIcon } from '../assets/images/icons/services.
 import { ReactComponent as SiemIcon } from '../assets/images/icons/siem.svg';
 import { ReactComponent as SoarIcon } from '../assets/images/icons/soar.svg';
 
-const ProductsDisplay: React.FC = () => {
+const ProductsDisplay = (): ReactElement<void> => {
   const categories = useAppSelector((state) => state.categories);
   const messages = useAppSelector<Record<string, MessageDescriptor>>(
     (state) => state.messages,
