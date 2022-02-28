@@ -2,8 +2,11 @@ import TrustRadius, { TrustRadiusProps } from './TrustRadius';
 import { Meta, StoryFn } from '@storybook/react';
 import { Provider } from 'react-redux';
 import { store } from '../lib/redux/store';
-import fakeStore, { overrideFakeStore } from '../lib/redux/fakeStore';
+import overrideStore from '../lib/redux/overrideStore';
 import { worker } from '../lib/mocks/browser';
+import { rest } from 'msw';
+import { CarbonThemes } from '../../../types/carbon';
+import storyWithTranslation from '../lib/storyWithTranslation';
 
 // start mock server worker to intercept API calls
 if (typeof global.process === 'undefined') {
@@ -57,12 +60,36 @@ export const Loading = Template.bind({});
 Loading.args = Object.assign({}, Default.args);
 Loading.decorators = [
   storyWithRedux({ status: { fetchStatus: FetchStatusEnum.IN_PROGRESS } }),
+  (story) => workerReset(story),
+  (story) => {
+    worker.use(
+      rest.get(
+        'https://www.trustradius.com/api/v2/tqw/:trustRadiusId',
+        (req, res, ctx) => {
+          return res(ctx.delay('infinite'));
+        },
+      ),
+    );
+    return <Provider store={store}>{story()}</Provider>;
+  },
 ];
 
 export const FailedRequest = Template.bind({});
+FailedRequest.args = Object.assign({}, Default.args);
 FailedRequest.decorators = [
   storyWithRedux({ status: { fetchStatus: FetchStatusEnum.FAILURE } }),
+  (story) => workerReset(story),
+  (story) => {
+    worker.use(
+      rest.get(
+        'https://www.trustradius.com/api/v2/tqw/:trustRadiusId',
+        (req, res, ctx) => {
+          return res.once(ctx.status(404));
+        },
+      ),
+    );
+    return <Provider store={store}>{story()}</Provider>;
+  },
 ];
-FailedRequest.args = Object.assign({}, Default.args);
 
 export default stories;

@@ -7,9 +7,8 @@ const setThemeSlice = createSlice({
   name: 'theme',
   initialState,
   reducers: {
-    setTheme: (state, action: PayloadAction<CarbonThemes>) => {
-      state = action.payload;
-    },
+    setTheme: (state, action: PayloadAction<CarbonThemes>) =>
+      (state = action.payload),
   },
 });
 

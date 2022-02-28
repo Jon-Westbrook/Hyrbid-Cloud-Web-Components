@@ -37,7 +37,9 @@ export const Card: React.FC<CardProps> = ({ reviewIndex, trustRadiusId }) => {
           <div className="ibm-card__content" css={cardStyles.cardcontent}>
             <CardHeading text={review.heading} />
             <CardBody
-              text={review.quotes.map((quote) => `${quote}<br/><br/> `).join()}
+              text={review.quotes
+                .map((quote) => `${quote}<br/><br/> `)
+                .join('')}
               rating={review.rating}
               createdDate={review.date}
               maxLines={7}

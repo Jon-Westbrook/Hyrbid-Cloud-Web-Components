@@ -1,8 +1,9 @@
-import React from 'react';
-
 import Card, { CardProps } from './Card';
 import { Meta, Story } from '@storybook/react';
 import { CarbonThemes } from '../../../../types/carbon';
+import { Provider } from 'react-redux';
+import { store } from '../../lib/redux/store';
+import overrideStore from '../../lib/redux/overrideStore';
 import storyWithTranslation from '../../lib/storyWithTranslation';
 import { TrustRadiusReducersMapper } from '../../lib/redux/store';
 import defaultFakeState from '../../lib/redux/defaultFakeState';

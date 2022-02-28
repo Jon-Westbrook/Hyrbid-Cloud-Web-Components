@@ -6,6 +6,8 @@ import CardSliderDots from './CardSliderDots';
 import CardSliderPager from './CardSliderPager';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import { CarbonThemes } from '../../../types/carbon';
+import { Provider } from 'react-redux';
+import overrideStore from '../lib/redux/overrideStore';
 import storyWithTranslation from '../lib/storyWithTranslation';
 import { TrustRadiusReducersMapper } from '../lib/redux/store';
 import defaultFakeState from '../lib/redux/defaultFakeState';
