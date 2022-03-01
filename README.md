@@ -19,8 +19,8 @@ the [JS Widgets Webpack CLI](https://github.com/js-widgets/webpack-cli#readme).
 
 ## Contribute
 
-Check [the documentation](https://js-widgets.github.io/webpack-cli/) on how to
-create _widgets_ from components.
+Check [the documentation](./CONTRIBUTING.md) on how to contribute widgets to
+this registry.
 
 ## Set Up
 
@@ -30,4 +30,3 @@ contents:
 ```ini
 PUBLIC_ASSETS_URL = /static
 ```
-
