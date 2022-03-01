@@ -19,7 +19,7 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
 
   ReactDOM.render(
     <IntlProvider locale={locale} messages={messages}>
-      <ProductExplorer element={element} />
+      <ProductExplorer localeCode={locale} />
     </IntlProvider>,
     element,
     () => cb(element),

@@ -3,12 +3,15 @@ import ProductsContextProvider, {
   ProductsContext,
 } from '../contexts/ProductsContext';
 import ProductsDisplay from './ProductsDisplay';
-import { css } from '@emotion/core';
 import { FormattedMessage } from 'react-intl';
 import messages from '../locales/messages';
+import { IBMLocale } from '../../../common/mapValidLocale';
+
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react/macro';
 
 interface WidgetProps {
-  element: HTMLElement;
+  localeCode: IBMLocale;
 }
 
 const ProductExplorer: React.FC<WidgetProps> = (props) => {
@@ -34,7 +37,7 @@ const ProductExplorer: React.FC<WidgetProps> = (props) => {
                     </p>
                   </>
                 ) : (
-                  <ProductsDisplay element={props.element} />
+                  <ProductsDisplay localeCode={props.localeCode} />
                 )}
               </div>
             </div>

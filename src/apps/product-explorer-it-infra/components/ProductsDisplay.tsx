@@ -1,8 +1,11 @@
 import React, { useContext, useState, SyntheticEvent, Fragment } from 'react';
 import { ProductsContext } from '../contexts/ProductsContext';
 import ProductDetail from './ProductDetail';
-import { css } from '@emotion/core';
 import { FormattedMessage } from 'react-intl';
+import { IBMLocale } from '../../../common/mapValidLocale';
+
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react/macro';
 
 // Icons
 import { ReactComponent as ZIcon } from '../assets/images/icons/ibm--z.svg';
@@ -12,7 +15,7 @@ import { ReactComponent as OneIcon } from '../assets/images/icons/ibm--linuxone.
 import { ReactComponent as SpectrumIcon } from '../assets/images/icons/desktop.svg';
 
 interface ProductsDisplayProps {
-  element: HTMLElement;
+  localeCode: IBMLocale;
 }
 
 const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
@@ -33,9 +36,9 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
     }
   }
 
-  function handleIconRender(icon: string) {
+  function handleIconRender(iconName: string) {
     let iconFile;
-    switch (icon) {
+    switch (iconName) {
       case 'storage':
         iconFile = <StorageIcon className="icon" />;
         break;
@@ -94,7 +97,7 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
               products={categories[i].products}
               index={i}
               selected={categories[i].name === selectedCategory}
-              element={props.element}
+              localeCode={props.localeCode}
             />
           </Fragment>
         );

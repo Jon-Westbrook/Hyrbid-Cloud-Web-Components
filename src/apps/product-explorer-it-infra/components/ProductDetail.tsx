@@ -6,28 +6,31 @@ import {
 } from '../contexts/ProductsContext';
 import { useWindowSize } from '../hooks/useWindowSize';
 import { defineGridRow } from '../utils/utils';
-import { css } from '@emotion/core';
 import { FormattedMessage } from 'react-intl';
+import { IBMLocale } from '../../../common/mapValidLocale';
+
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react/macro';
 
 export interface ProductDetailProps {
   category: Category;
   products: Product[];
   index: number;
   selected: boolean;
-  element: HTMLElement;
+  localeCode: IBMLocale;
 }
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
   const { categories, messages } = useContext(ProductsContext);
+  const { localeCode } = props;
   const categoryStrings = categories.map((category) => category.name);
   const size = useWindowSize();
-  let localeCode = props.element.getAttribute('data-localecode') || '';
 
-  if (localeCode.indexOf('-') > -1) {
-    // IBM's Drupal changes the url prefix to be `country-language`,
-    // so we need to adapt the provided langcode.
-    localeCode = `${localeCode.split('-')[1]}-${localeCode.split('-')[0]}`;
-  }
+  // if (localeCode.indexOf('-') > -1) {
+  //   // IBM's Drupal changes the url prefix to be `country-language`,
+  //   // so we need to adapt the provided langcode.
+  //   localeCode = `${localeCode.split('-')[1]}-${localeCode.split('-')[0]}`;
+  // }
 
   const row = defineGridRow(size.width, props.index, categoryStrings);
 
@@ -53,7 +56,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
             </p>
             {props.category.link && (
               <a
-                href={`${localeCode === 'us-en' ? '' : '/' + localeCode}${
+                href={`${localeCode === IBMLocale.EN ? '' : '/' + localeCode}${
                   props.category.link
                 }`}
                 tabIndex={0}
@@ -68,7 +71,9 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       {props.products.map((product, i) => {
         const productUrl =
           product.url.charAt(0) === '/'
-            ? `${localeCode === 'us-en' ? '' : '/' + localeCode}${product.url}`
+            ? `${localeCode === IBMLocale.EN ? '' : '/' + localeCode}${
+                product.url
+              }`
             : product.url;
 
         return (
