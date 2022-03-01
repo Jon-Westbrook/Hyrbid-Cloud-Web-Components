@@ -1,0 +1,59 @@
+import { Meta } from "@storybook/addon-docs";
+import a11yTests from "./img/a11y-tests.png";
+
+<Meta title="Documentation/QA" />
+
+# Quality Assurance
+The widget registry attempts to automate some of the most tedious tasks for quality assurance.
+
+## Automated tests
+
+### Explicit tests
+These are Jest tests that leverage `@testing-library/react`. See the documentation on Jest and `@testing-library/react`, and check a test example in `./src/apps/trust-radius/TrustRadius.test.tsx`.
+
+### Storyshots
+Storoies are renderings of React components with certain data and conditions. Storyshots will store the rendered markup in a file when the developer instructs it to do it. This is done by executing `yarn test --update` after making sure that Storybook behaves correctly in their local.
+
+Moving forward, each time `yarn test` is executed, Jest will check if the currently rendered markup matches the markup previously stored exactly.
+
+`yarn test` is executed optionally befor pushing code to the PR branch in the developer's local. Tests are also executed in Travis as part of the PR checks.
+
+These tests aim to reduce accidental changes to other widgets, specially when dealing with changes in code shared across multiple widgets. This will also provide additional safety for refactors, where the code must change but not the end result.
+
+### Accessibility reports
+Each component in Storybook contains a tab, in the lower section, with a report listing accessibility issues. The QA team is in charge of spotting them, and communicating with the developer in order to address or dismiss the alarms.
+
+<img src={a11yTests} alt="Accessibility tests" />
+
+## Automated visual regression
+Storybook generates a route for each story. In this route Storybook will render the component without any other UI.
+
+Tugboat will use these routes to compare components in a PR with the components in the base preview. This will be used to highlight all the changes in all the components caused by a given PR.
+
+Note that not all differences are regressions. Intended changes will also show up in the report. It is left up to the human to validate the differences and ignore false alarms.
+
+The developer is responsible to opt-in to visual regression by providing the URLs to the necessary components in `./.tugboat/config.yml`. Only the URLs listed there will be used in visual regression testing. Example:
+
+```yaml
+    urls:
+      trust-radius:
+        - /iframe.html?id=trust-radius--default&args=&viewMode=story
+        - /iframe.html?id=trust-radius--gray&args=&viewMode=story
+```
+
+## Manual testing
+### Testing the stories for a PR
+Whenever a new PR is created for the widget registry, we create a Tugboat preview. This preview contains the Storybook application with the changes proposed by that PR. The QA team can use that to ensure that changes to an existing widget, or a brand new one, look and behave as expectes.
+
+The basic expectation for a widget in Storybook is to have a documentation page where it explains how the widget should look like and how it should behave. It is expected that this documentation is up to date with the latest changes and improvements. To this end the QA team will ensure that the widget behaves as stated in the documentation for each ticket.
+
+Each time a widget is worked on, the developer will add a link to the ticket in the _References_ section, and adapt the current documentation. This will ensure that the documentation page in Storybook contains up-to-date requirements, and reflects how they evolved over time.
+
+The QA team and the development team share the responsability to ensure that widget and documentation are in sync. Outdated documentation is a reason to block a pull request from being merged.
+
+### Testing the widget in Drupal
+Tugboat will create a barebones Drupal site, along with the Tugboat preview for Storybook. This site will contain Drupal core along with the integration modules for the widget registry. This site will be configured with a preview registry for that PR.
+
+This tool is specially designed to ensure that the widget being proposed in the PR can be selected and rendered in Drupal.
+
+QA is expected to create a *Widget Instance* for the widget in that ticket and perform a smoke test in Drupal. QA engineers should place special emphasis to the editorial tools to input the widget.

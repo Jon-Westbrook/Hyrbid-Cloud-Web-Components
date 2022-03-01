@@ -5,7 +5,7 @@ import { Story } from '@storybook/react';
 
 const stories = {
   component: StarRating,
-  title: 'Trust Radius/Components/StarRating',
+  title: 'Widgets/Trust Radius/Components/StarRating',
 };
 
 const Template: Story<StarRatingProps> = (args) => <StarRating {...args} />;

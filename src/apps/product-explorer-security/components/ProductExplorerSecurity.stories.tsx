@@ -6,7 +6,7 @@ import storyWithRedux from '../lib/storyWithRedux';
 
 const stories: Meta = {
   component: ProductExplorerSecurity,
-  title: 'Product Explorer Security/Components',
+  title: 'Widgets/Product Explorer Security/Components',
   decorators: [storyWithTranslation(), storyWithRedux()],
 };
 

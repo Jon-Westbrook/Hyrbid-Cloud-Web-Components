@@ -8,7 +8,7 @@ import { store } from '../lib/redux/store';
 import storyWithTranslation from '../lib/storyWithTranslation';
 
 const stories: Meta = {
-  title: 'Journey to AI/Components',
+  title: 'Widgets/Journey to AI/Components',
   component: JourneyAi,
   decorators: [storyWithTranslation()],
 };

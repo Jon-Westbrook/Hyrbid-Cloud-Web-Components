@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta } from "@storybook/addon-docs";
 const linkButtonStyle = {
   display: 'inline-block',
   padding: '10px 25px',
@@ -12,7 +12,7 @@ const linkButtonStyleSecondary = {
   color: 'black',
 }
 
-<Meta title="Usage" />
+<Meta title="Documentation/Contributing/Usage" />
 
 # Usage for Developers
 Storybook encourages developing components in isolation, but how does on get from the component to the widget?
@@ -35,11 +35,8 @@ widget (a React app in the example) in the `<div>` that the CMS will print.
 See [the widget definition file for the Trust Radius widget](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/src/apps/trust-radius/TrustRadius.widget.js) below.
 
 ```javascript
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const path = require('path');
-
 module.exports = {
-  entry: path.join(__dirname, 'render-trust-radius.jsx'),
+  entry: './src/apps/trust-radius/index.tsx',
   shortcode: 'trust-radius',
   title: 'Trust Radius Reviews',
   status: 'stable',
@@ -55,7 +52,7 @@ module.exports = {
             title: 'Trust Radius ID',
             description:
               'The ID found within the trust radius reviews URL that activates the product reviews',
-            examples: ['5e948b56fdfae40038b2b107'],
+            examples: ['5e20addcac72e40024d9a00a'],
           },
           'use-google-stars': {
             type: 'boolean',
@@ -68,16 +65,28 @@ module.exports = {
       },
     },
   },
+  useExternalPeerDependencies: [
+    'react',
+    'react-dom',
+    'react-intl',
+    'react-slick',
+  ],
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
-    availableTranslations: ['en', 'es', 'ja', 'ar'],
+    availableTranslations: ['ar', 'en', 'es', 'ja', 'tr', 'zh-cn', 'zh-tw'],
   },
 };
+
 ```
 
-See the full documentation for the widget definition file in the `@js-widgets/webpack-cli` documentation site.
+See the documentation for the widget definition file in the `@js-widgets/webpack-cli` documentation site. Reading this
+is **highly recommended**.
 
-<a style={linkButtonStyle} href='https://js-widgets.github.io/webpack-cli/docs/registry/widget-definition' target='_blank'>Read the docs</a>
+<a style={linkButtonStyle}
+   href='https://js-widgets.github.io/webpack-cli/docs/registry/widget-definition'
+   target='_blank'>Read the docs</a>
+
+[![Webpack CLI](https://camo.githubusercontent.com/3693a0ff1fefe7ac31adf36125d2ad1e6be65e1eb0133841a9f0d63f7aa8c30f/68747470733a2f2f6a732d776964676574732e6769746875622e696f2f7765627061636b2d636c692f696d672f646f63756d656e746174696f6e2d736974652e706e67)](https://js-widgets.github.io/webpack-cli)
 
 ## 3. Render Files
 Widgets are stand alone JS applications, but a component library only has components. To bridge that gap we need to
@@ -88,75 +97,78 @@ Widgets will likely have to support translations and state management. Translati
 See the [source code of the render file for the Trust Radius widget](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/src/apps/trust-radius/render-trust-radius.jsx)
 for an example on how to write your own.
 
-<a style={linkButtonStyleSecondary} href='https://formatjs.io/docs/getting-started/installation/' target='_blank'>React Intl docs</a>
+<a style={linkButtonStyleSecondary}
+   href='https://formatjs.io/docs/getting-started/installation/'
+   target='_blank'>React Intl docs</a>
 &nbsp;
-<a style={linkButtonStyleSecondary} href='https://redux.js.org/introduction/getting-started' target='_blank'>Redux docs</a>
+<a style={linkButtonStyleSecondary} href='https://redux-toolkit.js.org/'
+   target='_blank'>Redux Toolkit Docs</a>
 
-Common stateful features include:
-
-  - [Setting the Carbon theme](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/src/apps/trust-radius/lib/redux/reducers/setThemeReducer.ts).
-  - [Fetching data from an API](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/src/apps/trust-radius/lib/redux/actions/fetchProductDataAction.ts).
-  - [Executing JS code on view port resize](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/src/apps/trust-radius/lib/redux/reducers/windowResizeReducer.ts).
-
-All these are implemented in the Trust Radius widget and can be abstracted to be leveraged in other widgets.
-
-See the render file for the Trust Radius widget below.
+See the render file for the _Journey to AI_ widget (`src/apps/journey-ai/index.tsx`) below.
 
 ```javascript
 /** @jsxImportSource @emotion/react */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import TrustRadius from './components/TrustRadius';
-import store from './lib/redux/store';
+import { store } from './lib/redux/store';
 import 'regenerator-runtime/runtime';
 import { IntlProvider } from 'react-intl';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
+import JourneyAi from './components/JourneyAi';
 
-/**
- * Renders the widget.
- *
- * @param {string} instanceId
- *   The already present HTML element ID where the react app will be rendered.
- * @param {string} langCode
- *   The language code for internationalization purposes.
- * @param {string} origin
- *   Protocol and hostname where a JSONAPI endpoint is available.
- * @param {Function} cb
- *   A callback that executes after the widget has been rendered.
- *
- * @return {Promise<void>}
- *   A promise that the app will be rendered.
- */
-export default async function (instanceId, langCode, origin, cb) {
-  const { element, locale, messages, palette } = await normalizeWidgetInput(
+import { RenderFn } from '../../types/widgets';
+
+import './index.scss';
+
+const render: RenderFn = async function (instanceId, langCode, origin, cb) {
+  const { element, locale, messages } = await normalizeWidgetInput(
     instanceId,
     langCode,
+    'journey-ai',
   );
-  if (!element) {
+  if (!element || !locale) {
     return;
   }
-  const useGoogleStars =
-    element.getAttribute('data-use-google-stars') !== 'false' ||
-    element.getAttribute('data-use-google-stars') !== '0';
   ReactDOM.render(
-    <React.StrictMode>
-      <IntlProvider locale={locale} messages={messages}>
-        <Provider store={store}>
-          <TrustRadius
-            trustRadiusId={element.getAttribute('data-trust-radius-id') || ''}
-            theme={palette}
-            useGoogleStars={useGoogleStars}
-          />
-        </Provider>
-      </IntlProvider>
-    </React.StrictMode>,
+    <IntlProvider locale={locale} messages={messages}>
+      <Provider store={store}>
+        <JourneyAi />
+      </Provider>
+    </IntlProvider>,
     element,
     () => cb(element),
   );
-}
+};
+
+export default render;
 ```
 
 The `@js-widgets/webpack-cli` documentation contains more information on render files. Check it out for more insight.
 
-<a style={linkButtonStyle} href='https://js-widgets.github.io/webpack-cli/docs/registry/render-file' target='_blank'>Read the docs</a>
+<a style={linkButtonStyle}
+   href='https://js-widgets.github.io/webpack-cli/docs/registry/render-file'
+   target='_blank'>Read the docs</a>
+
+## In practice
+
+Use the _Trust Radius_ widget as a reference implementation for your widgets. Noteworthy features:
+
+1. Structured in small components.
+2. State management using Redux. This is useful for fetching and managing API data.
+3. Example of widgets using different palettes.
+4. Storybook integration, including stateful components. Each component can have stories to highlight their edge cases.
+5. Low effort unit testing from the Storybook stories using jest.
+6. Examples for widget configuration and render files.
+7. Accessibility reports integrated in Storybook.
+8. Visual regression testing using Tugboat.
+9. Automated release management upon commit onto `main`.
+10. Internationalization (i18n) using the carbon web components patterns.
+
+### Start a new widget
+
+Create a new sub-directory in `/src/apps` with the name of the widget in [kebab-case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case).
+For instance `/src/apps/journey-ai`. Use the same name you will use for the widget's [`shortcode`](https://js-widgets.github.io/js-widgets/registry-schema/#items_shortcode).
+
+1. The root-level component, the widget. Example: `/src/apps/journey-ai/index.tsx`.
+2. A folder with the name `components`. This will contain all the lower level components that will be ultimately used in `index.tsx`. Example: `/src/apps/journey-ai/components/Button.tsx`.

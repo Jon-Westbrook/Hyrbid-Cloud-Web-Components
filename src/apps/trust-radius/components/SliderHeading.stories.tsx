@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react';
 
 const stories: Meta = {
   component: SliderHeading,
-  title: 'Trust Radius/Components/Slider/Slider Heading',
+  title: 'Widgets/Trust Radius/Components/Slider/Slider Heading',
 };
 
 const Template: Story<PropsWithChildren<SliderHeadingProps>> = (args) => (
