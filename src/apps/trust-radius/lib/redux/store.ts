@@ -7,6 +7,7 @@ export const store = configureStore({
     [reviewsApi.reducerPath]: reviewsApi.reducer,
     theme: setThemeSlice,
   },
+  devTools: { name: 'Trust Radius' },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(reviewsApi.middleware),
 });

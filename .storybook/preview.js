@@ -1,4 +1,10 @@
 import { withTests } from '@storybook/addon-jest';
+import { worker } from '../src/apps/trust-radius/lib/mocks/browser';
+
+// start mock server worker to intercept API calls
+if (typeof global.process === 'undefined') {
+  worker.start();
+}
 
 const results = require('../src/.jest-test-results.json');
 
