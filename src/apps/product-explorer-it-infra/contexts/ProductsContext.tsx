@@ -9,9 +9,9 @@ const dynamic = false;
 
 export interface Product {
   name: string;
-  longDescription: string;
-  url: string;
-  productKey: string;
+  longDescription?: string;
+  url?: string;
+  productKey?: string;
   translationId?: string;
 }
 
@@ -22,6 +22,10 @@ export interface Category {
   icon: string;
   link?: string;
   products: Product[];
+}
+
+export interface Categories {
+  categories: Category[];
 }
 
 interface ProductsContextProps {
@@ -37,48 +41,35 @@ export const ProductsContext = createContext<ProductsContextProps>({
 });
 
 const ProductsContextProvider: React.FC = (props) => {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
 
   function mapProductsToCategories(
-    productsJSON: any,
+    productsJSON: Categories,
     fetchedProducts: Product[],
   ) {
-    const productsMap = productsJSON.categories.map((category: any) => {
-      const products: any = [];
-
-      category.products.forEach((product: any) => {
-        fetchedProducts.forEach((fetchedProduct) => {
-          if (product.productKey === fetchedProduct.productKey) {
-            products.push(fetchedProduct);
-          }
-        });
-
-        if (!product.productKey) {
-          products.push(product);
+    const productsMap = productsJSON.categories.map((category: Category) => {
+      category.products.reduce((acc: Product[], product) => {
+        if (product.productKey) {
+          const match = fetchedProducts.find((fetchedProduct) => {
+            return fetchedProduct.productKey === product.productKey;
+          });
+          if (match) acc.push(match);
+        } else {
+          acc.push(product);
         }
-      });
+        return acc;
+      }, []);
 
-      const categoryObject: Category = {
-        name: category.name,
-        translationId: category.translationId,
-        description: category.description,
-        icon: category.icon,
-        products,
-      };
-
-      if (category.link) {
-        categoryObject.link = category.link;
-      }
-
-      return categoryObject;
+      return category;
     });
 
     return productsMap;
   }
 
-  // provide empty array as 2nd arg to this effect, which signals to React
-  // not to re-run this effect on each re-render so we don't fetch repeatedly
+  // Provide empty array as 2nd arg to this effect, which signals to React
+  // not to re-run this effect on each re-render so we don't fetch repeatedly.
+  // See https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect.
   useEffect(() => {
     if (dynamic) {
       fetchAllProducts().then((results: Product[]) => {

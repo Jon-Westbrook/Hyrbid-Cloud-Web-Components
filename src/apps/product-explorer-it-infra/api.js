@@ -5,7 +5,7 @@ const productKeys = data.categories
   .map((category) => category.products.map((product) => product.productKey))
   .reduce((acc, val) => acc.concat(val), []);
 
-async function fetchProductsPage(page = 1) {
+const fetchProductsPage = async (page = 1) => {
   let response;
 
   const apiQuery = encodeURIComponent(
@@ -22,15 +22,15 @@ async function fetchProductsPage(page = 1) {
   } catch (error) {
     console.error(error);
   }
-}
+};
 
-export async function fetchAllProducts(page = 1) {
+export const fetchAllProducts = async (page = 1) => {
   const response = await fetchProductsPage(page);
 
-  if (response.links.next) {
+  if (response?.links?.next) {
     const moreProducts = await fetchAllProducts(page + 1);
     return [...response.data, ...moreProducts.data];
   } else {
     return response;
   }
-}
+};
