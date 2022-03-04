@@ -29,7 +29,8 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
   }
 
   function handleKeyPress(e: SyntheticEvent<HTMLDivElement>) {
-    if (e instanceof KeyboardEvent && e.key === 'Enter') {
+    const { nativeEvent } = e;
+    if (nativeEvent instanceof KeyboardEvent && nativeEvent.key === 'Enter') {
       handleInteraction(e);
     }
   }
