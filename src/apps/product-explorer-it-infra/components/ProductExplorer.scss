@@ -1,0 +1,59 @@
+@import "../assets/styles/globals";
+@include carbon--type-reset();
+
+.product-explorer-it-infra {
+  background-color: $carbon--warm-gray-100;
+  font-family: carbon--font-family('sans');
+
+  &__inner {
+    color: $carbon--white-0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: $carbon--spacing-05;
+    max-width: 1584px;
+    margin: 0 auto;
+
+    @media (max-width: 1055px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__headline-wrapper {
+    grid-column: 1 / 1;
+    padding: 2rem 1rem 1rem 1rem;
+
+    @media (max-width: 1055px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 0;
+    }
+
+    @media (max-width: 671px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__headline {
+    font-family: carbon--font-family('sans');
+    font-size: 53px;
+    margin-bottom: $carbon--layout-02;
+    max-width: 87.5%;
+    padding: 0;
+
+    @media (max-width: 671px) {
+      max-width: 75%;
+    }
+  }
+
+  &__subhead {
+    color: $carbon--warm-gray-100;
+    margin-bottom: $carbon--layout-02;
+    max-width: 75%;
+    padding: 0;
+
+    @media (max-width: 1055px) {
+      grid-column: 1;
+      margin-bottom: $carbon--layout-03;
+    }
+  }
+}

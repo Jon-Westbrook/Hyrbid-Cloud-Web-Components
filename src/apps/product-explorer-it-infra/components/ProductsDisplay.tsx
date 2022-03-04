@@ -3,9 +3,7 @@ import { ProductsContext } from '../contexts/ProductsContext';
 import ProductDetail from './ProductDetail';
 import { FormattedMessage } from 'react-intl';
 import { ProductDetailElement } from './ProductDetail';
-
-/** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react/macro';
+import './ProductsDisplay.scss';
 
 // Icons
 import { ReactComponent as ZIcon } from '../assets/images/icons/ibm--z.svg';
@@ -59,12 +57,12 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
   }
 
   return (
-    <div css={styles.grid}>
+    <div className="product-categories">
       {categories.map((category, i) => {
         return (
           <Fragment key={`category-${i}`}>
             <div
-              css={styles.tileWrapper}
+              className="product-category__wrapper"
               onKeyPress={handleKeyPress}
               onClick={handleInteraction}
               data-category={category.name}
@@ -72,12 +70,13 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
               tabIndex={0}
             >
               <div
-                css={styles.tile}
-                className={selectedCategory === category.name ? 'selected' : ''}
+                className={`product-category__inner${
+                  selectedCategory === category.name ? ' selected' : ''
+                }`}
               >
                 {handleIconRender(category.icon)}
-                <div css={styles.nameChevron}>
-                  <h4 css={styles.name}>
+                <div className="product-category__name-wrapper">
+                  <h4 className="product-category__name">
                     <FormattedMessage
                       {...messages[`${category.translationId}Name`]}
                     />
@@ -104,103 +103,6 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
       })}
     </div>
   );
-};
-
-const styles = {
-  grid: css`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    @media (max-width: 1055px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 671px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  `,
-  tileWrapper: css`
-    padding: 1px;
-  `,
-  tile: css`
-    font-family: ibmplexsans-light;
-    color: #ffff;
-    height: 156px;
-    padding: 1rem;
-    background-color: #282828;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: background-color 0.25s;
-
-    img.icon,
-    svg.icon {
-      height: 60px;
-      width: 60px;
-      transition: height 0.25s;
-    }
-
-    &:hover {
-      background-color: #353535;
-    }
-
-    &.selected {
-      background-color: #fff;
-      color: #000;
-
-      img.icon,
-      svg.icon {
-        height: 60px;
-        width: 60px;
-      }
-
-      h4 {
-        visibility: hidden;
-      }
-
-      span {
-        color: #408bfc;
-      }
-    }
-
-    span {
-      color: #ffff;
-    }
-
-    @media (max-width: 671px) {
-      height: auto;
-      flex-direction: row;
-      align-items: center;
-
-      img.icon,
-      svg.icon {
-        margin-right: 1rem;
-        height: 30px;
-        width: 30px;
-      }
-
-      &.selected {
-        img.icon,
-        svg.icon {
-          height: 30px;
-          width: 60px;
-        }
-      }
-    }
-  `,
-  nameChevron: css`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  `,
-  name: css`
-    font-size: 1.5rem;
-    padding: 0;
-
-    @media (max-width: 1055px) {
-      font-size: 1.25rem;
-    }
-  `,
 };
 
 export default ProductsDisplay;
