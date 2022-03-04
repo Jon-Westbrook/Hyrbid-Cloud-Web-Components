@@ -5,13 +5,13 @@ import ProductsContextProvider, {
 import ProductsDisplay from './ProductsDisplay';
 import { FormattedMessage } from 'react-intl';
 import messages from '../locales/messages';
-import { IBMLocale } from '../../../common/mapValidLocale';
+import { ProductDetailElement } from './ProductDetail';
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react/macro';
 
 interface WidgetProps {
-  localeCode: IBMLocale;
+  element: ProductDetailElement;
 }
 
 const ProductExplorer: React.FC<WidgetProps> = (props) => {
@@ -37,7 +37,7 @@ const ProductExplorer: React.FC<WidgetProps> = (props) => {
                     </p>
                   </>
                 ) : (
-                  <ProductsDisplay localeCode={props.localeCode} />
+                  <ProductsDisplay element={props.element} />
                 )}
               </div>
             </div>

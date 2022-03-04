@@ -13,13 +13,14 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
     langCode,
     'product-explorer-it-infra',
   );
+
   if (!element || !locale) {
     return;
   }
 
   ReactDOM.render(
     <IntlProvider locale={locale} messages={messages}>
-      <ProductExplorer localeCode={locale} />
+      <ProductExplorer element={element} />
     </IntlProvider>,
     element,
     () => cb(element),

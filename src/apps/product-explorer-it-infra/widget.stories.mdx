@@ -1,6 +1,10 @@
 import { Meta, Story } from '@storybook/addon-docs';
+import storyWithTranslation from './lib/storyWithTranslation';
 
-<Meta title="Product Explorer It-Infra/Widget" />
+<Meta
+  title="Product Explorer It-Infra/Widget"
+  decorators={[storyWithTranslation('en')]}
+/>
 
 # Product Explorer It-Infra
 <Story id="product-explorer-it-infra-components--default" />

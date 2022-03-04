@@ -2,7 +2,7 @@ import React, { useContext, useState, SyntheticEvent, Fragment } from 'react';
 import { ProductsContext } from '../contexts/ProductsContext';
 import ProductDetail from './ProductDetail';
 import { FormattedMessage } from 'react-intl';
-import { IBMLocale } from '../../../common/mapValidLocale';
+import { ProductDetailElement } from './ProductDetail';
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react/macro';
@@ -15,7 +15,7 @@ import { ReactComponent as OneIcon } from '../assets/images/icons/ibm--linuxone.
 import { ReactComponent as SpectrumIcon } from '../assets/images/icons/desktop.svg';
 
 interface ProductsDisplayProps {
-  localeCode: IBMLocale;
+  element: ProductDetailElement;
 }
 
 const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
@@ -97,7 +97,7 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
               products={categories[i].products}
               index={i}
               selected={categories[i].name === selectedCategory}
-              localeCode={props.localeCode}
+              element={props.element}
             />
           </Fragment>
         );

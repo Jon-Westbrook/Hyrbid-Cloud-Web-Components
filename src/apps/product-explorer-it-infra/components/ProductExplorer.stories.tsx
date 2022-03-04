@@ -11,8 +11,11 @@ const stories: Meta = {
   decorators: [storyWithTranslation()],
 };
 
+const element: HTMLElement = document.createElement('div');
+element.setAttribute('data-localecode', 'en-us');
+
 const Template: StoryFn<void> = () => (
-  <ProductExplorer localeCode={IBMLocale.EN} />
+  <ProductExplorer element={element} />
 );
 
 export const Default = Template.bind({});
