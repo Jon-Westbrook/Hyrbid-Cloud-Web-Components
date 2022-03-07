@@ -14,9 +14,7 @@ const stories: Meta = {
 const element: HTMLElement = document.createElement('div');
 element.setAttribute('data-localecode', 'en-us');
 
-const Template: StoryFn<void> = () => (
-  <ProductExplorer element={element} />
-);
+const Template: StoryFn<void> = () => <ProductExplorer element={element} />;
 
 export const Default = Template.bind({});
 
