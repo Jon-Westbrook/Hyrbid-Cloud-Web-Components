@@ -10,9 +10,6 @@ const buildStoreFromState = (state: any): Store =>
     },
   });
 
-// TODO:
-// - integrate Mateu's custom decorator function to ensure we're creating a brand-new store for each story
-
 export default function overrideStore({
   themeOverride,
   numColsOverrides,

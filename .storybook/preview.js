@@ -1,10 +1,8 @@
 import { withTests } from '@storybook/addon-jest';
-import { worker } from '../src/apps/trust-radius/lib/mocks/browser';
+import { initialize as initializeMsw, mswDecorator } from 'msw-storybook-addon';
 
 // start mock server worker to intercept API calls
-if (typeof global.process === 'undefined') {
-  worker.start();
-}
+initializeMsw();
 
 const results = require('../src/.jest-test-results.json');
 
@@ -54,6 +52,6 @@ export const decorators = [
       </div>
     </div>
   ),
-
   withTests({ results }),
+  mswDecorator,
 ];

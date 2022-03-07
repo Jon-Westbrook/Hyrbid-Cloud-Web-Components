@@ -98,6 +98,7 @@
     "@yarnpkg/lockfile": "1.1.0",
     "chalk": "^5.0.0",
     "msw": "^0.36.8",
+    "msw-storybook-addon": "^1.6.1",
     "semver": "^5.0.0"
   },
   "msw": {
