@@ -9,7 +9,7 @@ import { FormattedMessage } from 'react-intl';
 import { useAppSelector } from '../lib/redux/hooks';
 import { useGetReviewsByIdQuery } from '../lib/redux/slices/fetchReviewsSlice';
 
-interface CardSliderProps {
+export interface CardSliderProps {
   trustRadiusId: string;
   /** True if the component should include the Google Stars metadata. */
   stars: boolean;

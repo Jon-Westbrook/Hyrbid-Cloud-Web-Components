@@ -1,5 +1,3 @@
-import React from 'react';
-
 import CardFooter, { CardFooterProps } from './CardFooter';
 import { Meta, Story } from '@storybook/react';
 
@@ -12,8 +10,7 @@ const Template: Story<CardFooterProps> = (args) => <CardFooter {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  firstName: 'John',
-  lastName: 'Doe',
+  name: 'John Doe',
   jobTitle: 'Senior Digital Designer',
   companyName: 'Acme Inc.',
   industry: 'Science & Technology',
@@ -22,14 +19,12 @@ Default.args = {
 
 export const MinimalData = Template.bind({});
 MinimalData.args = {
-  firstName: 'John',
-  lastName: 'Doe',
+  name: 'John Doe',
 };
 
 export const IncompleteData = Template.bind({});
 IncompleteData.args = {
-  firstName: 'John',
-  lastName: 'Doe',
+  name: 'John Doe',
   companyName: 'Acme Inc.',
   companySize: '< 100',
 };

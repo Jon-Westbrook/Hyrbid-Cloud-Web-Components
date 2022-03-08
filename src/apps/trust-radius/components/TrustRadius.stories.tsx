@@ -19,11 +19,10 @@ interface StoryWithMockStoreParams<T> {
 }
 
 const defaultFakeState = {
-  cols: { numCols: 4 },
   theme: CarbonThemes.WHITE,
 };
 
-function storyWithMockStore<T>(
+export function storyWithMockStore<T>(
   params?: StoryWithMockStoreParams<T>,
 ): (Story: Story) => ReactElement {
   const newState = produce(defaultFakeState, (draft) => {
@@ -33,7 +32,6 @@ function storyWithMockStore<T>(
   const mockStore = configureStore({
     reducer: {
       [reviewsApi.reducerPath]: reviewsApi.reducer,
-      cols: () => newState.cols,
       theme: () => newState.theme,
     },
     devTools: { name: 'Trust Radius' },
@@ -50,7 +48,7 @@ function storyWithMockStore<T>(
 
 const apiPath = 'https://www.trustradius.com/api/v2/tqw/:trustRadiusId';
 
-const handlers = {
+export const handlers = {
   trApi: rest.get(apiPath, (req, res, ctx) => {
     return res(ctx.json(apiResponse));
   }),
@@ -61,6 +59,7 @@ const stories: Meta = {
   title: 'Trust Radius/Components',
   decorators: [storyWithTranslation()],
   parameters: { msw: { handlers } },
+  excludeStories: ['handlers', 'storyWithMockStore'],
 };
 
 const Template: StoryFn<TrustRadiusProps> = (args) => <TrustRadius {...args} />;
@@ -73,7 +72,7 @@ Default.args = {
 Default.decorators = [storyWithMockStore()];
 
 export const Gray = Template.bind({});
-Gray.args = Object.assign({}, Default.args);
+Gray.args = { ...Default.args };
 Gray.decorators = [
   storyWithMockStore({
     overriddenState: {
@@ -83,7 +82,7 @@ Gray.decorators = [
 ];
 
 export const Dark = Template.bind({});
-Dark.args = Object.assign({}, Default.args);
+Dark.args = { ...Default.args };
 Dark.decorators = [
   storyWithMockStore({
     overriddenState: {
@@ -92,28 +91,8 @@ Dark.decorators = [
   }),
 ];
 
-export const TwoColumns = Template.bind({});
-TwoColumns.args = Object.assign({}, Default.args);
-TwoColumns.decorators = [
-  storyWithMockStore({
-    overriddenState: {
-      cols: { numCols: 2 },
-    },
-  }),
-];
-
-export const OneColumn = Template.bind({});
-OneColumn.args = Object.assign({}, Default.args);
-OneColumn.decorators = [
-  storyWithMockStore({
-    overriddenState: {
-      cols: { numCols: 1 },
-    },
-  }),
-];
-
 export const Loading = Template.bind({});
-Loading.args = Object.assign({}, Default.args);
+Loading.args = { ...Default.args };
 Loading.parameters = {
   msw: {
     handlers: {

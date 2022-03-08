@@ -8,7 +8,7 @@ import EmptyCard from './EmptyCard';
 import { useGetReviewsByIdQuery } from '../../lib/redux/slices/fetchReviewsSlice';
 import { useAppSelector } from '../../lib/redux/hooks';
 
-interface CardProps {
+export interface CardProps {
   /** Data for the review */
   reviewIndex: number;
   trustRadiusId: string;
