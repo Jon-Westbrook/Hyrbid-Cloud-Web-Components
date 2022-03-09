@@ -89,7 +89,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     return (
       <CardSliderDots
         numRows={Math.ceil(
-          data!.metadata.totalCount / (sliderSettings.slidesToShow || 1),
+          data!.reviews.length / (sliderSettings.slidesToShow || 1),
         )}
         onPrevious={customSlider?.slickPrev || noop}
         onNext={customSlider?.slickNext || noop}
