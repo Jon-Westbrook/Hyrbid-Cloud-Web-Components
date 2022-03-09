@@ -16307,6 +16307,4638 @@ exports[`Storyshots Product Explorer IT/Infra Components Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Product Explorer IT-Infra/Components Default 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer-it-infra"
+    >
+      <div
+        class="product-explorer-it-infra__inner"
+      >
+        <div
+          class="product-explorer-it-infra__headline-wrapper"
+        >
+          <h1
+            class="product-explorer-it-infra__headline bx--type-expressive-heading-05"
+          >
+            Products
+          </h1>
+        </div>
+        <div>
+          <div
+            class="product-categories"
+          >
+            <div
+              class="product-category__wrapper"
+              data-category="Compute"
+              data-i="0"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  ibm--storage.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Compute
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 2;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Compute
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    Compute description.
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/storage"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/gen1/infrastructure/provision/bm"
+                >
+                  IBM Cloud Bare Metal Servers
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  High-performance, dedicated cloud servers with both hourly and monthly billing options.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/virtual-servers/pricing"
+                >
+                  IBM Cloud Virtual Servers for Classic Infrastructure
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Public and dedicated virtual servers that provision and scale on demand.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/vpc/pricing"
+                >
+                  IBM Cloud Virtual Servers for VPC
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Fast provisioning, high network performance, greater throughput and enhanced isolation.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/code-engine/pricing"
+                >
+                  IBM Cloud Code Engine
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Fast provisioning, high network performance, greater throughput and enhanced isolation.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-foundry"
+                >
+                  IBM Cloud Foundry
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Deploy and scale apps without manually configuring and managing servers.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/functions/learn/pricing"
+                >
+                  IBM Cloud Functions
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A polyglot functions-as-a-service (FaaS) programming platform based on Apache OpenWhisk.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/hyper-protect-virtual-servers/pricing"
+                >
+                  IBM Hyper Protect Virtual Servers
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Gain complete authority over workloads with sensitive data or your business IP.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/power-systems-virtual-server"
+                >
+                  IBM Power Systems Virtual Servers on IBM Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Extend your IBM POWER® resources into the cloud and avoid the large capital expense or added risk to migrate your essential workloads.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/websphere-application-server/pricing"
+                >
+                  IBM WebSphere® Application Server on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A flexible, security-rich Java server runtime environment for enterprise applications
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/vmware/pricing"
+                >
+                  IBM Cloud for VMware Solutions
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Seamlessly modernize your VMware workloads and applications with IBM Cloud
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Containers"
+              data-i="1"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Containers
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 2;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Containers
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    containers description.
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/kubernetes-service/pricing"
+                >
+                  IBM Cloud Kubernetes Service
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Create a cluster of compute hosts and deploys highly available containers.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/openshift/pricing"
+                >
+                  Red Hat OpenShift on IBM Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Build and deploy container-based applications on a fully managed, integrated and reliable platform.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/openshift/pricing"
+                >
+                  IBM Cloud Container Registry
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Store and distribute Docker images in a managed, private registry
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Network"
+              data-i="2"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  ibm--z.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Network
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 3;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Network
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    Network Description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/z"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/docs/infrastructure/CDN?topic=CDN-pricing#pricing"
+                >
+                  IBM Content Delivery Network (CDN)
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Avoid network traffic jams and decrease latency by keeping data closer to users
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/docs/infrastructure/direct-link?topic=direct-link-pricing-for-ibm-cloud-direct-link#pricing-for-ibm-cloud-direct-link"
+                >
+                  IBM Cloud Direct Link
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Secure and accelerate data transfer between private infrastructure and IBM Cloud
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/dns/pricing"
+                >
+                  IBM Cloud DNS
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Full-service domain registration and administration
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-pricing"
+                >
+                  IBM Cloud Load Balancers
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Load balance traffic among servers to improve uptime and performance
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/internet-services"
+                >
+                  IBM Cloud Internet Services
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A one-stop shop for security and performance capabilities designed to protect public-facing web content and applications before they reach the cloud
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/docs/infrastructure/direct-link?topic=direct-link-pricing-for-ibm-cloud-direct-link#pricing-for-ibm-cloud-direct-link"
+                >
+                  IBM Cloud Direct Link Exchange
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Multi-tenant connections to your IBM Cloud infrastructure, through your local IBM Cloud datacenter, perfect for creating multi-cloud connectivity in a single environment
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Storage"
+              data-i="3"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Storage
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 3;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Storage
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    Storage description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/docs/infrastructure/CDN?topic=CDN-pricing#pricing"
+                >
+                  IBM Cloud Object Storage
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Flexible, cost-effective and scalable cloud storage for unstructured data. Get 25 GB per month, cost free.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/block-storage/pricing"
+                >
+                  IBM Cloud Block Storage
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Flash-backed, local disk performance with SAN persistence and durability
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/file-storage/pricing"
+                >
+                  IBM Cloud File Storage
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Flash-backed, durable, fast and flexible NFS-based file storageFlash-backed, durable, fast and flexible NFS-based file storage
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/backup/pricing"
+                >
+                  IBM Cloud Backup
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Enterprise-grade backup and recovery solution with unified automation, scaling, third-party integration, encryption and multi-vaulting capabilities.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/mdms"
+                >
+                  IBM Cloud Mass Data Migration
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Securely move terabytes or petabytes of data by aggregating rugged, 120 TB storage devices.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="IBM Cloud Paks"
+              data-i="4"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    IBM Cloud Paks
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 4;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    IBM Cloud Paks
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    IBM Cloud Paks description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-pak-for-watson-aiops/pricing"
+                >
+                  IBM Cloud Pak for Watson AIOps
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Deploy advanced, explainable AI across the ITOps toolchain so you can confidently assess, diagnose and resolve incidents across mission-critical workloads.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-pak-for-integration/pricing"
+                >
+                  IBM Cloud Pak for Integration
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Improve application speed and quality with a recognized leader in cloud integrationImprove application speed and quality with a recognized leader in cloud integration
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-pak-for-business-automation/pricing"
+                >
+                  IBM Cloud Pak for Business Automation
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Solve your toughest operational challenges to achieve better business performance with this modular set of integrated AI-powered automation software, built for any hybrid cloud.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/products/cloud-pak-for-security/pricing"
+                >
+                  IBM Cloud Pak for Security
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Connect your security data, tools and teams to uncover hidden threats and make informed risk-based decisions with an integrated platform that doesn't require migrating your data.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Security"
+              data-i="5"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Security
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 4;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Security
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    Security description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/products/cloud-pak-for-security/pricing"
+                >
+                  IBM Cloud Pak for Security
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Connect your security data, tools and teams to uncover hidden threats and make informed risk-based decisions with an integrated platform that doesn't require migrating your data.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/secrets-manager"
+                >
+                  IBM Cloud Secrets Manager
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Create secrets dynamically and lease them to applications while you control access from a single location. Built on open source HashiCorp Vault, Secrets Manager helps you get the data isolation of a dedicated environment with the benefits of a public cloud.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/app-id"
+                >
+                  IBM Cloud App ID
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Add authentication to web and mobile apps, including through social login
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/certificate-manager"
+                >
+                  IBM Cloud Certificate Manager
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Store and centrally manage your certificates in a secure repository
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://www.ibm.com/cloud/hyper-protect-crypto/pricing"
+                >
+                  IBM Cloud Hyper Protect Crypto Services
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Discover a simple set of edge-network services for customers looking to secure their internet-facing applications from distributed denial-of-service (DDoS) attacks, data theft and bot attacks
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/key-protect"
+                >
+                  IBM Key Protect
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Lifecycle management of encryption keys used by IBM Cloud services or custom apps
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Databases"
+              data-i="6"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Databases
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 5;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Databases
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    databases description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloudant/pricing"
+                >
+                  IBM Cloudant®
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A scalable JSON document database for web, mobile, IoT and serverless applications.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/databases-for-enterprisedb"
+                >
+                  IBM Cloud Databases for EnterpriseDB
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A database engine that optimizes the built-in features of PostgreSQL and offers compatibility with Oracle databases.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/databases-for-postgresql/pricing"
+                >
+                  IBM Cloud Databases for PostgreSQL
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  An object-relational SQL database with indexable JSON, publish/subscribe functions and drivers.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/databases-for-mongodb"
+                >
+                  IBM Cloud Databases for MongoDB
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A JSON document store with a rich query and aggregation framework.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/databases-for-elasticsearch"
+                >
+                  IBM Cloud Databases for Elasticsearch
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Combines the flexibility of a full-text search engine with the power of JSON indexing
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/databases-for-etcd"
+                >
+                  IBM Cloud Databases for etcd
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A key-value store that holds the correct data needed to manage server clusters
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/databases-for-redis"
+                >
+                  IBM Cloud Databases for Redis
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  An open source, in-memory data structure store, used as a database, cache and message broker.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/db2-on-cloud/pricing"
+                >
+                  IBM Db2 on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A fully managed cloud database with AI capabilities that keep your business running 24x7
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/informix/pricing"
+                >
+                  IBM Informix® on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  High-performance engine that integrates time series, spatial, NoSQL and SQL data.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://www.ibm.com/cloud/db2-warehouse-on-cloud/pricing"
+                >
+                  IBM Db2 Warehouse on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A fully managed, elastic cloud data warehouse built for high-performance analytics and AI
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/databases-for-redis"
+                >
+                  IBM Cloud Hyper Protect DBaaS for MongoDB
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  LinuxONE-powered cloud database solution for enterprise workloads with sensitive data
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/sql-query"
+                >
+                  IBM Cloud Hyper Protect DBaaS for PostgreSQL
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  LinuxONE-powered cloud database solution for enterprise workloads with sensitive data
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/messages-for-rabbitmq"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  RabbitMQ routes messages between microservices for modern applications.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/sql-query"
+                >
+                  IBM Cloud SQL Query
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Serverless, interactive querying for analyzing data in IBM Cloud Object Storage
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/databases-for-postgresql/pricing"
+                >
+                  IBM Cloud Databases for PostgreSQL
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  An object-relational SQL database with indexable JSON, publish/subscribe functions and drivers
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Analytics"
+              data-i="7"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Analytics
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 5;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Analytics
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    analytics description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/analytics-engine/pricing"
+                >
+                  IBM Analytics Engine
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A combined Apache Spark and Apache Hadoop service for creating analytics applications
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/sql-query"
+                >
+                  IBM Cloud SQL Query
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Serverless, interactive querying for analyzing data in IBM Cloud Object Storage
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/mdm/pricing"
+                >
+                  IBM Master Data Management on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Gain a trusted view of data in a hybrid-computing environment
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/information-server/pricing"
+                >
+                  IBM InfoSphere® Information Server on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Understand, govern, create, maintain, transform and deliver quality data
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/streaming-analytics/pricing"
+                >
+                  IBM Streaming Analytics
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Understand, govern, create, maintain, transform and deliver quality data
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/db2-warehouse-on-cloud/pricing"
+                >
+                  IBM Db2 Warehouse on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  A fully managed, elastic cloud data warehouse built for high-performance analytics and AI
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="AI"
+              data-i="8"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    AI
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 6;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    AI
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    ai description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/watson-openscale"
+                >
+                  IBM Watson Assistant
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Build and deploy virtual assistants
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-pak-for-watson-aiops/pricing"
+                >
+                  IBM Cloud Pak for Watson AIOps
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Focus on innovation, not outages. Drive new efficiency with AI-powered IT incident resolution, fueled by your own data.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-discovery/pricing"
+                >
+                  IBM Cloud Pak for Watson AIOps
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Focus on innovation, not outages. Drive new efficiency with AI-powered IT incident resolution, fueled by your own data.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-studio/pricing"
+                >
+                  IBM Watson Studio
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Simplify and scale data science to predict and optimize your business outcomes.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/watson-openscale"
+                >
+                  IBM Watson Openscale™
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Operate and automate AI across its lifecycle, with trust and transparency.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-speech-to-text/pricing"
+                >
+                  IBM Watson Text to Speech
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Convert written text into natural-sounding audio in a variety of languages and voices
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-speech-to-text/pricing"
+                >
+                  IBM Watson Speech to Text
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Easily convert audio and voice into written text
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-text-to-speech/pricing"
+                >
+                  IBM Watson Text to Speech
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Convert written text into natural-sounding audio in a variety of languages and voices
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-natural-language-understanding/pricing"
+                >
+                  IBM Watson Natural Language Understanding
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Analyze text to extract metadata from content such as concepts, entities and sentiment
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-knowledge-catalog/pricing"
+                >
+                  IBM Watson Knowledge Catalog
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Drive AI apps with intelligent data and analytic asset discovery, cataloging and governance.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-knowledge-studio/pricing"
+                >
+                  IBM Watson Knowledge Studio
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Train IBM Watson to understand the linguistic nuances of your industry domain
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/machine-learning/pricing"
+                >
+                  IBM Watson Machine Learning
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Deploy self-learning models into production at scale
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-natural-language-classifier/pricing"
+                >
+                  IBM Watson Natural Language Classifier
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Interpret and classify natural language with confidence
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/watson-language-translator/pricing"
+                >
+                  IBM Watson Language Translator
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Dynamically translate news, patents or conversational documents
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="IoT"
+              data-i="9"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    IoT
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 6;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    IoT
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    IoT description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/internet-of-things-platform"
+                >
+                  IBM Watson IoT Platform
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Connect devices, gateways and networks, and manage, secure and analyze the associated data.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Mobile"
+              data-i="10"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Mobile
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 7;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Mobile
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    mobile description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/push-notifications/pricing"
+                >
+                  IBM Push Notifications
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Send real-time notifications to mobile and web applications
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Developer Tools"
+              data-i="11"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Developer Tools
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 7;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Developer Tools
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    developer tools description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/continuous-delivery/pricing"
+                >
+                  IBM Cloud Continuous Delivery
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Provision toolchains, automate builds and tests, and control quality with analytics
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/event-management/pricing"
+                >
+                  IBM Cloud Event Management
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Enables operational event and incident correlation, prioritization and resolution
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/messages-for-rabbitmq"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Route, track and queue messages, using multiple protocols.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/sql-query"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Route, track and queue messages, using multiple protocols.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Logging and Monitoring"
+              data-i="12"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Logging and Monitoring
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 8;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Logging and Monitoring
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    developer description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/ibm-log-analysis-with-logdna"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Route, track and queue messages, using multiple protocols.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker-with-logdna?callback=%2Fobserve%2Factivitytracker%2Fcreate"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Route, track and queue messages, using multiple protocols.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Blockchain"
+              data-i="13"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Blockchain
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 8;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Blockchain
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    Blockchain description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/blockchain-platform/pricing"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Route, track and queue messages, using multiple protocols.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-category__wrapper"
+              data-category="Integration"
+              data-i="14"
+              tabindex="0"
+            >
+              <div
+                class="product-category__inner"
+              >
+                <svg
+                  class="icon"
+                >
+                  server--rack.svg
+                </svg>
+                <div
+                  class="product-category__name-wrapper"
+                >
+                  <h4
+                    class="product-category__name"
+                  >
+                    Integration
+                  </h4>
+                  <span
+                    class="ibm-icon-nolink ibm-chevron-down-link"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-category-detail"
+              data-testid="product-detail"
+              style="grid-row-start: 9;"
+            >
+              <div
+                class="category"
+              >
+                <div
+                  class="category__inner"
+                >
+                  <h2
+                    class="category__name"
+                  >
+                    Integration
+                  </h2>
+                  <p
+                    class="category__description"
+                  >
+                    integration description
+                  </p>
+                  <a
+                    class="category__link"
+                    href="/en/it-infrastructure/power"
+                    tabindex="0"
+                  >
+                    Learn more
+                  </a>
+                </div>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-pak-for-integration/pricing"
+                >
+                  IBM Cloud Pak for Integration
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Improve application speed and quality with a recognized leader in cloud integration
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/cloud-pak-for-integration/pricing"
+                >
+                  IBM API Connect
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  API creation and management, with built-in security and governance
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/app-connect/pricing"
+                >
+                  IBM App Connect
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Instantly connects applications and data from existing systems and modern technologies across all environments.
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/aspera/pricing"
+                >
+                  IBM Aspera on CloudIBM Aspera on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Send and share big files and data sets across any distance at maximum speed
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/event-streams"
+                >
+                  IBM Event Streams
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Hosted, fully managed Apache Kafka as a service for a scalable, high-performing messaging backbone
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/mq/pricing"
+                >
+                  IBM MQ on Cloud
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Enterprise messaging that simplifies and accelerates reliable and secure exchange of data
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="/en/cloud/secure-gateway/pricing"
+                >
+                  Secure Gateway
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Create a secure, persistent connection between your protected environment and the cloud
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/lift-cli"
+                >
+                  IBM Lift
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Migrate your data quickly, easily and securely from your on-premises data source to an IBM Cloud data property
+                </p>
+              </div>
+              <div
+                class="product"
+              >
+                <a
+                  class="product__link"
+                  href="https://cloud.ibm.com/catalog/services/skytap-on-ibm-cloud"
+                >
+                  IBM Cloud for Skytap Solutions
+                </a>
+                <p
+                  class="product__long-description"
+                >
+                  Replicate the complete data center environment of existing apps to ease migration to the cloud.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Product Explorer It-Infra/Components/Product Detail Default 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer-it-infra"
+    >
+      <div
+        class="product-category-detail selected"
+        data-testid="product-detail"
+        style="grid-row-start: 2;"
+      >
+        <div
+          class="category"
+        >
+          <div
+            class="category__inner"
+          >
+            <h2
+              class="category__name"
+            >
+              Compute
+            </h2>
+            <p
+              class="category__description"
+            >
+              Compute description.
+            </p>
+            <a
+              class="category__link"
+              href="/en/it-infrastructure/storage"
+              tabindex="0"
+            >
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="https://cloud.ibm.com/gen1/infrastructure/provision/bm"
+          >
+            IBM Cloud Bare Metal Servers
+          </a>
+          <p
+            class="product__long-description"
+          >
+            High-performance, dedicated cloud servers with both hourly and monthly billing options.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/virtual-servers/pricing"
+          >
+            IBM Cloud Virtual Servers for Classic Infrastructure
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Public and dedicated virtual servers that provision and scale on demand.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/vpc/pricing"
+          >
+            IBM Cloud Virtual Servers for VPC
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Fast provisioning, high network performance, greater throughput and enhanced isolation.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/code-engine/pricing"
+          >
+            IBM Cloud Code Engine
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Fast provisioning, high network performance, greater throughput and enhanced isolation.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/cloud-foundry"
+          >
+            IBM Cloud Foundry
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Deploy and scale apps without manually configuring and managing servers.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/functions/learn/pricing"
+          >
+            IBM Cloud Functions
+          </a>
+          <p
+            class="product__long-description"
+          >
+            A polyglot functions-as-a-service (FaaS) programming platform based on Apache OpenWhisk.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/hyper-protect-virtual-servers/pricing"
+          >
+            IBM Hyper Protect Virtual Servers
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Gain complete authority over workloads with sensitive data or your business IP.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="https://cloud.ibm.com/catalog/services/power-systems-virtual-server"
+          >
+            IBM Power Systems Virtual Servers on IBM Cloud
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Extend your IBM POWER® resources into the cloud and avoid the large capital expense or added risk to migrate your essential workloads.
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/websphere-application-server/pricing"
+          >
+            IBM WebSphere® Application Server on Cloud
+          </a>
+          <p
+            class="product__long-description"
+          >
+            A flexible, security-rich Java server runtime environment for enterprise applications
+          </p>
+        </div>
+        <div
+          class="product"
+        >
+          <a
+            class="product__link"
+            href="/en/cloud/vmware/pricing"
+          >
+            IBM Cloud for VMware Solutions
+          </a>
+          <p
+            class="product__long-description"
+          >
+            Seamlessly modernize your VMware workloads and applications with IBM Cloud
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Product Explorer It-Infra/Components/Products Display Default 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer-it-infra"
+    >
+      <div
+        class="product-categories"
+      >
+        <div
+          class="product-category__wrapper"
+          data-category="Compute"
+          data-i="0"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              ibm--storage.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Compute
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 2;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Compute
+              </h2>
+              <p
+                class="category__description"
+              >
+                Compute description.
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/storage"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/gen1/infrastructure/provision/bm"
+            >
+              IBM Cloud Bare Metal Servers
+            </a>
+            <p
+              class="product__long-description"
+            >
+              High-performance, dedicated cloud servers with both hourly and monthly billing options.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/virtual-servers/pricing"
+            >
+              IBM Cloud Virtual Servers for Classic Infrastructure
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Public and dedicated virtual servers that provision and scale on demand.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/vpc/pricing"
+            >
+              IBM Cloud Virtual Servers for VPC
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Fast provisioning, high network performance, greater throughput and enhanced isolation.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/code-engine/pricing"
+            >
+              IBM Cloud Code Engine
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Fast provisioning, high network performance, greater throughput and enhanced isolation.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-foundry"
+            >
+              IBM Cloud Foundry
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Deploy and scale apps without manually configuring and managing servers.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/functions/learn/pricing"
+            >
+              IBM Cloud Functions
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A polyglot functions-as-a-service (FaaS) programming platform based on Apache OpenWhisk.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/hyper-protect-virtual-servers/pricing"
+            >
+              IBM Hyper Protect Virtual Servers
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Gain complete authority over workloads with sensitive data or your business IP.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/power-systems-virtual-server"
+            >
+              IBM Power Systems Virtual Servers on IBM Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Extend your IBM POWER® resources into the cloud and avoid the large capital expense or added risk to migrate your essential workloads.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/websphere-application-server/pricing"
+            >
+              IBM WebSphere® Application Server on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A flexible, security-rich Java server runtime environment for enterprise applications
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/vmware/pricing"
+            >
+              IBM Cloud for VMware Solutions
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Seamlessly modernize your VMware workloads and applications with IBM Cloud
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Containers"
+          data-i="1"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Containers
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 2;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Containers
+              </h2>
+              <p
+                class="category__description"
+              >
+                containers description.
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/kubernetes-service/pricing"
+            >
+              IBM Cloud Kubernetes Service
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Create a cluster of compute hosts and deploys highly available containers.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/openshift/pricing"
+            >
+              Red Hat OpenShift on IBM Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Build and deploy container-based applications on a fully managed, integrated and reliable platform.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/openshift/pricing"
+            >
+              IBM Cloud Container Registry
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Store and distribute Docker images in a managed, private registry
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Network"
+          data-i="2"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              ibm--z.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Network
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 3;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Network
+              </h2>
+              <p
+                class="category__description"
+              >
+                Network Description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/z"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/docs/infrastructure/CDN?topic=CDN-pricing#pricing"
+            >
+              IBM Content Delivery Network (CDN)
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Avoid network traffic jams and decrease latency by keeping data closer to users
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/docs/infrastructure/direct-link?topic=direct-link-pricing-for-ibm-cloud-direct-link#pricing-for-ibm-cloud-direct-link"
+            >
+              IBM Cloud Direct Link
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Secure and accelerate data transfer between private infrastructure and IBM Cloud
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/dns/pricing"
+            >
+              IBM Cloud DNS
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Full-service domain registration and administration
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/docs/infrastructure/loadbalancer-service?topic=loadbalancer-service-ibm-cloud-load-balancer-pricing"
+            >
+              IBM Cloud Load Balancers
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Load balance traffic among servers to improve uptime and performance
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/internet-services"
+            >
+              IBM Cloud Internet Services
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A one-stop shop for security and performance capabilities designed to protect public-facing web content and applications before they reach the cloud
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/docs/infrastructure/direct-link?topic=direct-link-pricing-for-ibm-cloud-direct-link#pricing-for-ibm-cloud-direct-link"
+            >
+              IBM Cloud Direct Link Exchange
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Multi-tenant connections to your IBM Cloud infrastructure, through your local IBM Cloud datacenter, perfect for creating multi-cloud connectivity in a single environment
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Storage"
+          data-i="3"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Storage
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 3;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Storage
+              </h2>
+              <p
+                class="category__description"
+              >
+                Storage description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/docs/infrastructure/CDN?topic=CDN-pricing#pricing"
+            >
+              IBM Cloud Object Storage
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Flexible, cost-effective and scalable cloud storage for unstructured data. Get 25 GB per month, cost free.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/block-storage/pricing"
+            >
+              IBM Cloud Block Storage
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Flash-backed, local disk performance with SAN persistence and durability
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/file-storage/pricing"
+            >
+              IBM Cloud File Storage
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Flash-backed, durable, fast and flexible NFS-based file storageFlash-backed, durable, fast and flexible NFS-based file storage
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/backup/pricing"
+            >
+              IBM Cloud Backup
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Enterprise-grade backup and recovery solution with unified automation, scaling, third-party integration, encryption and multi-vaulting capabilities.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/mdms"
+            >
+              IBM Cloud Mass Data Migration
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Securely move terabytes or petabytes of data by aggregating rugged, 120 TB storage devices.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="IBM Cloud Paks"
+          data-i="4"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                IBM Cloud Paks
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 4;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                IBM Cloud Paks
+              </h2>
+              <p
+                class="category__description"
+              >
+                IBM Cloud Paks description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-pak-for-watson-aiops/pricing"
+            >
+              IBM Cloud Pak for Watson AIOps
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Deploy advanced, explainable AI across the ITOps toolchain so you can confidently assess, diagnose and resolve incidents across mission-critical workloads.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-pak-for-integration/pricing"
+            >
+              IBM Cloud Pak for Integration
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Improve application speed and quality with a recognized leader in cloud integrationImprove application speed and quality with a recognized leader in cloud integration
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-pak-for-business-automation/pricing"
+            >
+              IBM Cloud Pak for Business Automation
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Solve your toughest operational challenges to achieve better business performance with this modular set of integrated AI-powered automation software, built for any hybrid cloud.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/products/cloud-pak-for-security/pricing"
+            >
+              IBM Cloud Pak for Security
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Connect your security data, tools and teams to uncover hidden threats and make informed risk-based decisions with an integrated platform that doesn't require migrating your data.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Security"
+          data-i="5"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Security
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 4;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Security
+              </h2>
+              <p
+                class="category__description"
+              >
+                Security description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/products/cloud-pak-for-security/pricing"
+            >
+              IBM Cloud Pak for Security
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Connect your security data, tools and teams to uncover hidden threats and make informed risk-based decisions with an integrated platform that doesn't require migrating your data.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/secrets-manager"
+            >
+              IBM Cloud Secrets Manager
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Create secrets dynamically and lease them to applications while you control access from a single location. Built on open source HashiCorp Vault, Secrets Manager helps you get the data isolation of a dedicated environment with the benefits of a public cloud.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/app-id"
+            >
+              IBM Cloud App ID
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Add authentication to web and mobile apps, including through social login
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/certificate-manager"
+            >
+              IBM Cloud Certificate Manager
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Store and centrally manage your certificates in a secure repository
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://www.ibm.com/cloud/hyper-protect-crypto/pricing"
+            >
+              IBM Cloud Hyper Protect Crypto Services
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Discover a simple set of edge-network services for customers looking to secure their internet-facing applications from distributed denial-of-service (DDoS) attacks, data theft and bot attacks
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/key-protect"
+            >
+              IBM Key Protect
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Lifecycle management of encryption keys used by IBM Cloud services or custom apps
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Databases"
+          data-i="6"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Databases
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 5;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Databases
+              </h2>
+              <p
+                class="category__description"
+              >
+                databases description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloudant/pricing"
+            >
+              IBM Cloudant®
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A scalable JSON document database for web, mobile, IoT and serverless applications.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/databases-for-enterprisedb"
+            >
+              IBM Cloud Databases for EnterpriseDB
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A database engine that optimizes the built-in features of PostgreSQL and offers compatibility with Oracle databases.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/databases-for-postgresql/pricing"
+            >
+              IBM Cloud Databases for PostgreSQL
+            </a>
+            <p
+              class="product__long-description"
+            >
+              An object-relational SQL database with indexable JSON, publish/subscribe functions and drivers.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/databases-for-mongodb"
+            >
+              IBM Cloud Databases for MongoDB
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A JSON document store with a rich query and aggregation framework.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/databases-for-elasticsearch"
+            >
+              IBM Cloud Databases for Elasticsearch
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Combines the flexibility of a full-text search engine with the power of JSON indexing
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/databases-for-etcd"
+            >
+              IBM Cloud Databases for etcd
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A key-value store that holds the correct data needed to manage server clusters
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/databases-for-redis"
+            >
+              IBM Cloud Databases for Redis
+            </a>
+            <p
+              class="product__long-description"
+            >
+              An open source, in-memory data structure store, used as a database, cache and message broker.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/db2-on-cloud/pricing"
+            >
+              IBM Db2 on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A fully managed cloud database with AI capabilities that keep your business running 24x7
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/informix/pricing"
+            >
+              IBM Informix® on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              High-performance engine that integrates time series, spatial, NoSQL and SQL data.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://www.ibm.com/cloud/db2-warehouse-on-cloud/pricing"
+            >
+              IBM Db2 Warehouse on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A fully managed, elastic cloud data warehouse built for high-performance analytics and AI
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/databases-for-redis"
+            >
+              IBM Cloud Hyper Protect DBaaS for MongoDB
+            </a>
+            <p
+              class="product__long-description"
+            >
+              LinuxONE-powered cloud database solution for enterprise workloads with sensitive data
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/sql-query"
+            >
+              IBM Cloud Hyper Protect DBaaS for PostgreSQL
+            </a>
+            <p
+              class="product__long-description"
+            >
+              LinuxONE-powered cloud database solution for enterprise workloads with sensitive data
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/messages-for-rabbitmq"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product__long-description"
+            >
+              RabbitMQ routes messages between microservices for modern applications.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/sql-query"
+            >
+              IBM Cloud SQL Query
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Serverless, interactive querying for analyzing data in IBM Cloud Object Storage
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/databases-for-postgresql/pricing"
+            >
+              IBM Cloud Databases for PostgreSQL
+            </a>
+            <p
+              class="product__long-description"
+            >
+              An object-relational SQL database with indexable JSON, publish/subscribe functions and drivers
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Analytics"
+          data-i="7"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Analytics
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 5;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Analytics
+              </h2>
+              <p
+                class="category__description"
+              >
+                analytics description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/analytics-engine/pricing"
+            >
+              IBM Analytics Engine
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A combined Apache Spark and Apache Hadoop service for creating analytics applications
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/sql-query"
+            >
+              IBM Cloud SQL Query
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Serverless, interactive querying for analyzing data in IBM Cloud Object Storage
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/mdm/pricing"
+            >
+              IBM Master Data Management on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Gain a trusted view of data in a hybrid-computing environment
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/information-server/pricing"
+            >
+              IBM InfoSphere® Information Server on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Understand, govern, create, maintain, transform and deliver quality data
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/streaming-analytics/pricing"
+            >
+              IBM Streaming Analytics
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Understand, govern, create, maintain, transform and deliver quality data
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/db2-warehouse-on-cloud/pricing"
+            >
+              IBM Db2 Warehouse on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              A fully managed, elastic cloud data warehouse built for high-performance analytics and AI
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="AI"
+          data-i="8"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                AI
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 6;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                AI
+              </h2>
+              <p
+                class="category__description"
+              >
+                ai description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/watson-openscale"
+            >
+              IBM Watson Assistant
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Build and deploy virtual assistants
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-pak-for-watson-aiops/pricing"
+            >
+              IBM Cloud Pak for Watson AIOps
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Focus on innovation, not outages. Drive new efficiency with AI-powered IT incident resolution, fueled by your own data.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-discovery/pricing"
+            >
+              IBM Cloud Pak for Watson AIOps
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Focus on innovation, not outages. Drive new efficiency with AI-powered IT incident resolution, fueled by your own data.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-studio/pricing"
+            >
+              IBM Watson Studio
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Simplify and scale data science to predict and optimize your business outcomes.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/watson-openscale"
+            >
+              IBM Watson Openscale™
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Operate and automate AI across its lifecycle, with trust and transparency.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-speech-to-text/pricing"
+            >
+              IBM Watson Text to Speech
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Convert written text into natural-sounding audio in a variety of languages and voices
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-speech-to-text/pricing"
+            >
+              IBM Watson Speech to Text
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Easily convert audio and voice into written text
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-text-to-speech/pricing"
+            >
+              IBM Watson Text to Speech
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Convert written text into natural-sounding audio in a variety of languages and voices
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-natural-language-understanding/pricing"
+            >
+              IBM Watson Natural Language Understanding
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Analyze text to extract metadata from content such as concepts, entities and sentiment
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-knowledge-catalog/pricing"
+            >
+              IBM Watson Knowledge Catalog
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Drive AI apps with intelligent data and analytic asset discovery, cataloging and governance.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-knowledge-studio/pricing"
+            >
+              IBM Watson Knowledge Studio
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Train IBM Watson to understand the linguistic nuances of your industry domain
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/machine-learning/pricing"
+            >
+              IBM Watson Machine Learning
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Deploy self-learning models into production at scale
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-natural-language-classifier/pricing"
+            >
+              IBM Watson Natural Language Classifier
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Interpret and classify natural language with confidence
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/watson-language-translator/pricing"
+            >
+              IBM Watson Language Translator
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Dynamically translate news, patents or conversational documents
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="IoT"
+          data-i="9"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                IoT
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 6;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                IoT
+              </h2>
+              <p
+                class="category__description"
+              >
+                IoT description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/internet-of-things-platform"
+            >
+              IBM Watson IoT Platform
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Connect devices, gateways and networks, and manage, secure and analyze the associated data.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Mobile"
+          data-i="10"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Mobile
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 7;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Mobile
+              </h2>
+              <p
+                class="category__description"
+              >
+                mobile description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/push-notifications/pricing"
+            >
+              IBM Push Notifications
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Send real-time notifications to mobile and web applications
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Developer Tools"
+          data-i="11"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Developer Tools
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 7;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Developer Tools
+              </h2>
+              <p
+                class="category__description"
+              >
+                developer tools description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/continuous-delivery/pricing"
+            >
+              IBM Cloud Continuous Delivery
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Provision toolchains, automate builds and tests, and control quality with analytics
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/event-management/pricing"
+            >
+              IBM Cloud Event Management
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Enables operational event and incident correlation, prioritization and resolution
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/messages-for-rabbitmq"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Route, track and queue messages, using multiple protocols.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/sql-query"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Route, track and queue messages, using multiple protocols.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Logging and Monitoring"
+          data-i="12"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Logging and Monitoring
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 8;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Logging and Monitoring
+              </h2>
+              <p
+                class="category__description"
+              >
+                developer description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/ibm-log-analysis-with-logdna"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Route, track and queue messages, using multiple protocols.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/ibm-cloud-activity-tracker-with-logdna?callback=%2Fobserve%2Factivitytracker%2Fcreate"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Route, track and queue messages, using multiple protocols.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Blockchain"
+          data-i="13"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Blockchain
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 8;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Blockchain
+              </h2>
+              <p
+                class="category__description"
+              >
+                Blockchain description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/blockchain-platform/pricing"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Route, track and queue messages, using multiple protocols.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-category__wrapper"
+          data-category="Integration"
+          data-i="14"
+          tabindex="0"
+        >
+          <div
+            class="product-category__inner"
+          >
+            <svg
+              class="icon"
+            >
+              server--rack.svg
+            </svg>
+            <div
+              class="product-category__name-wrapper"
+            >
+              <h4
+                class="product-category__name"
+              >
+                Integration
+              </h4>
+              <span
+                class="ibm-icon-nolink ibm-chevron-down-link"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-category-detail"
+          data-testid="product-detail"
+          style="grid-row-start: 9;"
+        >
+          <div
+            class="category"
+          >
+            <div
+              class="category__inner"
+            >
+              <h2
+                class="category__name"
+              >
+                Integration
+              </h2>
+              <p
+                class="category__description"
+              >
+                integration description
+              </p>
+              <a
+                class="category__link"
+                href="/en/it-infrastructure/power"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-pak-for-integration/pricing"
+            >
+              IBM Cloud Pak for Integration
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Improve application speed and quality with a recognized leader in cloud integration
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/cloud-pak-for-integration/pricing"
+            >
+              IBM API Connect
+            </a>
+            <p
+              class="product__long-description"
+            >
+              API creation and management, with built-in security and governance
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/app-connect/pricing"
+            >
+              IBM App Connect
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Instantly connects applications and data from existing systems and modern technologies across all environments.
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/aspera/pricing"
+            >
+              IBM Aspera on CloudIBM Aspera on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Send and share big files and data sets across any distance at maximum speed
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/event-streams"
+            >
+              IBM Event Streams
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Hosted, fully managed Apache Kafka as a service for a scalable, high-performing messaging backbone
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/mq/pricing"
+            >
+              IBM MQ on Cloud
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Enterprise messaging that simplifies and accelerates reliable and secure exchange of data
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="/en/cloud/secure-gateway/pricing"
+            >
+              Secure Gateway
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Create a secure, persistent connection between your protected environment and the cloud
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/lift-cli"
+            >
+              IBM Lift
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Migrate your data quickly, easily and securely from your on-premises data source to an IBM Cloud data property
+            </p>
+          </div>
+          <div
+            class="product"
+          >
+            <a
+              class="product__link"
+              href="https://cloud.ibm.com/catalog/services/skytap-on-ibm-cloud"
+            >
+              IBM Cloud for Skytap Solutions
+            </a>
+            <p
+              class="product__long-description"
+            >
+              Replicate the complete data center environment of existing apps to ease migration to the cloud.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Product Explorer Security/Components Default 1`] = `
 <div
   role="main"
