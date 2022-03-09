@@ -1,36 +1,20 @@
-import React, { useContext } from 'react';
-import {
-  Category,
-  Product,
-  ProductsContext,
-} from '../contexts/ProductsContext';
-import { useWindowSize } from '../hooks/useWindowSize';
-import { defineGridRow } from '../utils/utils';
-import { FormattedMessage } from 'react-intl';
+import React from 'react';
+import { FormattedMessage, MessageDescriptor } from 'react-intl';
+import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
+import { useWindowSize } from '../../../common/hooks/useWindowSize';
+import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
+import { defineGridRow } from '../../../common/product-explorer/utils';
+import { useAppSelector } from '../lib/redux/hooks';
 import './ProductDetail.scss';
 
-export type ProductDetailElement = HTMLElement | undefined;
-
-export interface ProductDetailProps {
-  category: Category;
-  products: Product[];
-  index: number;
-  selected: boolean;
-  element: ProductDetailElement;
-}
-
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
-  const { categories, messages } = useContext(ProductsContext);
+  const localeCode = useAppSelector((state) => state.localeCode);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
+  const categories = useAppSelector((state) => state.categories);
   const categoryStrings = categories.map((category) => category.name);
   const size = useWindowSize();
-
-  let localeCode = props.element?.getAttribute('data-localecode') || '';
-
-  if (localeCode.indexOf('-') > -1) {
-    // IBM's Drupal changes the url prefix to be `country-language`,
-    // so we need to adapt the provided langcode.
-    localeCode = `${localeCode.split('-')[1]}-${localeCode.split('-')[0]}`;
-  }
 
   const row = defineGridRow(size.width, props.index, categoryStrings);
 
@@ -54,9 +38,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
           </p>
           {props.category.link && (
             <a
-              href={`${localeCode === 'en-us' ? '' : '/' + localeCode}${
-                props.category.link
-              }`}
+              href={prefixUrlWithLocale(props.category.link, localeCode)}
               tabIndex={0}
               className="category__link"
             >
@@ -66,10 +48,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
         </div>
       </div>
       {props.products.map((product, i) => {
-        const productUrl =
-          product?.url?.charAt(0) === '/'
-            ? `${localeCode === 'us-en' ? '' : '/' + localeCode}${product.url}`
-            : product.url;
+        const productUrl = prefixUrlWithLocale(product.url, localeCode);
 
         return (
           <div className="product" key={`product-${i}`}>

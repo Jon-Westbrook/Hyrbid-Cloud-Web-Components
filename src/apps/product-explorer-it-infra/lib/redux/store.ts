@@ -21,5 +21,5 @@ export const store = configureStore({
   },
 });
 
-export type ProductExplorerSecurityState = ReturnType<typeof store.getState>;
-export type ProductExplorerSecurityDispatch = typeof store.dispatch;
+export type ProductExplorerItInfraState = ReturnType<typeof store.getState>;
+export type ProductExplorerItInfraDispatch = typeof store.dispatch;

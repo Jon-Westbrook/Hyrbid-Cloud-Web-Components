@@ -1,39 +1,42 @@
-import React, { useContext, useState, SyntheticEvent, Fragment } from 'react';
-import { ProductsContext } from '../contexts/ProductsContext';
+import React, {
+  useState,
+  SyntheticEvent,
+  Fragment,
+  KeyboardEventHandler,
+  EventHandler,
+} from 'react';
+import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import ProductDetail from './ProductDetail';
-import { FormattedMessage } from 'react-intl';
-import { ProductDetailElement } from './ProductDetail';
 import './ProductsDisplay.scss';
-
-// Icons
+import { useAppSelector } from '../lib/redux/hooks';
 import { ReactComponent as ZIcon } from '../assets/images/icons/ibm--z.svg';
 import { ReactComponent as StorageIcon } from '../assets/images/icons/ibm--storage.svg';
 import { ReactComponent as PowerIcon } from '../assets/images/icons/server--rack.svg';
 import { ReactComponent as OneIcon } from '../assets/images/icons/ibm--linuxone.svg';
 import { ReactComponent as SpectrumIcon } from '../assets/images/icons/desktop.svg';
 
-interface ProductsDisplayProps {
-  element: ProductDetailElement;
-}
-
-const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
-  const { categories, messages } = useContext(ProductsContext);
+const ProductsDisplay: React.FC = (props) => {
   const [selectedCategory, setSelectedCategory] = useState('');
+  const categories = useAppSelector((state) => state.categories);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
 
-  function handleInteraction(e: SyntheticEvent<HTMLDivElement>) {
+  const handleInteraction: EventHandler<SyntheticEvent<HTMLDivElement>> = (
+    e,
+  ) => {
     if (selectedCategory === e.currentTarget.dataset.category) {
       setSelectedCategory('');
     } else {
       setSelectedCategory(e.currentTarget.dataset.category || '');
     }
-  }
+  };
 
-  function handleKeyPress(e: SyntheticEvent<HTMLDivElement>) {
-    const { nativeEvent } = e;
-    if (nativeEvent instanceof KeyboardEvent && nativeEvent.key === 'Enter') {
+  const handleKeyPress: KeyboardEventHandler<HTMLDivElement> = (e) => {
+    if (e.key === 'Enter') {
       handleInteraction(e);
     }
-  }
+  };
 
   function handleIconRender(iconName: string) {
     let iconFile;
@@ -97,7 +100,6 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
               products={categories[i].products}
               index={i}
               selected={categories[i].name === selectedCategory}
-              element={props.element}
             />
           </Fragment>
         );

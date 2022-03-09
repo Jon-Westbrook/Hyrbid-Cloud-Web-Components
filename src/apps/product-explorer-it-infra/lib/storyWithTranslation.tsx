@@ -8,7 +8,7 @@ import messages_ja from '../locales/compiledStrings/ja.json';
 
 import storyWithTranslationFromMessages from '../../../common/storyWithTranslationFromMessages';
 
-const messagesByLangcode: Record<string, object> = {
+const messagesByLangcode: Record<string, any> = {
   en: messages_en,
   es: messages_es,
   ar: messages_ar,

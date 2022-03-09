@@ -1,11 +1,11 @@
 import {
-  ProductExplorerSecurityState,
-  messagesInitialState,
+  ProductExplorerItInfraState,
   categoriesInitialState,
+  messagesInitialState,
 } from './redux/store';
 import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
 
-export const defaultFakeState: ProductExplorerSecurityState = {
+export const defaultFakeState: ProductExplorerItInfraState = {
   categories: categoriesInitialState,
   loading: false,
   messages: messagesInitialState,
