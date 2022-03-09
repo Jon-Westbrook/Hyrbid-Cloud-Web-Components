@@ -16,7 +16,7 @@ nvm install & nvm use
 # Download all the project dependencies.
 yarn install
 
-# Or add the text using your editor.
+# Add the following text using your editor.
 echo 'PUBLIC_ASSETS_URL=/static' > .env.local
 
 # Compiles Storybook in the current code base and shows the stories.

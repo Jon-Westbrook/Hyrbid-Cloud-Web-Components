@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/addon-docs";
+import { Meta } from '@storybook/addon-docs';
 
 <Meta title="Documentation/Contributing/Tips" />
 
@@ -7,11 +7,12 @@ import { Meta } from "@storybook/addon-docs";
 This page contains development tips and conventions in this project.
 
 ## 1. Translations
-This project uses react-intl to translate the interface strings. To make your widget multilingual you will need to:
 
-- When rendering text on English, wrap it with a `<FormattedMessage>` and let the linter give it. Running
-`yarn lint:fix` will generate the ID for you. This ID is an alphanumeric code that changes when the default message
-changes to ensure translations are up to date. For instance:
+This project uses react-intl to translate the interface strings. To make your widget multilingual:
+
+- When rendering text on English, wrap it with a `<FormattedMessage>`. Running
+  `yarn lint:fix` will generate a unique ID for you. This ID is an alphanumeric code that changes when the default message
+  changes to ensure translations are up to date. For instance:
 
 ```jsx
 import { FormattedMessage } from 'react-intl';
@@ -19,11 +20,11 @@ import { FormattedMessage } from 'react-intl';
 <FormattedMessage
   defaultMessage="There was a problem loading Trust Radius reviews. Please try again later."
   id="problems"
-/>
+/>;
 ```
 
 - Once you have your app ready for translation, execute the script `./scripts/extract-all.sh`. This will scan for the messages in all the widgets and put them in each of the `./src/apps/your-widget/locales/extractedStrings` folder. You can use the `en.json` file to submit the string for translation. Once you get the translated JSON files (`es.json`, `ja.json`, ...) add them to the `extractedStrings` folder.
-jsx
+  jsx
 - Before publishing your widget remember to "compile" the translations using `./scripts/compile-all.sh`.
 
 After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget. **TIP:** if you want to check your translations locally compile them, then copy the JSON files into `<root>/public/translations/<widget-id>/`.
@@ -35,7 +36,7 @@ You can use images and other media assets normally within your application. Webp
 ```jsx
 import imgData from '../assets/img/the-image.png';
 // ...
-<img src={imgData} alt="..." />
+<img src={imgData} alt="..." />;
 ```
 
 Another way to add media is by putting it in the per-widget `public` directory. Lets say you store an image under `./src/apps/your-widget/public/foo/bar/my-image.png`. You can then reference in you code using:
@@ -46,30 +47,34 @@ Another way to add media is by putting it in the per-widget `public` directory. 
 
 Travis will ensure that the image is uploaded to a public location, while Webpack will be in charge of replacing the string `'process.env.PUBLIC_ASSETS_URL'` with the actual URL when compiling the code (also in Travis). In coordination to that the `.env.local` file in you local environment should contain `PUBLIC_ASSETS_URL=/static`, so the media also works in Storybook.
 
+**Importing images directly into the component is encouraged**, but the `public` folder can be used when there are an abundance of images. See [Using the Public Folder](https://create-react-app.dev/docs/using-the-public-folder/) from the `create-react-app` documentation for more suggestions on when to use the `public` folder.
+
 # Shared code and features
 
 One of the main benefits of aggregating all the widgets under the same repository is sharing code. The following section lists some potential shared code structures.
 
 ## 1. Story management
+
 All widgets **must** include stories. In order to simplify the creation process of a story we have developed two decorators:
 
-  - `storyWithTranslation()`: this helper will ease the process of adding i18n support for your stories.
-  - `storyWithRedux()`: this helper will ease the process of setting the exact (redux) state you need for rendering your story.
+- `storyWithTranslation()`: this helper will ease the process of adding i18n support for your stories.
+- `storyWithRedux()`: this helper will ease the process of setting the exact (redux) state you need for rendering your story.
 
 ## 2. Static assets
+
 This codebase generates several applications:
 
-  - Storybook in the developer's local.
-  - Storybook in the Tugboat preview.
-  - Storybook as served from Cloud Object Storage.
-  - The widget code in the Tugboat preview.
-  - The widget for the production/sandbos registy.
+- Storybook in the developer's local.
+- Storybook in the Tugboat preview.
+- Storybook as served from Cloud Object Storage.
+- The widget code in the Tugboat preview.
+- The widget for the production/sandbox registy.
 
 With this disparity of hosting infrastructure we need an abstraction for how to reference static assets for the widgets that all these applications can use. Examples of static assets include binary images, fonts, PDF files, etc. Use static assets for situations where you don't want to bundle these binaries with the JS bundle.
 
-In order to ensure that all the applications can access the assets the developer will use an evironment variable `$PUBLIC_ASSETS_URL`. Each application has been configured to translate that into the appropriate URL.
+In order to ensure that all the applications can access the assets the developer will use an evironment variable `$PUBLIC_ASSETS_URL`. Each application has been configured to translate that into the appropriate URL. See section `2. Using media` above for more details.
 
-You can find this configuration in `./storybook/main.js` in the `staticDirs` section. And in the `./scritps/ci/upload-public-dirs-to-cos.sh`.
+You can find this configuration in `./storybook/main.js` in the `staticDirs` section. And in the `./scripts/ci/upload-public-dirs-to-cos.sh`.
 
 The following code will work in all the applications described above:
 
@@ -82,6 +87,7 @@ Note that in this example `logo.png` will be stored under `./src/apps/trust-radi
 For more information you can check `upload-public-dirs-to-cos.sh`.
 
 ## 3. Shared Typescript types
+
 Use of **TypeScript is required** for contributing to the Widget Registry. For the most part, contributors will need to write their own types as the apps are independent from one another.
 
 Widgets share some common features, therefore they share some helper code and TypeScript types. This covers things like language codes, color palettes for [Carbon design](https://www.carbondesignsystem.com/), widget render function types, etc.
@@ -89,6 +95,7 @@ Widgets share some common features, therefore they share some helper code and Ty
 You can find these types in the `./types` folder. Make sure to scan its contents before writing your types. We want to **standarize types across widgets** whenever possible.
 
 ## 4. Shared Functionality
+
 There are some tasks that are common across all widgets, this is despite the fact that widgets are independent from one another. These include tasks like downloading translation files, massaging the widget input variables, dealing with common state management (like view port resize, changing the widget color scheme, etc.).
 
 If a piece of code is shared among two or more widgets, it should be moved up to the `./common` folder. Your widget **should not** import code from another widget's code base.
