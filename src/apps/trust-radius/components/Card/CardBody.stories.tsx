@@ -4,7 +4,7 @@ import storyWithTranslation from '../../lib/storyWithTranslation';
 
 const stories: Meta = {
   component: CardBody,
-  title: 'Trust Radius/Components/Slider/Card/Body',
+  title: 'Widgets/Trust Radius/Components/Slider/Card/Body',
   decorators: [storyWithTranslation()],
 };
 

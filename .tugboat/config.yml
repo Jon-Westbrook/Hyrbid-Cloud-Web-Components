@@ -43,9 +43,9 @@ services:
 
     urls:
       product-explorer-security:
-        - /iframe.html?id=product-explorer-security-components--default&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=product-explorer-security-components-product-detail--default&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=product-explorer-security-components-products-display--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-security-components--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-security-components-product-detail--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-security-components-products-display--default&args=&globals=locale:en&viewMode=story
       trust-radius:
         - /iframe.html?id=trust-radius-components--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=trust-radius-components--gray&args=&globals=locale:en&viewMode=story

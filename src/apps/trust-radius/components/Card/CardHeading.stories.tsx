@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 
 const stories: Meta = {
   component: CardHeading,
-  title: 'Trust Radius/Components/Slider/Card/Heading',
+  title: 'Widgets/Trust Radius/Components/Slider/Card/Heading',
 };
 
 const Template: Story<CardHeadingProps> = (args) => <CardHeading {...args} />;

@@ -6,7 +6,7 @@ import { storyWithMockStore, handlers } from '../TrustRadius.stories';
 
 const stories: Meta = {
   component: Card,
-  title: 'Trust Radius/Components/Slider/Card',
+  title: 'Widgets/Trust Radius/Components/Slider/Card',
   decorators: [storyWithTranslation()],
   parameters: { msw: { handlers } },
 };

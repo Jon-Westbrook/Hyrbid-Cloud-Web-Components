@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Journey to AI/Components Default 1`] = `
+exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -14082,7 +14082,7 @@ exports[`Storyshots Journey to AI/Components Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Product Explorer Security/Components Default 1`] = `
+exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -14842,7 +14842,7 @@ exports[`Storyshots Product Explorer Security/Components Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Product Explorer Security/Components/Product Detail Default 1`] = `
+exports[`Storyshots Widgets/Product Explorer Security/Components/Product Detail Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -14904,7 +14904,7 @@ exports[`Storyshots Product Explorer Security/Components/Product Detail Default 
 </div>
 `;
 
-exports[`Storyshots Product Explorer Security/Components/Products Display Default 1`] = `
+exports[`Storyshots Widgets/Product Explorer Security/Components/Products Display Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -15640,7 +15640,7 @@ exports[`Storyshots Product Explorer Security/Components/Products Display Defaul
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components Dark 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components Dark 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -15881,7 +15881,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card Dark 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -15932,7 +15932,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card Gray 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Gray 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -15983,7 +15983,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card Gray 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Body Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16083,7 +16083,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Body Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Body Empty Date 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Empty Date 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16182,7 +16182,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Body Empty Date 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Body Invalid Date 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Invalid Date 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16281,7 +16281,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Body Invalid Date 1`] = 
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Body Truncated 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Truncated 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16377,7 +16377,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Body Truncated 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/EmptyCard Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/EmptyCard Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16428,7 +16428,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/EmptyCard Default 1`] = 
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Footer Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16453,7 +16453,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Footer Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Footer Incomplete Data 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Incomplete Data 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16476,7 +16476,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Footer Incomplete Data 1
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Footer Minimal Data 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Minimal Data 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16497,7 +16497,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Footer Minimal Data 1`] 
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Heading Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16528,7 +16528,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Heading Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Heading Empty 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Empty 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16557,7 +16557,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Heading Empty 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Card/Heading Long Text 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Long Text 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16588,7 +16588,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Card/Heading Long Text 1`] = 
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/Slider/Slider Heading Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Slider Heading Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16617,7 +16617,7 @@ exports[`Storyshots Trust Radius/Components/Slider/Slider Heading Default 1`] = 
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Default 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16728,7 +16728,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars 224 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 224 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16790,7 +16790,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Five Stars 224 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars 226 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 226 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16856,7 +16856,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Five Stars 226 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars 374 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 374 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16922,7 +16922,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Five Stars 374 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars 376 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 376 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -16984,7 +16984,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Five Stars 376 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars Empty 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Empty 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -17046,7 +17046,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Five Stars Empty 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars Full 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Full 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
@@ -17108,7 +17108,7 @@ exports[`Storyshots Trust Radius/Components/StarRating Five Stars Full 1`] = `
 </div>
 `;
 
-exports[`Storyshots Trust Radius/Components/StarRating Five Stars Half 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Half 1`] = `
 <div
   role="main"
   style="padding: 1em; display: flex; flex-direction: column; align-items: center;"

@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 
 const stories: Meta = {
   component: CardFooter,
-  title: 'Trust Radius/Components/Slider/Card/Footer',
+  title: 'Widgets/Trust Radius/Components/Slider/Card/Footer',
 };
 
 const Template: Story<CardFooterProps> = (args) => <CardFooter {...args} />;
