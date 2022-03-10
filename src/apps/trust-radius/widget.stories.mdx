@@ -1,13 +1,13 @@
-import { Canvas, Meta, Story } from '@storybook/addon-docs';
-import storyWithTranslation from './lib/storyWithTranslation';
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import storyWithTranslation from "./lib/storyWithTranslation";
 
 <Meta
-  title="Trust Radius/Widget"
+  title="Widgets/Trust Radius/Widget"
   decorators={[storyWithTranslation('en')]}
 />
 
 # Trust Radius
-<Story id="trust-radius-components--default" />
+<Story id="widgets-trust-radius-components--default" />
 
 The Trust Radius widget allows content producers to embed a slider with reviews on a particular product. These reviews
 are posted, stored, and moderated in the [Trust Radius](https://www.trustradius.com) service.
@@ -16,28 +16,28 @@ are posted, stored, and moderated in the [Trust Radius](https://www.trustradius.
 When loading, the widget fetches the information from Trust Radius based on the product ID provided by the content
 editor. While it loads data, the widget shows a spinner. Once finished the slider is shown.
 
-<Story id="trust-radius-components--loading" />
+<Story id="widgets-trust-radius-components--loading" />
 
 ### Failed Request
 If an error happens while loading the widget data or the translations (like
 connectivity issues, the Trust Radius server having problems, etc.) and the data
 cannot be fetched the widget will show an error message.
 
-<Story id="trust-radius-components--failed-request" />
+<Story id="widgets-trust-radius-components--failed-request" />
 
 ## The Widget
 The widget consists of a slider displaying reviews on the selected product.
 
-<Story id="trust-radius-components--gray" />
+<Story id="widgets-trust-radius-components--gray" />
 
 ### Themes
 The Trust Radius widget supports the [Carbon themes](https://carbondesignsystem.com/guidelines/color/overview/#themes)
 white, cool gray 10, and gray 100.
 
-<Story id="trust-radius-components--dark" />
+<Story id="widgets-trust-radius-components--dark" />
 
 <Canvas withSource={false}>
-  <Story id="trust-radius-components-slider-card--default" />
-  <Story id="trust-radius-components-slider-card--gray" />
-  <Story id="trust-radius-components-slider-card--dark" />
+  <Story id="widgets-trust-radius-components-slider-card--default" />
+  <Story id="widgets-trust-radius-components-slider-card--gray" />
+  <Story id="widgets-trust-radius-components-slider-card--dark" />
 </Canvas>

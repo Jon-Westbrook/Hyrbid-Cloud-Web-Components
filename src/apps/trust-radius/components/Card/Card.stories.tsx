@@ -12,7 +12,7 @@ const storyWithRedux =
   storyWithReduxDecorator<TrustRadiusReducersMapper>(defaultFakeState);
 const stories: Meta = {
   component: Card,
-  title: 'Trust Radius/Components/Slider/Card',
+  title: 'Widgets/Trust Radius/Components/Slider/Card',
   decorators: [storyWithTranslation()],
 };
 
