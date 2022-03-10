@@ -116,17 +116,3 @@ export const cardStyles: Record<string, SerializedStyles> = {
 };
 
 export default Card;
-
-// export default connect<
-//   StateProps,
-//   Record<string, never>,
-//   CardOwnProps,
-//   TrustRadiusReducersMapper
-// >(
-//   (states, props) => ({
-//     theme: states?.palette?.theme,
-//     review:
-//       states?.prods?.products[props.trustRadiusId]?.reviews[props.reviewIndex],
-//   }),
-//   () => ({}),
-// )(PureCard);
