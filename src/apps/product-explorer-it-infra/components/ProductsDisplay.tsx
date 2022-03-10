@@ -15,7 +15,7 @@ import { ReactComponent as PowerIcon } from '../assets/images/icons/server--rack
 import { ReactComponent as OneIcon } from '../assets/images/icons/ibm--linuxone.svg';
 import { ReactComponent as SpectrumIcon } from '../assets/images/icons/desktop.svg';
 
-const ProductsDisplay: React.FC = (props) => {
+const ProductsDisplay: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const categories = useAppSelector((state) => state.categories);
   const messages = useAppSelector<Record<string, MessageDescriptor>>(

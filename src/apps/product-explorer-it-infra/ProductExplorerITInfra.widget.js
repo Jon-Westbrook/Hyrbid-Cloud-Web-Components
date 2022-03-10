@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/apps/product-explorer-it-infra/index.tsx',
   shortcode: 'product-explorer-it-infra',
-  title: 'Product Explorer It-Infra',
+  title: 'Product Explorer IT-Infra',
   status: 'stable',
   description:
     'Allows users to explore various IBM products on offer. Localized for it-infra.',
