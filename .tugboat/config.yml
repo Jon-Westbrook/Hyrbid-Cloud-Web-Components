@@ -42,22 +42,22 @@ services:
       enabled: true
 
     urls:
-      product-explorer-security:
-        - /iframe.html?id=product-explorer-security-components--default&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=product-explorer-security-components-product-detail--default&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=product-explorer-security-components-products-display--default&args=&globals=locale:en&viewMode=story
-      trust-radius:
-        - /iframe.html?id=trust-radius-components--default&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=trust-radius-components--gray&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=trust-radius-components--dark&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=trust-radius-components--two-columns&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=trust-radius-components--failed-request&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=trust-radius-components-slider--dark&args=&globals=locale:en&viewMode=story
-        - /iframe.html?id=trust-radius-components-slider--one-column&args=&globals=locale:en&viewMode=story
       product-explorer-it-infra:
         - /iframe.html?id=product-explorer-it-infra-components--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=product-explorer-it-infra-components-products-display--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=product-explorer-it-infra-components-product-detail--default&args=&globals=locale:en&viewMode=story
+      product-explorer-security:
+        - /iframe.html?id=widgets-product-explorer-security-components--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-security-components-product-detail--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-security-components-products-display--default&args=&globals=locale:en&viewMode=story
+      trust-radius:
+        - /iframe.html?id=widgets-trust-radius-components--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-trust-radius-components--gray&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-trust-radius-components--dark&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-trust-radius-components--two-columns&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-trust-radius-components--failed-request&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-trust-radius-components-slider--dark&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-trust-radius-components-slider--one-column&args=&globals=locale:en&viewMode=story
 
   drupal:
     image: q0rban/tugboat-drupal:9.3
