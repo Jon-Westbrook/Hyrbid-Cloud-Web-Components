@@ -63,7 +63,7 @@ TwoColumns.args.sliderSettings = {
 
 export const OneColumn = Template.bind({});
 OneColumn.args = { ...Default.args };
-OneColumn.decorators = Array.from(Default.decorators);
+OneColumn.decorators = [...Default.decorators];
 OneColumn.args.stars = false;
 OneColumn.args.sliderSettings = {
   ...sliderSettings,
