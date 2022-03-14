@@ -53,7 +53,7 @@ Dark.decorators = [
 
 export const TwoColumns = Template.bind({});
 TwoColumns.args = { ...Default.args };
-TwoColumns.decorators = Array.from(Default.decorators);
+TwoColumns.decorators = [...Default.decorators];
 TwoColumns.args.stars = false;
 TwoColumns.args.sliderSettings = {
   ...sliderSettings,
