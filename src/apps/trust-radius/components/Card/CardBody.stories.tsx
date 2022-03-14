@@ -1,4 +1,3 @@
-import React from 'react';
 import CardBody, { CardBodyProps } from './CardBody';
 import { Meta, Story } from '@storybook/react';
 import storyWithTranslation from '../../lib/storyWithTranslation';

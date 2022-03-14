@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from 'react';
+import { PropsWithChildren } from 'react';
 import SliderHeading, { SliderHeadingProps } from './SliderHeading';
 import { Meta, Story } from '@storybook/react';
 

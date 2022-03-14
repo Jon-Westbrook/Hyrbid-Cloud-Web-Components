@@ -38,3 +38,5 @@ compiledStrings
 /src/index.js
 /src/index.css
 /src/index.scss
+
+.vscode/
