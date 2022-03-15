@@ -5,7 +5,7 @@ import storyWithTranslation from '../lib/storyWithTranslation';
 import storyWithRedux from '../lib/storyWithRedux';
 
 const stories: Meta = {
-  title: 'Product Explorer IT-Infra/Components',
+  title: 'Widgets/Product Explorer IT-Infra/Components',
   component: ProductExplorerItInfra,
   decorators: [storyWithTranslation(), storyWithRedux()],
 };

@@ -7,7 +7,7 @@ import storyWithWrapper from '../lib/storyWithWrapper';
 
 const stories: Meta = {
   component: ProductsDisplay,
-  title: 'Product Explorer It-Infra/Components/Products Display',
+  title: 'Widgets/Product Explorer It-Infra/Components/Products Display',
   decorators: [storyWithTranslation(), storyWithRedux(), storyWithWrapper()],
 };
 
