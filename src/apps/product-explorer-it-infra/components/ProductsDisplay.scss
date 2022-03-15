@@ -94,11 +94,11 @@
     }
 
     &__name {
-      font-size: 1.5rem;
+      font-size: carbon--type-scale(6);
       padding: 0;
 
       @media (max-width: 1055px) {
-        font-size: 1.25rem;
+        font-size: carbon--type-scale(5);
       }
     }
   }

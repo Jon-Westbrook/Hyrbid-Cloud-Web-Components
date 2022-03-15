@@ -35,7 +35,7 @@
 
   &__headline {
     font-family: carbon--font-family('sans');
-    font-size: 53px;
+    font-size: carbon--type-scale(12);
     margin-bottom: $carbon--layout-02;
     max-width: 87.5%;
     padding: 0;
