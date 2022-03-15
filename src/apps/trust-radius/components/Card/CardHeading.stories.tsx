@@ -1,5 +1,3 @@
-import React from 'react';
-
 import CardHeading, { CardHeadingProps } from './CardHeading';
 import { Meta, Story } from '@storybook/react';
 

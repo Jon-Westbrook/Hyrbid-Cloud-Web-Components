@@ -1,39 +1,16 @@
-import { applyMiddleware, combineReducers, createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk, { ThunkMiddleware } from 'redux-thunk';
-import fetchStatusReducer, {
-  TrustRadiusStateFetchStatus,
-} from './reducers/fetchStatusReducer';
-import windowResizeReducer, {
-  TrustRadiusStateWindowResize,
-} from './reducers/windowResizeReducer';
-import setProductReducer, {
-  TrustRadiusStateProducts,
-} from './reducers/setProductReducer';
-import setThemeReducer, {
-  TrustRadiusStateTheme,
-} from './reducers/setThemeReducer';
+import { configureStore } from '@reduxjs/toolkit';
+import { reviewsApi } from './slices/fetchReviewsSlice';
+import setThemeSlice from './slices/setThemeSlice';
 
-export enum FetchStatusEnum {
-  INIT = 'INIT',
-  IN_PROGRESS = 'IN_PROGRESS',
-  READY = 'READY',
-  FAILURE = 'FAILURE',
-}
+export const store = configureStore({
+  reducer: {
+    [reviewsApi.reducerPath]: reviewsApi.reducer,
+    theme: setThemeSlice,
+  },
+  devTools: { name: 'Trust Radius' },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(reviewsApi.middleware),
+});
 
-export type TrustRadiusReducersMapper = {
-  status: TrustRadiusStateFetchStatus;
-  cols: TrustRadiusStateWindowResize;
-  prods: TrustRadiusStateProducts;
-  palette: TrustRadiusStateTheme;
-};
-
-export default createStore(
-  combineReducers<TrustRadiusReducersMapper>({
-    status: fetchStatusReducer,
-    cols: windowResizeReducer,
-    prods: setProductReducer,
-    palette: setThemeReducer,
-  }),
-  composeWithDevTools(applyMiddleware<ThunkMiddleware>(thunk)),
-);
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

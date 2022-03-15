@@ -3,8 +3,7 @@ import React from 'react';
 import { css, SerializedStyles } from '@emotion/react';
 
 export interface CardFooterProps {
-  firstName: string;
-  lastName: string;
+  name: string;
   jobTitle?: string;
   companyName?: string;
   companySize?: string;
@@ -12,15 +11,14 @@ export interface CardFooterProps {
 }
 
 const CardFooter: React.FC<CardFooterProps> = ({
-  firstName,
-  lastName,
+  name,
   jobTitle,
   companyName,
   companySize,
   industry,
 }) => (
   <div className="footer ibm-type-a" css={styles.byline}>
-    {firstName} {lastName}
+    {name}
     <br />
     {jobTitle}
     <br />

@@ -1,4 +1,8 @@
 import { withTests } from '@storybook/addon-jest';
+import { initialize as initializeMsw, mswDecorator } from 'msw-storybook-addon';
+
+// start mock server worker to intercept API calls
+initializeMsw();
 
 const results = require('../src/.jest-test-results.json');
 
@@ -48,6 +52,6 @@ export const decorators = [
       </div>
     </div>
   ),
-
   withTests({ results }),
+  mswDecorator,
 ];

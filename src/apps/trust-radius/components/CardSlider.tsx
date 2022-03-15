@@ -5,20 +5,11 @@ import { css, SerializedStyles } from '@emotion/react';
 import Card from './Card/Card';
 import Googlestars from './Card/Googlestars';
 import SliderHeading from './SliderHeading';
-import { TrustRadiusPersonalReview, TrustRadiusReview } from './TrustRadius';
-import { CarbonThemes } from '../../../types/carbon';
-import { connect } from 'react-redux';
-import { TrustRadiusReducersMapper } from '../lib/redux/store';
 import { FormattedMessage } from 'react-intl';
+import { useAppSelector } from '../lib/redux/hooks';
+import { useGetReviewsByIdQuery } from '../lib/redux/slices/fetchReviewsSlice';
 
-interface StateProps {
-  /** Different color styles according to the IBM design guidelines. */
-  theme?: CarbonThemes;
-  reviews?: TrustRadiusReview[];
-  product?: TrustRadiusPersonalReview;
-}
-
-interface CardSliderOwnProps {
+export interface CardSliderProps {
   trustRadiusId: string;
   /** True if the component should include the Google Stars metadata. */
   stars: boolean;
@@ -27,24 +18,25 @@ interface CardSliderOwnProps {
   setCustomSlider: React.Dispatch<Slider>;
 }
 
-export type CardSliderProps = CardSliderOwnProps & StateProps;
-export const PureCardSlider: React.FC<CardSliderProps> = ({
-  reviews,
-  product,
+export const CardSlider: React.FC<CardSliderProps> = ({
+  trustRadiusId,
   stars,
-  theme = CarbonThemes.WHITE,
   sliderSettings,
   setCustomSlider,
 }) => {
-  if (!product || !reviews?.length) {
+  const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
+  const reviews = data?.reviews;
+  const theme = useAppSelector((state) => state.theme);
+
+  if (!data || !reviews?.length) {
     return <></>;
   }
-  const reviewUrl = `https://www.trustradius.com/products/${product.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
+  const reviewUrl = `https://www.trustradius.com/products/${data.metadata.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
   const starsComponent = stars ? (
     <Googlestars
-      product={product.name}
-      count={product.count}
-      score={product.score}
+      product={data.metadata.productName}
+      count={data.metadata.totalCount}
+      score={data.metadata.trScore}
     />
   ) : (
     <></>
@@ -60,7 +52,7 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
           <FormattedMessage
             defaultMessage="What {name} customers are saying on"
             id="cJvElh"
-            values={{ name: product.name }}
+            values={{ name: data.metadata.productName }}
           />
         </span>
       </SliderHeading>
@@ -81,7 +73,7 @@ export const PureCardSlider: React.FC<CardSliderProps> = ({
               {reviews.map((review, i) => (
                 <Card
                   reviewIndex={i}
-                  trustRadiusId={product.id}
+                  trustRadiusId={data.metadata.id}
                   key={`card-${i}`}
                 />
               ))}
@@ -195,16 +187,4 @@ const styles: Record<string, SerializedStyles> = {
   `,
 };
 
-export default connect<
-  StateProps,
-  Record<string, never>,
-  CardSliderOwnProps,
-  TrustRadiusReducersMapper
->(
-  (states, props) => ({
-    theme: states?.palette?.theme,
-    product: states?.prods?.products[props.trustRadiusId]?.product,
-    reviews: states?.prods?.products[props.trustRadiusId]?.reviews || [],
-  }),
-  () => ({}),
-)(PureCardSlider);
+export default CardSlider;
