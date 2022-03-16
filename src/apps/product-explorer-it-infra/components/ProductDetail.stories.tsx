@@ -4,12 +4,12 @@ import { products } from '../assets/data/products';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
 import storyWithRedux from '../lib/storyWithRedux';
-import storyWithWrapper from '../lib/storyWithWrapper';
+import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper';
 
 const stories: Meta = {
   component: ProductDetail,
   title: 'Widgets/Product Explorer It-Infra/Components/Product Detail',
-  decorators: [storyWithTranslation(), storyWithRedux(), storyWithWrapper()],
+  decorators: [storyWithTranslation(), storyWithRedux(), storyWithClassNameWrapper('product-explorer-it-infra')],
 };
 
 const category = products.categories[0];
