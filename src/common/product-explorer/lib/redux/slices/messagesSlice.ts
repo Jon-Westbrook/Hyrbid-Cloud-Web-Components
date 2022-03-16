@@ -3,16 +3,13 @@ import { MessageDescriptor } from 'react-intl';
 
 const createMessagesSlice = (messages: Record<string, MessageDescriptor>) => {
   const initialState = messages;
-  return {
+  return createSlice({
+    name: 'messages',
     initialState,
-    slice: createSlice({
-      name: 'messages',
-      initialState,
-      reducers: {
-        loadMessages: () => messages,
-      },
-    }),
-  };
+    reducers: {
+      loadMessages: () => messages,
+    },
+  });
 };
 
 export default createMessagesSlice;

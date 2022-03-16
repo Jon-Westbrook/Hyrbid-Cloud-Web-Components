@@ -21,16 +21,13 @@ export function mapProductsToCategories(products: Categories): Category[] {
 
 const createCategoriesSlice = (products: Categories) => {
   const initialState = mapProductsToCategories(products);
-  return {
+  return createSlice({
+    name: 'categories',
     initialState,
-    slice: createSlice({
-      name: 'categories',
-      initialState,
-      reducers: {
-        loadCategories: () => initialState,
-      },
-    }),
-  };
+    reducers: {
+      loadCategories: () => initialState,
+    },
+  });
 };
 
 export default createCategoriesSlice;

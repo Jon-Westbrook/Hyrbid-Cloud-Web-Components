@@ -9,15 +9,12 @@ import messages from '../../locales/messages';
 const categoriesSlice = createCategoriesSlice(products);
 const messagesSlice = createMessagesSlice(messages);
 
-export const categoriesInitialState = categoriesSlice.initialState;
-export const messagesInitialState = messagesSlice.initialState;
-
 export const store = configureStore({
   reducer: {
-    categories: categoriesSlice.slice.reducer,
+    categories: categoriesSlice.reducer,
     loading: loadingSliceReducer,
     localeCode: localeCodeSliceReducer,
-    messages: messagesSlice.slice.reducer,
+    messages: messagesSlice.reducer,
   },
 });
 
