@@ -9,7 +9,11 @@ import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper
 const stories: Meta = {
   component: ProductDetail,
   title: 'Widgets/Product Explorer It-Infra/Components/Product Detail',
-  decorators: [storyWithTranslation(), storyWithRedux(), storyWithClassNameWrapper('product-explorer-it-infra')],
+  decorators: [
+    storyWithTranslation(),
+    storyWithRedux(),
+    storyWithClassNameWrapper('product-explorer-it-infra'),
+  ],
 };
 
 const category = products.categories[0];
