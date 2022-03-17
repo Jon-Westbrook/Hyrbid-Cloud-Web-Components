@@ -7,11 +7,11 @@ import React, {
   SyntheticEvent,
   useState,
 } from 'react';
-import ProductDetail from './ProductDetail';
-import { useAppSelector } from '../lib/redux/hooks';
-import { css } from '@emotion/react';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react';
+import { css } from '@emotion/react';
+import ProductDetail from './ProductDetail';
+import { useAppSelector } from '../lib/redux/hooks';
 import { ReactComponent as DataSecurityIcon } from '../assets/images/icons/data-security.svg';
 import { ReactComponent as IamIcon } from '../assets/images/icons/iam.svg';
 import { ReactComponent as PlatformIcon } from '../assets/images/icons/platform.svg';

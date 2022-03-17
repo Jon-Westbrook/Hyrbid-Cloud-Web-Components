@@ -42,6 +42,10 @@ services:
       enabled: true
 
     urls:
+      product-explorer-it-infra:
+        - /iframe.html?id=widgets-product-explorer-it-infra-components--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-it-infra-components-products-display--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-it-infra-components-product-detail--default&args=&globals=locale:en&viewMode=story
       product-explorer-security:
         - /iframe.html?id=widgets-product-explorer-security-components--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=widgets-product-explorer-security-components-product-detail--default&args=&globals=locale:en&viewMode=story

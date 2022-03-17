@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
 import React, { useEffect } from 'react';
-import { useAppDispatch, useAppSelector } from '../lib/redux/hooks';
-import ProductsDisplay from './ProductsDisplay';
 import { css } from '@emotion/react';
 import { FormattedMessage, MessageDescriptor, useIntl } from 'react-intl';
 import { Loading } from 'carbon-components-react';
-import { setLocaleCode } from '../lib/redux/slices/localeCodeSlice';
-import { setLoadingStatus } from '../lib/redux/slices/loadingSlice';
+import { setLocaleCode } from '../../../common/product-explorer/lib/redux/slices/localeCodeSlice';
+import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/slices/loadingSlice';
+import ProductsDisplay from './ProductsDisplay';
+import { useAppDispatch, useAppSelector } from '../lib/redux/hooks';
 
 const ProductExplorerSecurity: React.FC = () => {
   const loading = useAppSelector<boolean>((state) => state.loading);
@@ -25,12 +25,19 @@ const ProductExplorerSecurity: React.FC = () => {
     <div css={styles.appWrapper} className="ibm-product-explorer-ibm-sec">
       <div css={styles.global}>
         <div css={styles.headlineWrapper}>
-          <h3 css={styles.headline} className="bx--type-expressive-heading-05">
-            <FormattedMessage {...messages.appHeadline} />
-          </h3>
-          <p css={styles.subhead}>
-            <FormattedMessage {...messages.appSubhead} />
-          </p>
+          {messages.appHeadline && (
+            <h3
+              css={styles.headline}
+              className="bx--type-expressive-heading-05"
+            >
+              <FormattedMessage {...messages.appHeadline} />
+            </h3>
+          )}
+          {messages.appSubhead && (
+            <p css={styles.subhead}>
+              <FormattedMessage {...messages.appSubhead} />
+            </p>
+          )}
         </div>
         <div>{loading ? <Loading /> : <ProductsDisplay />}</div>
       </div>

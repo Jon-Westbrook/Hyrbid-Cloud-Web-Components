@@ -1,0 +1,107 @@
+@import "../assets/styles/globals";
+
+.product-explorer-it-infra {
+  .product-categories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include carbon--breakpoint('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include carbon--breakpoint('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+  .product-category {
+    &__wrapper {
+      padding: 1px;
+    }
+
+    &__inner {
+      font-family: carbon--font-family('sans');
+      color: $carbon--white-0;
+      height: auto;
+      padding: $carbon--spacing-05;
+      background-color: $carbon--gray-90;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.25s;
+
+      &:hover {
+        background-color: $carbon--gray-80;
+      }
+
+      &.selected {
+        background-color: $carbon--white-0;
+        color: $carbon--black-100;
+
+        img.icon,
+        svg.icon {
+          height: 30px;
+          width: 60px;
+        }
+
+        h4 {
+          visibility: hidden;
+        }
+
+        span {
+          color: $carbon--blue-50;
+        }
+      }
+
+      img.icon,
+      svg.icon {
+        transition: height 0.25s;
+        height: 30px;
+        width: 30px;
+        margin-right: $carbon--spacing-01;
+      }
+
+      span {
+        color: $carbon--white-0;
+      }
+
+      @include carbon--breakpoint('md') {
+        height: 156px;
+        flex-direction: column;
+        align-items: initial;
+
+        img.icon,
+        svg.icon {
+          height: 60px;
+          width: 60px;
+          margin-right: 0;
+        }
+
+        &.selected {
+          img.icon,
+          svg.icon {
+            height: 60px;
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    &__name-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__name {
+      font-size: carbon--type-scale(5);
+      padding: 0;
+
+      @include carbon--breakpoint('lg') {
+        font-size: carbon--type-scale(6);
+      }
+    }
+  }
+}

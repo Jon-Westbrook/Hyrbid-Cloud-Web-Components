@@ -13,3 +13,14 @@ export interface Category {
   link?: string;
   products: Product[];
 }
+
+export interface Categories {
+  categories: Category[];
+}
+
+export interface ProductDetailProps {
+  category: Category;
+  products: Product[];
+  index: number;
+  selected: boolean;
+}
