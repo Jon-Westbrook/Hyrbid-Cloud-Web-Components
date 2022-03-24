@@ -11,7 +11,7 @@ Once you have a copy of the code in your machine, you will need to start Storybo
 ```console
 # Ensure the correct version of node.
 # See https://github.com/nvm-sh/nvm#installing-and-updating to install nvm if necessary.
-nvm install & nvm use
+nvm install && nvm use
 
 # Download all the project dependencies.
 yarn install
