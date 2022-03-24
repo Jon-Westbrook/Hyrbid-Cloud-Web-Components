@@ -18,6 +18,7 @@ yarn install
 
 # Add the following text using your editor.
 echo 'PUBLIC_ASSETS_URL=/static' > .env.local
+./scripts/compile-all.sh
 
 # Compiles Storybook in the current code base and shows the stories.
 yarn storybook
