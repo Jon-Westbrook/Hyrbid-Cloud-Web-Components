@@ -9,3 +9,6 @@
 /storybook-static
 /reports
 /widget-registry
+/public
+/src/apps/*/locales/compiledStrings
+/src/apps/*/locales/extractedStrings

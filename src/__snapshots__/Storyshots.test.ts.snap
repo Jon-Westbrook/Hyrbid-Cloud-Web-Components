@@ -1,5 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Apps/My Widget/Components/My Widget Default 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Greeting
+    </h5>
+    <div>
+      Hello
+      , 
+      <em>
+        Alice
+      </em>
+      .
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Apps/My Widget/Components/My Widget Hi 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Greeting
+    </h5>
+    <div>
+      Hi
+      , 
+      <em>
+        Alice
+      </em>
+      .
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Apps/My Widget/Components/My Widget Howdy 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Greeting
+    </h5>
+    <div>
+      Howdy
+      , 
+      <em>
+        Alice
+      </em>
+      .
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Apps/My Widget/Components/My Widget Spanish 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Saludo
+    </h5>
+    <div>
+      Hi
+      , 
+      <em>
+        Alícia
+      </em>
+      .
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Apps/My Widget/Components/My Widget With Excitement 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Greeting
+    </h5>
+    <div>
+      Hi
+      , 
+      <em>
+        🎉
+      </em>
+      !
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Apps/My Widget/Components/My Widget With Excitement Emoji 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Greeting
+    </h5>
+    <div>
+      , 
+      <em />
+      .
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Apps/My Widget/Components/My Widget With Excitement Hi 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <h5>
+      Greeting
+    </h5>
+    <div>
+      Hi
+      , 
+      <em>
+        Bob
+      </em>
+      !
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 <div
   role="main"
@@ -14076,6 +14234,209 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget Default 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hello
+        , 
+        <em>
+          Alice
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget Hi 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          Alice
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget Howdy 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Greeting
+      </h5>
+      <div>
+        Howdy
+        , 
+        <em>
+          Alice
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget Spanish 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Saludo
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          Alícia
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget With Excitement 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Greeting
+      </h5>
+      <div>
+        Howdy
+        , 
+        <em>
+          Alice
+        </em>
+        !
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget With Excitement Emoji 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          🎉
+        </em>
+        !
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/My Widget/Components/MyWidget With Excitement Hi 1`] = `
+<div
+  role="main"
+  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1kax6v5-MyWidget"
+    >
+      <h5
+        class="css-1e86lof-MyWidget"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          Bob
+        </em>
+        !
       </div>
     </div>
   </div>

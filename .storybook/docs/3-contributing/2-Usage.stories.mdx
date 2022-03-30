@@ -29,8 +29,7 @@ This file is configured once. It is unlikely that `register` needs to be updated
 Each widget will need a widget definition file, aka `my-thing.widget.js`. It contains the necessary metadata for the
 widget, including the input parameters the content producers will need to populate when embedding the widget.
 
-From the workflow perspective the most relevant entry is `registry`. This will point to a JS file that renders the
-widget (a React app in the example) in the `<div>` that the CMS will print.
+From a workflow perspective, the most relevant entry is `entry`. This points to the widget's render file, which exports a function that renders the widget (a React app in the example).
 
 See [the widget definition file for the Trust Radius widget](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/src/apps/trust-radius/TrustRadius.widget.js) below.
 

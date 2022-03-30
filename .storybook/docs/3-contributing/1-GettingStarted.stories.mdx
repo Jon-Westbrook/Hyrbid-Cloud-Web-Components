@@ -1,0 +1,431 @@
+import { Meta } from '@storybook/addon-docs';
+import myWidgetImg from '../img/my-widget-storybook.png';
+
+<Meta title="Documentation/Contributing/Getting Started" />
+
+# Getting Started
+This tutorial will guide you through the creation of a new widget from scratch.
+However, it will not explain the concepts behind each one of the steps. See the
+[Usage](/story/documentation-contributing-usage--page) and
+[Tips](/story/documentation-contributing-tips--page) section for more details
+behind the files created in this tutorial.
+
+<a href="./docs/my-widget.zip">This ZIP archive</a> contains all the code in
+this guide at the time of this writing.
+
+## 1. Create the Widget
+
+Execute the following commands to create the necessary folders.
+
+```console
+mkdir --parents src/apps/my-widget/public src/apps/my-widget/locales src/apps/my-widget/components
+touch src/apps/my-widget/public/.gitkeep
+```
+
+### `src/apps/my-widget/locales/messages.ts`
+
+This file contains the i18n messages to support multiple languages in the widget.
+
+```typescript
+import { defineMessages } from 'react-intl';
+
+// This contains all the translatable interface messages.
+const messages = defineMessages({
+  greeting: { defaultMessage: 'Greeting', id: 'TvLEtg' },
+});
+
+export default messages;
+```
+
+### `src/apps/my-widget/components/MyWidget.tsx`
+
+This is the main components for the widget. Ideally we would break the component
+in smaller sub-components but we'll skip that for now in favor of brevity in the
+example.
+
+```typescript jsx
+/** @jsxImportSource @emotion/react */
+import React, { ReactElement } from 'react';
+import { FormattedMessage } from 'react-intl';
+import messages from '../locales/messages';
+import { css, SerializedStyles } from '@emotion/react';
+
+export interface MyWidgetProps {
+  /**
+   * One of the predefined greetings.
+   *
+   * @default Hello
+   */
+  greeting: 'Hello' | 'Hi' | 'Howdy';
+  /**
+   * The name of the user to greet.
+   */
+  name: string;
+  /**
+   * Set to true to greet with excitement.
+   *
+   * @default false
+   */
+  excitement: boolean;
+}
+
+const styles: Record<string, SerializedStyles> = {
+  container: css`
+    width: 15em;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    padding: 2em;
+  `,
+  heading: css`
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 0.7em;
+  `,
+};
+
+const MyWidget = ({
+  greeting,
+  name,
+  excitement,
+}: MyWidgetProps): ReactElement => (
+  <div css={styles.container}>
+    <h5 css={styles.heading}>
+      <FormattedMessage {...messages.greeting} />
+    </h5>
+    <div>
+      {greeting}, <em>{name}</em>
+      {excitement ? '!' : '.'}
+    </div>
+  </div>
+);
+
+export default MyWidget;
+```
+
+#### Compile i18n messages
+At this point you will need to compile the messages. Since we are not sending
+the messages for human translation we will see all messages in English
+(<em>Greeting</em>).
+
+Go to the terminal and extract all the messages:
+```console
+./scripts/extract-all.sh my-widget
+```
+
+This will create a set of files (one per language) in `src/apps/my-widget/locales/extractedStrings/*.json`.
+
+This would be when you collect these JSON files and send them over to the
+translators. To simulate the translation process edit the `es.json` and replace
+`Greeting` by the word `Saludo`.
+
+Then, back on the terminal, we'll compile the translated messages.
+
+```console
+./scripts/compile-all.sh
+```
+
+### `src/apps/my-widget/lib/storyWithTranslation.tsx`
+In order to support translations inside of Storybook, and not just the compiled
+widget, we need to add support for it.
+
+```typescript jsx
+import storyWithTranslationFromMessages from '../../../common/storyWithTranslationFromMessages';
+
+import { ReactFramework } from '@storybook/react';
+import { Args, DecoratorFunction } from '@storybook/csf';
+
+import messages_ar from '../locales/compiledStrings/ar.json';
+import messages_de from '../locales/compiledStrings/de.json';
+import messages_en from '../locales/compiledStrings/en.json';
+import messages_es from '../locales/compiledStrings/es.json';
+import messages_esla from '../locales/compiledStrings/esla.json';
+import messages_fr from '../locales/compiledStrings/fr.json';
+import messages_it from '../locales/compiledStrings/it.json';
+import messages_ja from '../locales/compiledStrings/ja.json';
+import messages_ko from '../locales/compiledStrings/ko.json';
+import messages_pl from '../locales/compiledStrings/pl.json';
+import messages_pt from '../locales/compiledStrings/pt.json';
+import messages_ru from '../locales/compiledStrings/ru.json';
+import messages_tr from '../locales/compiledStrings/tr.json';
+import messages_zhcn from '../locales/compiledStrings/zhcn.json';
+import messages_zhtw from '../locales/compiledStrings/zhtw.json';
+
+const messagesByLangcode: Record<string, any> = {
+  ar: messages_ar,
+  de: messages_de,
+  en: messages_en,
+  es: messages_es,
+  esla: messages_esla,
+  fr: messages_fr,
+  it: messages_it,
+  ja: messages_ja,
+  ko: messages_ko,
+  pl: messages_pl,
+  pt: messages_pt,
+  ru: messages_ru,
+  tr: messages_tr,
+  'zh-cn': messages_zhcn,
+  'zh-tw': messages_zhtw,
+};
+
+export function storyWithTranslation<TArgs = Args>(
+  localeOverride: string | void,
+): DecoratorFunction<ReactFramework, TArgs> {
+  return storyWithTranslationFromMessages<TArgs>(
+    localeOverride,
+    messagesByLangcode,
+  );
+}
+
+export default storyWithTranslation;
+```
+
+### `src/apps/my-widget/components/MyWidget.stories.tsx`
+This file contains the standalone stories. We declare stories here instead of in the `widget.stories.mdx` files because
+this is compatible with snapshot testing via [Storyshots](https://storybook.js.org/addons/@storybook/addon-storyshots).
+
+```typescript jsx
+import React from 'react';
+import { Meta, StoryFn } from '@storybook/react';
+import MyWidget, { MyWidgetProps } from './MyWidget';
+import storyWithTranslation from '../lib/storyWithTranslation';
+
+const stories: Meta = {
+  title: 'Widgets/My Widget/Components/MyWidget',
+  component: MyWidget,
+  decorators: [storyWithTranslation()],
+};
+
+const Template: StoryFn<MyWidgetProps> = (args) => <MyWidget {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  greeting: 'Hello',
+  name: 'Alice',
+  excitement: false,
+};
+
+export const Hi = Template.bind({});
+Hi.args = {
+  greeting: 'Hi',
+  name: 'Alice',
+  excitement: false,
+};
+
+export const Howdy = Template.bind({});
+Howdy.args = {
+  greeting: 'Howdy',
+  name: 'Alice',
+  excitement: false,
+};
+
+export const WithExcitement = Template.bind({});
+WithExcitement.args = {
+  greeting: 'Howdy',
+  name: 'Alice',
+  excitement: true,
+};
+
+export const WithExcitementHi = Template.bind({});
+WithExcitementHi.args = {
+  greeting: 'Hi',
+  name: 'Bob',
+  excitement: true,
+};
+
+export const WithExcitementEmoji = Template.bind({});
+WithExcitementEmoji.args = {
+  greeting: 'Hi',
+  name: '🎉',
+  excitement: true,
+};
+
+export const Spanish = Template.bind({});
+Spanish.args = { greeting: 'Hi', name: 'Alícia', excitement: false };
+Spanish.decorators = [storyWithTranslation('es')];
+
+export default stories;
+```
+
+### `src/apps/my-widget/widget.stories.mdx`
+This file contains the main component documentation. Consider this as an evolution of a README.md for the component. It
+allows for common MarkDown documenting, but it lets you embed stories along with the docs.
+
+```md
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import MyWidget from './components/MyWidget';
+import storyWithTranslation from './lib/storyWithTranslation';
+
+<Meta
+  title="Widgets/My Widget/Widget"
+  component={MyWidget}
+  decorators={[storyWithTranslation('en')]}
+/>
+
+export const Template = (args) => <MyWidget {...args } />
+
+# My Widget
+
+## Requirements
+
+The stakeholders wanted to make sure we had a way to greet our users. According
+to their research the best way to make a user feel welcome is by using one of
+these three greetings.
+
+<Story id="widgets-my-widget-components-mywidget--default" />
+
+<Story id="widgets-my-widget-components-mywidget--hi" />
+
+<Story id="widgets-my-widget-components-mywidget--howdy" />
+
+Another requirement was that some users may need to be greeted with additional
+excitement. This is signaled by adding an exclamation at the end of the
+greeting.
+
+<Story id="widgets-my-widget-components-mywidget--with-excitement" />
+
+<Story id="widgets-my-widget-components-mywidget--with-excitement-hi" />
+
+<Story id="widgets-my-widget-components-mywidget--with-excitement-emoji" />
+
+## i18n
+The interface strings can be translated, as proven by:
+
+<Story id="widgets-my-widget-components-mywidget--spanish" />
+
+## Props
+<ArgsTable of={MyWidget} />
+```
+
+### `src/apps/my-widget/index.tsx`
+This file does not have any impact in Storybook. This is the code that will let
+the CMS embed the widget in the page. This is mostly boilerplate, and its main
+purpose is to collect the editorial input left in the DOM and pass it as React
+props.
+
+```typescript jsx
+/** @jsxImportSource @emotion/react */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'regenerator-runtime/runtime';
+import { IntlProvider } from 'react-intl';
+import normalizeWidgetInput from '../../common/normalizeWidgetInput';
+import MyWidget from './components/MyWidget';
+
+import { RenderFn } from '../../types/widgets';
+
+const render: RenderFn = async function (instanceId, langCode, origin, cb) {
+  const { element, locale, messages } = await normalizeWidgetInput(
+    instanceId,
+    langCode,
+    'journey-ai',
+  );
+  if (!element || !locale) {
+    return;
+  }
+  let greeting = element.getAttribute('data-greeting');
+  switch (greeting) {
+    case 'Hello':
+    case 'Hi':
+    case 'Howdy':
+      break;
+    default:
+      greeting = null;
+  }
+  const userName = element.getAttribute('data-name');
+  const excitement = element.getAttribute('data-excitement');
+  ReactDOM.render(
+    <IntlProvider locale={locale} messages={messages}>
+      <MyWidget
+        greeting={greeting || 'Hello'}
+        name={userName || ''}
+        excitement={Boolean(excitement)}
+      />
+    </IntlProvider>,
+    element,
+    () => cb(element),
+  );
+};
+
+export default render;
+```
+
+### `src/apps/my-widget/MyWidget.widget.js`
+This is the widget definition file. See [Usage](/story/documentation-contributing-usage--page) documentation for more info about
+it.
+
+```javascript
+module.exports = {
+  entry: './src/apps/my-widget/index.tsx',
+  shortcode: 'my-widget',
+  title: 'My Widget',
+  status: 'stable',
+  description: 'This is an example widget for the tutorial.',
+  useExternalPeerDependencies: ['react', 'react-dom', 'react-intl'],
+  additionalCustomProperties: {
+    webSegmentPaths: ['/cloud'],
+    availableTranslations: [
+      'ar',
+      'de',
+      'en',
+      'es',
+      'esla',
+      'fr',
+      'it',
+      'ja',
+      'ko',
+      'pl',
+      'pt',
+      'ru',
+      'tr',
+      'zh-cn',
+      'zh-tw',
+    ],
+  },
+};
+```
+
+## 2. The Result
+Once the widget code is in place, running Storybook will give you a running
+preview of the widget and its documentation.
+
+### The Storybook Stories
+
+<img src={myWidgetImg} alt="My widget stories" />
+
+The main thing to notice is that you can see how your component `MyWidget`
+renders with different sets of props <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>1</span>. This will render the React component
+and even apply translations to the interface text <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>2</span><small>*</small>.
+
+<small style={{ fontSize: '0.8em' }}>* Note that content is not translated in
+  this example for simplicity.</small>
+
+Another notable thing is that Storybook will parse your `MyWidgetProps` type to
+generate the knobs <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>3</span>. These allow you to change the props passed to the
+component in the canvas in real time. Tweak the knobs to find edge cases
+rendering the component. Once you are satisfied go back and write a story with
+those values as a "bookmark" of prop values.
+
+Before sending your changes, you need to update the snapshot tests with your widget. You can update them by running:
+
+```console
+TZ=UTC yarn test --watchAll=false --updateSnapshot
+```
+
+After you do this, you need to ensure the changes in the snapshots file make sense and only touch your widget.
+
+### The Compiled Widget
+
+The other result of the widget is the set of JS, CSS, translations, and static assets that will be uploaded by Travis CI to Cloud Object Storage to be used by the CMS. In addition to this the widget registry file will be updated with the necessary information for the widget.
+
+If you want to know more check out [the documentation page for `@js-widgets/webpack-cli`](https://js-widgets.github.io/webpack-cli/docs/build-registry), and [this diagram](/story/documentation-widget-catalog--page) showing the compiled widget life cycle.
+
+In `MSC-Cloud/hc-widgets` we execute the following command to compile widgets in [`.travis.yml`](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/.travis.yml#L35=):
+
+```console
+npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
+```
+
+The results of the compilation (the JS and CSS that the CMS will put in the page) is uploaded to Cloud Object Storage using [this script](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/scripts/ci/upload-to-cos.sh). Keep in mind that, in the future, we may upload to a different location.

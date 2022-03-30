@@ -23,11 +23,12 @@ import { FormattedMessage } from 'react-intl';
 />;
 ```
 
-- Once you have your app ready for translation, execute the script `./scripts/extract-all.sh`. This will scan for the messages in all the widgets and put them in each of the `./src/apps/your-widget/locales/extractedStrings` folder. You can use the `en.json` file to submit the string for translation. Once you get the translated JSON files (`es.json`, `ja.json`, ...) add them to the `extractedStrings` folder.
-  jsx
+- Once you have your app ready for translation, execute the script `./scripts/extract-all.sh my-widget-id`. This will scan for the messages in the widget `my-widget-id` and put them in each of the `./src/apps/my-widget-id/locales/extractedStrings` folder. You can use the `en.json` file to submit the string for translation. Once you get the translated JSON files (`es.json`, `ja.json`, ...) add them to the `extractedStrings` folder.
 - Before publishing your widget remember to "compile" the translations using `./scripts/compile-all.sh`.
 
-After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget. **TIP:** if you want to check your translations locally compile them, then copy the JSON files into `<root>/public/translations/<widget-id>/`.
+After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget.
+
+**TIP:** if you want to check your translations locally (while running the app with `yarn start`) compile them, then copy the JSON files into `<root>/public/translations/<widget-id>/`. This is not needed if you are only looking at Storybook.
 
 ## 2. Using media
 
@@ -99,3 +100,7 @@ You can find these types in the `./types` folder. Make sure to scan its contents
 There are some tasks that are common across all widgets, this is despite the fact that widgets are independent from one another. These include tasks like downloading translation files, massaging the widget input variables, dealing with common state management (like view port resize, changing the widget color scheme, etc.).
 
 If a piece of code is shared among two or more widgets, it should be moved up to the `./common` folder. Your widget **should not** import code from another widget's code base.
+
+## 5. Styling a Widget
+
+Given that widgets can be embedded anywhere, and CSS is inherently global to the page, it makes sense to use a CSS-in-JS technology in your widgets. For this reason we **require the use of [Emotion](https://emotion.sh/docs/introduction)** to accept contributed widgets. Take a peek at the Trust Radius widget to see emotion used in a widget.
