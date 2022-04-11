@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React, { ReactElement, useState } from 'react';
-import { useWindowSize } from 'src/common/hooks/useWindowSize';
+import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { css, SerializedStyles } from '@emotion/react';
 import buildSliderSettings from '../lib/buildSliderSettings';
 import CardSliderDots from './CardSliderDots';

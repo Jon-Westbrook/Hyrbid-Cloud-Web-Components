@@ -1,5 +1,5 @@
 import { Settings as SliderSettings } from 'react-slick';
-import { CarbonBreakpoints } from 'src/types/carbon';
+import { CarbonBreakpoints } from '../../../types/carbon';
 
 /**
  * Determine number of slides to display based on

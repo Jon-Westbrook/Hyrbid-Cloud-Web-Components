@@ -37,6 +37,12 @@ module.exports = {
     babelPlugins.push('@babel/plugin-transform-runtime');
     config.module.rules[2].use.options.plugins = babelPlugins;
 
+    // Support turning SVGs into React components.
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
     config.resolve = config.resolve || {};
     config.resolve.alias = config.resolve.alias || {};
     config.resolve.alias['@formatjs/icu-messageformat-parser'] =
