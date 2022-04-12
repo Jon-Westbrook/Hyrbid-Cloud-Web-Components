@@ -16,6 +16,12 @@ const stories: Meta = {
 const Template: StoryFn<void> = () => <JourneyAi />;
 
 export const Default = Template.bind({});
-Default.decorators = [(story) => <Provider store={store}>{story()}</Provider>];
+Default.decorators = [
+  (Story) => (
+    <Provider store={store}>
+      <Story />
+    </Provider>
+  ),
+];
 
 export default stories;

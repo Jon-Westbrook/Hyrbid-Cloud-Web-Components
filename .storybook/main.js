@@ -1,4 +1,5 @@
 const findWidgetIdsFsSync = require('./findWidgetIdsFsSync');
+const mergeDeep = require('lodash.merge');
 
 const widgetIds = findWidgetIdsFsSync();
 
@@ -23,4 +24,6 @@ module.exports = {
       to: `/static/${id}`,
     })),
   ],
+  webpackFinal: (config) =>
+    mergeDeep(config, { performance: { hints: false } }),
 };
