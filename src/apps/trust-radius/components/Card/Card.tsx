@@ -15,7 +15,7 @@ export interface CardProps {
 }
 
 export const Card: React.FC<CardProps> = ({ reviewIndex, trustRadiusId }) => {
-  const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
+  const { data } = useGetReviewsByIdQuery(trustRadiusId);
   const review = data?.reviews[reviewIndex];
   const theme = useAppSelector((state) => state.theme);
 

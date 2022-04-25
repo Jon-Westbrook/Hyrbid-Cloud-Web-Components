@@ -191,6 +191,7 @@ import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import MyWidget, { MyWidgetProps } from './MyWidget';
 import storyWithTranslation from '../lib/storyWithTranslation';
+import { IBMLocale } from './mapValidLocale';
 
 const stories: Meta = {
   title: 'Widgets/My Widget/Components/MyWidget',
@@ -244,7 +245,7 @@ WithExcitementEmoji.args = {
 
 export const Spanish = Template.bind({});
 Spanish.args = { greeting: 'Hi', name: 'Alícia', excitement: false };
-Spanish.decorators = [storyWithTranslation('es')];
+Spanish.decorators = [storyWithTranslation(IBMLocale.ES)];
 
 export default stories;
 ```
@@ -261,7 +262,7 @@ import storyWithTranslation from './lib/storyWithTranslation';
 <Meta
   title="Widgets/My Widget/Widget"
   component={MyWidget}
-  decorators={[storyWithTranslation('en')]}
+  decorators={[storyWithTranslation(IBMLocale.EN)]}
 />
 
 export const Template = (args) => <MyWidget {...args } />

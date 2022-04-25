@@ -2,7 +2,8 @@ import initStoryshots from '@storybook/addon-storyshots';
 import { render } from '@testing-library/react';
 
 const reactTestingLibrarySerializer: jest.SnapshotSerializerPlugin = {
-  print: (val: any, serialize, indent) => serialize(val?.container?.firstChild),
+  print: (val: unknown, serialize: (i: unknown) => string) =>
+    serialize(val?.container?.firstChild),
   test: (val) => val && val.hasOwnProperty('container'),
 };
 

@@ -1,22 +1,25 @@
 import { ReactFramework } from '@storybook/react';
 import { DecoratorFunction } from '@storybook/csf';
 
+import storyWithTranslationFromMessages, {
+  MessagesByCode,
+} from '../../../common/storyWithTranslationFromMessages';
+import { IBMLocale } from '../../../common/mapValidLocale';
+
 import messages_en from '../locales/compiledStrings/en.json';
-import messages_es from '../locales/compiledStrings/es.json';
 import messages_ar from '../locales/compiledStrings/en.json';
+import messages_es from '../locales/compiledStrings/es.json';
 import messages_ja from '../locales/compiledStrings/ja.json';
 
-import storyWithTranslationFromMessages from '../../../common/storyWithTranslationFromMessages';
-
-const messagesByLangcode: Record<string, any> = {
-  en: messages_en,
-  es: messages_es,
-  ar: messages_ar,
-  ja: messages_ja,
+const messagesByLangcode: MessagesByCode = {
+  [IBMLocale.EN]: messages_en,
+  [IBMLocale.ES]: messages_es,
+  [IBMLocale.AR]: messages_ar,
+  [IBMLocale.JA]: messages_ja,
 };
 
 const storyWithTranslation = (
-  localeOverride: string | void,
+  localeOverride: IBMLocale | void,
 ): DecoratorFunction<ReactFramework> =>
   storyWithTranslationFromMessages(localeOverride, messagesByLangcode);
 

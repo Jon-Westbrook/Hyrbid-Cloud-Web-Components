@@ -1,7 +1,10 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, Slice } from '@reduxjs/toolkit';
 import { MessageDescriptor } from 'react-intl';
 
-const createMessagesSlice = (messages: Record<string, MessageDescriptor>) => {
+type MessagesCollection = Record<string, MessageDescriptor>;
+const createMessagesSlice = (
+  messages: MessagesCollection,
+): Slice<MessagesCollection> => {
   const initialState = messages;
   return createSlice({
     name: 'messages',

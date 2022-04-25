@@ -79,8 +79,9 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     );
   }
 
+  const myData = data || { metadata: { totalCount: 0 }, reviews: [] };
   const sliderSettings = buildSliderSettings(
-    data!.metadata.totalCount,
+    myData.metadata.totalCount,
     size.width,
   );
 
@@ -89,7 +90,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     return (
       <CardSliderDots
         numRows={Math.ceil(
-          data!.reviews.length / (sliderSettings.slidesToShow || 1),
+          myData.reviews.length / (sliderSettings.slidesToShow || 1),
         )}
         onPrevious={customSlider?.slickPrev || noop}
         onNext={customSlider?.slickNext || noop}

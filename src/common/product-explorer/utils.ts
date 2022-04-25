@@ -29,7 +29,7 @@ export function defineGridRow(
   width: number | undefined,
   index: number,
   categories: string[],
-): any {
+): string {
   if (width === undefined) return '1';
   let indexArray;
   let rowNumArray;
@@ -43,7 +43,8 @@ export function defineGridRow(
         return String(rowNumArray[el]);
       }
     }
-  } else if (width >= CarbonBreakpoints.MD) {
+  }
+  if (width >= CarbonBreakpoints.MD) {
     // 2 cols
     indexArray = generateIndexArray(categories, 2);
     rowNumArray = generateRowNumArray(categories, 2);
@@ -52,8 +53,7 @@ export function defineGridRow(
         return String(rowNumArray[el]);
       }
     }
-  } else {
-    // 1 col
-    return String(index + 2);
   }
+  // 1 col
+  return String(index + 2);
 }

@@ -1,14 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface WindowSize {
   width: number;
   height: number;
 }
 
-export function useWindowSize() {
-  const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+type Size = {
+  width: number;
+  height: number;
+};
 
-  useEffect((): any => {
+export function useWindowSize(): Size {
+  const [windowSize, setWindowSize] = useState<Size>({ width: 0, height: 0 });
+
+  useEffect(() => {
     const isClient = typeof window === 'object';
 
     function getSize(): WindowSize {
@@ -19,7 +24,7 @@ export function useWindowSize() {
     }
 
     if (!isClient) {
-      return false;
+      return;
     }
 
     function handleResize() {

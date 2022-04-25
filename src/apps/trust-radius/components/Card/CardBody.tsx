@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { ReactNode } from 'react';
+import React from 'react';
 import StarRating from '../StarRating/StarRating';
 import Truncate from 'react-truncate';
 import parse from 'html-react-parser';

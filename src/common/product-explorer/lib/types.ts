@@ -14,10 +14,6 @@ export interface Category {
   products: Product[];
 }
 
-export interface Categories {
-  categories: Category[];
-}
-
 export interface ProductDetailProps {
   category: Category;
   products: Product[];

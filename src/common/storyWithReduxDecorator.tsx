@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react';
 import mergeDeep from 'lodash.merge';
 import { Provider } from 'react-redux';
-import { Story } from '@storybook/react';
-import { Reducer, Store } from 'redux';
+import { DecoratorFn, Story } from '@storybook/react';
+import { Store } from 'redux';
 import produce from 'immer';
 import { configureStore } from '@reduxjs/toolkit';
 
@@ -20,7 +20,7 @@ export function storyWithReduxFromStore<T extends Store>(fakeStore: T) {
   );
 }
 
-export function buildStoreFromState<T>(state: T) {
+export function buildStoreFromState<T>(state: T): Store {
   return configureStore({
     reducer: (s) => s,
     preloadedState: state,
@@ -30,7 +30,7 @@ export function buildStoreFromState<T>(state: T) {
 export function fakeStore<T>(
   defaultFakeState: T,
   overriddenState: RecursivePartial<T>,
-) {
+): Store {
   const newState = produce(defaultFakeState, (draft) => {
     mergeDeep(draft, overriddenState);
   });
@@ -38,7 +38,7 @@ export function fakeStore<T>(
 }
 
 export default function storyWithReduxDecorator<T>(defaultFakeState: T) {
-  return (overriddenState: RecursivePartial<T> = {}) => {
+  return (overriddenState: RecursivePartial<T> = {}): DecoratorFn => {
     const store = fakeStore<T>(defaultFakeState, overriddenState);
     return storyWithReduxFromStore(store);
   };

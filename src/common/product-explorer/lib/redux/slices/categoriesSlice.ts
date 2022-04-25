@@ -1,5 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { Category, Categories } from '../../types';
+import { createSlice, Slice } from '@reduxjs/toolkit';
+import { Category } from '../../types';
+
+interface Categories {
+  categories: Category[];
+}
 
 export function mapProductsToCategories(products: Categories): Category[] {
   return products.categories.map((category: Category) => {
@@ -19,7 +23,7 @@ export function mapProductsToCategories(products: Categories): Category[] {
   });
 }
 
-const createCategoriesSlice = (products: Categories) => {
+const createCategoriesSlice = (products: Categories): Slice<Category[]> => {
   const initialState = mapProductsToCategories(products);
   return createSlice({
     name: 'categories',

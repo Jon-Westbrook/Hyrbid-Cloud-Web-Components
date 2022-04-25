@@ -1,6 +1,9 @@
 import { ReactFramework } from '@storybook/react';
 import { DecoratorFunction } from '@storybook/csf';
-import storyWithTranslationFromMessages from '../../../common/storyWithTranslationFromMessages';
+import storyWithTranslationFromMessages, {
+  MessagesByCode,
+} from '../../../common/storyWithTranslationFromMessages';
+import { IBMLocale } from '../../../common/mapValidLocale';
 
 import messages_ar from '../locales/compiledStrings/ar.json';
 import messages_de from '../locales/compiledStrings/de.json';
@@ -18,26 +21,26 @@ import messages_tr from '../locales/compiledStrings/tr.json';
 import messages_zhcn from '../locales/compiledStrings/zhcn.json';
 import messages_zhtw from '../locales/compiledStrings/zhtw.json';
 
-const messagesByLangcode: Record<string, any> = {
-  ar: messages_ar,
-  de: messages_de,
-  en: messages_en,
-  es: messages_es,
-  esla: messages_esla,
-  fr: messages_fr,
-  it: messages_it,
-  ja: messages_ja,
-  ko: messages_ko,
-  pl: messages_pl,
-  pt: messages_pt,
-  ru: messages_ru,
-  tr: messages_tr,
-  'zh-cn': messages_zhcn,
-  'zh-tw': messages_zhtw,
+const messagesByLangcode: MessagesByCode = {
+  [IBMLocale.AR]: messages_ar,
+  [IBMLocale.DE]: messages_de,
+  [IBMLocale.EN]: messages_en,
+  [IBMLocale.ES]: messages_es,
+  [IBMLocale.ESLA]: messages_esla,
+  [IBMLocale.FR]: messages_fr,
+  [IBMLocale.IT]: messages_it,
+  [IBMLocale.JA]: messages_ja,
+  [IBMLocale.KO]: messages_ko,
+  [IBMLocale.PL]: messages_pl,
+  [IBMLocale.PT]: messages_pt,
+  [IBMLocale.RU]: messages_ru,
+  [IBMLocale.TR]: messages_tr,
+  [IBMLocale.ZH_CN]: messages_zhcn,
+  [IBMLocale.ZH_TW]: messages_zhtw,
 };
 
 export const storyWithTranslation = (
-  localeOverride: string | void,
+  localeOverride: IBMLocale | void,
 ): DecoratorFunction<ReactFramework> =>
   storyWithTranslationFromMessages(localeOverride, messagesByLangcode);
 

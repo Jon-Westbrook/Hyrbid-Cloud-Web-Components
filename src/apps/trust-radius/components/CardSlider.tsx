@@ -24,7 +24,7 @@ export const CardSlider: React.FC<CardSliderProps> = ({
   sliderSettings,
   setCustomSlider,
 }) => {
-  const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
+  const { data } = useGetReviewsByIdQuery(trustRadiusId);
   const reviews = data?.reviews;
   const theme = useAppSelector((state) => state.theme);
 

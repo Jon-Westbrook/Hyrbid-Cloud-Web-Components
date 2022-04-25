@@ -11,12 +11,26 @@ interface ProductInfo {
   slug: string;
 }
 
-function normalizeProductData(product: {
+type ProductData = {
   config: {
     products: ProductInfo[];
   };
-  data: [];
-}): { metadata: TrustRadiusMetadata; reviews: TrustRadiusReview[] } {
+  data: {
+    company: { name: string; size: string; industry: { name: string } };
+    quotes: {
+      review: { modified: string; heading: string; slug: string };
+      text: string;
+      rating: number;
+    }[];
+    name: { first: string; last: string };
+    position: { title: string };
+  }[];
+};
+
+function normalizeProductData(product: ProductData): {
+  metadata: TrustRadiusMetadata;
+  reviews: TrustRadiusReview[];
+} {
   const productInfo: ProductInfo = product?.config?.products[0];
 
   return {
@@ -27,7 +41,7 @@ function normalizeProductData(product: {
       totalCount: productInfo?.rating?.count || 1,
       trScore: productInfo?.rating?.trScore || 10,
     },
-    reviews: product?.data.map((item: any) => {
+    reviews: product?.data.map((item) => {
       return {
         company: {
           name: item.company.name,
@@ -38,7 +52,7 @@ function normalizeProductData(product: {
         heading: item.quotes[0].review.heading,
         name: `${item.name.first} ${item.name.last}`,
         title: item.position.title,
-        quotes: item.quotes.map((quote: { text: string }) => quote.text),
+        quotes: item.quotes.map((quote) => quote.text),
         rating: item.quotes[0].rating,
         slug: item.quotes[0].review.slug,
       };
@@ -54,7 +68,7 @@ export const reviewsApi = createApi({
   endpoints: (builder) => ({
     getReviewsById: builder.query({
       query: (trustRadiusId) => `${trustRadiusId}`,
-      transformResponse: (response: any, meta, arg) => {
+      transformResponse: (response: ProductData) => {
         return normalizeProductData(response);
       },
     }),
