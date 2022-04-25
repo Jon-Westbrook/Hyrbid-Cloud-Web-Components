@@ -101,6 +101,23 @@ There are some tasks that are common across all widgets, this is despite the fac
 
 If a piece of code is shared among two or more widgets, it should be moved up to the `./common` folder. Your widget **should not** import code from another widget's code base.
 
-## 5. Styling a Widget
+## 5. Compile Widgets Locally
+Once your widget shows properly in Storybook you need to ensure that it will compile properly. If a widget does not compile properly it will not function in the CSM.
 
+```console
+# Set ups environment variables, like in the CI environment. Do this once per session.
+export PUBLIC_URL="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud"
+export PUBLIC_ASSETS_URL="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/static"
+
+# Re-set the output directory between runs. Do this every compilation
+rm --recursive --force widget-registry
+mkdir widget-registry
+# Run the compiler over the local code-base.
+npx @js-widgets/webpack-cli \
+  --existing-registry="${PUBLIC_URL}/registry.json" \
+  --output-dir="$(pwd)/widget-registry" \
+  "$(pwd)" --debug
+```
+
+## 6. Styling a Widget
 Given that widgets can be embedded anywhere, and CSS is inherently global to the page, it makes sense to use a CSS-in-JS technology in your widgets. For this reason we **require the use of [Emotion](https://emotion.sh/docs/introduction)** to accept contributed widgets. Take a peek at the Trust Radius widget to see emotion used in a widget.
