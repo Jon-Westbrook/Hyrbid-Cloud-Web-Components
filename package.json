@@ -72,6 +72,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.merge": "^4.6.2",
     "lottie-web": "^5.8.1",
+    "mini-css-extract-plugin": "^2.6.0",
     "msw": "^0.36.8",
     "msw-storybook-addon": "^1.6.1",
     "prop-types": "^15.7.2",

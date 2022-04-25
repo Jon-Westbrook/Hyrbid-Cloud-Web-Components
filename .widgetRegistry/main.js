@@ -5,6 +5,7 @@ const {
   constants: { BROTLI_PARAM_QUALITY },
 } = require('zlib');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   register: ['../src/apps/**/*.widget.js'],
@@ -26,6 +27,8 @@ module.exports = {
       }
     })();
 
+    // Add MiniCssExtractPlugin.
+    config.module.rules[0].use.unshift(MiniCssExtractPlugin.loader);
     // Add the React and Typescript configurations to babel loader to process
     // .tsx files.
     let presets = config.module.rules[2].use.options.presets;
@@ -60,6 +63,12 @@ module.exports = {
       new WebpackManifestPlugin({
         fileName: 'asset-manifest.json',
         useEntryKeys: true,
+      }),
+      new MiniCssExtractPlugin({
+        filename: isEnvDevelopment
+          ? '[name]/css/main.css'
+          : '[name]/css/main.[contenthash:6].css',
+        chunkFilename: '[id].css',
       }),
       !disableESLintPlugin &&
         new ESLintPlugin({
