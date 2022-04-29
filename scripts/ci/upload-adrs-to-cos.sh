@@ -9,4 +9,4 @@ PROJECT_ROOT=$(dirname "$(dirname "${SCRIPT_RELATIVE_DIR}")")
 # is to avoid deleting something only to have the upload process fail. This
 # could cause an outage for widgets in production.
 source "${PROJECT_ROOT}/scripts/ci/delete-from-cos.sh" '^"architecture/'
-source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${PROJECT_ROOT}/wit-adrs"
+source "${PROJECT_ROOT}/scripts/ci/upload-to-cos.sh" "${PROJECT_ROOT}/adr-docs"
