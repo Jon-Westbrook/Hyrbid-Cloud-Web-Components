@@ -32,8 +32,8 @@ custom:
   script: &cos_script
     - mkdir -p "${TRAVIS_BUILD_DIR}/widget-registry"
     - yarn storybook:build --output-dir "${TRAVIS_BUILD_DIR}/catalog/storybook"
-    - cd adr-docs && ls -lisah && cat package.json
-    - yarn build --prefix-paths && cp --recursive public ${TRAVIS_BUILD_DIR}/adr-docs/architecture
+    - cd adr-docs
+    - yarn install && yarn build --prefix-paths && cp --recursive public ${TRAVIS_BUILD_DIR}/adr-docs/architecture
     - cd ..
     - npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
   deploy: &cos_deploy
