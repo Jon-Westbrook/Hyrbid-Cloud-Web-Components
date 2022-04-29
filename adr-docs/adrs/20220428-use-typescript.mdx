@@ -1,0 +1,32 @@
+---
+date: 2022-04-28
+status: accepted
+tags:
+  - javascript
+  - developer-experience
+deciders:
+  - Hunter McDermut
+  - Mateu Aguiló Bosch
+title: Use TypeScript
+deck: Loosely typed languages like JavaScript lead to unexpected behavior and promote introducing bugs.
+---
+Bugs introduced by missing types are hard to find and often present themselves as edge cases. TypeScript is a superset of JavaScript that introduces static types for JavaScript code (among other features).
+
+## Decision
+
+We will favor TypeScript over JavaScript when authoring code for the widget registry. This also includes using TSX instead of JSX.
+
+### Exceptions
+
+Some external tools and integrations do not support TypeScript. In those cases the use of JavaScript is accepted. This includes:
+  - Configuration files inside the `.storybook`, and `.widgetRegistry` directories.
+  - JavaScript code used for tooling, like `.eslintrc.js`, `taiwind.config.js`, etc.
+  - Widget definition files `*.widget.js`.
+
+## Considerations
+
+We acknowledge that TypeScript code is more complex than JavaScript. This means that new features or changes will take longer to develop. We accept this cost because we expect to spend less time testing and bug fixing. We believe the balance is positive, using TypeScript increases our efficiency.
+
+## Consequences
+
+We will be more efficient because developers and quality assurance engineers will spend less time in the cycle of reporting and fixing bugs.

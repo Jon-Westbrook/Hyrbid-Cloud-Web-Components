@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="500"
+   height="202.14999"
+   viewBox="0 0 500 202.14999"
+   version="1.1"
+   id="svg83"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview85"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.0375"
+     inkscape:cx="9.5705521"
+     inkscape:cy="67.239264"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Icons-Copy-4" />
+  <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">Group</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <defs
+     id="defs6" />
+  <g
+     id="Desktop"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="Icons-Copy-4"
+       transform="translate(-352,-869)"
+       fill="#000000"
+       fill-rule="nonzero">
+      <g
+         id="Group"
+         transform="matrix(10,0,0,9.9998071,352,869)"
+         style="fill:#ffffff">
+        <polygon
+           id="Rectangle-path"
+           points="0,20.215385 0,18.807984 9.7222222,18.807984 9.7222222,20.215385 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon9"
+           points="0,17.52853 0,16.121129 9.7222222,16.121129 9.7222222,17.52853 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon11"
+           points="2.7777778,14.841675 2.7777778,13.434275 6.9444444,13.434275 6.9444444,14.841675 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon13"
+           points="2.7777778,12.15482 2.7777778,10.74742 6.9444444,10.74742 6.9444444,12.15482 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon15"
+           points="2.7777778,9.467965 2.7777778,8.0605647 6.9444444,8.0605647 6.9444444,9.467965 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon17"
+           points="2.7777778,6.78111 2.7777778,5.3737098 6.9444444,5.3737098 6.9444444,6.78111 "
+           style="fill:#ffffff" />
+        <rect
+           id="rect19"
+           x="0"
+           y="2.6868548"
+           width="9.7222223"
+           height="1.4074001"
+           style="fill:#ffffff" />
+        <rect
+           id="rect21"
+           x="0"
+           y="0"
+           width="9.7222223"
+           height="1.4074001"
+           style="fill:#ffffff" />
+        <path
+           d="m 11.111111,17.52853 h 14.949495 c 0.252525,-0.435015 0.441919,-0.908413 0.555556,-1.407401 H 11.111111 Z"
+           id="Shape"
+           style="fill:#ffffff" />
+        <path
+           d="M 24.89899,10.74742 H 13.888889 v 1.4074 h 12.171717 c -0.315657,-0.537371 -0.707071,-1.010769 -1.161616,-1.4074 z"
+           id="path24"
+           style="fill:#ffffff" />
+        <path
+           d="M 13.888889,8.0605647 V 9.467965 H 24.89899 c 0.467172,-0.396631 0.858586,-0.8700293 1.161616,-1.4074003 z"
+           id="path26"
+           style="fill:#ffffff" />
+        <path
+           d="M 26.060606,2.6868549 H 11.111111 V 4.0942551 H 26.616162 C 26.489899,3.5952678 26.300505,3.1218695 26.060606,2.6868549 Z"
+           id="path28"
+           style="fill:#ffffff" />
+        <path
+           d="M 21.464646,0 H 11.111111 V 1.4074002 H 25.037879 C 24.103535,0.53737098 22.840909,0 21.464646,0 Z"
+           id="path30"
+           style="fill:#ffffff" />
+        <rect
+           id="rect32"
+           x="13.888889"
+           y="5.3737097"
+           width="4.1666665"
+           height="1.4074001"
+           style="fill:#ffffff" />
+        <path
+           d="m 22.222222,6.78111 h 4.356061 c 0.126262,-0.4478091 0.189394,-0.9212074 0.189394,-1.4074002 h -4.545455 z"
+           id="path34"
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon36"
+           points="13.888889,14.841675 13.888889,13.434275 18.055556,13.434275 18.055556,14.841675 "
+           style="fill:#ffffff" />
+        <path
+           d="m 22.222222,13.434275 v 1.4074 h 4.545455 c 0,-0.486193 -0.06313,-0.959591 -0.189394,-1.4074 z"
+           id="path38"
+           style="fill:#ffffff" />
+        <path
+           d="m 11.111111,20.20259 10.353535,0.0128 c 1.388889,0 2.638889,-0.537371 3.573233,-1.407401 H 11.111111 Z"
+           id="path40"
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon42"
+           points="27.777778,20.215385 27.777778,18.807984 34.722222,18.807984 34.722222,20.215385 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon44"
+           points="27.777778,17.52853 27.777778,16.121129 34.722222,16.121129 34.722222,17.52853 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon46"
+           points="30.555556,14.841675 30.555556,13.434275 34.722222,13.434275 34.722222,14.841675 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon48"
+           points="30.555556,12.15482 30.555556,10.74742 34.722222,10.74742 34.722222,12.15482 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon50"
+           points="37.133838,4.0942551 36.65404,2.6868549 27.777778,2.6868549 27.777778,4.0942551 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon52"
+           points="36.212121,1.4074002 35.732323,0 27.777778,0 27.777778,1.4074002 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon54"
+           points="43.055556,20.215385 43.055556,18.807984 50,18.807984 50,20.215385 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon56"
+           points="43.055556,17.52853 43.055556,16.121129 50,16.121129 50,17.52853 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon58"
+           points="43.055556,14.841675 43.055556,13.434275 47.222222,13.434275 47.222222,14.841675 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon60"
+           points="43.055556,12.15482 43.055556,10.74742 47.222222,10.74742 47.222222,12.15482 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon62"
+           points="38.497475,8.0605647 34.722222,8.0605647 34.722222,8.0605647 30.555556,8.0605647 30.555556,9.467965 34.722222,9.467965 34.722222,8.1757157 35.164141,9.467965 42.613636,9.467965 43.055556,8.1757157 43.055556,9.467965 47.222222,9.467965 47.222222,8.0605647 43.055556,8.0605647 39.280303,8.0605647 38.888889,9.1992795 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon64"
+           points="47.222222,6.78111 47.222222,5.3737098 40.20202,5.3737098 39.722222,6.78111 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon66"
+           points="50,0 42.045454,0 41.565657,1.4074002 50,1.4074002 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon68"
+           points="39.368687,18.807984 38.409091,18.807984 38.888889,20.20259 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon70"
+           points="37.474747,16.121129 37.967172,17.52853 39.810606,17.52853 40.30303,16.121129 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon72"
+           points="36.540404,13.434275 37.032828,14.841675 40.744949,14.841675 41.237374,13.434275 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon74"
+           points="35.618687,10.74742 36.098485,12.15482 41.679293,12.15482 42.159091,10.74742 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon76"
+           points="30.555556,5.3737098 30.555556,6.78111 38.055556,6.78111 37.575758,5.3737098 "
+           style="fill:#ffffff" />
+        <polygon
+           id="polygon78"
+           points="41.123737,2.6868549 40.643939,4.0942551 50,4.0942551 50,2.6868549 "
+           style="fill:#ffffff" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata902">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Group</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
