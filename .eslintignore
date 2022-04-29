@@ -1,5 +1,5 @@
 /coverage
-node_modules
+/node_modules
 /build
 /dist
 /.pnp.js
@@ -12,13 +12,3 @@ node_modules
 /public
 /src/apps/*/locales/compiledStrings
 /src/apps/*/locales/extractedStrings
-/adr-docs/public
-/adr-docs/config
-.cache
-.eslintrc.js
-/adr-docs/gatsby-browser.js
-/adr-docs/gatsby-config.js
-/adr-docs/gatsby-node.js
-postcss.config.js
-tailwind.config.js
-src/.jest-test-results.json

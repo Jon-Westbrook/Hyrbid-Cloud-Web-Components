@@ -1,5 +1,5 @@
 /coverage
-node_modules
+/node_modules
 /build
 /dist
 /.pnp.js
@@ -12,6 +12,3 @@ node_modules
 /public
 /src/apps/*/locales/compiledStrings
 /src/apps/*/locales/extractedStrings
-/adr-docs/public
-.cache
-src/.jest-test-results.json

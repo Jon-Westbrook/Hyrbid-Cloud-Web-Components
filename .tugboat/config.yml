@@ -104,20 +104,3 @@ services:
         vendor/bin/drush --yes config-set system.site page.front /user/login?destination=/admin/content/interactive-components/widget-instance
       online:
         - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT widget_ingestion:ingest --force-ingestion
-
-  adrs:
-    image: tugboatqa/httpd
-    commands:
-      init: |
-        set -eux
-        curl -sL https://deb.nodesource.com/setup_16.x | sh
-        apt-get install -y nodejs
-        npm install --global yarn
-        ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/adr-docs/public" "${DOCROOT}"
-      build: |
-        cd adr-docs
-        yarn install
-        yarn build
-    expose: 80
-    http: false
-    checkout: true
