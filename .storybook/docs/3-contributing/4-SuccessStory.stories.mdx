@@ -1,0 +1,69 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Documentation/Contributing/Success Story" />
+
+# Success Story
+
+The following portrays a fake story of a widget contribution. This was an exercise to prove out our contribution process
+and documentation.
+
+This process describes the steps a contributor follows in order to put their new widget into the widget registry. If you
+are only interested in the resulting code you can see [the final PR](https://github.ibm.com/MSC-Cloud/hc-widgets/pull/39)
+or <a href="./docs/emoji-trading-cards--patch.zip">download the patch</a>.
+
+## Notes
+<!-- Document what you have done -->
+Starting Point: Someone has pointed me to https://github.ibm.com/MSC-Cloud/hc-widgets
+
+### Getting the codebase
+#### 20/03/2022 13:51
+I hit https://github.ibm.com/MSC-Cloud/hc-widgets in my browser. It seems I don't have access. I need a w3id, according to that page. I email my person of contact so they can get me one.
+#### 23/03/2022 15:41
+I got access to w3id, so I can now fork the repo `MSC-Cloud/hc-widgets` to my account. This leaves it in `Aguilo-Bosch/hc-widgets`.
+
+The `README.md` does not have much info, but there is a section about contributing widgets that links to `CONTRIBUTING.md`.
+
+After executing the commands in the `CONTRIBUTING.md` page, I am presented with the Storybook application.
+
+#### 24/03/2022 21:34
+The most relevant part of the documentation is the one under _Contributing_. There is a guide that lets me create a "hello world" widget from scratch. This is useful because I see what the necessary files are and what they do.
+
+After creating the widget in the tutorial, I am ready to start developing mine in my fork `Aguilo-Bosch/hc-widgets`.
+
+#### 25/03/2022 10:49
+I have the widget showing in Storybook! However I am struggling to understand how to make i18n work.
+
+In the end the trick was that instead of creating the data as `strings` I needed to use `<FormattedMessage />` from `react-intl`. This way everything works.
+
+However I had to go read the documentation under _Contributing > Tips > Translations_ carefully to see what was going on with Storybook failures. In particular:
+
+> Once you have your app ready for translation, execute the script ./scripts/extract-all.sh. This will scan for the messages in all the widgets and put them in each of the ./src/apps/your-widget/locales/extractedStrings folder. You can use the en.json file to submit the string for translation. Once you get the translated JSON files (es.json, ja.json, ...) add them to the extractedStrings folder. jsx
+> Before publishing your widget remember to "compile" the translations using ./scripts/compile-all.sh.
+
+After running `yarn extract emoji-cards`. I got the JSON in the `extractedMessages` but Storybook was still broken. I needed to run `yarn compile` as well.
+
+#### 26/03/2022 9:12
+
+This morning I want to see the translations actually working.
+
+For this to happen I edited `./src/apps/emoji-cards/locales/extractedStrings/es.json` and found the strings that I am seeing in the cards in Storybook. I translated those strings to Spanish. It did not work.
+
+It turns out I need to compile the messages after I change them, otherwise the translations are not picked up. Now it works!
+
+Note to self: extracting the messages again after translation will overwrite the Spanish translations with the English values. I guess it makes sense, but I had to use git to get my Spanish strings back.
+
+I ended up my day transitioning the styles to Emotion, as I see this is the recommendation.
+
+#### 27/03/2022 11:34
+Once I submitted a PR from `Aguilo-Bosch/hc-widgets#WIDGET-108--emoji-cards` against `MSC-Cloud/hc-widgets#development` an automated environment called Tugboat started building.
+
+![CI checks in progress](./docs/ci-checks-in-progress.png)
+I believe I will need to ping someone in Slack (likely in the #cms-widget-support channel) to get it reviewed.
+
+Oh! The Tugboat preview environment is ready. It posted an automated comment with the links. Let's see how it looks... I think it will be very useful for the person reviewing my changes.
+![Tugboat GitHub comment](./docs/tugboat-gh-comment.png)
+
+#### 27/03/2022 14:22
+Someone has told me in Slack that I need to check the linked Storybook to see if my widget shows up as I see it locally before they start with the code review.
+
+They have also asked if I can create a Drupal page in the Tugboat link in Drupal with the widget. When I click the link it requests the username and password they provided me in Slack.
