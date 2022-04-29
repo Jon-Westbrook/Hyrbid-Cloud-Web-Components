@@ -23,7 +23,7 @@
     "test:ci": "/bin/true",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "build": "gatsby build --verbose",
+    "build": "./node_modules/.bin/gatsby build --verbose",
     "telemetry:off": "gatsby telemetry --disable",
     "postinstall": "npm run-script telemetry:off"
   }
