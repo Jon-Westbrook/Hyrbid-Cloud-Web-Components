@@ -1,0 +1,24 @@
+---
+date: 2022-04-27
+status: accepted
+tags:
+  - react
+  - styling
+deciders:
+  - Hunter MacDermut
+  - Mateu Aguiló Bosch
+title: Allow widgets to use stylesheets
+deck: CSS-in-JS solutions are not easily compatible with carbon components.
+redirect_from:
+  - /adrs/record-adrs
+---
+
+Use of carbon utility classes and carbon components makes it very difficult to use emotion or other CSS-in-JS solutions. Imported components that we need to use do not use CSS-in-JS, this leads to emitting CSS files during compilation.
+
+## Decision
+
+We allow export CSS files as part of the widget compilation process. This typically will result in a `css/main.css` file in the widget output.
+
+## Consequences
+
+We will increase efficiency by re-using carbon components and UI helpers developed by other teams.

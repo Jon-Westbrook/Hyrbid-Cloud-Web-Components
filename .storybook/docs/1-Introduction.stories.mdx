@@ -1,5 +1,12 @@
 import { Meta } from '@storybook/addon-docs';
 import headerImg from './img/carbon.png';
+const linkButtonStyle = {
+  display: 'inline-block',
+  padding: '10px 25px',
+  background: '#0062ff',
+  color: 'white',
+  textDecoration: 'none',
+};
 
 <Meta title="Documentation/Introduction" />
 
@@ -11,6 +18,14 @@ import headerImg from './img/carbon.png';
 - [Journey to AI](/story/widgets-journey-to-ai-widget--page): A widget to show animations for AI products.
 
 <img src={headerImg} alt="Carbon Design System" />
+
+## ADRs
+
+Technical architecture decisions are documented using Architecture Decision Records (ADRs).
+
+<a style={linkButtonStyle}
+   href={`${process.env.PUBLIC_URL}/architecture/index.html`}
+   target='_blank'>ADRs Website</a>
 
 ## What are widgets?
 

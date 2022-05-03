@@ -1,0 +1,42 @@
+---
+# In the metadata section, # is a comment, not a heading.
+# If other ADRs are added before this one is finished, set the date to
+# today's date to push it to the top of the list.
+date: 2022-05-03
+
+# New ADRs start at accepted, and no longer relevant ADRs are deprecated.
+status: accepted
+
+# Tags are freeform - see existing ADRs for ideas
+tags:
+  - react
+  - i18n
+
+# Include anyone who was involved in the decision or discussions. The goal
+# is to have a list for the future so the team has a starting point to ask
+# for any missing historical context.
+deciders:
+  - Mateu Aguiló Bosch
+  - Hunter MacDermut
+  - Frank Milne
+title: Use Format.JS for internationalization
+deck: React applications in the registry need to display interface text in multiple languages.
+---
+
+IBM serves content in many languages and locales. We need a tool to render translated text in the language selected for the page embedding the widget.
+
+## Decision
+
+We will use Format.JS to display translations in widgets. For react we will use `react-intl` which uses Format.JS.
+
+### Considerations
+
+The following have played a significant role in choosing this library over others:
+
+  - There are wrappers for different frameworks: these include React and Web Components.
+  - There is an existing opinionated [translation workflow](https://formatjs.io/docs/getting-started/application-workflow) we can follow.
+  - It is a popular choice: it uses standard document formats for translations, it has very good community support, well maintained, and includes detailed documentation.
+
+## Consequences
+
+The interface text for widgets can be translated according to a documented workflow, and can be displayed in the correct language.

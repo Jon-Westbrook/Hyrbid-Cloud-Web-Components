@@ -1,5 +1,5 @@
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
-import storyWithTranslation from "./lib/storyWithTranslation";
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import storyWithTranslation from './lib/storyWithTranslation';
 import { IBMLocale } from '../../common/mapValidLocale';
 
 <Meta
@@ -8,18 +8,21 @@ import { IBMLocale } from '../../common/mapValidLocale';
 />
 
 # Trust Radius
+
 <Story id="widgets-trust-radius-components--default" />
 
 The Trust Radius widget allows content producers to embed a slider with reviews on a particular product. These reviews
 are posted, stored, and moderated in the [Trust Radius](https://www.trustradius.com) service.
 
 ### Loading
+
 When loading, the widget fetches the information from Trust Radius based on the product ID provided by the content
 editor. While it loads data, the widget shows a spinner. Once finished the slider is shown.
 
 <Story id="widgets-trust-radius-components--loading" />
 
 ### Failed Request
+
 If an error happens while loading the widget data or the translations (like
 connectivity issues, the Trust Radius server having problems, etc.) and the data
 cannot be fetched the widget will show an error message.
@@ -27,11 +30,13 @@ cannot be fetched the widget will show an error message.
 <Story id="widgets-trust-radius-components--failed-request" />
 
 ## The Widget
+
 The widget consists of a slider displaying reviews on the selected product.
 
 <Story id="widgets-trust-radius-components--gray" />
 
 ### Themes
+
 The Trust Radius widget supports the [Carbon themes](https://carbondesignsystem.com/guidelines/color/overview/#themes)
 white, cool gray 10, and gray 100.
 

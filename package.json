@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "lint-staged": "lint-staged",
     "lint:ci": "yarn lint -o reports/eslint/issues.json -f json",
-    "lint:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|md)\" && yarn lint --fix",
+    "lint:fix": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|md|mdx)\" && yarn lint --fix",
     "start": "react-scripts start",
     "storybook": "TZ=UTC yarn test:generate-output || true; start-storybook -p 6006",
     "storybook:build": "TZ=UTC yarn test:generate-output || true; build-storybook --output-dir dist/storybook",

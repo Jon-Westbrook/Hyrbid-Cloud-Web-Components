@@ -12,13 +12,19 @@ are only interested in the resulting code you can see [the final PR](https://git
 or <a target="_blank" rel="nofollow noreferrer noopener" href="./docs/emoji-trading-cards--patch.zip">download the patch</a>.
 
 ## Notes
+
 <!-- Document what you have done -->
+
 Starting Point: Someone has pointed me to https://github.ibm.com/MSC-Cloud/hc-widgets
 
 ### Getting the codebase
+
 #### 20/03/2022 13:51
+
 I hit https://github.ibm.com/MSC-Cloud/hc-widgets in my browser. It seems I don't have access. I need a w3id, according to that page. I email my person of contact so they can get me one.
+
 #### 23/03/2022 15:41
+
 I got access to w3id, so I can now fork the repo `MSC-Cloud/hc-widgets` to my account. This leaves it in `Aguilo-Bosch/hc-widgets`.
 
 The `README.md` does not have much info, but there is a section about contributing widgets that links to `CONTRIBUTING.md`.
@@ -26,11 +32,13 @@ The `README.md` does not have much info, but there is a section about contributi
 After executing the commands in the `CONTRIBUTING.md` page, I am presented with the Storybook application.
 
 #### 24/03/2022 21:34
+
 The most relevant part of the documentation is the one under _Contributing_. There is a guide that lets me create a "hello world" widget from scratch. This is useful because I see what the necessary files are and what they do.
 
 After creating the widget in the tutorial, I am ready to start developing mine in my fork `Aguilo-Bosch/hc-widgets`.
 
 #### 25/03/2022 10:49
+
 I have the widget showing in Storybook! However I am struggling to understand how to make i18n work.
 
 In the end the trick was that instead of creating the data as `strings` I needed to use `<FormattedMessage />` from `react-intl`. This way everything works.
@@ -55,6 +63,7 @@ Note to self: extracting the messages again after translation will overwrite the
 I ended up my day transitioning the styles to Emotion, as I see this is the recommendation.
 
 #### 27/03/2022 11:34
+
 Once I submitted a PR from `Aguilo-Bosch/hc-widgets#WIDGET-108--emoji-cards` against `MSC-Cloud/hc-widgets#development` an automated environment called Tugboat started building.
 
 ![CI checks in progress](./docs/ci-checks-in-progress.png)
@@ -64,6 +73,7 @@ Oh! The Tugboat preview environment is ready. It posted an automated comment wit
 ![Tugboat GitHub comment](./docs/tugboat-gh-comment.png)
 
 #### 27/03/2022 14:22
+
 Someone has told me in Slack that I need to check the linked Storybook to see if my widget shows up as I see it locally before they start with the code review.
 
 They have also asked if I can create a Drupal page in the Tugboat link in Drupal with the widget. When I click the link it requests the username and password they provided me in Slack.

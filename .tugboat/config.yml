@@ -24,11 +24,15 @@ services:
         npm install --global yarn
         ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist/storybook" "${DOCROOT}"
         cp ${TUGBOAT_ROOT}/.tugboat/.env.local ${TUGBOAT_ROOT}/.env.local
-      build:
-        - yarn install
-        - ./scripts/compile-all.sh
-        - rm --recursive --force ./dist
-        - yarn storybook:build
+      build: |
+        yarn install
+        yarn compile
+        rm --recursive --force ./dist
+        yarn storybook:build
+        cd "${TUGBOAT_ROOT}/adr-docs"
+        yarn install && yarn build --prefix-paths
+        cd "${TUGBOAT_ROOT}"
+        ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/adr-docs/public" "${TUGBOAT_ROOT}/dist/storybook/architecture"
 
     lighthouse:
       enabled: true

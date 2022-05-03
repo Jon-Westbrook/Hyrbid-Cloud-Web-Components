@@ -102,6 +102,7 @@ There are some tasks that are common across all widgets, this is despite the fac
 If a piece of code is shared among two or more widgets, it should be moved up to the `./common` folder. Your widget **should not** import code from another widget's code base.
 
 ## 5. Compile Widgets Locally
+
 Once your widget shows properly in Storybook you need to ensure that it will compile properly. If a widget does not compile properly it will not function in the CSM.
 
 ```console
@@ -120,4 +121,5 @@ npx @js-widgets/webpack-cli \
 ```
 
 ## 6. Styling a Widget
+
 Given that widgets can be embedded anywhere, and CSS is inherently global to the page, it makes sense to use a CSS-in-JS technology in your widgets. For this reason we **require the use of [Emotion](https://emotion.sh/docs/introduction)** to accept contributed widgets. Take a peek at the Trust Radius widget to see emotion used in a widget.

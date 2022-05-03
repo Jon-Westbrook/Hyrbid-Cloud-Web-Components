@@ -1,0 +1,40 @@
+---
+# In the metadata section, # is a comment, not a heading.
+# If other ADRs are added before this one is finished, set the date to
+# today's date to push it to the top of the list.
+date: 2022-05-03
+
+# New ADRs start at accepted, and no longer relevant ADRs are deprecated.
+status: accepted
+
+# Tags are freeform - see existing ADRs for ideas
+tags:
+  - javascript
+  - developer-experience
+
+# Include anyone who was involved in the decision or discussions. The goal
+# is to have a list for the future so the team has a starting point to ask
+# for any missing historical context.
+deciders:
+  - Mateu Aguiló Bosch
+  - Hunter MacDermut
+title: Enforce Strict Types for TypeScript Code
+deck: Missing types often hide uncovered execution paths that can lead to bugs.
+---
+
+Use of TypeScript is beneficial to the project even without explicit use of the typing system. Type inference by the
+compiler already provides much value and improves developer experience. This helps to avoid bugs integrating with the
+JavaScript framework of choice. However, type inference alone does not help with business logic. We will need to add our types for that.
+
+## Decision
+
+Forbid the use of non-types like `any` via automation tools. Improper typing will result errors that will prevent
+merging the work.
+
+### Implementation Suggestions
+
+The recommended approach is using ESLint. Add the `'plugin:@typescript-eslint/recommended'` plugin. This will include the following rules (among others): `'@typescript-eslint/no-empty-function'`, `'@typescript-eslint/no-empty-interface'`, `'@typescript-eslint/no-explicit-any'`.
+
+## Consequences
+
+The code we produce in the widget system will be more robust, leading to fewer defects and higher efficiency in the quality assurance and development phases.

@@ -4,14 +4,15 @@ import myWidgetImg from '../img/my-widget-storybook.png';
 <Meta title="Documentation/Contributing/Getting Started" />
 
 # Getting Started
+
 This tutorial will guide you through the creation of a new widget from scratch.
 However, it will not explain the concepts behind each one of the steps. See the
 [Usage](/story/documentation-contributing-usage--page) and
 [Tips](/story/documentation-contributing-tips--page) section for more details
 behind the files created in this tutorial.
 
-<a href="./docs/my-widget.zip">This ZIP archive</a> contains all the code in
-this guide at the time of this writing.
+<a href="./docs/my-widget.zip">This ZIP archive</a> contains all the code in this
+guide at the time of this writing.
 
 ## 1. Create the Widget
 
@@ -105,11 +106,13 @@ export default MyWidget;
 ```
 
 #### Compile i18n messages
+
 At this point you will need to compile the messages. Since we are not sending
 the messages for human translation we will see all messages in English
 (<em>Greeting</em>).
 
 Go to the terminal and extract all the messages:
+
 ```console
 ./scripts/extract-all.sh my-widget
 ```
@@ -127,6 +130,7 @@ Then, back on the terminal, we'll compile the translated messages.
 ```
 
 ### `src/apps/my-widget/lib/storyWithTranslation.tsx`
+
 In order to support translations inside of Storybook, and not just the compiled
 widget, we need to add support for it.
 
@@ -183,6 +187,7 @@ export default storyWithTranslation;
 ```
 
 ### `src/apps/my-widget/components/MyWidget.stories.tsx`
+
 This file contains the standalone stories. We declare stories here instead of in the `widget.stories.mdx` files because
 this is compatible with snapshot testing via [Storyshots](https://storybook.js.org/addons/@storybook/addon-storyshots).
 
@@ -251,6 +256,7 @@ export default stories;
 ```
 
 ### `src/apps/my-widget/widget.stories.mdx`
+
 This file contains the main component documentation. Consider this as an evolution of a README.md for the component. It
 allows for common MarkDown documenting, but it lets you embed stories along with the docs.
 
@@ -292,15 +298,18 @@ greeting.
 <Story id="widgets-my-widget-components-mywidget--with-excitement-emoji" />
 
 ## i18n
+
 The interface strings can be translated, as proven by:
 
 <Story id="widgets-my-widget-components-mywidget--spanish" />
 
 ## Props
+
 <ArgsTable of={MyWidget} />
 ```
 
 ### `src/apps/my-widget/index.tsx`
+
 This file does not have any impact in Storybook. This is the code that will let
 the CMS embed the widget in the page. This is mostly boilerplate, and its main
 purpose is to collect the editorial input left in the DOM and pass it as React
@@ -354,6 +363,7 @@ export default render;
 ```
 
 ### `src/apps/my-widget/MyWidget.widget.js`
+
 This is the widget definition file. See [Usage](/story/documentation-contributing-usage--page) documentation for more info about
 it.
 
@@ -389,6 +399,7 @@ module.exports = {
 ```
 
 ## 2. The Result
+
 Once the widget code is in place, running Storybook will give you a running
 preview of the widget and its documentation.
 
@@ -398,10 +409,11 @@ preview of the widget and its documentation.
 
 The main thing to notice is that you can see how your component `MyWidget`
 renders with different sets of props <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>1</span>. This will render the React component
-and even apply translations to the interface text <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>2</span><small>*</small>.
+and even apply translations to the interface text <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>2</span><small>\*</small>.
 
-<small style={{ fontSize: '0.8em' }}>* Note that content is not translated in
-  this example for simplicity.</small>
+<small style={{ fontSize: '0.8em' }}>
+  * Note that content is not translated in this example for simplicity.
+</small>
 
 Another notable thing is that Storybook will parse your `MyWidgetProps` type to
 generate the knobs <span style={{fontWeight: 'bolder', color: 'white', padding: '5px 10px', backgroundColor: '#241f31', borderRadius: '25px'}}>3</span>. These allow you to change the props passed to the
