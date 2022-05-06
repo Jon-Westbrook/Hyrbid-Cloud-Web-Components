@@ -1,10 +1,9 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
 import StarRating from '../StarRating/StarRating';
 import Truncate from 'react-truncate';
 import parse from 'html-react-parser';
-import { css, SerializedStyles } from '@emotion/react';
 import { useIntl } from 'react-intl';
+import './CardBody.scss';
 
 export interface CardBodyProps {
   /** Shown as the main text on the card. */
@@ -33,7 +32,7 @@ const CardBody: React.FC<CardBodyProps> = ({
       <div>
         <StarRating starCount={5} value={rating / 2.0} />
 
-        <span className="caption-01" css={styles.dateline}>
+        <span className="trust-radius-widget__cardbody__dateline">
           {' '}
           {created ? (
             formatDate(created, {
@@ -46,11 +45,8 @@ const CardBody: React.FC<CardBodyProps> = ({
           )}
         </span>
       </div>
-      <div className="ibm-rule" css={styles.cardhr}>
-        <hr css={styles.cardhr} />
-      </div>
-
-      <div css={styles.content} className="content ibm-pb-1">
+      <div className="trust-radius-widget__cardbody__cardhr" />
+      <div className="trust-radius-widget__cardbody__content">
         <Truncate lines={maxLines} ellipsis={<span>... </span>}>
           {parse(text)}
         </Truncate>
@@ -59,26 +55,4 @@ const CardBody: React.FC<CardBodyProps> = ({
   );
 };
 
-const styles: Record<string, SerializedStyles> = {
-  content: css`
-    color: #282828;
-    font-family: 'IBM Plex Sans';
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 22px;
-  `,
-  dateline: css`
-    float: right;
-    font-family: 'IBM Plex Sans';
-    font-size: 12px;
-    letter-spacing: 0.32px;
-    color: #393939;
-  `,
-  cardhr: css`
-    border-top: 1px solid #bebebe;
-    &:hover {
-      text-decoration: none;
-    }
-  `,
-};
 export default CardBody;

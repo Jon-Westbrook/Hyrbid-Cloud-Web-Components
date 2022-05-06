@@ -68,9 +68,7 @@ export const reviewsApi = createApi({
   endpoints: (builder) => ({
     getReviewsById: builder.query({
       query: (trustRadiusId) => `${trustRadiusId}`,
-      transformResponse: (response: ProductData) => {
-        return normalizeProductData(response);
-      },
+      transformResponse: normalizeProductData,
     }),
   }),
 });

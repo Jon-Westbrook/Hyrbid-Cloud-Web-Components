@@ -1,6 +1,8 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
-import { css, SerializedStyles } from '@emotion/react';
+import { Button } from 'carbon-components-react';
+import { ChevronLeft32, ChevronRight32 } from '@carbon/icons-react';
+import { allReviewsButton } from './CardSlider';
+import './CardSliderDots.scss';
 
 export interface CardSliderDotsProps {
   /** Number of rows for the nav section. */
@@ -9,6 +11,8 @@ export interface CardSliderDotsProps {
   onPrevious: () => void;
   /** Action to perform when the next button is triggered. */
   onNext: () => void;
+  reviewUrl: string;
+  dotsClass?: string;
 }
 
 const CardSliderDots: React.FC<CardSliderDotsProps> = ({
@@ -16,115 +20,39 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
   numRows,
   onPrevious,
   onNext,
+  reviewUrl,
+  dotsClass,
 }) => {
   return (
-    <div className="slick-dots" css={styles.dots}>
-      <div css={styles.navdiv} className="navdiv">
-        <button
-          className="button ibm-btn-small"
-          css={styles.previous}
+    <div className={dotsClass}>
+      {allReviewsButton(reviewUrl)}
+      <div className="trust-radius-widget__cardsliderdots__dotscontainer">
+        <Button
+          renderIcon={ChevronLeft32}
+          iconDescription="Previous"
+          hasIconOnly
           onClick={() => onPrevious()}
         />
-        <ul css={styles.numlist} className="body-short-01">
+        <ul className="trust-radius-widget__cardsliderdots__numlist">
           {children}
         </ul>
-        <ul className="body-short-01" css={styles.numlist}>
-          <div className="page" style={{ width: '6px' }}>
-            /
-          </div>
+        <ul className="trust-radius-widget__cardsliderdots__numlist">
+          <div>/</div>
         </ul>
-        <ul css={styles.numlist} className="body-short-01">
-          <div className="page" style={{ width: '30px' }}>
+        <ul className="trust-radius-widget__cardsliderdots__numlist">
+          <div className="trust-radius-widget__cardsliderpager__pager">
             {numRows}
           </div>
         </ul>
-        <button
-          className="button ibm-btn-small"
-          css={styles.next}
+        <Button
+          renderIcon={ChevronRight32}
+          iconDescription="Next"
+          hasIconOnly
           onClick={() => onNext()}
         />
       </div>
     </div>
   );
-};
-
-const styles: Record<string, SerializedStyles> = {
-  dots: css`
-    color: #000;
-    border-radius: 0px;
-    padding: 10px;
-    border: 0px;
-  `,
-  navdiv: css`
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  `,
-  next: css`
-    width: 40px;
-    height: 40px;
-    background-color: #1f71ff;
-    color: #fff;
-    font-family: icons-ibm-v12;
-    font-size: 25px;
-    float: right;
-    position: relative;
-    bottom: 10px;
-    border: 0px;
-    &:after {
-      font-family: icons-ibm-v12;
-      content: '';
-    }
-    & :hover {
-      background-color: #0f62fe;
-      color: #fff;
-      border: 0px;
-    }
-    & a:active {
-      border: 0px;
-    }
-    margin-right: 1rem;
-  `,
-  previous: css`
-    width: 40px;
-    height: 40px;
-    background-color: #1f71ff;
-    border: 0px;
-    color: #fff;
-    font-family: icons-ibm-v12;
-    font-size: 25px;
-    margin-right: 10px;
-    float: left;
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    &:after {
-      font-family: icons-ibm-v12;
-      content: '';
-    }
-    &:hover {
-      color: #fff;
-      background-color: #0f62fe;
-      border: 0px;
-    }
-    &:active {
-      border: 0px;
-    }
-  `,
-  numlist: css`
-    margin: 0px !important;
-    font-family: 'IBM Plex Sans';
-    & li.slick-active {
-      margin-left: 0px !important;
-    }
-    & li {
-      display: none;
-    }
-    & .slick-active {
-      display: block;
-    }
-  `,
 };
 
 export default CardSliderDots;

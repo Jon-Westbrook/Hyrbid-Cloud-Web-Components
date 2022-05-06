@@ -1,0 +1,25 @@
+.trust-radius-widget {
+  &__sliderheading {
+    &__headlink {
+      font-family: 'IBM Plex Sans';
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 26px;
+      padding: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      span {
+        padding-right: 4px;
+      }
+    }
+
+    &__cardlinks {
+      text-decoration: none !important;
+    }
+
+    &__headimage {
+      width: 160px;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.trust-radius-widget {
+  &__card {
+    &__WHITE {
+      border: 1px solid #f4f4f4;
+      background: #fff;
+
+      &:hover {
+        background-color: #e6e8ec;
+      }
+    }
+
+    &__GRAY_10 {
+      border: 1px solid #fff;
+      background: #f2f4f8;
+
+      &:hover {
+        background-color: #e6e8ec;
+      }
+    }
+
+    &__GRAY_100 {
+      color: #f3f3f3;
+      border: 1px solid #161616;
+      background: #252525;
+
+      &:hover {
+        background-color: #353535;
+      }
+
+      &__content {
+        color: #c6c6c6;
+      }
+    }
+
+    &__content {
+      height: 100%;
+    }
+
+    &__bodyfootercontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 308px;
+    }
+
+    &__cardlinks {
+      text-decoration: none !important;
+    }
+
+    &__cardheight {
+      height: 450px;
+      overflow: hidden;
+      text-decoration: none;
+      padding: 1rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__cardcontent {
+      height: 350px;
+      overflow: hidden;
+      padding: 16px !important;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

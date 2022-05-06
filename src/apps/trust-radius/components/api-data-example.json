@@ -33,7 +33,7 @@
     "debug": false,
     "products": [
       {
-        "_id": "5bc9e83b42861a00167c409a",
+        "_id": "fake-trid",
         "slug": "ibm-cloud-virtual-servers",
         "name": "IBM Cloud Virtual Servers",
         "referralKey": "ibmcvs20180",
@@ -149,7 +149,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "6074041f32077d0003267348",
             "slug": "ibm-cloud-virtual-servers-2021-04-12-03-26-07",
@@ -211,7 +211,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "6074041f32077d0003267348",
             "slug": "ibm-cloud-virtual-servers-2021-04-12-03-26-07",
@@ -297,7 +297,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "606b4765b5457b0003d5cbd4",
             "slug": "ibm-cloud-virtual-servers-2021-04-05-12-22-45",
@@ -360,7 +360,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "606b4765b5457b0003d5cbd4",
             "slug": "ibm-cloud-virtual-servers-2021-04-05-12-22-45",
@@ -446,7 +446,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "60756a6f9f915e0003f3fbda",
             "slug": "ibm-cloud-virtual-servers-2021-04-13-04-54-54",
@@ -526,7 +526,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "602f0e3f3db57d004665573a",
             "slug": "ibm-cloud-virtual-servers-2021-02-18-19-02-55",
@@ -617,7 +617,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "5c647b7c978b1b003ddcbc63",
             "slug": "ibm-cloud-virtual-servers-2019-02-13-14-18-04",
@@ -726,7 +726,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "5c687bc61a9e43003d00c934",
             "slug": "ibm-cloud-virtual-servers-2019-02-16-15-08-22",
@@ -801,7 +801,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "5c687bc61a9e43003d00c934",
             "slug": "ibm-cloud-virtual-servers-2019-02-16-15-08-22",
@@ -897,7 +897,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "5c65c559b1332d003e694222",
             "slug": "ibm-cloud-virtual-servers-2019-02-14-13-45-29",
@@ -983,7 +983,7 @@
               "data": [80, 97, 217, 46, 236, 59, 191, 2, 0, 0, 0, 205]
             }
           },
-          "product": "5bc9e83b42861a00167c409a",
+          "product": "fake-trid",
           "review": {
             "_id": "5613f6c5c0a275d200a31fd2",
             "slug": "softlayer-2015-10-06-11-28-53",

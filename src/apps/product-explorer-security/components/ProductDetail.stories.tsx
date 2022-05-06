@@ -2,12 +2,19 @@ import ProductDetail from './ProductDetail';
 import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
-import storyWithRedux from '../lib/storyWithRedux';
+import defaultFakeState from '../lib/redux/defaultFakeState';
+import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
 
 const stories: Meta = {
   component: ProductDetail,
   title: 'Widgets/Product Explorer Security/Components/Product Detail',
-  decorators: [storyWithTranslation(), storyWithRedux()],
+  decorators: [
+    storyWithTranslation(),
+    storyWithReduxDecorator({
+      defaultFakeState,
+      identifier: 'Product Explorer Security - Product Detail',
+    }),
+  ],
 };
 
 const product = {

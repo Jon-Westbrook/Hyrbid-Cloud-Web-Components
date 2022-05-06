@@ -7,7 +7,7 @@ const { Loading, FailedRequest } = composeStories(stories);
 describe('TrustRadius', () => {
   it('renders a spinner while loading', () => {
     const { container } = render(<Loading />);
-    const element = container.querySelector('.ibm-spinner');
+    const element = container.querySelector('.bx--loading');
     expect(element).not.toBeNull();
   });
 

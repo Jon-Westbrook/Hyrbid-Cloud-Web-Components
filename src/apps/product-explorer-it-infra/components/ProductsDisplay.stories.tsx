@@ -2,7 +2,8 @@ import ProductsDisplay from './ProductsDisplay';
 import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
-import storyWithRedux from '../lib/storyWithRedux';
+import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
+import defaultFakeState from '../lib/redux/defaultFakeState';
 import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper';
 
 const stories: Meta = {
@@ -10,7 +11,10 @@ const stories: Meta = {
   title: 'Widgets/Product Explorer It-Infra/Components/Products Display',
   decorators: [
     storyWithTranslation(),
-    storyWithRedux(),
+    storyWithReduxDecorator({
+      defaultFakeState,
+      identifier: 'Product Explorer IT Infra - Products Display',
+    }),
     storyWithClassNameWrapper('product-explorer-it-infra'),
   ],
 };

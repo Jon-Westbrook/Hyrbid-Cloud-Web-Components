@@ -438,7 +438,7 @@ If you want to know more check out [the documentation page for `@js-widgets/webp
 In `MSC-Cloud/hc-widgets` we execute the following command to compile widgets in [`.travis.yml`](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/.travis.yml#L35=):
 
 ```console
-npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
+NODE_ENV=production npx @js-widgets/webpack-cli --existing-registry="${PUBLIC_URL}/registry.json" --output-dir="${TRAVIS_BUILD_DIR}/widget-registry" "${TRAVIS_BUILD_DIR}"
 ```
 
 The results of the compilation (the JS and CSS that the CMS will put in the page) is uploaded to Cloud Object Storage using [this script](https://github.ibm.com/MSC-Cloud/hc-widgets/blob/development/scripts/ci/upload-to-cos.sh). Keep in mind that, in the future, we may upload to a different location.

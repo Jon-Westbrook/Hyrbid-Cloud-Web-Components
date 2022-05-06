@@ -37,9 +37,11 @@ function determineSlidesDisplay(numberOfCards: number, width: number) {
 const buildSliderSettings = (
   numberOfCards: number,
   width: number,
+  trid: string,
 ): SliderSettings => {
   return {
     dots: true,
+    dotsClass: `trust-radius-widget__slick-dots slick-dots-for-${trid}`,
     infinite: true,
     speed: 500,
     slidesToShow: determineSlidesDisplay(numberOfCards, width),

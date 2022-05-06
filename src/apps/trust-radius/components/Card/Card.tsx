@@ -1,12 +1,11 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
-import { css, SerializedStyles } from '@emotion/react';
 import CardHeading from './CardHeading';
 import CardFooter from './CardFooter';
 import CardBody from './CardBody';
 import EmptyCard from './EmptyCard';
 import { useGetReviewsByIdQuery } from '../../lib/redux/slices/fetchReviewsSlice';
 import { useAppSelector } from '../../lib/redux/hooks';
+import './Card.scss';
 
 export interface CardProps {
   /** Data for the review */
@@ -16,7 +15,8 @@ export interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ reviewIndex, trustRadiusId }) => {
   const { data } = useGetReviewsByIdQuery(trustRadiusId);
-  const review = data?.reviews[reviewIndex];
+  const reviews = data?.reviews;
+  const review = reviews ? reviews[reviewIndex] : undefined;
   const theme = useAppSelector((state) => state.theme);
 
   if (!review) {
@@ -26,93 +26,37 @@ export const Card: React.FC<CardProps> = ({ reviewIndex, trustRadiusId }) => {
   return (
     <>
       <a
-        css={cardStyles.cardlinks}
+        className="trust-radius-widget__card__cardlinks"
         href={`${cardUrl} ${review.slug}`}
         target="_new"
       >
         <div
-          className="ibm-card"
-          css={[cardStyles.cardheight, cardStyles[theme]]}
+          className={`trust-radius-widget__card__cardheight trust-radius-widget__card__${theme}`}
         >
-          <div className="ibm-card__content" css={cardStyles.cardcontent}>
+          <div className="trust-radius-widget__card__content">
             <CardHeading text={review.heading} />
-            <CardBody
-              text={review.quotes
-                .map((quote) => `${quote}<br/><br/> `)
-                .join('')}
-              rating={review.rating}
-              createdDate={review.date}
-              maxLines={7}
-            />
-            <CardFooter
-              name={review.name}
-              jobTitle={review.title}
-              companyName={review.company?.name}
-              companySize={review.company?.size}
-              industry={review.company?.industry}
-            />
+            <div className="trust-radius-widget__card__bodyfootercontainer">
+              <CardBody
+                text={review.quotes
+                  .map((quote) => `${quote}<br/><br/> `)
+                  .join('')}
+                rating={review.rating}
+                createdDate={review.date}
+                maxLines={7}
+              />
+              <CardFooter
+                name={review.name}
+                jobTitle={review.title}
+                companyName={review.company?.name}
+                companySize={review.company?.size}
+                industry={review.company?.industry}
+              />
+            </div>
           </div>
         </div>
       </a>
     </>
   );
-};
-
-export const cardStyles: Record<string, SerializedStyles> = {
-  WHITE: css`
-    border: 1px solid #f4f4f4;
-  `,
-  GRAY_10: css`
-    border: 1px solid #fff;
-    background: #f2f4f8;
-  `,
-  GRAY_100: css`
-    color: #f3f3f3;
-    border: 1px solid #161616;
-    background: #252525;
-    &:hover {
-      background-color: #353535;
-    }
-    .ibm-card__content,
-    .body-short-01 {
-      color: #c6c6c6;
-    }
-    .ibm-rule,
-    .ibm-rule hr {
-      border-top: 1px solid #565656;
-    }
-    .heading,
-    .content,
-    .caption-01,
-    .footer {
-      color: #c6c6c6;
-    }
-    .ibm-ind-link {
-      background-color: #161616;
-    }
-  `,
-  cardlinks: css`
-    text-decoration: none !important;
-  `,
-  cardheight: css`
-    height: 450px;
-    overflow: hidden;
-    color: #000 !important;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: none;
-      background-color: #e6e8ec;
-    }
-  `,
-  cardcontent: css`
-    height: 350px;
-    overflow: hidden;
-    padding: 16px !important;
-    &:hover {
-      text-decoration: none;
-    }
-  `,
 };
 
 export default Card;

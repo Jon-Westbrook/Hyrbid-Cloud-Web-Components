@@ -1,13 +1,19 @@
-import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import ProductExplorerItInfra from './ProductExplorerItInfra';
 import storyWithTranslation from '../lib/storyWithTranslation';
-import storyWithRedux from '../lib/storyWithRedux';
+import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
+import defaultFakeState from '../lib/redux/defaultFakeState';
 
 const stories: Meta = {
   title: 'Widgets/Product Explorer IT-Infra/Components',
   component: ProductExplorerItInfra,
-  decorators: [storyWithTranslation(), storyWithRedux()],
+  decorators: [
+    storyWithTranslation(),
+    storyWithReduxDecorator({
+      defaultFakeState,
+      identifier: 'Product Explorer IT Infra',
+    }),
+  ],
 };
 
 const Template: StoryFn<void> = () => <ProductExplorerItInfra />;

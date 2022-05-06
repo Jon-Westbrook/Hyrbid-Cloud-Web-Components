@@ -9,20 +9,31 @@ module.exports = {
     properties: {
       fields: {
         type: 'object',
+        required: ['trust-radius-id'],
         properties: {
           'trust-radius-id': {
             type: 'string',
             title: 'Trust Radius ID',
             description:
-              'The ID found within the trust radius reviews URL that activates the product reviews',
+              'The ID found within the trust radius reviews URL that activates the product reviews.',
             examples: ['5e20addcac72e40024d9a00a'],
           },
-          'use-google-stars': {
-            type: 'boolean',
-            title: 'Use Google Review Stars',
+          theme: {
+            type: 'string',
+            title: 'Carbon Theme',
             description:
-              'Enable Stars and review data on this pages Google search results? True or False',
-            examples: [false, true],
+              "Force the palette of the widget to 'White', 'Cool Gray 10', or 'Black'. Otherwise the CMS should provide a value based on the page context.",
+            default: 'null',
+            examples: ['WHITE'],
+            enum: ['null', 'WHITE', 'GRAY_10', 'GRAY_100'],
+          },
+          'google-stars': {
+            type: 'string',
+            title: 'Google Review Stars',
+            description: `Enable Stars and review data on this page's Google search results.`,
+            default: 'false',
+            examples: ['false'],
+            enum: ['true', 'false'],
           },
         },
       },
@@ -53,5 +64,34 @@ module.exports = {
       'zh-cn',
       'zh-tw',
     ],
+    uiFormSchema: {
+      'trust-radius-id': {
+        'ui:placeholder': '5e20addcac72e40024d9a00a',
+      },
+      theme: {
+        'ui:widget': 'select',
+        'ui:enum': {
+          labels: {
+            mappings: {
+              null: '-Derive value from page-',
+              WHITE: 'White',
+              GRAY_10: 'Cool Gray 10',
+              GRAY_100: 'Gray 100',
+            },
+          },
+        },
+      },
+      'google-stars': {
+        'ui:widget': 'select',
+        'ui:enum': {
+          labels: {
+            mappings: {
+              true: 'yes',
+              false: 'no',
+            },
+          },
+        },
+      },
+    },
   },
 };

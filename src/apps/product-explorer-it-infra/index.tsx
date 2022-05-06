@@ -9,6 +9,8 @@ import { store } from './lib/redux/store';
 
 import { RenderFn } from '../../types/widgets';
 
+import './index.scss';
+
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
     instanceId,

@@ -3,7 +3,7 @@
 exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -14117,7 +14117,7 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 exports[`Storyshots Widgets/Product Explorer IT-Infra/Components Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -16342,7 +16342,7 @@ exports[`Storyshots Widgets/Product Explorer IT-Infra/Components Default 1`] = `
 exports[`Storyshots Widgets/Product Explorer It-Infra/Components/Product Detail Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -16539,7 +16539,7 @@ exports[`Storyshots Widgets/Product Explorer It-Infra/Components/Product Detail 
 exports[`Storyshots Widgets/Product Explorer It-Infra/Components/Products Display Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -18749,7 +18749,7 @@ exports[`Storyshots Widgets/Product Explorer It-Infra/Components/Products Displa
 exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -19509,7 +19509,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
 exports[`Storyshots Widgets/Product Explorer Security/Components/Product Detail Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -19571,7 +19571,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Product Detail 
 exports[`Storyshots Widgets/Product Explorer Security/Components/Products Display Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -20307,23 +20307,47 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
 exports[`Storyshots Widgets/Trust Radius/Components Dark 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="Widget ibm-grid-seamless css-14y5oy4-TrustRadius"
+      class="trust-radius-widget trust-radius-widget__GRAY_100"
     >
       <div
-        class="css-niej8x-TrustRadius"
+        class="trust-radius-widget__wrapper"
       >
         <div
-          class="css-1emhl37-TrustRadius"
+          class="trust-radius-widget__message"
         >
-          <p
-            class="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center"
-          />
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-1"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-1"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -20334,23 +20358,47 @@ exports[`Storyshots Widgets/Trust Radius/Components Dark 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="Widget ibm-grid-seamless css-14y5oy4-TrustRadius"
+      class="trust-radius-widget trust-radius-widget__WHITE"
     >
       <div
-        class="css-niej8x-TrustRadius"
+        class="trust-radius-widget__wrapper"
       >
         <div
-          class="css-1emhl37-TrustRadius"
+          class="trust-radius-widget__message"
         >
-          <p
-            class="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center"
-          />
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-3"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-3"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -20361,23 +20409,47 @@ exports[`Storyshots Widgets/Trust Radius/Components Default 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components Failed Request 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="Widget ibm-grid-seamless css-14y5oy4-TrustRadius"
+      class="trust-radius-widget trust-radius-widget__WHITE"
     >
       <div
-        class="css-niej8x-TrustRadius"
+        class="trust-radius-widget__wrapper"
       >
         <div
-          class="css-1emhl37-TrustRadius"
+          class="trust-radius-widget__message"
         >
-          <p
-            class="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center"
-          />
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-5"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-5"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -20388,23 +20460,47 @@ exports[`Storyshots Widgets/Trust Radius/Components Failed Request 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components Gray 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="Widget ibm-grid-seamless css-14y5oy4-TrustRadius"
+      class="trust-radius-widget trust-radius-widget__GRAY_10"
     >
       <div
-        class="css-niej8x-TrustRadius"
+        class="trust-radius-widget__wrapper"
       >
         <div
-          class="css-1emhl37-TrustRadius"
+          class="trust-radius-widget__message"
         >
-          <p
-            class="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center"
-          />
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-7"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-7"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -20415,23 +20511,47 @@ exports[`Storyshots Widgets/Trust Radius/Components Gray 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components Loading 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="Widget ibm-grid-seamless css-14y5oy4-TrustRadius"
+      class="trust-radius-widget trust-radius-widget__WHITE"
     >
       <div
-        class="css-niej8x-TrustRadius"
+        class="trust-radius-widget__wrapper"
       >
         <div
-          class="css-1emhl37-TrustRadius"
+          class="trust-radius-widget__message"
         >
-          <p
-            class="ibm-spinner ibm-p ibm-mt-2 ibm-mb-2 ibm-center"
-          />
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-9"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-9"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -20439,105 +20559,154 @@ exports[`Storyshots Widgets/Trust Radius/Components Loading 1`] = `
 </div>
 `;
 
-exports[`Storyshots Widgets/Trust Radius/Components/Slider Dark 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components One Column 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
-  />
+  >
+    <div
+      class="trust-radius-widget trust-radius-widget__WHITE"
+    >
+      <div
+        class="trust-radius-widget__wrapper"
+      >
+        <div
+          class="trust-radius-widget__message"
+        >
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-11"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-11"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots Widgets/Trust Radius/Components/Slider Default 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components Two Columns 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
-  />
-</div>
-`;
-
-exports[`Storyshots Widgets/Trust Radius/Components/Slider Gray 1`] = `
-<div
-  role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
->
-  <div
-    style="position: relative; width: 100%; z-index: 0;"
-  />
-</div>
-`;
-
-exports[`Storyshots Widgets/Trust Radius/Components/Slider One Column 1`] = `
-<div
-  role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
->
-  <div
-    style="position: relative; width: 100%; z-index: 0;"
-  />
-</div>
-`;
-
-exports[`Storyshots Widgets/Trust Radius/Components/Slider Two Columns 1`] = `
-<div
-  role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
->
-  <div
-    style="position: relative; width: 100%; z-index: 0;"
-  />
+  >
+    <div
+      class="trust-radius-widget trust-radius-widget__WHITE"
+    >
+      <div
+        class="trust-radius-widget__wrapper"
+      >
+        <div
+          class="trust-radius-widget__message"
+        >
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-13"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-13"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Dark 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="ibm-card css-115mfu2-EmptyCard"
+      class="trust-radius-widget trust-radius-widget__GRAY_100"
     >
       <div
-        class="ibm-card__content"
+        class="trust-radius-widget__card__cardheight"
       >
-        <p
-          class="heading ibm-type-e css-1xef1la-CardHeading"
-        >
-          <span
-            width="0"
+        <div>
+          <p
+            class="trust-radius-widget__cardheading__heading"
           >
-            <span />
-            <span />
             <span
-              style="position: fixed; visibility: hidden; top: 0px; left: 0px;"
+              width="0"
             >
-              <span>
-                ... 
+              <span />
+              <span />
+              <span
+                style="position: fixed; visibility: hidden; top: 0px; left: 0px;"
+              >
+                <span>
+                  ... 
+                </span>
               </span>
             </span>
-          </span>
-        </p>
-        <div
-          class="ibm-rule css-0"
-        >
-          <hr
-            class="css-0"
-          />
-        </div>
-        <div
-          class="content ibm-pb-1 css-0"
-        >
-          <em>
-            This review contains no quotes.
-          </em>
+          </p>
+          <div
+            class="trust-radius-widget__card__cardhr"
+          >
+            <hr
+              class="trust-radius-widget__card__cardhr"
+            />
+          </div>
+          <div
+            class="trust-radius-widget__card__content"
+          >
+            <em>
+              This review contains no quotes.
+            </em>
+          </div>
         </div>
       </div>
     </div>
@@ -20548,47 +20717,49 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Dark 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="ibm-card css-115mfu2-EmptyCard"
+      class="trust-radius-widget trust-radius-widget__WHITE"
     >
       <div
-        class="ibm-card__content"
+        class="trust-radius-widget__card__cardheight"
       >
-        <p
-          class="heading ibm-type-e css-1xef1la-CardHeading"
-        >
-          <span
-            width="0"
+        <div>
+          <p
+            class="trust-radius-widget__cardheading__heading"
           >
-            <span />
-            <span />
             <span
-              style="position: fixed; visibility: hidden; top: 0px; left: 0px;"
+              width="0"
             >
-              <span>
-                ... 
+              <span />
+              <span />
+              <span
+                style="position: fixed; visibility: hidden; top: 0px; left: 0px;"
+              >
+                <span>
+                  ... 
+                </span>
               </span>
             </span>
-          </span>
-        </p>
-        <div
-          class="ibm-rule css-0"
-        >
-          <hr
-            class="css-0"
-          />
-        </div>
-        <div
-          class="content ibm-pb-1 css-0"
-        >
-          <em>
-            This review contains no quotes.
-          </em>
+          </p>
+          <div
+            class="trust-radius-widget__card__cardhr"
+          >
+            <hr
+              class="trust-radius-widget__card__cardhr"
+            />
+          </div>
+          <div
+            class="trust-radius-widget__card__content"
+          >
+            <em>
+              This review contains no quotes.
+            </em>
+          </div>
         </div>
       </div>
     </div>
@@ -20599,47 +20770,49 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Default 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Gray 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="ibm-card css-115mfu2-EmptyCard"
+      class="trust-radius-widget trust-radius-widget__GRAY_10"
     >
       <div
-        class="ibm-card__content"
+        class="trust-radius-widget__card__cardheight"
       >
-        <p
-          class="heading ibm-type-e css-1xef1la-CardHeading"
-        >
-          <span
-            width="0"
+        <div>
+          <p
+            class="trust-radius-widget__cardheading__heading"
           >
-            <span />
-            <span />
             <span
-              style="position: fixed; visibility: hidden; top: 0px; left: 0px;"
+              width="0"
             >
-              <span>
-                ... 
+              <span />
+              <span />
+              <span
+                style="position: fixed; visibility: hidden; top: 0px; left: 0px;"
+              >
+                <span>
+                  ... 
+                </span>
               </span>
             </span>
-          </span>
-        </p>
-        <div
-          class="ibm-rule css-0"
-        >
-          <hr
-            class="css-0"
-          />
-        </div>
-        <div
-          class="content ibm-pb-1 css-0"
-        >
-          <em>
-            This review contains no quotes.
-          </em>
+          </p>
+          <div
+            class="trust-radius-widget__card__cardhr"
+          >
+            <hr
+              class="trust-radius-widget__card__cardhr"
+            />
+          </div>
+          <div
+            class="trust-radius-widget__card__content"
+          >
+            <em>
+              This review contains no quotes.
+            </em>
+          </div>
         </div>
       </div>
     </div>
@@ -20650,7 +20823,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card Gray 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -20711,21 +20884,17 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Default 1`]
         </svg>
       </div>
       <span
-        class="caption-01 css-qzz86z-CardBody"
+        class="trust-radius-widget__cardbody__dateline"
       >
          
         Apr 16, 2021
       </span>
     </div>
     <div
-      class="ibm-rule css-qenkmq-CardBody"
-    >
-      <hr
-        class="css-qenkmq-CardBody"
-      />
-    </div>
+      class="trust-radius-widget__cardbody__cardhr"
+    />
     <div
-      class="content ibm-pb-1 css-1czkac2-CardBody"
+      class="trust-radius-widget__cardbody__content"
     >
       <span
         width="0"
@@ -20750,7 +20919,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Default 1`]
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Empty Date 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -20811,20 +20980,16 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Empty Date 
         </svg>
       </div>
       <span
-        class="caption-01 css-qzz86z-CardBody"
+        class="trust-radius-widget__cardbody__dateline"
       >
          
       </span>
     </div>
     <div
-      class="ibm-rule css-qenkmq-CardBody"
-    >
-      <hr
-        class="css-qenkmq-CardBody"
-      />
-    </div>
+      class="trust-radius-widget__cardbody__cardhr"
+    />
     <div
-      class="content ibm-pb-1 css-1czkac2-CardBody"
+      class="trust-radius-widget__cardbody__content"
     >
       <span
         width="0"
@@ -20849,7 +21014,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Empty Date 
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Invalid Date 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -20910,20 +21075,16 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Invalid Dat
         </svg>
       </div>
       <span
-        class="caption-01 css-qzz86z-CardBody"
+        class="trust-radius-widget__cardbody__dateline"
       >
          
       </span>
     </div>
     <div
-      class="ibm-rule css-qenkmq-CardBody"
-    >
-      <hr
-        class="css-qenkmq-CardBody"
-      />
-    </div>
+      class="trust-radius-widget__cardbody__cardhr"
+    />
     <div
-      class="content ibm-pb-1 css-1czkac2-CardBody"
+      class="trust-radius-widget__cardbody__content"
     >
       <span
         width="0"
@@ -20948,7 +21109,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Invalid Dat
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Truncated 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21005,21 +21166,17 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Truncated 1
         </svg>
       </div>
       <span
-        class="caption-01 css-qzz86z-CardBody"
+        class="trust-radius-widget__cardbody__dateline"
       >
          
         Apr 16, 2021
       </span>
     </div>
     <div
-      class="ibm-rule css-qenkmq-CardBody"
-    >
-      <hr
-        class="css-qenkmq-CardBody"
-      />
-    </div>
+      class="trust-radius-widget__cardbody__cardhr"
+    />
     <div
-      class="content ibm-pb-1 css-1czkac2-CardBody"
+      class="trust-radius-widget__cardbody__content"
     >
       <span
         width="0"
@@ -21044,19 +21201,17 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Body Truncated 1
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/EmptyCard Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="ibm-card css-115mfu2-EmptyCard"
+      class="trust-radius-widget__card__cardheight"
     >
-      <div
-        class="ibm-card__content"
-      >
+      <div>
         <p
-          class="heading ibm-type-e css-1xef1la-CardHeading"
+          class="trust-radius-widget__cardheading__heading"
         >
           <span
             width="0"
@@ -21073,14 +21228,14 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/EmptyCard Defaul
           </span>
         </p>
         <div
-          class="ibm-rule css-0"
+          class="trust-radius-widget__card__cardhr"
         >
           <hr
-            class="css-0"
+            class="trust-radius-widget__card__cardhr"
           />
         </div>
         <div
-          class="content ibm-pb-1 css-0"
+          class="trust-radius-widget__card__content"
         >
           <em>
             This review contains no quotes.
@@ -21095,13 +21250,13 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/EmptyCard Defaul
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="footer ibm-type-a css-1uaudof-CardFooter"
+      class="trust-radius-widget__cardfooter__byline"
     >
       John Doe
       <br />
@@ -21120,13 +21275,13 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Default 1
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Incomplete Data 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="footer ibm-type-a css-1uaudof-CardFooter"
+      class="trust-radius-widget__cardfooter__byline"
     >
       John Doe
       <br />
@@ -21143,13 +21298,13 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Incomplet
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Minimal Data 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="footer ibm-type-a css-1uaudof-CardFooter"
+      class="trust-radius-widget__cardfooter__byline"
     >
       John Doe
       <br />
@@ -21164,13 +21319,13 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Footer Minimal D
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <p
-      class="heading ibm-type-e css-1xef1la-CardHeading"
+      class="trust-radius-widget__cardheading__heading"
     >
       <span
         width="0"
@@ -21195,13 +21350,13 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Default 
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Empty 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <p
-      class="heading ibm-type-e css-1xef1la-CardHeading"
+      class="trust-radius-widget__cardheading__heading"
     >
       <span
         width="0"
@@ -21224,13 +21379,13 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Empty 1`
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Long Text 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
     <p
-      class="heading ibm-type-e css-1xef1la-CardHeading"
+      class="trust-radius-widget__cardheading__heading"
     >
       <span
         width="0"
@@ -21255,28 +21410,32 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Long Tex
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Slider Heading Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
   >
-    <a
-      class="css-plvb3s-SliderHeading"
-      target="_new"
+    <div
+      class="trust-radius-widget trust-radius-widget__WHITE"
     >
-      <div
-        class="ibm-pt-2 ibm-pb-1 ibm-textcolor-gray-90 headlink css-bd960t-SliderHeading"
+      <a
+        class="trust-radius-widget__sliderheading__cardlinks"
+        target="_new"
       >
-        <span>
-          This is a heading
-        </span>
-        <img
-          alt="TrustRadius logo"
-          class="ibm-downsize css-1n4029a-SliderHeading"
-          src="https://d30ia583fbtg8i.cloudfront.net/images/trustradius-wordmark-blue-240-40.png"
-        />
-      </div>
-    </a>
+        <div
+          class="trust-radius-widget__sliderheading__headlink"
+        >
+          <span>
+            This is a heading
+          </span>
+          <img
+            alt="TrustRadius logo"
+            class="trust-radius-widget__sliderheading__headimage"
+            src="https://d30ia583fbtg8i.cloudfront.net/images/trustradius-wordmark-blue-240-40.png"
+          />
+        </div>
+      </a>
+    </div>
   </div>
 </div>
 `;
@@ -21284,7 +21443,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Slider Heading Defaul
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Default 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21395,7 +21554,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Default 1`] = `
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 224 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21457,7 +21616,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 224 1`
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 226 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21523,7 +21682,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 226 1`
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 374 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21589,7 +21748,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 374 1`
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 376 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21651,7 +21810,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars 376 1`
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Empty 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21713,7 +21872,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Empty 
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Full 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"
@@ -21775,7 +21934,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Full 1
 exports[`Storyshots Widgets/Trust Radius/Components/StarRating Five Stars Half 1`] = `
 <div
   role="main"
-  style="padding: 1em; display: flex; flex-direction: column; align-items: center;"
+  style="display: flex; flex-direction: column; align-items: center;"
 >
   <div
     style="position: relative; width: 100%; z-index: 0;"

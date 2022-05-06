@@ -48,6 +48,7 @@ module.exports = {
     properties: {
       fields: {
         type: 'object',
+        required: ['trust-radius-id'],
         properties: {
           'trust-radius-id': {
             type: 'string',
@@ -56,12 +57,22 @@ module.exports = {
               'The ID found within the trust radius reviews URL that activates the product reviews',
             examples: ['5e20addcac72e40024d9a00a'],
           },
-          'use-google-stars': {
-            type: 'boolean',
-            title: 'Use Google Review Stars',
+          'trust-radius-palette': {
+            type: 'string',
+            title: 'Trust Radius Palette',
+            description: "Current choices are 'light', 'gray,' and 'dark' ",
+            default: 'light',
+            examples: ['light'],
+            enum: ['light', 'gray', 'dark'],
+          },
+          'trust-radius-google-stars': {
+            type: 'string',
+            title: 'Google Review Stars',
             description:
-              'Enable Stars and review data on this pages Google search results? True or False',
-            examples: [false, true],
+              'Enable Stars and review data on this pages Google search results? true or false',
+            default: 'false',
+            examples: ['false'],
+            enum: ['true', 'false'],
           },
         },
       },
@@ -122,7 +133,6 @@ for an example on how to write your own.
 See the render file for the _Journey to AI_ widget (`src/apps/journey-ai/index.tsx`) below.
 
 ```javascript
-/** @jsxImportSource @emotion/react */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';

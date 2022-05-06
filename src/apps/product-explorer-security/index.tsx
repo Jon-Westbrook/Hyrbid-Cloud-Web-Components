@@ -9,6 +9,8 @@ import { IntlProvider } from 'react-intl';
 import { RenderFn } from '../../types/widgets';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
 
+import './index.scss';
+
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
     instanceId,

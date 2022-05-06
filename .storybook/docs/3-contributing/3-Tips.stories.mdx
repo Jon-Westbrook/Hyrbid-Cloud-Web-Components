@@ -59,7 +59,7 @@ One of the main benefits of aggregating all the widgets under the same repositor
 All widgets **must** include stories. In order to simplify the creation process of a story we have developed two decorators:
 
 - `storyWithTranslation()`: this helper will ease the process of adding i18n support for your stories.
-- `storyWithRedux()`: this helper will ease the process of setting the exact (redux) state you need for rendering your story.
+- `storyWithReduxDecorator()`: this helper will ease the process of setting the exact (redux) state you need for rendering your story.
 
 ## 2. Static assets
 
@@ -114,7 +114,8 @@ export PUBLIC_ASSETS_URL="https://hybrid-cloud-widgets-development.s3.us.cloud-o
 rm --recursive --force widget-registry
 mkdir widget-registry
 # Run the compiler over the local code-base.
-npx @js-widgets/webpack-cli \
+WIDGETS_SKIP_COMPRESSION=true DEBUG=*,-babel*,-eslint* NODE_ENV=production \
+  npx @js-widgets/webpack-cli \
   --existing-registry="${PUBLIC_URL}/registry.json" \
   --output-dir="$(pwd)/widget-registry" \
   "$(pwd)" --debug

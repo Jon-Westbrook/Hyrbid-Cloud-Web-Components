@@ -41,7 +41,6 @@ export const decorators = [
     <div
       role="main"
       style={{
-        padding: '1em',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',

@@ -5,13 +5,13 @@ const {
   constants: { BROTLI_PARAM_QUALITY },
 } = require('zlib');
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   register: ['../src/apps/**/*.widget.js'],
   webpackFinal: (config) => {
     const isEnvDevelopment = config.mode === 'development';
     const isEnvProduction = config.mode === 'production';
+    const skipCompression = process.env.WIDGETS_SKIP_COMPRESSION === 'true';
     const disableESLintPlugin = process.env.DISABLE_ESLINT_PLUGIN === 'true';
     const emitErrorsAsWarnings = process.env.ESLINT_NO_DEV_ERRORS === 'true';
     const hasJsxRuntime = (() => {
@@ -27,8 +27,6 @@ module.exports = {
       }
     })();
 
-    // Add MiniCssExtractPlugin.
-    config.module.rules[0].use.unshift(MiniCssExtractPlugin.loader);
     // Add the React and Typescript configurations to babel loader to process
     // .tsx files.
     let presets = config.module.rules[2].use.options.presets;
@@ -40,11 +38,22 @@ module.exports = {
     babelPlugins.push('@babel/plugin-transform-runtime');
     config.module.rules[2].use.options.plugins = babelPlugins;
 
-    // Support turning SVGs into React components.
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
+    config.module.rules.push(
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        // Check if the import happens in a JSX file.
+        issuer: /\.[jt]sx?$/,
+        // Support turning SVGs into React components.
+        use: ['babel-loader', '@svgr/webpack', 'url-loader'],
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        // We use this if the SVG is from CSS, SASS, etc.
+        type: 'asset/inline',
+      },
+      // Handle font files.
+      { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/inline' },
+    );
 
     config.resolve = config.resolve || {};
     config.resolve.alias = config.resolve.alias || {};
@@ -63,12 +72,6 @@ module.exports = {
       new WebpackManifestPlugin({
         fileName: 'asset-manifest.json',
         useEntryKeys: true,
-      }),
-      new MiniCssExtractPlugin({
-        filename: isEnvDevelopment
-          ? '[name]/css/main.css'
-          : '[name]/css/main.[contenthash:6].css',
-        chunkFilename: '[id].css',
       }),
       !disableESLintPlugin &&
         new ESLintPlugin({
@@ -96,6 +99,7 @@ module.exports = {
           },
         }),
       isEnvProduction &&
+        !skipCompression &&
         new CompressionPlugin({
           deleteOriginalAssets: true,
           algorithm: 'brotliCompress',

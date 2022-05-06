@@ -1,0 +1,48 @@
+.trust-radius-widget {
+  font-family: 'IBM Plex Sans', ibm-plex-sans, 'Helvetica Neue', Arial,
+    sans-serif;
+
+  & .slick-arrow {
+    display: none !important;
+  }
+
+  &__wrapper {
+    max-width: 1584px;
+    margin: 0 auto;
+  }
+
+  &__message {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__WHITE {
+    background-color: #f2f4f8;
+
+    & a,
+    & a:hover {
+      color: #282828;
+    }
+  }
+
+  &__GRAY_10 {
+    background-color: #fff;
+
+    & a,
+    & a:hover {
+      color: #282828;
+    }
+  }
+
+  &__GRAY_100 {
+    background-color: #161616;
+    color: #fff;
+
+    .trust-radius-widget__cardbody__dateline,
+    .trust-radius-widget__cardfooter__byline {
+      color: #c6c6c6;
+    }
+  }
+}

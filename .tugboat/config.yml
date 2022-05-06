@@ -99,7 +99,7 @@ services:
         yarn install
         ${TUGBOAT_ROOT}/scripts/compile-all.sh
         mkdir --parents ${DRUPAL_DOCROOT}/sites/default/files/widget-registry
-        js-widgets-webpack-cli --existing-registry="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${DRUPAL_DOCROOT}/sites/default/files/widget-registry" "${TUGBOAT_ROOT}"
+        WIDGETS_SKIP_COMPRESSION=true DEBUG=*,-babel*,-eslint* NODE_ENV=production js-widgets-webpack-cli --existing-registry="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${DRUPAL_DOCROOT}/sites/default/files/widget-registry" "${TUGBOAT_ROOT}"
         perl -pe "s@https\://hybrid-cloud-widgets[^\.]*\.s3\.[^\.]*\.cloud-object-storage\.appdomain\.cloud@${TUGBOAT_SERVICE_URL}sites/default/files/widget\-registry@g" ${DRUPAL_DOCROOT}/sites/default/files/widget-registry/registry.json > ${DRUPAL_DOCROOT}/sites/default/files/widget-registry/corrected-registry.json
         # Set the widget registry to pull from Tugboat.
         cd $DRUPAL_COMPOSER_ROOT

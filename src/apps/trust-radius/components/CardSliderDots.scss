@@ -1,0 +1,39 @@
+.trust-radius-widget {
+  &__cardsliderdots {
+    &__dots {
+      color: #000;
+      border-radius: 0px;
+      padding: 10px;
+      border: 0px;
+    }
+
+    &__dotscontainer {
+      display: flex;
+      align-items: center;
+    }
+
+    &__appended {
+      margin: 0 1rem 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__numlist {
+      margin: 0px !important;
+      font-family: 'IBM Plex Sans';
+
+      & li.slick-active {
+        margin-left: 0px !important;
+      }
+
+      & li {
+        display: none;
+      }
+
+      & .slick-active {
+        display: block;
+      }
+    }
+  }
+}

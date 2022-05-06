@@ -1,0 +1,27 @@
+.trust-radius-widget {
+  &__cardbody {
+    &__content {
+      font-family: 'IBM Plex Sans';
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 22px;
+    }
+
+    &__dateline {
+      float: right;
+      font-family: 'IBM Plex Sans';
+      font-size: 12px;
+      letter-spacing: 0.32px;
+    }
+
+    &__cardhr {
+      border-top: 1px solid #bebebe;
+      margin: 7px 0 15px;
+      min-height: 1px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
