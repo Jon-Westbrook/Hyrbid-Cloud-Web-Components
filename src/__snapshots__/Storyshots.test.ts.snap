@@ -18755,37 +18755,37 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="ibm-product-explorer-ibm-sec css-1tdckqh-ProductExplorerSecurity"
+      class="product-explorer-security"
     >
       <div
-        class="css-189mcoa-ProductExplorerSecurity"
+        class="product-explorer-security__wrapper"
       >
         <div
-          class="css-ceo29a-ProductExplorerSecurity"
+          class="product-explorer-security__headline-wrapper"
         >
           <h3
-            class="bx--type-expressive-heading-05 css-ryprh2-ProductExplorerSecurity"
+            class="bx--type-expressive-heading-05 product-explorer-security__headline"
           >
             Explore IBM Security solutions
           </h3>
           <p
-            class="css-jp3hwi-ProductExplorerSecurity"
+            class="product-explorer-security__subhead"
           >
             Transform your security program with the largest enterprise security provider
           </p>
         </div>
         <div>
           <div
-            class="css-1sntk8e-ProductsDisplay"
+            class="product-explorer-security__grid"
           >
             <div
-              class="css-1azpplx-ProductsDisplay"
+              class="product-explorer-security__tile-wrapper"
               data-category="Platforms"
               data-i="0"
               tabindex="0"
             >
               <div
-                class=" css-sl3mq3-ProductsDisplay"
+                class="product-explorer-security__tile "
               >
                 <svg
                   aria-hidden="true"
@@ -18794,10 +18794,10 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   platform.svg
                 </svg>
                 <div
-                  class="css-15m2ire-ProductsDisplay"
+                  class="product-explorer-security__name-chevron"
                 >
                   <h4
-                    class="css-fvo8p7-ProductsDisplay"
+                    class="product-explorer-security__name"
                   >
                     Platforms
                   </h4>
@@ -18819,31 +18819,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
               </div>
             </div>
             <div
-              class=" css-10lreo6-ProductDetail"
+              class="product-explorer-security__products-container "
               data-testid="product-detail"
               style="grid-row-start: 2;"
             >
               <div
-                class="css-nn2yz9-ProductDetail"
+                class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="css-18ik4h7-ProductDetail"
+                  class="product-explorer-security__header-outer-wrapper"
                 >
                   <h2
-                    class="css-3m7tlc-ProductDetail"
+                    class="product-explorer-security__category-name"
                   >
                     Platforms
                   </h2>
                   <div
-                    class="css-76nye0-ProductDetail"
+                    class="product-explorer-security__header"
                   >
                     <p
-                      class="css-fxqmyg-ProductDetail"
+                      class="product-explorer-security__description"
                     >
                       Power your organization’s digital transformation by modernizing your security program
                     </p>
                     <a
-                      class="css-h1fvso-ProductDetail"
+                      class="product-explorer-security__link"
                       href="/en/products/cloud-pak-for-security"
                       tabindex="0"
                     >
@@ -18853,29 +18853,29 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 </div>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/products/cloud-pak-for-security"
                 >
                   IBM Cloud Pak for Security
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Gain insights into threats and risks and respond faster with automation across hybrid, multicloud environments
                 </p>
               </div>
             </div>
             <div
-              class="css-1azpplx-ProductsDisplay"
+              class="product-explorer-security__tile-wrapper"
               data-category="Data security"
               data-i="1"
               tabindex="0"
             >
               <div
-                class=" css-sl3mq3-ProductsDisplay"
+                class="product-explorer-security__tile "
               >
                 <svg
                   aria-hidden="true"
@@ -18884,10 +18884,10 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   data-security.svg
                 </svg>
                 <div
-                  class="css-15m2ire-ProductsDisplay"
+                  class="product-explorer-security__name-chevron"
                 >
                   <h4
-                    class="css-fvo8p7-ProductsDisplay"
+                    class="product-explorer-security__name"
                   >
                     Data security
                   </h4>
@@ -18909,31 +18909,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
               </div>
             </div>
             <div
-              class=" css-10lreo6-ProductDetail"
+              class="product-explorer-security__products-container "
               data-testid="product-detail"
               style="grid-row-start: 2;"
             >
               <div
-                class="css-nn2yz9-ProductDetail"
+                class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="css-18ik4h7-ProductDetail"
+                  class="product-explorer-security__header-outer-wrapper"
                 >
                   <h2
-                    class="css-3m7tlc-ProductDetail"
+                    class="product-explorer-security__category-name"
                   >
                     Data security
                   </h2>
                   <div
-                    class="css-76nye0-ProductDetail"
+                    class="product-explorer-security__header"
                   >
                     <p
-                      class="css-fxqmyg-ProductDetail"
+                      class="product-explorer-security__description"
                     >
                       Discover, classify and protect sensitive data across multiple environments while meeting privacy regulations and simplifying operational complexity
                     </p>
                     <a
-                      class="css-h1fvso-ProductDetail"
+                      class="product-explorer-security__link"
                       href="/en/security/data-security"
                       tabindex="0"
                     >
@@ -18943,89 +18943,89 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 </div>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/products/guardium-insights"
                 >
                   IBM Security Guardium Insights
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Enhance visibility, cut response time, surface key risk insights to uncover hidden threats—and deploy it anywhere
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/data-security/guardium"
                 >
                   IBM Security Guardium Data Protection
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Take a smarter, more adaptive approach to protecting critical data wherever it resides with visibility, automation and scalability
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/products/guardium-data-encryption"
                 >
                   IBM Security Guardium Data Encryption
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Protect and control access to databases, files and containers with encryption, tokenization, data masking and key management
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/data-security"
                 >
                   IBM Data Security Services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Discover, identify and protect, and monitor services for your most sensitive data wherever it resides
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/application-security-services"
                 >
                   IBM Application Security Services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Address application security challenges from discovering and remediating vulnerabilities to improving your application development
                 </p>
               </div>
             </div>
             <div
-              class="css-1azpplx-ProductsDisplay"
+              class="product-explorer-security__tile-wrapper"
               data-category="Identity and access management"
               data-i="2"
               tabindex="0"
             >
               <div
-                class=" css-sl3mq3-ProductsDisplay"
+                class="product-explorer-security__tile "
               >
                 <svg
                   aria-hidden="true"
@@ -19034,10 +19034,10 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   iam.svg
                 </svg>
                 <div
-                  class="css-15m2ire-ProductsDisplay"
+                  class="product-explorer-security__name-chevron"
                 >
                   <h4
-                    class="css-fvo8p7-ProductsDisplay"
+                    class="product-explorer-security__name"
                   >
                     Identity and access management
                   </h4>
@@ -19059,31 +19059,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
               </div>
             </div>
             <div
-              class=" css-10lreo6-ProductDetail"
+              class="product-explorer-security__products-container "
               data-testid="product-detail"
               style="grid-row-start: 3;"
             >
               <div
-                class="css-nn2yz9-ProductDetail"
+                class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="css-18ik4h7-ProductDetail"
+                  class="product-explorer-security__header-outer-wrapper"
                 >
                   <h2
-                    class="css-3m7tlc-ProductDetail"
+                    class="product-explorer-security__category-name"
                   >
                     Identity and access management
                   </h2>
                   <div
-                    class="css-76nye0-ProductDetail"
+                    class="product-explorer-security__header"
                   >
                     <p
-                      class="css-fxqmyg-ProductDetail"
+                      class="product-explorer-security__description"
                     >
                       Deliver a frictionless and secure experience for every user, asset and data interaction across your environment
                     </p>
                     <a
-                      class="css-h1fvso-ProductDetail"
+                      class="product-explorer-security__link"
                       href="/en/security/identity-access-management"
                       tabindex="0"
                     >
@@ -19093,59 +19093,59 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 </div>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/identity-access-management/cloud-identity"
                 >
                   IBM Security Verify
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Use deep context to automate risk protection and continuously authenticate any user to any resource seamlessly
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/identity-access-management/privileged-access-management"
                 >
                   IBM Security Verify Privileged
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Reduce the risk of cyber attack and secure digital business with privileged access management, application control and endpoint privilege security
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/identity-access-management"
                 >
                   IBM Identity and Access Management Services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Extend your teams to plan, identify roadblocks, architect, deploy and manage outcome-driven identity solutions
                 </p>
               </div>
             </div>
             <div
-              class="css-1azpplx-ProductsDisplay"
+              class="product-explorer-security__tile-wrapper"
               data-category="Services"
               data-i="3"
               tabindex="0"
             >
               <div
-                class=" css-sl3mq3-ProductsDisplay"
+                class="product-explorer-security__tile "
               >
                 <svg
                   aria-hidden="true"
@@ -19154,10 +19154,10 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   services.svg
                 </svg>
                 <div
-                  class="css-15m2ire-ProductsDisplay"
+                  class="product-explorer-security__name-chevron"
                 >
                   <h4
-                    class="css-fvo8p7-ProductsDisplay"
+                    class="product-explorer-security__name"
                   >
                     Services
                   </h4>
@@ -19179,31 +19179,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
               </div>
             </div>
             <div
-              class=" css-10lreo6-ProductDetail"
+              class="product-explorer-security__products-container "
               data-testid="product-detail"
               style="grid-row-start: 3;"
             >
               <div
-                class="css-nn2yz9-ProductDetail"
+                class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="css-18ik4h7-ProductDetail"
+                  class="product-explorer-security__header-outer-wrapper"
                 >
                   <h2
-                    class="css-3m7tlc-ProductDetail"
+                    class="product-explorer-security__category-name"
                   >
                     Services
                   </h2>
                   <div
-                    class="css-76nye0-ProductDetail"
+                    class="product-explorer-security__header"
                   >
                     <p
-                      class="css-fxqmyg-ProductDetail"
+                      class="product-explorer-security__description"
                     >
                       Accelerate your business transformation and reduce risk across your organization with cybersecurity consulting, cloud and managed security services
                     </p>
                     <a
-                      class="css-h1fvso-ProductDetail"
+                      class="product-explorer-security__link"
                       href="/en/security/services"
                       tabindex="0"
                     >
@@ -19213,59 +19213,59 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 </div>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/managed-security-services"
                 >
                   Managed security services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Trust your security partner to help monitor, manage and respond to advanced threats, risks and compliance requirements
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/security-governance"
                 >
                   Security Strategy, Risk and Compliance Services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Evaluate your existing security risks, compliance and governance against your business challenges, requirements and objectives
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/cloud-security-services"
                 >
                   Cloud security services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Adapt your security practices into a programmatic approach at each stage of your journey to cloud, and stay ahead of security threats
                 </p>
               </div>
             </div>
             <div
-              class="css-1azpplx-ProductsDisplay"
+              class="product-explorer-security__tile-wrapper"
               data-category="SIEM"
               data-i="4"
               tabindex="0"
             >
               <div
-                class=" css-sl3mq3-ProductsDisplay"
+                class="product-explorer-security__tile "
               >
                 <svg
                   aria-hidden="true"
@@ -19274,10 +19274,10 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   siem.svg
                 </svg>
                 <div
-                  class="css-15m2ire-ProductsDisplay"
+                  class="product-explorer-security__name-chevron"
                 >
                   <h4
-                    class="css-fvo8p7-ProductsDisplay"
+                    class="product-explorer-security__name"
                   >
                     SIEM
                   </h4>
@@ -19299,31 +19299,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
               </div>
             </div>
             <div
-              class=" css-10lreo6-ProductDetail"
+              class="product-explorer-security__products-container "
               data-testid="product-detail"
               style="grid-row-start: 4;"
             >
               <div
-                class="css-nn2yz9-ProductDetail"
+                class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="css-18ik4h7-ProductDetail"
+                  class="product-explorer-security__header-outer-wrapper"
                 >
                   <h2
-                    class="css-3m7tlc-ProductDetail"
+                    class="product-explorer-security__category-name"
                   >
                     SIEM
                   </h2>
                   <div
-                    class="css-76nye0-ProductDetail"
+                    class="product-explorer-security__header"
                   >
                     <p
-                      class="css-fxqmyg-ProductDetail"
+                      class="product-explorer-security__description"
                     >
                       Gain centralized visibility to detect, investigate and respond to your most critical organization-wide cybersecurity threats
                     </p>
                     <a
-                      class="css-h1fvso-ProductDetail"
+                      class="product-explorer-security__link"
                       href="/en/security/security-intelligence"
                       tabindex="0"
                     >
@@ -19333,74 +19333,74 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 </div>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/security-intelligence/qradar"
                 >
                   IBM Security QRadar
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Realize actionable insights, quickly identify the top threats and reduce the total alert volume to solve your critical security challenges
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/products/hosted-security-intelligence"
                 >
                   IBM Security QRadar on Cloud
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Take action before any considerable damage is done by focusing on detecting cybersecurity attacks and network breaches with Cloud SIEM
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/threat-management"
                 >
                   IBM Security Threat Management Services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Protect your enterprise’s operations with integrated security services to manage the full threat lifecycle with accuracy and speed
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/managed-detection-response"
                 >
                   IBM Security Managed Detection and Response Services
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Stop threats and speed response with threat intelligence and proactive threat hunting to identify and remediate advanced threats
                 </p>
               </div>
             </div>
             <div
-              class="css-1azpplx-ProductsDisplay"
+              class="product-explorer-security__tile-wrapper"
               data-category="SOAR"
               data-i="5"
               tabindex="0"
             >
               <div
-                class=" css-sl3mq3-ProductsDisplay"
+                class="product-explorer-security__tile "
               >
                 <svg
                   aria-hidden="true"
@@ -19409,10 +19409,10 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   soar.svg
                 </svg>
                 <div
-                  class="css-15m2ire-ProductsDisplay"
+                  class="product-explorer-security__name-chevron"
                 >
                   <h4
-                    class="css-fvo8p7-ProductsDisplay"
+                    class="product-explorer-security__name"
                   >
                     SOAR
                   </h4>
@@ -19434,31 +19434,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
               </div>
             </div>
             <div
-              class=" css-10lreo6-ProductDetail"
+              class="product-explorer-security__products-container "
               data-testid="product-detail"
               style="grid-row-start: 4;"
             >
               <div
-                class="css-nn2yz9-ProductDetail"
+                class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="css-18ik4h7-ProductDetail"
+                  class="product-explorer-security__header-outer-wrapper"
                 >
                   <h2
-                    class="css-3m7tlc-ProductDetail"
+                    class="product-explorer-security__category-name"
                   >
                     SOAR
                   </h2>
                   <div
-                    class="css-76nye0-ProductDetail"
+                    class="product-explorer-security__header"
                   >
                     <p
-                      class="css-fxqmyg-ProductDetail"
+                      class="product-explorer-security__description"
                     >
                       Accelerate incident response with automation
                     </p>
                     <a
-                      class="css-h1fvso-ProductDetail"
+                      class="product-explorer-security__link"
                       href="/en/security/intelligent-orchestration"
                       tabindex="0"
                     >
@@ -19468,31 +19468,31 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 </div>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/products/cloud-pak-for-security/soar"
                 >
                   IBM Cloud Pak for Security
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Use automation and third-party integrations to improve productivity and the effectiveness of deployed technologies
                 </p>
               </div>
               <div
-                class="css-1yylfg9-ProductDetail"
+                class="product-explorer-security__product"
               >
                 <a
-                  class="css-18wfk60-ProductDetail"
+                  class="product-explorer-security__product-link"
                   href="/en/security/services/ibm-x-force-incident-response-and-intelligence"
                 >
                   IBM Security X-Force
                 </a>
                 <p
-                  class="css-vrvyjd-ProductDetail"
+                  class="product-explorer-security__long-description"
                 >
                   Proactively manage and respond to security threats by integrating security threat intelligence, incident response and remediation
                 </p>
@@ -19515,53 +19515,57 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Product Detail 
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="selected css-10lreo6-ProductDetail"
-      data-testid="product-detail"
-      style="grid-row-start: 2;"
+      class="product-explorer-security"
     >
       <div
-        class="css-nn2yz9-ProductDetail"
+        class="product-explorer-security__products-container selected"
+        data-testid="product-detail"
+        style="grid-row-start: 2;"
       >
         <div
-          class="css-18ik4h7-ProductDetail"
+          class="product-explorer-security__header-outer-wrapper"
         >
-          <h2
-            class="css-3m7tlc-ProductDetail"
-          >
-            Platforms
-          </h2>
           <div
-            class="css-76nye0-ProductDetail"
+            class="product-explorer-security__header-outer-wrapper"
           >
-            <p
-              class="css-fxqmyg-ProductDetail"
+            <h2
+              class="product-explorer-security__category-name"
             >
-              Power your organization’s digital transformation by modernizing your security program
-            </p>
-            <a
-              class="css-h1fvso-ProductDetail"
-              href="/en/products/cloud-pak-for-security"
-              tabindex="0"
+              Platforms
+            </h2>
+            <div
+              class="product-explorer-security__header"
             >
-              Learn more
-            </a>
+              <p
+                class="product-explorer-security__description"
+              >
+                Power your organization’s digital transformation by modernizing your security program
+              </p>
+              <a
+                class="product-explorer-security__link"
+                href="/en/products/cloud-pak-for-security"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="css-1yylfg9-ProductDetail"
-      >
-        <a
-          class="css-18wfk60-ProductDetail"
-          href="/en/products/cloud-pak-for-security"
+        <div
+          class="product-explorer-security__product"
         >
-          IBM Cloud Pak for Security
-        </a>
-        <p
-          class="css-vrvyjd-ProductDetail"
-        >
-          Gain insights into threats and risks and respond faster with automation across hybrid, multicloud environments
-        </p>
+          <a
+            class="product-explorer-security__product-link"
+            href="/en/products/cloud-pak-for-security"
+          >
+            IBM Cloud Pak for Security
+          </a>
+          <p
+            class="product-explorer-security__long-description"
+          >
+            Gain insights into threats and risks and respond faster with automation across hybrid, multicloud environments
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -19577,726 +19581,730 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
     style="position: relative; width: 100%; z-index: 0;"
   >
     <div
-      class="css-1sntk8e-ProductsDisplay"
+      class="product-explorer-security"
     >
       <div
-        class="css-1azpplx-ProductsDisplay"
-        data-category="Platforms"
-        data-i="0"
-        tabindex="0"
+        class="product-explorer-security__grid"
       >
         <div
-          class=" css-sl3mq3-ProductsDisplay"
+          class="product-explorer-security__tile-wrapper"
+          data-category="Platforms"
+          data-i="0"
+          tabindex="0"
         >
-          <svg
-            aria-hidden="true"
-            class="icon"
-          >
-            platform.svg
-          </svg>
           <div
-            class="css-15m2ire-ProductsDisplay"
+            class="product-explorer-security__tile "
           >
-            <h4
-              class="css-fvo8p7-ProductsDisplay"
-            >
-              Platforms
-            </h4>
             <svg
               aria-hidden="true"
-              fill="currentColor"
-              focusable="false"
-              height="32"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
+              class="icon"
             >
-              <path
-                d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-              />
+              platform.svg
             </svg>
-          </div>
-        </div>
-      </div>
-      <div
-        class=" css-10lreo6-ProductDetail"
-        data-testid="product-detail"
-        style="grid-row-start: 2;"
-      >
-        <div
-          class="css-nn2yz9-ProductDetail"
-        >
-          <div
-            class="css-18ik4h7-ProductDetail"
-          >
-            <h2
-              class="css-3m7tlc-ProductDetail"
-            >
-              Platforms
-            </h2>
             <div
-              class="css-76nye0-ProductDetail"
+              class="product-explorer-security__name-chevron"
             >
-              <p
-                class="css-fxqmyg-ProductDetail"
+              <h4
+                class="product-explorer-security__name"
               >
-                Power your organization’s digital transformation by modernizing your security program
-              </p>
-              <a
-                class="css-h1fvso-ProductDetail"
-                href="/en/products/cloud-pak-for-security"
-                tabindex="0"
+                Platforms
+              </h4>
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                focusable="false"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Learn more
-              </a>
+                <path
+                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div
-          class="css-1yylfg9-ProductDetail"
+          class="product-explorer-security__products-container "
+          data-testid="product-detail"
+          style="grid-row-start: 2;"
         >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/products/cloud-pak-for-security"
-          >
-            IBM Cloud Pak for Security
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Gain insights into threats and risks and respond faster with automation across hybrid, multicloud environments
-          </p>
-        </div>
-      </div>
-      <div
-        class="css-1azpplx-ProductsDisplay"
-        data-category="Data security"
-        data-i="1"
-        tabindex="0"
-      >
-        <div
-          class=" css-sl3mq3-ProductsDisplay"
-        >
-          <svg
-            aria-hidden="true"
-            class="icon"
-          >
-            data-security.svg
-          </svg>
           <div
-            class="css-15m2ire-ProductsDisplay"
+            class="product-explorer-security__header-outer-wrapper"
           >
-            <h4
-              class="css-fvo8p7-ProductsDisplay"
+            <div
+              class="product-explorer-security__header-outer-wrapper"
             >
-              Data security
-            </h4>
-            <svg
-              aria-hidden="true"
-              fill="currentColor"
-              focusable="false"
-              height="32"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
+              <h2
+                class="product-explorer-security__category-name"
+              >
+                Platforms
+              </h2>
+              <div
+                class="product-explorer-security__header"
+              >
+                <p
+                  class="product-explorer-security__description"
+                >
+                  Power your organization’s digital transformation by modernizing your security program
+                </p>
+                <a
+                  class="product-explorer-security__link"
+                  href="/en/products/cloud-pak-for-security"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/products/cloud-pak-for-security"
             >
-              <path
-                d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-              />
-            </svg>
+              IBM Cloud Pak for Security
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Gain insights into threats and risks and respond faster with automation across hybrid, multicloud environments
+            </p>
           </div>
         </div>
-      </div>
-      <div
-        class=" css-10lreo6-ProductDetail"
-        data-testid="product-detail"
-        style="grid-row-start: 2;"
-      >
         <div
-          class="css-nn2yz9-ProductDetail"
+          class="product-explorer-security__tile-wrapper"
+          data-category="Data security"
+          data-i="1"
+          tabindex="0"
         >
           <div
-            class="css-18ik4h7-ProductDetail"
+            class="product-explorer-security__tile "
           >
-            <h2
-              class="css-3m7tlc-ProductDetail"
+            <svg
+              aria-hidden="true"
+              class="icon"
             >
-              Data security
-            </h2>
+              data-security.svg
+            </svg>
             <div
-              class="css-76nye0-ProductDetail"
+              class="product-explorer-security__name-chevron"
             >
-              <p
-                class="css-fxqmyg-ProductDetail"
+              <h4
+                class="product-explorer-security__name"
               >
-                Discover, classify and protect sensitive data across multiple environments while meeting privacy regulations and simplifying operational complexity
-              </p>
-              <a
-                class="css-h1fvso-ProductDetail"
-                href="/en/security/data-security"
-                tabindex="0"
+                Data security
+              </h4>
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                focusable="false"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Learn more
-              </a>
+                <path
+                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div
-          class="css-1yylfg9-ProductDetail"
+          class="product-explorer-security__products-container "
+          data-testid="product-detail"
+          style="grid-row-start: 2;"
         >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/products/guardium-insights"
-          >
-            IBM Security Guardium Insights
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Enhance visibility, cut response time, surface key risk insights to uncover hidden threats—and deploy it anywhere
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/data-security/guardium"
-          >
-            IBM Security Guardium Data Protection
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Take a smarter, more adaptive approach to protecting critical data wherever it resides with visibility, automation and scalability
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/products/guardium-data-encryption"
-          >
-            IBM Security Guardium Data Encryption
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Protect and control access to databases, files and containers with encryption, tokenization, data masking and key management
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/data-security"
-          >
-            IBM Data Security Services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Discover, identify and protect, and monitor services for your most sensitive data wherever it resides
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/application-security-services"
-          >
-            IBM Application Security Services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Address application security challenges from discovering and remediating vulnerabilities to improving your application development
-          </p>
-        </div>
-      </div>
-      <div
-        class="css-1azpplx-ProductsDisplay"
-        data-category="Identity and access management"
-        data-i="2"
-        tabindex="0"
-      >
-        <div
-          class=" css-sl3mq3-ProductsDisplay"
-        >
-          <svg
-            aria-hidden="true"
-            class="icon"
-          >
-            iam.svg
-          </svg>
           <div
-            class="css-15m2ire-ProductsDisplay"
+            class="product-explorer-security__header-outer-wrapper"
           >
-            <h4
-              class="css-fvo8p7-ProductsDisplay"
+            <div
+              class="product-explorer-security__header-outer-wrapper"
             >
-              Identity and access management
-            </h4>
-            <svg
-              aria-hidden="true"
-              fill="currentColor"
-              focusable="false"
-              height="32"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
+              <h2
+                class="product-explorer-security__category-name"
+              >
+                Data security
+              </h2>
+              <div
+                class="product-explorer-security__header"
+              >
+                <p
+                  class="product-explorer-security__description"
+                >
+                  Discover, classify and protect sensitive data across multiple environments while meeting privacy regulations and simplifying operational complexity
+                </p>
+                <a
+                  class="product-explorer-security__link"
+                  href="/en/security/data-security"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/products/guardium-insights"
             >
-              <path
-                d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-              />
-            </svg>
+              IBM Security Guardium Insights
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Enhance visibility, cut response time, surface key risk insights to uncover hidden threats—and deploy it anywhere
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/data-security/guardium"
+            >
+              IBM Security Guardium Data Protection
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Take a smarter, more adaptive approach to protecting critical data wherever it resides with visibility, automation and scalability
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/products/guardium-data-encryption"
+            >
+              IBM Security Guardium Data Encryption
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Protect and control access to databases, files and containers with encryption, tokenization, data masking and key management
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/data-security"
+            >
+              IBM Data Security Services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Discover, identify and protect, and monitor services for your most sensitive data wherever it resides
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/application-security-services"
+            >
+              IBM Application Security Services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Address application security challenges from discovering and remediating vulnerabilities to improving your application development
+            </p>
           </div>
         </div>
-      </div>
-      <div
-        class=" css-10lreo6-ProductDetail"
-        data-testid="product-detail"
-        style="grid-row-start: 3;"
-      >
         <div
-          class="css-nn2yz9-ProductDetail"
+          class="product-explorer-security__tile-wrapper"
+          data-category="Identity and access management"
+          data-i="2"
+          tabindex="0"
         >
           <div
-            class="css-18ik4h7-ProductDetail"
+            class="product-explorer-security__tile "
           >
-            <h2
-              class="css-3m7tlc-ProductDetail"
+            <svg
+              aria-hidden="true"
+              class="icon"
             >
-              Identity and access management
-            </h2>
+              iam.svg
+            </svg>
             <div
-              class="css-76nye0-ProductDetail"
+              class="product-explorer-security__name-chevron"
             >
-              <p
-                class="css-fxqmyg-ProductDetail"
+              <h4
+                class="product-explorer-security__name"
               >
-                Deliver a frictionless and secure experience for every user, asset and data interaction across your environment
-              </p>
-              <a
-                class="css-h1fvso-ProductDetail"
-                href="/en/security/identity-access-management"
-                tabindex="0"
+                Identity and access management
+              </h4>
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                focusable="false"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Learn more
-              </a>
+                <path
+                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div
-          class="css-1yylfg9-ProductDetail"
+          class="product-explorer-security__products-container "
+          data-testid="product-detail"
+          style="grid-row-start: 3;"
         >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/identity-access-management/cloud-identity"
-          >
-            IBM Security Verify
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Use deep context to automate risk protection and continuously authenticate any user to any resource seamlessly
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/identity-access-management/privileged-access-management"
-          >
-            IBM Security Verify Privileged
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Reduce the risk of cyber attack and secure digital business with privileged access management, application control and endpoint privilege security
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/identity-access-management"
-          >
-            IBM Identity and Access Management Services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Extend your teams to plan, identify roadblocks, architect, deploy and manage outcome-driven identity solutions
-          </p>
-        </div>
-      </div>
-      <div
-        class="css-1azpplx-ProductsDisplay"
-        data-category="Services"
-        data-i="3"
-        tabindex="0"
-      >
-        <div
-          class=" css-sl3mq3-ProductsDisplay"
-        >
-          <svg
-            aria-hidden="true"
-            class="icon"
-          >
-            services.svg
-          </svg>
           <div
-            class="css-15m2ire-ProductsDisplay"
+            class="product-explorer-security__header-outer-wrapper"
           >
-            <h4
-              class="css-fvo8p7-ProductsDisplay"
+            <div
+              class="product-explorer-security__header-outer-wrapper"
             >
-              Services
-            </h4>
-            <svg
-              aria-hidden="true"
-              fill="currentColor"
-              focusable="false"
-              height="32"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
+              <h2
+                class="product-explorer-security__category-name"
+              >
+                Identity and access management
+              </h2>
+              <div
+                class="product-explorer-security__header"
+              >
+                <p
+                  class="product-explorer-security__description"
+                >
+                  Deliver a frictionless and secure experience for every user, asset and data interaction across your environment
+                </p>
+                <a
+                  class="product-explorer-security__link"
+                  href="/en/security/identity-access-management"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/identity-access-management/cloud-identity"
             >
-              <path
-                d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-              />
-            </svg>
+              IBM Security Verify
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Use deep context to automate risk protection and continuously authenticate any user to any resource seamlessly
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/identity-access-management/privileged-access-management"
+            >
+              IBM Security Verify Privileged
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Reduce the risk of cyber attack and secure digital business with privileged access management, application control and endpoint privilege security
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/identity-access-management"
+            >
+              IBM Identity and Access Management Services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Extend your teams to plan, identify roadblocks, architect, deploy and manage outcome-driven identity solutions
+            </p>
           </div>
         </div>
-      </div>
-      <div
-        class=" css-10lreo6-ProductDetail"
-        data-testid="product-detail"
-        style="grid-row-start: 3;"
-      >
         <div
-          class="css-nn2yz9-ProductDetail"
+          class="product-explorer-security__tile-wrapper"
+          data-category="Services"
+          data-i="3"
+          tabindex="0"
         >
           <div
-            class="css-18ik4h7-ProductDetail"
+            class="product-explorer-security__tile "
           >
-            <h2
-              class="css-3m7tlc-ProductDetail"
+            <svg
+              aria-hidden="true"
+              class="icon"
             >
-              Services
-            </h2>
+              services.svg
+            </svg>
             <div
-              class="css-76nye0-ProductDetail"
+              class="product-explorer-security__name-chevron"
             >
-              <p
-                class="css-fxqmyg-ProductDetail"
+              <h4
+                class="product-explorer-security__name"
               >
-                Accelerate your business transformation and reduce risk across your organization with cybersecurity consulting, cloud and managed security services
-              </p>
-              <a
-                class="css-h1fvso-ProductDetail"
-                href="/en/security/services"
-                tabindex="0"
+                Services
+              </h4>
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                focusable="false"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Learn more
-              </a>
+                <path
+                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div
-          class="css-1yylfg9-ProductDetail"
+          class="product-explorer-security__products-container "
+          data-testid="product-detail"
+          style="grid-row-start: 3;"
         >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/managed-security-services"
-          >
-            Managed security services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Trust your security partner to help monitor, manage and respond to advanced threats, risks and compliance requirements
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/security-governance"
-          >
-            Security Strategy, Risk and Compliance Services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Evaluate your existing security risks, compliance and governance against your business challenges, requirements and objectives
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/cloud-security-services"
-          >
-            Cloud security services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Adapt your security practices into a programmatic approach at each stage of your journey to cloud, and stay ahead of security threats
-          </p>
-        </div>
-      </div>
-      <div
-        class="css-1azpplx-ProductsDisplay"
-        data-category="SIEM"
-        data-i="4"
-        tabindex="0"
-      >
-        <div
-          class=" css-sl3mq3-ProductsDisplay"
-        >
-          <svg
-            aria-hidden="true"
-            class="icon"
-          >
-            siem.svg
-          </svg>
           <div
-            class="css-15m2ire-ProductsDisplay"
+            class="product-explorer-security__header-outer-wrapper"
           >
-            <h4
-              class="css-fvo8p7-ProductsDisplay"
+            <div
+              class="product-explorer-security__header-outer-wrapper"
             >
-              SIEM
-            </h4>
-            <svg
-              aria-hidden="true"
-              fill="currentColor"
-              focusable="false"
-              height="32"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
+              <h2
+                class="product-explorer-security__category-name"
+              >
+                Services
+              </h2>
+              <div
+                class="product-explorer-security__header"
+              >
+                <p
+                  class="product-explorer-security__description"
+                >
+                  Accelerate your business transformation and reduce risk across your organization with cybersecurity consulting, cloud and managed security services
+                </p>
+                <a
+                  class="product-explorer-security__link"
+                  href="/en/security/services"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/managed-security-services"
             >
-              <path
-                d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-              />
-            </svg>
+              Managed security services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Trust your security partner to help monitor, manage and respond to advanced threats, risks and compliance requirements
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/security-governance"
+            >
+              Security Strategy, Risk and Compliance Services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Evaluate your existing security risks, compliance and governance against your business challenges, requirements and objectives
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/cloud-security-services"
+            >
+              Cloud security services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Adapt your security practices into a programmatic approach at each stage of your journey to cloud, and stay ahead of security threats
+            </p>
           </div>
         </div>
-      </div>
-      <div
-        class=" css-10lreo6-ProductDetail"
-        data-testid="product-detail"
-        style="grid-row-start: 4;"
-      >
         <div
-          class="css-nn2yz9-ProductDetail"
+          class="product-explorer-security__tile-wrapper"
+          data-category="SIEM"
+          data-i="4"
+          tabindex="0"
         >
           <div
-            class="css-18ik4h7-ProductDetail"
+            class="product-explorer-security__tile "
           >
-            <h2
-              class="css-3m7tlc-ProductDetail"
+            <svg
+              aria-hidden="true"
+              class="icon"
             >
-              SIEM
-            </h2>
+              siem.svg
+            </svg>
             <div
-              class="css-76nye0-ProductDetail"
+              class="product-explorer-security__name-chevron"
             >
-              <p
-                class="css-fxqmyg-ProductDetail"
+              <h4
+                class="product-explorer-security__name"
               >
-                Gain centralized visibility to detect, investigate and respond to your most critical organization-wide cybersecurity threats
-              </p>
-              <a
-                class="css-h1fvso-ProductDetail"
-                href="/en/security/security-intelligence"
-                tabindex="0"
+                SIEM
+              </h4>
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                focusable="false"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Learn more
-              </a>
+                <path
+                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div
-          class="css-1yylfg9-ProductDetail"
+          class="product-explorer-security__products-container "
+          data-testid="product-detail"
+          style="grid-row-start: 4;"
         >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/security-intelligence/qradar"
-          >
-            IBM Security QRadar
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Realize actionable insights, quickly identify the top threats and reduce the total alert volume to solve your critical security challenges
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/products/hosted-security-intelligence"
-          >
-            IBM Security QRadar on Cloud
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Take action before any considerable damage is done by focusing on detecting cybersecurity attacks and network breaches with Cloud SIEM
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/threat-management"
-          >
-            IBM Security Threat Management Services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Protect your enterprise’s operations with integrated security services to manage the full threat lifecycle with accuracy and speed
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/managed-detection-response"
-          >
-            IBM Security Managed Detection and Response Services
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Stop threats and speed response with threat intelligence and proactive threat hunting to identify and remediate advanced threats
-          </p>
-        </div>
-      </div>
-      <div
-        class="css-1azpplx-ProductsDisplay"
-        data-category="SOAR"
-        data-i="5"
-        tabindex="0"
-      >
-        <div
-          class=" css-sl3mq3-ProductsDisplay"
-        >
-          <svg
-            aria-hidden="true"
-            class="icon"
-          >
-            soar.svg
-          </svg>
           <div
-            class="css-15m2ire-ProductsDisplay"
+            class="product-explorer-security__header-outer-wrapper"
           >
-            <h4
-              class="css-fvo8p7-ProductsDisplay"
+            <div
+              class="product-explorer-security__header-outer-wrapper"
             >
-              SOAR
-            </h4>
-            <svg
-              aria-hidden="true"
-              fill="currentColor"
-              focusable="false"
-              height="32"
-              preserveAspectRatio="xMidYMid meet"
-              viewBox="0 0 32 32"
-              width="32"
-              xmlns="http://www.w3.org/2000/svg"
+              <h2
+                class="product-explorer-security__category-name"
+              >
+                SIEM
+              </h2>
+              <div
+                class="product-explorer-security__header"
+              >
+                <p
+                  class="product-explorer-security__description"
+                >
+                  Gain centralized visibility to detect, investigate and respond to your most critical organization-wide cybersecurity threats
+                </p>
+                <a
+                  class="product-explorer-security__link"
+                  href="/en/security/security-intelligence"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/security-intelligence/qradar"
             >
-              <path
-                d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-              />
-            </svg>
+              IBM Security QRadar
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Realize actionable insights, quickly identify the top threats and reduce the total alert volume to solve your critical security challenges
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/products/hosted-security-intelligence"
+            >
+              IBM Security QRadar on Cloud
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Take action before any considerable damage is done by focusing on detecting cybersecurity attacks and network breaches with Cloud SIEM
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/threat-management"
+            >
+              IBM Security Threat Management Services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Protect your enterprise’s operations with integrated security services to manage the full threat lifecycle with accuracy and speed
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
+          >
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/managed-detection-response"
+            >
+              IBM Security Managed Detection and Response Services
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Stop threats and speed response with threat intelligence and proactive threat hunting to identify and remediate advanced threats
+            </p>
           </div>
         </div>
-      </div>
-      <div
-        class=" css-10lreo6-ProductDetail"
-        data-testid="product-detail"
-        style="grid-row-start: 4;"
-      >
         <div
-          class="css-nn2yz9-ProductDetail"
+          class="product-explorer-security__tile-wrapper"
+          data-category="SOAR"
+          data-i="5"
+          tabindex="0"
         >
           <div
-            class="css-18ik4h7-ProductDetail"
+            class="product-explorer-security__tile "
           >
-            <h2
-              class="css-3m7tlc-ProductDetail"
+            <svg
+              aria-hidden="true"
+              class="icon"
             >
-              SOAR
-            </h2>
+              soar.svg
+            </svg>
             <div
-              class="css-76nye0-ProductDetail"
+              class="product-explorer-security__name-chevron"
             >
-              <p
-                class="css-fxqmyg-ProductDetail"
+              <h4
+                class="product-explorer-security__name"
               >
-                Accelerate incident response with automation
-              </p>
-              <a
-                class="css-h1fvso-ProductDetail"
-                href="/en/security/intelligent-orchestration"
-                tabindex="0"
+                SOAR
+              </h4>
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                focusable="false"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width="32"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Learn more
-              </a>
+                <path
+                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                />
+              </svg>
             </div>
           </div>
         </div>
         <div
-          class="css-1yylfg9-ProductDetail"
+          class="product-explorer-security__products-container "
+          data-testid="product-detail"
+          style="grid-row-start: 4;"
         >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/products/cloud-pak-for-security/soar"
+          <div
+            class="product-explorer-security__header-outer-wrapper"
           >
-            IBM Cloud Pak for Security
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
+            <div
+              class="product-explorer-security__header-outer-wrapper"
+            >
+              <h2
+                class="product-explorer-security__category-name"
+              >
+                SOAR
+              </h2>
+              <div
+                class="product-explorer-security__header"
+              >
+                <p
+                  class="product-explorer-security__description"
+                >
+                  Accelerate incident response with automation
+                </p>
+                <a
+                  class="product-explorer-security__link"
+                  href="/en/security/intelligent-orchestration"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-explorer-security__product"
           >
-            Use automation and third-party integrations to improve productivity and the effectiveness of deployed technologies
-          </p>
-        </div>
-        <div
-          class="css-1yylfg9-ProductDetail"
-        >
-          <a
-            class="css-18wfk60-ProductDetail"
-            href="/en/security/services/ibm-x-force-incident-response-and-intelligence"
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/products/cloud-pak-for-security/soar"
+            >
+              IBM Cloud Pak for Security
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Use automation and third-party integrations to improve productivity and the effectiveness of deployed technologies
+            </p>
+          </div>
+          <div
+            class="product-explorer-security__product"
           >
-            IBM Security X-Force
-          </a>
-          <p
-            class="css-vrvyjd-ProductDetail"
-          >
-            Proactively manage and respond to security threats by integrating security threat intelligence, incident response and remediation
-          </p>
+            <a
+              class="product-explorer-security__product-link"
+              href="/en/security/services/ibm-x-force-incident-response-and-intelligence"
+            >
+              IBM Security X-Force
+            </a>
+            <p
+              class="product-explorer-security__long-description"
+            >
+              Proactively manage and respond to security threats by integrating security threat intelligence, incident response and remediation
+            </p>
+          </div>
         </div>
       </div>
     </div>
