@@ -1,0 +1,99 @@
+.product-explorer-security {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1055px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 671px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__tile-wrapper {
+    padding: 1px;
+  }
+
+  &__tile {
+    color: #fff;
+    height: 156px;
+    padding: 1rem;
+    background-color: #282828;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-color 0.25s;
+
+    img.icon,
+    svg.icon {
+      height: 40px;
+      width: 40px;
+      transition: height 0.25s;
+    }
+
+    &:hover {
+      background-color: #353535;
+    }
+
+    &.selected {
+      background-color: #fff;
+      color: #000;
+
+      img.icon,
+      svg.icon {
+        height: 60px;
+        width: 60px;
+      }
+
+      h4 {
+        visibility: hidden;
+      }
+
+      span {
+        color: #408bfc;
+      }
+    }
+
+    span {
+      color: #fff;
+    }
+
+    @media (max-width: 671px) {
+      height: auto;
+      flex-direction: row;
+      align-items: center;
+
+      img.icon,
+      svg.icon {
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+      }
+
+      &.selected {
+        img.icon,
+        svg.icon {
+          height: 30px;
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  &__name-chevron {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__name {
+    font-size: 1.5rem;
+    padding: 0;
+
+    @media (max-width: 1055px) {
+      font-size: 1.25rem;
+    }
+  }
+}

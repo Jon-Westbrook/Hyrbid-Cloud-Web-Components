@@ -1,5 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import React, {
+import {
   EventHandler,
   Fragment,
   KeyboardEventHandler,
@@ -9,7 +8,6 @@ import React, {
 } from 'react';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react';
-import { css } from '@emotion/react';
 import ProductDetail from './ProductDetail';
 import { useAppSelector } from '../lib/redux/hooks';
 import { ReactComponent as DataSecurityIcon } from '../assets/images/icons/data-security.svg';
@@ -18,6 +16,7 @@ import { ReactComponent as PlatformIcon } from '../assets/images/icons/platform.
 import { ReactComponent as ServicesIcon } from '../assets/images/icons/services.svg';
 import { ReactComponent as SiemIcon } from '../assets/images/icons/siem.svg';
 import { ReactComponent as SoarIcon } from '../assets/images/icons/soar.svg';
+import './ProductsDisplay.scss';
 
 const ProductsDisplay = (): ReactElement<void> => {
   const categories = useAppSelector((state) => state.categories);
@@ -70,12 +69,12 @@ const ProductsDisplay = (): ReactElement<void> => {
   }
 
   return (
-    <div css={styles.grid}>
+    <div className="product-explorer-security__grid">
       {categories.map((category, i) => {
         return (
           <Fragment key={`category-${i}`}>
             <div
-              css={styles.tileWrapper}
+              className="product-explorer-security__tile-wrapper"
               onKeyPress={handleKeyPress}
               onClick={handleInteraction}
               data-category={category.name}
@@ -83,12 +82,13 @@ const ProductsDisplay = (): ReactElement<void> => {
               tabIndex={0}
             >
               <div
-                css={styles.tile}
-                className={selectedCategory === category.name ? 'selected' : ''}
+                className={`product-explorer-security__tile ${
+                  selectedCategory === category.name ? 'selected' : ''
+                }`}
               >
                 {generateIconMarkup(category.icon, category.name)}
-                <div css={styles.nameChevron}>
-                  <h4 css={styles.name}>
+                <div className="product-explorer-security__name-chevron">
+                  <h4 className="product-explorer-security__name">
                     <FormattedMessage
                       {...messages[`${category.translationId}Name`]}
                     />
@@ -114,102 +114,6 @@ const ProductsDisplay = (): ReactElement<void> => {
       })}
     </div>
   );
-};
-
-const styles = {
-  grid: css`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    @media (max-width: 1055px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 671px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  `,
-  tileWrapper: css`
-    padding: 1px;
-  `,
-  tile: css`
-    color: #fff;
-    height: 156px;
-    padding: 1rem;
-    background-color: #282828;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: background-color 0.25s;
-
-    img.icon,
-    svg.icon {
-      height: 40px;
-      width: 40px;
-      transition: height 0.25s;
-    }
-
-    &:hover {
-      background-color: #353535;
-    }
-
-    &.selected {
-      background-color: #fff;
-      color: #000;
-
-      img.icon,
-      svg.icon {
-        height: 60px;
-        width: 60px;
-      }
-
-      h4 {
-        visibility: hidden;
-      }
-
-      span {
-        color: #408bfc;
-      }
-    }
-
-    span {
-      color: #fff;
-    }
-
-    @media (max-width: 671px) {
-      height: auto;
-      flex-direction: row;
-      align-items: center;
-
-      img.icon,
-      svg.icon {
-        margin-right: 1rem;
-        height: 40px;
-        width: 40px;
-      }
-
-      &.selected {
-        img.icon,
-        svg.icon {
-          height: 30px;
-          width: 60px;
-        }
-      }
-    }
-  `,
-  nameChevron: css`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  `,
-  name: css`
-    font-size: 1.5rem;
-    padding: 0;
-
-    @media (max-width: 1055px) {
-      font-size: 1.25rem;
-    }
-  `,
 };
 
 export default ProductsDisplay;
