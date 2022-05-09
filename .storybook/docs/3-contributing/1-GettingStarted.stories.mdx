@@ -45,11 +45,10 @@ in smaller sub-components but we'll skip that for now in favor of brevity in the
 example.
 
 ```typescript jsx
-/** @jsxImportSource @emotion/react */
 import React, { ReactElement } from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from '../locales/messages';
-import { css, SerializedStyles } from '@emotion/react';
+import './MyWidget.scss';
 
 export interface MyWidgetProps {
   /**
@@ -70,29 +69,13 @@ export interface MyWidgetProps {
   excitement: boolean;
 }
 
-const styles: Record<string, SerializedStyles> = {
-  container: css`
-    width: 15em;
-    background-color: white;
-    border-radius: 6px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    padding: 2em;
-  `,
-  heading: css`
-    font-size: 1.4em;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 0.7em;
-  `,
-};
-
 const MyWidget = ({
   greeting,
   name,
   excitement,
 }: MyWidgetProps): ReactElement => (
-  <div css={styles.container}>
-    <h5 css={styles.heading}>
+  <div className="my-widget__container">
+    <h5 className="my-widget__heading">
       <FormattedMessage {...messages.greeting} />
     </h5>
     <div>
@@ -114,7 +97,7 @@ the messages for human translation we will see all messages in English
 Go to the terminal and extract all the messages:
 
 ```console
-./scripts/extract-all.sh my-widget
+yarn extract my-widget
 ```
 
 This will create a set of files (one per language) in `src/apps/my-widget/locales/extractedStrings/*.json`.
@@ -126,7 +109,7 @@ translators. To simulate the translation process edit the `es.json` and replace
 Then, back on the terminal, we'll compile the translated messages.
 
 ```console
-./scripts/compile-all.sh
+yarn compile
 ```
 
 ### `src/apps/my-widget/lib/storyWithTranslation.tsx`
@@ -316,7 +299,6 @@ purpose is to collect the editorial input left in the DOM and pass it as React
 props.
 
 ```typescript jsx
-/** @jsxImportSource @emotion/react */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'regenerator-runtime/runtime';

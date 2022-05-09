@@ -23,8 +23,8 @@ import { FormattedMessage } from 'react-intl';
 />;
 ```
 
-- Once you have your app ready for translation, execute the script `./scripts/extract-all.sh my-widget-id`. This will scan for the messages in the widget `my-widget-id` and put them in each of the `./src/apps/my-widget-id/locales/extractedStrings` folder. You can use the `en.json` file to submit the string for translation. Once you get the translated JSON files (`es.json`, `ja.json`, ...) add them to the `extractedStrings` folder.
-- Before publishing your widget remember to "compile" the translations using `./scripts/compile-all.sh`.
+- Once you have your app ready for translation, execute the script `yarn extract my-widget-id`. This will scan for the messages in the widget `my-widget-id` and put them in each of the `./src/apps/my-widget-id/locales/extractedStrings` folder. You can use the `en.json` file to submit the string for translation. Once you get the translated JSON files (`es.json`, `ja.json`, ...) add them to the `extractedStrings` folder.
+- Before publishing your widget remember to "compile" the translations using `yarn compile`.
 
 After following those steps the CI deployment will upload the translations to Cloud Object Storage under: https://your-cos-url/translations/your-widget.
 
@@ -56,10 +56,11 @@ One of the main benefits of aggregating all the widgets under the same repositor
 
 ## 1. Story management
 
-All widgets **must** include stories. In order to simplify the creation process of a story we have developed two decorators:
+All widgets **must** include stories. In order to simplify the creation process of a story we have developed the following decorators:
 
 - `storyWithTranslation()`: this helper will ease the process of adding i18n support for your stories.
 - `storyWithReduxDecorator()`: this helper will ease the process of setting the exact (redux) state you need for rendering your story.
+- `storyWithClassNameWrapper()`: this helper will ease the process of providing your sub-components with your app's unique identifier class when rendered in isolation. (see [Styling a Widget](#6-styling-a-widget))
 
 ## 2. Static assets
 
@@ -123,4 +124,54 @@ WIDGETS_SKIP_COMPRESSION=true DEBUG=*,-babel*,-eslint* NODE_ENV=production \
 
 ## 6. Styling a Widget
 
-Given that widgets can be embedded anywhere, and CSS is inherently global to the page, it makes sense to use a CSS-in-JS technology in your widgets. For this reason we **require the use of [Emotion](https://emotion.sh/docs/introduction)** to accept contributed widgets. Take a peek at the Trust Radius widget to see emotion used in a widget.
+We follow the established method for creating and importing SASS stylesheets as found in the [documentation for create-react-app](https://create-react-app.dev/docs/adding-a-stylesheet). **With one caveat: you must namespace all styles** in order to prevent style overrides on whatever page the widget will eventually be embedded.
+
+### `src/apps/trust-radius/components/TrustRadius.scss`
+
+```css
+.trust-radius-widget {
+  &__wrapper {
+    max-width: 1584px;
+    margin: 0 auto;
+  }
+
+  &__message {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+```
+
+### `src/apps/trust-radius/components/TrustRadius.tsx`
+
+```tsx
+...
+import './TrustRadius.scss';
+
+const TrustRadius = () => {
+  ...
+  <div className="trust-radius-widget"> // very important namespace
+    <div className="trust-radius-widget__wrapper">...</div>
+    <div className="trust-radius-widget__message">...</div>
+  </div>
+  ...
+}
+```
+
+When writing stories for your widget and rendering sub-components in isolation, you'll need to provide your unique class wrapper to that sub-component in order for your styles to apply correctly. To make this easier, use the `storyWithClassNameWrapper` decorator found in the `common` directory, providing it your app's unique identifier class.
+
+### `src/apps/trust-radius/components/TrustRadius.stories.tsx`
+
+```tsx
+import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper';
+
+const stories: Meta = {
+  ...
+  decorators: [
+    ...
+    storyWithClassNameWrapper('trust-radius-widget'),
+  ],
+};
+```
