@@ -18801,20 +18801,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   >
                     Platforms
                   </h4>
-                  <svg
-                    aria-hidden="true"
-                    fill="currentColor"
-                    focusable="false"
-                    height="32"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="product-explorer-security__chevron"
                   >
-                    <path
-                      d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -18827,7 +18831,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="product-explorer-security__header-outer-wrapper"
+                  class="product-explorer-security__header-inner-wrapper"
                 >
                   <h2
                     class="product-explorer-security__category-name"
@@ -18891,20 +18895,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   >
                     Data security
                   </h4>
-                  <svg
-                    aria-hidden="true"
-                    fill="currentColor"
-                    focusable="false"
-                    height="32"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="product-explorer-security__chevron"
                   >
-                    <path
-                      d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -18917,7 +18925,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="product-explorer-security__header-outer-wrapper"
+                  class="product-explorer-security__header-inner-wrapper"
                 >
                   <h2
                     class="product-explorer-security__category-name"
@@ -19041,20 +19049,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   >
                     Identity and access management
                   </h4>
-                  <svg
-                    aria-hidden="true"
-                    fill="currentColor"
-                    focusable="false"
-                    height="32"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="product-explorer-security__chevron"
                   >
-                    <path
-                      d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -19067,7 +19079,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="product-explorer-security__header-outer-wrapper"
+                  class="product-explorer-security__header-inner-wrapper"
                 >
                   <h2
                     class="product-explorer-security__category-name"
@@ -19161,20 +19173,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   >
                     Services
                   </h4>
-                  <svg
-                    aria-hidden="true"
-                    fill="currentColor"
-                    focusable="false"
-                    height="32"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="product-explorer-security__chevron"
                   >
-                    <path
-                      d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -19187,7 +19203,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="product-explorer-security__header-outer-wrapper"
+                  class="product-explorer-security__header-inner-wrapper"
                 >
                   <h2
                     class="product-explorer-security__category-name"
@@ -19281,20 +19297,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   >
                     SIEM
                   </h4>
-                  <svg
-                    aria-hidden="true"
-                    fill="currentColor"
-                    focusable="false"
-                    height="32"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="product-explorer-security__chevron"
                   >
-                    <path
-                      d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -19307,7 +19327,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="product-explorer-security__header-outer-wrapper"
+                  class="product-explorer-security__header-inner-wrapper"
                 >
                   <h2
                     class="product-explorer-security__category-name"
@@ -19416,20 +19436,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                   >
                     SOAR
                   </h4>
-                  <svg
-                    aria-hidden="true"
-                    fill="currentColor"
-                    focusable="false"
-                    height="32"
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width="32"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    class="product-explorer-security__chevron"
                   >
-                    <path
-                      d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                    />
-                  </svg>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -19442,7 +19466,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components Default 1`] = `
                 class="product-explorer-security__header-outer-wrapper"
               >
                 <div
-                  class="product-explorer-security__header-outer-wrapper"
+                  class="product-explorer-security__header-inner-wrapper"
                 >
                   <h2
                     class="product-explorer-security__category-name"
@@ -19526,7 +19550,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Product Detail 
           class="product-explorer-security__header-outer-wrapper"
         >
           <div
-            class="product-explorer-security__header-outer-wrapper"
+            class="product-explorer-security__header-inner-wrapper"
           >
             <h2
               class="product-explorer-security__category-name"
@@ -19609,20 +19633,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
               >
                 Platforms
               </h4>
-              <svg
-                aria-hidden="true"
-                fill="currentColor"
-                focusable="false"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="product-explorer-security__chevron"
               >
-                <path
-                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -19635,7 +19663,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
             class="product-explorer-security__header-outer-wrapper"
           >
             <div
-              class="product-explorer-security__header-outer-wrapper"
+              class="product-explorer-security__header-inner-wrapper"
             >
               <h2
                 class="product-explorer-security__category-name"
@@ -19699,20 +19727,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
               >
                 Data security
               </h4>
-              <svg
-                aria-hidden="true"
-                fill="currentColor"
-                focusable="false"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="product-explorer-security__chevron"
               >
-                <path
-                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -19725,7 +19757,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
             class="product-explorer-security__header-outer-wrapper"
           >
             <div
-              class="product-explorer-security__header-outer-wrapper"
+              class="product-explorer-security__header-inner-wrapper"
             >
               <h2
                 class="product-explorer-security__category-name"
@@ -19849,20 +19881,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
               >
                 Identity and access management
               </h4>
-              <svg
-                aria-hidden="true"
-                fill="currentColor"
-                focusable="false"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="product-explorer-security__chevron"
               >
-                <path
-                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -19875,7 +19911,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
             class="product-explorer-security__header-outer-wrapper"
           >
             <div
-              class="product-explorer-security__header-outer-wrapper"
+              class="product-explorer-security__header-inner-wrapper"
             >
               <h2
                 class="product-explorer-security__category-name"
@@ -19969,20 +20005,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
               >
                 Services
               </h4>
-              <svg
-                aria-hidden="true"
-                fill="currentColor"
-                focusable="false"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="product-explorer-security__chevron"
               >
-                <path
-                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -19995,7 +20035,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
             class="product-explorer-security__header-outer-wrapper"
           >
             <div
-              class="product-explorer-security__header-outer-wrapper"
+              class="product-explorer-security__header-inner-wrapper"
             >
               <h2
                 class="product-explorer-security__category-name"
@@ -20089,20 +20129,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
               >
                 SIEM
               </h4>
-              <svg
-                aria-hidden="true"
-                fill="currentColor"
-                focusable="false"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="product-explorer-security__chevron"
               >
-                <path
-                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -20115,7 +20159,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
             class="product-explorer-security__header-outer-wrapper"
           >
             <div
-              class="product-explorer-security__header-outer-wrapper"
+              class="product-explorer-security__header-inner-wrapper"
             >
               <h2
                 class="product-explorer-security__category-name"
@@ -20224,20 +20268,24 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
               >
                 SOAR
               </h4>
-              <svg
-                aria-hidden="true"
-                fill="currentColor"
-                focusable="false"
-                height="32"
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width="32"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="product-explorer-security__chevron"
               >
-                <path
-                  d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                />
-              </svg>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -20250,7 +20298,7 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
             class="product-explorer-security__header-outer-wrapper"
           >
             <div
-              class="product-explorer-security__header-outer-wrapper"
+              class="product-explorer-security__header-inner-wrapper"
             >
               <h2
                 class="product-explorer-security__category-name"
