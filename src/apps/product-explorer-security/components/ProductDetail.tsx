@@ -27,7 +27,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       data-testid="product-detail"
     >
       <div className="product-explorer-security__header-outer-wrapper">
-        <div className="product-explorer-security__header-outer-wrapper">
+        <div className="product-explorer-security__header-inner-wrapper">
           <h2 className="product-explorer-security__category-name">
             <FormattedMessage
               {...messages[`${props.category.translationId}Name`]}
