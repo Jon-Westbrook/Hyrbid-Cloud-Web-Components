@@ -41,6 +41,10 @@
 
   &__header {
     margin-bottom: 32px;
+
+    @media (max-width: 671px) {
+      grid-row-start: 2;
+    }
   }
 
   &__product {

@@ -93,13 +93,13 @@ const ProductsDisplay = (): ReactElement<void> => {
                       {...messages[`${category.translationId}Name`]}
                     />
                   </h4>
-                  <>
+                  <div className="product-explorer-security__chevron">
                     {selectedCategory === category.name ? (
                       <ChevronUp32 />
                     ) : (
                       <ChevronDown32 />
                     )}
-                  </>
+                  </div>
                 </div>
               </div>
             </div>
