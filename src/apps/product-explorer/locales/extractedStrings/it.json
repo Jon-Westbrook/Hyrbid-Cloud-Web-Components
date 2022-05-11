@@ -1,0 +1,1031 @@
+{
+  "++WyHu": {
+    "defaultMessage": "IBM Cloud Virtual Servers for Classic Infrastructure"
+  },
+  "+6DSL9": {
+    "defaultMessage": "IBM Cloud Security and Compliance Center"
+  },
+  "+9vdTn": {
+    "defaultMessage": "IBM Cloud App Configuration"
+  },
+  "+WAYgA": {
+    "defaultMessage": "Fully encrypted backup and recovery across multiple datacenters"
+  },
+  "+WBtP9": {
+    "defaultMessage": "IBM Cloud DNS"
+  },
+  "/Fo9fO": {
+    "defaultMessage": "IBM Cloud Monitoring"
+  },
+  "/H9IZy": {
+    "defaultMessage": "Secure gateway"
+  },
+  "/N8Z/Q": {
+    "defaultMessage": "Compute description."
+  },
+  "/NWI1J": {
+    "defaultMessage": "Virtual desktops, in the cloud and managed"
+  },
+  "/OZccm": {
+    "defaultMessage": "Discover a simple set of edge-network services for customers looking to secure their internet-facing applications from distributed denial-of-service (DDoS) attacks, data theft and bot attacks"
+  },
+  "/ViV2M": {
+    "defaultMessage": "IBM Cloud Log Analysis"
+  },
+  "/xOV9k": {
+    "defaultMessage": "PaaS to build analytics applications on Apache Spark and Hadoop"
+  },
+  "03+218": {
+    "defaultMessage": "Combines the flexibility of a full-text search engine with the power of JSON indexing"
+  },
+  "04jLb9": {
+    "defaultMessage": "IBM Watson Speech to Text"
+  },
+  "0BsYsn": {
+    "defaultMessage": "Cloud hardware to store and process cryptographic keys"
+  },
+  "0EZ7YD": {
+    "defaultMessage": "Fast provisioning, high network performance, greater throughput and enhanced isolation."
+  },
+  "0UBJ54": {
+    "defaultMessage": "IBM Cloud Kubernetes Service"
+  },
+  "0uWolc": {
+    "defaultMessage": "Data integration suite for ETL, governance and anlaysis"
+  },
+  "0vyqQ5": {
+    "defaultMessage": "The simplest solution for data organized into files and folders"
+  },
+  "12H50B": {
+    "defaultMessage": "databases description"
+  },
+  "1Oh28L": {
+    "defaultMessage": "IBM Cloud App ID"
+  },
+  "1PewX/": {
+    "defaultMessage": "IBM Cloud VPS Hosting"
+  },
+  "1TonIP": {
+    "defaultMessage": "AI / machine learning"
+  },
+  "1aDS+s": {
+    "defaultMessage": "Solve your toughest operational challenges to achieve better business performance with this modular set of integrated AI-powered automation software, built for any hybrid cloud."
+  },
+  "1ioGP+": {
+    "defaultMessage": "IBM Cloud Activity Tracker"
+  },
+  "1scQvB": {
+    "defaultMessage": "Toolkit to migrate on-premises data to the cloud"
+  },
+  "3H9Ofa": {
+    "defaultMessage": "Gain complete authority over workloads with sensitive data or your business IP."
+  },
+  "3HMsx5": {
+    "defaultMessage": "IBM Analytics Engine"
+  },
+  "3oH2rw": {
+    "defaultMessage": "Managed distributed key-value store"
+  },
+  "3plg7d": {
+    "defaultMessage": "A full stack cloud platform with over 170 products and services covering data, containers, AI, IoT, and blockchain."
+  },
+  "46a0XK": {
+    "defaultMessage": "Flash-backed, durable, fast and flexible NFS-based file storageFlash-backed, durable, fast and flexible NFS-based file storage"
+  },
+  "4MGh22": {
+    "defaultMessage": "Dashboard for real-time analysis of data streams"
+  },
+  "4TRFQM": {
+    "defaultMessage": "Full-service domain registration and administration"
+  },
+  "4TUmUg": {
+    "defaultMessage": "IBM Cloud CLI"
+  },
+  "4aKykC": {
+    "defaultMessage": "Dashboard to monitor and analyze events in IBM Cloud"
+  },
+  "4bbD8a": {
+    "defaultMessage": "Codeless connectors for your data, apps and APIs"
+  },
+  "4ffpZT": {
+    "defaultMessage": "Dynamically translate news, patents or conversational documents"
+  },
+  "4kPVn5": {
+    "defaultMessage": "Certificates for cloud resources"
+  },
+  "4r8RMc": {
+    "defaultMessage": "High-performance engine that integrates time series, spatial, NoSQL and SQL data."
+  },
+  "4t44vN": {
+    "defaultMessage": "Managed PCI-compliant JSON document store on CouchDB"
+  },
+  "5/Vyrf": {
+    "defaultMessage": "IBM Cloud Certificate Manager"
+  },
+  "5DWH+i": {
+    "defaultMessage": "Hosting for virtualized workloads"
+  },
+  "5ftS+u": {
+    "defaultMessage": "IBM Power Systems Virtual Servers"
+  },
+  "5rIK92": {
+    "defaultMessage": "IBM Cloud Schematics"
+  },
+  "6+Wt0y": {
+    "defaultMessage": "Python SDK for open-source quantum development"
+  },
+  "6H+967": {
+    "defaultMessage": "Dedicated hardware for maximum performance"
+  },
+  "6UVQ21": {
+    "defaultMessage": "Create a secure, persistent connection between your protected environment and the cloud"
+  },
+  "6VQbIr": {
+    "defaultMessage": "IoT"
+  },
+  "71QhXK": {
+    "defaultMessage": "Virtual servers with enhanced network security"
+  },
+  "7E1J9z": {
+    "defaultMessage": "Managed SQL database"
+  },
+  "7NFfmz": {
+    "defaultMessage": "Products"
+  },
+  "7mrMpv": {
+    "defaultMessage": "IBM Cloudant®"
+  },
+  "7qnDjd": {
+    "defaultMessage": "Logging and monitoring"
+  },
+  "7r2HpS": {
+    "defaultMessage": "IBM Watson Studio"
+  },
+  "7xSb+w": {
+    "defaultMessage": "PaaS stream processing based on Apache Kafka"
+  },
+  "8C8NDW": {
+    "defaultMessage": "A CLI to manage your IBM Cloud"
+  },
+  "8YN8sQ": {
+    "defaultMessage": "Focus on innovation, not outages. Drive new efficiency with AI-powered IT incident resolution, fueled by your own data."
+  },
+  "8joZWX": {
+    "defaultMessage": "Explore IBM Cloud products"
+  },
+  "8pvAuZ": {
+    "defaultMessage": "Tekton"
+  },
+  "8tEeK+": {
+    "defaultMessage": "SaaS to define and audit the compliance posture of your cloud"
+  },
+  "8wm6f9": {
+    "defaultMessage": "Networking"
+  },
+  "8ytOBq": {
+    "defaultMessage": "Integrate your apps through APIs, messaging and networking tools"
+  },
+  "8yy81e": {
+    "defaultMessage": "Hardware and software firewalls, network security group management"
+  },
+  "9GCHls": {
+    "defaultMessage": "An object-relational SQL database with indexable JSON, publish/subscribe functions and drivers"
+  },
+  "9L6a1L": {
+    "defaultMessage": "Integrated and certified applications on Red Hat OpenShift"
+  },
+  "9p/LP6": {
+    "defaultMessage": "IBM Maximo Application Suite: Remote monitoring"
+  },
+  "A5T/sB": {
+    "defaultMessage": "Container registry"
+  },
+  "ABMG1N": {
+    "defaultMessage": "IBM Cloud Databases for Redis"
+  },
+  "Ayup/o": {
+    "defaultMessage": "Physical or virtual private connections to IBM Cloud"
+  },
+  "BNVV5I": {
+    "defaultMessage": "developer description"
+  },
+  "BdiudC": {
+    "defaultMessage": "Build and deploy container-based applications on a fully managed, integrated and reliable platform."
+  },
+  "BglnoZ": {
+    "defaultMessage": "Query tool for IBM Cloud Object Storage"
+  },
+  "Bjs0bd": {
+    "defaultMessage": "Operations management software with AI insights"
+  },
+  "BpQPTv": {
+    "defaultMessage": "Blockchain description"
+  },
+  "Bu3YcZ": {
+    "defaultMessage": "Traffic flow management for cloud applications"
+  },
+  "C501IF": {
+    "defaultMessage": "IBM Watson Machine Learning"
+  },
+  "C8DVFE": {
+    "defaultMessage": "IBM Cloud Messages for RabbitMQ"
+  },
+  "CAhGT6": {
+    "defaultMessage": "IBM Blockchain Platform"
+  },
+  "CCqx1F": {
+    "defaultMessage": "Use your existing infrastructure—even edge or other public clouds—with IBM Cloud services, APIs, access policies, security controls and compliance with IBM Cloud Satellite."
+  },
+  "CJxPRU": {
+    "defaultMessage": "Analyze text to extract metadata from content such as concepts, entities and sentiment"
+  },
+  "CQilD5": {
+    "defaultMessage": "Managed master data storage"
+  },
+  "CU1tuU": {
+    "defaultMessage": "Virtualization for x86, AIX, System i and Power applications"
+  },
+  "Cj9muP": {
+    "defaultMessage": "Qiskit Runtime"
+  },
+  "Cke3Eg": {
+    "defaultMessage": "Serverless function runtime based on Apache OpenWhisk"
+  },
+  "DAeM/S": {
+    "defaultMessage": "A combined Apache Spark and Apache Hadoop service for creating analytics applications"
+  },
+  "DKHzRo": {
+    "defaultMessage": "A fully managed, elastic cloud data warehouse built for high-performance analytics and AI"
+  },
+  "DUIDEq": {
+    "defaultMessage": "Storage"
+  },
+  "DXendR": {
+    "defaultMessage": "Runtime and SDK for Java applications"
+  },
+  "DmNdXe": {
+    "defaultMessage": "Managed dashboard for Kubernetes devops"
+  },
+  "DtJzmb": {
+    "defaultMessage": "Turbonomic"
+  },
+  "EI6gkl": {
+    "defaultMessage": "See, predict and prevent issues with advanced AI-powered remote monitoring and computer vision for assets and operations."
+  },
+  "EXrelJ": {
+    "defaultMessage": "IBM Cloud Mass Data Migration"
+  },
+  "EkcUrj": {
+    "defaultMessage": "IBM Cloud for VMware Solutions"
+  },
+  "F/dfqF": {
+    "defaultMessage": "Hosted, fully managed Apache Kafka as a service for a scalable, high-performing messaging backbone"
+  },
+  "Fn4YKy": {
+    "defaultMessage": "Automation"
+  },
+  "Fn7sES": {
+    "defaultMessage": "Extend your IBM POWER® resources into the cloud and avoid the large capital expense or added risk to migrate your essential workloads."
+  },
+  "G7gHO4": {
+    "defaultMessage": "A one-stop shop for security and performance capabilities designed to protect public-facing web content and applications before they reach the cloud"
+  },
+  "G8baz3": {
+    "defaultMessage": "Compliant authentication, authorization and user data SaaS"
+  },
+  "GWtmtu": {
+    "defaultMessage": "Mobile"
+  },
+  "GZJpDf": {
+    "defaultMessage": "Analytics"
+  },
+  "Gz0Q3f": {
+    "defaultMessage": "IBM Cloud Functions"
+  },
+  "H2B6zg": {
+    "defaultMessage": "IBM Watson Assistant"
+  },
+  "HbsuuK": {
+    "defaultMessage": "IBM Watson Openscale™"
+  },
+  "HiuEPq": {
+    "defaultMessage": "IBM Lift"
+  },
+  "Hku3el": {
+    "defaultMessage": "IBM Cloud Hyper Protect Crypto Services"
+  },
+  "I3JhPS": {
+    "defaultMessage": "Network"
+  },
+  "IKkrDs": {
+    "defaultMessage": "Qiskit"
+  },
+  "Irhc36": {
+    "defaultMessage": "IBM Cloud Container Registry"
+  },
+  "Irwwbi": {
+    "defaultMessage": "Encryption key provisioning and storage for IBM Cloud apps"
+  },
+  "Iuv4V0": {
+    "defaultMessage": "Send and share big files and data sets across any distance at maximum speed"
+  },
+  "JCGVvu": {
+    "defaultMessage": "Security auditing, reporting, analysis and governance"
+  },
+  "Jez/wJ": {
+    "defaultMessage": "Deploy and scale apps without manually configuring and managing servers."
+  },
+  "JmDUJb": {
+    "defaultMessage": "IBM Cloud Direct Link Exchange"
+  },
+  "Jv4AbJ": {
+    "defaultMessage": "RabbitMQ routes messages between microservices for modern applications."
+  },
+  "KqvGDN": {
+    "defaultMessage": "UI and CLI based DevOps workflows based on Tekton Pipelines"
+  },
+  "KrPRke": {
+    "defaultMessage": "IBM Db2 on Cloud"
+  },
+  "L191bn": {
+    "defaultMessage": "IBM Cloud Object Storage"
+  },
+  "LIuKA0": {
+    "defaultMessage": "API for real-time speech recognition and transcription"
+  },
+  "LRDydZ": {
+    "defaultMessage": "IBM WebSphere Application Server on Cloud"
+  },
+  "LavEEz": {
+    "defaultMessage": "IBM Cloud Pak for Data"
+  },
+  "LhBX9z": {
+    "defaultMessage": "Seamlessly modernize your VMware workloads and applications with IBM Cloud"
+  },
+  "M6gSgN": {
+    "defaultMessage": "IBM Cloud File Storage"
+  },
+  "MCbLIu": {
+    "defaultMessage": "An object-relational SQL database with indexable JSON, publish/subscribe functions and drivers."
+  },
+  "MN15/Z": {
+    "defaultMessage": "Flash-backed, local disk performance with SAN persistence and durability"
+  },
+  "Mc9NMX": {
+    "defaultMessage": "IBM Cloud Pak for Integration"
+  },
+  "Mdm8ji": {
+    "defaultMessage": "Secure hardware to physically ship petabytes of data to IBM Cloud"
+  },
+  "MojMtC": {
+    "defaultMessage": "Physical and virtual routers, firewalls, VPNs and more"
+  },
+  "MsQ8kD": {
+    "defaultMessage": "Replicate the complete data center environment of existing apps to ease migration to the cloud."
+  },
+  "N3uAdR": {
+    "defaultMessage": "The lowest latency, highest redundancy data storage option"
+  },
+  "NC/fOi": {
+    "defaultMessage": "A JSON document store with a rich query and aggregation framework."
+  },
+  "NqlVin": {
+    "defaultMessage": "Connect and manage edge devices"
+  },
+  "NtuSHd": {
+    "defaultMessage": "IBM Content Delivery Network (CDN)"
+  },
+  "NuD+6l": {
+    "defaultMessage": "IBM Cloud Hardware Security Module"
+  },
+  "O4gNbU": {
+    "defaultMessage": "IBM Hyper Protect Crypto Services"
+  },
+  "O7DLNZ": {
+    "defaultMessage": "Managed service to provision resources with terraform templates"
+  },
+  "O9FD6C": {
+    "defaultMessage": "Network security"
+  },
+  "OkAZn6": {
+    "defaultMessage": "Lifecycle management of encryption keys used by IBM Cloud services or custom apps"
+  },
+  "OkWAlI": {
+    "defaultMessage": "Blockchain"
+  },
+  "OvH4dR": {
+    "defaultMessage": "Virtual servers with IBM POWER processors"
+  },
+  "PAQ3PS": {
+    "defaultMessage": "IBM Cloud Pak for Watson AIOps"
+  },
+  "Py189G": {
+    "defaultMessage": "Security"
+  },
+  "QE3HSp": {
+    "defaultMessage": "Enterprise messaging that simplifies and accelerates reliable and secure exchange of data"
+  },
+  "QG19qO": {
+    "defaultMessage": "A toolkit to rapidly create, secure and manage APIs"
+  },
+  "QIXig5": {
+    "defaultMessage": "IBM Cloud Virtual Server for VPC"
+  },
+  "QVh/NP": {
+    "defaultMessage": "A fully managed MySQL relational database service. Deploy and scale effortlessly to drive innovation."
+  },
+  "QXONVT": {
+    "defaultMessage": "Serverless container hosting platform as a service"
+  },
+  "QiEOvL": {
+    "defaultMessage": "IBM Db2® on Cloud"
+  },
+  "R/fawH": {
+    "defaultMessage": "Managed PostgreSQL and MongoDB for sensitive data"
+  },
+  "R1DO4B": {
+    "defaultMessage": "IBM Cloud Pak for Network Automation"
+  },
+  "RYbE1p": {
+    "defaultMessage": "Databases"
+  },
+  "RfQ1sv": {
+    "defaultMessage": "Management software for telco network operations"
+  },
+  "RsuUiH": {
+    "defaultMessage": "IBM Hyper Protect DBaaS"
+  },
+  "S8NAfT": {
+    "defaultMessage": "IBM Edge Application Manager"
+  },
+  "SAgOYa": {
+    "defaultMessage": "Store, query and analyze structured data"
+  },
+  "SIrkDV": {
+    "defaultMessage": "IDE to build, run and manage AI models"
+  },
+  "SMeqim": {
+    "defaultMessage": "Network Description"
+  },
+  "ScFEs1": {
+    "defaultMessage": "IBM Watson Language Translator"
+  },
+  "SgxPaA": {
+    "defaultMessage": "IBM Cloud Paks"
+  },
+  "Ss1OOw": {
+    "defaultMessage": "Migrate your data quickly, easily and securely from your on-premises data source to an IBM Cloud data property"
+  },
+  "TBWkDf": {
+    "defaultMessage": "Provision toolchains, automate builds and tests, and control quality with analytics"
+  },
+  "TDDlIs": {
+    "defaultMessage": "Containers"
+  },
+  "TdTXXf": {
+    "defaultMessage": "Learn more"
+  },
+  "TleofT": {
+    "defaultMessage": "IBM Cloud Databases for etcd"
+  },
+  "TmxXbU": {
+    "defaultMessage": "Avoid network traffic jams and decrease latency by keeping data closer to users"
+  },
+  "To0DrK": {
+    "defaultMessage": "Instantly connects applications and data from existing systems and modern technologies across all environments."
+  },
+  "TvkU5U": {
+    "defaultMessage": "Managed DB for time series, spatial, NoSQL and SQL data"
+  },
+  "U/Zosp": {
+    "defaultMessage": "Automate workflows from IT operations to business processes"
+  },
+  "U065Tr": {
+    "defaultMessage": "Deploy self-learning models into production at scale"
+  },
+  "U0mQyT": {
+    "defaultMessage": "Dashboard for security management, analysis and remediation"
+  },
+  "U4y8Er": {
+    "defaultMessage": "IBM Cloud SQL Query"
+  },
+  "U8MRda": {
+    "defaultMessage": "Load balancing and CDN solution"
+  },
+  "UPnH8B": {
+    "defaultMessage": "developer tools description"
+  },
+  "UYtfTw": {
+    "defaultMessage": "Connect devices, gateways and networks, and manage, secure and analyze the associated data."
+  },
+  "Udbq5C": {
+    "defaultMessage": "IBM Watson Natural Language Classifier"
+  },
+  "UwTiMD": {
+    "defaultMessage": "Convert written text into natural-sounding audio in a variety of languages and voices"
+  },
+  "VPC371": {
+    "defaultMessage": "PaaS for Java, Node, PHP, Python, Ruby, Swift and Go apps."
+  },
+  "VQUAYA": {
+    "defaultMessage": "Run code on real quantum systems using a full-stack SDK"
+  },
+  "VrOy6P": {
+    "defaultMessage": "SDK, dashboard and API for application feature management"
+  },
+  "VvVscd": {
+    "defaultMessage": "Certificate management for cloud resources"
+  },
+  "W+agmU": {
+    "defaultMessage": "API creation and management, with built-in security and governance"
+  },
+  "WB00DV": {
+    "defaultMessage": "IoT description"
+  },
+  "WBSGau": {
+    "defaultMessage": "Container hosting with self-healing and horizontal scaling"
+  },
+  "WNMDFf": {
+    "defaultMessage": "A database engine that optimizes the built-in features of PostgreSQL and offers compatibility with Oracle databases."
+  },
+  "WhpOBd": {
+    "defaultMessage": "Istio"
+  },
+  "WtlKy/": {
+    "defaultMessage": "DevOps management tool with AI analysis and recommendations"
+  },
+  "X28+9+": {
+    "defaultMessage": "Secure your cloud resources and simplify regulatory compliance"
+  },
+  "XELYQp": {
+    "defaultMessage": "IBM App Connect"
+  },
+  "Xe5WfA": {
+    "defaultMessage": "Connect your security data, tools and teams to uncover hidden threats and make informed risk-based decisions with an integrated platform that doesn't require migrating your data."
+  },
+  "Xj6Wse": {
+    "defaultMessage": "Secure tunnels between cloud and external environments"
+  },
+  "XzhFjl": {
+    "defaultMessage": "Unstructured cloud data storage with an API frontend"
+  },
+  "YJ6xA8": {
+    "defaultMessage": "High-performance, dedicated cloud servers with both hourly and monthly billing options."
+  },
+  "YLUpsk": {
+    "defaultMessage": "IBM Cloud Databases for MongoDB"
+  },
+  "YQrc3L": {
+    "defaultMessage": "Tools for data analysis, organization and management"
+  },
+  "YYeR+/": {
+    "defaultMessage": "IBM InfoSphere® Information Server on Cloud"
+  },
+  "YZGl5T": {
+    "defaultMessage": "Domain name services"
+  },
+  "YhthEh": {
+    "defaultMessage": "SSL certificates"
+  },
+  "YwEQe3": {
+    "defaultMessage": "API for real-time text to speech conversion"
+  },
+  "Z9PcyV": {
+    "defaultMessage": "Cloud Foundry"
+  },
+  "ZNJrOS": {
+    "defaultMessage": "Virtual agents customizable to any domain"
+  },
+  "ZZG8Oi": {
+    "defaultMessage": "IBM Watson Natural Language Understanding"
+  },
+  "Zojq+P": {
+    "defaultMessage": "Easily manage fast-moving workloads."
+  },
+  "Zy8Xxe": {
+    "defaultMessage": "Create a cluster of compute hosts and deploys highly available containers."
+  },
+  "a2I/+Q": {
+    "defaultMessage": "Manage infrastructure, environments and deployments"
+  },
+  "aOPlYn": {
+    "defaultMessage": "IBM Cloud Block Storage"
+  },
+  "ab7TEe": {
+    "defaultMessage": "Compute"
+  },
+  "adJBTQ": {
+    "defaultMessage": "Public and private DNS and domain registration"
+  },
+  "amo0/y": {
+    "defaultMessage": "IBM WebSphere® Application Server on Cloud"
+  },
+  "askI7n": {
+    "defaultMessage": "Network appliances"
+  },
+  "av266z": {
+    "defaultMessage": "Deploy advanced, explainable AI across the ITOps toolchain so you can confidently assess, diagnose and resolve incidents across mission-critical workloads."
+  },
+  "avaSq4": {
+    "defaultMessage": "Logging and Monitoring"
+  },
+  "b9HZtl": {
+    "defaultMessage": "Content caching and delivery on the Akamai network"
+  },
+  "bRDwJk": {
+    "defaultMessage": "UI and CLI to rapidly move large files"
+  },
+  "bcDvY1": {
+    "defaultMessage": "IBM Power Systems Virtual Servers on IBM Cloud"
+  },
+  "bw4KmR": {
+    "defaultMessage": "IBM Cloud Databases for Elasticsearch"
+  },
+  "bx7Ou/": {
+    "defaultMessage": "Integration"
+  },
+  "c5ozcM": {
+    "defaultMessage": "Virtual servers with the most flexible configuration options"
+  },
+  "cDG/FK": {
+    "defaultMessage": "Operate and automate AI across its lifecycle, with trust and transparency."
+  },
+  "cGYPdE": {
+    "defaultMessage": "Serverless, interactive querying for analyzing data in IBM Cloud Object Storage"
+  },
+  "cecQ6e": {
+    "defaultMessage": "IBM Cloud Code Engine"
+  },
+  "chPpiY": {
+    "defaultMessage": "Create secrets dynamically and lease them to applications while you control access from a single location. Built on open source HashiCorp Vault, Secrets Manager helps you get the data isolation of a dedicated environment with the benefits of a public cloud."
+  },
+  "cqJU9h": {
+    "defaultMessage": "IBM Db2 Warehouse on Cloud"
+  },
+  "d/4G2y": {
+    "defaultMessage": "IBM API Connect"
+  },
+  "d0J9+U": {
+    "defaultMessage": "IBM Cloud Continuous Delivery"
+  },
+  "d8/tjh": {
+    "defaultMessage": "A key-value store that holds the correct data needed to manage server clusters"
+  },
+  "dHSdfC": {
+    "defaultMessage": "Drive AI apps with intelligent data and analytic asset discovery, cataloging and governance."
+  },
+  "dOs9P/": {
+    "defaultMessage": "IBM Cloud Foundry"
+  },
+  "dPf6BE": {
+    "defaultMessage": "IBM Cloud Hyper Protect DBaaS for PostgreSQL"
+  },
+  "da6oST": {
+    "defaultMessage": "analytics description"
+  },
+  "dmETcB": {
+    "defaultMessage": "IBM Cloud Databases for EnterpriseDB"
+  },
+  "eKuXPV": {
+    "defaultMessage": "A fully managed cloud database with AI capabilities that keep your business running 24x7"
+  },
+  "eW90m5": {
+    "defaultMessage": "Enterprise-grade backup and recovery solution with unified automation, scaling, third-party integration, encryption and multi-vaulting capabilities."
+  },
+  "eZoAVw": {
+    "defaultMessage": "A polyglot functions-as-a-service (FaaS) programming platform based on Apache OpenWhisk."
+  },
+  "efRFlv": {
+    "defaultMessage": "Secure Gateway"
+  },
+  "ez2B67": {
+    "defaultMessage": "Developer Tools"
+  },
+  "fMnTBy": {
+    "defaultMessage": "IBM Cloud Hyper Protect DBaaS for MongoDB"
+  },
+  "fSHGyF": {
+    "defaultMessage": "IBM Key Protect"
+  },
+  "fWp/9a": {
+    "defaultMessage": "A scalable JSON document database for web, mobile, IoT and serverless applications."
+  },
+  "fZYnzi": {
+    "defaultMessage": "Blockchain SDK based on Hyperledger Fabric"
+  },
+  "fmzScy": {
+    "defaultMessage": "IBM Watson IoT Platform"
+  },
+  "fn+qTy": {
+    "defaultMessage": "IBM MQ on Cloud"
+  },
+  "fyaRux": {
+    "defaultMessage": "SaaS for container storage and management"
+  },
+  "g/w+Mb": {
+    "defaultMessage": "Developer tools"
+  },
+  "g61N0j": {
+    "defaultMessage": "IBM Watson Text to Speech"
+  },
+  "gKszOf": {
+    "defaultMessage": "Easily convert audio and voice into written text"
+  },
+  "glP6MT": {
+    "defaultMessage": "IBM Cloud Security Advisor"
+  },
+  "gtNtm2": {
+    "defaultMessage": "integration description"
+  },
+  "gwck4C": {
+    "defaultMessage": "Understand, govern, create, maintain, transform and deliver quality data"
+  },
+  "hFnvg2": {
+    "defaultMessage": "IBM Cloud for Skytap Solutions"
+  },
+  "hRCnIW": {
+    "defaultMessage": "Runtime encryption for data-in-use protection on Kubernetes clusters"
+  },
+  "hRPlIx": {
+    "defaultMessage": "IBM Cloud Pak for Business Automation"
+  },
+  "hUqsVf": {
+    "defaultMessage": "IBM Master Data Management on Cloud"
+  },
+  "hmsbqG": {
+    "defaultMessage": "Tamper-resistant hardware to store and process cryptographic keys"
+  },
+  "hpnKVf": {
+    "defaultMessage": "Improve application speed and quality with a recognized leader in cloud integration"
+  },
+  "i956Rq": {
+    "defaultMessage": "Quantum"
+  },
+  "iEOCYm": {
+    "defaultMessage": "IBM Cloud Databases for PostgreSQL"
+  },
+  "ijQrZ0": {
+    "defaultMessage": "AI"
+  },
+  "ik/p/1": {
+    "defaultMessage": "Enables operational event and incident correlation, prioritization and resolution"
+  },
+  "ioUkiO": {
+    "defaultMessage": "IBM Event Streams"
+  },
+  "iy++Ui": {
+    "defaultMessage": "Red Hat® OpenShift® on IBM Cloud"
+  },
+  "j/GhH0": {
+    "defaultMessage": "An autonomous management platform for edge computing"
+  },
+  "jVF1xI": {
+    "defaultMessage": "Send real-time notifications to mobile and web applications"
+  },
+  "jgljIB": {
+    "defaultMessage": "IBM Cloud Paks description"
+  },
+  "k0brMt": {
+    "defaultMessage": "Build and deploy virtual assistants"
+  },
+  "knIXFF": {
+    "defaultMessage": "Store and centrally manage your certificates in a secure repository"
+  },
+  "l3wGd2": {
+    "defaultMessage": "Flexible, cost-effective and scalable cloud storage for unstructured data. Get 25 GB per month, cost free."
+  },
+  "lDdIqg": {
+    "defaultMessage": "Train IBM Watson to understand the linguistic nuances of your industry domain"
+  },
+  "mEYkI7": {
+    "defaultMessage": "IBM Cloud Virtual Servers for VPC"
+  },
+  "mXhQDU": {
+    "defaultMessage": "Managed NoSQL JSON document store"
+  },
+  "mkhTx4": {
+    "defaultMessage": "Interpret and classify natural language with confidence"
+  },
+  "mpm2U2": {
+    "defaultMessage": "Container hosting on managed Red Hat Linux servers"
+  },
+  "mzfhv8": {
+    "defaultMessage": "Kubernetes-native CI and CD pipelines"
+  },
+  "nN08p2": {
+    "defaultMessage": "Visual tool and API for text classification"
+  },
+  "nilcxA": {
+    "defaultMessage": "IBM Aspera on CloudIBM Aspera on Cloud"
+  },
+  "njJ8ep": {
+    "defaultMessage": "Store and distribute Docker images in a managed, private registry"
+  },
+  "njUA7c": {
+    "defaultMessage": "Search and analytics engine that adapts to custom domains"
+  },
+  "nmblXM": {
+    "defaultMessage": "Virtual servers for workloads with sensitive data"
+  },
+  "o5DTVG": {
+    "defaultMessage": "Run and manage public, private and virtual networks"
+  },
+  "oBJPPJ": {
+    "defaultMessage": "IBM Cloud Data Shield"
+  },
+  "oQaWF7": {
+    "defaultMessage": "LinuxONE-powered cloud database solution for enterprise workloads with sensitive data"
+  },
+  "oSZCMT": {
+    "defaultMessage": "IBM Cloud Backup"
+  },
+  "oY96j3": {
+    "defaultMessage": "IBM Cloud Satellite."
+  },
+  "oepbnu": {
+    "defaultMessage": "Security description"
+  },
+  "p33z2x": {
+    "defaultMessage": "Managed message broker"
+  },
+  "p5CgYk": {
+    "defaultMessage": "Improve application speed and quality with a recognized leader in cloud integrationImprove application speed and quality with a recognized leader in cloud integration"
+  },
+  "pAspmM": {
+    "defaultMessage": "IBM Cloud Content Delivery Network"
+  },
+  "pGC68e": {
+    "defaultMessage": "IBM Streaming Analytics"
+  },
+  "pGUzWX": {
+    "defaultMessage": "mobile description"
+  },
+  "pIUXrB": {
+    "defaultMessage": "A service mesh for microservices in Kubernetes clusters"
+  },
+  "pLaX4V": {
+    "defaultMessage": "Load balancer"
+  },
+  "q9m276": {
+    "defaultMessage": "Gain a trusted view of data in a hybrid-computing environment"
+  },
+  "qIvTZ4": {
+    "defaultMessage": "SaaS for AI data management"
+  },
+  "qNKPiq": {
+    "defaultMessage": "IBM API Connect®"
+  },
+  "qVuURE": {
+    "defaultMessage": "IBM Cloud Load Balancers"
+  },
+  "qgPKkY": {
+    "defaultMessage": "Aggregate and analyze large datasets"
+  },
+  "qhsPQB": {
+    "defaultMessage": "Uncover connections in data by combining automated ingestion with advanced AI functions"
+  },
+  "qyzNY4": {
+    "defaultMessage": "IBM Watson Discovery"
+  },
+  "rNUj2n": {
+    "defaultMessage": "Managed data warehouse on IBM Cloud or AWS"
+  },
+  "rfrV3f": {
+    "defaultMessage": "Simplify and scale data science to predict and optimize your business outcomes."
+  },
+  "rlKHBE": {
+    "defaultMessage": "Tools to connect all of your apps, data and events"
+  },
+  "rlq8Fg": {
+    "defaultMessage": "IBM Watson Knowledge Studio"
+  },
+  "sHPj62": {
+    "defaultMessage": "Secure and accelerate data transfer between private infrastructure and IBM Cloud"
+  },
+  "siBewP": {
+    "defaultMessage": "Log and analyze activity in your infrastructure"
+  },
+  "sk3srD": {
+    "defaultMessage": "Low-latency execution environment for quantum programs"
+  },
+  "smB+FD": {
+    "defaultMessage": "Securely move terabytes or petabytes of data by aggregating rugged, 120 TB storage devices."
+  },
+  "tF8wRJ": {
+    "defaultMessage": "Run workloads on cloud infrastrcture"
+  },
+  "tatf6X": {
+    "defaultMessage": "Serverless, interactive querying for analyzing data in IBM Cloud Object Storage"
+  },
+  "tvJ7wf": {
+    "defaultMessage": "Use Watson’s AI or build your own machine learning models"
+  },
+  "u9zWS+": {
+    "defaultMessage": "Deploy applications consistently across environments"
+  },
+  "uzKLXd": {
+    "defaultMessage": "Analysis dashboard for system and application logs"
+  },
+  "v+D0LH": {
+    "defaultMessage": "IBM Cloud Pak for Security"
+  },
+  "v5EdjK": {
+    "defaultMessage": "Public and dedicated virtual servers that provision and scale on demand."
+  },
+  "v9mtsp": {
+    "defaultMessage": "Internet of things"
+  },
+  "vEECcp": {
+    "defaultMessage": "IBM Cloud Internet Services"
+  },
+  "vPqMb0": {
+    "defaultMessage": "Dizzion Managed DaaS on IBM Cloud"
+  },
+  "vQF5Zs": {
+    "defaultMessage": "IBM Watson Knowledge Catalog"
+  },
+  "vQzYxD": {
+    "defaultMessage": "Software to automate application resource management and optimize costs"
+  },
+  "vfoXSK": {
+    "defaultMessage": "IBM Hyper Protect Virtual Servers"
+  },
+  "viCUfU": {
+    "defaultMessage": "IBM Aspera® on Cloud"
+  },
+  "w0jDcj": {
+    "defaultMessage": "Multi-tenant connections to your IBM Cloud infrastructure, through your local IBM Cloud datacenter, perfect for creating multi-cloud connectivity in a single environment"
+  },
+  "w2FJX4": {
+    "defaultMessage": "IBM Cloud Bare Metal Servers"
+  },
+  "w3AaOs": {
+    "defaultMessage": "Build applications on an immutable blockchain ledger"
+  },
+  "wK1aar": {
+    "defaultMessage": "An open source, in-memory data structure store, used as a database, cache and message broker."
+  },
+  "wKdz2h": {
+    "defaultMessage": "IBM Cloud Direct Link"
+  },
+  "wLcUXE": {
+    "defaultMessage": "Red Hat OpenShift on IBM Cloud"
+  },
+  "x/h7yL": {
+    "defaultMessage": "API for text analysis and metadata extraction"
+  },
+  "xS4ray": {
+    "defaultMessage": "Store, migrate and back up your data"
+  },
+  "xWOoBo": {
+    "defaultMessage": "Managed in-memory key value store"
+  },
+  "xk0UOe": {
+    "defaultMessage": "containers description."
+  },
+  "xklCtM": {
+    "defaultMessage": "IBM Informix® on Cloud"
+  },
+  "xp6/HC": {
+    "defaultMessage": "Add authentication to web and mobile apps, including through social login"
+  },
+  "xxa9yD": {
+    "defaultMessage": "Load balance traffic among servers to improve uptime and performance"
+  },
+  "xyfSnR": {
+    "defaultMessage": "IBM Cloud Secrets Manager"
+  },
+  "y/JVM1": {
+    "defaultMessage": "Single-tenant, dedicated instance to manage your secrets"
+  },
+  "y3M3RD": {
+    "defaultMessage": "API for translation with domain-specific models"
+  },
+  "yC3Bny": {
+    "defaultMessage": "Managed JSON document store for full-text search"
+  },
+  "yI66y8": {
+    "defaultMessage": "A flexible, security-rich Java server runtime environment for enterprise applications"
+  },
+  "yJLhpe": {
+    "defaultMessage": "Route, track and queue messages, using multiple protocols."
+  },
+  "yPSXlW": {
+    "defaultMessage": "IBM Cloud Databases for MySQL"
+  },
+  "yaKewA": {
+    "defaultMessage": "Visual interface to teach Watson domain-specific knowledge"
+  },
+  "ygKX2U": {
+    "defaultMessage": "IBM Push Notifications"
+  },
+  "zfrbPk": {
+    "defaultMessage": "Storage description"
+  },
+  "zoV0l3": {
+    "defaultMessage": "ai description"
+  },
+  "zqa3In": {
+    "defaultMessage": "IBM Cloud Event Management"
+  }
+}
