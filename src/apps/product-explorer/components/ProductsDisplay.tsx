@@ -7,7 +7,7 @@ import { ReactComponent as ContainersIcon } from '../assets/images/icons/contain
 import { ReactComponent as QuantumIcon } from '../assets/images/icons/quantum.svg';
 import { ReactComponent as AutomationIcon } from '../assets/images/icons/ibm--automation-platform-clean.svg';
 import { useAppSelector } from '../lib/redux/hooks';
-import 'ProductsDisplay.scss';
+import './ProductsDisplay.scss';
 
 interface ProductsDisplayProps {
   linkType: string;

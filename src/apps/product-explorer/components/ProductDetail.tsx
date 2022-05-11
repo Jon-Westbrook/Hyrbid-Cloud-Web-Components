@@ -5,7 +5,7 @@ import { defineGridRow, buildUrl, swapCountryAndLanguage } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 import { useAppSelector } from '../lib/redux/hooks';
-import 'ProductDetail.scss';
+import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
   const messages = useAppSelector<Record<string, MessageDescriptor>>(
@@ -19,7 +19,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
 
   const size = useWindowSize();
 
-  let row = defineGridRow(size.width, props.index, categoryStrings);
+  const row = defineGridRow(size.width, props.index, categoryStrings);
 
   return (
     <div
@@ -60,10 +60,10 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
         let linkicon;
         if (product.external === true) {
           target = '_new';
-          linkicon = 'iconshow';
+          linkicon = 'icon-show';
         } else {
           target = '_self';
-          linkicon = 'iconhidden';
+          linkicon = 'icon-hidden';
         }
 
         return url !== null ? (

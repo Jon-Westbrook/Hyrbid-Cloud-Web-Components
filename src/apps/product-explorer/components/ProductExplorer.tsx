@@ -5,7 +5,7 @@ import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/sli
 import { swapCountryAndLanguage } from '../utils';
 import ProductsDisplay from './ProductsDisplay';
 import { useAppDispatch, useAppSelector } from '../lib/redux/hooks';
-import 'ProductExplorer.scss';
+import './ProductExplorer.scss';
 
 interface ProductExplorerProps {
   linkType: string;
