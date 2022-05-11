@@ -1,58 +1,52 @@
-import React, { useContext } from 'react';
-import {
-  Category,
-  Product,
-  ProductsContext,
-} from '../contexts/ProductsContext';
+import React from 'react';
+import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../hooks/useWindowSize';
 import { defineGridRow, buildUrl, swapCountryAndLanguage } from '../utils';
-import { css } from '@emotion/core';
-import { FormattedMessage } from 'react-intl';
-
-export interface ProductDetailProps {
-  category: Category;
-  products: Product[];
-  index: number;
-  selected: boolean;
-  element: HTMLElement;
-  linkType: string;
-}
+import { FormattedMessage, MessageDescriptor } from 'react-intl';
+import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
+import { useAppSelector } from '../lib/redux/hooks';
+import 'ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
-  const { categories, messages } = useContext(ProductsContext);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
+  const categories = useAppSelector((state) => state.categories);
   const categoryStrings = categories.map((category) => category.name);
-  const size = useWindowSize();
-  let localeCode = props.element.getAttribute('data-localecode') || '';
+
+  let localeCode = useAppSelector((state) => state.localeCode);
   localeCode = swapCountryAndLanguage(localeCode);
+
+  const size = useWindowSize();
 
   let row = defineGridRow(size.width, props.index, categoryStrings);
 
   return (
     <div
-      css={styles.productsContainer}
-      className={props.selected ? 'selected' : ''}
+      className={`product-detail
+      ${props.selected ? 'selected' : ''}`}
       style={{ gridRowStart: row }}
-      data-testid="product-detail">
-      <div css={styles.headerOuterWrapper}>
-        <div css={styles.headerInnerWrapper}>
-          <h2 css={styles.categoryName}>
+      data-testid="product-detail"
+    >
+      <div className="product-detail__header-outer-wrapper">
+        <div className="product-detail__header-inner-wrapper">
+          <h2 className="product-detail__category-name">
             <FormattedMessage
               {...messages[`${props.category.translationId}Name`]}
             />
           </h2>
-          <div css={styles.header}>
-            <p css={styles.description}>
+          <div className="product-detail__header">
+            <p className="product-detail__description">
               <FormattedMessage
                 {...messages[`${props.category.translationId}Description`]}
               />
             </p>
             {props.category.link && (
               <a
-                href={`${localeCode === 'us-en' ? '' : '/' + localeCode}${
-                  props.category.link
-                }`}
+                href={prefixUrlWithLocale(props.category.link, localeCode)}
                 tabIndex={0}
-                css={styles.link}>
+                className="product-detail__link"
+              >
                 <FormattedMessage {...messages.appLearnMore} />
               </a>
             )}
@@ -61,19 +55,24 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       </div>
       {props.products.map((product, i) => {
         const url = buildUrl(product, props.linkType, localeCode);
+
         let target;
         let linkicon;
         if (product.external === true) {
           target = '_new';
-          linkicon = styles.iconshow;
+          linkicon = 'iconshow';
         } else {
           target = '_self';
-          linkicon = styles.iconhidden;
+          linkicon = 'iconhidden';
         }
-        console.log(target);
+
         return url !== null ? (
-          <div css={styles.product} key={`product-${i}`}>
-            <a href={url} css={styles.productLink} target={target}>
+          <div className="product-detail__product" key={`product-${i}`}>
+            <a
+              href={url}
+              className="product-detail__product-link"
+              target={target}
+            >
               {product.translationId ? (
                 <FormattedMessage
                   {...messages[`${product.translationId}Name`]}
@@ -84,6 +83,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
             </a>
             <svg
               css={linkicon}
+              className={`${linkicon}`}
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               xmlns="http://www.w3.org/2000/svg"
@@ -91,11 +91,12 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
               height="32"
               viewBox="0 0 32 32"
               aria-hidden="true"
-              aria-label="This is an external link">
+              aria-label="This is an external link"
+            >
               <path d="M26,28H6a2,2,0,0,1-2-2V6A2,2,0,0,1,6,4h9V6H6V26H26V17h2v9A2,2,0,0,1,26,28Z"></path>
               <polygon points="21 2 21 4 26.59 4 18 12.59 19.41 14 28 5.41 28 11 30 11 30 2 21 2"></polygon>
             </svg>
-            <p css={styles.longDescription}>
+            <p className="product-detail__long-description">
               {product.translationId ? (
                 <FormattedMessage
                   {...messages[`${product.translationId}Description`]}
@@ -109,74 +110,6 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       })}
     </div>
   );
-};
-
-const styles = {
-  productsContainer: css`
-    background-color: #fff;
-    color: #000;
-    grid-column: 1 / -1;
-    padding: 16px;
-    margin: 1px;
-    margin-top: -1px;
-    display: none;
-    grid-template-columns: repeat(3, 1fr);
-
-    &.selected {
-      display: grid;
-    }
-
-    @media (max-width: 1055px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 671px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  `,
-  headerOuterWrapper: css`
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  `,
-  headerInnerWrapper: css`
-    @media (max-width: 671px) {
-      grid-column: 1 / -1;
-    }
-  `,
-  categoryName: css`
-    font-size: 1.75rem;
-    padding-bottom: 0.25rem;
-  `,
-  header: css`
-    margin-bottom: 32px;
-  `,
-  product: css`
-    padding: 1rem 1rem 1rem 0;
-  `,
-  description: css`
-    padding: 0;
-    font-size: 0.875rem;
-    margin: 8px 0;
-  `,
-  link: css`
-    font-size: 0.875rem;
-  `,
-  productLink: css`
-    font-size: 1rem;
-  `,
-  longDescription: css`
-    margin-top: 8px;
-    font-size: 0.875rem;
-  `,
-  iconhidden: css`
-    display: none;
-  `,
-  iconshow: css`
-    display: inline-block;
-    height: 17px;
-    fill: #0f62fe;
-  `,
 };
 
 export default ProductDetail;
