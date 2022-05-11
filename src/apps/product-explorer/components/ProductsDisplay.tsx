@@ -1,21 +1,24 @@
-import React, { useContext, useState, SyntheticEvent, Fragment } from 'react';
-import { ProductsContext, Category } from '../contexts/ProductsContext';
+import React, { useState, SyntheticEvent, Fragment } from 'react';
+import { Category } from '../../../common/product-explorer/lib/types';
 import ProductDetail from './ProductDetail';
-import { css } from '@emotion/core';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ReactComponent as LoggingAndMonitoringIcon } from '../assets/images/icons/logging-and-monitoring.svg';
 import { ReactComponent as ContainersIcon } from '../assets/images/icons/containers.svg';
 import { ReactComponent as QuantumIcon } from '../assets/images/icons/quantum.svg';
 import { ReactComponent as AutomationIcon } from '../assets/images/icons/ibm--automation-platform-clean.svg';
+import { useAppSelector } from '../lib/redux/hooks';
+import 'ProductsDisplay.scss';
 
 interface ProductsDisplayProps {
-  element: HTMLElement;
+  linkType: string;
 }
 
-const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
-  const { categories, messages } = useContext(ProductsContext);
+const ProductsDisplay: React.FC<ProductsDisplayProps> = ({ linkType }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
-  const linkType = props.element.getAttribute('data-link-type') || 'product';
+  const categories = useAppSelector((state) => state.categories);
+  const messages = useAppSelector<Record<string, MessageDescriptor>>(
+    (state) => state.messages,
+  );
 
   function handleInteraction(e: SyntheticEvent<HTMLDivElement>) {
     if (selectedCategory === e.currentTarget.dataset.category) {
@@ -25,7 +28,7 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
     }
   }
 
-  function handleKeyPress(e) {
+  function handleKeyPress(e: React.KeyboardEvent<HTMLInputElement>) {
     if (e.key === 'Enter') {
       handleInteraction(e);
     }
@@ -64,25 +67,26 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
   }
 
   return (
-    <div css={styles.grid}>
+    <div className="product-display">
       {categories.filter(shouldCategoryShow).map((category, i, categories) => {
         return (
           <Fragment key={`category-${i}`}>
             <div
-              css={styles.tileWrapper}
+              className="product-display__tile-wrapper"
               onKeyPress={handleKeyPress}
               onClick={handleInteraction}
               data-category={category.name}
               data-i={i}
-              tabIndex={0}>
+              tabIndex={0}
+            >
               <div
-                css={styles.tile}
-                className={
+                className={`product-display__tile ${
                   selectedCategory === category.name ? 'selected' : ''
-                }>
+                }`}
+              >
                 {generateIconMarkup(category.icon, category.name)}
-                <div css={styles.nameChevron}>
-                  <h4 css={styles.name}>
+                <div className="product-display__name-chevron">
+                  <h4 className="product-display__name">
                     <FormattedMessage
                       {...messages[`${category.translationId}Name`]}
                     />
@@ -92,7 +96,8 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
                       selectedCategory === category.name
                         ? 'ibm-chevron-up-link'
                         : 'ibm-chevron-down-link'
-                    }`}></span>
+                    }`}
+                  ></span>
                 </div>
               </div>
             </div>
@@ -101,7 +106,6 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
               products={categories[i].products}
               index={i}
               selected={categories[i].name === selectedCategory}
-              element={props.element}
               linkType={linkType}
             />
           </Fragment>
@@ -109,103 +113,6 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = (props) => {
       })}
     </div>
   );
-};
-
-const styles = {
-  grid: css`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    @media (max-width: 1055px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 671px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  `,
-  tileWrapper: css`
-    padding: 1px;
-    cursor: pointer;
-  `,
-  tile: css`
-    color: #fff;
-    height: 156px;
-    padding: 1rem;
-    background-color: #282828;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: background-color 0.25s;
-
-    img.icon,
-    svg.icon {
-      height: 30px;
-      width: 30px;
-      transition: height 0.25s;
-    }
-
-    &:hover {
-      background-color: #353535;
-    }
-
-    &.selected {
-      background-color: #fff;
-      color: #000;
-
-      img.icon,
-      svg.icon {
-        height: 60px;
-        width: 60px;
-      }
-
-      h4 {
-        visibility: hidden;
-      }
-
-      span {
-        color: #408bfc;
-      }
-    }
-
-    span {
-      color: #fff;
-    }
-
-    @media (max-width: 671px) {
-      height: auto;
-      flex-direction: row;
-      align-items: center;
-
-      img.icon,
-      svg.icon {
-        margin-right: 1rem;
-        height: 30px;
-        width: 30px;
-      }
-
-      &.selected {
-        img.icon,
-        svg.icon {
-          height: 30px;
-          width: 60px;
-        }
-      }
-    }
-  `,
-  nameChevron: css`
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  `,
-  name: css`
-    font-size: 1.5rem;
-    padding: 0;
-
-    @media (max-width: 1055px) {
-      font-size: 1.25rem;
-    }
-  `,
 };
 
 export default ProductsDisplay;
