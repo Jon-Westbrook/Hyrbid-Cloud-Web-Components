@@ -17,7 +17,7 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   if (!element || !locale) {
     return;
   }
-  console.log(element, 'element', locale);
+
   ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
