@@ -3,6 +3,8 @@ export interface Product {
   longDescription: string;
   url: string;
   translationId?: string;
+  external?: boolean;
+  pricingUrl?: string;
 }
 
 export interface Category {
@@ -19,4 +21,5 @@ export interface ProductDetailProps {
   products: Product[];
   index: number;
   selected: boolean;
+  linkType?: string;
 }
