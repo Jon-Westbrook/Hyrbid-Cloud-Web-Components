@@ -6,6 +6,7 @@ import { swapCountryAndLanguage } from '../utils';
 import ProductsDisplay from './ProductsDisplay';
 import { useAppDispatch, useAppSelector } from '../lib/redux/hooks';
 import './ProductExplorer.scss';
+import { Loading } from 'carbon-components-react';
 
 interface ProductExplorerProps {
   linkType: string;
@@ -58,11 +59,7 @@ const ProductExplorer: React.FC<ProductExplorerProps> = ({ linkType }) => {
         </div>
         <div>
           {loading ? (
-            <>
-              <p className="ibm-h1">
-                <span className="ibm-spinner"></span> Loading products...
-              </p>
-            </>
+            <Loading withOverlay={false} />
           ) : (
             <ProductsDisplay linkType={linkType} />
           )}
