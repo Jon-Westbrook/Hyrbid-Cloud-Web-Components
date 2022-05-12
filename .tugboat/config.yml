@@ -45,6 +45,10 @@ services:
     urls:
       journey-ai:
         - /iframe.html?id=widgets-journey-to-ai-components--default&args=&globals=locale:en&viewMode=story
+      product-explorer:
+        - /iframe.html?id=widgets-product-explorer-components--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-components-products-display--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-product-explorer-components-product-detail--default&args=&globals=locale:en&viewMode=story
       product-explorer-it-infra:
         - /iframe.html?id=widgets-product-explorer-it-infra-components--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=widgets-product-explorer-it-infra-components-products-display--default&args=&globals=locale:en&viewMode=story
