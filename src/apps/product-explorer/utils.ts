@@ -1,4 +1,4 @@
-import { Product } from './contexts/ProductsContext';
+import { Product } from '../../common/product-explorer/lib/types';
 
 export function generateRowNumArray(
   categories: string[],
