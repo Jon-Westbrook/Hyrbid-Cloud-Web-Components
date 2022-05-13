@@ -39,17 +39,10 @@ module.exports = {
     config.module.rules[2].use.options.plugins = babelPlugins;
 
     config.module.rules.push(
+      // Handle SVGs as ReactComponents and as assets
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        // Check if the import happens in a JSX file.
-        issuer: /\.[jt]sx?$/,
-        // Support turning SVGs into React components.
-        use: ['babel-loader', '@svgr/webpack', 'url-loader'],
-      },
-      {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        // We use this if the SVG is from CSS, SASS, etc.
-        type: 'asset/inline',
+        use: ['@svgr/webpack', 'url-loader'],
       },
       // Handle font files.
       { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/inline' },
