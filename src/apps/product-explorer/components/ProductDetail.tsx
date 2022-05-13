@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
-import { useWindowSize } from '../hooks/useWindowSize';
+import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow, buildUrl, swapCountryAndLanguage } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
