@@ -45,7 +45,7 @@ module.exports = {
         use: ['@svgr/webpack', 'url-loader'],
       },
       // Handle font files.
-      { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/inline' },
+      { test: /\.(woff|woff2|eot|ttf|otf|svg)$/i, type: 'asset/inline' },
     );
 
     config.resolve = config.resolve || {};
