@@ -84,3 +84,20 @@ export function swapCountryAndLanguage(localeCode: string): string {
 
   return swappedLocaleCode;
 }
+
+export function getTargetAndLinkIconStatus(
+  isLinkExternal: boolean | undefined,
+): any {
+  let target;
+  let linkicon;
+
+  if (isLinkExternal === true) {
+    target = '_new';
+    linkicon = 'icon-show';
+  } else {
+    target = '_self';
+    linkicon = 'icon-hidden';
+  }
+
+  return { target: target, linkIcon: linkicon };
+}

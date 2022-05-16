@@ -1,7 +1,12 @@
 import React from 'react';
 import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
-import { defineGridRow, buildUrl, swapCountryAndLanguage } from '../utils';
+import {
+  defineGridRow,
+  buildUrl,
+  swapCountryAndLanguage,
+  getTargetAndLinkIconStatus,
+} from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 import { useAppSelector } from '../lib/redux/hooks';
@@ -13,13 +18,11 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
   );
   const categories = useAppSelector((state) => state.categories);
   const categoryStrings = categories.map((category) => category.name);
+  const size = useWindowSize();
+  const row = defineGridRow(size.width, props.index, categoryStrings);
 
   let localeCode = useAppSelector((state) => state.localeCode);
   localeCode = swapCountryAndLanguage(localeCode);
-
-  const size = useWindowSize();
-
-  const row = defineGridRow(size.width, props.index, categoryStrings);
 
   return (
     <div
@@ -55,18 +58,11 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       </div>
       {props.products.map((product, i) => {
         const url = buildUrl(product, props.linkType, localeCode);
+        const { target, linkIcon } = getTargetAndLinkIconStatus(
+          product.external,
+        );
 
-        let target;
-        let linkicon;
-        if (product.external === true) {
-          target = '_new';
-          linkicon = 'icon-show';
-        } else {
-          target = '_self';
-          linkicon = 'icon-hidden';
-        }
-
-        return url !== null ? (
+        return url ? (
           <div className="product-detail__product" key={`product-${i}`}>
             <a
               href={url}
@@ -82,8 +78,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
               )}
             </a>
             <svg
-              css={linkicon}
-              className={`${linkicon}`}
+              className={`${linkIcon}`}
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               xmlns="http://www.w3.org/2000/svg"
