@@ -5,6 +5,22 @@ module.exports = {
   status: 'stable',
   description:
     'JavaScript widget that allows users to explore various IBM products on offer.',
+  settingsSchema: {
+    type: 'object',
+    additionalProperties: false,
+    properties: {
+      fields: {
+        type: 'object',
+        properties: {
+          'link-type': {
+            type: 'string',
+            title: 'Link Type',
+            enum: ['product', 'pricing', 'data-link-type'],
+          },
+        },
+      },
+    },
+  },
   additionalCustomProperties: {
     webSegmentPaths: ['/cloud'],
     availableTranslations: [
