@@ -34,9 +34,6 @@ services:
         cd "${TUGBOAT_ROOT}"
         ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/adr-docs/public" "${TUGBOAT_ROOT}/dist/storybook/architecture"
 
-    lighthouse:
-      enabled: true
-
     screenshot:
       enabled: true
       waitUntil:
@@ -67,6 +64,19 @@ services:
     http: false
     depends: mysql
     checkout: true
+    urls:
+      - /admin/content/interactive-components/widget-instance/1
+      - /admin/content/interactive-components/widget-instance/2
+      - /admin/content/interactive-components/widget-instance/3
+      - /admin/content/interactive-components/widget-instance/4
+    screenshot:
+      enabled: true
+      waitUntil:
+        - networkidle0
+
+    visualdiff:
+      enabled: true
+
     commands:
       init: |
         set -eux
@@ -108,3 +118,5 @@ services:
         vendor/bin/drush --yes config-set system.site page.front /user/login?destination=/admin/content/interactive-components/widget-instance
       online:
         - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT widget_ingestion:ingest --force-ingestion
+        - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT php:script "${TUGBOAT_ROOT}/.tugboat/scripts/default-widget-instances.php"
+        - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT role:perm:add anonymous 'view widget instance'
