@@ -2,9 +2,9 @@ import { LinkType, Product } from '../../common/product-explorer/lib/types';
 
 export function buildUrl(
   product: Product,
-  linkType: string,
+  linkType: string | undefined,
   localeCode: string,
-): string | undefined {
+): string | null {
   const url = linkType === LinkType.pricing ? product.pricingUrl : product.url;
 
   if (url) {
@@ -13,7 +13,7 @@ export function buildUrl(
       : url;
   }
 
-  return undefined;
+  return null;
 }
 
 export function swapCountryAndLanguage(localeCode: string): string {
