@@ -3,6 +3,7 @@ import { FormattedMessage, MessageDescriptor, useIntl } from 'react-intl';
 import { setLocaleCode } from '../../../common/product-explorer/lib/redux/slices/localeCodeSlice';
 import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/slices/loadingSlice';
 import { swapCountryAndLanguage } from '../utils';
+import { LinkType } from '../../../common/product-explorer/lib/types';
 import ProductsDisplay from './ProductsDisplay';
 import {
   useProductExplorerDispatch,
@@ -12,7 +13,7 @@ import './ProductExplorer.scss';
 import { Loading } from 'carbon-components-react';
 
 interface ProductExplorerProps {
-  linkType: string;
+  linkType: LinkType.product | string;
 }
 
 const ProductExplorer: React.FC<ProductExplorerProps> = ({ linkType }) => {

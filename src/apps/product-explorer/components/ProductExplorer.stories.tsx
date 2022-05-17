@@ -3,6 +3,7 @@ import ProductExplorer from './ProductExplorer';
 import storyWithTranslation from '../lib/storyWithTranslation';
 import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
 import defaultFakeState from '../lib/redux/defaultFakeState';
+import { LinkType } from 'src/common/product-explorer/lib/types';
 
 const stories: Meta = {
   title: 'Widgets/Product Explorer/Components',
@@ -17,7 +18,7 @@ const stories: Meta = {
 };
 
 const props = {
-  linkType: 'product',
+  linkType: LinkType.product,
 };
 
 const Template: StoryFn = () => <ProductExplorer {...props} />;

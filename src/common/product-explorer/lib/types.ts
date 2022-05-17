@@ -21,5 +21,10 @@ export interface ProductDetailProps {
   products: Product[];
   index: number;
   selected: boolean;
-  linkType?: string;
+  linkType?: LinkType.product | string;
+}
+
+export enum LinkType {
+  product = 'product',
+  pricing = 'pricing',
 }

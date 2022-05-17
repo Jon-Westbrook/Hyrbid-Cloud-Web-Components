@@ -6,6 +6,7 @@ import ProductExplorer from './components/ProductExplorer';
 import { IntlProvider } from 'react-intl';
 import { RenderFn } from '../../types/widgets';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
+import { LinkType } from 'src/common/product-explorer/lib/types';
 
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
@@ -18,13 +19,17 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
     return;
   }
 
+  const getLinkType = () => {
+    const dataLinkType = element.getAttribute('data-link-type');
+
+    return dataLinkType ? dataLinkType : LinkType.product;
+  };
+
   ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
         <IntlProvider locale={locale} messages={messages}>
-          <ProductExplorer
-            linkType={element.getAttribute('data-link-type') || 'product'}
-          />
+          <ProductExplorer linkType={getLinkType()} />
         </IntlProvider>
       </Provider>
     </React.StrictMode>,
