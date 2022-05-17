@@ -63,7 +63,7 @@ const ProductExplorer: React.FC<ProductExplorerProps> = ({ linkType }) => {
         </div>
         <div>
           {loading ? (
-              <Loading withOverlay={false}/>
+            <Loading withOverlay={false} />
           ) : (
             <ProductsDisplay linkType={linkType} />
           )}
