@@ -1,19 +1,19 @@
-import { Product } from '../../common/product-explorer/lib/types';
+import { LinkType, Product } from '../../common/product-explorer/lib/types';
 
 export function buildUrl(
   product: Product,
   linkType: string,
   localeCode: string,
-): string | null | undefined {
-  const url = linkType === 'pricing' ? product.pricingUrl : product.url;
+): string | undefined {
+  const url = linkType === LinkType.pricing ? product.pricingUrl : product.url;
 
-  if (url === null) {
-    return null;
+  if (url) {
+    return url?.charAt(0) === '/'
+      ? `${localeCode === 'us-en' ? '' : '/' + localeCode}${url}`
+      : url;
   }
 
-  return url?.charAt(0) === '/'
-    ? `${localeCode === 'us-en' ? '' : '/' + localeCode}${url}`
-    : url;
+  return undefined;
 }
 
 export function swapCountryAndLanguage(localeCode: string): string {
