@@ -6,7 +6,7 @@ import { ReactComponent as LoggingAndMonitoringIcon } from '../assets/images/ico
 import { ReactComponent as ContainersIcon } from '../assets/images/icons/containers.svg';
 import { ReactComponent as QuantumIcon } from '../assets/images/icons/quantum.svg';
 import { ReactComponent as AutomationIcon } from '../assets/images/icons/ibm--automation-platform-clean.svg';
-import { useAppSelector } from '../lib/redux/hooks';
+import { useProductExplorerSelector } from '../lib/redux/hooks';
 import './ProductsDisplay.scss';
 
 interface ProductsDisplayProps {
@@ -15,10 +15,10 @@ interface ProductsDisplayProps {
 
 const ProductsDisplay: React.FC<ProductsDisplayProps> = ({ linkType }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
-  const categories = useAppSelector((state) => state.categories);
-  const messages = useAppSelector<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
-  );
+  const categories = useProductExplorerSelector((state) => state.categories);
+  const messages = useProductExplorerSelector<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
 
   function handleInteraction(e: SyntheticEvent<HTMLDivElement>) {
     if (selectedCategory === e.currentTarget.dataset.category) {

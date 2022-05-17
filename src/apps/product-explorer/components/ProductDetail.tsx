@@ -9,19 +9,19 @@ import {
 } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
-import { useAppSelector } from '../lib/redux/hooks';
+import { useProductExplorerSelector } from '../lib/redux/hooks';
 import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
-  const messages = useAppSelector<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
-  );
-  const categories = useAppSelector((state) => state.categories);
+  const messages = useProductExplorerSelector<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
+  const categories = useProductExplorerSelector((state) => state.categories);
   const categoryStrings = categories.map((category) => category.name);
   const size = useWindowSize();
   const row = defineGridRow(size.width, props.index, categoryStrings);
 
-  let localeCode = useAppSelector((state) => state.localeCode);
+  let localeCode = useProductExplorerSelector((state) => state.localeCode);
   localeCode = swapCountryAndLanguage(localeCode);
 
   return (
@@ -29,7 +29,6 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       className={`product-detail
       ${props.selected ? 'selected' : ''}`}
       style={{ gridRowStart: row }}
-      data-testid="product-detail"
     >
       <div className="product-detail__header-outer-wrapper">
         <div className="product-detail__header-inner-wrapper">
