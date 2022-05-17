@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
 import SliderHeading, { SliderHeadingProps } from './SliderHeading';
 import { Meta, Story } from '@storybook/react';
-import storyWithClassNameWrapper from 'src/common/storyWithClassNameWrapper';
+import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper';
 
 const stories: Meta = {
   component: SliderHeading,

@@ -3,7 +3,8 @@ import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
 import defaultFakeState from '../lib/redux/defaultFakeState';
-import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
+import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
+import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper';
 
 const stories: Meta = {
   component: ProductsDisplay,
@@ -14,6 +15,7 @@ const stories: Meta = {
       defaultFakeState,
       identifier: 'Product Explorer Security - Product Display',
     }),
+    storyWithClassNameWrapper('product-explorer-security'),
   ],
 };
 

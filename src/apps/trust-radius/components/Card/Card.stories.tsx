@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react';
 import { CarbonThemes } from '../../../../types/carbon';
 import storyWithTranslation from '../../lib/storyWithTranslation';
 import storyWithRedux, { handlers } from '../../lib/storyWithRedux';
-import storyWithClassNameWrapper from 'src/common/storyWithClassNameWrapper';
+import storyWithClassNameWrapper from '../../../../common/storyWithClassNameWrapper';
 
 const stories: Meta = {
   component: Card,

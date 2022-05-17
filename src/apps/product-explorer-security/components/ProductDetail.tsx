@@ -1,12 +1,11 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
-import { css } from '@emotion/react';
 import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow } from '../../../common/product-explorer/utils';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 import { useAppSelector } from '../lib/redux/hooks';
+import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
   const localeCode = useAppSelector((state) => state.localeCode);
@@ -21,20 +20,21 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
 
   return (
     <div
-      css={styles.productsContainer}
-      className={props.selected ? 'selected' : ''}
+      className={`product-explorer-security__products-container ${
+        props.selected ? 'selected' : ''
+      }`}
       style={{ gridRowStart: row }}
       data-testid="product-detail"
     >
-      <div css={styles.headerOuterWrapper}>
-        <div css={styles.headerInnerWrapper}>
-          <h2 css={styles.categoryName}>
+      <div className="product-explorer-security__header-outer-wrapper">
+        <div className="product-explorer-security__header-inner-wrapper">
+          <h2 className="product-explorer-security__category-name">
             <FormattedMessage
               {...messages[`${props.category.translationId}Name`]}
             />
           </h2>
-          <div css={styles.header}>
-            <p css={styles.description}>
+          <div className="product-explorer-security__header">
+            <p className="product-explorer-security__description">
               <FormattedMessage
                 {...messages[`${props.category.translationId}Description`]}
               />
@@ -43,7 +43,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
               <a
                 href={prefixUrlWithLocale(props.category.link, localeCode)}
                 tabIndex={0}
-                css={styles.link}
+                className="product-explorer-security__link"
               >
                 <FormattedMessage {...messages.appLearnMore} />
               </a>
@@ -55,8 +55,14 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
         const productUrl = prefixUrlWithLocale(product.url, localeCode);
 
         return (
-          <div css={styles.product} key={`product-${i}`}>
-            <a href={productUrl} css={styles.productLink}>
+          <div
+            className="product-explorer-security__product"
+            key={`product-${i}`}
+          >
+            <a
+              href={productUrl}
+              className="product-explorer-security__product-link"
+            >
               {product.translationId ? (
                 <FormattedMessage
                   {...messages[`${product.translationId}Name`]}
@@ -65,7 +71,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
                 product.name
               )}
             </a>
-            <p css={styles.longDescription}>
+            <p className="product-explorer-security__long-description">
               {product.translationId ? (
                 <FormattedMessage
                   {...messages[`${product.translationId}Description`]}
@@ -79,66 +85,6 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       })}
     </div>
   );
-};
-
-const styles = {
-  productsContainer: css`
-    background-color: #fff;
-    color: #000;
-    grid-column: 1 / -1;
-    padding: 16px;
-    margin: 1px;
-    margin-top: -1px;
-    display: none;
-    grid-template-columns: repeat(3, 1fr);
-
-    &.selected {
-      display: grid;
-    }
-
-    @media (max-width: 1055px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 671px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  `,
-  headerOuterWrapper: css`
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  `,
-  headerInnerWrapper: css`
-    @media (max-width: 671px) {
-      grid-column: 1 / -1;
-    }
-  `,
-  categoryName: css`
-    font-size: 1.75rem;
-    padding-bottom: 0.25rem;
-  `,
-  header: css`
-    margin-bottom: 32px;
-  `,
-  product: css`
-    padding: 1rem 1rem 1rem 0;
-  `,
-  description: css`
-    padding: 0;
-    font-size: 0.875rem;
-    margin: 8px 0;
-  `,
-  link: css`
-    font-size: 0.875rem;
-  `,
-  productLink: css`
-    font-size: 1rem;
-  `,
-  longDescription: css`
-    margin-top: 8px;
-    font-size: 0.875rem;
-  `,
 };
 
 export default ProductDetail;

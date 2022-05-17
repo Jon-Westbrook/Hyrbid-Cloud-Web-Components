@@ -45,8 +45,8 @@ In the end the trick was that instead of creating the data as `strings` I needed
 
 However I had to go read the documentation under _Contributing > Tips > Translations_ carefully to see what was going on with Storybook failures. In particular:
 
-> Once you have your app ready for translation, execute the script ./scripts/extract-all.sh. This will scan for the messages in all the widgets and put them in each of the ./src/apps/your-widget/locales/extractedStrings folder. You can use the en.json file to submit the string for translation. Once you get the translated JSON files (es.json, ja.json, ...) add them to the extractedStrings folder. jsx
-> Before publishing your widget remember to "compile" the translations using ./scripts/compile-all.sh.
+> Once you have your app ready for translation, execute the script `yarn extract` This will scan for the messages in all the widgets and put them in each of the ./src/apps/your-widget/locales/extractedStrings folder. You can use the en.json file to submit the string for translation. Once you get the translated JSON files (es.json, ja.json, ...) add them to the extractedStrings folder. jsx
+> Before publishing your widget remember to "compile" the translations using `yarn compile`.
 
 After running `yarn extract emoji-cards`. I got the JSON in the `extractedMessages` but Storybook was still broken. I needed to run `yarn compile` as well.
 

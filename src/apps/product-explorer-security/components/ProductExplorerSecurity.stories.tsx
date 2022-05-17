@@ -3,7 +3,7 @@ import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
 import defaultFakeState from '../lib/redux/defaultFakeState';
-import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
+import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
 
 const stories: Meta = {
   component: ProductExplorerSecurity,
