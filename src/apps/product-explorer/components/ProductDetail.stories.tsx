@@ -4,6 +4,7 @@ import storyWithTranslation from '../lib/storyWithTranslation';
 import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
 import storyWithClassNameWrapper from 'src/common/storyWithClassNameWrapper';
 import defaultFakeState from '../lib/redux/defaultFakeState';
+import { products } from '../assets/data/products';
 
 const stories: Meta = {
   title: 'Widgets/Product Explorer/Components/Product Detail',
@@ -18,30 +19,15 @@ const stories: Meta = {
   ],
 };
 
-const product = {
-  longDescription: 'Virtual agents customizable to any domain',
-  name: 'IBM Watson Assistant',
-  translationId: 'watsonAssistant',
-  url: '/products/watson-assistant',
-  pricingUrl: '/products/watson-assistant/pricing',
-  external: false,
-  productKey: 'key',
-};
+const category = products.categories[0];
 
 const props = {
   category: {
-    name: 'AI / machine learning',
-    translationId: 'ai',
-    description: 'Use Watson’s AI or build your own machine learning models',
-    icon: 'platform',
-    link: '/cloud/ai',
-    products: [product],
+    ...category,
   },
-  products: [product],
   index: 0,
+  products: category.products,
   selected: true,
-  linkType: 'product',
-  element: 'product-explorer',
 };
 
 const Template: StoryFn = () => <ProductDetail {...props} />;
