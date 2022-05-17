@@ -2,11 +2,7 @@ import React from 'react';
 import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow } from '../../../common/product-explorer/utils';
-import {
-  swapCountryAndLanguage,
-  getTargetAndLinkIconStatus,
-  buildUrl,
-} from '../utils';
+import { swapCountryAndLanguage, buildUrl } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 import { useProductExplorerSelector } from '../lib/redux/hooks';
@@ -57,16 +53,16 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       </div>
       {props.products.map((product, i) => {
         const url = buildUrl(product, props.linkType, localeCode);
-        const { target, linkIcon } = getTargetAndLinkIconStatus(
-          product.external,
-        );
+        const getTarget = product.external === true ? '_new' : '_self';
+        const getLinkIcon =
+          product.external === true ? 'icon-show' : 'icon-hidden';
 
         return url ? (
           <div className="product-detail__product" key={`product-${i}`}>
             <a
               href={url}
               className="product-detail__product-link"
-              target={target}
+              target={getTarget}
             >
               {product.translationId ? (
                 <FormattedMessage
@@ -77,7 +73,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
               )}
             </a>
             <svg
-              className={`${linkIcon}`}
+              className={`${getLinkIcon}`}
               focusable="false"
               preserveAspectRatio="xMidYMid meet"
               xmlns="http://www.w3.org/2000/svg"
