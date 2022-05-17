@@ -6,6 +6,7 @@ import { swapCountryAndLanguage, buildUrl } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 import { useProductExplorerSelector } from '../lib/redux/hooks';
+import { Launch32 } from '@carbon/icons-react';
 import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
@@ -54,8 +55,6 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       {props.products.map((product, i) => {
         const url = buildUrl(product, props.linkType, localeCode);
         const getTarget = product.external === true ? '_new' : '_self';
-        const getLinkIcon =
-          product.external === true ? 'icon-show' : 'icon-hidden';
 
         return url ? (
           <div className="product-detail__product" key={`product-${i}`}>
@@ -72,20 +71,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
                 product.name
               )}
             </a>
-            <svg
-              className={`${getLinkIcon}`}
-              focusable="false"
-              preserveAspectRatio="xMidYMid meet"
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              aria-hidden="true"
-              aria-label="This is an external link"
-            >
-              <path d="M26,28H6a2,2,0,0,1-2-2V6A2,2,0,0,1,6,4h9V6H6V26H26V17h2v9A2,2,0,0,1,26,28Z"></path>
-              <polygon points="21 2 21 4 26.59 4 18 12.59 19.41 14 28 5.41 28 11 30 11 30 2 21 2"></polygon>
-            </svg>
+            {product.external && <Launch32 />}
             <p className="product-detail__long-description">
               {product.translationId ? (
                 <FormattedMessage
