@@ -3,7 +3,7 @@ export interface Product {
   longDescription: string;
   url: string;
   translationId?: string;
-  external?: boolean;
+  external: boolean;
   pricingUrl?: string;
 }
 
