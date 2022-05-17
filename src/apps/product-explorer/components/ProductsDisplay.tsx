@@ -7,6 +7,7 @@ import { ReactComponent as ContainersIcon } from '../assets/images/icons/contain
 import { ReactComponent as QuantumIcon } from '../assets/images/icons/quantum.svg';
 import { ReactComponent as AutomationIcon } from '../assets/images/icons/ibm--automation-platform-clean.svg';
 import { useProductExplorerSelector } from '../lib/redux/hooks';
+import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react';
 import './ProductsDisplay.scss';
 
 interface ProductsDisplayProps {
@@ -91,13 +92,13 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = ({ linkType }) => {
                       {...messages[`${category.translationId}Name`]}
                     />
                   </h4>
-                  <span
-                    className={`ibm-icon-nolink ${
-                      selectedCategory === category.name
-                        ? 'ibm-chevron-up-link'
-                        : 'ibm-chevron-down-link'
-                    }`}
-                  ></span>
+                  <span>
+                    {selectedCategory === category.name ? (
+                      <ChevronUp32 />
+                    ) : (
+                      <ChevronDown32 />
+                    )}
+                  </span>
                 </div>
               </div>
             </div>
