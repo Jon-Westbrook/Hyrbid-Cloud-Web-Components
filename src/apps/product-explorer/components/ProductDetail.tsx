@@ -6,7 +6,7 @@ import { swapCountryAndLanguage, buildUrl } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
 import { useProductExplorerSelector } from '../lib/redux/hooks';
-import { Launch32 } from '@carbon/icons-react';
+import { Launch16 } from '@carbon/icons-react';
 import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
@@ -71,7 +71,7 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
                 product.name
               )}
             </a>
-            {product.external && <Launch32 />}
+            {product.external && <Launch16 />}
             <p className="product-detail__long-description">
               {product.translationId ? (
                 <FormattedMessage
