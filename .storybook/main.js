@@ -1,9 +1,12 @@
 const findWidgetIdsFsSync = require('./findWidgetIdsFsSync');
-const mergeDeep = require('lodash.merge');
+const { merge } = require('webpack-merge');
 
 const widgetIds = findWidgetIdsFsSync();
 
 module.exports = {
+  core: {
+    builder: 'webpack5',
+  },
   stories: [
     './docs/**/*.stories.@(js|jsx|ts|tsx|mdx)',
     '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
@@ -24,6 +27,5 @@ module.exports = {
       to: `/static/${id}`,
     })),
   ],
-  webpackFinal: (config) =>
-    mergeDeep(config, { performance: { hints: false } }),
+  webpackFinal: (config) => merge(config, { performance: { hints: false } }),
 };

@@ -1,59 +1,32 @@
-const path = require('path');
 const CompressionPlugin = require('compression-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
 const {
   constants: { BROTLI_PARAM_QUALITY },
 } = require('zlib');
-const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
+const reactScriptsWebpackConfigBuilder = require('react-scripts/config/webpack.config');
+const { merge } = require('webpack-merge');
 
 module.exports = {
   register: ['../src/apps/**/*.widget.js'],
-  webpackFinal: (config) => {
-    const isEnvDevelopment = config.mode === 'development';
+  webpackFinal: ({
+    entry,
+    output,
+    target,
+    mode,
+    devtool,
+    profile,
+    plugins,
+  }) => {
+    const craConfig = reactScriptsWebpackConfigBuilder(mode);
+    const config = merge(craConfig, {
+      entry,
+      output,
+      target,
+      mode,
+      devtool,
+      profile,
+    });
     const isEnvProduction = config.mode === 'production';
     const skipCompression = process.env.WIDGETS_SKIP_COMPRESSION === 'true';
-    const disableESLintPlugin = process.env.DISABLE_ESLINT_PLUGIN === 'true';
-    const emitErrorsAsWarnings = process.env.ESLINT_NO_DEV_ERRORS === 'true';
-    const hasJsxRuntime = (() => {
-      if (process.env.DISABLE_NEW_JSX_TRANSFORM === 'true') {
-        return false;
-      }
-
-      try {
-        require.resolve('react/jsx-runtime');
-        return true;
-      } catch (e) {
-        return false;
-      }
-    })();
-
-    // Add the React and Typescript configurations to babel loader to process
-    // .tsx files.
-    let presets = config.module.rules[2].use.options.presets;
-    presets.push(['@babel/preset-react', { runtime: 'automatic' }]);
-
-    // The default configuration adds the ts-loader, which we don't need now.
-    config.module.rules[2].use.options.presets = presets;
-    const babelPlugins = config.module.rules[2].use.options.plugins || [];
-    babelPlugins.push('@babel/plugin-transform-runtime');
-    config.module.rules[2].use.options.plugins = babelPlugins;
-
-    config.module.rules.push(
-      {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        // Check if the import happens in a JSX file.
-        issuer: /\.[jt]sx?$/,
-        // Support turning SVGs into React components.
-        use: ['babel-loader', '@svgr/webpack', 'url-loader'],
-      },
-      {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        // We use this if the SVG is from CSS, SASS, etc.
-        type: 'asset/inline',
-      },
-      // Handle font files.
-      { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/inline' },
-    );
 
     config.resolve = config.resolve || {};
     config.resolve.alias = config.resolve.alias || {};
@@ -61,61 +34,32 @@ module.exports = {
       '@formatjs/icu-messageformat-parser/no-parser';
 
     config.plugins = config.plugins || [];
-    config.plugins = [
-      ...config.plugins,
-      // Generate an asset manifest file with the following content:
-      // - "files" key: Mapping of all asset filenames to their corresponding
-      //   output file so that tools can pick it up without having to parse
-      //   `index.html`
-      // - "entrypoints" key: Array of files which are included in `index.html`,
-      //   can be used to reconstruct the HTML if necessary
-      new WebpackManifestPlugin({
-        fileName: 'asset-manifest.json',
-        useEntryKeys: true,
-      }),
-      !disableESLintPlugin &&
-        new ESLintPlugin({
-          // Plugin options
-          extensions: ['js', 'mjs', 'jsx', 'ts', 'tsx'],
-          formatter: require.resolve('react-dev-utils/eslintFormatter'),
-          eslintPath: require.resolve('eslint'),
-          failOnError: !(isEnvDevelopment && emitErrorsAsWarnings),
-          context: path.resolve(__dirname, '../src'),
-          cache: true,
-          cacheLocation: path.resolve(
-            __dirname,
-            '../node_modules/.cache/.eslintcache',
-          ),
-          // ESLint class options
-          cwd: path.resolve(__dirname, '..'),
-          resolvePluginsRelativeTo: __dirname,
-          baseConfig: {
-            extends: [require.resolve('eslint-config-react-app/base')],
-            rules: {
-              ...(!hasJsxRuntime && {
-                'react/react-in-jsx-scope': 'error',
-              }),
-            },
+    const ignoredPlugins = [
+      'HtmlWebpackPlugin',
+      'WebpackManifestPlugin',
+      'InlineChunkHtmlPlugin',
+      'InterpolateHtmlPlugin',
+    ];
+    config.plugins = config.plugins.filter(
+      (plugin) => ignoredPlugins.indexOf(plugin.constructor.name) === -1,
+    );
+    if (isEnvProduction && !skipCompression) {
+      new CompressionPlugin({
+        deleteOriginalAssets: true,
+        algorithm: 'brotliCompress',
+        test: /\.(js|css|svg|js\.map)$/,
+        compressionOptions: {
+          params: {
+            [BROTLI_PARAM_QUALITY]: 11,
           },
-        }),
-      isEnvProduction &&
-        !skipCompression &&
-        new CompressionPlugin({
-          deleteOriginalAssets: true,
-          algorithm: 'brotliCompress',
-          test: /\.(js|css|svg|js\.map)$/,
-          compressionOptions: {
-            params: {
-              [BROTLI_PARAM_QUALITY]: 11,
-            },
-          },
-          threshold: 10240,
-          minRatio: 0.8,
-          filename: '[path][base]',
-        }),
-    ].filter(Boolean);
+        },
+        threshold: 10240,
+        minRatio: 0.8,
+        filename: '[path][base]',
+      });
+    }
 
-    return config;
+    return fixOutputPaths(config);
   },
   externalPeerDependencies: {
     react: {
@@ -136,3 +80,39 @@ module.exports = {
     },
   },
 };
+
+/**
+ * Fix the CSS extraction paths.
+ *
+ * @param {Object} config
+ *   The webpack configuration.
+ *
+ * @return {Object}
+ *   The altered webpack configuration.
+ */
+function fixOutputPaths(config) {
+  // See if there is a Mini CSS Extract plugin.
+  const miniCssIndex = config.plugins.findIndex(
+    (plugin) => plugin.constructor.name === 'MiniCssExtractPlugin',
+  );
+  if (miniCssIndex !== -1) {
+    config.plugins[miniCssIndex].options.filename =
+      '[name]/css/main.[contenthash:8].css';
+    config.plugins[miniCssIndex].options.chunkFilename =
+      '[name]/css/main.[contenthash:8].chunk.css';
+  }
+  config.module.rules[1].oneOf[2].use[1].options.outputPath = (
+    url,
+    resourcePath,
+    context,
+  ) => {
+    const relativePath = resourcePath.substring(`${context}/src/apps/`.length);
+    const parts = relativePath.split('/');
+    const widgetId = parts[0];
+    return `../static/${widgetId}/${url}`;
+  };
+  config.module.rules[1].oneOf[2].use[1].options.name =
+    'assets/[name].[hash].[ext]';
+  config.output.assetModuleFilename = '../static/assets/[name].[hash][ext]';
+  return config;
+}

@@ -654,8 +654,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_321"
@@ -1057,8 +1058,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_479"
@@ -1863,8 +1865,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_772"
@@ -2006,8 +2009,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_880"
@@ -2123,8 +2127,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_953"
@@ -2167,8 +2172,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_966"
@@ -2211,8 +2217,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_979"
@@ -2255,8 +2262,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_995"
@@ -2375,8 +2383,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1046"
@@ -2419,8 +2428,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1059"
@@ -2463,8 +2473,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1072"
@@ -2507,8 +2518,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1088"
@@ -2679,8 +2691,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1352"
@@ -2723,8 +2736,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1365"
@@ -2767,8 +2781,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1378"
@@ -2811,8 +2826,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1394"
@@ -2900,8 +2916,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1439"
@@ -3296,8 +3313,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1593"
@@ -3340,8 +3358,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1606"
@@ -3384,8 +3403,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1622"
@@ -3473,8 +3493,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1667"
@@ -3517,8 +3538,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1680"
@@ -4316,8 +4338,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1969"
@@ -4360,8 +4383,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_1985"
@@ -4449,8 +4473,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2030"
@@ -4493,8 +4518,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2043"
@@ -4537,8 +4563,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2056"
@@ -4680,8 +4707,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2167"
@@ -4769,8 +4797,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2212"
@@ -4813,8 +4842,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2225"
@@ -4857,8 +4887,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                       <clippath
                         id="__lottie_element_2238"
@@ -4901,8 +4932,9 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
                         x="-100%"
                         y="-100%"
                       >
-                        <fegaussianblur />
-                        <fegaussianblur />
+                        <fegaussianblur
+                          result="filter_result_0"
+                        />
                       </filter>
                     </defs>
                     <g

@@ -13,7 +13,7 @@ function storyWithTranslationFromMessages<TArgs = Args>(
   localeOverride: IBMLocale | void,
   messagesByLangcode: MessagesByCode,
 ): DecoratorFunction<ReactFramework, TArgs> {
-  return (story, { globals: { locale } }): ReactElement => {
+  return (Story, { globals: { locale } }): ReactElement => {
     // react-intl does not support langCode "esla", so we need to
     // switch it to "es" but still load the JSON for "esla"
     const requestedLocale = (localeOverride || locale) as IBMLocale | void;
@@ -23,7 +23,7 @@ function storyWithTranslationFromMessages<TArgs = Args>(
         locale={validLocale || 'en'}
         messages={messagesByLangcode[requestedLocale || IBMLocale.EN]}
       >
-        {story()}
+        <Story />
       </IntlProvider>
     );
   };
