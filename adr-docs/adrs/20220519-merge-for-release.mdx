@@ -1,0 +1,27 @@
+---
+date: 2022-05-19
+status: accepted
+tags:
+  - git
+deciders:
+  - Flash Gooden
+  - Hunter MacDermut
+  - Mateu Aguiló Bosch
+title: Use merge for promoting the sandbox to production.
+deck: We want to retain development history for our production branch.
+---
+
+## Decision
+
+We will merge the `development` branch onto the `main` branch in order to
+promote the sandbox repository to production. We will use the GitHub user
+interface, because that will leave the closed pull request as papertrail of the
+promotion.
+
+After every production hotfix, we will create a pull request from `main` to
+`development`. We will also resolve this pull request with a merge commit.
+
+## Consequences
+
+We can compare the history of the sandbox and production registries. We can test
+potential hotfixes on sandbox first, because both branches have related stories.

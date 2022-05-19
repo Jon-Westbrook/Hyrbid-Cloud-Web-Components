@@ -1,0 +1,29 @@
+---
+date: 2022-05-18
+status: accepted
+tags:
+  - git
+deciders:
+  - Flash Gooden
+  - Hunter MacDermut
+  - Mateu Aguiló Bosch
+title: Use squash commit for feature branches
+deck: Commits made during development of a task pollute the `development` and `main` branches
+---
+
+Developers commit often and for various reasons while working on a feature
+branch. This has value in explaining how a particular task was developed.
+However, once the work is merged it loses importance. Excess of commits in the
+release branches `development` and `main` create confusion and complicate
+roll-backs, hotfixes, and cherry-picks.
+
+## Decision
+
+We will squash and merge pull requests into the `development` branch. This will
+create a single commit ([using conventional commits](./20220513-use-conventional-commits))
+for each pull request in the `development` branch.
+
+## Consequences
+
+We can trace the work relating to a particular ticket to a single commit. This
+will make our code history more readable and easier to alter when needed.
