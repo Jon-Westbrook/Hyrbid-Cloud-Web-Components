@@ -18,13 +18,13 @@ interface ProductExplorerProps {
 
 const ProductExplorer: React.FC<ProductExplorerProps> = ({ linkType }) => {
   const loading = useProductExplorerSelector<boolean>((state) => state.loading);
-  let localeCode = useProductExplorerSelector((state) => state.localeCode);
   const messages = useProductExplorerSelector<
     Record<string, MessageDescriptor>
   >((state) => state.messages);
   const intl = useIntl();
   const dispatch = useProductExplorerDispatch();
-  console.log(linkType);
+
+  let localeCode = useProductExplorerSelector((state) => state.localeCode);
   localeCode = swapCountryAndLanguage(localeCode);
 
   const satelliteLink = `${
