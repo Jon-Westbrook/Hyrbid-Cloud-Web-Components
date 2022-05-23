@@ -66,17 +66,8 @@
       font-size: 0.875rem;
     }
 
-    .icon-hidden {
-      display: none;
+    svg {
+      color: $ibm-color__blue-60;
     }
-
-    .icon-show {
-      display: inline-block;
-      height: 17px;
-      fill: $ibm-color__blue-60;
-    }
-svg {
-  color: $ibm-color__blue-60;
-}
   }
 }
