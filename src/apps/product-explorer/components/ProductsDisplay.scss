@@ -1,3 +1,4 @@
+@import "../assets/styles/globals";
 .product-explorer {
   .product-display {
     display: grid;
@@ -17,7 +18,7 @@
     }
 
     &__tile {
-      color: #fff;
+      color: $ibm-color__white-0;
       height: 156px;
       padding: 1rem;
       background-color: #282828;
@@ -38,7 +39,7 @@
       }
 
       &.selected {
-        background-color: #fff;
+        background-color: $ibm-color__white-0;
         color: #000;
 
         img.icon,
@@ -57,7 +58,7 @@
       }
 
       span {
-        color: #fff;
+        color: $ibm-color__white-0;
       }
 
       @media (max-width: 671px) {

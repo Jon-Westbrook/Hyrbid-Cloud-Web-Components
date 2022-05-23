@@ -1,9 +1,10 @@
+@import "../assets/styles/globals";
 .product-explorer {
   background-color: #171717;
 
   &__global {
     background-color: #171717;
-    color: #fff;
+    color: $ibm-color__white-0;
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 1rem;

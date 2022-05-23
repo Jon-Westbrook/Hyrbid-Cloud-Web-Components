@@ -1,7 +1,8 @@
+@import "../assets/styles/globals";
 .product-explorer {
   .product-detail {
-    background-color: #fff;
-    color: #000;
+    background-color: $ibm-color__white-0;
+    color: $ibm-color__black-100;
     grid-column: 1 / -1;
     padding: 16px;
     margin: 1px;
@@ -72,10 +73,10 @@
     .icon-show {
       display: inline-block;
       height: 17px;
-      fill: #0f62fe;
+      fill: $ibm-color__blue-60;
     }
 svg {
-  color: #0f62fe
+  color: $ibm-color__blue-60;
 }
   }
 }
