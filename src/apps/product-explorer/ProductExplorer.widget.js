@@ -15,7 +15,22 @@ module.exports = {
           'link-type': {
             type: 'string',
             title: 'Link Type',
-            enum: ['product', 'pricing', 'data-link-type'],
+            enum: ['product', 'pricing'],
+          },
+        },
+      },
+    },
+  },
+  uiFormSchema: {
+    'link-type': {
+      'ui:widget': 'radios',
+      'ui:help':
+        'Selecting "Product" will render links to the product page. Selecting "Pricing" will render links to the product\'s pricing page. If a product has no pricing url the product will not be shown in the widget.',
+      'ui:enum': {
+        labels: {
+          mappings: {
+            product: 'Product',
+            pricing: 'Pricing',
           },
         },
       },
