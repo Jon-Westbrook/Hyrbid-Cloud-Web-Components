@@ -54,14 +54,13 @@ const ProductDetail: React.FC<ProductDetailProps> = (props) => {
       </div>
       {props.products.map((product, i) => {
         const url = buildUrl(product, props.linkType, localeCode);
-        const getTarget = product.external === true ? '_new' : '_self';
 
         return url ? (
           <div className="product-detail__product" key={`product-${i}`}>
             <a
               href={url}
               className="product-detail__product-link"
-              target={getTarget}
+              target={product.external === true ? '_new' : '_self'}
             >
               {product.translationId ? (
                 <FormattedMessage
