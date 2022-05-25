@@ -20756,6 +20756,22 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
               >
                 <a
                   class="product-detail__product-link"
+                  href="/en/products/cloud-pak-for-data"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Data
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Tools for data analysis, organization and management
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
                   href="/en/cloud/analytics-engine"
                   target="_self"
                 >
@@ -21969,183 +21985,8 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             </div>
             <div
               class="product-display__tile-wrapper"
-              data-category="IBM Cloud Paks"
-              data-i="8"
-              tabindex="0"
-            >
-              <div
-                class="product-display__tile "
-              >
-                <div>
-                  <img
-                    alt="Icon for IBM Cloud Paks"
-                    aria-hidden="true"
-                    class="icon"
-                    src="https://1.cms.s81c.com/sites/default/files/2019-08-14/cloud-pak-32x36.svg"
-                  />
-                </div>
-                <div
-                  class="product-display__name-chevron"
-                >
-                  <h4
-                    class="product-display__name"
-                  >
-                    IBM Cloud Paks
-                  </h4>
-                  <span>
-                    <svg
-                      aria-hidden="true"
-                      fill="currentColor"
-                      focusable="false"
-                      height="32"
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 32 32"
-                      width="32"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div
-              class="product-detail
-      "
-              style="grid-row-start: 6;"
-            >
-              <div
-                class="product-detail__header-outer-wrapper"
-              >
-                <div
-                  class="product-detail__header-inner-wrapper"
-                >
-                  <h2
-                    class="product-detail__category-name"
-                  >
-                    IBM Cloud Paks
-                  </h2>
-                  <div
-                    class="product-detail__header"
-                  >
-                    <p
-                      class="product-detail__description"
-                    >
-                      Integrated and certified applications on Red Hat OpenShift
-                    </p>
-                    <a
-                      class="product-detail__link"
-                      href="/en/cloud/paks"
-                      tabindex="0"
-                    >
-                      Learn more
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="product-detail__product"
-              >
-                <a
-                  class="product-detail__product-link"
-                  href="/en/cloud/cloud-pak-for-automation"
-                  target="_self"
-                >
-                  IBM Cloud Pak for Business Automation
-                </a>
-                <p
-                  class="product-detail__long-description"
-                >
-                  Operations management software with AI insights
-                </p>
-              </div>
-              <div
-                class="product-detail__product"
-              >
-                <a
-                  class="product-detail__product-link"
-                  href="/en/products/cloud-pak-for-data"
-                  target="_self"
-                >
-                  IBM Cloud Pak for Data
-                </a>
-                <p
-                  class="product-detail__long-description"
-                >
-                  Tools for data analysis, organization and management
-                </p>
-              </div>
-              <div
-                class="product-detail__product"
-              >
-                <a
-                  class="product-detail__product-link"
-                  href="/en/cloud/cloud-pak-for-integration"
-                  target="_self"
-                >
-                  IBM Cloud Pak for Integration
-                </a>
-                <p
-                  class="product-detail__long-description"
-                >
-                  Tools to connect all of your apps, data and events
-                </p>
-              </div>
-              <div
-                class="product-detail__product"
-              >
-                <a
-                  class="product-detail__product-link"
-                  href="/en/cloud/cloud-pak-for-network-automation"
-                  target="_self"
-                >
-                  IBM Cloud Pak for Network Automation
-                </a>
-                <p
-                  class="product-detail__long-description"
-                >
-                  Management software for telco network operations
-                </p>
-              </div>
-              <div
-                class="product-detail__product"
-              >
-                <a
-                  class="product-detail__product-link"
-                  href="/en/products/cloud-pak-for-security"
-                  target="_self"
-                >
-                  IBM Cloud Pak for Security
-                </a>
-                <p
-                  class="product-detail__long-description"
-                >
-                  Security auditing, reporting, analysis and governance
-                </p>
-              </div>
-              <div
-                class="product-detail__product"
-              >
-                <a
-                  class="product-detail__product-link"
-                  href="/en/cloud/cloud-pak-for-watson-aiops"
-                  target="_self"
-                >
-                  IBM Cloud Pak for Watson AIOps
-                </a>
-                <p
-                  class="product-detail__long-description"
-                >
-                  DevOps management tool with AI analysis and recommendations
-                </p>
-              </div>
-            </div>
-            <div
-              class="product-display__tile-wrapper"
               data-category="Integration"
-              data-i="9"
+              data-i="8"
               tabindex="0"
             >
               <div
@@ -22368,7 +22209,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-display__tile-wrapper"
               data-category="Internet of things"
-              data-i="10"
+              data-i="9"
               tabindex="0"
             >
               <div
@@ -22412,7 +22253,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-detail
       "
-              style="grid-row-start: 7;"
+              style="grid-row-start: 6;"
             >
               <div
                 class="product-detail__header-outer-wrapper"
@@ -22479,7 +22320,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-display__tile-wrapper"
               data-category="Logging and monitoring"
-              data-i="11"
+              data-i="10"
               tabindex="0"
             >
               <div
@@ -22613,7 +22454,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-display__tile-wrapper"
               data-category="Networking"
-              data-i="12"
+              data-i="11"
               tabindex="0"
             >
               <div
@@ -22657,7 +22498,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-detail
       "
-              style="grid-row-start: 8;"
+              style="grid-row-start: 7;"
             >
               <div
                 class="product-detail__header-outer-wrapper"
@@ -22804,7 +22645,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-display__tile-wrapper"
               data-category="Quantum"
-              data-i="13"
+              data-i="12"
               tabindex="0"
             >
               <div
@@ -22930,7 +22771,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-display__tile-wrapper"
               data-category="Security"
-              data-i="14"
+              data-i="13"
               tabindex="0"
             >
               <div
@@ -22974,7 +22815,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-detail
       "
-              style="grid-row-start: 9;"
+              style="grid-row-start: 8;"
             >
               <div
                 class="product-detail__header-outer-wrapper"
@@ -23067,6 +22908,22 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
                   class="product-detail__long-description"
                 >
                   Tamper-resistant hardware to store and process cryptographic keys
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/products/cloud-pak-for-security"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Security
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Security auditing, reporting, analysis and governance
                 </p>
               </div>
               <div
@@ -23185,7 +23042,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
             <div
               class="product-display__tile-wrapper"
               data-category="Storage"
-              data-i="15"
+              data-i="14"
               tabindex="0"
             >
               <div
@@ -23963,6 +23820,22 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
                 </a>
               </div>
             </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/cloud-pak-for-data"
+              target="_self"
+            >
+              IBM Cloud Pak for Data
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Tools for data analysis, organization and management
+            </p>
           </div>
           <div
             class="product-detail__product"
@@ -25182,183 +25055,8 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         </div>
         <div
           class="product-display__tile-wrapper"
-          data-category="IBM Cloud Paks"
-          data-i="8"
-          tabindex="0"
-        >
-          <div
-            class="product-display__tile "
-          >
-            <div>
-              <img
-                alt="Icon for IBM Cloud Paks"
-                aria-hidden="true"
-                class="icon"
-                src="https://1.cms.s81c.com/sites/default/files/2019-08-14/cloud-pak-32x36.svg"
-              />
-            </div>
-            <div
-              class="product-display__name-chevron"
-            >
-              <h4
-                class="product-display__name"
-              >
-                IBM Cloud Paks
-              </h4>
-              <span>
-                <svg
-                  aria-hidden="true"
-                  fill="currentColor"
-                  focusable="false"
-                  height="32"
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 32 32"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          class="product-detail
-      "
-          style="grid-row-start: 6;"
-        >
-          <div
-            class="product-detail__header-outer-wrapper"
-          >
-            <div
-              class="product-detail__header-inner-wrapper"
-            >
-              <h2
-                class="product-detail__category-name"
-              >
-                IBM Cloud Paks
-              </h2>
-              <div
-                class="product-detail__header"
-              >
-                <p
-                  class="product-detail__description"
-                >
-                  Integrated and certified applications on Red Hat OpenShift
-                </p>
-                <a
-                  class="product-detail__link"
-                  href="/en/cloud/paks"
-                  tabindex="0"
-                >
-                  Learn more
-                </a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="product-detail__product"
-          >
-            <a
-              class="product-detail__product-link"
-              href="/en/cloud/cloud-pak-for-automation"
-              target="_self"
-            >
-              IBM Cloud Pak for Business Automation
-            </a>
-            <p
-              class="product-detail__long-description"
-            >
-              Operations management software with AI insights
-            </p>
-          </div>
-          <div
-            class="product-detail__product"
-          >
-            <a
-              class="product-detail__product-link"
-              href="/en/products/cloud-pak-for-data"
-              target="_self"
-            >
-              IBM Cloud Pak for Data
-            </a>
-            <p
-              class="product-detail__long-description"
-            >
-              Tools for data analysis, organization and management
-            </p>
-          </div>
-          <div
-            class="product-detail__product"
-          >
-            <a
-              class="product-detail__product-link"
-              href="/en/cloud/cloud-pak-for-integration"
-              target="_self"
-            >
-              IBM Cloud Pak for Integration
-            </a>
-            <p
-              class="product-detail__long-description"
-            >
-              Tools to connect all of your apps, data and events
-            </p>
-          </div>
-          <div
-            class="product-detail__product"
-          >
-            <a
-              class="product-detail__product-link"
-              href="/en/cloud/cloud-pak-for-network-automation"
-              target="_self"
-            >
-              IBM Cloud Pak for Network Automation
-            </a>
-            <p
-              class="product-detail__long-description"
-            >
-              Management software for telco network operations
-            </p>
-          </div>
-          <div
-            class="product-detail__product"
-          >
-            <a
-              class="product-detail__product-link"
-              href="/en/products/cloud-pak-for-security"
-              target="_self"
-            >
-              IBM Cloud Pak for Security
-            </a>
-            <p
-              class="product-detail__long-description"
-            >
-              Security auditing, reporting, analysis and governance
-            </p>
-          </div>
-          <div
-            class="product-detail__product"
-          >
-            <a
-              class="product-detail__product-link"
-              href="/en/cloud/cloud-pak-for-watson-aiops"
-              target="_self"
-            >
-              IBM Cloud Pak for Watson AIOps
-            </a>
-            <p
-              class="product-detail__long-description"
-            >
-              DevOps management tool with AI analysis and recommendations
-            </p>
-          </div>
-        </div>
-        <div
-          class="product-display__tile-wrapper"
           data-category="Integration"
-          data-i="9"
+          data-i="8"
           tabindex="0"
         >
           <div
@@ -25581,7 +25279,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-display__tile-wrapper"
           data-category="Internet of things"
-          data-i="10"
+          data-i="9"
           tabindex="0"
         >
           <div
@@ -25625,7 +25323,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-detail
       "
-          style="grid-row-start: 7;"
+          style="grid-row-start: 6;"
         >
           <div
             class="product-detail__header-outer-wrapper"
@@ -25692,7 +25390,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-display__tile-wrapper"
           data-category="Logging and monitoring"
-          data-i="11"
+          data-i="10"
           tabindex="0"
         >
           <div
@@ -25826,7 +25524,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-display__tile-wrapper"
           data-category="Networking"
-          data-i="12"
+          data-i="11"
           tabindex="0"
         >
           <div
@@ -25870,7 +25568,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-detail
       "
-          style="grid-row-start: 8;"
+          style="grid-row-start: 7;"
         >
           <div
             class="product-detail__header-outer-wrapper"
@@ -26017,7 +25715,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-display__tile-wrapper"
           data-category="Quantum"
-          data-i="13"
+          data-i="12"
           tabindex="0"
         >
           <div
@@ -26143,7 +25841,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-display__tile-wrapper"
           data-category="Security"
-          data-i="14"
+          data-i="13"
           tabindex="0"
         >
           <div
@@ -26187,7 +25885,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-detail
       "
-          style="grid-row-start: 9;"
+          style="grid-row-start: 8;"
         >
           <div
             class="product-detail__header-outer-wrapper"
@@ -26280,6 +25978,22 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
               class="product-detail__long-description"
             >
               Tamper-resistant hardware to store and process cryptographic keys
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/cloud-pak-for-security"
+              target="_self"
+            >
+              IBM Cloud Pak for Security
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Security auditing, reporting, analysis and governance
             </p>
           </div>
           <div
@@ -26398,7 +26112,7 @@ exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default
         <div
           class="product-display__tile-wrapper"
           data-category="Storage"
-          data-i="15"
+          data-i="14"
           tabindex="0"
         >
           <div
