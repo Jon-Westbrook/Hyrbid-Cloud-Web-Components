@@ -1,5 +1,8 @@
 import React from 'react';
-import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
+import {
+  Product,
+  ProductDetailProps,
+} from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow } from '../../../common/product-explorer/utils';
 import { swapCountryAndLanguage, buildUrl } from '../utils';
@@ -9,7 +12,12 @@ import { useProductExplorerSelector } from '../lib/redux/hooks';
 import { Launch16 } from '@carbon/icons-react';
 import './ProductDetail.scss';
 
-const ProductDetail: React.FC<ProductDetailProps> = (props) => {
+type ProductExtended = Product & { external?: boolean };
+interface ProductDetailPropsExtended extends ProductDetailProps {
+  products: ProductExtended[];
+}
+
+const ProductDetail: React.FC<ProductDetailPropsExtended> = (props) => {
   const messages = useProductExplorerSelector<
     Record<string, MessageDescriptor>
   >((state) => state.messages);

@@ -3,8 +3,7 @@ export interface Product {
   longDescription: string;
   url: string;
   translationId?: string;
-  external: boolean;
-  pricingUrl?: string;
+  pricingUrl?: string | null;
 }
 
 export interface Category {
