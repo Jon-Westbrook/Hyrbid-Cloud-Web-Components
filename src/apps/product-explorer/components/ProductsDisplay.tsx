@@ -1,5 +1,5 @@
 import React, { useState, SyntheticEvent, Fragment } from 'react';
-import { Category } from '../../../common/product-explorer/lib/types';
+import { Category, LinkType } from '../../../common/product-explorer/lib/types';
 import ProductDetail from './ProductDetail';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ReactComponent as LoggingAndMonitoringIcon } from '../assets/images/icons/logging-and-monitoring.svg';
@@ -60,7 +60,7 @@ const ProductsDisplay: React.FC<ProductsDisplayProps> = ({ linkType }) => {
 
   function shouldCategoryShow(category: Category) {
     // if all products within a category lack pricing urls, don't show category
-    if (linkType === 'product') {
+    if (linkType === LinkType.product) {
       return true;
     }
 
