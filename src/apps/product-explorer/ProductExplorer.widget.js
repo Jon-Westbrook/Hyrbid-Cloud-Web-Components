@@ -5,6 +5,7 @@ module.exports = {
   status: 'stable',
   description:
     'JavaScript widget that allows users to explore various IBM products on offer.',
+  useExternalPeerDependencies: ['react', 'react-dom', 'react-intl'],
   settingsSchema: {
     type: 'object',
     additionalProperties: false,
