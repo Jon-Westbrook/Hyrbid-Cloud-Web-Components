@@ -100,6 +100,15 @@ export const products = {
       link: '/cloud/analytics',
       products: [
         {
+          name: 'IBM Cloud Pak for Data',
+          longDescription:
+            'Platform that modernizes how businesses manage data to infuse AI.',
+          url: '/products/cloud-pak-for-data',
+          pricingUrl: null,
+          translationId: 'pakData',
+          external: false,
+        },
+        {
           name: 'IBM Analytics Engine',
           longDescription:
             'PaaS to build analytics applications on Apache Spark and Hadoop ',
@@ -550,66 +559,6 @@ export const products = {
       ],
     },
     {
-      name: 'IBM Cloud Paks',
-      translationId: 'ibmCloudPaks',
-      description: 'Integrated and certified applications on Red Hat OpenShift',
-      icon: 'https://1.cms.s81c.com/sites/default/files/2019-08-14/cloud-pak-32x36.svg',
-      link: '/cloud/paks',
-      products: [
-        {
-          name: 'IBM Cloud Pak for Business Automation',
-          longDescription: 'Operations management software with AI insights',
-          url: '/cloud/cloud-pak-for-automation',
-          pricingUrl: '/cloud/cloud-pak-for-business-automation/pricing',
-          translationId: 'cloudpakba',
-          external: false,
-        },
-        {
-          name: 'IBM Cloud Pak for Data',
-          longDescription:
-            'Tools for data analysis, organization and management',
-          url: '/products/cloud-pak-for-data',
-          pricingUrl: null,
-          translationId: 'pakData',
-          external: false,
-        },
-        {
-          name: 'IBM Cloud Pak for Integration',
-          longDescription: 'Tools to connect all of your apps, data and events',
-          url: '/cloud/cloud-pak-for-integration',
-          pricingUrl: '/cloud/cloud-pak-for-integration/pricing',
-          translationId: 'pakIntegration',
-          external: false,
-        },
-        {
-          name: 'IBM Cloud Pak for Network Automation',
-          longDescription: 'Management software for telco network operations',
-          url: '/cloud/cloud-pak-for-network-automation',
-          pricingUrl: '/cloud/cloud-pak-for-network-automation/pricing',
-          translationId: 'cloudpakna',
-          external: false,
-        },
-        {
-          name: 'IBM Cloud Pak for Security',
-          longDescription:
-            'Security auditing, reporting, analysis and governance',
-          url: '/products/cloud-pak-for-security',
-          pricingUrl: '/products/cloud-pak-for-security/pricing',
-          translationId: 'pakSecurity',
-          external: false,
-        },
-        {
-          name: 'IBM Cloud Pak for Watson AIOps',
-          longDescription:
-            'DevOps management tool with AI analysis and recommendations',
-          url: '/cloud/cloud-pak-for-watson-aiops',
-          pricingUrl: '/cloud/cloud-pak-for-watson-aiops/pricing',
-          translationId: 'watsonAiops',
-          external: false,
-        },
-      ],
-    },
-    {
       name: 'Integration',
       translationId: 'integration',
       description:
@@ -713,7 +662,7 @@ export const products = {
         {
           name: 'IBM Maximo Application Suite: Remote monitoring',
           longDescription:
-            'See, predict and prevent issues with advanced AI-powered remote monitoring and computer vision for assets and operations.',
+            'Predict and prevent issues with advanced AI-powered remote monitoring and computer vision for assets and operations.',
           url: '/products/maximo/remote-monitoring',
           pricingUrl: null,
           translationId: 'iotPlatform',
@@ -906,6 +855,15 @@ export const products = {
           url: '/cloud/hardware-security-module',
           pricingUrl: 'https://cloud.ibm.com/gen1/infrastructure/provision/hsm',
           translationId: 'securityModule',
+          external: false,
+        },
+        {
+          name: 'IBM Cloud Pak for Security',
+          longDescription:
+            'Security auditing, reporting, analysis and governance',
+          url: '/products/cloud-pak-for-security',
+          pricingUrl: '/products/cloud-pak-for-security/pricing',
+          translationId: 'pakSecurity',
           external: false,
         },
         {
