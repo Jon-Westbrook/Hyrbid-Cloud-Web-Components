@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>IBM Automation</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ibm--automation-platform" transform="translate(0.640000, 0.640000)" fill="#5596E6" fill-rule="nonzero">
+            <path d="M21.36,30.72 C19.507,30.72 18,29.212 18,27.36 L18,18.36 L18.721,18.36 L18.721,27.36 C18.721,28.816 19.905,30 21.361,30 C22.817,30 24.001,28.816 24.001,27.36 L24.001,22.36 L24.722,22.36 L24.722,27.36 C24.72,29.213 23.213,30.72 21.36,30.72 Z" id="ibm--automation-platform_1_-path"></path>
+            <path d="M9.36,30.72 C7.507,30.72 6,29.212 6,27.36 L6,18.36 L6.72,18.36 L6.72,27.36 C6.72,28.816 7.905,30 9.36,30 C10.815,30 12,28.816 12,27.36 L12,3.36 C12,1.507 13.507,0 15.36,0 C17.213,0 18.72,1.507 18.72,3.36 L18.72,12.36 L18,12.36 L18,3.36 C18,1.904 16.816,0.72 15.36,0.72 C13.904,0.72 12.72,1.905 12.72,3.36 L12.72,27.36 C12.72,29.213 11.213,30.72 9.36,30.72 Z" id="ibm--automation-platform_2_-path"></path>
+            <polygon id="ibm--automation-platform_3_-path" points="26.615 19.615 26.105 19.105 29.491 15.72 15.36 15.72 15.36 15 29.491 15 26.105 11.614 26.615 11.105 30.869 15.36"></polygon>
+            <polygon id="ibm--automation-platform_4_-path" points="9.36 15.72 0.36 15.72 0.36 15 9.36 15"></polygon>
+            <path d="M6.72,12.36 L6,12.36 L6,3.36 C6,1.904 4.815,0.72 3.36,0.72 C1.905,0.72 0.72,1.904 0.72,3.36 L0.72,12.36 L0,12.36 L0,3.36 C0,1.507 1.507,0 3.36,0 C5.213,0 6.72,1.507 6.72,3.36 L6.72,12.36 Z" id="ibm--automation-platform_5_-path"></path>
+        </g>
+    </g>
+</svg>

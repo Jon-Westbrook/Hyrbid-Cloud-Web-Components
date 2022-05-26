@@ -1,0 +1,22 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import storyWithTranslation from './lib/storyWithTranslation';
+import { IBMLocale } from '../../common/mapValidLocale';
+
+<Meta
+  title="Widgets/Product Explorer/Widget"
+  decorators={[storyWithTranslation(IBMLocale.EN)]}
+/>
+
+# Product Explorer
+
+<Story id="widgets-product-explorer-components--default" />
+
+The Product Explorer widget allows users to discover various IBM products on offer in a pane of expandable information tiles.
+
+## Products Display
+
+<Story id="widgets-product-explorer-components-products-display--default" />
+
+## Product Detail
+
+<Story id="widgets-product-explorer-components-product-detail--default" />

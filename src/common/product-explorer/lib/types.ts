@@ -3,6 +3,7 @@ export interface Product {
   longDescription: string;
   url: string;
   translationId?: string;
+  pricingUrl?: string | null;
 }
 
 export interface Category {
@@ -19,4 +20,10 @@ export interface ProductDetailProps {
   products: Product[];
   index: number;
   selected: boolean;
+  linkType?: LinkType.product | string;
+}
+
+export enum LinkType {
+  product = 'product',
+  pricing = 'pricing',
 }

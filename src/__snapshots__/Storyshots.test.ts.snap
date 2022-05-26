@@ -20392,6 +20392,5888 @@ exports[`Storyshots Widgets/Product Explorer Security/Components/Products Displa
 </div>
 `;
 
+exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer"
+    >
+      <div
+        class="product-explorer__global"
+      >
+        <div
+          class="product-explorer__headline-wrapper"
+        >
+          <h3
+            class="product-explorer__headline bx--type-expressive-heading-05"
+          >
+            Explore IBM Cloud products
+          </h3>
+          <p
+            class="product-explorer__subhead"
+          >
+            A full stack cloud platform with over 170 products and services covering data, containers, AI, IoT, and blockchain.
+          </p>
+          <p
+            class="product-explorer__subhead"
+          >
+            Use your existing infrastructure—even edge or other public clouds—with IBM Cloud services, APIs, access policies, security controls and compliance with IBM Cloud Satellite.
+            <a
+              href="/en/cloud/satellite"
+            >
+              IBM Cloud Satellite.
+            </a>
+          </p>
+        </div>
+        <div>
+          <div
+            class="product-display"
+          >
+            <div
+              class="product-display__tile-wrapper"
+              data-category="AI / machine learning"
+              data-i="0"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for AI / machine learning"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    AI / machine learning
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 2;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    AI / machine learning
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Use Watson’s AI or build your own machine learning models
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/ai"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/products/watson-assistant"
+                  target="_self"
+                >
+                  IBM Watson Assistant
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtual agents customizable to any domain
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-discovery"
+                  target="_self"
+                >
+                  IBM Watson Discovery
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Search and analytics engine that adapts to custom domains
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-knowledge-catalog"
+                  target="_self"
+                >
+                  IBM Watson Knowledge Catalog
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  SaaS for AI data management
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-knowledge-studio"
+                  target="_self"
+                >
+                  IBM Watson Knowledge Studio
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Visual interface to teach Watson domain-specific knowledge
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-language-translator"
+                  target="_self"
+                >
+                  IBM Watson Language Translator
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  API for translation with domain-specific models
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-natural-language-understanding"
+                  target="_self"
+                >
+                  IBM Watson Natural Language Classifier
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Visual tool and API for text classification
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-natural-language-understanding"
+                  target="_self"
+                >
+                  IBM Watson Natural Language Understanding
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  API for text analysis and metadata extraction
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-speech-to-text"
+                  target="_self"
+                >
+                  IBM Watson Speech to Text
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  API for real-time speech recognition and transcription
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-studio"
+                  target="_self"
+                >
+                  IBM Watson Studio
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  IDE to build, run and manage AI models
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/watson-text-to-speech"
+                  target="_self"
+                >
+                  IBM Watson Text to Speech
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  API for real-time text to speech conversion
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Analytics"
+              data-i="1"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Analytics"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-analytics.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Analytics
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 2;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Analytics
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Aggregate and analyze large datasets
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/analytics"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/products/cloud-pak-for-data"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Data
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Tools for data analysis, organization and management
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/analytics-engine"
+                  target="_self"
+                >
+                  IBM Analytics Engine
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  PaaS to build analytics applications on Apache Spark and Hadoop
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/sql-query"
+                  target="_self"
+                >
+                  IBM Cloud SQL Query
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Query tool for IBM Cloud Object Storage
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/db2-warehouse-on-cloud"
+                  target="_self"
+                >
+                  IBM Db2 Warehouse on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed data warehouse on IBM Cloud or AWS
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/information-server"
+                  target="_self"
+                >
+                  IBM InfoSphere® Information Server on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Data integration suite for ETL, governance and anlaysis
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/mdm"
+                  target="_self"
+                >
+                  IBM Master Data Management on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed master data storage
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/streaming-analytics"
+                  target="_self"
+                >
+                  IBM Streaming Analytics
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Dashboard for real-time analysis of data streams
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Automation"
+              data-i="2"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                >
+                  ibm--automation-platform-clean.svg
+                </svg>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Automation
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 3;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Automation
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Automate workflows from IT operations to business processes
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/automation"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-pak-for-business-automation"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Business Automation
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Operations management software with AI insights
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-pak-for-integration"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Integration
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Tools to connect all of your apps, data and events
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-pak-for-network-automation"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Network Automation
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Management software for telco network operations
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-pak-for-watson-aiops"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Watson AIOps
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  DevOps management tool with AI analysis and recommendations
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/turbonomic"
+                  target="_self"
+                >
+                  Turbonomic
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Software to automate application resource management and optimize costs
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Blockchain"
+              data-i="3"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Blockchain"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-blockchain.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Blockchain
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 3;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Blockchain
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Build applications on an immutable blockchain ledger
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/blockchain-platform"
+                  target="_self"
+                >
+                  IBM Blockchain Platform
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Blockchain SDK based on Hyperledger Fabric
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Compute"
+              data-i="4"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Compute"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-22/product-compute_0.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Compute
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 4;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Compute
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Run workloads on cloud infrastrcture
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/compute"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-foundry"
+                  target="_self"
+                >
+                  Cloud Foundry
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  PaaS for Java, Node, PHP, Python, Ruby, Swift and Go apps.
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/dizzion"
+                  target="_self"
+                >
+                  Dizzion Managed DaaS on IBM Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtual desktops, in the cloud and managed
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/bare-metal-servers"
+                  target="_self"
+                >
+                  IBM Cloud Bare Metal Servers
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Dedicated hardware for maximum performance
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/code-engine"
+                  target="_self"
+                >
+                  IBM Cloud Code Engine
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Serverless container hosting platform as a service
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/vmware"
+                  target="_self"
+                >
+                  IBM Cloud for VMware Solutions
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Hosting for virtualized workloads
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/functions"
+                  target="_self"
+                >
+                  IBM Cloud Functions
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Serverless function runtime based on Apache OpenWhisk
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/vpc"
+                  target="_self"
+                >
+                  IBM Cloud Virtual Server for VPC
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtual servers with enhanced network security
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/vps"
+                  target="_self"
+                >
+                  IBM Cloud VPS Hosting
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Easily manage fast-moving workloads.
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/virtual-servers"
+                  target="_self"
+                >
+                  IBM Cloud Virtual Servers for Classic Infrastructure
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtual servers with the most flexible configuration options
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/hyper-protect-virtual-servers"
+                  target="_self"
+                >
+                  IBM Hyper Protect Virtual Servers
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtual servers for workloads with sensitive data
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/products/power-virtual-server"
+                  target="_self"
+                >
+                  IBM Power Systems Virtual Servers
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtual servers with IBM POWER processors
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/websphere-application-platform"
+                  target="_self"
+                >
+                  IBM WebSphere Application Server on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Runtime and SDK for Java applications
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Containers"
+              data-i="5"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                >
+                  containers.svg
+                </svg>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Containers
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 4;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Containers
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Deploy applications consistently across environments
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/containers"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/container-registry"
+                  target="_self"
+                >
+                  Container registry
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  SaaS for container storage and management
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/kubernetes-service"
+                  target="_self"
+                >
+                  IBM Cloud Kubernetes Service
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Container hosting with self-healing and horizontal scaling
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/istio"
+                  target="_self"
+                >
+                  Istio
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  A service mesh for microservices in Kubernetes clusters
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/openshift"
+                  target="_self"
+                >
+                  Red Hat® OpenShift® on IBM Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Container hosting on managed Red Hat Linux servers
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Databases"
+              data-i="6"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Databases"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-06-17/product-database-new.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Databases
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 5;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Databases
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Store, query and analyze structured data
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/databases"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/databases-for-elasticsearch"
+                  target="_self"
+                >
+                  IBM Cloud Databases for Elasticsearch
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed JSON document store for full-text search
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/databases-for-enterprisedb"
+                  target="_self"
+                >
+                  IBM Cloud Databases for EnterpriseDB
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed SQL database
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/databases-for-etcd"
+                  target="_self"
+                >
+                  IBM Cloud Databases for etcd
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed distributed key-value store
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/databases-for-mongodb"
+                  target="_self"
+                >
+                  IBM Cloud Databases for MongoDB
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed NoSQL JSON document store
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/databases-for-mysql"
+                  target="_self"
+                >
+                  IBM Cloud Databases for MySQL
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  A fully managed MySQL relational database service. Deploy and scale effortlessly to drive innovation.
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/databases-for-postgresql"
+                  target="_self"
+                >
+                  IBM Cloud Databases for PostgreSQL
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed SQL database
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/databases-for-redis"
+                  target="_self"
+                >
+                  IBM Cloud Databases for Redis
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed in-memory key value store
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloudant"
+                  target="_self"
+                >
+                  IBM Cloudant®
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed PCI-compliant JSON document store on CouchDB
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/db2-warehouse-on-cloud"
+                  target="_self"
+                >
+                  IBM Db2 Warehouse on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed data warehouse on IBM Cloud or AWS
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/db2-on-cloud"
+                  target="_self"
+                >
+                  IBM Db2® on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed SQL database
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/hyper-protect-dbaas"
+                  target="_self"
+                >
+                  IBM Hyper Protect DBaaS
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed PostgreSQL and MongoDB for sensitive data
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/informix"
+                  target="_self"
+                >
+                  IBM Informix® on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed DB for time series, spatial, NoSQL and SQL data
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Developer tools"
+              data-i="7"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Developer tools"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-06-17/product-developer-tools.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Developer tools
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 5;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Developer tools
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Manage infrastructure, environments and deployments
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/devops"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://cloud.ibm.com/catalog/services/app-configuration#about"
+                  target="_self"
+                >
+                  IBM Cloud App Configuration
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  SDK, dashboard and API for application feature management
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cli"
+                  target="_self"
+                >
+                  IBM Cloud CLI
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  A CLI to manage your IBM Cloud
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/continuous-delivery"
+                  target="_self"
+                >
+                  IBM Cloud Continuous Delivery
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  UI and CLI based DevOps workflows based on Tekton Pipelines
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/messages-for-rabbitmq"
+                  target="_self"
+                >
+                  IBM Cloud Messages for RabbitMQ
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed message broker
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/schematics"
+                  target="_self"
+                >
+                  IBM Cloud Schematics
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed service to provision resources with terraform templates
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/sql-query"
+                  target="_self"
+                >
+                  IBM Cloud SQL Query
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Query tool for IBM Cloud Object Storage
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/tekton"
+                  target="_self"
+                >
+                  Tekton
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Kubernetes-native CI and CD pipelines
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Integration"
+              data-i="8"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Integration"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-integration.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Integration
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 6;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Integration
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Integrate your apps through APIs, messaging and networking tools
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/integration"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/api-connect"
+                  target="_self"
+                >
+                  IBM API Connect®
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  A toolkit to rapidly create, secure and manage APIs
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/app-connect"
+                  target="_self"
+                >
+                  IBM App Connect
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Codeless connectors for your data, apps and APIs
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/aspera"
+                  target="_self"
+                >
+                  IBM Aspera® on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  UI and CLI to rapidly move large files
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/skytap"
+                  target="_self"
+                >
+                  IBM Cloud for Skytap Solutions
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Virtualization for x86, AIX, System i and Power applications
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-pak-for-integration"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Integration
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Tools to connect all of your apps, data and events
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/event-streams"
+                  target="_self"
+                >
+                  IBM Event Streams
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  PaaS stream processing based on Apache Kafka
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/lift"
+                  target="_self"
+                >
+                  IBM Lift
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Toolkit to migrate on-premises data to the cloud
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/mq"
+                  target="_self"
+                >
+                  IBM MQ on Cloud
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed message broker
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/secure-gateway"
+                  target="_self"
+                >
+                  Secure gateway
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Secure tunnels between cloud and external environments
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Internet of things"
+              data-i="9"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Internet of things"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-IoT.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Internet of things
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 6;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Internet of things
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Connect and manage edge devices
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/internet-of-things"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/edge-computing"
+                  target="_self"
+                >
+                  IBM Edge Application Manager
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  An autonomous management platform for edge computing
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/products/maximo/remote-monitoring"
+                  target="_self"
+                >
+                  IBM Maximo Application Suite: Remote monitoring
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  See, predict and prevent issues with advanced AI-powered remote monitoring and computer vision for assets and operations.
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Logging and monitoring"
+              data-i="10"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                >
+                  logging-and-monitoring.svg
+                </svg>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Logging and monitoring
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 7;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Logging and monitoring
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Log and analyze activity in your infrastructure
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/activity-tracker"
+                  target="_self"
+                >
+                  IBM Cloud Activity Tracker
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Dashboard to monitor and analyze events in IBM Cloud
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/log-analysis"
+                  target="_self"
+                >
+                  IBM Cloud Log Analysis
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Analysis dashboard for system and application logs
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-monitoring"
+                  target="_self"
+                >
+                  IBM Cloud Monitoring
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Managed dashboard for Kubernetes devops
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-pak-for-watson-aiops"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Watson AIOps
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  DevOps management tool with AI analysis and recommendations
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Networking"
+              data-i="11"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Networking"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-network.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Networking
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 7;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Networking
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Run and manage public, private and virtual networks
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/network"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/dns"
+                  target="_self"
+                >
+                  Domain name services
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Public and private DNS and domain registration
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cdn"
+                  target="_self"
+                >
+                  IBM Cloud Content Delivery Network
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Content caching and delivery on the Akamai network
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/direct-link"
+                  target="_self"
+                >
+                  IBM Cloud Direct Link
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Physical or virtual private connections to IBM Cloud
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/cloud-internet-services"
+                  target="_self"
+                >
+                  IBM Cloud Internet Services
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Load balancing and CDN solution
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/load-balancer"
+                  target="_self"
+                >
+                  Load balancer
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Traffic flow management for cloud applications
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/network-appliances"
+                  target="_self"
+                >
+                  Network appliances
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Physical and virtual routers, firewalls, VPNs and more
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/network-security"
+                  target="_self"
+                >
+                  Network security
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Hardware and software firewalls, network security group management
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Quantum"
+              data-i="12"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                >
+                  quantum.svg
+                </svg>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Quantum
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 8;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Quantum
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Run code on real quantum systems using a full-stack SDK
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="https://cloud.ibm.com/quantum"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://qiskit.org"
+                  target="_new"
+                >
+                  Qiskit
+                </a>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="16"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13,14H3c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h5v1H3v10h10V8h1v5C14,13.6,13.6,14,13,14z"
+                  />
+                  <path
+                    d="M10 1L10 2 13.3 2 9 6.3 9.7 7 14 2.7 14 6 15 6 15 1z"
+                  />
+                </svg>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Python SDK for open-source quantum development
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://cloud.ibm.com/catalog/services/quantum-computing"
+                  target="_self"
+                >
+                  Qiskit Runtime
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Low-latency execution environment for quantum programs
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Security"
+              data-i="13"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Security"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-security.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Security
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 8;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Security
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Secure your cloud resources and simplify regulatory compliance
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/security"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/app-id"
+                  target="_self"
+                >
+                  IBM Cloud App ID
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Compliant authentication, authorization and user data SaaS
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/certificate-manager"
+                  target="_self"
+                >
+                  IBM Cloud Certificate Manager
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Certificate management for cloud resources
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/data-shield"
+                  target="_self"
+                >
+                  IBM Cloud Data Shield
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Runtime encryption for data-in-use protection on Kubernetes clusters
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/hardware-security-module"
+                  target="_self"
+                >
+                  IBM Cloud Hardware Security Module
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Tamper-resistant hardware to store and process cryptographic keys
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/products/cloud-pak-for-security"
+                  target="_self"
+                >
+                  IBM Cloud Pak for Security
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Security auditing, reporting, analysis and governance
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/secrets-manager"
+                  target="_self"
+                >
+                  IBM Cloud Secrets Manager
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Single-tenant, dedicated instance to manage your secrets
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/security-advisor"
+                  target="_self"
+                >
+                  IBM Cloud Security Advisor
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Dashboard for security management, analysis and remediation
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/security-and-compliance-center"
+                  target="_self"
+                >
+                  IBM Cloud Security and Compliance Center
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  SaaS to define and audit the compliance posture of your cloud
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/hyper-protect-crypto"
+                  target="_self"
+                >
+                  IBM Hyper Protect Crypto Services
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Cloud hardware to store and process cryptographic keys
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="https://www.ibm.com/cloud/key-protect"
+                  target="_self"
+                >
+                  IBM Key Protect
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Encryption key provisioning and storage for IBM Cloud apps
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/network-security"
+                  target="_self"
+                >
+                  Network security
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Hardware and software firewalls, network security group management
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/ssl-certificates"
+                  target="_self"
+                >
+                  SSL certificates
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Certificates for cloud resources
+                </p>
+              </div>
+            </div>
+            <div
+              class="product-display__tile-wrapper"
+              data-category="Storage"
+              data-i="14"
+              tabindex="0"
+            >
+              <div
+                class="product-display__tile "
+              >
+                <div>
+                  <img
+                    alt="Icon for Storage"
+                    aria-hidden="true"
+                    class="icon"
+                    src="https://1.cms.s81c.com/sites/default/files/2019-06-14/product-storage-new.svg"
+                  />
+                </div>
+                <div
+                  class="product-display__name-chevron"
+                >
+                  <h4
+                    class="product-display__name"
+                  >
+                    Storage
+                  </h4>
+                  <span>
+                    <svg
+                      aria-hidden="true"
+                      fill="currentColor"
+                      focusable="false"
+                      height="32"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 32 32"
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="product-detail
+      "
+              style="grid-row-start: 9;"
+            >
+              <div
+                class="product-detail__header-outer-wrapper"
+              >
+                <div
+                  class="product-detail__header-inner-wrapper"
+                >
+                  <h2
+                    class="product-detail__category-name"
+                  >
+                    Storage
+                  </h2>
+                  <div
+                    class="product-detail__header"
+                  >
+                    <p
+                      class="product-detail__description"
+                    >
+                      Store, migrate and back up your data
+                    </p>
+                    <a
+                      class="product-detail__link"
+                      href="/en/cloud/storage"
+                      tabindex="0"
+                    >
+                      Learn more
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/backup"
+                  target="_self"
+                >
+                  IBM Cloud Backup
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Fully encrypted backup and recovery across multiple datacenters
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/block-storage"
+                  target="_self"
+                >
+                  IBM Cloud Block Storage
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  The lowest latency, highest redundancy data storage option
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/file-storage"
+                  target="_self"
+                >
+                  IBM Cloud File Storage
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  The simplest solution for data organized into files and folders
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/mass-data-migration"
+                  target="_self"
+                >
+                  IBM Cloud Mass Data Migration
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Secure hardware to physically ship petabytes of data to IBM Cloud
+                </p>
+              </div>
+              <div
+                class="product-detail__product"
+              >
+                <a
+                  class="product-detail__product-link"
+                  href="/en/cloud/object-storage"
+                  target="_self"
+                >
+                  IBM Cloud Object Storage
+                </a>
+                <p
+                  class="product-detail__long-description"
+                >
+                  Unstructured cloud data storage with an API frontend
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Product Explorer/Components Loading 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer"
+    >
+      <div
+        class="product-explorer__global"
+      >
+        <div
+          class="product-explorer__headline-wrapper"
+        >
+          <h3
+            class="product-explorer__headline bx--type-expressive-heading-05"
+          >
+            Explore IBM Cloud products
+          </h3>
+          <p
+            class="product-explorer__subhead"
+          >
+            A full stack cloud platform with over 170 products and services covering data, containers, AI, IoT, and blockchain.
+          </p>
+          <p
+            class="product-explorer__subhead"
+          >
+            Use your existing infrastructure—even edge or other public clouds—with IBM Cloud services, APIs, access policies, security controls and compliance with IBM Cloud Satellite.
+            <a
+              href="/en/cloud/satellite"
+            >
+              IBM Cloud Satellite.
+            </a>
+          </p>
+        </div>
+        <div>
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-1"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-1"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Product Explorer/Components/Product Detail Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer"
+    >
+      <div
+        class="product-detail
+      selected"
+        style="grid-row-start: 2;"
+      >
+        <div
+          class="product-detail__header-outer-wrapper"
+        >
+          <div
+            class="product-detail__header-inner-wrapper"
+          >
+            <h2
+              class="product-detail__category-name"
+            >
+              AI / machine learning
+            </h2>
+            <div
+              class="product-detail__header"
+            >
+              <p
+                class="product-detail__description"
+              >
+                Use Watson’s AI or build your own machine learning models
+              </p>
+              <a
+                class="product-detail__link"
+                href="/en/cloud/ai"
+                tabindex="0"
+              >
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/products/watson-assistant"
+            target="_self"
+          >
+            IBM Watson Assistant
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            Virtual agents customizable to any domain
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-discovery"
+            target="_self"
+          >
+            IBM Watson Discovery
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            Search and analytics engine that adapts to custom domains
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-knowledge-catalog"
+            target="_self"
+          >
+            IBM Watson Knowledge Catalog
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            SaaS for AI data management
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-knowledge-studio"
+            target="_self"
+          >
+            IBM Watson Knowledge Studio
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            Visual interface to teach Watson domain-specific knowledge
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-language-translator"
+            target="_self"
+          >
+            IBM Watson Language Translator
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            API for translation with domain-specific models
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-natural-language-understanding"
+            target="_self"
+          >
+            IBM Watson Natural Language Classifier
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            Visual tool and API for text classification
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-natural-language-understanding"
+            target="_self"
+          >
+            IBM Watson Natural Language Understanding
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            API for text analysis and metadata extraction
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-speech-to-text"
+            target="_self"
+          >
+            IBM Watson Speech to Text
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            API for real-time speech recognition and transcription
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-studio"
+            target="_self"
+          >
+            IBM Watson Studio
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            IDE to build, run and manage AI models
+          </p>
+        </div>
+        <div
+          class="product-detail__product"
+        >
+          <a
+            class="product-detail__product-link"
+            href="/en/cloud/watson-text-to-speech"
+            target="_self"
+          >
+            IBM Watson Text to Speech
+          </a>
+          <p
+            class="product-detail__long-description"
+          >
+            API for real-time text to speech conversion
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Product Explorer/Components/Products Display Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="product-explorer"
+    >
+      <div
+        class="product-display"
+      >
+        <div
+          class="product-display__tile-wrapper"
+          data-category="AI / machine learning"
+          data-i="0"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for AI / machine learning"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-AI.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                AI / machine learning
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 2;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                AI / machine learning
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Use Watson’s AI or build your own machine learning models
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/ai"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/watson-assistant"
+              target="_self"
+            >
+              IBM Watson Assistant
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtual agents customizable to any domain
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-discovery"
+              target="_self"
+            >
+              IBM Watson Discovery
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Search and analytics engine that adapts to custom domains
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-knowledge-catalog"
+              target="_self"
+            >
+              IBM Watson Knowledge Catalog
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              SaaS for AI data management
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-knowledge-studio"
+              target="_self"
+            >
+              IBM Watson Knowledge Studio
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Visual interface to teach Watson domain-specific knowledge
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-language-translator"
+              target="_self"
+            >
+              IBM Watson Language Translator
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              API for translation with domain-specific models
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-natural-language-understanding"
+              target="_self"
+            >
+              IBM Watson Natural Language Classifier
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Visual tool and API for text classification
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-natural-language-understanding"
+              target="_self"
+            >
+              IBM Watson Natural Language Understanding
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              API for text analysis and metadata extraction
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-speech-to-text"
+              target="_self"
+            >
+              IBM Watson Speech to Text
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              API for real-time speech recognition and transcription
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-studio"
+              target="_self"
+            >
+              IBM Watson Studio
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              IDE to build, run and manage AI models
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/watson-text-to-speech"
+              target="_self"
+            >
+              IBM Watson Text to Speech
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              API for real-time text to speech conversion
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Analytics"
+          data-i="1"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Analytics"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-analytics.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Analytics
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 2;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Analytics
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Aggregate and analyze large datasets
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/analytics"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/cloud-pak-for-data"
+              target="_self"
+            >
+              IBM Cloud Pak for Data
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Tools for data analysis, organization and management
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/analytics-engine"
+              target="_self"
+            >
+              IBM Analytics Engine
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              PaaS to build analytics applications on Apache Spark and Hadoop
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/sql-query"
+              target="_self"
+            >
+              IBM Cloud SQL Query
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Query tool for IBM Cloud Object Storage
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/db2-warehouse-on-cloud"
+              target="_self"
+            >
+              IBM Db2 Warehouse on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed data warehouse on IBM Cloud or AWS
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/information-server"
+              target="_self"
+            >
+              IBM InfoSphere® Information Server on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Data integration suite for ETL, governance and anlaysis
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/mdm"
+              target="_self"
+            >
+              IBM Master Data Management on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed master data storage
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/streaming-analytics"
+              target="_self"
+            >
+              IBM Streaming Analytics
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Dashboard for real-time analysis of data streams
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Automation"
+          data-i="2"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+            >
+              ibm--automation-platform-clean.svg
+            </svg>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Automation
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 3;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Automation
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Automate workflows from IT operations to business processes
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/automation"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-pak-for-business-automation"
+              target="_self"
+            >
+              IBM Cloud Pak for Business Automation
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Operations management software with AI insights
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-pak-for-integration"
+              target="_self"
+            >
+              IBM Cloud Pak for Integration
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Tools to connect all of your apps, data and events
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-pak-for-network-automation"
+              target="_self"
+            >
+              IBM Cloud Pak for Network Automation
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Management software for telco network operations
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-pak-for-watson-aiops"
+              target="_self"
+            >
+              IBM Cloud Pak for Watson AIOps
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              DevOps management tool with AI analysis and recommendations
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/turbonomic"
+              target="_self"
+            >
+              Turbonomic
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Software to automate application resource management and optimize costs
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Blockchain"
+          data-i="3"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Blockchain"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-blockchain.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Blockchain
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 3;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Blockchain
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Build applications on an immutable blockchain ledger
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/blockchain-platform"
+              target="_self"
+            >
+              IBM Blockchain Platform
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Blockchain SDK based on Hyperledger Fabric
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Compute"
+          data-i="4"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Compute"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-22/product-compute_0.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Compute
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 4;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Compute
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Run workloads on cloud infrastrcture
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/compute"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-foundry"
+              target="_self"
+            >
+              Cloud Foundry
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              PaaS for Java, Node, PHP, Python, Ruby, Swift and Go apps.
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/dizzion"
+              target="_self"
+            >
+              Dizzion Managed DaaS on IBM Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtual desktops, in the cloud and managed
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/bare-metal-servers"
+              target="_self"
+            >
+              IBM Cloud Bare Metal Servers
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Dedicated hardware for maximum performance
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/code-engine"
+              target="_self"
+            >
+              IBM Cloud Code Engine
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Serverless container hosting platform as a service
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/vmware"
+              target="_self"
+            >
+              IBM Cloud for VMware Solutions
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Hosting for virtualized workloads
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/functions"
+              target="_self"
+            >
+              IBM Cloud Functions
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Serverless function runtime based on Apache OpenWhisk
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/vpc"
+              target="_self"
+            >
+              IBM Cloud Virtual Server for VPC
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtual servers with enhanced network security
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/vps"
+              target="_self"
+            >
+              IBM Cloud VPS Hosting
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Easily manage fast-moving workloads.
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/virtual-servers"
+              target="_self"
+            >
+              IBM Cloud Virtual Servers for Classic Infrastructure
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtual servers with the most flexible configuration options
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/hyper-protect-virtual-servers"
+              target="_self"
+            >
+              IBM Hyper Protect Virtual Servers
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtual servers for workloads with sensitive data
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/power-virtual-server"
+              target="_self"
+            >
+              IBM Power Systems Virtual Servers
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtual servers with IBM POWER processors
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/websphere-application-platform"
+              target="_self"
+            >
+              IBM WebSphere Application Server on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Runtime and SDK for Java applications
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Containers"
+          data-i="5"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+            >
+              containers.svg
+            </svg>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Containers
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 4;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Containers
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Deploy applications consistently across environments
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/containers"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/container-registry"
+              target="_self"
+            >
+              Container registry
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              SaaS for container storage and management
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/kubernetes-service"
+              target="_self"
+            >
+              IBM Cloud Kubernetes Service
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Container hosting with self-healing and horizontal scaling
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/istio"
+              target="_self"
+            >
+              Istio
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              A service mesh for microservices in Kubernetes clusters
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/openshift"
+              target="_self"
+            >
+              Red Hat® OpenShift® on IBM Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Container hosting on managed Red Hat Linux servers
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Databases"
+          data-i="6"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Databases"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-06-17/product-database-new.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Databases
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 5;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Databases
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Store, query and analyze structured data
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/databases"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/databases-for-elasticsearch"
+              target="_self"
+            >
+              IBM Cloud Databases for Elasticsearch
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed JSON document store for full-text search
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/databases-for-enterprisedb"
+              target="_self"
+            >
+              IBM Cloud Databases for EnterpriseDB
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed SQL database
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/databases-for-etcd"
+              target="_self"
+            >
+              IBM Cloud Databases for etcd
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed distributed key-value store
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/databases-for-mongodb"
+              target="_self"
+            >
+              IBM Cloud Databases for MongoDB
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed NoSQL JSON document store
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/databases-for-mysql"
+              target="_self"
+            >
+              IBM Cloud Databases for MySQL
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              A fully managed MySQL relational database service. Deploy and scale effortlessly to drive innovation.
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/databases-for-postgresql"
+              target="_self"
+            >
+              IBM Cloud Databases for PostgreSQL
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed SQL database
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/databases-for-redis"
+              target="_self"
+            >
+              IBM Cloud Databases for Redis
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed in-memory key value store
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloudant"
+              target="_self"
+            >
+              IBM Cloudant®
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed PCI-compliant JSON document store on CouchDB
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/db2-warehouse-on-cloud"
+              target="_self"
+            >
+              IBM Db2 Warehouse on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed data warehouse on IBM Cloud or AWS
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/db2-on-cloud"
+              target="_self"
+            >
+              IBM Db2® on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed SQL database
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/hyper-protect-dbaas"
+              target="_self"
+            >
+              IBM Hyper Protect DBaaS
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed PostgreSQL and MongoDB for sensitive data
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/informix"
+              target="_self"
+            >
+              IBM Informix® on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed DB for time series, spatial, NoSQL and SQL data
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Developer tools"
+          data-i="7"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Developer tools"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-06-17/product-developer-tools.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Developer tools
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 5;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Developer tools
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Manage infrastructure, environments and deployments
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/devops"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://cloud.ibm.com/catalog/services/app-configuration#about"
+              target="_self"
+            >
+              IBM Cloud App Configuration
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              SDK, dashboard and API for application feature management
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cli"
+              target="_self"
+            >
+              IBM Cloud CLI
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              A CLI to manage your IBM Cloud
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/continuous-delivery"
+              target="_self"
+            >
+              IBM Cloud Continuous Delivery
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              UI and CLI based DevOps workflows based on Tekton Pipelines
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/messages-for-rabbitmq"
+              target="_self"
+            >
+              IBM Cloud Messages for RabbitMQ
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed message broker
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/schematics"
+              target="_self"
+            >
+              IBM Cloud Schematics
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed service to provision resources with terraform templates
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/sql-query"
+              target="_self"
+            >
+              IBM Cloud SQL Query
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Query tool for IBM Cloud Object Storage
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/tekton"
+              target="_self"
+            >
+              Tekton
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Kubernetes-native CI and CD pipelines
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Integration"
+          data-i="8"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Integration"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-integration.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Integration
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 6;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Integration
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Integrate your apps through APIs, messaging and networking tools
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/integration"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/api-connect"
+              target="_self"
+            >
+              IBM API Connect®
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              A toolkit to rapidly create, secure and manage APIs
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/app-connect"
+              target="_self"
+            >
+              IBM App Connect
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Codeless connectors for your data, apps and APIs
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/aspera"
+              target="_self"
+            >
+              IBM Aspera® on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              UI and CLI to rapidly move large files
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/skytap"
+              target="_self"
+            >
+              IBM Cloud for Skytap Solutions
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Virtualization for x86, AIX, System i and Power applications
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-pak-for-integration"
+              target="_self"
+            >
+              IBM Cloud Pak for Integration
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Tools to connect all of your apps, data and events
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/event-streams"
+              target="_self"
+            >
+              IBM Event Streams
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              PaaS stream processing based on Apache Kafka
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/lift"
+              target="_self"
+            >
+              IBM Lift
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Toolkit to migrate on-premises data to the cloud
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/mq"
+              target="_self"
+            >
+              IBM MQ on Cloud
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed message broker
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/secure-gateway"
+              target="_self"
+            >
+              Secure gateway
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Secure tunnels between cloud and external environments
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Internet of things"
+          data-i="9"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Internet of things"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-IoT.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Internet of things
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 6;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Internet of things
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Connect and manage edge devices
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/internet-of-things"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/edge-computing"
+              target="_self"
+            >
+              IBM Edge Application Manager
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              An autonomous management platform for edge computing
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/maximo/remote-monitoring"
+              target="_self"
+            >
+              IBM Maximo Application Suite: Remote monitoring
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              See, predict and prevent issues with advanced AI-powered remote monitoring and computer vision for assets and operations.
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Logging and monitoring"
+          data-i="10"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+            >
+              logging-and-monitoring.svg
+            </svg>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Logging and monitoring
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 7;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Logging and monitoring
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Log and analyze activity in your infrastructure
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/activity-tracker"
+              target="_self"
+            >
+              IBM Cloud Activity Tracker
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Dashboard to monitor and analyze events in IBM Cloud
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/log-analysis"
+              target="_self"
+            >
+              IBM Cloud Log Analysis
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Analysis dashboard for system and application logs
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-monitoring"
+              target="_self"
+            >
+              IBM Cloud Monitoring
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Managed dashboard for Kubernetes devops
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-pak-for-watson-aiops"
+              target="_self"
+            >
+              IBM Cloud Pak for Watson AIOps
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              DevOps management tool with AI analysis and recommendations
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Networking"
+          data-i="11"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Networking"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-network.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Networking
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 7;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Networking
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Run and manage public, private and virtual networks
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/network"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/dns"
+              target="_self"
+            >
+              Domain name services
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Public and private DNS and domain registration
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cdn"
+              target="_self"
+            >
+              IBM Cloud Content Delivery Network
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Content caching and delivery on the Akamai network
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/direct-link"
+              target="_self"
+            >
+              IBM Cloud Direct Link
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Physical or virtual private connections to IBM Cloud
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/cloud-internet-services"
+              target="_self"
+            >
+              IBM Cloud Internet Services
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Load balancing and CDN solution
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/load-balancer"
+              target="_self"
+            >
+              Load balancer
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Traffic flow management for cloud applications
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/network-appliances"
+              target="_self"
+            >
+              Network appliances
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Physical and virtual routers, firewalls, VPNs and more
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/network-security"
+              target="_self"
+            >
+              Network security
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Hardware and software firewalls, network security group management
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Quantum"
+          data-i="12"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+            >
+              quantum.svg
+            </svg>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Quantum
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 8;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Quantum
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Run code on real quantum systems using a full-stack SDK
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="https://cloud.ibm.com/quantum"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://qiskit.org"
+              target="_new"
+            >
+              Qiskit
+            </a>
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              height="16"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13,14H3c-0.6,0-1-0.4-1-1V3c0-0.6,0.4-1,1-1h5v1H3v10h10V8h1v5C14,13.6,13.6,14,13,14z"
+              />
+              <path
+                d="M10 1L10 2 13.3 2 9 6.3 9.7 7 14 2.7 14 6 15 6 15 1z"
+              />
+            </svg>
+            <p
+              class="product-detail__long-description"
+            >
+              Python SDK for open-source quantum development
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://cloud.ibm.com/catalog/services/quantum-computing"
+              target="_self"
+            >
+              Qiskit Runtime
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Low-latency execution environment for quantum programs
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Security"
+          data-i="13"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Security"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-05-23/product-security.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Security
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 8;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Security
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Secure your cloud resources and simplify regulatory compliance
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/security"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/app-id"
+              target="_self"
+            >
+              IBM Cloud App ID
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Compliant authentication, authorization and user data SaaS
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/certificate-manager"
+              target="_self"
+            >
+              IBM Cloud Certificate Manager
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Certificate management for cloud resources
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/data-shield"
+              target="_self"
+            >
+              IBM Cloud Data Shield
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Runtime encryption for data-in-use protection on Kubernetes clusters
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/hardware-security-module"
+              target="_self"
+            >
+              IBM Cloud Hardware Security Module
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Tamper-resistant hardware to store and process cryptographic keys
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/products/cloud-pak-for-security"
+              target="_self"
+            >
+              IBM Cloud Pak for Security
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Security auditing, reporting, analysis and governance
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/secrets-manager"
+              target="_self"
+            >
+              IBM Cloud Secrets Manager
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Single-tenant, dedicated instance to manage your secrets
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/security-advisor"
+              target="_self"
+            >
+              IBM Cloud Security Advisor
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Dashboard for security management, analysis and remediation
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/security-and-compliance-center"
+              target="_self"
+            >
+              IBM Cloud Security and Compliance Center
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              SaaS to define and audit the compliance posture of your cloud
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/hyper-protect-crypto"
+              target="_self"
+            >
+              IBM Hyper Protect Crypto Services
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Cloud hardware to store and process cryptographic keys
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="https://www.ibm.com/cloud/key-protect"
+              target="_self"
+            >
+              IBM Key Protect
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Encryption key provisioning and storage for IBM Cloud apps
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/network-security"
+              target="_self"
+            >
+              Network security
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Hardware and software firewalls, network security group management
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/ssl-certificates"
+              target="_self"
+            >
+              SSL certificates
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Certificates for cloud resources
+            </p>
+          </div>
+        </div>
+        <div
+          class="product-display__tile-wrapper"
+          data-category="Storage"
+          data-i="14"
+          tabindex="0"
+        >
+          <div
+            class="product-display__tile "
+          >
+            <div>
+              <img
+                alt="Icon for Storage"
+                aria-hidden="true"
+                class="icon"
+                src="https://1.cms.s81c.com/sites/default/files/2019-06-14/product-storage-new.svg"
+              />
+            </div>
+            <div
+              class="product-display__name-chevron"
+            >
+              <h4
+                class="product-display__name"
+              >
+                Storage
+              </h4>
+              <span>
+                <svg
+                  aria-hidden="true"
+                  fill="currentColor"
+                  focusable="false"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 32 32"
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 22L6 12 7.4 10.6 16 19.2 24.6 10.6 26 12z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="product-detail
+      "
+          style="grid-row-start: 9;"
+        >
+          <div
+            class="product-detail__header-outer-wrapper"
+          >
+            <div
+              class="product-detail__header-inner-wrapper"
+            >
+              <h2
+                class="product-detail__category-name"
+              >
+                Storage
+              </h2>
+              <div
+                class="product-detail__header"
+              >
+                <p
+                  class="product-detail__description"
+                >
+                  Store, migrate and back up your data
+                </p>
+                <a
+                  class="product-detail__link"
+                  href="/en/cloud/storage"
+                  tabindex="0"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/backup"
+              target="_self"
+            >
+              IBM Cloud Backup
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Fully encrypted backup and recovery across multiple datacenters
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/block-storage"
+              target="_self"
+            >
+              IBM Cloud Block Storage
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              The lowest latency, highest redundancy data storage option
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/file-storage"
+              target="_self"
+            >
+              IBM Cloud File Storage
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              The simplest solution for data organized into files and folders
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/mass-data-migration"
+              target="_self"
+            >
+              IBM Cloud Mass Data Migration
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Secure hardware to physically ship petabytes of data to IBM Cloud
+            </p>
+          </div>
+          <div
+            class="product-detail__product"
+          >
+            <a
+              class="product-detail__product-link"
+              href="/en/cloud/object-storage"
+              target="_self"
+            >
+              IBM Cloud Object Storage
+            </a>
+            <p
+              class="product-detail__long-description"
+            >
+              Unstructured cloud data storage with an API frontend
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Trust Radius/Components Dark 1`] = `
 <div
   role="main"
@@ -20411,13 +26293,13 @@ exports[`Storyshots Widgets/Trust Radius/Components Dark 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-1"
+            aria-labelledby="loading-id-2"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-1"
+              id="loading-id-2"
             >
               Active loading indicator
             </label>
@@ -20462,13 +26344,13 @@ exports[`Storyshots Widgets/Trust Radius/Components Default 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-3"
+            aria-labelledby="loading-id-4"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-3"
+              id="loading-id-4"
             >
               Active loading indicator
             </label>
@@ -20513,13 +26395,13 @@ exports[`Storyshots Widgets/Trust Radius/Components Failed Request 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-5"
+            aria-labelledby="loading-id-6"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-5"
+              id="loading-id-6"
             >
               Active loading indicator
             </label>
@@ -20564,13 +26446,13 @@ exports[`Storyshots Widgets/Trust Radius/Components Gray 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-7"
+            aria-labelledby="loading-id-8"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-7"
+              id="loading-id-8"
             >
               Active loading indicator
             </label>
@@ -20615,13 +26497,13 @@ exports[`Storyshots Widgets/Trust Radius/Components Loading 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-9"
+            aria-labelledby="loading-id-10"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-9"
+              id="loading-id-10"
             >
               Active loading indicator
             </label>
@@ -20666,13 +26548,13 @@ exports[`Storyshots Widgets/Trust Radius/Components One Column 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-11"
+            aria-labelledby="loading-id-12"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-11"
+              id="loading-id-12"
             >
               Active loading indicator
             </label>
@@ -20717,13 +26599,13 @@ exports[`Storyshots Widgets/Trust Radius/Components Two Columns 1`] = `
         >
           <div
             aria-atomic="true"
-            aria-labelledby="loading-id-13"
+            aria-labelledby="loading-id-14"
             aria-live="assertive"
             class="bx--loading"
           >
             <label
               class="bx--visually-hidden"
-              id="loading-id-13"
+              id="loading-id-14"
             >
               Active loading indicator
             </label>
