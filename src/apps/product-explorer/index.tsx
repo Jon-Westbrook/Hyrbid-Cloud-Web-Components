@@ -8,6 +8,8 @@ import { RenderFn } from '../../types/widgets';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
 import { LinkType } from 'src/common/product-explorer/lib/types';
 
+import './index.scss';
+
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
     instanceId,
