@@ -3,5 +3,5 @@ import type { TrustRadiusState, TrustRadiusDispatch } from './store';
 
 export const useTrustRadiusDispatch = (): TrustRadiusDispatch =>
   useDispatch<TrustRadiusDispatch>();
-export const useTrustRadiusState: TypedUseSelectorHook<TrustRadiusState> =
+export const useTrustRadiusSelector: TypedUseSelectorHook<TrustRadiusState> =
   useSelector;

@@ -4,17 +4,17 @@ import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow } from '../../../common/product-explorer/utils';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
-import { useProductExplorerSecurityState } from '../lib/redux/hooks';
+import { useProductExplorerSecuritySelector } from '../lib/redux/hooks';
 import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
-  const localeCode = useProductExplorerSecurityState(
+  const localeCode = useProductExplorerSecuritySelector(
     (state) => state.localeCode,
   );
-  const messages = useProductExplorerSecurityState<
+  const messages = useProductExplorerSecuritySelector<
     Record<string, MessageDescriptor>
   >((state) => state.messages);
-  const categories = useProductExplorerSecurityState(
+  const categories = useProductExplorerSecuritySelector(
     (state) => state.categories,
   );
   const categoryStrings = categories.map((category) => category.name);

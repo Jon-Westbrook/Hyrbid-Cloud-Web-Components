@@ -6,15 +6,15 @@ import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/sli
 import ProductsDisplay from './ProductsDisplay';
 import {
   useProductExplorerSecurityDispatch,
-  useProductExplorerSecurityState,
+  useProductExplorerSecuritySelector,
 } from '../lib/redux/hooks';
 import './ProductExplorerSecurity.scss';
 
 const ProductExplorerSecurity: React.FC = () => {
-  const loading = useProductExplorerSecurityState<boolean>(
+  const loading = useProductExplorerSecuritySelector<boolean>(
     (state) => state.loading,
   );
-  const messages = useProductExplorerSecurityState<
+  const messages = useProductExplorerSecuritySelector<
     Record<string, MessageDescriptor>
   >((state) => state.messages);
   const intl = useIntl();

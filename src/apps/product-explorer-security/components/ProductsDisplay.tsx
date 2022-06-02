@@ -9,7 +9,7 @@ import {
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ChevronDown32, ChevronUp32 } from '@carbon/icons-react';
 import ProductDetail from './ProductDetail';
-import { useProductExplorerSecurityState } from '../lib/redux/hooks';
+import { useProductExplorerSecuritySelector } from '../lib/redux/hooks';
 import { ReactComponent as DataSecurityIcon } from '../assets/images/icons/data-security.svg';
 import { ReactComponent as IamIcon } from '../assets/images/icons/iam.svg';
 import { ReactComponent as PlatformIcon } from '../assets/images/icons/platform.svg';
@@ -19,10 +19,10 @@ import { ReactComponent as SoarIcon } from '../assets/images/icons/soar.svg';
 import './ProductsDisplay.scss';
 
 const ProductsDisplay = (): ReactElement<void> => {
-  const categories = useProductExplorerSecurityState(
+  const categories = useProductExplorerSecuritySelector(
     (state) => state.categories,
   );
-  const messages = useProductExplorerSecurityState<
+  const messages = useProductExplorerSecuritySelector<
     Record<string, MessageDescriptor>
   >((state) => state.messages);
   const [selectedCategory, setSelectedCategory] = useState('');

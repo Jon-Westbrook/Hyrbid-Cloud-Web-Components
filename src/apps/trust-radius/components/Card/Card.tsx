@@ -4,7 +4,7 @@ import CardFooter from './CardFooter';
 import CardBody from './CardBody';
 import EmptyCard from './EmptyCard';
 import { useGetReviewsByIdQuery } from '../../lib/redux/slices/fetchReviewsSlice';
-import { useTrustRadiusState } from '../../lib/redux/hooks';
+import { useTrustRadiusSelector } from '../../lib/redux/hooks';
 import './Card.scss';
 
 export interface CardProps {
@@ -17,7 +17,7 @@ export const Card: React.FC<CardProps> = ({ reviewIndex, trustRadiusId }) => {
   const { data } = useGetReviewsByIdQuery(trustRadiusId);
   const reviews = data?.reviews;
   const review = reviews ? reviews[reviewIndex] : undefined;
-  const theme = useTrustRadiusState((state) => state.theme);
+  const theme = useTrustRadiusSelector((state) => state.theme);
 
   if (!review) {
     return <EmptyCard />;

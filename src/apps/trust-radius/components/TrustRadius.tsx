@@ -7,7 +7,7 @@ import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { FormattedMessage } from 'react-intl';
 import { useGetReviewsByIdQuery } from '../lib/redux/slices/fetchReviewsSlice';
-import { useTrustRadiusState } from '../lib/redux/hooks';
+import { useTrustRadiusSelector } from '../lib/redux/hooks';
 import { Loading } from 'carbon-components-react';
 import './TrustRadius.scss';
 import 'slick-carousel/slick/slick.css';
@@ -50,7 +50,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
   const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
   const [customSlider, setCustomSlider] = useState<Slider>();
   const [dotsAppended, setDotsAppended] = useState(false);
-  const theme = useTrustRadiusState((state) => state.theme);
+  const theme = useTrustRadiusSelector((state) => state.theme);
   const size = useWindowSize();
 
   useEffect(() => {

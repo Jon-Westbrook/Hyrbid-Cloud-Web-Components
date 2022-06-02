@@ -7,7 +7,7 @@ import { LinkType } from '../../../common/product-explorer/lib/types';
 import ProductsDisplay from './ProductsDisplay';
 import {
   useProductExplorerDispatch,
-  useProductExplorerState,
+  useProductExplorerSelector,
 } from '../lib/redux/hooks';
 import './ProductExplorer.scss';
 import { Loading } from 'carbon-components-react';
@@ -17,14 +17,14 @@ interface ProductExplorerProps {
 }
 
 const ProductExplorer: React.FC<ProductExplorerProps> = ({ linkType }) => {
-  const loading = useProductExplorerState<boolean>((state) => state.loading);
-  const messages = useProductExplorerState<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
-  );
+  const loading = useProductExplorerSelector<boolean>((state) => state.loading);
+  const messages = useProductExplorerSelector<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
   const intl = useIntl();
   const dispatch = useProductExplorerDispatch();
 
-  let localeCode = useProductExplorerState((state) => state.localeCode);
+  let localeCode = useProductExplorerSelector((state) => state.localeCode);
   localeCode = swapCountryAndLanguage(localeCode);
 
   const satelliteLink = `${

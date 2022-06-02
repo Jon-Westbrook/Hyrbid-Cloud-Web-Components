@@ -8,7 +8,7 @@ import { defineGridRow } from '../../../common/product-explorer/utils';
 import { swapCountryAndLanguage, buildUrl } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
-import { useProductExplorerState } from '../lib/redux/hooks';
+import { useProductExplorerSelector } from '../lib/redux/hooks';
 import { Launch16 } from '@carbon/icons-react';
 import './ProductDetail.scss';
 
@@ -18,15 +18,15 @@ interface ProductDetailPropsExtended extends ProductDetailProps {
 }
 
 const ProductDetail: React.FC<ProductDetailPropsExtended> = (props) => {
-  const messages = useProductExplorerState<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
-  );
-  const categories = useProductExplorerState((state) => state.categories);
+  const messages = useProductExplorerSelector<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
+  const categories = useProductExplorerSelector((state) => state.categories);
   const categoryStrings = categories.map((category) => category.name);
   const size = useWindowSize();
   const row = defineGridRow(size.width, props.index, categoryStrings);
 
-  let localeCode = useProductExplorerState((state) => state.localeCode);
+  let localeCode = useProductExplorerSelector((state) => state.localeCode);
   localeCode = swapCountryAndLanguage(localeCode);
 
   return (
