@@ -12,5 +12,5 @@ export const store = configureStore({
     getDefaultMiddleware().concat(reviewsApi.middleware),
 });
 
-export type RootState = ReturnType<typeof store.getState>;
+export type TrustRadiusState = ReturnType<typeof store.getState>;
 export type TrustRadiusDispatch = typeof store.dispatch;

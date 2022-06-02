@@ -11,7 +11,7 @@ import widgetConfig from './TrustRadius.widget';
 import { RenderFn } from '../../types/widgets';
 import { CarbonThemes } from '../../types/carbon';
 import { setTheme } from './lib/redux/slices/setThemeSlice';
-import { useAppDispatch } from './lib/redux/hooks';
+import { useTrustRadiusDispatch } from './lib/redux/hooks';
 
 import './index.scss';
 
@@ -24,7 +24,7 @@ const TrustRadiusApp = ({
   trustRadiusId,
   palette,
 }: TrustRadiusProps & { palette: CarbonThemes }) => {
-  const dispatch = useAppDispatch();
+  const dispatch = useTrustRadiusDispatch();
   dispatch(setTheme(palette));
   return (
     <TrustRadius

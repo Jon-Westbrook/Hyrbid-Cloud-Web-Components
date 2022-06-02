@@ -3,5 +3,5 @@ import type { ProductExplorerState, ProductExplorerDispatch } from './store';
 
 export const useProductExplorerDispatch = (): ProductExplorerDispatch =>
   useDispatch<ProductExplorerDispatch>();
-export const useProductExplorerSelector: TypedUseSelectorHook<ProductExplorerState> =
+export const useProductExplorerState: TypedUseSelectorHook<ProductExplorerState> =
   useSelector;

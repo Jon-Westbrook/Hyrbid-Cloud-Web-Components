@@ -4,15 +4,19 @@ import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
 import { defineGridRow } from '../../../common/product-explorer/utils';
 import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
-import { useAppSelector } from '../lib/redux/hooks';
+import { useProductExplorerSecurityState } from '../lib/redux/hooks';
 import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {
-  const localeCode = useAppSelector((state) => state.localeCode);
-  const messages = useAppSelector<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
+  const localeCode = useProductExplorerSecurityState(
+    (state) => state.localeCode,
   );
-  const categories = useAppSelector((state) => state.categories);
+  const messages = useProductExplorerSecurityState<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
+  const categories = useProductExplorerSecurityState(
+    (state) => state.categories,
+  );
   const categoryStrings = categories.map((category) => category.name);
   const size = useWindowSize();
 
