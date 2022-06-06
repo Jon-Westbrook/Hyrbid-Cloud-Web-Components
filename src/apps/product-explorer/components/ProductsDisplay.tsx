@@ -1,5 +1,5 @@
 import React, { useState, SyntheticEvent, Fragment } from 'react';
-import { Category, LinkType } from '../../../common/product-explorer/lib/types';
+import { Category, LinkType } from '../../../common/explorer/lib/types';
 import ProductDetail from './ProductDetail';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import { ReactComponent as LoggingAndMonitoringIcon } from '../assets/images/icons/logging-and-monitoring.svg';

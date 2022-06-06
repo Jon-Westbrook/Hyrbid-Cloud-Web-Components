@@ -1,4 +1,4 @@
-import { IBMLocale } from '../common/mapValidLocale';
+import { IBMLocale } from '../common/locale/mapValidLocale';
 
 /**
  * Renders the widget.

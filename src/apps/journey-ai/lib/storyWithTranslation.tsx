@@ -3,8 +3,8 @@ import { DecoratorFunction } from '@storybook/csf';
 
 import storyWithTranslationFromMessages, {
   MessagesByCode,
-} from '../../../common/storyWithTranslationFromMessages';
-import { IBMLocale } from '../../../common/mapValidLocale';
+} from '../../../common/storybook/storyWithTranslationFromMessages';
+import { IBMLocale } from '../../../common/locale/mapValidLocale';
 
 import messages_en from '../locales/compiledStrings/en.json';
 import messages_ar from '../locales/compiledStrings/en.json';

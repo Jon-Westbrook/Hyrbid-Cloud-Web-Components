@@ -3,8 +3,8 @@ import { Meta, StoryFn } from '@storybook/react';
 
 import storyWithTranslation from '../lib/storyWithTranslation';
 import defaultFakeState from '../lib/redux/defaultFakeState';
-import storyWithReduxDecorator from '../../../common/storyWithReduxDecorator';
-import storyWithClassNameWrapper from '../../../common/storyWithClassNameWrapper';
+import storyWithReduxDecorator from '../../../common/storybook/storyWithReduxDecorator';
+import storyWithClassNameWrapper from '../../../common/storybook/storyWithClassNameWrapper';
 
 const stories: Meta = {
   component: ProductsDisplay,

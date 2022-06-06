@@ -1,9 +1,9 @@
 import { Meta, StoryFn } from '@storybook/react';
 import ProductExplorer from './ProductExplorer';
 import storyWithTranslation from '../lib/storyWithTranslation';
-import storyWithReduxDecorator from 'src/common/storyWithReduxDecorator';
+import storyWithReduxDecorator from 'src/common/storybook/storyWithReduxDecorator';
 import defaultFakeState from '../lib/redux/defaultFakeState';
-import { LinkType } from 'src/common/product-explorer/lib/types';
+import { LinkType } from 'src/common/explorer/lib/types';
 
 const stories: Meta = {
   title: 'Widgets/Product Explorer/Components',

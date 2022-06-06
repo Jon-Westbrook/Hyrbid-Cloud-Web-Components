@@ -2,12 +2,12 @@ import React from 'react';
 import {
   Product,
   ProductDetailProps,
-} from '../../../common/product-explorer/lib/types';
+} from '../../../common/explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
-import { defineGridRow } from '../../../common/product-explorer/utils';
+import { defineGridRow } from '../../../common/explorer/utils';
 import { swapCountryAndLanguage, buildUrl } from '../utils';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
-import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
+import prefixUrlWithLocale from '../../../common/locale/prefixUrlWithLocale';
 import { useProductExplorerSelector } from '../lib/redux/hooks';
 import { Launch16 } from '@carbon/icons-react';
 import './ProductDetail.scss';

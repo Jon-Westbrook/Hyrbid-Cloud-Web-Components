@@ -1,7 +1,7 @@
 import storyWithTranslationFromMessages, {
   MessagesByCode,
-} from '../../../common/storyWithTranslationFromMessages';
-import { IBMLocale } from '../../../common/mapValidLocale';
+} from '../../../common/storybook/storyWithTranslationFromMessages';
+import { IBMLocale } from '../../../common/locale/mapValidLocale';
 
 import { ReactFramework } from '@storybook/react';
 import { DecoratorFunction } from '@storybook/csf';

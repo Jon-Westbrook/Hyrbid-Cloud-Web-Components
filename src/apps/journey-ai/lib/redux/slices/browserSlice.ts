@@ -1,4 +1,4 @@
-import { IBMLocale } from '../../../../../common/mapValidLocale';
+import { IBMLocale } from '../../../../../common/locale/mapValidLocale';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { JourneyAiState } from '../store';
 

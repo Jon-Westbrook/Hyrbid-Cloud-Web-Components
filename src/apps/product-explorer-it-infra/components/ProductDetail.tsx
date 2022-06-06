@@ -1,10 +1,10 @@
 import React from 'react';
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
-import { ProductDetailProps } from '../../../common/product-explorer/lib/types';
+import { ProductDetailProps } from '../../../common/explorer/lib/types';
 import { useWindowSize } from '../../../common/hooks/useWindowSize';
-import prefixUrlWithLocale from '../../../common/prefixUrlWithLocale';
-import { defineGridRow } from '../../../common/product-explorer/utils';
 import { useProductExplorerItInfraSelector } from '../lib/redux/hooks';
+import prefixUrlWithLocale from '../../../common/locale/prefixUrlWithLocale';
+import { defineGridRow } from '../../../common/explorer/utils';
 import './ProductDetail.scss';
 
 const ProductDetail: React.FC<ProductDetailProps> = (props) => {

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { FormattedMessage, MessageDescriptor, useIntl } from 'react-intl';
-import { setLocaleCode } from '../../../common/product-explorer/lib/redux/slices/localeCodeSlice';
-import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/slices/loadingSlice';
+import { setLocaleCode } from '../../../common/explorer/lib/redux/slices/localeCodeSlice';
+import { setLoadingStatus } from '../../../common/explorer/lib/redux/slices/loadingSlice';
 import { swapCountryAndLanguage } from '../utils';
-import { LinkType } from '../../../common/product-explorer/lib/types';
+import { LinkType } from '../../../common/explorer/lib/types';
 import ProductsDisplay from './ProductsDisplay';
 import {
   useProductExplorerDispatch,

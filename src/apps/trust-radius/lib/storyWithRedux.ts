@@ -7,7 +7,7 @@ import setThemeSlice from '../lib/redux/slices/setThemeSlice';
 import apiResponse from '../components/api-data-example.json';
 import storyWithReduxDecorator, {
   StoryWithMockStoreParams,
-} from '../../../common/storyWithReduxDecorator';
+} from '../../../common/storybook/storyWithReduxDecorator';
 
 export const apiPath = 'https://www.trustradius.com/api/v2/tqw/:trustRadiusId';
 

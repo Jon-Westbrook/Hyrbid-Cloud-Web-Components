@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { FormattedMessage, MessageDescriptor, useIntl } from 'react-intl';
 import { Loading } from 'carbon-components-react';
-import { setLocaleCode } from '../../../common/product-explorer/lib/redux/slices/localeCodeSlice';
-import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/slices/loadingSlice';
+import { setLocaleCode } from '../../../common/explorer/lib/redux/slices/localeCodeSlice';
+import { setLoadingStatus } from '../../../common/explorer/lib/redux/slices/loadingSlice';
 import ProductsDisplay from './ProductsDisplay';
 import {
   useProductExplorerItInfraDispatch,
