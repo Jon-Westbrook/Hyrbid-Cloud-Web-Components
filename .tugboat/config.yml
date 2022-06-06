@@ -105,11 +105,9 @@ services:
           site:install standard
         # Enable the modules.
         vendor/bin/drush --yes pm:enable widget_type widget_instance widget_ingestion dblog
-        vendor/bin/drush --yes theme:enable claro olivero
-        # Set the Claro theme as default admin theme.
-        vendor/bin/drush --yes config-set system.theme admin claro
+        vendor/bin/drush --yes theme:enable olivero
         vendor/bin/drush --yes config-set system.theme default olivero
-        vendor/bin/drush --yes theme:uninstall seven bartik
+        vendor/bin/drush --yes theme:uninstall bartik
         # Rebuild cache.
         vendor/bin/drush cache:rebuild
       build: |
