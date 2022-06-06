@@ -1,6 +1,7 @@
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
-import type { RootState, TrustRadiusDispatch } from './store';
+import type { TrustRadiusState, TrustRadiusDispatch } from './store';
 
-export const useAppDispatch = (): TrustRadiusDispatch =>
+export const useTrustRadiusDispatch = (): TrustRadiusDispatch =>
   useDispatch<TrustRadiusDispatch>();
-export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+export const useTrustRadiusSelector: TypedUseSelectorHook<TrustRadiusState> =
+  useSelector;

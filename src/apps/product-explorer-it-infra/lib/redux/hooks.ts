@@ -4,7 +4,8 @@ import type {
   ProductExplorerItInfraDispatch,
 } from './store';
 
-export const useAppDispatch = (): ProductExplorerItInfraDispatch =>
-  useDispatch<ProductExplorerItInfraDispatch>();
-export const useAppSelector: TypedUseSelectorHook<ProductExplorerItInfraState> =
+export const useProductExplorerItInfraDispatch =
+  (): ProductExplorerItInfraDispatch =>
+    useDispatch<ProductExplorerItInfraDispatch>();
+export const useProductExplorerItInfraSelector: TypedUseSelectorHook<ProductExplorerItInfraState> =
   useSelector;

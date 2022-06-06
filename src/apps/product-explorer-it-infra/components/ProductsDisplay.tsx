@@ -8,7 +8,7 @@ import React, {
 import { FormattedMessage, MessageDescriptor } from 'react-intl';
 import ProductDetail from './ProductDetail';
 import './ProductsDisplay.scss';
-import { useAppSelector } from '../lib/redux/hooks';
+import { useProductExplorerItInfraSelector } from '../lib/redux/hooks';
 import { ReactComponent as ZIcon } from '../assets/images/icons/ibm--z.svg';
 import { ReactComponent as StorageIcon } from '../assets/images/icons/ibm--storage.svg';
 import { ReactComponent as PowerIcon } from '../assets/images/icons/server--rack.svg';
@@ -17,10 +17,12 @@ import { ReactComponent as SpectrumIcon } from '../assets/images/icons/desktop.s
 
 const ProductsDisplay: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState('');
-  const categories = useAppSelector((state) => state.categories);
-  const messages = useAppSelector<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
+  const categories = useProductExplorerItInfraSelector(
+    (state) => state.categories,
   );
+  const messages = useProductExplorerItInfraSelector<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
 
   const handleInteraction: EventHandler<SyntheticEvent<HTMLDivElement>> = (
     e,

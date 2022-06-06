@@ -4,7 +4,7 @@ import Card from './Card/Card';
 import Googlestars from './Card/Googlestars';
 import SliderHeading from './SliderHeading';
 import { FormattedMessage } from 'react-intl';
-import { useAppSelector } from '../lib/redux/hooks';
+import { useTrustRadiusSelector } from '../lib/redux/hooks';
 import { useGetReviewsByIdQuery } from '../lib/redux/slices/fetchReviewsSlice';
 import { Button } from 'carbon-components-react';
 import { Launch16 } from '@carbon/icons-react';
@@ -38,7 +38,7 @@ export const CardSlider: React.FC<CardSliderProps> = ({
 }) => {
   const { data } = useGetReviewsByIdQuery(trustRadiusId);
   const reviews = data?.reviews;
-  const theme = useAppSelector((state) => state.theme);
+  const theme = useTrustRadiusSelector((state) => state.theme);
 
   if (!data || !reviews?.length) {
     return <></>;

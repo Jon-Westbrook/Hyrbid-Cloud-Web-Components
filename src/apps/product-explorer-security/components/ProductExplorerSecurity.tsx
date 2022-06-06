@@ -4,16 +4,21 @@ import { Loading } from 'carbon-components-react';
 import { setLocaleCode } from '../../../common/product-explorer/lib/redux/slices/localeCodeSlice';
 import { setLoadingStatus } from '../../../common/product-explorer/lib/redux/slices/loadingSlice';
 import ProductsDisplay from './ProductsDisplay';
-import { useAppDispatch, useAppSelector } from '../lib/redux/hooks';
+import {
+  useProductExplorerSecurityDispatch,
+  useProductExplorerSecuritySelector,
+} from '../lib/redux/hooks';
 import './ProductExplorerSecurity.scss';
 
 const ProductExplorerSecurity: React.FC = () => {
-  const loading = useAppSelector<boolean>((state) => state.loading);
-  const messages = useAppSelector<Record<string, MessageDescriptor>>(
-    (state) => state.messages,
+  const loading = useProductExplorerSecuritySelector<boolean>(
+    (state) => state.loading,
   );
+  const messages = useProductExplorerSecuritySelector<
+    Record<string, MessageDescriptor>
+  >((state) => state.messages);
   const intl = useIntl();
-  const dispatch = useAppDispatch();
+  const dispatch = useProductExplorerSecurityDispatch();
 
   useEffect(() => {
     dispatch(setLocaleCode(intl.locale));

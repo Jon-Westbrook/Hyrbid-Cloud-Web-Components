@@ -4,7 +4,8 @@ import type {
   ProductExplorerSecurityDispatch,
 } from './store';
 
-export const useAppDispatch = (): ProductExplorerSecurityDispatch =>
-  useDispatch<ProductExplorerSecurityDispatch>();
-export const useAppSelector: TypedUseSelectorHook<ProductExplorerSecurityState> =
+export const useProductExplorerSecurityDispatch =
+  (): ProductExplorerSecurityDispatch =>
+    useDispatch<ProductExplorerSecurityDispatch>();
+export const useProductExplorerSecuritySelector: TypedUseSelectorHook<ProductExplorerSecurityState> =
   useSelector;
