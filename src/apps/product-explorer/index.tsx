@@ -6,7 +6,7 @@ import ProductExplorer from './components/ProductExplorer';
 import { IntlProvider } from 'react-intl';
 import { RenderFn } from '../../types/widgets';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
-import { LinkType } from 'src/common/product-explorer/lib/types';
+import { LinkType } from 'src/common/explorer/lib/types';
 
 import './index.scss';
 

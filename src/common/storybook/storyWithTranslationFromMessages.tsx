@@ -3,7 +3,7 @@ import { IntlProvider } from 'react-intl';
 import { ReactFramework } from '@storybook/react';
 import { ReactElement } from 'react';
 import { Args, DecoratorFunction } from '@storybook/csf';
-import { IBMLocale } from './mapValidLocale';
+import { IBMLocale } from '../locale/mapValidLocale';
 
 export type MessagesByCode = Partial<
   Record<IBMLocale, Record<string, { type: number; value: string }[]>>

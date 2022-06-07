@@ -1,4 +1,4 @@
-import { LinkType, Product } from '../../common/product-explorer/lib/types';
+import { LinkType, Product } from '../../common/explorer/lib/types';
 
 export function buildUrl(
   product: Product,

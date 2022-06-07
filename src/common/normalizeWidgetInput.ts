@@ -1,6 +1,6 @@
-import mapValidLocale, { IBMLocale } from './mapValidLocale';
+import mapValidLocale, { IBMLocale } from './locale/mapValidLocale';
 import mapPaletteToTheme from './mapPaletteToTheme';
-import fetchTranslationMessages from './fetchTranslationMessages';
+import fetchTranslationMessages from './locale/fetchTranslationMessages';
 import { ResolvedIntlConfig } from 'react-intl';
 import { CarbonThemes } from '../types/carbon';
 
