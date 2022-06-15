@@ -40,7 +40,7 @@ import imgData from '../assets/img/the-image.png';
 <img src={imgData} alt="..." />;
 ```
 
-Another way to add media is by putting it in the per-widget `public` directory. Lets say you store an image under `./src/apps/your-widget/public/foo/bar/my-image.png`. You can then reference in you code using:
+Another way to add media is by putting it in the per-widget `public` directory. Lets say you store an image under `./src/apps/your-widget/public/foo/bar/my-image.png`. You can then reference this in your code using:
 
 ```
 <img src={`${process.env.PUBLIC_ASSETS_URL}/your-widget/foo/bar/my-image.png`} alt="..." />

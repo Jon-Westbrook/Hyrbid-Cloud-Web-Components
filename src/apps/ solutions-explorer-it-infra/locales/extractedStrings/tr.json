@@ -1,0 +1,899 @@
+{
+  "+IgZ+U": {
+    "defaultMessage": "Capacity on demand"
+  },
+  "+aOA8q": {
+    "defaultMessage": "A fully managed OpenShift service that leverages the enterprise scale and security of IBM Cloud."
+  },
+  "+cwtUT": {
+    "defaultMessage": "IBM Wazi Virtual Test Platform"
+  },
+  "+fvgfr": {
+    "defaultMessage": "Containers and IBM Storage"
+  },
+  "+kTxle": {
+    "defaultMessage": "Provide near-continuous application availability with advanced failure detection, failover and recovery capabilities."
+  },
+  "+t9lm3": {
+    "defaultMessage": "A non-disruptive data migration solution that moves critical, allocated mainframe data sets almost immediately."
+  },
+  "/FK7kD": {
+    "defaultMessage": "IBM Wazi for Red Hat® Codeready Workspaces"
+  },
+  "/HKbYU": {
+    "defaultMessage": "A storage-rich system purpose-built to meet the data throughput and storage capacity needs of the cognitive era."
+  },
+  "/mtIpf": {
+    "defaultMessage": "Securely build, deploy and manage mission-critical applications for hybrid multicloud environments."
+  },
+  "/wIgyw": {
+    "defaultMessage": "Optimize archival cost with physical air gap protection and intuitive management from a single global name space."
+  },
+  "0FnKIm": {
+    "defaultMessage": "System software with the security, resiliency, cloud native experience, and flexible pricing that developers need."
+  },
+  "0IM65a": {
+    "defaultMessage": "The premier high availability and automation software solution for IBM Z systems."
+  },
+  "0XcPlp": {
+    "defaultMessage": "High performance computing"
+  },
+  "0xSWnY": {
+    "defaultMessage": "SAP HANA"
+  },
+  "1+DR+s": {
+    "defaultMessage": "Run your enterprise with the right operating system."
+  },
+  "1bph3K": {
+    "defaultMessage": "Solutions designed to help reduce your costs while providing you with the assurance that your data is safe and secure."
+  },
+  "23K015": {
+    "defaultMessage": "A variety of operating systems run on these secure, resilient and agile platforms for hybrid multicloud."
+  },
+  "2K1rc1": {
+    "defaultMessage": "A broad range of options with a common architecture and integrated enterprise SAN management."
+  },
+  "2RRzUS": {
+    "defaultMessage": "IBM z/OS Connect"
+  },
+  "2Rl8d1": {
+    "defaultMessage": "Get continuous availability, the latest security features, and easy integration with IoT, AI and Watson."
+  },
+  "2hIPkE": {
+    "defaultMessage": "More for server virtualization"
+  },
+  "2sGQy6": {
+    "defaultMessage": "Backup and recovery"
+  },
+  "2v2k8e": {
+    "defaultMessage": "IBM Power Systems software"
+  },
+  "2zTwCN": {
+    "defaultMessage": "Manage data growth and prepare for the cloud with a bundled suite of software-defined storage solutions."
+  },
+  "3EdoQF": {
+    "defaultMessage": "IBM Power Systems IC922"
+  },
+  "3FU8Kk": {
+    "defaultMessage": "Mainframe operating systems"
+  },
+  "3bJWTo": {
+    "defaultMessage": "Gain up to 99.99999% uptime and enable rapid, automatic recovery."
+  },
+  "3mNfIm": {
+    "defaultMessage": "Data Privacy Passports"
+  },
+  "3tJRDZ": {
+    "defaultMessage": "IBM Z Batch Resiliency"
+  },
+  "3vgiIW": {
+    "defaultMessage": "IBM Spectrum Virtualize for Public Cloud"
+  },
+  "4K4NuZ": {
+    "defaultMessage": "IBM Spectrum Computing"
+  },
+  "4Nvfhr": {
+    "defaultMessage": "Deliver 12 TB native capacity and up to 30 TB of compressed capacity for greater efficiency and performance."
+  },
+  "4f9Ofo": {
+    "defaultMessage": "IBM z/VSE®"
+  },
+  "4gajhp": {
+    "defaultMessage": "End-to-end NVMe-accelerated, cloud-enabled flash arrays that are easy to deploy, use and scale."
+  },
+  "4rXfNM": {
+    "defaultMessage": "Scalable data protection for physical file servers, applications, and virtual environments."
+  },
+  "4yXKf8": {
+    "defaultMessage": "Scalable, durable, secure, and energy-efficient tape storage at a compellingly lower cost than other media."
+  },
+  "5XGaTh": {
+    "defaultMessage": "High-performance hardware security modules that provide security-rich services for sensitive workloads."
+  },
+  "5kcqlc": {
+    "defaultMessage": "Enterprise-grade all-flash and hybrid flash solutions without compromising affordability or performance."
+  },
+  "5vvaHA": {
+    "defaultMessage": "The IT security solutions, secure servers and storage you need to unlock the power of your hybrid cloud strategy."
+  },
+  "6IbNsw": {
+    "defaultMessage": "IBM Z Operations Insight Suite"
+  },
+  "6qYo5a": {
+    "defaultMessage": "Get availability and business continuity tailored to your needs – on-prem and in the cloud."
+  },
+  "7OJnJ7": {
+    "defaultMessage": "An open-source ecosystem that understands and manages your data with greater speed to insight for competitive advantage."
+  },
+  "7RkqNP": {
+    "defaultMessage": "Enable AI workloads and consolidate primary and secondary big data storage with industry-leading object storage."
+  },
+  "7adw1N": {
+    "defaultMessage": "Experience the benefits of running cloud native workloads on an enterprise container platform."
+  },
+  "7wn1u8": {
+    "defaultMessage": "Bring security and resiliency to your hybrid multicloud with the Linux® operating system on IBM Z."
+  },
+  "8RSayA": {
+    "defaultMessage": "IT infrastructure software"
+  },
+  "8RqVQA": {
+    "defaultMessage": "Enable problem identification, isolation and resolution on IBM Z through analysis of operational data."
+  },
+  "8bHpbU": {
+    "defaultMessage": "FlashWatch"
+  },
+  "8lkuWj": {
+    "defaultMessage": "Gain the powerful encryption capabilities of the IBM mainframe."
+  },
+  "9B6XNK": {
+    "defaultMessage": "Engineered to be the most powerful training platform, with compute-intensive infrastructure for faster time to insights."
+  },
+  "9E/TXo": {
+    "defaultMessage": "Bring security and resiliency to your hybrid multicloud with the Linux operating system on IBM Z."
+  },
+  "9JGa+W": {
+    "defaultMessage": "Linux servers"
+  },
+  "9SJuY+": {
+    "defaultMessage": "The leading transaction processor for high volume transactions in a real-time environment."
+  },
+  "9YtAEv": {
+    "defaultMessage": "Enhance operational stability, maximize application performance and increase business agility."
+  },
+  "9oKQXJ": {
+    "defaultMessage": "Red Hat Ansible® Certified Content for IBM Z"
+  },
+  "AMeF0W": {
+    "defaultMessage": "IBM z/TPF"
+  },
+  "AXlu8O": {
+    "defaultMessage": "POWER9 chip"
+  },
+  "AYngg4": {
+    "defaultMessage": "Bring persistent storage services to containers with IBM Storage for Red Hat OpenShift."
+  },
+  "B+Azs0": {
+    "defaultMessage": "IBM SAN Volume Controller"
+  },
+  "B9DxS9": {
+    "defaultMessage": "Linux on IBM Z"
+  },
+  "BXgJIB": {
+    "defaultMessage": "IBM Z software A to Z"
+  },
+  "BoH2ys": {
+    "defaultMessage": "IBM SAN solutions support virtualization, hybrid cloud and big data requirements."
+  },
+  "Bth5qr": {
+    "defaultMessage": "A mainframe virtual tape solution that optimizes data protection and business continuance for IBM Z data."
+  },
+  "C7UYE3": {
+    "defaultMessage": "An open-source ecosystem that understands and manages your data with greater speed to insight."
+  },
+  "CDnOrD": {
+    "defaultMessage": "Cloud Pak for Multicloud Management"
+  },
+  "CFWfT2": {
+    "defaultMessage": "Reliable and accurate backup and recovery for application data on z/OS systems."
+  },
+  "CWXzHW": {
+    "defaultMessage": "IBM LinuxONE III system"
+  },
+  "CfmavK": {
+    "defaultMessage": "Protect, access and manage mission-critical data with IBM tape libraries and tape automation."
+  },
+  "Cq5MvT": {
+    "defaultMessage": "Server operating systems"
+  },
+  "Cu/Xpy": {
+    "defaultMessage": "Enable resilient models to mitigate risks and ensure business continuity."
+  },
+  "DCzZ1J": {
+    "defaultMessage": "Embed AI into your critical business applications on IBM Z."
+  },
+  "DEhZQU": {
+    "defaultMessage": "Accelerate your digital transformation with application insights that increase productivity and reduce risk."
+  },
+  "DlwKto": {
+    "defaultMessage": "IBM Power Systems E980"
+  },
+  "EF9/pp": {
+    "defaultMessage": "Cloud Pak® for Applications"
+  },
+  "EJ9D2e": {
+    "defaultMessage": "Virtualization"
+  },
+  "ETcE+B": {
+    "defaultMessage": "IBM Transparent Data Migration Facility"
+  },
+  "EqY4cA": {
+    "defaultMessage": "Storage Area Networks"
+  },
+  "EwbzmE": {
+    "defaultMessage": "Bring together dynamic, pay-for-use consumption with leading business continuity and agility."
+  },
+  "ExKVIe": {
+    "defaultMessage": "IBM PCIe Cryptographic Coprocessor"
+  },
+  "F8G2Me": {
+    "defaultMessage": "IBM SAN128B-6"
+  },
+  "FHNjEr": {
+    "defaultMessage": "Hybrid cloud storage"
+  },
+  "FctS/G": {
+    "defaultMessage": "Accelerate workloads, simplify operations, and develop and deploy new applications — from any one of our servers."
+  },
+  "FdvaE2": {
+    "defaultMessage": "The new LinuxONE system delivers encryption everywhere, cloud native development and cyber resilience."
+  },
+  "Fj3/OL": {
+    "defaultMessage": "IBM LinuxONE III"
+  },
+  "FlErzD": {
+    "defaultMessage": "Security on LinuxONE"
+  },
+  "G6Kl2+": {
+    "defaultMessage": "Simplify management of storage infrastructure, tiered storage and advanced functions."
+  },
+  "GAnQZq": {
+    "defaultMessage": "Modernize, build new apps, reduce costs and maximize ROI."
+  },
+  "GDKVdQ": {
+    "defaultMessage": "IBM FlashSystem"
+  },
+  "GMEp8z": {
+    "defaultMessage": "IBM TS4300 Tape Library"
+  },
+  "GPr3/R": {
+    "defaultMessage": "A comprehensive AI platform that's ready for the enterprise."
+  },
+  "GS+Flx": {
+    "defaultMessage": "IBM z15 mainframe"
+  },
+  "GxgBiA": {
+    "defaultMessage": "A complete set of integration capabilities to efficiently connect your applications and data wherever they live."
+  },
+  "HAGnlA": {
+    "defaultMessage": "A secure, reliable, cloud-enabled 1- or 2-socket 4U scale-out server for mission-critical workloads."
+  },
+  "HFwTrn": {
+    "defaultMessage": "Maintain privacy by policy as your data moves from its source throughout your enterprise and across hybrid clouds."
+  },
+  "HNTqUZ": {
+    "defaultMessage": "IBM Power Systems AC922"
+  },
+  "Hceioe": {
+    "defaultMessage": "IBM Spectrum Archive"
+  },
+  "HuSMQo": {
+    "defaultMessage": "A secure, reliable, cloud-enabled 1-socket 4U scale-out server for mission-critical workloads."
+  },
+  "HzFUuB": {
+    "defaultMessage": "IBM Z Operations Analytics"
+  },
+  "IALwOb": {
+    "defaultMessage": "IBM Spectrum Copy Data Management"
+  },
+  "IAbI7X": {
+    "defaultMessage": "Mainframe software"
+  },
+  "IAcJG0": {
+    "defaultMessage": "Enable more VMs on a single system with legendary scalability, system management and performance."
+  },
+  "IDWSVY": {
+    "defaultMessage": "Storage for SAP HANA"
+  },
+  "IGEX/M": {
+    "defaultMessage": "All mainframe operating systems"
+  },
+  "IGmAyd": {
+    "defaultMessage": "Business continuity"
+  },
+  "J8mzZp": {
+    "defaultMessage": "Safeguard your most valuable assets against breaches and cyberattacks while staying regulation-compliant."
+  },
+  "JOW4s8": {
+    "defaultMessage": "IBM LTO Ultrium® 8 Data Cartridge"
+  },
+  "KN4rR8": {
+    "defaultMessage": "Automate day-to-day mainframe management and disaster recovery processes."
+  },
+  "KS5ans": {
+    "defaultMessage": "The next generation of enterprise data systems, built with the most advanced POWER9 processor technology."
+  },
+  "L191bn": {
+    "defaultMessage": "IBM Cloud Object Storage"
+  },
+  "L9/Khz": {
+    "defaultMessage": "IBM Spectrum Scale"
+  },
+  "LN/du+": {
+    "defaultMessage": "IBM Z software"
+  },
+  "LUJ1LI": {
+    "defaultMessage": "An open, extensible data and AI platform that accelerates your journey to AI."
+  },
+  "LfrgiT": {
+    "defaultMessage": "IBM Application Discovery and Delivery Intelligence"
+  },
+  "LjDL/C": {
+    "defaultMessage": "Modernize, simplify and automate datacenter copy management processes."
+  },
+  "LtmuTU": {
+    "defaultMessage": "Simplify management of your data, on-premises and in the cloud, with one-platform all-flash technology."
+  },
+  "Lx6YjU": {
+    "defaultMessage": "IBM i"
+  },
+  "MKPOwH": {
+    "defaultMessage": "IBM z/VM®"
+  },
+  "MTfwST": {
+    "defaultMessage": "Tape storage"
+  },
+  "MnpySW": {
+    "defaultMessage": "Virtualize your infrastructure on enterprise servers and hypervisors to reduce costs and prepare for hybrid cloud."
+  },
+  "MoTzx7": {
+    "defaultMessage": "A secure, reliable, cloud-enabled 1- or 2-socket 2U scale-out server for mission-critical workloads."
+  },
+  "N1OjLz": {
+    "defaultMessage": "A scale-out server optimized for Linux and designed for data-intensive workloads like SAP HANA."
+  },
+  "N6bJ+F": {
+    "defaultMessage": "Maximize resource utilization and improve user experiences for faster time to results and better outcomes."
+  },
+  "NAbNv6": {
+    "defaultMessage": "IBM PowerHA®"
+  },
+  "NNGX0o": {
+    "defaultMessage": "IBM Power Systems E950"
+  },
+  "NO3yHj": {
+    "defaultMessage": "Flash Storage"
+  },
+  "NQLqKA": {
+    "defaultMessage": "Business continuity on IBM Z"
+  },
+  "O4Cs3K": {
+    "defaultMessage": "Enable your DevOps transformation with essential development and problem analysis tools."
+  },
+  "OAOqmU": {
+    "defaultMessage": "Simplify life for developers with continuous cloud native development on the IBM Z mainframe."
+  },
+  "OBVZRk": {
+    "defaultMessage": "Resiliency on IBM Z"
+  },
+  "OLKjfd": {
+    "defaultMessage": "More tape media"
+  },
+  "OUf0tH": {
+    "defaultMessage": "IBM Z Monitoring Suite"
+  },
+  "OZACEh": {
+    "defaultMessage": "IBM Storage Insights"
+  },
+  "P9XPik": {
+    "defaultMessage": "IBM FlashSystem 7200"
+  },
+  "PJAeR7": {
+    "defaultMessage": "IBM z15"
+  },
+  "PoplTh": {
+    "defaultMessage": "Simplify hybrid cloud, reduce storage costs, and embrace and enhance existing storage."
+  },
+  "PtngQd": {
+    "defaultMessage": "Flash storage"
+  },
+  "QLY/6I": {
+    "defaultMessage": "High-performance connectivity that supports virtualization, hybrid cloud and big data requirements."
+  },
+  "QQA+vw": {
+    "defaultMessage": "A high-density, highly scalable, easy-to-manage solution designed to keep data securely stored long-term."
+  },
+  "QbGGh0": {
+    "defaultMessage": "Securely process transactions and workloads, plus access z/VSE resources and applications on any server platform."
+  },
+  "QdrWIs": {
+    "defaultMessage": "IBM FlashSystem 5000"
+  },
+  "RMMaUQ": {
+    "defaultMessage": "Handle mission-critical workloads while maintaining control of your entire IT infrastructure."
+  },
+  "Ra6A9d": {
+    "defaultMessage": "System recovery on IBM Z"
+  },
+  "RarHg1": {
+    "defaultMessage": "IBM Z Development and Test Environment"
+  },
+  "Ry0hJP": {
+    "defaultMessage": "Optimize your IT infrastructure with the flexibility and control that comes from open source development."
+  },
+  "S02zjZ": {
+    "defaultMessage": "Bring new levels of flexibility and resiliency to your SAP HANA storage infrastructure with IBM Storage solutions."
+  },
+  "SEUzxW": {
+    "defaultMessage": "IBM Power System LC921"
+  },
+  "SmxQG1": {
+    "defaultMessage": "IBM Spectrum LSF"
+  },
+  "Sqr9o+": {
+    "defaultMessage": "Mainframes"
+  },
+  "TC868c": {
+    "defaultMessage": "Red Hat OpenShift"
+  },
+  "TLgef1": {
+    "defaultMessage": "Protect your business’ data against cyber threats inside your data center and throughout your hybrid cloud."
+  },
+  "TLuvdg": {
+    "defaultMessage": "IBM TS7700 family"
+  },
+  "TQic2n": {
+    "defaultMessage": "Preserve, protect and secure your data cost-effectively with IBM tape storage."
+  },
+  "TbqVan": {
+    "defaultMessage": "Software that integrates z/OS-based services and resources into your private cloud."
+  },
+  "Tc9FAx": {
+    "defaultMessage": "Cloud Pak for Data"
+  },
+  "TdTXXf": {
+    "defaultMessage": "Learn more"
+  },
+  "U2YM9F": {
+    "defaultMessage": "Linux® on Power Systems"
+  },
+  "UCAert": {
+    "defaultMessage": "Manage your z/OS enterprise, including monitoring, control and automation."
+  },
+  "UEi+62": {
+    "defaultMessage": "Storage for data protection"
+  },
+  "ULC3ZM": {
+    "defaultMessage": "Advanced application Integration Testing early in the software development lifecycle."
+  },
+  "UwU+yL": {
+    "defaultMessage": "Empower developers with a simple and intuitive way to consume data and services hosted on IBM Z."
+  },
+  "Uy3nhq": {
+    "defaultMessage": "High-speed Fibre Channel connectivity from the server rack to the SAN core."
+  },
+  "V1IqfG": {
+    "defaultMessage": "IBM TS7700 storage"
+  },
+  "VJ4P5z": {
+    "defaultMessage": "IBM Z Service Management Suite"
+  },
+  "VN8XBv": {
+    "defaultMessage": "IBM Power System S924"
+  },
+  "VYRw+V": {
+    "defaultMessage": "Deploy container-enabled enterprise storage across your on-premises and hybrid cloud storage environments."
+  },
+  "Vn5Rqo": {
+    "defaultMessage": "IBM Storage Utility Offering"
+  },
+  "W66Meq": {
+    "defaultMessage": "IBM Spectrum Storage Suite"
+  },
+  "Wo0GiL": {
+    "defaultMessage": "Storage networks with performance, reliability and flexibility to share critical data across your business."
+  },
+  "Wp4foO": {
+    "defaultMessage": "Virtualized storage lets you centralize management to simplify mixed environments and uncover hidden capacity."
+  },
+  "X9iU/V": {
+    "defaultMessage": "Host-based software that enables local or global data migration for storage attached to IBM z/OS® mainframes."
+  },
+  "XQJFQt": {
+    "defaultMessage": "More for storage virtualization"
+  },
+  "XZFPBV": {
+    "defaultMessage": "IBM Wazi for CodeReady Workspaces"
+  },
+  "Xid/Ah": {
+    "defaultMessage": "Comprehensive storage solutions that integrate and refresh your existing IT infrastructure while reducing costs."
+  },
+  "XtSBbv": {
+    "defaultMessage": "A modern implementation of software-defined storage for clusters, cognitive workloads and analytics."
+  },
+  "YB0rNz": {
+    "defaultMessage": "Explore accelerated infrastructure for advanced workloads and data-intensive challenges."
+  },
+  "YCeYtM": {
+    "defaultMessage": "IBM AIX®"
+  },
+  "YIAJ6s": {
+    "defaultMessage": "The new single-frame and multi-frame systems to bring security, privacy and resiliency to your hybrid cloud infrastructure."
+  },
+  "YMTcry": {
+    "defaultMessage": "Optimize your mix of storage media to achieve the best balance of performance and economics."
+  },
+  "ZLEdN2": {
+    "defaultMessage": "A consumable approach to enable extensive encryption of data in-flight and at-rest."
+  },
+  "ZRPTAj": {
+    "defaultMessage": "Encryption solutions"
+  },
+  "ZlND9T": {
+    "defaultMessage": "IBM SAN32C-6"
+  },
+  "ZoltHo": {
+    "defaultMessage": "The new LinuxONE III delivers encryption everywhere, cloud native development and cyber resilience."
+  },
+  "asqGnV": {
+    "defaultMessage": "Solutions"
+  },
+  "b/zt0a": {
+    "defaultMessage": "Connect IBM Z to your wider enterprise automation strategy through the Ansible Automation Platform ecosystem."
+  },
+  "bCgabX": {
+    "defaultMessage": "Simplify data for AI with a 360-degree view from edge to insight and reduce time for data organization and analysis."
+  },
+  "bEFL0n": {
+    "defaultMessage": "Containers and LinuxONE"
+  },
+  "bK4TnF": {
+    "defaultMessage": "A reliable system recovery solution with the uptime needed to maintain a resilient hybrid cloud infrastructure."
+  },
+  "bTnika": {
+    "defaultMessage": "IBM Spectrum Discover"
+  },
+  "bcbjc1": {
+    "defaultMessage": "An inference server engineered to put your AI models to work and unlock business insights."
+  },
+  "bsdTTh": {
+    "defaultMessage": "Software-defined storage"
+  },
+  "cDjAvr": {
+    "defaultMessage": "IBM SAN768C-6"
+  },
+  "cHWjxI": {
+    "defaultMessage": "Enhance your end-to-end ownership experience with flash storage guarantee programs."
+  },
+  "cIaILq": {
+    "defaultMessage": "Transform your application and data portfolio with innovative data privacy, security, and cyber resiliency."
+  },
+  "ceAJOF": {
+    "defaultMessage": "IBM Storage Suite for IBM Cloud Paks"
+  },
+  "ch5mfW": {
+    "defaultMessage": "IBM Watson® Machine Learning for z/OS"
+  },
+  "d96R/c": {
+    "defaultMessage": "Infrastructure security"
+  },
+  "dAaiI0": {
+    "defaultMessage": "A revolutionary processor chip providing the infrastructure foundation for a future-forward organization."
+  },
+  "dLAMLi": {
+    "defaultMessage": "Simplify the monitoring and management of z/OS environments with a single tool set."
+  },
+  "dZa7q7": {
+    "defaultMessage": "A comprehensive workload management solution that simplifies HPC with an enhanced user and administrator experience."
+  },
+  "dit0EH": {
+    "defaultMessage": "Cloud Pak for Integration"
+  },
+  "e1bcwm": {
+    "defaultMessage": "Modern real-time resiliency for batch applications leveraging analytics to automate recovery processes."
+  },
+  "e2T6he": {
+    "defaultMessage": "The new LinuxONE server delivers encryption everywhere, cloud native development and cyber resilience."
+  },
+  "eR7HRy": {
+    "defaultMessage": "A director-class SAN switch supporting exponential data growth and providing operational flexibility."
+  },
+  "epTBCF": {
+    "defaultMessage": "IBM DS8900F storage"
+  },
+  "errunG": {
+    "defaultMessage": "Optimize your storage infrastructure with this predictive, cloud-based storage management and support platform."
+  },
+  "evGgcP": {
+    "defaultMessage": "IBM z/OS"
+  },
+  "f60DlJ": {
+    "defaultMessage": "Storage area networks"
+  },
+  "fEOfts": {
+    "defaultMessage": "IBM DS8900F"
+  },
+  "fHnjDG": {
+    "defaultMessage": "Resiliency and continuity services"
+  },
+  "fdCQwW": {
+    "defaultMessage": "Better align your storage consumption to your business needs with usage-based billing."
+  },
+  "g2iOVI": {
+    "defaultMessage": "IBM Tape Storage"
+  },
+  "g7ITHi": {
+    "defaultMessage": "Automate and control a range of system elements spanning both hardware and software resources."
+  },
+  "gM+TOT": {
+    "defaultMessage": "An agile, high performance four-socket system with built-in virtualization and flexible capacity."
+  },
+  "gMXiMT": {
+    "defaultMessage": "IBM Z System Automation"
+  },
+  "gUxz7z": {
+    "defaultMessage": "Cloud native DevOps on IBM Z"
+  },
+  "gkPXyD": {
+    "defaultMessage": "Support mirroring between on-premises and cloud data centers or between cloud data centers"
+  },
+  "gttA/8": {
+    "defaultMessage": "Multi-layered mainframe storage solutions, deeply integrated with end-to-end cyber resiliency."
+  },
+  "hQCekK": {
+    "defaultMessage": "Replicate or migrate data between on-premises and IBM Cloud or Amazon Web Services."
+  },
+  "hVWobj": {
+    "defaultMessage": "Hyper Protect Virtual Servers"
+  },
+  "iBcQ9V": {
+    "defaultMessage": "IBM DS8900F family"
+  },
+  "iP4TLq": {
+    "defaultMessage": "Securely automate deployment, management and governance from a single control point, wherever your workloads run."
+  },
+  "iXlEfc": {
+    "defaultMessage": "Advanced storage management of unstructured data for cloud, big data, analytics, objects and more."
+  },
+  "icWMMk": {
+    "defaultMessage": "IBM Power System H922"
+  },
+  "jIlCoU": {
+    "defaultMessage": "Explore the software made for the cloud you want with the privacy and security you need."
+  },
+  "jLwVg8": {
+    "defaultMessage": "IBM SAN18B-6"
+  },
+  "k/CjY1": {
+    "defaultMessage": "Enable cloud native hybrid application development using a standard DevOps toolchain."
+  },
+  "kC60eo": {
+    "defaultMessage": "Storage virtualization"
+  },
+  "kK99k5": {
+    "defaultMessage": "End-to-end NVMe-accelerated, cloud-enabled midrange enterprise flash arrays."
+  },
+  "kMG91j": {
+    "defaultMessage": "IBM FlashSystem 9200"
+  },
+  "kergH9": {
+    "defaultMessage": "Hybrid cloud storage containers"
+  },
+  "l0fMPs": {
+    "defaultMessage": "A modern data protection solution that provides near-instant recovery, replication, retention, and reuse."
+  },
+  "l0nZAe": {
+    "defaultMessage": "Storage for resiliency"
+  },
+  "l4UdsE": {
+    "defaultMessage": "IBM FlashSystem 9200R"
+  },
+  "lDuUrp": {
+    "defaultMessage": "More b-type family"
+  },
+  "lZ+/Hl": {
+    "defaultMessage": "IBM SAN512B-6 and IBM SAN256B-6"
+  },
+  "loV7Yu": {
+    "defaultMessage": "IBM z/VSE"
+  },
+  "mIEuC2": {
+    "defaultMessage": "Accelerated computing"
+  },
+  "mQbYmD": {
+    "defaultMessage": "All IBM Power Systems enterprise servers"
+  },
+  "mWUkmo": {
+    "defaultMessage": "Support mirroring between on-premises and cloud data centers or between cloud data centers."
+  },
+  "mZGNSH": {
+    "defaultMessage": "Mainframe storage"
+  },
+  "mex8Vm": {
+    "defaultMessage": "IBM Spectrum Protect Plus"
+  },
+  "n1dQI8": {
+    "defaultMessage": "More tape drives"
+  },
+  "n21u8Q": {
+    "defaultMessage": "End-to-end NVMe-accelerated, cloud-enabled, high-end enterprise all-flash arrays."
+  },
+  "nkXC3A": {
+    "defaultMessage": "Hybrid cloud, high availability and security management software solutions on Power Systems."
+  },
+  "nmXaCC": {
+    "defaultMessage": "More tape library"
+  },
+  "o6TsJ8": {
+    "defaultMessage": "IBM z/0S Data Set Mobility Facility"
+  },
+  "o8p27g": {
+    "defaultMessage": "Make deep learning and machine learning more accessible and bring the benefits of AI into your business."
+  },
+  "oCUd8r": {
+    "defaultMessage": "Hybrid Flash storage"
+  },
+  "oFI9lS": {
+    "defaultMessage": "IBM SAN96C-6"
+  },
+  "oiiyOo": {
+    "defaultMessage": "FlashSystem 5100"
+  },
+  "p1fxQM": {
+    "defaultMessage": "A highly secure and scalable operating system for running mission-critical applications."
+  },
+  "pCnBUJ": {
+    "defaultMessage": "IBM Tivoli Advanced Backup and Recovery for z/OS"
+  },
+  "pKRbBh": {
+    "defaultMessage": "Virtualize your operating system, enabling developers to package applications without modification or need for middleware."
+  },
+  "pNF0ta": {
+    "defaultMessage": "IBM Power System S922"
+  },
+  "pYmJsg": {
+    "defaultMessage": "Streamline site switches with a more economical and automated high availability and disaster recovery solution."
+  },
+  "pf32rG": {
+    "defaultMessage": "IBM APL2®"
+  },
+  "pjOrgv": {
+    "defaultMessage": "IBM Z Service Automation Suite"
+  },
+  "q29Ilg": {
+    "defaultMessage": "IBM Application Delivery Foundation for z/OS"
+  },
+  "qEaURr": {
+    "defaultMessage": "Integrate z/OS-based services and resources into your private cloud."
+  },
+  "qpKvNu": {
+    "defaultMessage": "Simplify your infrastructure with an ultra-high performing all-flash storage system."
+  },
+  "rJRPZj": {
+    "defaultMessage": "Develop and test mainframe applications on x86 hardware."
+  },
+  "rYX3Gy": {
+    "defaultMessage": "Data protection solutions"
+  },
+  "rdy24b": {
+    "defaultMessage": "Encryption Facility for z/VSE"
+  },
+  "ri5MZ+": {
+    "defaultMessage": "Accelerate performance, simplify management and leverage industry-leading switch density."
+  },
+  "rjsKEs": {
+    "defaultMessage": "Containers and cloud native"
+  },
+  "s5jSaS": {
+    "defaultMessage": "A variety of operating systems run on the secure, resilient and agile platform for hybrid cloud."
+  },
+  "sGjSml": {
+    "defaultMessage": "Quickly find all IBM Z mainframe software, hardware, and operating systems."
+  },
+  "sJe61X": {
+    "defaultMessage": "A secure, scalable and robust open standards-based UNIX operating system."
+  },
+  "sutAy9": {
+    "defaultMessage": "Linux on Power Systems"
+  },
+  "tiYnDm": {
+    "defaultMessage": "Build agile, secure persistent storage resources for your containers with a flexible software-defined storage solution."
+  },
+  "u2BSwB": {
+    "defaultMessage": "Accelerate your enterprise server hardware with a future-forward infrastructure."
+  },
+  "u2QZoO": {
+    "defaultMessage": "Array-oriented programming language for problem solving, visualization and database access."
+  },
+  "uQfcu/": {
+    "defaultMessage": "Discover the servers that simplify and accelerate your SAP HANA® deployments."
+  },
+  "uVhDSf": {
+    "defaultMessage": "Place a layer of software between storage and applications in order to help manage your data growth and enable hybrid cloud flexibility."
+  },
+  "ujw+jj": {
+    "defaultMessage": "More c-type family"
+  },
+  "ul6E1C": {
+    "defaultMessage": "Data storage"
+  },
+  "uts3Sr": {
+    "defaultMessage": "Share IT resources, isolate workloads, reduce costs and prepare for hybrid cloud."
+  },
+  "ux+r4P": {
+    "defaultMessage": "Extraordinary scalability, performance and availability for data centers with demanding applications."
+  },
+  "v0cDUD": {
+    "defaultMessage": "Speed up replication performance and substantially reduce costs by deploying less expensive WAN connections."
+  },
+  "vLfN11": {
+    "defaultMessage": "IBM Storage Utility"
+  },
+  "wE98GR": {
+    "defaultMessage": "IBM Spectrum Protect"
+  },
+  "x+Hc+1": {
+    "defaultMessage": "Security on IBM Z"
+  },
+  "x/EJHr": {
+    "defaultMessage": "IBM Power System S914"
+  },
+  "x2Z66H": {
+    "defaultMessage": "Gain deep insights into the operations of your z/OS-based data center with a single point of data collection."
+  },
+  "x3JwTo": {
+    "defaultMessage": "High-speed Fibre Channel connectivity for all-flash arrays and support for cloud environments."
+  },
+  "x4hgs5": {
+    "defaultMessage": "Watson Machine Learning Accelerator"
+  },
+  "xBh0k5": {
+    "defaultMessage": "Servers that simplify and accelerate your SAP HANA deployments."
+  },
+  "xGCNm3": {
+    "defaultMessage": "IBM z/OS Cloud Broker"
+  },
+  "xGYgjG": {
+    "defaultMessage": "IBM PowerVM® Recovery Manager"
+  },
+  "xTi7lc": {
+    "defaultMessage": "The fastest, most reliable and secure storage system for IBM z15 and LinuxONE III."
+  },
+  "xVgj98": {
+    "defaultMessage": "Scale-out servers for SAP HANA"
+  },
+  "y+XFh7": {
+    "defaultMessage": "Reduce your storage costs, simplify data management, and enhance security and compliance fostering."
+  },
+  "y1QEx0": {
+    "defaultMessage": "IBM GDPS®"
+  },
+  "yDC6KE": {
+    "defaultMessage": "Go beyond data backup and recovery to unify workload protection and cyber resilience."
+  },
+  "yROZPl": {
+    "defaultMessage": "IBM Elastic Storage Server"
+  },
+  "zPQmi6": {
+    "defaultMessage": "Integrated solutions that provide GPU acceleration to reap the benefits of advanced analytics, HPC, and AI."
+  },
+  "zWfkt1": {
+    "defaultMessage": "Place a layer of software between storage and applications in order to help manage your data growth and enable cloud flexibility."
+  },
+  "zb1FpM": {
+    "defaultMessage": "Enterprise servers"
+  },
+  "zhJjFI": {
+    "defaultMessage": "POWER9™ chip"
+  }
+}

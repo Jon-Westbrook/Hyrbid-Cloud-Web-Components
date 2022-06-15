@@ -57,6 +57,10 @@ services:
         - /iframe.html?id=widgets-product-explorer-security-components--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=widgets-product-explorer-security-components-product-detail--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=widgets-product-explorer-security-components-products-display--default&args=&globals=locale:en&viewMode=story
+      solutions-explorer-it-infra:
+        - /iframe.html?id=widgets-solutions-explorer-it-infra-components--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-solutions-explorer-it-infra-components-products-display--default&args=&globals=locale:en&viewMode=story
+        - /iframe.html?id=widgets-solutions-explorer-it-infra-components-product-detail--default&args=&globals=locale:en&viewMode=story
       trust-radius:
         - /iframe.html?id=widgets-trust-radius-components--default&args=&globals=locale:en&viewMode=story
         - /iframe.html?id=widgets-trust-radius-components--gray&args=&globals=locale:en&viewMode=story
