@@ -1,5 +1,206 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Widgets/Cloud Identity Calculator/Components Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="cloud-identity-calculator"
+    >
+      <div
+        class="cloud-identity-calculator__inner"
+      >
+        <div>
+          <div
+            class="bx--row ru-grid-parent-row"
+          >
+            <form>
+              <div
+                class="bx--col-xlg-8 bx--col-lg-8"
+              >
+                <div
+                  class="bx--grid"
+                >
+                  <div
+                    class="bx--tile-container"
+                  >
+                    <div
+                      id="ru--calculator"
+                    >
+                      <div
+                        class="ru--main-tile"
+                      >
+                        <div
+                          class="bx--tile"
+                        >
+                          <h4>
+                            Population of individuals
+                          </h4>
+                          <div
+                            class="bx--form"
+                          >
+                            <div
+                              class="bx--form-item"
+                              id="consumerUsersFormItem"
+                            >
+                              <label
+                                class="bx--label"
+                                for="consumerUsers"
+                              >
+                                Number of individuals
+                              </label>
+                              <input
+                                class="ru--numberValidation bx--text-input bx--text-input--light"
+                                id="consumerUsers"
+                                placeholder="eg. 1200000"
+                                type="input"
+                              />
+                            </div>
+                            <fieldset
+                              class="bx--fieldset"
+                              id="consumerFieldset"
+                            >
+                              <fieldset
+                                class="cds--fieldset"
+                              >
+                                <legend
+                                  class="cds--label"
+                                >
+                                  Choose the use case for this population
+                                </legend>
+                                <div
+                                  class="bx--form-item bx--checkbox-wrapper"
+                                >
+                                  <input
+                                    class="bx--checkbox"
+                                    id="consumerSSO"
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    class="bx--checkbox-label"
+                                    for="consumerSSO"
+                                  >
+                                    <span
+                                      class="bx--checkbox-label-text"
+                                      dir="auto"
+                                    >
+                                      Single sign on
+                                    </span>
+                                  </label>
+                                </div>
+                                <div
+                                  class="bx--form-item bx--checkbox-wrapper"
+                                >
+                                  <input
+                                    class="bx--checkbox"
+                                    id="consumerMFA"
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    class="bx--checkbox-label"
+                                    for="consumerMFA"
+                                  >
+                                    <span
+                                      class="bx--checkbox-label-text"
+                                      dir="auto"
+                                    >
+                                      Multi-factor authentication
+                                    </span>
+                                  </label>
+                                </div>
+                                <div
+                                  class="bx--form-item bx--checkbox-wrapper"
+                                >
+                                  <input
+                                    class="bx--checkbox"
+                                    id="consumerAA"
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    class="bx--checkbox-label"
+                                    for="consumerAA"
+                                  >
+                                    <span
+                                      class="bx--checkbox-label-text"
+                                      dir="auto"
+                                    >
+                                      Adaptive access
+                                    </span>
+                                  </label>
+                                </div>
+                                <div
+                                  class="bx--form-item bx--checkbox-wrapper"
+                                >
+                                  <input
+                                    class="bx--checkbox"
+                                    id="consumerLMG"
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    class="bx--checkbox-label"
+                                    for="consumerLMG"
+                                  >
+                                    <span
+                                      class="bx--checkbox-label-text"
+                                      dir="auto"
+                                    >
+                                      User lifecycle and provisioning
+                                    </span>
+                                  </label>
+                                </div>
+                                <div
+                                  class="bx--form-item bx--checkbox-wrapper"
+                                >
+                                  <input
+                                    class="bx--checkbox"
+                                    id="consumerIA"
+                                    type="checkbox"
+                                  />
+                                  <label
+                                    class="bx--checkbox-label"
+                                    for="consumerIA"
+                                  >
+                                    <span
+                                      class="bx--checkbox-label-text"
+                                      dir="auto"
+                                    >
+                                      Identity analytics
+                                    </span>
+                                  </label>
+                                </div>
+                              </fieldset>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <button
+                          class="bx--btn bx--btn--primary"
+                          id="calculateButton"
+                          tabindex="0"
+                          type="button"
+                        >
+                          Calculate
+                           
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 <div
   role="main"

@@ -1,0 +1,252 @@
+.cloud-identity-calculator {
+  .bx--body,
+  body {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0.16px;
+    color: #000000;
+    line-height: 1;
+  }
+
+  .bx--content {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    letter-spacing: 0.16px;
+    color: #000000;
+    line-height: 1;
+    padding: 0;
+  }
+  .bx--grid {
+    padding-top: 4.5rem;
+  }
+
+  .bx--row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .bx--col {
+    padding: 0;
+  }
+  .bx--btn {
+    padding-right: 1rem;
+  }
+
+  .bx--tile-container {
+    @media (max-width: 620px) {
+      width: 390px;
+    }
+    @media (min-width: 621px) {
+      width: 594px;
+    }
+    width: 594px;
+  }
+
+  .bx--tile {
+    background-color: #fff !important;
+  }
+
+  .bx--form-item,
+  .bx--fieldset {
+    margin-top: 1rem;
+  }
+
+  .bx--form-item.bx--checkbox-wrapper {
+    margin-top: 0.25rem;
+  }
+  .bx--checkbox-label {
+    padding-left: 1.75rem !important;
+  }
+  .bx--form-requirement {
+    padding-bottom: 0.5rem;
+  }
+  .bx--custom--img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .bx--custom--icon {
+    margin-left: 2rem;
+  }
+
+  .bx--custom--p {
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+    letter-spacing: 0.16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .bx--text-input {
+    border: 1px solid #8d8d8d !important;
+    width: 250px !important;
+  }
+
+  #lower_header_text {
+    padding-bottom: 52.5px;
+  }
+
+  #lower_results_text {
+    padding-bottom: 1.5rem;
+  }
+
+  #calculateButton {
+    float: right;
+    margin-bottom: 17px;
+  }
+
+  #or {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #costRow {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  #pricePerRU {
+    margin-top: 0;
+  }
+
+  #costEstimateButton {
+    align-self: center;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+  }
+  #costEstimateButton:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  h1 {
+    /*productive-heading-06*/
+    font-family: 'IBM Plex Sans';
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 50px;
+    font-weight: 300;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  h4 {
+    /*productive-heading-03*/
+    font-family: 'IBM Plex Sans';
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  h5 {
+    /*productive-heading-02*/
+    font-family: 'IBM Plex Sans';
+    font-size: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  h6 {
+    /*productive-heading-01*/
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+    letter-spacing: 0.16px;
+    line-height: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .ru-examples {
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    color: #161616;
+    letter-spacing: 0.32px;
+    text-align: left;
+    line-height: 16px;
+  }
+  .bx--custom--icon {
+    width: 16px;
+  }
+  .bx--custom-hidden {
+    display: none;
+  }
+  .bx--btn--tertiary:hover svg {
+    fill: white;
+    margin-left: 2rem;
+  }
+  .bx--btn--tertiary svg {
+    fill: #0f62fe;
+    margin-left: 2rem;
+  }
+  .ru-grid-parent-row {
+    height: 100%;
+  }
+  .ru-results-tile {
+    margin-bottom: 1rem;
+  }
+  .display-flex {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .container-center {
+    margin: auto;
+  }
+  .costEstimateFlex {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -2rem;
+    text-decoration: none;
+  }
+  .ru--or {
+    margin-top: 1.75rem;
+  }
+  .ru--totalCost {
+    margin-left: 0.5rem;
+  }
+  .ru--costInput {
+    max-width: 4.5rem;
+    min-width: 4rem;
+    font-size: 1.25rem !important;
+  }
+  .ru--multiply {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .ru--dollar {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  #costRow h5 span {
+    font-size: 0.75rem;
+  }
+  @media only screen and (max-width: 700px) {
+    #costRow h5 {
+      font-size: 1.5em;
+    }
+    .ru--dollar {
+      font-size: 1rem;
+      margin-right: 0.25rem;
+    }
+    .ru--multiply {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+  .ru--main-tile {
+    margin-bottom: 1rem;
+  }
+  .ru--caption {
+    color: #8d8d8d;
+    font-size: 0.75rem;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    line-height: 1rem;
+  }
+}

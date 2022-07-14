@@ -1,0 +1,28 @@
+module.exports = {
+  entry: './src/apps/cloud-identity-calculator/index.tsx',
+  shortcode: 'cloud-identity-calculator',
+  title: 'Cloud Identity Calculator',
+  status: 'stable',
+  description: 'Allows users to explore the cloud identity calculator.',
+  useExternalPeerDependencies: ['react', 'react-dom', 'react-intl'],
+  additionalCustomProperties: {
+    webSegmentPaths: ['/cloud'],
+    availableTranslations: [
+      'ar',
+      'de',
+      'en',
+      'es',
+      'esla',
+      'fr',
+      'it',
+      'ja',
+      'ko',
+      'pl',
+      'pt',
+      'ru',
+      'tr',
+      'zh-cn',
+      'zh-tw',
+    ],
+  },
+};

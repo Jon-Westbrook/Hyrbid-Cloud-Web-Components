@@ -1,0 +1,36 @@
+@import "../assets/styles/globals";
+@include carbon--type-reset();
+
+.cloud-identity-calculator {
+  background-color: $carbon--warm-gray-100;
+  font-family: carbon--font-family('sans');
+
+  &__inner {
+    color: $carbon--white-0;
+    display: grid;
+    grid-template-columns: auto;
+    padding: $carbon--spacing-05;
+    max-width: 1584px;
+    margin: 0 auto;
+
+    @include carbon--breakpoint('lg') {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+
+  &__headline-wrapper {
+    padding: $carbon--spacing-07 $carbon--spacing-05 0 $carbon--spacing-05;
+  }
+
+  &__headline {
+    font-family: carbon--font-family('sans');
+    font-size: carbon--type-scale(12);
+    margin-bottom: $carbon--layout-02;
+    padding: 0;
+    max-width: 75%;
+
+    @include carbon--breakpoint('md') {
+      max-width: 87.5%;
+    }
+  }
+}
