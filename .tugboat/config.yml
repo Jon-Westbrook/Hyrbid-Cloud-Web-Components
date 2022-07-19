@@ -42,6 +42,18 @@ services:
     visualdiff:
       enabled: true
 
+    lighthouse:
+      enabled: true
+      screen:
+        - desktop
+      config:
+        extends: lighthouse:default
+        settings:
+          onlyCategories:
+          - performance
+          - accessibility
+          - best-practices
+
     urls:
       journey-ai:
         - /iframe.html?id=widgets-journey-to-ai-components--default&args=&globals=locale:en&viewMode=story
@@ -85,6 +97,9 @@ services:
       enabled: true
       waitUntil:
         - networkidle0
+
+    lighthouse:
+      enabled: false
 
     visualdiff:
       enabled: true
