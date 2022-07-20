@@ -44,19 +44,21 @@ module.exports = {
       (plugin) => ignoredPlugins.indexOf(plugin.constructor.name) === -1,
     );
     if (isEnvProduction && !skipCompression) {
-      new CompressionPlugin({
-        deleteOriginalAssets: true,
-        algorithm: 'brotliCompress',
-        test: /\.(js|css|svg|js\.map)$/,
-        compressionOptions: {
-          params: {
-            [BROTLI_PARAM_QUALITY]: 11,
+      config.plugins.push(
+        new CompressionPlugin({
+          deleteOriginalAssets: true,
+          algorithm: 'brotliCompress',
+          test: /\.(js|css|svg|js\.map)$/,
+          compressionOptions: {
+            params: {
+              [BROTLI_PARAM_QUALITY]: 11,
+            },
           },
-        },
-        threshold: 10240,
-        minRatio: 0.8,
-        filename: '[path][base]',
-      });
+          threshold: 10240,
+          minRatio: 0.8,
+          filename: '[path][base]',
+        })
+      );
     }
 
     return fixOutputPaths(config);
