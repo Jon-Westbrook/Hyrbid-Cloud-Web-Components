@@ -34443,7 +34443,7 @@ exports[`Storyshots Widgets/Trust Radius/Components Loading 1`] = `
 </div>
 `;
 
-exports[`Storyshots Widgets/Trust Radius/Components One Column 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components Multi Product 1`] = `
 <div
   role="main"
   style="display: flex; flex-direction: column; align-items: center;"
@@ -34494,7 +34494,7 @@ exports[`Storyshots Widgets/Trust Radius/Components One Column 1`] = `
 </div>
 `;
 
-exports[`Storyshots Widgets/Trust Radius/Components Two Columns 1`] = `
+exports[`Storyshots Widgets/Trust Radius/Components One Column 1`] = `
 <div
   role="main"
   style="display: flex; flex-direction: column; align-items: center;"
@@ -34520,6 +34520,57 @@ exports[`Storyshots Widgets/Trust Radius/Components Two Columns 1`] = `
             <label
               class="bx--visually-hidden"
               id="loading-id-14"
+            >
+              Active loading indicator
+            </label>
+            <svg
+              class="bx--loading__svg"
+              viewBox="0 0 100 100"
+            >
+              <title>
+                Active loading indicator
+              </title>
+              <circle
+                class="bx--loading__stroke"
+                cx="50%"
+                cy="50%"
+                r="44"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Trust Radius/Components Two Columns 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="trust-radius-widget trust-radius-widget__WHITE"
+    >
+      <div
+        class="trust-radius-widget__wrapper"
+      >
+        <div
+          class="trust-radius-widget__message"
+        >
+          <div
+            aria-atomic="true"
+            aria-labelledby="loading-id-16"
+            aria-live="assertive"
+            class="bx--loading"
+          >
+            <label
+              class="bx--visually-hidden"
+              id="loading-id-16"
             >
               Active loading indicator
             </label>
@@ -35291,6 +35342,38 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Heading Long Tex
 </div>
 `;
 
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Product Name Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <p
+      class="trust-radius-widget__cardproductname"
+    >
+      Foo is the bar
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Trust Radius/Components/Slider/Card/Product Name Empty 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <p
+      class="trust-radius-widget__cardproductname"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Trust Radius/Components/Slider/Slider Heading Default 1`] = `
 <div
   role="main"
@@ -35304,6 +35387,7 @@ exports[`Storyshots Widgets/Trust Radius/Components/Slider/Slider Heading Defaul
     >
       <a
         class="trust-radius-widget__sliderheading__cardlinks"
+        href=""
         target="_new"
       >
         <div

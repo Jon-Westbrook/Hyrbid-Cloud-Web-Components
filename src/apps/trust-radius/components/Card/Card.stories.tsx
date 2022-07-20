@@ -15,7 +15,7 @@ const stories: Meta = {
 const Template: Story<CardProps> = (args) => <Card {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { reviewIndex: 0, trustRadiusId: 'fake-trid' };
+Default.args = { reviewIndex: 0, trustRadiusIds: ['fake-trid'] };
 Default.decorators = [
   storyWithRedux({ identifier: 'Trust Radius - Card Default' }),
   storyWithClassNameWrapper('trust-radius-widget trust-radius-widget__WHITE'),

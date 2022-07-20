@@ -4,7 +4,7 @@ import { ConfigureStoreOptions } from '@reduxjs/toolkit';
 import { rest } from 'msw';
 import { reviewsApi } from '../lib/redux/slices/fetchReviewsSlice';
 import setThemeSlice from '../lib/redux/slices/setThemeSlice';
-import apiResponse from '../components/api-data-example.json';
+import sampleData from '../components/api-data-example.json';
 import storyWithReduxDecorator, {
   StoryWithMockStoreParams,
 } from '../../../common/storybook/storyWithReduxDecorator';
@@ -23,8 +23,12 @@ const storeConfig: ConfigureStoreOptions = {
 export const handlers = {
   trApi: rest.get(apiPath, (req, res, ctx) => {
     switch (req.params.trustRadiusId) {
-      case 'fake-trid':
-        return res(ctx.json(apiResponse));
+      case 'fake-trid-1':
+        return res(ctx.json(sampleData.apiResponses[0]));
+      case 'fake-trid-2':
+        return res(ctx.json(sampleData.apiResponses[1]));
+      case 'fake-trid-3':
+        return res(ctx.json(sampleData.apiResponses[2]));
       case 'loading':
         return res(ctx.delay('infinite'));
       case '404':

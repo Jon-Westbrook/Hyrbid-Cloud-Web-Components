@@ -11,7 +11,7 @@ export interface CardSliderDotsProps {
   onPrevious: () => void;
   /** Action to perform when the next button is triggered. */
   onNext: () => void;
-  reviewUrl: string;
+  reviewUrl: string | undefined;
   dotsClass?: string;
 }
 
@@ -25,7 +25,7 @@ const CardSliderDots: React.FC<CardSliderDotsProps> = ({
 }) => {
   return (
     <div className={dotsClass}>
-      {allReviewsButton(reviewUrl)}
+      {reviewUrl && allReviewsButton(reviewUrl)}
       <div className="trust-radius-widget__cardsliderdots__dotscontainer">
         <Button
           renderIcon={ChevronLeft32}

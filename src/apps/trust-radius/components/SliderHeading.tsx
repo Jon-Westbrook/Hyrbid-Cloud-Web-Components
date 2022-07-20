@@ -3,7 +3,7 @@ import './SliderHeading.scss';
 
 export interface SliderHeadingProps {
   /** The URL used to link to the review. */
-  reviewUrl: string;
+  reviewUrl: string | undefined;
 }
 
 const SliderHeading: React.FC<SliderHeadingProps> = ({
@@ -11,7 +11,7 @@ const SliderHeading: React.FC<SliderHeadingProps> = ({
   children,
 }) => (
   <a
-    href={reviewUrl}
+    href={reviewUrl || ''}
     className="trust-radius-widget__sliderheading__cardlinks"
     target="_new"
   >

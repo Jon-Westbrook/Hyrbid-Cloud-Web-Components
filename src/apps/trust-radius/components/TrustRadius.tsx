@@ -6,7 +6,7 @@ import CardSliderPager from './CardSliderPager';
 import CardSlider from './CardSlider';
 import Slider from 'react-slick';
 import { FormattedMessage } from 'react-intl';
-import { useGetReviewsByIdQuery } from '../lib/redux/slices/fetchReviewsSlice';
+import { useGetReviewsByIdsQuery } from '../lib/redux/slices/fetchReviewsSlice';
 import { useTrustRadiusSelector } from '../lib/redux/hooks';
 import { Loading } from 'carbon-components-react';
 import './TrustRadius.scss';
@@ -17,7 +17,7 @@ export type HOF<T> = (input: T) => T;
 
 export interface TrustRadiusProps {
   useGoogleStars: boolean;
-  trustRadiusId: string;
+  trustRadiusIds: Array<string>;
 }
 
 export interface TrustRadiusMetadata {
@@ -41,13 +41,14 @@ export interface TrustRadiusReview {
   quotes: string[];
   rating: number;
   slug: string;
+  productName: string;
 }
 
 export const TrustRadius: React.FC<TrustRadiusProps> = ({
   useGoogleStars = false,
-  trustRadiusId,
+  trustRadiusIds,
 }) => {
-  const { data, error, isLoading } = useGetReviewsByIdQuery(trustRadiusId);
+  const { data, error, isLoading } = useGetReviewsByIdsQuery(trustRadiusIds);
   const [customSlider, setCustomSlider] = useState<Slider>();
   const [dotsAppended, setDotsAppended] = useState(false);
   const theme = useTrustRadiusSelector((state) => state.theme);
@@ -57,7 +58,10 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     setDotsAppended(false);
   }, [size.width]);
 
-  const reviewUrl = `https://www.trustradius.com/products/${data?.metadata.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`;
+  // We want this value if we're fetching only one product id.
+  const reviewUrl = data?.singleProduct
+    ? `https://www.trustradius.com/products/${data?.metadata.slug}/reviews?rk=ibmcvs20181&utm_campaign=tqw&utm_medium=widget&utm_source=www.trustradius.com&trtid=36d1014e-506a-4f6f-950b-7b22b55ffdc6`
+    : undefined;
 
   const wrapComponent: HOF<ReactElement> = (component) => (
     <div className={`trust-radius-widget trust-radius-widget__${theme}`}>
@@ -84,11 +88,11 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     );
   }
 
-  const myData = data || { metadata: { totalCount: 0 }, reviews: [] };
   const sliderSettings = buildSliderSettings(
-    myData.metadata.totalCount,
+    data?.reviews.length || 1,
     size.width,
-    trustRadiusId,
+    trustRadiusIds[0],
+    data?.singleProduct || false,
   );
 
   sliderSettings.appendDots = (dots) => {
@@ -96,7 +100,7 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
     return (
       <CardSliderDots
         numRows={Math.ceil(
-          myData.reviews.length / (sliderSettings.slidesToShow || 1),
+          (data?.reviews.length || 1) / (sliderSettings.slidesToShow || 1),
         )}
         onPrevious={customSlider?.slickPrev || noop}
         onNext={customSlider?.slickNext || noop}
@@ -109,13 +113,16 @@ export const TrustRadius: React.FC<TrustRadiusProps> = ({
   };
   sliderSettings.customPaging = (i) => <CardSliderPager pageNumber={i} />;
   sliderSettings.onReInit = () => {
-    if (document.querySelector(`.slick-dots-for-${trustRadiusId}`) !== null) {
+    if (
+      // We just need a unique identifier here, so use first id available.
+      document.querySelector(`.slick-dots-for-${trustRadiusIds[0]}`) !== null
+    ) {
       setDotsAppended(true);
     }
   };
   return wrapComponent(
     <CardSlider
-      trustRadiusId={trustRadiusId}
+      trustRadiusIds={trustRadiusIds}
       stars={useGoogleStars}
       sliderSettings={sliderSettings}
       setCustomSlider={setCustomSlider}

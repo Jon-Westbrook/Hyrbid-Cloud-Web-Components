@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -21,7 +20,7 @@ const widgetId = widgetConfig.shortcode;
 // provided by the user input.
 const TrustRadiusApp = ({
   useGoogleStars,
-  trustRadiusId,
+  trustRadiusIds,
   palette,
 }: TrustRadiusProps & { palette: CarbonThemes }) => {
   const dispatch = useTrustRadiusDispatch();
@@ -29,7 +28,7 @@ const TrustRadiusApp = ({
   return (
     <TrustRadius
       useGoogleStars={useGoogleStars}
-      trustRadiusId={trustRadiusId}
+      trustRadiusIds={trustRadiusIds}
     />
   );
 };
@@ -44,8 +43,18 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   if (!element || !locale) {
     return;
   }
+
+  const trustRadiusIds = element
+    .getAttribute('data-trust-radius-ids')
+    ?.split(/[\r\n]/) || [''];
+
+  // Googlestars not applicable if rendering multiple product ids.
   const useGoogleStars =
-    element.getAttribute('data-google-stars') === 'true' ? true : false;
+    trustRadiusIds.length > 1 ||
+    element.getAttribute('data-google-stars') === 'false'
+      ? false
+      : true;
+
   // Check the theme from input data. If it is not a valid theme, use the
   // palette from context.
   let theme = element.getAttribute('data-theme') || '';
@@ -58,7 +67,7 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
       <IntlProvider locale={locale} messages={messages}>
         <Provider store={store}>
           <TrustRadiusApp
-            trustRadiusId={element.getAttribute('data-trust-radius-id') || ''}
+            trustRadiusIds={trustRadiusIds}
             useGoogleStars={useGoogleStars}
             palette={theme as CarbonThemes}
           />

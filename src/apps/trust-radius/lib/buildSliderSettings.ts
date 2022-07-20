@@ -38,12 +38,17 @@ const buildSliderSettings = (
   numberOfCards: number,
   width: number,
   trid: string,
+  singleProduct: boolean,
 ): SliderSettings => {
   return {
     dots: true,
-    dotsClass: `trust-radius-widget__slick-dots slick-dots-for-${trid}`,
+    dotsClass: `trust-radius-widget__slick-dots slick-dots-for-${trid}${
+      singleProduct ? ' trust-radius-widget__slick-dots__single-product' : ''
+    }`,
     infinite: true,
     speed: 500,
+    autoplay: singleProduct ? false : true,
+    autoplaySpeed: singleProduct ? 3000 : 10000,
     slidesToShow: determineSlidesDisplay(numberOfCards, width),
     slidesToScroll: determineSlidesDisplay(numberOfCards, width),
     nextArrow: undefined,

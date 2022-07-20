@@ -3,6 +3,7 @@ import {
   TrustRadiusMetadata,
   TrustRadiusReview,
 } from '../../../components/TrustRadius';
+import { shuffle, uniq } from 'lodash';
 
 interface ProductInfo {
   _id: string;
@@ -55,6 +56,7 @@ function normalizeProductData(product: ProductData): {
         quotes: item.quotes.map((quote) => quote.text),
         rating: item.quotes[0].rating,
         slug: item.quotes[0].review.slug,
+        productName: productInfo?.name || '', // Used when rendering as multi-product widget.
       };
     }),
   };
@@ -66,11 +68,49 @@ export const reviewsApi = createApi({
     baseUrl: 'https://www.trustradius.com/api/v2/tqw/',
   }),
   endpoints: (builder) => ({
-    getReviewsById: builder.query({
-      query: (trustRadiusId) => `${trustRadiusId}`,
-      transformResponse: normalizeProductData,
+    getReviewsByIds: builder.query({
+      async queryFn(
+        trustRadiusIds: Array<string>,
+        _queryApi,
+        _extraOptions,
+        fetchWithBaseQuery,
+      ) {
+        const apiPromises = trustRadiusIds.map(async (id) => {
+          const { data, error } = await fetchWithBaseQuery(id);
+          if (error) throw error;
+          return data as ProductData;
+        });
+
+        const { data, error } = await Promise.all(apiPromises)
+          .then((result) => {
+            const normalizedProductData = result.map(normalizeProductData);
+            const combinedProductData = normalizedProductData.reduce(
+              (previous, current) => {
+                return [...previous, ...current.reviews];
+              },
+              normalizedProductData[0].reviews,
+            );
+            return {
+              data: {
+                // We only make use of metadata when rendering a single-product widget.
+                metadata: normalizedProductData[0].metadata,
+                reviews: uniq(shuffle(combinedProductData)),
+                singleProduct: normalizedProductData.length === 1,
+              },
+              error: undefined,
+            };
+          })
+          .catch((error) => {
+            return {
+              data: undefined,
+              error,
+            };
+          });
+
+        return data ? { data } : { error };
+      },
     }),
   }),
 });
 
-export const { useGetReviewsByIdQuery } = reviewsApi;
+export const { useGetReviewsByIdsQuery } = reviewsApi;

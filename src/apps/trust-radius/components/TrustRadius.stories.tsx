@@ -19,11 +19,22 @@ const Template: StoryFn<TrustRadiusProps> = (args) => <TrustRadius {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   useGoogleStars: false,
-  trustRadiusId: 'fake-trid',
+  trustRadiusIds: ['fake-trid-1'],
 };
 Default.decorators = [
   storyWithRedux({
     identifier: 'Trust Radius - Default',
+  }),
+];
+
+export const MultiProduct = Template.bind({});
+MultiProduct.args = {
+  useGoogleStars: false,
+  trustRadiusIds: ['fake-trid-1', 'fake-trid-2', 'fake-trid-3'],
+};
+MultiProduct.decorators = [
+  storyWithRedux({
+    identifier: 'Trust Radius - Multi Product',
   }),
 ];
 
@@ -77,11 +88,11 @@ OneColumn.parameters = {
 };
 
 export const Loading = Template.bind({});
-Loading.args = { ...Default.args, trustRadiusId: 'loading' };
+Loading.args = { ...Default.args, trustRadiusIds: ['loading'] };
 Loading.decorators = [storyWithRedux({ identifier: 'Trust Radius - Loading' })];
 
 export const FailedRequest = Template.bind({});
-FailedRequest.args = { ...Default.args, trustRadiusId: '404' };
+FailedRequest.args = { ...Default.args, trustRadiusIds: ['404'] };
 FailedRequest.decorators = [
   storyWithRedux({ identifier: 'Trust Radius - Failed Request' }),
 ];

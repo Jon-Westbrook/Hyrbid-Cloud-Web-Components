@@ -9,14 +9,16 @@ module.exports = {
     properties: {
       fields: {
         type: 'object',
-        required: ['trust-radius-id'],
+        required: ['trust-radius-ids'],
         properties: {
-          'trust-radius-id': {
+          'trust-radius-ids': {
             type: 'string',
-            title: 'Trust Radius ID',
+            title: 'Trust Radius IDs',
             description:
-              'The ID found within the trust radius reviews URL that activates the product reviews.',
-            examples: ['5e20addcac72e40024d9a00a'],
+              'The ID found within the trust radius reviews URL that activates the product reviews. Enter a single ID to display a single-product widget, or enter multiple IDs on separate lines to display a multi-product widget.',
+            examples: [
+              '5e20addcac72e40024d9a00a\n61e97281a2b7200025596c0b\n61c342fe85d5d1004dd83a3d',
+            ],
           },
           theme: {
             type: 'string',
@@ -30,7 +32,7 @@ module.exports = {
           'google-stars': {
             type: 'string',
             title: 'Google Review Stars',
-            description: `Enable Stars and review data on this page's Google search results.`,
+            description: `In single-product widgets, this enables Stars and review data on this page's Google search results.`,
             default: 'false',
             examples: ['false'],
             enum: ['true', 'false'],
@@ -65,8 +67,10 @@ module.exports = {
       'zh-tw',
     ],
     uiFormSchema: {
-      'trust-radius-id': {
-        'ui:placeholder': '5e20addcac72e40024d9a00a',
+      'trust-radius-ids': {
+        'ui:widget': 'textarea',
+        'ui:placeholder':
+          '5e20addcac72e40024d9a00a\n61e97281a2b7200025596c0b\n61c342fe85d5d1004dd83a3d',
       },
       theme: {
         'ui:widget': 'select',
