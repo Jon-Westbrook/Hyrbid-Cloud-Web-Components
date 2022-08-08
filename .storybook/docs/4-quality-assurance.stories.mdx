@@ -56,7 +56,9 @@ The basic expectation for a widget in Storybook is to have a documentation page 
 
 Each time a widget is worked on, the developer will add a link to the ticket in the _References_ section, and adapt the current documentation. This will ensure that the documentation page in Storybook contains up-to-date requirements, and reflects how they evolved over time.
 
-The QA team and the development team share the responsability to ensure that widget and documentation are in sync. Outdated documentation is a reason to block a pull request from being merged.
+The QA team and the development team share the responsibility to ensure that widget and documentation are in sync. Outdated documentation is a reason to block a pull request from being merged.
+
+In order to simulate the global styles that may be imposed upon the widget when it reaches production or a production-like environment, a toolbar option is available (denoted by the `< >` icon) that will toggle on/off IBM's v18 and v19 stylesheets. Developers should work on their widget with these stylesheets toggled **off**, because those stylesheets will not always be present, but should test with the stylesheets toggled **on** before completing their work to _ensure that the widget appears identical both toggled on or toggled off_. QA, in testing the PR, should use this toggle to _ensure that the widget appears identical both toggled on or toggled off_.
 
 ### Testing the widget in Drupal
 
