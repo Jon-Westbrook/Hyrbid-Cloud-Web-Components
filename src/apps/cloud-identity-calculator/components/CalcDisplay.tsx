@@ -137,119 +137,134 @@ const CalcDisplay: React.FC = () => {
   }
 
   return (
-    <div className="bx--row ru-grid-parent-row">
-      <form>
-        <div className="bx--col-xlg-8 bx--col-lg-8">
-          <div className="bx--grid">
-            <div className="bx--tile-container">
-              <div id="ru--calculator">
-                <div className="ru--main-tile">
-                  <div className="bx--tile">
-                    <h4>
-                      <FormattedMessage
-                        defaultMessage="Population of individuals"
-                        id="tmNOfI"
-                      />
-                    </h4>
-
-                    <div className="bx--form">
-                      <div id="consumerUsersFormItem" className="bx--form-item">
-                        <label htmlFor="consumerUsers" className="bx--label">
+    <div className="ibm-grid-container ibm-duo-u--relative">
+      <div className="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-4 ibm-duo-u--pt-4">
+        <div className="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8 ibm-grid-col-seamless ibm-mb-3 ani-reveal ani-fadeInUp"></div>
+      </div>
+      <div className="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8 ibm-duo-u--pt-md-4 ibm-duo-u--pb-8">
+        <div className="bx--row ru-grid-parent-row">
+          <form>
+            <div className="bx--col-xlg-8 bx--col-lg-8">
+              <div className="bx--grid">
+                <div className="bx--tile-container">
+                  <div id="ru--calculator">
+                    <div className="ru--main-tile">
+                      <div className="bx--tile">
+                        <h4>
                           <FormattedMessage
-                            defaultMessage="Number of individuals"
-                            id="Y5I6yI"
+                            defaultMessage="Population of individuals"
+                            id="tmNOfI"
                           />
-                        </label>
-                        <input
-                          ref={consumerUsersRef}
-                          id="consumerUsers"
-                          type="input"
-                          className={`ru--numberValidation bx--text-input bx--text-input--light${
-                            isConsumerUserInput
-                              ? ''
-                              : ' bx--text-input--invalid'
-                          }`}
-                          placeholder="eg. 1200000"
-                        ></input>
-                      </div>
+                        </h4>
+                        <div className="bx--form">
+                          <div
+                            id="consumerUsersFormItem"
+                            className="bx--form-item"
+                          >
+                            <label
+                              htmlFor="consumerUsers"
+                              className="bx--label"
+                            >
+                              <FormattedMessage
+                                defaultMessage="Number of individuals"
+                                id="Y5I6yI"
+                              />
+                            </label>
+                            <input
+                              ref={consumerUsersRef}
+                              id="consumerUsers"
+                              type="number"
+                              className={`ru--numberValidation bx--text-input bx--text-input--light${
+                                isConsumerUserInput
+                                  ? ''
+                                  : ' bx--text-input--invalid'
+                              }`}
+                              placeholder="eg. 1200000"
+                            ></input>
+                          </div>
 
-                      <fieldset id="consumerFieldset" className="bx--fieldset">
-                        <fieldset className="cds--fieldset">
-                          <legend className="cds--label">
-                            <FormattedMessage
-                              defaultMessage="Choose the use case for this population"
-                              id="8ITSDa"
-                            />
-                          </legend>
-                          <Checkbox
-                            labelText={
-                              <FormattedMessage
-                                {...messages['inputSingleSignOn']}
+                          <fieldset
+                            id="consumerFieldset"
+                            className="bx--fieldset"
+                          >
+                            <fieldset className="cds--fieldset">
+                              <legend className="cds--label">
+                                <FormattedMessage
+                                  defaultMessage="Choose the use case for this population"
+                                  id="8ITSDa"
+                                />
+                              </legend>
+                              <Checkbox
+                                labelText={
+                                  <FormattedMessage
+                                    {...messages['inputSingleSignOn']}
+                                  />
+                                }
+                                id="consumerSSO"
+                                checked={isConsumerSSOChecked}
+                                onChange={onChangeConsumerSSO}
                               />
-                            }
-                            id="consumerSSO"
-                            checked={isConsumerSSOChecked}
-                            onChange={onChangeConsumerSSO}
-                          />
-                          <Checkbox
-                            labelText={
-                              <FormattedMessage
-                                {...messages['appMultiFactor']}
+                              <Checkbox
+                                labelText={
+                                  <FormattedMessage
+                                    {...messages['appMultiFactor']}
+                                  />
+                                }
+                                id="consumerMFA"
+                                checked={isConsumerMFAChecked}
+                                onChange={onChangeConsumerMFA}
                               />
-                            }
-                            id="consumerMFA"
-                            checked={isConsumerMFAChecked}
-                            onChange={onChangeConsumerMFA}
-                          />
-                          <Checkbox
-                            labelText={
-                              <FormattedMessage
-                                {...messages['appAdaptiveAccess']}
+                              <Checkbox
+                                labelText={
+                                  <FormattedMessage
+                                    {...messages['appAdaptiveAccess']}
+                                  />
+                                }
+                                id="consumerAA"
+                                checked={isConsumerAAChecked}
+                                onChange={onChangeConsumerAA}
                               />
-                            }
-                            id="consumerAA"
-                            checked={isConsumerAAChecked}
-                            onChange={onChangeConsumerAA}
-                          />
-                          <Checkbox
-                            labelText={
-                              <FormattedMessage
-                                {...messages['appUserLifecycle']}
+                              <Checkbox
+                                labelText={
+                                  <FormattedMessage
+                                    {...messages['appUserLifecycle']}
+                                  />
+                                }
+                                id="consumerLMG"
+                                checked={isConsumerLMGChecked}
+                                onChange={onChangeConsumerLMG}
                               />
-                            }
-                            id="consumerLMG"
-                            checked={isConsumerLMGChecked}
-                            onChange={onChangeConsumerLMG}
-                          />
-                          <Checkbox
-                            labelText={
-                              <FormattedMessage
-                                {...messages['appIdentityAnalytics']}
+                              <Checkbox
+                                labelText={
+                                  <FormattedMessage
+                                    {...messages['appIdentityAnalytics']}
+                                  />
+                                }
+                                id="consumerIA"
+                                checked={isConsumerIAChecked}
+                                onChange={onChangeConsumerIA}
                               />
-                            }
-                            id="consumerIA"
-                            checked={isConsumerIAChecked}
-                            onChange={onChangeConsumerIA}
-                          />
-                        </fieldset>
-                      </fieldset>
+                            </fieldset>
+                          </fieldset>
+                        </div>
+                      </div>
                     </div>
+                    <div>
+                      <Button onClick={add} id="calculateButton">
+                        Calculate{' '}
+                      </Button>
+                    </div>
+
+                    {isShow && (
+                      <CalcResult totalRUs={totalRUs} userCost={userCosts} />
+                    )}
                   </div>
                 </div>
-                <div>
-                  <Button onClick={add} id="calculateButton">
-                    Calculate{' '}
-                  </Button>
-                </div>
-
-                {isShow && (
-                  <CalcResult totalRUs={totalRUs} userCost={userCosts} />
-                )}
               </div>
             </div>
-          </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
   );
 };

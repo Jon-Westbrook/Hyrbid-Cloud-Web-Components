@@ -16,183 +16,198 @@ exports[`Storyshots Widgets/Cloud Identity Calculator/Components Default 1`] = `
       >
         <div>
           <div
-            class="bx--row ru-grid-parent-row"
+            class="ibm-grid-container ibm-duo-u--relative"
           >
-            <form>
+            <div
+              class="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-4 ibm-duo-u--pt-4"
+            >
               <div
-                class="bx--col-xlg-8 bx--col-lg-8"
+                class="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8 ibm-grid-col-seamless ibm-mb-3 ani-reveal ani-fadeInUp"
+              />
+            </div>
+            <div
+              class="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8 ibm-duo-u--pt-md-4 ibm-duo-u--pb-8"
+            >
+              <div
+                class="bx--row ru-grid-parent-row"
               >
-                <div
-                  class="bx--grid"
-                >
+                <form>
                   <div
-                    class="bx--tile-container"
+                    class="bx--col-xlg-8 bx--col-lg-8"
                   >
                     <div
-                      id="ru--calculator"
+                      class="bx--grid"
                     >
                       <div
-                        class="ru--main-tile"
+                        class="bx--tile-container"
                       >
                         <div
-                          class="bx--tile"
+                          id="ru--calculator"
                         >
-                          <h4>
-                            Population of individuals
-                          </h4>
                           <div
-                            class="bx--form"
+                            class="ru--main-tile"
                           >
                             <div
-                              class="bx--form-item"
-                              id="consumerUsersFormItem"
+                              class="bx--tile"
                             >
-                              <label
-                                class="bx--label"
-                                for="consumerUsers"
+                              <h4>
+                                Population of individuals
+                              </h4>
+                              <div
+                                class="bx--form"
                               >
-                                Number of individuals
-                              </label>
-                              <input
-                                class="ru--numberValidation bx--text-input bx--text-input--light"
-                                id="consumerUsers"
-                                placeholder="eg. 1200000"
-                                type="input"
-                              />
+                                <div
+                                  class="bx--form-item"
+                                  id="consumerUsersFormItem"
+                                >
+                                  <label
+                                    class="bx--label"
+                                    for="consumerUsers"
+                                  >
+                                    Number of individuals
+                                  </label>
+                                  <input
+                                    class="ru--numberValidation bx--text-input bx--text-input--light"
+                                    id="consumerUsers"
+                                    placeholder="eg. 1200000"
+                                    type="number"
+                                  />
+                                </div>
+                                <fieldset
+                                  class="bx--fieldset"
+                                  id="consumerFieldset"
+                                >
+                                  <fieldset
+                                    class="cds--fieldset"
+                                  >
+                                    <legend
+                                      class="cds--label"
+                                    >
+                                      Choose the use case for this population
+                                    </legend>
+                                    <div
+                                      class="bx--form-item bx--checkbox-wrapper"
+                                    >
+                                      <input
+                                        class="bx--checkbox"
+                                        id="consumerSSO"
+                                        type="checkbox"
+                                      />
+                                      <label
+                                        class="bx--checkbox-label"
+                                        for="consumerSSO"
+                                      >
+                                        <span
+                                          class="bx--checkbox-label-text"
+                                          dir="auto"
+                                        >
+                                          Single sign on
+                                        </span>
+                                      </label>
+                                    </div>
+                                    <div
+                                      class="bx--form-item bx--checkbox-wrapper"
+                                    >
+                                      <input
+                                        class="bx--checkbox"
+                                        id="consumerMFA"
+                                        type="checkbox"
+                                      />
+                                      <label
+                                        class="bx--checkbox-label"
+                                        for="consumerMFA"
+                                      >
+                                        <span
+                                          class="bx--checkbox-label-text"
+                                          dir="auto"
+                                        >
+                                          Multi-factor authentication
+                                        </span>
+                                      </label>
+                                    </div>
+                                    <div
+                                      class="bx--form-item bx--checkbox-wrapper"
+                                    >
+                                      <input
+                                        class="bx--checkbox"
+                                        id="consumerAA"
+                                        type="checkbox"
+                                      />
+                                      <label
+                                        class="bx--checkbox-label"
+                                        for="consumerAA"
+                                      >
+                                        <span
+                                          class="bx--checkbox-label-text"
+                                          dir="auto"
+                                        >
+                                          Adaptive access
+                                        </span>
+                                      </label>
+                                    </div>
+                                    <div
+                                      class="bx--form-item bx--checkbox-wrapper"
+                                    >
+                                      <input
+                                        class="bx--checkbox"
+                                        id="consumerLMG"
+                                        type="checkbox"
+                                      />
+                                      <label
+                                        class="bx--checkbox-label"
+                                        for="consumerLMG"
+                                      >
+                                        <span
+                                          class="bx--checkbox-label-text"
+                                          dir="auto"
+                                        >
+                                          User lifecycle and provisioning
+                                        </span>
+                                      </label>
+                                    </div>
+                                    <div
+                                      class="bx--form-item bx--checkbox-wrapper"
+                                    >
+                                      <input
+                                        class="bx--checkbox"
+                                        id="consumerIA"
+                                        type="checkbox"
+                                      />
+                                      <label
+                                        class="bx--checkbox-label"
+                                        for="consumerIA"
+                                      >
+                                        <span
+                                          class="bx--checkbox-label-text"
+                                          dir="auto"
+                                        >
+                                          Identity analytics
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </fieldset>
+                                </fieldset>
+                              </div>
                             </div>
-                            <fieldset
-                              class="bx--fieldset"
-                              id="consumerFieldset"
+                          </div>
+                          <div>
+                            <button
+                              class="bx--btn bx--btn--primary"
+                              id="calculateButton"
+                              tabindex="0"
+                              type="button"
                             >
-                              <fieldset
-                                class="cds--fieldset"
-                              >
-                                <legend
-                                  class="cds--label"
-                                >
-                                  Choose the use case for this population
-                                </legend>
-                                <div
-                                  class="bx--form-item bx--checkbox-wrapper"
-                                >
-                                  <input
-                                    class="bx--checkbox"
-                                    id="consumerSSO"
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    class="bx--checkbox-label"
-                                    for="consumerSSO"
-                                  >
-                                    <span
-                                      class="bx--checkbox-label-text"
-                                      dir="auto"
-                                    >
-                                      Single sign on
-                                    </span>
-                                  </label>
-                                </div>
-                                <div
-                                  class="bx--form-item bx--checkbox-wrapper"
-                                >
-                                  <input
-                                    class="bx--checkbox"
-                                    id="consumerMFA"
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    class="bx--checkbox-label"
-                                    for="consumerMFA"
-                                  >
-                                    <span
-                                      class="bx--checkbox-label-text"
-                                      dir="auto"
-                                    >
-                                      Multi-factor authentication
-                                    </span>
-                                  </label>
-                                </div>
-                                <div
-                                  class="bx--form-item bx--checkbox-wrapper"
-                                >
-                                  <input
-                                    class="bx--checkbox"
-                                    id="consumerAA"
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    class="bx--checkbox-label"
-                                    for="consumerAA"
-                                  >
-                                    <span
-                                      class="bx--checkbox-label-text"
-                                      dir="auto"
-                                    >
-                                      Adaptive access
-                                    </span>
-                                  </label>
-                                </div>
-                                <div
-                                  class="bx--form-item bx--checkbox-wrapper"
-                                >
-                                  <input
-                                    class="bx--checkbox"
-                                    id="consumerLMG"
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    class="bx--checkbox-label"
-                                    for="consumerLMG"
-                                  >
-                                    <span
-                                      class="bx--checkbox-label-text"
-                                      dir="auto"
-                                    >
-                                      User lifecycle and provisioning
-                                    </span>
-                                  </label>
-                                </div>
-                                <div
-                                  class="bx--form-item bx--checkbox-wrapper"
-                                >
-                                  <input
-                                    class="bx--checkbox"
-                                    id="consumerIA"
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    class="bx--checkbox-label"
-                                    for="consumerIA"
-                                  >
-                                    <span
-                                      class="bx--checkbox-label-text"
-                                      dir="auto"
-                                    >
-                                      Identity analytics
-                                    </span>
-                                  </label>
-                                </div>
-                              </fieldset>
-                            </fieldset>
+                              Calculate
+                               
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <div>
-                        <button
-                          class="bx--btn bx--btn--primary"
-                          id="calculateButton"
-                          tabindex="0"
-                          type="button"
-                        >
-                          Calculate
-                           
-                        </button>
-                      </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>

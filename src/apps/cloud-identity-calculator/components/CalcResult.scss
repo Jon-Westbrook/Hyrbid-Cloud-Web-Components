@@ -1,1 +1,19 @@
 @import '../assets/styles/globals';
+.cloud-identity-calculator {
+  #costRow h5 span {
+    font-size: 0.75rem;
+  }
+  @media only screen and (max-width: 700px) {
+    #costRow h5 {
+      font-size: 1.5em;
+    }
+    .ru--dollar {
+      font-size: 1rem;
+      margin-right: 0.25rem;
+    }
+    .ru--multiply {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
+  }
+}
