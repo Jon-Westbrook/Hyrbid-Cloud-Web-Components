@@ -34,7 +34,7 @@ function _dwi_create_all_entities(EntityTypeManagerInterface $entity_type_manage
   $storage = $entity_type_manager->getStorage('widget_type');
   $widget_types = $storage->loadMultiple();
   return array_map(
-    fn(WidgetTypeInterface $widget_type) => _dwi_create_entity($entity_type_manager, $widget_type),
+    static fn(WidgetTypeInterface $widget_type) => _dwi_create_entity($entity_type_manager, $widget_type),
     $widget_types
   );
 }
@@ -43,7 +43,7 @@ function _dwi_main() {
   $entity_type_manager = \Drupal::service('entity_type.manager');
   $all_entities = _dwi_create_all_entities($entity_type_manager);
   array_map(
-    fn(WidgetInstanceInterface $widget_instance) => $widget_instance->save(),
+    static fn(WidgetInstanceInterface $widget_instance) => $widget_instance->save(),
     $all_entities
   );
 }

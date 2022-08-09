@@ -84,7 +84,7 @@ services:
         - /iframe.html?id=widgets-trust-radius-components--multi-product&args=&globals=locale:en&viewMode=story
 
   drupal:
-    image: q0rban/tugboat-drupal:9.3
+    image: q0rban/tugboat-drupal:9.4
     expose: 80
     http: false
     depends: mysql
@@ -126,12 +126,11 @@ services:
           --account-pass=${ADMIN_PASSWORD} \
           site:install standard
         # Enable the modules.
-        vendor/bin/drush --yes pm:enable widget_type widget_instance widget_ingestion dblog webprofiler
+        vendor/bin/drush --yes pm:enable widget_type widget_instance widget_ingestion dblog devel
         vendor/bin/drush --yes theme:enable claro olivero
         # Set the Claro theme as default admin theme.
         vendor/bin/drush --yes config-set system.theme admin claro
         vendor/bin/drush --yes config-set system.theme default olivero
-        vendor/bin/drush --yes theme:uninstall seven bartik
         # Rebuild cache.
         vendor/bin/drush cache:rebuild
       build: |

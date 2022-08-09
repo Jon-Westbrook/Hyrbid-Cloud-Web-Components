@@ -12,12 +12,21 @@ module.exports = {
         required: ['trust-radius-ids'],
         properties: {
           'trust-radius-ids': {
-            type: 'string',
+            type: 'array',
             title: 'Trust Radius IDs',
             description:
               'The ID found within the trust radius reviews URL that activates the product reviews. Enter a single ID to display a single-product widget, or enter multiple IDs on separate lines to display a multi-product widget.',
+            items: {
+              type: 'string',
+              pattern: '[0-9a-f]{24}',
+            },
             examples: [
-              '5e20addcac72e40024d9a00a\n61e97281a2b7200025596c0b\n61c342fe85d5d1004dd83a3d',
+              [
+                '5e20addcac72e40024d9a00a',
+                '61e97281a2b7200025596c0b',
+                '61c342fe85d5d1004dd83a3d',
+              ],
+              ['5e20addcac72e40024d9a00a'],
             ],
           },
           theme: {
@@ -30,12 +39,10 @@ module.exports = {
             enum: ['null', 'WHITE', 'GRAY_10', 'GRAY_100'],
           },
           'google-stars': {
-            type: 'string',
+            type: 'boolean',
             title: 'Google Review Stars',
             description: `In single-product widgets, this enables Stars and review data on this page's Google search results.`,
-            default: 'false',
-            examples: ['false'],
-            enum: ['true', 'false'],
+            default: false,
           },
         },
       },
@@ -67,11 +74,6 @@ module.exports = {
       'zh-tw',
     ],
     uiFormSchema: {
-      'trust-radius-ids': {
-        'ui:widget': 'textarea',
-        'ui:placeholder':
-          '5e20addcac72e40024d9a00a\n61e97281a2b7200025596c0b\n61c342fe85d5d1004dd83a3d',
-      },
       theme: {
         'ui:widget': 'select',
         'ui:enum': {
@@ -81,17 +83,6 @@ module.exports = {
               WHITE: 'White',
               GRAY_10: 'Cool Gray 10',
               GRAY_100: 'Gray 100',
-            },
-          },
-        },
-      },
-      'google-stars': {
-        'ui:widget': 'select',
-        'ui:enum': {
-          labels: {
-            mappings: {
-              true: 'yes',
-              false: 'no',
             },
           },
         },

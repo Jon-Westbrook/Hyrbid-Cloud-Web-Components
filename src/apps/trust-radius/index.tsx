@@ -44,16 +44,14 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
     return;
   }
 
-  const trustRadiusIds = element
-    .getAttribute('data-trust-radius-ids')
-    ?.split(/[\r\n]/) || [''];
+  const trustRadiusIds = JSON.parse(
+    element.getAttribute('data-trust-radius-ids') || '[]',
+  );
 
   // Googlestars not applicable if rendering multiple product ids.
   const useGoogleStars =
     trustRadiusIds.length > 1 ||
-    element.getAttribute('data-google-stars') === 'false'
-      ? false
-      : true;
+    parseInt(element.getAttribute('data-google-stars') || '0', 10) === 1;
 
   // Check the theme from input data. If it is not a valid theme, use the
   // palette from context.
