@@ -36,6 +36,8 @@ export const parameters = {
   },
 };
 
+export const globals = { stylesheetId: 'ibm-www-css' };
+
 export const decorators = [
   (story) => (
     <div

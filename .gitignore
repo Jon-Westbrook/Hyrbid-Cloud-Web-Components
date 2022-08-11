@@ -40,3 +40,5 @@ compiledStrings
 /src/index.scss
 
 .vscode/
+
+/dist

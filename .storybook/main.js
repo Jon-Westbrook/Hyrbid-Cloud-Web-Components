@@ -18,6 +18,7 @@ module.exports = {
     '@storybook/preset-create-react-app',
     '@storybook/addon-a11y',
     '@storybook/addon-jest',
+    'storybook-stylesheet-disable',
   ],
   staticDirs: [
     '../public',
