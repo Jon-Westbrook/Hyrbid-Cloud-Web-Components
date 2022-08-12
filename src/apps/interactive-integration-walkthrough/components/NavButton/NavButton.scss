@@ -1,0 +1,45 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+    &__nav-button {
+      align-items: flex-start;
+      inline-size: calc(100% + 1rem);
+      padding: 1rem 1rem 0.75rem;
+      -webkit-margin-start: -1rem;
+      margin-inline-start: -1rem;
+      background-color: #f4f5f9;
+      min-block-size: 9.25rem;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      grid-template-columns: minmax(0, 1fr) 1.5rem;
+      gap: 1rem;
+      text-align: start;
+      appearance: none;
+      border: none;
+      max-width: none;
+      cursor: pointer;
+      transition: background 70ms cubic-bezier(0, 0, 0.38, 0.9), box-shadow 70ms cubic-bezier(0, 0, 0.38, 0.9), border-color 70ms cubic-bezier(0, 0, 0.38, 0.9), outline 70ms cubic-bezier(0, 0, 0.38, 0.9);
+
+      &:hover, &:active {
+        background-color: #f4f5f9;
+      }
+
+      &-text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 0;
+        text-align: start;
+        color: #323232;
+      }
+
+      svg{
+        inline-size: 1.5rem;
+        block-size: 1.5rem;
+        grid-row: 2;
+        grid-column: 2;
+        color: #0f62fe;
+        position: static;
+      }
+    }
+  }
+}

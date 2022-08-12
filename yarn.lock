@@ -1250,6 +1250,11 @@
     "@carbon/grid" "^10.43.0"
     "@carbon/import-once" "^10.7.0"
 
+"@castiron/style-mixins@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@castiron/style-mixins/-/style-mixins-1.0.6.tgz#b22673bc2ee4aa8a1fe66e129f3bdcfe43b81053"
+  integrity sha512-7+xwX1AMpwtjhwgmakxyhheXxdjQnm/+zD1Cq46KoPOPxelMN40mD3DuR7gM1XqcHSdJU/QexYBOTOW3O+uUsg==
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.npmjs.org/@cnakazawa/watch/-/watch-1.0.4.tgz"

@@ -1,0 +1,49 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+    &__template {
+      display: grid;
+      row-gap: 2rem;
+
+      //needs to override component inline styles for grid layout
+      @media all and (max-width: 900px) {
+        grid-template:
+          'header .' auto
+          'main main' auto
+          'aside aside' auto / 2fr 1fr !important;
+      }
+
+      &-header {
+        grid-area: header;
+      }
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.375;
+      letter-spacing: 0;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    &__body {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.375;
+      letter-spacing: 0;
+      margin: 0;
+    }
+
+    &__aside {
+      grid-area: aside;
+      display: grid;
+      align-content: start;
+      grid-template-columns: 1fr;
+      grid-gap: 1px;
+    }
+
+    &__main {
+      grid-area: main;
+    }
+  }
+}

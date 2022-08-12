@@ -1,0 +1,37 @@
+.interactive-integration-walkthrough {
+  .ui-frame {
+    &__wrapper {
+      position: relative;
+      box-shadow: 0px 2px 6px rgb(0 0 0 / 25%);
+
+      &::before {
+        float: left;
+        content: "";
+        padding-top: 68.59756097560977%;
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+
+      @supports (aspect-ratio: 1 / 1) {
+        aspect-ratio: 1312 / 900;
+
+        &::before,
+        &::after {
+          content: none;
+        }
+      }
+    }
+
+    &__inner {
+      position: absolute;
+      inset: 0;
+      inline-size: 100%;
+      block-size: 100%;
+      overflow: hidden;
+    }
+  }
+}

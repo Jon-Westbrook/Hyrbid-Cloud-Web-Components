@@ -1,0 +1,155 @@
+{
+  "15XxLS": {
+    "defaultMessage": "The system generates sample input data to test the flow."
+  },
+  "1tKBpX": {
+    "defaultMessage": "You can view detailed results after the test is completed."
+  },
+  "4BoTpz": {
+    "defaultMessage": "The system uses AI for assistance with variable mapping."
+  },
+  "5WwNOY": {
+    "defaultMessage": "Use the built-in search function to find the action."
+  },
+  "5fQfQ9": {
+    "defaultMessage": "Use API management to create, configure and manage an API"
+  },
+  "6biV7P": {
+    "defaultMessage": "Test using automatically generated input data and view output results"
+  },
+  "8KdQy3": {
+    "defaultMessage": "Choose to accept all high-confidence recommendations or select each match individually."
+  },
+  "8TPr3w": {
+    "defaultMessage": "Specify the API name and configure security."
+  },
+  "BJG5d1": {
+    "defaultMessage": "A secured API is automatically generated with default values that can be edited."
+  },
+  "FQm0Au": {
+    "defaultMessage": "Start your free trial"
+  },
+  "J5ri6C": {
+    "defaultMessage": "Dies ist eine Vorlage zum Erstellen von Widgets."
+  },
+  "JGJbg3": {
+    "defaultMessage": "Click on <strong>sports-news-api</strong> configure an API"
+  },
+  "JK8cHn": {
+    "defaultMessage": "Click on <strong>sports-accounts-graphql-api</strong> to manage a GraphQL API"
+  },
+  "NZkP74": {
+    "defaultMessage": "Add a node and choose from a set of pre-built actions."
+  },
+  "OYgsMU": {
+    "defaultMessage": "Scenario complete!"
+  },
+  "U78NhE": {
+    "defaultMessage": "Complete"
+  },
+  "VHjVii": {
+    "defaultMessage": "Click on <strong>Add</strong> to create an API"
+  },
+  "YzZsjL": {
+    "defaultMessage": "Click on <strong>Marketo</strong> to use AI to map input fields to output fields."
+  },
+  "ZBuhDm": {
+    "defaultMessage": "Easily build and wire applications into an integration flow using a graphical interface"
+  },
+  "Zd4qC5": {
+    "defaultMessage": "See Cloud Pak for Integration in action."
+  },
+  "aDbxTU": {
+    "defaultMessage": "Use application integration to create, map and test an integration flow."
+  },
+  "aLS6dv": {
+    "defaultMessage": "Create, map, and test an integration flow"
+  },
+  "bao4ei": {
+    "defaultMessage": "Test the integration flow using automatically generated input data and view output results"
+  },
+  "bjcYm1": {
+    "defaultMessage": "Improve the schema and protect back-end systems."
+  },
+  "c+ncwO": {
+    "defaultMessage": "The configured actions will be performed using the test values."
+  },
+  "ce/bnO": {
+    "defaultMessage": "App Integration"
+  },
+  "dMzSlS": {
+    "defaultMessage": "Create an API that meets the Open API 3.0 specification."
+  },
+  "dXcIcS": {
+    "defaultMessage": "Keep exploring IBM Cloud Pak for Integration to see how you can:"
+  },
+  "dscaqd": {
+    "defaultMessage": "Apply intelligent recommendations to a GraphQL API"
+  },
+  "e4EWZu": {
+    "defaultMessage": "Use AI to recognize and map input and output fields to speed development and reduce errors"
+  },
+  "fv7Xb4": {
+    "defaultMessage": "Graphically assemble and configure an API using predefined actions"
+  },
+  "g9UFWQ": {
+    "defaultMessage": "Interactive Walkthrough"
+  },
+  "h6j+XP": {
+    "defaultMessage": "Easily create new APIs meeting industry standards"
+  },
+  "ip1kS5": {
+    "defaultMessage": "Select an action to configure its parameters and save the API."
+  },
+  "iv5NrP": {
+    "defaultMessage": "API Management"
+  },
+  "j0Ch2p": {
+    "defaultMessage": "Wire an integration flow using the graphical editor."
+  },
+  "kZGmI/": {
+    "defaultMessage": "Modify the relative weights for the API parameters to match the required resource load."
+  },
+  "n4yAhP": {
+    "defaultMessage": "Explore the features on the screen to see what can be accomplished with Automation."
+  },
+  "nWxdDF": {
+    "defaultMessage": "Build and wire applications into an integration flow"
+  },
+  "o6Mh/b": {
+    "defaultMessage": "Click on <strong>Salesforce</strong> to test the integration flow."
+  },
+  "oFlLjd": {
+    "defaultMessage": "Herzlich willkommen!"
+  },
+  "oQKtvA": {
+    "defaultMessage": "Model the API actions and flow in the assembly view."
+  },
+  "qw8xPx": {
+    "defaultMessage": "Fields show a list of potential matches and each one’s AI-generated confidence level"
+  },
+  "rawhuq": {
+    "defaultMessage": "Modify an API using the graphical editor."
+  },
+  "sB+arg": {
+    "defaultMessage": "Configure the parameters specific to the selected action."
+  },
+  "sFmT6T": {
+    "defaultMessage": "Select the GraphQL API to edit the schema."
+  },
+  "tKMlOc": {
+    "defaultMessage": "Menu"
+  },
+  "tozSsh": {
+    "defaultMessage": "Use AI to map input and output fields"
+  },
+  "uZCVva": {
+    "defaultMessage": "Click on <strong>Expand button</strong> near Slack to create an integration flow."
+  },
+  "wL6FBU": {
+    "defaultMessage": "GraphQL API requests can have significant impact on back-end system resources."
+  },
+  "xe05Cm": {
+    "defaultMessage": "Next Steps"
+  }
+}

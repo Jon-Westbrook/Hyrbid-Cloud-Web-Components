@@ -1,0 +1,18 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+    &__pager-nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    &__pager-button {
+      min-height: auto;
+      padding: 0;
+
+      svg {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+}

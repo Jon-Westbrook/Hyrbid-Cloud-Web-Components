@@ -1,0 +1,42 @@
+.interactive-integration-walkthrough {
+  --color-default-background: #f4f5f9;
+  --color-white: #fff;
+  --color-text-primary: #161616;
+  --color-text-secondary: #565656;
+  --color-interactive: #0f62fe;
+  --color-hover: #0353e9;
+  --button-transition: background 70ms cubic-bezier(0, 0, 0.38, 0.9),
+    box-shadow 70ms cubic-bezier(0, 0, 0.38, 0.9),
+    border-color 70ms cubic-bezier(0, 0, 0.38, 0.9),
+    outline 70ms cubic-bezier(0, 0, 0.38, 0.9);
+
+  background-color: #fff;
+  margin: 0 auto;
+
+  /* Override IBM tag classes */
+  ul:not([class='']) {
+    > li {
+      padding-left: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    li + li {
+      padding-top: 0;
+    }
+  }
+
+  button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--button-transition);
+  }
+
+  .widget-inner {
+    max-width: 82rem;
+    margin-inline: auto;
+  }
+}

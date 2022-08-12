@@ -46,7 +46,7 @@ Another way to add media is by putting it in the per-widget `public` directory. 
 <img src={`${process.env.PUBLIC_ASSETS_URL}/your-widget/foo/bar/my-image.png`} alt="..." />
 ```
 
-Travis will ensure that the image is uploaded to a public location, while Webpack will be in charge of replacing the string `'process.env.PUBLIC_ASSETS_URL'` with the actual URL when compiling the code (also in Travis). In coordination to that the `.env.local` file in you local environment should contain `PUBLIC_ASSETS_URL=/static`, so the media also works in Storybook.
+Travis will ensure that the image is uploaded to a public location, while Webpack will be in charge of replacing the string `'process.env.PUBLIC_ASSETS_URL'` with the actual URL when compiling the code (also in Travis). In coordination to that the `.env.local` file in your local environment should contain `PUBLIC_ASSETS_URL=/static`, so the media also works in Storybook.
 
 **Importing images directly into the component is encouraged**, but the `public` folder can be used when there are an abundance of images. See [Using the Public Folder](https://create-react-app.dev/docs/using-the-public-folder/) from the `create-react-app` documentation for more suggestions on when to use the `public` folder.
 

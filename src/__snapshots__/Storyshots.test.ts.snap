@@ -216,6 +216,123 @@ exports[`Storyshots Widgets/Cloud Identity Calculator/Components Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Widgets/Interactive Integration Walkthrough/Components Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="interactive-integration-walkthrough"
+    >
+      <div
+        class="widget-inner"
+      >
+        <article
+          class="interactive-widget__template"
+          style="grid-template: 'header .' auto
+  'aside main' auto / min(304px, 23.171vw) minmax(0, 1fr); column-gap: clamp(32px, calc(32px + 48 * (100vw - 900px) / 412), 80px);"
+        >
+          <header
+            class="interactive-widget__template-header"
+          >
+            <h3
+              class="interactive-widget__title"
+            >
+              Interactive Walkthrough
+            </h3>
+            <p
+              class="interactive-widget__body"
+            >
+              See Cloud Pak for Integration in action.
+            </p>
+          </header>
+          <aside
+            class="interactive-widget__aside"
+          >
+            <button
+              class="interactive-widget__nav-button bx--btn bx--btn--primary"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="interactive-widget__nav-button-text"
+              >
+                App Integration
+              </span>
+              <svg
+                aria-hidden="true"
+                class="bx--btn__icon"
+                fill="currentColor"
+                focusable="false"
+                height="16"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"
+                />
+              </svg>
+            </button>
+            <button
+              class="interactive-widget__nav-button bx--btn bx--btn--primary"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="interactive-widget__nav-button-text"
+              >
+                API Management
+              </span>
+              <svg
+                aria-hidden="true"
+                class="bx--btn__icon"
+                fill="currentColor"
+                focusable="false"
+                height="16"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"
+                />
+              </svg>
+            </button>
+          </aside>
+          <section
+            class="interactive-widget__main"
+          >
+            <div
+              class="ui-frame__wrapper"
+            >
+              <div
+                class="ui-frame__inner"
+              >
+                <iframe
+                  allow="autoplay *; fullscreen *; encrypted-media *"
+                  allowfullscreen=""
+                  class="interactive-widget__iframe"
+                  frameborder="0"
+                  height="900"
+                  src="https://cdnapisec.kaltura.com/p/1511271/sp/151127100/embedIframeJs/uiconf_id/44723621/partner_id/1511271?iframeembed=true&playerId=kaltura_player&entry_id=1_03b0lysy&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[sideBarContainer.plugin]=false&flashvars[controlBarContainer.plugin]=false&flashvars[topBarContainer.plugin]=false&flashvars[unMuteOverlayButton.plugin]=false&flashvars[autoPlay]=true&flashvars[loop]=true&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_ak7osukk"
+                  width="1312"
+                />
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 <div
   role="main"

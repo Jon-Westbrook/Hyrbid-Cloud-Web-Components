@@ -1,0 +1,9 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+    &__iframe {
+      width: 100%;
+      inline-size: 100%;
+      block-size: 100.5%;
+    }
+  }
+}

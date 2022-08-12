@@ -1,0 +1,16 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+
+    &__nav-item-wrapper {
+      inline-size: calc(100% + 1rem);
+      padding: 1rem 1rem 0.75rem;
+      margin-inline-start: -1rem;
+      background-color: #f4f5f9;
+
+      @media all and (max-width: 900px) {
+        inline-size: calc(100% + 2rem);
+        margin-inline-end: -1rem;
+      }
+    }
+  }
+}

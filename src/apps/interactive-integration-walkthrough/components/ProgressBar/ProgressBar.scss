@@ -1,0 +1,31 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+    &__progress-bar {
+      inline-size: 75%;
+      block-size: 0.5rem;
+
+      .bx--progress-label {
+        /* Only show the label to screen readers */
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        border: 0;
+      }
+      .bx--progress-line {
+        height: 8px;
+        min-width: unset !important;
+      }
+      .bx--progress-step {
+        min-width: unset !important;
+        width: unset !important;
+      }
+      svg {
+        display: none;
+      }
+    }
+  }
+}

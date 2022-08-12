@@ -1,0 +1,98 @@
+.interactive-integration-walkthrough {
+  .interactive-widget {
+    &__nav-item {
+      min-block-size: 35.38rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      @media all and (max-width: 900px) {
+        min-block-size: auto;
+      }
+    }
+
+    &__step-title{
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
+
+    &__body-wrapper {
+      flex-grow: 1;
+    }
+
+    &__bullet-list {
+      margin: 16px;
+      list-style: disc;
+    }
+
+    &__actions {
+      margin-block-start: 2rem;
+    }
+
+    &__next-steps-header {
+      font-size: 12px;
+      color:  #565656;
+      margin-bottom: 8px;
+    }
+
+    &__accordion {
+      margin-top: 2rem;
+      border-bottom: 0;
+
+      .bx--accordion__item {
+        margin-left: -14px;
+        margin-right: -14px;
+        line-height: 18px;
+        border-bottom: 0;
+      }
+
+      .bx--accordion__content {
+        padding-right: 3em;
+        padding-bottom: 0;
+        margin-bottom: 1em;
+
+        q {
+          quotes: "'" "'" !important;
+          &:before {
+            content: '“';
+          }
+          &:after {
+            content: '”';
+          }
+        }
+
+        address {
+          margin-top: 0.5em;
+        }
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+      border-width: 0;
+    }
+
+    &__back-button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0 0 0.125rem;
+      color: #565656;
+      background-color: transparent;
+      border-width: 0;
+      font-size: 1rem;
+    }
+
+    &__back-button-icon {
+      inline-size: 1.5625rem;
+      block-size: 1.25rem;
+    }
+  }
+}

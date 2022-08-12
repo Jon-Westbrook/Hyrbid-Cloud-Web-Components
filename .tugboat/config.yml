@@ -55,6 +55,8 @@ services:
           - best-practices
 
     urls:
+      interactive-integration-walkthrough:
+        - /iframe.html?id=widgets-interactive-integration-walkthrough-components--default&args=&globals=locale:en&viewMode=story
       journey-ai:
         - /iframe.html?id=widgets-journey-to-ai-components--default&args=&globals=locale:en&viewMode=story
       product-explorer:
