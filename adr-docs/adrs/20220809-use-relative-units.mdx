@@ -15,12 +15,13 @@ deck: We should keep certain styling attributes consistent
 ---
 
 There are benefits that we can gain with browser styles by using relative units. In certain places where we use `px` to size elements, it may be more useful to use `rem` and `em`. To quote a statement from an article on [24A11Y](https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/)
+
 > If you use relative CSS units for your typography styles, you can maintain the fidelity of your layouts without negatively impacting the needs of your users
 
 ## Decision
 
- We should use relative CSS sizing units, like `rem` and `em`, where it makes sense on attributes like `font-size`, `line-height`, `margin` & `padding`.
+We should use relative CSS sizing units, like `rem` and `em`, where it makes sense on attributes like `font-size`, `line-height`, `margin` & `padding`.
 
-##  Consequences
+## Consequences
 
 When users resize their browsers, our styles will maintain their integrity, while showing a visually consistent experience for users.

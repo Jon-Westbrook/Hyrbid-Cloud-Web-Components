@@ -32,12 +32,8 @@ exports[`Storyshots Widgets/Cloud Identity Calculator/Components Default 1`] = `
                 class="bx--row ru-grid-parent-row"
               >
                 <form>
-                  <div
-                    class="bx--col-xlg-8 bx--col-lg-8"
-                  >
-                    <div
-                      class="bx--grid"
-                    >
+                  <div>
+                    <div>
                       <div
                         class="bx--tile-container"
                       >
@@ -47,9 +43,7 @@ exports[`Storyshots Widgets/Cloud Identity Calculator/Components Default 1`] = `
                           <div
                             class="ru--main-tile"
                           >
-                            <div
-                              class="bx--tile"
-                            >
+                            <div>
                               <h4>
                                 Population of individuals
                               </h4>

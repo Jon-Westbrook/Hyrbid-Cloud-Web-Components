@@ -144,12 +144,12 @@ const CalcDisplay: React.FC = () => {
       <div className="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8 ibm-duo-u--pt-md-4 ibm-duo-u--pb-8">
         <div className="bx--row ru-grid-parent-row">
           <form>
-            <div className="bx--col-xlg-8 bx--col-lg-8">
-              <div className="bx--grid">
+            <div>
+              <div>
                 <div className="bx--tile-container">
                   <div id="ru--calculator">
                     <div className="ru--main-tile">
-                      <div className="bx--tile">
+                      <div>
                         <h4>
                           <FormattedMessage
                             defaultMessage="Population of individuals"
