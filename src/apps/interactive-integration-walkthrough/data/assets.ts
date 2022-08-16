@@ -1,5 +1,5 @@
-import scenarioAstep1 from '../public/scenarioA-step1.png';
-import scenarioBstep1 from '../public/scenarioB-step1.png';
+import scenarioAstep1 from '../assets/images/scenarioA-step1.png';
+import scenarioBstep1 from '../assets/images/scenarioB-step1.png';
 
 const images = {
   scenarioAstep1,

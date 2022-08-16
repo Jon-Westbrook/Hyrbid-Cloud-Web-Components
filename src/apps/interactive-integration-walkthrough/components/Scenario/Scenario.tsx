@@ -48,9 +48,9 @@ const Scenario = ({
 
   const currentScenarioTitle =
     currentScenario.key === ScenarioTitle.A
-      ? ScenarioTitle.A
+      ? ScenarioAImage
       : currentScenario.key === ScenarioTitle.B
-      ? ScenarioTitle.B
+      ? ScenarioBImage
       : undefined;
 
   return (
@@ -74,14 +74,11 @@ const Scenario = ({
         <UIFrame>
           {video && <Iframe src={video} />}
           {withImage && (
-            <>
-              <img
-                className="screen"
-                src={`${process.env.PUBLIC_ASSETS_URL}/interactive-integration-walkthrough/${currentScenarioTitle}-step1.png`}
-                alt={altTagDesc}
-              />
-              <img className="screen" src={ScenarioAImage} alt={altTagDesc} />
-            </>
+            <img
+              className="screen"
+              src={currentScenarioTitle}
+              alt={altTagDesc}
+            />
           )}
           {hotspots && <Lightbox setStep={setStep} hotspots={hotspots} />}
         </UIFrame>
