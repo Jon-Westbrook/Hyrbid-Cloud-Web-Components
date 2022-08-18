@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import InteractiveIntegrationWalkthrough from './components/InteractiveIntegrationWalkthrough/Widget';
 import { IntlProvider } from 'react-intl';
 import { RenderFn } from '../../types/widgets';
+import widgetDefinition from './InteractiveIntegrationWalkthrough.widget';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
 import './index.scss';
 
@@ -10,7 +11,7 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
     instanceId,
     langCode,
-    'interactive-integration-walkthrough',
+    widgetDefinition,
   );
 
   if (!element || !locale) {

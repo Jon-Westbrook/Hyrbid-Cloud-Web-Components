@@ -2,19 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import TrustRadius, { TrustRadiusProps } from './components/TrustRadius';
+import widgetDefinition from './TrustRadius.widget';
 import { store } from './lib/redux/store';
 import 'regenerator-runtime/runtime';
 import { IntlProvider } from 'react-intl';
 import normalizeWidgetInput from '../../common/normalizeWidgetInput';
-import widgetConfig from './TrustRadius.widget';
 import { RenderFn } from '../../types/widgets';
 import { CarbonThemes } from '../../types/carbon';
 import { setTheme } from './lib/redux/slices/setThemeSlice';
 import { useTrustRadiusDispatch } from './lib/redux/hooks';
 
 import './index.scss';
-
-const widgetId = widgetConfig.shortcode;
 
 // Add a wrapping component, so we can use hooks to dispatch the theme
 // provided by the user input.
@@ -33,25 +31,27 @@ const TrustRadiusApp = ({
   );
 };
 
+function refineInputTypes(input: Record<string, unknown>): TrustRadiusProps {
+  // Convince TS that we have an array.
+  const trIds = input?.trustRadiusIds || [];
+  let trustRadiusIds = Array.isArray(trIds) ? trIds : [];
+  trustRadiusIds = trustRadiusIds.map((id) => `${id}`);
+  const useGoogleStars = trustRadiusIds.length === 1 && !!input.useGoogleStars;
+  return { useGoogleStars, trustRadiusIds };
+}
+
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
-  const { element, locale, messages, palette } = await normalizeWidgetInput(
-    instanceId,
-    langCode,
-    widgetId,
-  );
+  const { element, locale, messages, palette, params } =
+    await normalizeWidgetInput<TrustRadiusProps>(
+      instanceId,
+      langCode,
+      widgetDefinition,
+      refineInputTypes,
+    );
 
   if (!element || !locale) {
     return;
   }
-
-  const trustRadiusIds = JSON.parse(
-    element.getAttribute('data-trust-radius-ids') || '[]',
-  );
-
-  // Googlestars not applicable if rendering multiple product ids.
-  const useGoogleStars =
-    trustRadiusIds.length > 1 ||
-    parseInt(element.getAttribute('data-google-stars') || '0', 10) === 1;
 
   // Check the theme from input data. If it is not a valid theme, use the
   // palette from context.
@@ -65,8 +65,8 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
       <IntlProvider locale={locale} messages={messages}>
         <Provider store={store}>
           <TrustRadiusApp
-            trustRadiusIds={trustRadiusIds}
-            useGoogleStars={useGoogleStars}
+            trustRadiusIds={params.trustRadiusIds}
+            useGoogleStars={params.useGoogleStars}
             palette={theme as CarbonThemes}
           />
         </Provider>

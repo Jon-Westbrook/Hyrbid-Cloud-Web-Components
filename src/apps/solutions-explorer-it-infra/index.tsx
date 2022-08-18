@@ -6,13 +6,15 @@ import normalizeWidgetInput from 'src/common/normalizeWidgetInput';
 import { Provider } from 'react-redux';
 import { store } from './lib/redux/store';
 import { RenderFn } from '../../types/widgets';
+import widgetDefinition from './SolutionsExplorerITInfra.widget';
+
 import './index.scss';
 
 const render: RenderFn = async function (instanceId, langCode, origin, cb) {
   const { element, locale, messages } = await normalizeWidgetInput(
     instanceId,
     langCode,
-    'solutions-explorer-it-infra',
+    widgetDefinition,
   );
 
   if (!element || !locale) {

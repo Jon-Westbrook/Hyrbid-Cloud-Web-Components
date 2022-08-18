@@ -22,12 +22,20 @@ export type RenderFn = (
   cb: (e: HTMLElement) => void,
 ) => Promise<void>;
 
+export type SchemaLite = Record<string, any> & {
+  type: string;
+};
+
 export type WidgetMetadataBasic = {
   shortcode: string;
   title: string;
-  status?: 'stable' | 'beta' | 'wip' | 'deprecated';
+  status?: string;
   settingsSchema?: {
-    fields: Record<string, unknown>;
+    properties: {
+      fields: {
+        properties: Record<string, SchemaLite>;
+      };
+    };
   };
   description?: string;
   additionalCustomProperties?: Record<string, unknown>;
