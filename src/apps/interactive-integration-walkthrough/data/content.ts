@@ -32,7 +32,7 @@ export default {
             },
           ],
 
-          withImage: assets.scenarioAstep1,
+          imagePath: assets.scenarioAstep1,
           hotspots: [
             { x: 860, y: 625, goTo: 'stepA2' },
             { x: 1120, y: 325, goTo: 'stepA3' },
@@ -77,7 +77,7 @@ export default {
               goTo: 'stepB4',
             },
           ],
-          withImage: assets.scenarioBstep1,
+          imagePath: assets.scenarioBstep1,
           hotspots: [
             { x: 1190, y: 100, goTo: 'stepB2' },
             { x: 90, y: 405, goTo: 'stepB3' },

@@ -1,5 +1,4 @@
 /* eslint-disable formatjs/enforce-id */
-import { CSSObject } from '@storybook/theming';
 import React, { ReactNode } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { messages, messageType } from '../../locales/messages';
@@ -18,7 +17,7 @@ type TextProps = {
   as?: string;
   children?: React.ReactNode;
   className?: string;
-  css?: CSSObject;
+  css?: React.Attributes[keyof React.Attributes];
   id?: string;
   intl: messageType;
 };

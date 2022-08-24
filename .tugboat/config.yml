@@ -23,12 +23,12 @@ services:
         apt-get install -y nodejs
         npm install --global yarn
         ln --symbolic --no-dereference --force "${TUGBOAT_ROOT}/dist/storybook" "${DOCROOT}"
-        cp ${TUGBOAT_ROOT}/.tugboat/.env.local ${TUGBOAT_ROOT}/.env.local
       build: |
         yarn install
         yarn compile
         rm --recursive --force ./dist
-        yarn storybook:build
+        cat "${TUGBOAT_ROOT}/.tugboat/.env.local" >> "${TUGBOAT_ROOT}/.env"
+        yarn storybook:build --debug-webpack
         cd "${TUGBOAT_ROOT}/adr-docs"
         yarn install && yarn build --prefix-paths
         cd "${TUGBOAT_ROOT}"
@@ -50,9 +50,9 @@ services:
         extends: lighthouse:default
         settings:
           onlyCategories:
-          - performance
-          - accessibility
-          - best-practices
+            - performance
+            - accessibility
+            - best-practices
 
     urls:
       interactive-integration-walkthrough:
@@ -135,21 +135,7 @@ services:
         vendor/bin/drush --yes config-set system.theme default olivero
         # Rebuild cache.
         vendor/bin/drush cache:rebuild
-      build: |
-        cd $TUGBOAT_ROOT
-        yarn install
-        ${TUGBOAT_ROOT}/scripts/compile-all.sh
-        rm --recursive --force ${DRUPAL_DOCROOT}/sites/default/files/widget-registry
-        mkdir --parents ${DRUPAL_DOCROOT}/sites/default/files/widget-registry
-        WIDGETS_SKIP_COMPRESSION=true DEBUG=*,-babel*,-eslint* NODE_ENV=production js-widgets-webpack-cli --existing-registry="https://hybrid-cloud-widgets-development.s3.us.cloud-object-storage.appdomain.cloud/registry.json" --output-dir="${DRUPAL_DOCROOT}/sites/default/files/widget-registry" "${TUGBOAT_ROOT}"
-        perl -pe "s@https\://hybrid-cloud-widgets[^\.]*\.s3\.[^\.]*\.cloud-object-storage\.appdomain\.cloud@${TUGBOAT_SERVICE_URL}sites/default/files/widget\-registry@g" ${DRUPAL_DOCROOT}/sites/default/files/widget-registry/registry.json > ${DRUPAL_DOCROOT}/sites/default/files/widget-registry/corrected-registry.json
-        # Set the widget registry to pull from Tugboat.
-        cd $DRUPAL_COMPOSER_ROOT
-        vendor/bin/drush --yes entity:delete widget_instance
-        vendor/bin/drush --yes entity:delete widget_type
-        vendor/bin/drush --yes entity:delete widget_registry_source
-        vendor/bin/drush --yes php:eval "\Drupal\widget_type\Entity\WidgetRegistrySource::create(['status' => TRUE, 'endpoint' => '${TUGBOAT_SERVICE_URL}sites/default/files/widget-registry/corrected-registry.json', 'id' => '${TUGBOAT_PREVIEW_ID}', 'label' => 'Ephemeral Registry ${TUGBOAT_PREVIEW_REF}'])->save();"
-        vendor/bin/drush --yes config-set system.site page.front /user/login?destination=/admin/content/interactive-components/widget-instance
+      build: ./.tugboat/scripts/build-drupal-preview.sh
       online:
         - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT widget_ingestion:ingest --force-ingestion
         - ${DRUPAL_COMPOSER_ROOT}/vendor/bin/drush --yes --root $DRUPAL_DOCROOT php:script "${TUGBOAT_ROOT}/.tugboat/scripts/default-widget-instances.php"

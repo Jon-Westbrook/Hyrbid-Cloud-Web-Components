@@ -9,5 +9,6 @@ const reactTestingLibrarySerializer: jest.SnapshotSerializerPlugin = {
 
 initStoryshots({
   renderer: render,
+  storyKindRegex: /^Widgets\//,
   snapshotSerializers: [reactTestingLibrarySerializer],
 });

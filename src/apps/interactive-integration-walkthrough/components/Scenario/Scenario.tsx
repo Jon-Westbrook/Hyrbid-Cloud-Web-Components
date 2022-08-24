@@ -6,13 +6,11 @@ import Lightbox from '../Lightbox/Lightbox';
 import {
   Content,
   Scenario as ScenarioType,
-  Step,
   SetStepOrString,
-  ScenarioTitle,
+  Step,
 } from '../../lib/types';
-import ScenarioAImage from '../../assets/images/scenarioA-step1.png';
-import ScenarioBImage from '../../assets/images/scenarioB-step1.png';
 import './Scenario.scss';
+import PublicImage from '../../../../common/components/PublicImage';
 
 type ScenarioProps = {
   currentScenario: ScenarioType;
@@ -37,21 +35,9 @@ const Scenario = ({
   rewind,
   currentStepIsLastStep,
   hasOneScenario,
-  content,
+  content: { end },
 }: ScenarioProps) => {
-  const { end } = content;
-  const { video, withImage, hotspots } = currentStep;
-
-  const altTagDesc =
-    withImage &&
-    `An image showing a dashboard with hotspots for ${currentScenario.title}`;
-
-  const currentScenarioTitle =
-    currentScenario.key === ScenarioTitle.A
-      ? ScenarioAImage
-      : currentScenario.key === ScenarioTitle.B
-      ? ScenarioBImage
-      : undefined;
+  const { video, imagePath, hotspots } = currentStep;
 
   return (
     <Template
@@ -73,11 +59,12 @@ const Scenario = ({
       {currentStep && (
         <UIFrame>
           {video && <Iframe src={video} />}
-          {withImage && (
-            <img
+          {imagePath && (
+            <PublicImage
+              imgPath={imagePath}
+              widgetId="interactive-integration-walkthrough"
               className="screen"
-              src={currentScenarioTitle}
-              alt={altTagDesc}
+              alt={`An image showing a dashboard with hotspots for ${currentScenario.title}`}
             />
           )}
           {hotspots && <Lightbox setStep={setStep} hotspots={hotspots} />}

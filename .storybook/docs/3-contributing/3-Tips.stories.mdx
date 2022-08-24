@@ -81,7 +81,18 @@ You can find this configuration in `./storybook/main.js` in the `staticDirs` sec
 The following code will work in all the applications described above:
 
 ```tsx
-<img src={`${process.env.PUBLIC_ASSETS_URL}/trust-radius/img/logo.png`} />
+<a href={`${process.env.PUBLIC_ASSETS_URL}/trust-radius/documents/dossier.pdf`} />
+```
+
+For images you can use the helper component `PublicImage`.
+
+```tsx
+<PublicImage
+  imgPath="images/scenarioA-step1.png"
+  widgetId="interactive-integration-walkthrough"
+  className="screen"
+  alt={`An image showing a dashboard with hotspots for ${currentScenario.title}`}
+/>
 ```
 
 Note that in this example `logo.png` will be stored under `./src/apps/trust-radius/public/img/logo.png`.

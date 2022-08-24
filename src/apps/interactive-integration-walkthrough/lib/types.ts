@@ -17,7 +17,7 @@ export type Step = {
   withMore?: boolean;
   withBody?: boolean;
   withBullets?: Array<Bullet> | number;
-  withImage?: string;
+  imagePath?: string;
   hotspots?: Array<Hotspot>;
   video?: string;
 };

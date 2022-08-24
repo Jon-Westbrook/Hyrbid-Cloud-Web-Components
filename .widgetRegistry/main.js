@@ -43,6 +43,12 @@ module.exports = {
     config.plugins = config.plugins.filter(
       (plugin) => ignoredPlugins.indexOf(plugin.constructor.name) === -1,
     );
+    const definePluginIndex = config.plugins.findIndex(
+      (plugin) => plugin.constructor.name === 'DefinePlugin',
+    );
+    config.plugins[definePluginIndex].definitions[
+      'process.env'
+    ].PUBLIC_ASSETS_URL = JSON.stringify(process.env.PUBLIC_ASSETS_URL);
     if (isEnvProduction && !skipCompression) {
       config.plugins.push(
         new CompressionPlugin({

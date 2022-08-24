@@ -1,9 +1,6 @@
-import scenarioAstep1 from '../assets/images/scenarioA-step1.png';
-import scenarioBstep1 from '../assets/images/scenarioB-step1.png';
-
 const images = {
-  scenarioAstep1,
-  scenarioBstep1,
+  scenarioAstep1: 'images/scenarioA-step1.png',
+  scenarioBstep1: 'images/scenarioB-step1.png',
 };
 
 const videos = {
@@ -23,9 +20,7 @@ const videos = {
     'https://cdnapisec.kaltura.com/p/1511271/sp/151127100/embedIframeJs/uiconf_id/44723621/partner_id/1511271?iframeembed=true&playerId=kaltura_player&entry_id=1_5y9l144n&flashvars[akamaiHD.loadingPolicy]=preInitialize&flashvars[akamaiHD.asyncInit]=true&flashvars[twoPhaseManifest]=true&flashvars[streamerType]=hdnetworkmanifest&flashvars[localizationCode]=en&flashvars[leadWithHTML5]=true&flashvars[sideBarContainer.plugin]=true&flashvars[sideBarContainer.position]=left&flashvars[sideBarContainer.clickToClose]=true&flashvars[chapters.plugin]=true&flashvars[chapters.layout]=vertical&flashvars[sideBarContainer.plugin]=false&flashvars[controlBarContainer.plugin]=false&flashvars[topBarContainer.plugin]=false&flashvars[unMuteOverlayButton.plugin]=false&flashvars[autoPlay]=true&flashvars[loop]=true&flashvars[chapters.thumbnailRotator]=false&flashvars[streamSelector.plugin]=true&flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&flashvars[dualScreen.plugin]=true&flashvars[Kaltura.addCrossoriginToIframe]=true&&wid=1_777cg1qz',
 };
 
-const assets = {
+export default {
   ...images,
   ...videos,
 };
-
-export default assets;
