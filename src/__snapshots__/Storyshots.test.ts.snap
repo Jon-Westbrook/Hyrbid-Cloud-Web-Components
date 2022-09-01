@@ -20751,6 +20751,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Default 1`] = `
           >
             Use your existing infrastructure—even edge or other public clouds—with IBM Cloud services, APIs, access policies, security controls and compliance with IBM Cloud Satellite.
             <a
+              class="subhead__link"
               href="/en/cloud/satellite"
             >
               IBM Cloud Satellite.
@@ -23565,6 +23566,7 @@ exports[`Storyshots Widgets/Product Explorer/Components Loading 1`] = `
           >
             Use your existing infrastructure—even edge or other public clouds—with IBM Cloud services, APIs, access policies, security controls and compliance with IBM Cloud Satellite.
             <a
+              class="subhead__link"
               href="/en/cloud/satellite"
             >
               IBM Cloud Satellite.

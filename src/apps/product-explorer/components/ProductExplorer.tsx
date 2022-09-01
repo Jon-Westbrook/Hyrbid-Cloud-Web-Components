@@ -55,7 +55,7 @@ const ProductExplorer: React.FC<ProductExplorerProps> = ({ linkType }) => {
           ) : (
             <p className="product-explorer__subhead">
               <FormattedMessage {...messages.appSubheadB} />
-              <a href={satelliteLink}>
+              <a className="subhead__link" href={satelliteLink}>
                 <FormattedMessage {...messages.appSubheadC} />
               </a>
             </p>
