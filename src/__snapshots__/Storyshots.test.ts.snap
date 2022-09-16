@@ -14473,6 +14473,209 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hello
+        , 
+        <em>
+          Alice
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band Hi 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          Alice
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band Howdy 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Howdy
+        , 
+        <em>
+          Alice
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band Spanish 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          Alícia
+        </em>
+        .
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band With Excitement 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Howdy
+        , 
+        <em>
+          Alice
+        </em>
+        !
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band With Excitement Emoji 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          🎉
+        </em>
+        !
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band With Excitement Hi 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="css-1qj9vya-PricingBand"
+    >
+      <h5
+        class="css-1a9a0m4-PricingBand"
+      >
+        Greeting
+      </h5>
+      <div>
+        Hi
+        , 
+        <em>
+          Bob
+        </em>
+        !
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Product Explorer IT-Infra/Components Default 1`] = `
 <div
   role="main"

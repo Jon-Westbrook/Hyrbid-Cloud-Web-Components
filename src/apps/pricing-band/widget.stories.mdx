@@ -1,0 +1,14 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import storyWithTranslation from './lib/storyWithTranslation';
+import { IBMLocale } from '../../common/locale/mapValidLocale';
+
+<Meta
+  title="Widgets/Pricing Band/Widget"
+  decorators={[storyWithTranslation(IBMLocale.EN)]}
+/>
+
+# Pricing Band
+
+Displays a selection of FlashSystem Products and their prices.
+
+<Story id="widgets-pricing-band-components--default" />

@@ -1,9 +1,11 @@
+/** @jsxImportSource @emotion/react */
 import React, { ReactElement } from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from '../locales/messages';
-import './MyWidget.scss';
+import { css, SerializedStyles } from '@emotion/react';
+import './PricingBand.scss';
 
-export interface MyWidgetProps {
+export interface PricingBandProps {
   /**
    * One of the predefined greetings.
    *
@@ -22,13 +24,29 @@ export interface MyWidgetProps {
   excitement: boolean;
 }
 
-const MyWidget = ({
+const styles: Record<string, SerializedStyles> = {
+  container: css`
+    width: 15em;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    padding: 2em;
+  `,
+  heading: css`
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 0.7em;
+  `,
+};
+
+const PricingBand = ({
   greeting,
   name,
   excitement,
-}: MyWidgetProps): ReactElement => (
-  <div className="my-widget__container">
-    <h5 className="my-widget__heading">
+}: PricingBandProps): ReactElement => (
+  <div css={styles.container}>
+    <h5 css={styles.heading}>
       <FormattedMessage {...messages.greeting} />
     </h5>
     <div>
@@ -38,4 +56,4 @@ const MyWidget = ({
   </div>
 );
 
-export default MyWidget;
+export default PricingBand;
