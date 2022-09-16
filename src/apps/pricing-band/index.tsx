@@ -19,27 +19,10 @@ const render: RenderFn = async function (instanceId, langCode, origin, cb) {
     return;
   }
 
-  let greeting = element.getAttribute('data-greeting');
-  switch (greeting) {
-    case 'Hello':
-    case 'Hi':
-    case 'Howdy':
-      break;
-    default:
-      greeting = null;
-  }
-
-  const userName = element.getAttribute('data-name');
-  const excitement = element.getAttribute('data-excitement');
-
   ReactDOM.render(
     <React.StrictMode>
       <IntlProvider locale={locale} messages={messages}>
-        <PricingBand
-          greeting={greeting || 'Hello'}
-          name={userName || ''}
-          excitement={Boolean(excitement)}
-        />
+        <PricingBand />
       </IntlProvider>
     </React.StrictMode>,
     element,
