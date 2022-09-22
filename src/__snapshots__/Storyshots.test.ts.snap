@@ -14473,6 +14473,89 @@ exports[`Storyshots Widgets/Journey to AI/Components Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
+<div
+  role="main"
+  style="display: flex; flex-direction: column; align-items: center;"
+>
+  <div
+    style="position: relative; width: 100%; z-index: 0;"
+  >
+    <div
+      class="pricing-band"
+    >
+      <div
+        class="pricing-band__inner"
+      >
+        <div>
+          <div
+            class="ibm-grid-container"
+          >
+            <div
+              class="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8"
+            >
+              <div
+                class="bx--row"
+              >
+                <div
+                  class="bx--tile-container"
+                >
+                  <h1>
+                    FlashSystem 5015
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ibm-grid-container"
+          >
+            <div
+              class="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8"
+            >
+              <div
+                class="bx--row"
+              >
+                <div
+                  class="bx--tile-container"
+                >
+                  <h1>
+                    FlashSystem 5015
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="ibm-grid-container"
+          >
+            <div
+              class="ibm-grid-col-sm-4-4 ibm-grid-col-md-8-6 ibm-grid-col-lg-16-8"
+            >
+              <div
+                class="bx--row"
+              >
+                <div
+                  class="bx--tile-container"
+                >
+                  <h1>
+                    FlashSystem 5015
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Widgets/Pricing Band/Components/Pricing Band Default 1`] = `
 <div
   role="main"

@@ -2,20 +2,39 @@
 @include carbon--type-reset();
 
 .pricing-band {
-  background-color: $carbon--warm-gray-100;
-  font-family: carbon--font-family('sans');
+  border: 1px solid lightgrey;
 
-  &__inner {
-    color: $carbon--white-0;
+  .bx--content-block {
     display: grid;
-    grid-template-columns: auto;
-    padding: $carbon--spacing-05;
-    max-width: 1584px;
-    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 64px;
 
-    @include carbon--breakpoint('lg') {
-      grid-template-columns: 1fr 3fr;
+    @media (min-width: 42rem) {
+      padding-top: 48px;
+      padding-bottom: 96px;
+    }
+
+    @media (min-width: 66rem) {
+      padding-top: 64px;
+      padding-bottom: 160px;
     }
   }
 
+  .bx--card-group__cards__row {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 42rem) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 66rem) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .bx--card-group__cards__col {
+    display: flex;
+    flex-direction: column;
+  }
 }
