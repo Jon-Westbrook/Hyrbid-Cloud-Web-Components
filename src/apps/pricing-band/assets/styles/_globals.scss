@@ -4,4 +4,43 @@
 @import "@carbon/type/scss/font-face/sans";
 @import "@carbon/type/scss/scale";
 
-@include carbon--font-face-sans();
+.pricing-band {
+  @include carbon--type-reset();
+  @include carbon--font-face-sans();
+
+  .body-short-01 {
+    @include carbon--type-style("body-short-01");
+  }
+
+  .body-short-02 {
+    @include carbon--type-style("body-short-02");
+  }
+
+  .expressive-heading-01 {
+    @include carbon--type-style("expressive-heading-01", true);
+  }
+
+  .expressive-heading-02 {
+    @include carbon--type-style("expressive-heading-02", true);
+  }
+
+  .expressive-heading-03 {
+    @include carbon--type-style("expressive-heading-03");
+  }
+
+  .expressive-heading-04 {
+    @include carbon--type-style("expressive-heading-04", true);
+  }
+
+  .expressive-heading-05 {
+    @include carbon--type-style("expressive-heading-05", true);
+  }
+
+  .expressive-heading-06 {
+    @include carbon--type-style("expressive-heading-06", true);
+  }
+
+  .expressive-paragraph-01 {
+    @include carbon--type-style("expressive-paragraph-01", true);
+  }
+}
