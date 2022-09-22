@@ -1,0 +1,81 @@
+@import "../assets/styles/globals";
+
+.pricing-band {
+
+  .price {
+    padding-top: 28px;
+
+    @media (min-width: 42rem) {
+      padding-top: 28px;
+    }
+
+    @media (min-width: 66rem) {
+      padding-top: 28px;
+    }
+  }
+
+  .body {
+    padding-top: 28px;
+
+    @media (min-width: 42rem) {
+      padding-top: 28px;
+    }
+
+    @media (min-width: 66rem) {
+      padding-top: 48px;
+    }
+  }
+
+  .bullets {
+    padding-top: 28px;
+
+    @media (min-width: 42rem) {
+      padding-top: 28px;
+    }
+
+    @media (min-width: 66rem) {
+      padding-top: 28px;
+    }
+
+    li::before {
+      content: "\2022";
+      color: #161616;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+  }
+
+  .button-group {
+    padding-top: 28px;
+
+    @media (min-width: 42rem) {
+      padding-top: 48px;
+    }
+
+    @media (min-width: 66rem) {
+      padding-top: 48px;
+    }
+  }
+
+  .cta-copy {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 42rem) {
+      padding-top: 48px;
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: 66rem) {
+      padding-top: 48px;
+      padding-bottom: 28px;
+    }
+
+  }
+
+
+
+}
