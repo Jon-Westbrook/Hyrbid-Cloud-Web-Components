@@ -12,7 +12,9 @@ const PricingBandTile: React.FC = () => {
       href="https://www.carbondesignsystem.com/"
       aria-label="Talk to us"
     >
-      <div className="expressive-heading-04">FlashSystem 5015</div>
+      <div className="expressive-heading-04">
+        <FormattedMessage id="c1qDwZ" defaultMessage="FlashSystem 5015" />
+      </div>
       <div className="price expressive-heading-03">Starting at 10, 000</div>
       <div className="body body-short-01">
         The 5015 is designed for budget-conscious applications without
@@ -36,17 +38,10 @@ const PricingBandTile: React.FC = () => {
           <span className="bx--tag__label">Virtualization</span>
         </button>
       </div>
-      <a
-        href="https://www.ibm.com/it-infrastructure/us-en/resources/storage/product-tour/spectrum-virtualize/"
-        className="bx--link bx--link-with-icon bx--link--lg"
-        data-link-type="local"
-        data-dynamic-properties='{"ctaUrl":"href"}'
-      >
-        <span className="cta-copy">
-          <span className="label">Talk to us</span>&nbsp;&nbsp;
-          <ArrowRight16 />
-        </span>
-      </a>
+      <span className="cta-copy">
+        <span className="label">Talk to us</span>&nbsp;&nbsp;
+        <ArrowRight16 />
+      </span>
     </ClickableTile>
   );
 };
