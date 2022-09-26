@@ -3,38 +3,38 @@
 .pricing-band {
 
   .price {
-    padding-top: 28px;
+    padding-top: 1.75rem;
 
-    @media (min-width: 42rem) {
-      padding-top: 28px;
+    @media (min-width: 672px) {
+      padding-top: 1.75rem;
     }
 
-    @media (min-width: 66rem) {
-      padding-top: 28px;
+    @media (min-width: 1056px) {
+      padding-top: 1.75rem;
     }
   }
 
   .body {
-    padding-top: 28px;
+    padding-top: 1.75rem;
 
-    @media (min-width: 42rem) {
-      padding-top: 28px;
+    @media (min-width: 672px) {
+      padding-top: 1.75rem;
     }
 
-    @media (min-width: 66rem) {
-      padding-top: 48px;
+    @media (min-width: 1056px) {
+      padding-top: 3rem;
     }
   }
 
   .bullets {
-    padding-top: 28px;
+    padding-top: 1.75rem;
 
-    @media (min-width: 42rem) {
-      padding-top: 28px;
+    @media (min-width: 672px) {
+      padding-top: 1.75rem;
     }
 
-    @media (min-width: 66rem) {
-      padding-top: 28px;
+    @media (min-width: 1056px) {
+      padding-top: 1.75rem;
     }
 
     li::before {
@@ -47,31 +47,31 @@
   }
 
   .button-group {
-    padding-top: 28px;
+    padding-top: 1.75rem;
 
-    @media (min-width: 42rem) {
-      padding-top: 48px;
+    @media (min-width: 672px) {
+      padding-top: 3rem;
     }
 
-    @media (min-width: 66rem) {
-      padding-top: 48px;
+    @media (min-width: 1056px) {
+      padding-top: 3rem;
     }
   }
 
   .cta-copy {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
     display: flex;
     align-items: center;
 
-    @media (min-width: 42rem) {
-      padding-top: 48px;
-      padding-bottom: 28px;
+    @media (min-width: 672px) {
+      padding-top: 3rem;
+      padding-bottom: 1.75rem;
     }
 
-    @media (min-width: 66rem) {
-      padding-top: 48px;
-      padding-bottom: 28px;
+    @media (min-width: 1056px) {
+      padding-top: 3rem;
+      padding-bottom: 1.75rem;
     }
 
   }
