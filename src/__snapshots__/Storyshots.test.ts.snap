@@ -14505,7 +14505,6 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                   role="region"
                 >
                   <a
-                    aria-label="Talk to us"
                     class="bx--link bx--tile bx--tile--clickable"
                     href="https://www.carbondesignsystem.com/"
                   >
@@ -14517,7 +14516,12 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                     <div
                       class="price expressive-heading-03"
                     >
-                      Starting at 10, 000
+                      <span>
+                        Starting at 
+                      </span>
+                      <span>
+                        10,000
+                      </span>
                     </div>
                     <div
                       class="body body-short-01"
@@ -14528,7 +14532,7 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                       class="bullets body-short-01"
                     >
                       <li>
-                        400k IOPS per system
+                        400K IOPS per system
                       </li>
                       <li>
                         8.2 GB/s per system
@@ -14603,7 +14607,6 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                   role="region"
                 >
                   <a
-                    aria-label="Talk to us"
                     class="bx--link bx--tile bx--tile--clickable"
                     href="https://www.carbondesignsystem.com/"
                   >
@@ -14615,7 +14618,12 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                     <div
                       class="price expressive-heading-03"
                     >
-                      Starting at 10, 000
+                      <span>
+                        Starting at 
+                      </span>
+                      <span>
+                        10,000
+                      </span>
                     </div>
                     <div
                       class="body body-short-01"
@@ -14626,7 +14634,7 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                       class="bullets body-short-01"
                     >
                       <li>
-                        400k IOPS per system
+                        400K IOPS per system
                       </li>
                       <li>
                         8.2 GB/s per system
@@ -14701,7 +14709,6 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                   role="region"
                 >
                   <a
-                    aria-label="Talk to us"
                     class="bx--link bx--tile bx--tile--clickable"
                     href="https://www.carbondesignsystem.com/"
                   >
@@ -14713,7 +14720,12 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                     <div
                       class="price expressive-heading-03"
                     >
-                      Starting at 10, 000
+                      <span>
+                        Starting at 
+                      </span>
+                      <span>
+                        10,000
+                      </span>
                     </div>
                     <div
                       class="body body-short-01"
@@ -14724,7 +14736,7 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
                       class="bullets body-short-01"
                     >
                       <li>
-                        400k IOPS per system
+                        400K IOPS per system
                       </li>
                       <li>
                         8.2 GB/s per system
