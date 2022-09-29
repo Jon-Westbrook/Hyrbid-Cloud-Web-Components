@@ -2,6 +2,19 @@
 
 .pricing-band {
 
+  .bx--tile {
+    position: relative;
+    min-height: 29.5rem;
+
+    @media (min-width: 672px) {
+      min-height: 31rem;
+    }
+
+    @media (min-width: 1056px) {
+      min-height: 33rem;
+    }
+  }
+
   .price {
     padding-top: 1.75rem;
 
@@ -19,10 +32,12 @@
 
     @media (min-width: 672px) {
       padding-top: 1.75rem;
+      width: 80%;
     }
 
     @media (min-width: 1056px) {
       padding-top: 3rem;
+      width: 75%;
     }
   }
 
@@ -46,15 +61,24 @@
     }
   }
 
+  .button-cta-group {
+    position: absolute;
+    bottom: 1px;
+  }
+
   .button-group {
-    padding-top: 1.75rem;
+    // padding-top: 1.75rem;
 
-    @media (min-width: 672px) {
-      padding-top: 3rem;
-    }
+    // @media (min-width: 672px) {
+    //   padding-top: 3rem;
+    // }
 
-    @media (min-width: 1056px) {
-      padding-top: 3rem;
+    // @media (min-width: 1056px) {
+    //   padding-top: 3rem;
+    // }
+
+    .bx--tag:first-of-type {
+      margin-left: 0;
     }
   }
 
@@ -63,6 +87,7 @@
     padding-bottom: 1.75rem;
     display: flex;
     align-items: center;
+    color: $ibm-color__blue-60;
 
     @media (min-width: 672px) {
       padding-top: 3rem;

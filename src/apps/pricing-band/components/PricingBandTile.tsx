@@ -44,31 +44,33 @@ const PricingBandTile: React.FC = () => {
           <FormattedMessage id="oVQTJi" defaultMessage="Scale-up to 12 PB" />
         </li>
       </ul>
-      <div className="button-group">
-        <button className="bx--tag bx--tag--green">
-          <span className="bx--tag__label">
-            <FormattedMessage id="plusbl" defaultMessage="Midmarket" />
+      <div className="button-cta-group">
+        <div className="button-group">
+          <button className="bx--tag bx--tag--green">
+            <span className="bx--tag__label">
+              <FormattedMessage id="plusbl" defaultMessage="Midmarket" />
+            </span>
+          </button>
+          <button className="bx--tag bx--tag--teal">
+            <span className="bx--tag__label">
+              <FormattedMessage id="EfpVDE" defaultMessage="SAS" />
+            </span>
+          </button>
+          <br />
+          <button className="bx--tag bx--tag--blue">
+            <span className="bx--tag__label">
+              <FormattedMessage id="EJ9D2e" defaultMessage="Virtualization" />
+            </span>
+          </button>
+        </div>
+        <span className="cta-copy">
+          <span className="label">
+            <FormattedMessage id="aX9C8R" defaultMessage="Talk to us" />
           </span>
-        </button>
-        <button className="bx--tag bx--tag--teal">
-          <span className="bx--tag__label">
-            <FormattedMessage id="EfpVDE" defaultMessage="SAS" />
-          </span>
-        </button>
-        <br />
-        <button className="bx--tag bx--tag--blue">
-          <span className="bx--tag__label">
-            <FormattedMessage id="EJ9D2e" defaultMessage="Virtualization" />
-          </span>
-        </button>
-      </div>
-      <span className="cta-copy">
-        <span className="label">
-          <FormattedMessage id="aX9C8R" defaultMessage="Talk to us" />
+          &nbsp;&nbsp;
+          <ArrowRight16 />
         </span>
-        &nbsp;&nbsp;
-        <ArrowRight16 />
-      </span>
+      </div>
     </ClickableTile>
   );
 };
