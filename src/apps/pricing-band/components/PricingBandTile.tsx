@@ -1,47 +1,56 @@
+/* eslint-disable formatjs/enforce-id */
+
 import React from 'react';
-import messages from '../locales/messages';
 import { FormattedMessage } from 'react-intl';
 import { ClickableTile } from 'carbon-components-react';
 import { ArrowRight16 } from '@carbon/icons-react';
 
 import './PricingBandTile.scss';
 
-const PricingBandTile: React.FC = () => {
+export interface PricingBandTileProps {
+  nameID: string;
+  priceID: string;
+  descID: string;
+  bulletAID: string;
+  bulletBID: string;
+  bulletCID: string;
+  bulletDID: string;
+}
+
+const PricingBandTile: React.FC<PricingBandTileProps> = ({
+  nameID,
+  priceID,
+  descID,
+  bulletAID,
+  bulletBID,
+  bulletCID,
+  bulletDID,
+}) => {
   return (
-    <ClickableTile
-      href="https://www.carbondesignsystem.com/"
-      // aria-label={<FormattedMessage {...messages['ctaCopy']} />}
-    >
+    <ClickableTile href="https://www.carbondesignsystem.com/">
       <div className="expressive-heading-04">
-        <FormattedMessage id="c1qDwZ" defaultMessage="FlashSystem 5015" />
+        <FormattedMessage id={nameID} />
       </div>
       <div className="price expressive-heading-03">
         <span>
-          <FormattedMessage id="Flh+ac" defaultMessage="Starting at " />
-        </span>
-        <span>
-          <FormattedMessage id="HRKWZy" defaultMessage="10,000" />
+          <FormattedMessage id={priceID} />
         </span>
       </div>
       <div className="body body-short-01">
-        <FormattedMessage
-          id="RIViTh"
-          defaultMessage="The 5015 is designed for budget-conscious applications without
-        compromising service, performance or capabilities."
-        />
+        <FormattedMessage id={descID} />
       </div>
       <ul className="bullets body-short-01">
         <li>
-          <FormattedMessage id="NBAKw8" defaultMessage="400K IOPS per system" />
+          <FormattedMessage id={bulletAID} />
         </li>
         <li>
-          <FormattedMessage id="CuL9D1" defaultMessage="8.2 GB/s per system" />
+          <FormattedMessage id={bulletBID} />
         </li>
         <li>
-          <FormattedMessage id="UGudR+" defaultMessage="Maximum 32 GB cache" />
+          <FormattedMessage id={bulletCID} />
         </li>
         <li>
-          <FormattedMessage id="oVQTJi" defaultMessage="Scale-up to 12 PB" />
+          <FormattedMessage id={bulletDID} />
         </li>
       </ul>
       <div className="button-cta-group">
