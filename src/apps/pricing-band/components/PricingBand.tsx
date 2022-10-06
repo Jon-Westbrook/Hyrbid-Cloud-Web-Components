@@ -9,23 +9,20 @@ import {
   FlashSystem5050,
 } from '../assets/data/products';
 
-// Basic Content Switcher based on URL
+// Test Content Switcher based on URL, adding test query '&page=flashsystem=5000' will activate
 let Tile1 = FlashSystem5015,
   Tile2 = FlashSystem5035,
   Tile3 = FlashSystem5050;
 
 const currentPage = window.location.href;
-console.log(window.location.href);
 
 switch (currentPage) {
   case 'http://localhost:6006/iframe.html?globals=locale:en&id=widgets-pricing-band-widget--page&viewMode=story&page=flashsystem-5000':
-    console.log('Case 5000. Loading Systems in ascending order.');
     Tile1 = FlashSystem5015;
     Tile2 = FlashSystem5035;
     Tile3 = FlashSystem5050;
     break;
   case 'http://localhost:6006/iframe.html?globals=locale:en&id=widgets-pricing-band-widget--page&viewMode=story&page=flashsystem-5200':
-    console.log('Case 5200. Loading Systems in descending order.');
     Tile1 = FlashSystem5050;
     Tile2 = FlashSystem5035;
     Tile3 = FlashSystem5015;
@@ -37,7 +34,7 @@ switch (currentPage) {
     Tile3 = FlashSystem5050;
     break;
 }
-// End Basic Content Switcher
+// End Content Switcher based on URL
 
 const PricingBand: React.FC = () => {
   return (
@@ -50,16 +47,26 @@ const PricingBand: React.FC = () => {
           />
         </div>
         <p className="pb-desc body-short-02">
-          In the marketplace you can browse the product catalog and compare
-          systems or configurations to determine the best fit. The marketplace
-          provides sample pricing for common configurations and allows you to
-          request a quote tailored to the specific needs of your enterprise.
+          <FormattedMessage
+            id="1QM4mA"
+            defaultMessage="In the marketplace you can browse the product catalog and compare
+            systems or configurations to determine the best fit. The marketplace
+            provides sample pricing for common configurations and allows you to
+            request a quote tailored to the specific needs of your enterprise."
+          />
           <br />
           <br />
-          Compact design for space-constrained edge locations. Consistent
-          capabilities for on-prem and hybrid. <br />
+          <FormattedMessage
+            id="BHf6Oh"
+            defaultMessage="Compact design for space-constrained edge locations. Consistent
+            capabilities for on-prem and hybrid."
+          />
           <br />
-          Ideal for edge storage, virtual and containerized environments.
+          <br />
+          <FormattedMessage
+            id="QGhxgq"
+            defaultMessage="Ideal for edge storage, virtual and containerized environments."
+          />
         </p>
         <a
           className="body-short-02"

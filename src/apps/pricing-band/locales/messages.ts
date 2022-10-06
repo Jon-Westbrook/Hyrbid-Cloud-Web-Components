@@ -7,6 +7,21 @@ const messages = defineMessages({
     defaultMessage:
       'Fast. Smart. Affordable hybrid cloud-enabled storage solutions.',
   },
+  bodyDesc1: {
+    id: 'LwhruM',
+    defaultMessage:
+      'In the marketplace you can browse the product catalog and compare systems or configurations to determine the best fit. The marketplace provides sample pricing for common configurations and allows you to request a quote tailored to the specific needs of your enterprise.',
+  },
+  bodyDesc2: {
+    id: 'PELwkN',
+    defaultMessage:
+      'Compact design for space-constrained edge locations. Consistent capabilities for on-prem and hybrid.',
+  },
+  bodyDesc3: {
+    id: 'QGhxgq',
+    defaultMessage:
+      'Ideal for edge storage, virtual and containerized environments.',
+  },
   product5015Name: {
     id: 'c1qDwZ',
     defaultMessage: 'FlashSystem 5015',
