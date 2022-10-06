@@ -31,11 +31,13 @@
     padding-top: 1.75rem;
 
     @media (min-width: 672px) {
+      min-height: 98px;
       padding-top: 1.75rem;
       width: 80%;
     }
 
     @media (min-width: 1056px) {
+      min-height: 7.5625rem;
       padding-top: 3rem;
       width: 75%;
     }
@@ -67,15 +69,6 @@
   }
 
   .button-group {
-    // padding-top: 1.75rem;
-
-    // @media (min-width: 672px) {
-    //   padding-top: 3rem;
-    // }
-
-    // @media (min-width: 1056px) {
-    //   padding-top: 3rem;
-    // }
 
     .bx--tag:first-of-type {
       margin-left: 0;
