@@ -1,9 +1,15 @@
 {
   "04LnDL": {
-    "defaultMessage": "Vite. Intelligent. Solutions de stockage hybrides abordables compatibles avec le cloud."
+    "defaultMessage": "Fast. Smart. Affordable hybrid cloud-enabled storage solutions."
+  },
+  "1QM4mA": {
+    "defaultMessage": "In the marketplace you can browse the product catalog and compare systems or configurations to determine the best fit. The marketplace provides sample pricing for common configurations and allows you to request a quote tailored to the specific needs of your enterprise."
   },
   "2DQpJK": {
-    "defaultMessage": "Le 5035 est conçu pour le scale-up et le scale-out avec des charges de travail exigeantes à des prix abordables."
+    "defaultMessage": "The 5035 is designed for scale-up and scale-out with demanding workloads at affordable prices."
+  },
+  "BHf6Oh": {
+    "defaultMessage": "Compact design for space-constrained edge locations. Consistent capabilities for on-prem and hybrid."
   },
   "CuL9D1": {
     "defaultMessage": "8.2 GB/s per system"
@@ -15,10 +21,19 @@
     "defaultMessage": "SAS"
   },
   "K8mAxx": {
-    "defaultMessage": "Le 5035 est conçu pour le scale-up et le scale-out avec des charges de travail exigeantes à des prix abordables."
+    "defaultMessage": "The 5050 is designed for for no-cost-barred applications and seeks performance and capability over cost."
+  },
+  "LwhruM": {
+    "defaultMessage": "In the marketplace you can browse the product catalog and compare systems or configurations to determine the best fit. The marketplace provides sample pricing for common configurations and allows you to request a quote tailored to the specific needs of your enterprise."
   },
   "NBAKw8": {
     "defaultMessage": "400K IOPS per system"
+  },
+  "PELwkN": {
+    "defaultMessage": "Compact design for space-constrained edge locations. Consistent capabilities for on-prem and hybrid."
+  },
+  "QGhxgq": {
+    "defaultMessage": "Ideal for edge storage, virtual and containerized environments."
   },
   "S26LBW": {
     "defaultMessage": "12.4 GB/s per system"

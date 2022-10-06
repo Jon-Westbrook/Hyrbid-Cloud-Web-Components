@@ -14489,6 +14489,52 @@ exports[`Storyshots Widgets/Pricing Band/Components Default 1`] = `
         id=""
       >
         <div
+          class="pb-heading expressive-heading-05"
+        >
+          Fast. Smart. Affordable hybrid cloud-enabled storage solutions.
+        </div>
+        <p
+          class="pb-desc body-short-02"
+        >
+          In the marketplace you can browse the product catalog and compare systems or configurations to determine the best fit. The marketplace provides sample pricing for common configurations and allows you to request a quote tailored to the specific needs of your enterprise.
+          <br />
+          <br />
+          Compact design for space-constrained edge locations. Consistent capabilities for on-prem and hybrid.
+          <br />
+          <br />
+          Ideal for edge storage, virtual and containerized environments.
+        </p>
+        <a
+          class="body-short-02"
+          href="https://www.ibm.com/products/storage-as-a-service"
+          style="text-decoration: none;"
+        >
+          <span
+            class="pb-desc-cta"
+          >
+            <span
+              class="label"
+            >
+              Explore IBM FlashSystem as a Service
+            </span>
+              
+            <svg
+              aria-hidden="true"
+              fill="currentColor"
+              focusable="false"
+              height="16"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.3 3.7L13.1 7.5 1 7.5 1 8.5 13.1 8.5 9.3 12.3 10 13 15 8 10 3z"
+              />
+            </svg>
+          </span>
+        </a>
+        <div
           class="block-card-container"
         >
           <div

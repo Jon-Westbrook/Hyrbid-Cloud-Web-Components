@@ -28,7 +28,6 @@ switch (currentPage) {
     Tile3 = FlashSystem5015;
     break;
   default:
-    console.log('Default');
     Tile1 = FlashSystem5015;
     Tile2 = FlashSystem5035;
     Tile3 = FlashSystem5050;
