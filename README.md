@@ -1,4 +1,4 @@
-# Hybrid Cloud Widgets
+# Hybrid Cloud Web Component "Widgets"
 
 > Widget Registry and Widget Repository combined in one.
 
